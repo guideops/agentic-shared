@@ -1,0 +1,4 @@
+# Codex auto-populates its bundled system skills (imagegen, skill-creator, …)
+# into the symlinked skills dir per-machine. They are tool-managed, not part of
+# the shared source of truth — keep them out so they don't churn/conflict across machines.
+skills/.system/
