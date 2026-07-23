@@ -29,7 +29,7 @@ Interview the user (AskUserQuestion, batched — max 2 rounds) for anything not 
 - What is it, one sentence. Who is it for.
 - Stack decisions: framework, database, hosting, auth, styling. For EACH: which options were considered and WHY the winner won. Decisions without rationale are not accepted — if the user says "Next.js", ask "over what, and why".
 - Constraints: budget, existing infra to reuse (check `05 Agent/Infrastructure - Machine Sync Overview.md` and Projects Index for reusable patterns — e.g. PokieTicker two-layer AI cost model, INSTRUMENT design system, AURA daemon).
-- Model strategy for the build: which models plan vs build (see SOP-04 Model Selection in `05 Agent/SOPs/`).
+- Model strategy for the build: which models plan vs build (see SOP-05 Model Selection in `05 Agent/SOPs/`).
 
 ### 2. Create `<Name>.md`
 
@@ -100,7 +100,7 @@ source-machine: <machine>
 - none
 
 ## Active playbook
-- none yet (see SOP-02 for feature-build flow)
+- none yet (see SOP-03 for feature-build flow)
 ```
 
 ### 5. Update Projects Index
@@ -116,7 +116,7 @@ Add to the repo's `CLAUDE.md`:
 Project docs, decisions (ADR log), and session state live in the Obsidian vault:
 `02 Projects/<Name>/` (synced via Syncthing).
 - Update via /checkpoint at session end.
-- Feature specs live in this repo under plans/ as numbered playbooks (see SOP-02).
+- Feature specs live in this repo under plans/ as numbered playbooks (see SOP-03).
 - Model-router workers: NEVER write to the vault. Orchestrator sessions only.
 ```
 

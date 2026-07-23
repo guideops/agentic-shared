@@ -68,12 +68,12 @@ Context sources (step 2 above, mapped to this machine):
 - **Tech stack defaults** — per-project CLAUDE.md in each repo
 
 Placement rules (recommendation output):
-- Reusable across machines → `agentic-shared/skills/<name>/` + junction into `~/.claude/skills/` (`cmd /c mklink /J` on Windows — plain `ln -s` silently copies in Git Bash) + commit so laptop/VPS sync (SOP-05)
+- Reusable across machines → `agentic-shared/skills/<name>/` + junction into `~/.claude/skills/` (`cmd /c mklink /J` on Windows — plain `ln -s` silently copies in Git Bash) + commit so laptop/VPS sync (SOP-01)
 - Machine- or project-specific → local `~/.claude/skills/` or the project repo, no junction
 - Workflow rules (not skills) → vault SOPs `05 Agent/SOPs/` — announce full vault path when writing (transparency rule)
 - Async/ambient work → route to Hermes lane per SOP-06, not a new skill
 
 Gates to flag (this setup's versions):
-- Model cost → SOP-04 Ministry bench rules; delegation must be announced in chat
+- Model cost → SOP-05 Ministry bench rules; delegation must be announced in chat
 - External systems → Telegram/Hermes actions, git push, anything publishing
-- Credits → adopted external material keeps a `credits:` line in frontmatter (house rule, see calibrate/SOP-02 precedent)
+- Credits → adopted external material keeps a `credits:` line in frontmatter (house rule, see calibrate/SOP-03 precedent)

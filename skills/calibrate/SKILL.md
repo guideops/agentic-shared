@@ -119,4 +119,4 @@ Where fixes actually live here (use these paths in `[TARGET: ...]` suggestions):
 
 Pairing: `/checkpoint` saves **project** state; `/calibrate` tunes the **agent**. End of a heavy session, run both — checkpoint first, calibrate second.
 
-Repo hygiene: skill edits land in agentic-shared as uncommitted changes — remind the user to commit so laptop/VPS pick them up (SOP-05).
+Repo hygiene: skill edits land in agentic-shared as uncommitted changes — remind the user to commit so laptop/VPS pick them up (SOP-01).
