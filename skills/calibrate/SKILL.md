@@ -111,11 +111,11 @@ No follow-up needed. Changes are live for the next time the skill/rule is invoke
 
 Where fixes actually live here (use these paths in `[TARGET: ...]` suggestions):
 
-- **Skills** — `~/ai-workspace/claude-projects/agentic-shared/skills/<name>/SKILL.md`. Edit in the shared repo, never through the `~/.claude/skills/` symlink target confusion — same file, but reference the repo path so the change is visibly a repo change to commit.
-- **Instructions** — `~/.claude/CLAUDE.md` (global) or the project's `CLAUDE.md`.
+- **Skills** — the shared library, `/opt/agentic/shared/skills/<name>/SKILL.md` on the agentic-server VPS (`~/ai-workspace/claude-projects/agentic-shared/skills/<name>/SKILL.md` on the laptop). It is one git repo feeding Claude Code, Codex, and Hermes; the per-agent copies under `~/.claude/skills/` and `~/.codex/skills/` are **hardlinks to the same inode**, so editing either path edits all three at once. Always name the shared-library path in a suggestion, so the change reads as a repo change to commit.
+- **Instructions** — `~/.claude/CLAUDE.md` (global) or the project's `CLAUDE.md`. In agentic-workspace, `CLAUDE.md` and `AGENTS.md` are mirror files — edit both identically or neither.
 - **Hooks / settings** — `~/.claude/settings.json`. Hook script sources live in `~/.claude/hooks/`.
-- **SOPs** — vault `05 Agent/SOPs/SOP-NN *.md`. Vault writes must be announced in chat with the full vault path (transparency rule).
-- **Memory** — claude-mem captures observations automatically; only suggest an explicit memory write for durable *preferences or feedback rules*, not facts claude-mem already recorded.
+- **SOPs** — vault `05 Agent/SOPs/SOP-NN *.md`. Vault writes must be announced in chat with the full vault path (transparency rule). Vault root on the VPS is `/opt/agentic/obsidian/vault` (see the checkpoint skill's resolution order).
+- **Memory** — two systems coexist. claude-mem captures session observations automatically; the file-based store at `~/.claude/projects/<project-slug>/memory/` is written by hand (one fact per file + a pointer line in its `MEMORY.md` index) and is where durable *preferences and feedback rules* belong. Only suggest an explicit memory write for those — not for facts claude-mem already recorded.
 
 Pairing: `/checkpoint` saves **project** state; `/calibrate` tunes the **agent**. End of a heavy session, run both — checkpoint first, calibrate second.
 

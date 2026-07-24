@@ -7,7 +7,7 @@ description: Session-end vault update or project resume. /checkpoint saves sessi
 
 Two directions: **save** (session end) and **resume** (session start). Keeps the vault project docs in `02 Projects/<Name>/` truthful.
 
-Vault root, resolved per machine in order: (1) `$CLAUDE_VAULT` env var; (2) known paths — `C:\Users\pawar\Documents\ajqcd-zaozt`, `~/Documents/ajqcd-zaozt`, `~/ajqcd-zaozt`, `~/vault/ajqcd-zaozt`; (3) Windows: `%APPDATA%\obsidian\obsidian.json` (vault folder `ajqcd-zaozt`). No vault found → **no-vault machine** (e.g. VPS worker): say so, skip all vault writes, and instead print the checkpoint summary as text for the user to paste or sync later. Never write vault files to a guessed path.
+Vault root, resolved per machine in order: (1) `$CLAUDE_VAULT` env var; (2) known paths — `/opt/agentic/obsidian/vault` (**agentic-server VPS — this is a real vault, host-mounted into the Syncthing container, not a worker scratch dir**), `C:\Users\pawar\Documents\ajqcd-zaozt`, `~/Documents/ajqcd-zaozt`, `~/ajqcd-zaozt`, `~/vault/ajqcd-zaozt`; (3) the workspace's own config — `vaultPath` in `server/data/user-config.json` if an agentic-workspace checkout is present; (4) Windows: `%APPDATA%\obsidian\obsidian.json` (vault folder `ajqcd-zaozt`). All of these are the same Syncthing folder (`ajqcd-zaozt`) seen from different machines. No vault found → **no-vault machine**: say so, skip all vault writes, and instead print the checkpoint summary as text for the user to paste or sync later. Never write vault files to a guessed path.
 
 ## /checkpoint (save)
 
