@@ -31,7 +31,11 @@ Interview the user (AskUserQuestion, batched — max 2 rounds) for anything not 
 - Constraints: budget, existing infra to reuse (check `05 Agent/Infrastructure - Machine Sync Overview.md` and Projects Index for reusable patterns — e.g. PokieTicker two-layer AI cost model, INSTRUMENT design system, AURA daemon).
 - Model strategy for the build: which models plan vs build (see SOP-05 Model Selection in `05 Agent/SOPs/`).
 
-### 2. Create `<Name>.md`
+### 2. Register the Hermes project
+
+Register the local grouping record so kanban cards can attach from day one: `hermes project create "<Project Name>" --slug <repo-basename> --primary <abs repo path>`. This is a local Hermes project record, not a repository.
+
+### 3. Create `<Name>.md`
 
 Structure (matches existing project docs — see `02 Projects/Agentic Workspace/Agentic Workspace.md` as reference):
 
@@ -68,7 +72,7 @@ tags: [project]
 
 Use mermaid blocks inside this file for flows/sequences (data flow, auth flow). Mermaid lives in the .md, NOT the canvas.
 
-### 3. Create `<Name>.canvas`
+### 4. Create `<Name>.canvas`
 
 Use the `json-canvas` skill. Architecture map only — coarse:
 - One node per component (frontend, backend, DB, external services)
@@ -76,7 +80,7 @@ Use the `json-canvas` skill. Architecture map only — coarse:
 - Stack-choice nodes reference their ADR id (e.g. "Next.js — see D-001")
 - Keep under ~15 nodes. Detail belongs in the .md.
 
-### 4. Create `STATE.md`
+### 5. Create `STATE.md`
 
 ```markdown
 ---
@@ -103,11 +107,11 @@ source-machine: <machine>
 - none yet (see SOP-03 for feature-build flow)
 ```
 
-### 5. Update Projects Index
+### 6. Update Projects Index
 
 Append the project to `02 Projects/Projects Index.md` following its existing format. Do not restructure the index.
 
-### 6. Repo pointer (if a repo exists or is being scaffolded)
+### 7. Repo pointer (if a repo exists or is being scaffolded)
 
 Add to the repo's `CLAUDE.md`:
 
