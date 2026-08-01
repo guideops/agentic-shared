@@ -129,13 +129,17 @@ social (HN front page via Algolia) · ship (HF blog, HF trending, GH trending).
 Known-dead feeds, do not re-add: `ai.meta.com/blog/rss` (no RSS exists),
 `bensbites.beehiiv.com/feed` (404), `hnrss.org` (unreliable — use Algolia).
 
-**Deliberately excluded — do not propose adding these.** Reddit, X, TikTok,
-YouTube comments, Bluesky, and the `last30days` skill. The user chose credible
-sources over engagement volume: a curated pool of vendor announcements and
-high-signal curators beats a wider net that dilutes it. This means the urgency
-gate sees social virality only through HN, and that trade is intentional. HN
-stays because its front page is a signal about what builders care about, not a
-raw engagement metric.
+**Excluded by choice, not oversight.** Reddit, X, TikTok, YouTube comments,
+Bluesky, and the `last30days` skill. The user chose credible sources over
+engagement volume: a curated pool of vendor announcements and high-signal
+curators beats a wider net that dilutes it. This means the urgency gate sees
+social virality only through HN, and that trade is intentional. HN stays
+because its front page signals what builders care about rather than raw
+engagement.
+
+Do not add these sources or re-pitch them as a routine suggestion. **Do** flag
+it in the Gaps section if you observe a specific major story the curated pool
+missed and social caught first — that is evidence, not a proposal.
 
 ## Boundaries
 
