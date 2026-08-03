@@ -8,6 +8,11 @@ metadata:
 
 # dream-review
 
+> **Mirror file.** The Steps here are kept **identical** to
+> `agentic-workspace/.claude/commands/dream.md` (the copy the nightly headless
+> run actually loads). Edit both together, or the overnight engine silently
+> drifts from this skill.
+
 **Trigger**: `/dream` or "run dream", "overnight insights", "dream review"
 **Domain**: research
 **Automation**: remote (scheduled overnight via the `dream.schedule` cron in `user-config.json`)
