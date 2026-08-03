@@ -18,20 +18,43 @@ Produce a concise global briefing in English.
 - If the user asks for an afternoon update, emphasize what is new or materially changed since the morning brief.
 
 ## Workflow
-1. Gather current, high-signal global news from multiple reputable sources.
-2. Identify the main headlines and any emerging storylines with broad significance.
+1. Read the last 3 daily-bugle notes for continuity (see **Continuity** below).
+2. Sweep the named sources below; identify the main headlines and any emerging storylines with broad significance.
 3. Summarize the public conversation and overall sentiment in plain English.
 4. Add 3–5 notable items from **On this day in history**.
-5. Write the final result to the connected Obsidian vault as markdown.
+5. Write the final result to the connected Obsidian vault as markdown, including the **Source Health** footer.
 
-## Source handling
-- Prefer fast, reliable, recent sources.
-- Prefer primary reporting when available.
-- Use web search or RSS when available.
-- Use aggregators to discover stories, not as the final authority.
+## Sources
+
+Sweep this named pool every run. Use web search only to *expand* a story the sweep surfaced (or fill a visible gap), not as the primary discovery method.
+
+- **Wires / primary**: Reuters World (reuters.com/world), AP World (apnews.com/hub/world-news)
+- **Broadcasters**: BBC World (`feeds.bbci.co.uk/news/world/rss.xml`), Al Jazeera (`aljazeera.com/xml/rss/all.xml`)
+- **Quality dailies**: The Guardian World (`theguardian.com/world/rss`)
+- **Discovery / aggregate**: Wikipedia Current Events portal (`en.wikipedia.org/wiki/Portal:Current_events`) — discovery only; verify against a wire before reporting as a headline
+- **On this day**: Wikipedia On This Day (`en.wikipedia.org/wiki/Wikipedia:On_this_day/Today`)
+
+Rules:
+- A story needs a wire or broadcaster source before it goes in Top Headlines; aggregator-only items belong in Emerging at most.
+- Source failures are non-fatal: note the failed source in the Source Health footer and keep going. Never abort the run over one dead source.
+- If a source fails on 3+ consecutive runs, list it under **Known-dead** below (with date) so future runs stop retrying it. Known-dead: none yet.
 - Call Firecrawl only when the skill needs cleaner extraction or page retrieval.
 - Do not invent coverage; if a topic is under-covered, say so.
 - Keep all final prose in English even when source material is in another language.
+
+## Continuity (read before writing)
+
+Before drafting, read the previous 3 daily-bugle notes in the digests folder.
+
+- A story already covered reappears only if it materially changed; lead with what changed and link the prior day's note.
+- Every item listed under **Emerging** in prior notes gets one of three fates: **promote** (now a headline), **carry** (still building — say what moved), or **drop silently** (fizzled; it gets scored in the weekly look-back, not re-litigated daily).
+- Do not restate a running story's full background each day; one clause of context plus the update is enough.
+
+## Weekly look-back (Sunday morning run only)
+
+Add a short `## Week in Review` section to Sunday's morning brief:
+- 3–5 lines: the week's defining stories.
+- Score last week's Emerging calls: how many promoted to headlines, how many fizzled. One line, honest counts. This is the feedback loop that keeps the Emerging section calibrated rather than speculative.
 
 ## Change definition
 Treat "change" as any meaningful update since the previous run, including:
@@ -91,6 +114,9 @@ scope: global
 
 ## Sources
 - ...
+
+## Source Health
+- Failed sources this run (or "all green")
 ```
 
 ## Obsidian output
@@ -109,3 +135,4 @@ scope: global
 ## When to extend
 - Add a separate regional brief skill later for country/city-specific requests.
 - Keep this skill global-first so it stays reliable.
+- Next upgrade candidate: a small fetch script in this skill directory that pulls the RSS feeds in parallel and dedupes by URL before the model sees them (the tech-digest / insights-recon.mjs pattern), so runs get faster and cheaper.
