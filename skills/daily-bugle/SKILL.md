@@ -133,6 +133,6 @@ scope: global
   - verify with `stat` that Syncthing can read the file.
 
 ## When to extend
-- Add a separate regional brief skill later for country/city-specific requests.
+- Country/city-specific requests go to the companion `regional-bugle` skill.
 - Keep this skill global-first so it stays reliable.
 - Next upgrade candidate: a small fetch script in this skill directory that pulls the RSS feeds in parallel and dedupes by URL before the model sees them (the tech-digest / insights-recon.mjs pattern), so runs get faster and cheaper.
