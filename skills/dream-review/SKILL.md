@@ -65,6 +65,22 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    - If a prior insight was `applied`, check whether its metric actually moved in tonight's
      pack and report the result as evidence — a win is a valid insight.
 
+1c. **Norms file.** Read `server/data/dream-norms.md` if it exists. Each line records
+   behavior the user has declared intentional ("session abandonment is deliberate
+   exploration"). Never emit an insight criticizing behavior covered by a norm.
+   When last night's file shows an insight newly `dismissed`, append one norm line for it:
+   `- <YYYY-MM-DD> dismissed: <title> — treat as intentional unless the metric doubles.`
+   Create the file on first append.
+
+1d. **Weekly postmortem (Monday runs only).** When `window.nowISO` falls on a Monday, score
+   the trail before authoring: read `server/data/dream-archive/dream-latest-*.json` entries
+   7–14 days old, and for each insight check (a) status — did the user apply, skip, or
+   dismiss it? — and (b) whether the metric it cited actually moved in tonight's signal pack
+   versus its archived pack (est vs actual). Add a **Postmortem** section to the vault digest:
+   per-insight verdict (HIT / MISS / IGNORED) and the running hit rate. A pillar whose
+   insights keep landing IGNORED must not lead tonight's insights. Skip silently if the
+   archive is empty (it fills nightly from now on).
+
 2. **Analyze through the 8-pillar lens** — this is *how Dream thinks*, not UI:
    - **cost** — model mix, Opus over-use, cache reuse → routing/savings opportunities.
    - **session** — oversized/long sessions → compaction, splitting.
@@ -104,6 +120,8 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
        "action": { "label": "TRY IT NOW — PASTE THIS INTO CLAUDE CODE", "snippet": "claude -p \"/route-reads haiku\"" },
        "estSavingUsdPerMo": 348,
        "minutesSaved": 0,
+       "evidence": "observed",
+       "confidence": "high",
        "status": "open"
      }]
    }
@@ -119,6 +137,10 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    - `why`: 1–3 short evidence bullets (the numbers behind the call).
    - `action`: optional — include only when there's a concrete command to paste; else `null`.
    - `estSavingUsdPerMo` / `minutesSaved`: integers, best estimate, `0` if unknown.
+   - `evidence`: `"observed"` (directly counted in the signal pack) or `"inferred"`
+     (pattern guess). `confidence`: `"high"` / `"med"` / `"low"`. Only an
+     observed + high insight may carry `estSavingUsdPerMo` > 0 — an inferred saving
+     estimate is a made-up number.
    - `status`: always `"open"` for new insights.
 
 5. **Append a human digest** to the connected Obsidian vault at
@@ -129,4 +151,9 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    `server/data/user-config.json`. If no vault resolves, skip the digest — never write into the
    repo. Announce the full vault path in chat when writing.
 
-6. Keep it tight and personal. The user reads this as a morning briefing.
+6. **Log the run.** Append one line to `domains/research/learnings.md` in the workspace:
+   date, insight count, pillars used, and anything the signal pack couldn't tell you
+   (dead pillars, suspected ranking misses). The server logs the run itself to
+   `server/data/runs.json` — do not double-write that file.
+
+7. Keep it tight and personal. The user reads this as a morning briefing.
