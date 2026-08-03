@@ -1,6 +1,6 @@
 ---
 name: dream-review
-description: "Author the overnight Dream Review for an agentic-workspace checkout: read the deterministic signal pack (cost, sessions, memory, skills, workflow), reason through the 8-pillar lens, and emit 3-5 personal, number-backed insights as strict JSON the Dream UI renders, plus a dated markdown digest in the Obsidian vault. No user input required."
+description: "Author the overnight Dream Review for an agentic-workspace checkout: read the deterministic signal pack (cost, sessions, memory, skills, workflow), dedup against last night's insights and their statuses, reason through the 8-pillar lens, and emit 0-5 personal, number-backed insights as strict JSON the Dream UI renders, plus a dated markdown digest in the Obsidian vault. No user input required."
 metadata:
   hermes:
     category: research
@@ -14,7 +14,7 @@ metadata:
 
 ## Description
 
-Author the overnight **Dream Review** — 3–5 personal, specific insights about how the user
+Author the overnight **Dream Review** — 0–5 personal, specific insights about how the user
 actually uses AI, reasoned through the **8-pillar lens**. You are the engine; "Dream" is the
 feature. Be concrete: cite the real numbers from the signal pack, never generic advice.
 
@@ -38,12 +38,32 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
 
 ## Steps
 
+0. **Freshness gate.** Before anything else, verify `server/data/dream-signal.json` exists
+   and its `window.nowISO` is less than 24 hours old. If it is missing or stale, do NOT
+   author insights from it — write a single `session`-pillar "engine health" insight instead
+   ("Dream signal pack is missing/stale since <date> — the overnight pipeline needs attention",
+   with the check to run in `action.snippet`) and stop. Never invent numbers.
+   On `/dream doctor`: only run the checks and report — signal-pack age, `dream-latest.json`
+   age vs `dream.schedule.cadence`, vault path resolution, and whether the `dream-review`
+   Hermes cron job exists and is active (`hermes cron list`). No insights, no writes.
+
 1. **Read the signal pack** `server/data/dream-signal.json` (built fresh before you run). It
    carries the raw metrics behind each pillar: `cost` (totalUsd, byModel, opusShare, cacheRatio),
    `session` (count, oversized, longestTokens), `memory` (notes, stale, noFrontmatter,
    staleExamples), `skills` (runs, distinct, bySkill), `workflow.sequences`, `external.enabled`,
    `business`/`retrieval` (placeholders), `hints` (deterministic findings — seed ideas), and
    `window` (days, sinceISO, nowISO). Also read the `dream` block of `server/data/user-config.json`.
+
+1b. **Read last night before writing tonight.** Load the previous
+   `server/data/dream-latest.json` (if any) and note each prior insight's `pillar`, `title`,
+   the numbers it cited, and its `status`:
+   - **Never re-emit an insight the user `dismissed`** — that is the user saying no.
+   - A repeat of an `open`/`skipped` insight is allowed **only if its number moved
+     materially** — and the body must say so ("Opus share still 61%, up from 54% last week").
+     A daily run over a 7-day window overlaps ~6/7 night-to-night; without this rule,
+     repetition is the default output, not the exception.
+   - If a prior insight was `applied`, check whether its metric actually moved in tonight's
+     pack and report the result as evidence — a win is a valid insight.
 
 2. **Analyze through the 8-pillar lens** — this is *how Dream thinks*, not UI:
    - **cost** — model mix, Opus over-use, cache reuse → routing/savings opportunities.
@@ -59,9 +79,12 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    web-search for relevant model/pricing/tooling news and emit an `external` insight. If it is
    `false`, do **not** web-search at all.
 
-4. **Emit 3–5 insights** and **write strict JSON** to `server/data/dream-latest.json` using the
+4. **Emit 0–5 insights** and **write strict JSON** to `server/data/dream-latest.json` using the
    exact schema below — the frontend depends on these keys. Skip pillars with no real signal
-   rather than padding. Derive `headline` count from the number of insights (no hardcoding).
+   rather than padding: fewer than 3 pillars carrying real, non-repeated signal means fewer
+   insights, and a quiet week is a valid result ("Quiet week — 1 improvement found"). Never
+   pad to reach a count. Derive `headline` count from the number of insights (no hardcoding).
+   Order insights by expected impact (est $ saved + minutes saved), best first.
 
    ```json
    {
@@ -71,7 +94,7 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
      "source": "Claude",
      "headline": "4 improvements found overnight",
      "insights": [{
-       "id": "cost-1",
+       "id": "cost-20260803-1",
        "pillar": "cost",
        "pillarLabel": "COST",
        "kicker": "Spend smarter",
@@ -87,7 +110,10 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    ```
 
    Field rules:
-   - `id`: `<pillar>-<n>`, unique. `pillar`: one of the 8 lens ids. `pillarLabel`: uppercased.
+   - `id`: `<pillar>-<YYYYMMDD>-<n>` (date from `window.nowISO`), unique **across runs** — the
+     server preserves per-insight status by id, so a reused id (`cost-1`) silently grafts an
+     old insight's apply/dismiss state onto a new, unrelated one.
+     `pillar`: one of the 8 lens ids. `pillarLabel`: uppercased.
    - `kicker`: short imperative (e.g. "Sharpen your memory"). `title`: bold one-liner.
    - `body`: 1–3 sentences of prose with specifics from the pack.
    - `why`: 1–3 short evidence bullets (the numbers behind the call).
