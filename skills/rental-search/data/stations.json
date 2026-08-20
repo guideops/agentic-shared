@@ -1,0 +1,1568 @@
+[
+ {
+  "name": "St Leonards",
+  "kind": "train",
+  "lat": -33.822438,
+  "lon": 151.1941934
+ },
+ {
+  "name": "Marrickville",
+  "kind": "metro",
+  "lat": -33.9139638,
+  "lon": 151.1536185
+ },
+ {
+  "name": "Green Square",
+  "kind": "train",
+  "lat": -33.9061988,
+  "lon": 151.2024361
+ },
+ {
+  "name": "Edgecliff",
+  "kind": "train",
+  "lat": -33.8792403,
+  "lon": 151.2361365
+ },
+ {
+  "name": "Rooty Hill",
+  "kind": "train",
+  "lat": -33.7715179,
+  "lon": 150.8450104
+ },
+ {
+  "name": "Lidcombe",
+  "kind": "train",
+  "lat": -33.8638146,
+  "lon": 151.0452428
+ },
+ {
+  "name": "Flemington",
+  "kind": "train",
+  "lat": -33.8648765,
+  "lon": 151.069948
+ },
+ {
+  "name": "Waterfall",
+  "kind": "train",
+  "lat": -34.1344488,
+  "lon": 150.9944558
+ },
+ {
+  "name": "Hurstville",
+  "kind": "train",
+  "lat": -33.9673964,
+  "lon": 151.1025692
+ },
+ {
+  "name": "Bondi Junction",
+  "kind": "train",
+  "lat": -33.8912429,
+  "lon": 151.248455
+ },
+ {
+  "name": "Clyde",
+  "kind": "train",
+  "lat": -33.8359746,
+  "lon": 151.017066
+ },
+ {
+  "name": "Parramatta",
+  "kind": "train",
+  "lat": -33.8175113,
+  "lon": 151.0054009
+ },
+ {
+  "name": "Faulconbridge",
+  "kind": "train",
+  "lat": -33.6964307,
+  "lon": 150.5350695
+ },
+ {
+  "name": "Warrawee",
+  "kind": "train",
+  "lat": -33.7242007,
+  "lon": 151.1217112
+ },
+ {
+  "name": "Waitara",
+  "kind": "train",
+  "lat": -33.7099879,
+  "lon": 151.1042928
+ },
+ {
+  "name": "Concord West",
+  "kind": "train",
+  "lat": -33.8484033,
+  "lon": 151.0856114
+ },
+ {
+  "name": "Hurlstone Park",
+  "kind": "metro",
+  "lat": -33.9105924,
+  "lon": 151.1317928
+ },
+ {
+  "name": "Richmond",
+  "kind": "train",
+  "lat": -33.598844,
+  "lon": 150.7526484
+ },
+ {
+  "name": "Thornleigh",
+  "kind": "train",
+  "lat": -33.731822,
+  "lon": 151.0783865
+ },
+ {
+  "name": "Pennant Hills",
+  "kind": "train",
+  "lat": -33.7379225,
+  "lon": 151.0725562
+ },
+ {
+  "name": "Normanhurst",
+  "kind": "train",
+  "lat": -33.7208458,
+  "lon": 151.0970511
+ },
+ {
+  "name": "Cabramatta",
+  "kind": "train",
+  "lat": -33.8950021,
+  "lon": 150.9388097
+ },
+ {
+  "name": "Turramurra",
+  "kind": "train",
+  "lat": -33.7323074,
+  "lon": 151.1283777
+ },
+ {
+  "name": "Yallamundi",
+  "kind": "train",
+  "lat": -33.8099627,
+  "lon": 151.0292707
+ },
+ {
+  "name": "Dundas",
+  "kind": "train",
+  "lat": -33.8038084,
+  "lon": 151.0332216
+ },
+ {
+  "name": "Telopea",
+  "kind": "train",
+  "lat": -33.7944048,
+  "lon": 151.0411442
+ },
+ {
+  "name": "Carlingford",
+  "kind": "train",
+  "lat": -33.7819695,
+  "lon": 151.0471842
+ },
+ {
+  "name": "Blacktown",
+  "kind": "train",
+  "lat": -33.76845,
+  "lon": 150.9074065
+ },
+ {
+  "name": "Auburn",
+  "kind": "train",
+  "lat": -33.8492852,
+  "lon": 151.0328346
+ },
+ {
+  "name": "Rosehill Gardens",
+  "kind": "train",
+  "lat": -33.8181399,
+  "lon": 151.0244892
+ },
+ {
+  "name": "Tramway Museum",
+  "kind": "light_rail",
+  "lat": -34.044997,
+  "lon": 151.0523484
+ },
+ {
+  "name": "Domestic Airport",
+  "kind": "train",
+  "lat": -33.9336301,
+  "lon": 151.1808722
+ },
+ {
+  "name": "Fairfield",
+  "kind": "train",
+  "lat": -33.8724177,
+  "lon": 150.9570025
+ },
+ {
+  "name": "Strathfield",
+  "kind": "train",
+  "lat": -33.871703,
+  "lon": 151.0942326
+ },
+ {
+  "name": "Burwood",
+  "kind": "train",
+  "lat": -33.8771445,
+  "lon": 151.1040382
+ },
+ {
+  "name": "Wentworthville",
+  "kind": "train",
+  "lat": -33.8071839,
+  "lon": 150.9726612
+ },
+ {
+  "name": "Menangle",
+  "kind": "train",
+  "lat": -34.1252956,
+  "lon": 150.7443838
+ },
+ {
+  "name": "Carlton",
+  "kind": "train",
+  "lat": -33.9682381,
+  "lon": 151.1244983
+ },
+ {
+  "name": "Miranda",
+  "kind": "train",
+  "lat": -34.0363125,
+  "lon": 151.102695
+ },
+ {
+  "name": "Waratah Loop (Sutherland)",
+  "kind": "light_rail",
+  "lat": -34.0363153,
+  "lon": 151.0545235
+ },
+ {
+  "name": "Menangle Park",
+  "kind": "train",
+  "lat": -34.103653,
+  "lon": 150.7449641
+ },
+ {
+  "name": "Loftus Oval",
+  "kind": "light_rail",
+  "lat": -34.0512242,
+  "lon": 151.0520729
+ },
+ {
+  "name": "Royal National Park",
+  "kind": "train",
+  "lat": -34.0627248,
+  "lon": 151.0567499
+ },
+ {
+  "name": "Kings Cross",
+  "kind": "train",
+  "lat": -33.8744874,
+  "lon": 151.2222308
+ },
+ {
+  "name": "TAFE Crossing",
+  "kind": "light_rail",
+  "lat": -34.0412571,
+  "lon": 151.0534058
+ },
+ {
+  "name": "Artarmon",
+  "kind": "train",
+  "lat": -33.808856,
+  "lon": 151.1851425
+ },
+ {
+  "name": "International Airport",
+  "kind": "train",
+  "lat": -33.9349749,
+  "lon": 151.1658747
+ },
+ {
+  "name": "Windsor",
+  "kind": "train",
+  "lat": -33.6136867,
+  "lon": 150.8110535
+ },
+ {
+  "name": "Kingsgrove",
+  "kind": "train",
+  "lat": -33.9405679,
+  "lon": 151.1006334
+ },
+ {
+  "name": "Doonside",
+  "kind": "train",
+  "lat": -33.7639932,
+  "lon": 150.868382
+ },
+ {
+  "name": "Kogarah",
+  "kind": "train",
+  "lat": -33.9621586,
+  "lon": 151.132574
+ },
+ {
+  "name": "Circular Quay",
+  "kind": "train",
+  "lat": -33.8613593,
+  "lon": 151.2107193
+ },
+ {
+  "name": "Town Hall",
+  "kind": "train",
+  "lat": -33.873567,
+  "lon": 151.2068498
+ },
+ {
+  "name": "Engadine",
+  "kind": "train",
+  "lat": -34.0678648,
+  "lon": 151.0147301
+ },
+ {
+  "name": "Milsons Point",
+  "kind": "train",
+  "lat": -33.8458627,
+  "lon": 151.2117909
+ },
+ {
+  "name": "Wollstonecraft",
+  "kind": "train",
+  "lat": -33.8317125,
+  "lon": 151.1917276
+ },
+ {
+  "name": "Como",
+  "kind": "train",
+  "lat": -34.0043476,
+  "lon": 151.068064
+ },
+ {
+  "name": "Heathcote",
+  "kind": "train",
+  "lat": -34.0879621,
+  "lon": 151.0082554
+ },
+ {
+  "name": "Mortdale",
+  "kind": "train",
+  "lat": -33.9708469,
+  "lon": 151.0811258
+ },
+ {
+  "name": "Penshurst",
+  "kind": "train",
+  "lat": -33.9661553,
+  "lon": 151.0891799
+ },
+ {
+  "name": "Allawah",
+  "kind": "train",
+  "lat": -33.9696934,
+  "lon": 151.1145108
+ },
+ {
+  "name": "St Peters",
+  "kind": "train",
+  "lat": -33.9072863,
+  "lon": 151.1806702
+ },
+ {
+  "name": "Bardwell Park",
+  "kind": "train",
+  "lat": -33.9316025,
+  "lon": 151.1248844
+ },
+ {
+  "name": "Loftus",
+  "kind": "train",
+  "lat": -34.0453436,
+  "lon": 151.0513461
+ },
+ {
+  "name": "Ashfield",
+  "kind": "train",
+  "lat": -33.8876579,
+  "lon": 151.1258176
+ },
+ {
+  "name": "Asquith",
+  "kind": "train",
+  "lat": -33.6886841,
+  "lon": 151.1080776
+ },
+ {
+  "name": "Beecroft",
+  "kind": "train",
+  "lat": -33.7496341,
+  "lon": 151.0663891
+ },
+ {
+  "name": "Cheltenham",
+  "kind": "train",
+  "lat": -33.7556798,
+  "lon": 151.0785604
+ },
+ {
+  "name": "Denistone",
+  "kind": "train",
+  "lat": -33.7998488,
+  "lon": 151.0873579
+ },
+ {
+  "name": "Eastwood",
+  "kind": "train",
+  "lat": -33.790128,
+  "lon": 151.0822564
+ },
+ {
+  "name": "Gordon",
+  "kind": "train",
+  "lat": -33.7557991,
+  "lon": 151.1543302
+ },
+ {
+  "name": "Mount Kuring-gai",
+  "kind": "train",
+  "lat": -33.6531707,
+  "lon": 151.1368681
+ },
+ {
+  "name": "Petersham",
+  "kind": "train",
+  "lat": -33.8939113,
+  "lon": 151.1553735
+ },
+ {
+  "name": "Punchbowl",
+  "kind": "metro",
+  "lat": -33.9254126,
+  "lon": 151.0557609
+ },
+ {
+  "name": "Summer Hill",
+  "kind": "train",
+  "lat": -33.8904591,
+  "lon": 151.1387232
+ },
+ {
+  "name": "West Ryde",
+  "kind": "train",
+  "lat": -33.8070374,
+  "lon": 151.0902904
+ },
+ {
+  "name": "Blaxland",
+  "kind": "train",
+  "lat": -33.7436266,
+  "lon": 150.6096243
+ },
+ {
+  "name": "Campbelltown",
+  "kind": "train",
+  "lat": -34.0636278,
+  "lon": 150.8143901
+ },
+ {
+  "name": "Clarendon",
+  "kind": "train",
+  "lat": -33.6086191,
+  "lon": 150.7879859
+ },
+ {
+  "name": "East Richmond",
+  "kind": "train",
+  "lat": -33.6017995,
+  "lon": 150.7591827
+ },
+ {
+  "name": "Emu Plains",
+  "kind": "train",
+  "lat": -33.7457008,
+  "lon": 150.6715837
+ },
+ {
+  "name": "Glenbrook",
+  "kind": "train",
+  "lat": -33.7690298,
+  "lon": 150.6207349
+ },
+ {
+  "name": "Holsworthy",
+  "kind": "train",
+  "lat": -33.9632164,
+  "lon": 150.9564652
+ },
+ {
+  "name": "Ingleburn",
+  "kind": "train",
+  "lat": -33.9971947,
+  "lon": 150.864903
+ },
+ {
+  "name": "Kingswood",
+  "kind": "train",
+  "lat": -33.7582886,
+  "lon": 150.7200073
+ },
+ {
+  "name": "Kirrawee",
+  "kind": "train",
+  "lat": -34.0349533,
+  "lon": 151.0719112
+ },
+ {
+  "name": "Lapstone",
+  "kind": "train",
+  "lat": -33.7737699,
+  "lon": 150.6427335
+ },
+ {
+  "name": "Leumeah",
+  "kind": "train",
+  "lat": -34.0507604,
+  "lon": 150.8305071
+ },
+ {
+  "name": "Linden",
+  "kind": "train",
+  "lat": -33.7149196,
+  "lon": 150.5054626
+ },
+ {
+  "name": "Macarthur",
+  "kind": "train",
+  "lat": -34.0719861,
+  "lon": 150.7971899
+ },
+ {
+  "name": "Marayong",
+  "kind": "train",
+  "lat": -33.7461846,
+  "lon": 150.9001907
+ },
+ {
+  "name": "Merrylands",
+  "kind": "train",
+  "lat": -33.8368127,
+  "lon": 150.9923283
+ },
+ {
+  "name": "Minto",
+  "kind": "train",
+  "lat": -34.0272394,
+  "lon": 150.8425751
+ },
+ {
+  "name": "Mount Druitt",
+  "kind": "train",
+  "lat": -33.7695821,
+  "lon": 150.8201965
+ },
+ {
+  "name": "Mulgrave",
+  "kind": "train",
+  "lat": -33.6266428,
+  "lon": 150.8304778
+ },
+ {
+  "name": "Padstow",
+  "kind": "train",
+  "lat": -33.9519026,
+  "lon": 151.0323311
+ },
+ {
+  "name": "Pendle Hill",
+  "kind": "train",
+  "lat": -33.8015021,
+  "lon": 150.9564483
+ },
+ {
+  "name": "Quakers Hill",
+  "kind": "train",
+  "lat": -33.7277275,
+  "lon": 150.8864823
+ },
+ {
+  "name": "Revesby",
+  "kind": "train",
+  "lat": -33.9525282,
+  "lon": 151.0149093
+ },
+ {
+  "name": "Riverstone",
+  "kind": "train",
+  "lat": -33.6791159,
+  "lon": 150.8602876
+ },
+ {
+  "name": "Riverwood",
+  "kind": "train",
+  "lat": -33.9515059,
+  "lon": 151.0521177
+ },
+ {
+  "name": "St Marys",
+  "kind": "train",
+  "lat": -33.7620938,
+  "lon": 150.7751625
+ },
+ {
+  "name": "Tempe",
+  "kind": "train",
+  "lat": -33.9245392,
+  "lon": 151.1564329
+ },
+ {
+  "name": "Toongabbie",
+  "kind": "train",
+  "lat": -33.7874687,
+  "lon": 150.9514631
+ },
+ {
+  "name": "Turrella",
+  "kind": "train",
+  "lat": -33.9299188,
+  "lon": 151.1399608
+ },
+ {
+  "name": "Valley Heights",
+  "kind": "train",
+  "lat": -33.7044936,
+  "lon": 150.5838711
+ },
+ {
+  "name": "Vineyard",
+  "kind": "train",
+  "lat": -33.6504037,
+  "lon": 150.8511233
+ },
+ {
+  "name": "Warrimoo",
+  "kind": "train",
+  "lat": -33.7212855,
+  "lon": 150.6023458
+ },
+ {
+  "name": "Werrington",
+  "kind": "train",
+  "lat": -33.7592193,
+  "lon": 150.7579395
+ },
+ {
+  "name": "Wolli Creek",
+  "kind": "train",
+  "lat": -33.9285225,
+  "lon": 151.1539888
+ },
+ {
+  "name": "Berowra",
+  "kind": "train",
+  "lat": -33.6235384,
+  "lon": 151.1531676
+ },
+ {
+  "name": "Birrong",
+  "kind": "train",
+  "lat": -33.8933152,
+  "lon": 151.0240303
+ },
+ {
+  "name": "Canley Vale",
+  "kind": "train",
+  "lat": -33.8872029,
+  "lon": 150.9436605
+ },
+ {
+  "name": "Carramar",
+  "kind": "train",
+  "lat": -33.8843192,
+  "lon": 150.9615133
+ },
+ {
+  "name": "Glenfield",
+  "kind": "train",
+  "lat": -33.9722422,
+  "lon": 150.8930882
+ },
+ {
+  "name": "Guildford",
+  "kind": "train",
+  "lat": -33.8543165,
+  "lon": 150.9844864
+ },
+ {
+  "name": "Leightonfield",
+  "kind": "train",
+  "lat": -33.8815246,
+  "lon": 150.9852256
+ },
+ {
+  "name": "Macquarie Fields",
+  "kind": "train",
+  "lat": -33.9847895,
+  "lon": 150.8789007
+ },
+ {
+  "name": "Sefton",
+  "kind": "train",
+  "lat": -33.8852552,
+  "lon": 151.0114843
+ },
+ {
+  "name": "Wahroonga",
+  "kind": "train",
+  "lat": -33.7175388,
+  "lon": 151.1169979
+ },
+ {
+  "name": "Warwick Farm",
+  "kind": "train",
+  "lat": -33.9133304,
+  "lon": 150.9351023
+ },
+ {
+  "name": "Waverton",
+  "kind": "train",
+  "lat": -33.8380922,
+  "lon": 151.1976471
+ },
+ {
+  "name": "Wynyard",
+  "kind": "train",
+  "lat": -33.8659903,
+  "lon": 151.2058096
+ },
+ {
+  "name": "Yennora",
+  "kind": "train",
+  "lat": -33.8646287,
+  "lon": 150.9711499
+ },
+ {
+  "name": "Schofields",
+  "kind": "train",
+  "lat": -33.7043304,
+  "lon": 150.8737724
+ },
+ {
+  "name": "Chester Hill",
+  "kind": "train",
+  "lat": -33.8835449,
+  "lon": 150.9994175
+ },
+ {
+  "name": "Springwood",
+  "kind": "train",
+  "lat": -33.6987482,
+  "lon": 150.5639732
+ },
+ {
+  "name": "Rhodes",
+  "kind": "train",
+  "lat": -33.8304008,
+  "lon": 151.0870609
+ },
+ {
+  "name": "Marion",
+  "kind": "train",
+  "lat": -33.8839739,
+  "lon": 151.145122
+ },
+ {
+  "name": "Taverners Hill",
+  "kind": "train",
+  "lat": -33.8891648,
+  "lon": 151.1452623
+ },
+ {
+  "name": "Hawthorne",
+  "kind": "train",
+  "lat": -33.879569,
+  "lon": 151.1472257
+ },
+ {
+  "name": "Leichhardt North",
+  "kind": "train",
+  "lat": -33.8749849,
+  "lon": 151.1541434
+ },
+ {
+  "name": "Edmondson Park",
+  "kind": "train",
+  "lat": -33.9692716,
+  "lon": 150.858626
+ },
+ {
+  "name": "Yagoona",
+  "kind": "train",
+  "lat": -33.9067491,
+  "lon": 151.0243075
+ },
+ {
+  "name": "Hornsby",
+  "kind": "train",
+  "lat": -33.7034849,
+  "lon": 151.0983925
+ },
+ {
+  "name": "Casula",
+  "kind": "train",
+  "lat": -33.9501572,
+  "lon": 150.9118445
+ },
+ {
+  "name": "Wiley Park",
+  "kind": "metro",
+  "lat": -33.9229545,
+  "lon": 151.067336
+ },
+ {
+  "name": "Granville",
+  "kind": "train",
+  "lat": -33.8330942,
+  "lon": 151.0124059
+ },
+ {
+  "name": "Newtown",
+  "kind": "train",
+  "lat": -33.8979176,
+  "lon": 151.1796131
+ },
+ {
+  "name": "Macdonaldtown",
+  "kind": "train",
+  "lat": -33.8969053,
+  "lon": 151.1858923
+ },
+ {
+  "name": "North Sydney",
+  "kind": "train",
+  "lat": -33.8412146,
+  "lon": 151.2074639
+ },
+ {
+  "name": "Seven Hills",
+  "kind": "train",
+  "lat": -33.7743672,
+  "lon": 150.9362605
+ },
+ {
+  "name": "Dulwich Hill",
+  "kind": "train",
+  "lat": -33.9103059,
+  "lon": 151.1400503
+ },
+ {
+  "name": "Dulwich Grove",
+  "kind": "train",
+  "lat": -33.9050316,
+  "lon": 151.1390454
+ },
+ {
+  "name": "Arlington",
+  "kind": "train",
+  "lat": -33.9018878,
+  "lon": 151.1381029
+ },
+ {
+  "name": "Waratah Mills",
+  "kind": "train",
+  "lat": -33.8987942,
+  "lon": 151.1401465
+ },
+ {
+  "name": "Lewisham West",
+  "kind": "train",
+  "lat": -33.893838,
+  "lon": 151.1434089
+ },
+ {
+  "name": "Lilyfield",
+  "kind": "train",
+  "lat": -33.874167,
+  "lon": 151.1650692
+ },
+ {
+  "name": "Rozelle Bay",
+  "kind": "train",
+  "lat": -33.8718655,
+  "lon": 151.1727203
+ },
+ {
+  "name": "Jubilee Park",
+  "kind": "train",
+  "lat": -33.8754286,
+  "lon": 151.1787216
+ },
+ {
+  "name": "Wentworth Park",
+  "kind": "train",
+  "lat": -33.8743907,
+  "lon": 151.1940407
+ },
+ {
+  "name": "Bank Street",
+  "kind": "train",
+  "lat": -33.8709375,
+  "lon": 151.1924379
+ },
+ {
+  "name": "John Street Square",
+  "kind": "train",
+  "lat": -33.8674297,
+  "lon": 151.1920361
+ },
+ {
+  "name": "The Star",
+  "kind": "train",
+  "lat": -33.8676611,
+  "lon": 151.1952923
+ },
+ {
+  "name": "Pyrmont Bay",
+  "kind": "train",
+  "lat": -33.8694257,
+  "lon": 151.1975783
+ },
+ {
+  "name": "Convention",
+  "kind": "train",
+  "lat": -33.8725775,
+  "lon": 151.1980698
+ },
+ {
+  "name": "Exhibition Centre",
+  "kind": "train",
+  "lat": -33.8772478,
+  "lon": 151.1996527
+ },
+ {
+  "name": "Paddy's Markets",
+  "kind": "train",
+  "lat": -33.8793182,
+  "lon": 151.2027158
+ },
+ {
+  "name": "Capitol Square",
+  "kind": "train",
+  "lat": -33.8798044,
+  "lon": 151.2056706
+ },
+ {
+  "name": "Central Grand Concourse",
+  "kind": "train",
+  "lat": -33.8824091,
+  "lon": 151.2067227
+ },
+ {
+  "name": "Chatswood",
+  "kind": "metro",
+  "lat": -33.7974806,
+  "lon": 151.180939
+ },
+ {
+  "name": "Epping",
+  "kind": "metro",
+  "lat": -33.7728628,
+  "lon": 151.0820902
+ },
+ {
+  "name": "Meadowbank",
+  "kind": "train",
+  "lat": -33.8159137,
+  "lon": 151.0900998
+ },
+ {
+  "name": "Belmore",
+  "kind": "metro",
+  "lat": -33.9171961,
+  "lon": 151.0887104
+ },
+ {
+  "name": "Roseville",
+  "kind": "train",
+  "lat": -33.7843685,
+  "lon": 151.1775506
+ },
+ {
+  "name": "Lindfield",
+  "kind": "train",
+  "lat": -33.7756095,
+  "lon": 151.1692144
+ },
+ {
+  "name": "Croydon",
+  "kind": "train",
+  "lat": -33.8832296,
+  "lon": 151.1155955
+ },
+ {
+  "name": "North Strathfield",
+  "kind": "train",
+  "lat": -33.8590236,
+  "lon": 151.0881331
+ },
+ {
+  "name": "Mascot",
+  "kind": "train",
+  "lat": -33.9231912,
+  "lon": 151.1872655
+ },
+ {
+  "name": "Narwee",
+  "kind": "train",
+  "lat": -33.9475765,
+  "lon": 151.0702555
+ },
+ {
+  "name": "Panania",
+  "kind": "train",
+  "lat": -33.9543358,
+  "lon": 150.9978399
+ },
+ {
+  "name": "East Hills",
+  "kind": "train",
+  "lat": -33.9618532,
+  "lon": 150.9846273
+ },
+ {
+  "name": "Sydenham",
+  "kind": "train",
+  "lat": -33.9147428,
+  "lon": 151.1661069
+ },
+ {
+  "name": "Bexley North",
+  "kind": "train",
+  "lat": -33.9375479,
+  "lon": 151.1134896
+ },
+ {
+  "name": "Beverly Hills",
+  "kind": "train",
+  "lat": -33.9490787,
+  "lon": 151.0810471
+ },
+ {
+  "name": "Martin Place",
+  "kind": "train",
+  "lat": -33.8678177,
+  "lon": 151.210759
+ },
+ {
+  "name": "Lakemba",
+  "kind": "metro",
+  "lat": -33.9201175,
+  "lon": 151.0758653
+ },
+ {
+  "name": "Liverpool",
+  "kind": "train",
+  "lat": -33.9245421,
+  "lon": 150.9276398
+ },
+ {
+  "name": "Harris Park",
+  "kind": "train",
+  "lat": -33.8233375,
+  "lon": 151.0076541
+ },
+ {
+  "name": "Westmead",
+  "kind": "train",
+  "lat": -33.8084959,
+  "lon": 150.9880176
+ },
+ {
+  "name": "Homebush",
+  "kind": "train",
+  "lat": -33.8668117,
+  "lon": 151.0864608
+ },
+ {
+  "name": "Stanmore",
+  "kind": "train",
+  "lat": -33.8945133,
+  "lon": 151.1639072
+ },
+ {
+  "name": "Lewisham",
+  "kind": "train",
+  "lat": -33.8933685,
+  "lon": 151.1476275
+ },
+ {
+  "name": "Woolooware",
+  "kind": "train",
+  "lat": -34.0476621,
+  "lon": 151.1440873
+ },
+ {
+  "name": "Caringbah",
+  "kind": "train",
+  "lat": -34.0415962,
+  "lon": 151.1227396
+ },
+ {
+  "name": "Gymea",
+  "kind": "train",
+  "lat": -34.0348927,
+  "lon": 151.0855146
+ },
+ {
+  "name": "Cronulla",
+  "kind": "train",
+  "lat": -34.0557283,
+  "lon": 151.1514553
+ },
+ {
+  "name": "Banksia",
+  "kind": "train",
+  "lat": -33.9453399,
+  "lon": 151.140407
+ },
+ {
+  "name": "Rockdale",
+  "kind": "train",
+  "lat": -33.9518729,
+  "lon": 151.1368534
+ },
+ {
+  "name": "Arncliffe",
+  "kind": "train",
+  "lat": -33.936435,
+  "lon": 151.1473489
+ },
+ {
+  "name": "Oatley",
+  "kind": "train",
+  "lat": -33.9805174,
+  "lon": 151.0790256
+ },
+ {
+  "name": "Jannali",
+  "kind": "train",
+  "lat": -34.015952,
+  "lon": 151.06463
+ },
+ {
+  "name": "Sutherland",
+  "kind": "train",
+  "lat": -34.0316252,
+  "lon": 151.0572738
+ },
+ {
+  "name": "Penrith",
+  "kind": "train",
+  "lat": -33.7499883,
+  "lon": 150.696094
+ },
+ {
+  "name": "Mount Colah",
+  "kind": "train",
+  "lat": -33.6719686,
+  "lon": 151.1145291
+ },
+ {
+  "name": "Pymble",
+  "kind": "train",
+  "lat": -33.7447018,
+  "lon": 151.1419726
+ },
+ {
+  "name": "Berala",
+  "kind": "train",
+  "lat": -33.8719154,
+  "lon": 151.0322942
+ },
+ {
+  "name": "Regents Park",
+  "kind": "train",
+  "lat": -33.8828393,
+  "lon": 151.0242784
+ },
+ {
+  "name": "Villawood",
+  "kind": "train",
+  "lat": -33.8808812,
+  "lon": 150.9761642
+ },
+ {
+  "name": "Bankstown",
+  "kind": "train",
+  "lat": -33.917844,
+  "lon": 151.0346402
+ },
+ {
+  "name": "Campsie",
+  "kind": "metro",
+  "lat": -33.9105708,
+  "lon": 151.1026511
+ },
+ {
+  "name": "Canterbury",
+  "kind": "metro",
+  "lat": -33.9119882,
+  "lon": 151.1186885
+ },
+ {
+  "name": "Dulwich Hill",
+  "kind": "metro",
+  "lat": -33.9110089,
+  "lon": 151.140913
+ },
+ {
+  "name": "Erskineville",
+  "kind": "train",
+  "lat": -33.9009517,
+  "lon": 151.1852676
+ },
+ {
+  "name": "Railway Square",
+  "kind": "light_rail",
+  "lat": -34.0463128,
+  "lon": 151.0519748
+ },
+ {
+  "name": "Lakewood Park",
+  "kind": "light_rail",
+  "lat": -34.0460372,
+  "lon": 151.0517632
+ },
+ {
+  "name": "Tramway Avenue",
+  "kind": "train",
+  "lat": -33.817206,
+  "lon": 151.0185111
+ },
+ {
+  "name": "Robin Thomas",
+  "kind": "train",
+  "lat": -33.8169223,
+  "lon": 151.0112047
+ },
+ {
+  "name": "Parramatta Square",
+  "kind": "train",
+  "lat": -33.815554,
+  "lon": 151.0051301
+ },
+ {
+  "name": "Church Street",
+  "kind": "train",
+  "lat": -33.8129468,
+  "lon": 151.0036168
+ },
+ {
+  "name": "Prince Alfred Square",
+  "kind": "train",
+  "lat": -33.8090725,
+  "lon": 151.0052567
+ },
+ {
+  "name": "Fennell Street",
+  "kind": "train",
+  "lat": -33.8051861,
+  "lon": 151.0058333
+ },
+ {
+  "name": "Benaud Oval",
+  "kind": "train",
+  "lat": -33.800814,
+  "lon": 151.0045582
+ },
+ {
+  "name": "Ngara",
+  "kind": "train",
+  "lat": -33.8014592,
+  "lon": 151.0013831
+ },
+ {
+  "name": "Childrens Hospital",
+  "kind": "train",
+  "lat": -33.802589,
+  "lon": 150.9930356
+ },
+ {
+  "name": "Westmead Hospital",
+  "kind": "train",
+  "lat": -33.804709,
+  "lon": 150.9900754
+ },
+ {
+  "name": "Olympic Park",
+  "kind": "train",
+  "lat": -33.8465386,
+  "lon": 151.0695113
+ },
+ {
+  "name": "Museum",
+  "kind": "train",
+  "lat": -33.8758957,
+  "lon": 151.2099963
+ },
+ {
+  "name": "Leppington",
+  "kind": "train",
+  "lat": -33.9543931,
+  "lon": 150.8080634
+ },
+ {
+  "name": "Redfern",
+  "kind": "train",
+  "lat": -33.8922899,
+  "lon": 151.198334
+ },
+ {
+  "name": "North Ryde",
+  "kind": "metro",
+  "lat": -33.794418,
+  "lon": 151.1380737
+ },
+ {
+  "name": "Macquarie Park",
+  "kind": "metro",
+  "lat": -33.7851282,
+  "lon": 151.1282852
+ },
+ {
+  "name": "Macquarie University",
+  "kind": "metro",
+  "lat": -33.7774136,
+  "lon": 151.1181983
+ },
+ {
+  "name": "Cherrybrook",
+  "kind": "metro",
+  "lat": -33.7365763,
+  "lon": 151.0318762
+ },
+ {
+  "name": "Castle Hill",
+  "kind": "metro",
+  "lat": -33.7314823,
+  "lon": 151.0078084
+ },
+ {
+  "name": "Hills Showground",
+  "kind": "metro",
+  "lat": -33.7278031,
+  "lon": 150.9873944
+ },
+ {
+  "name": "Norwest",
+  "kind": "metro",
+  "lat": -33.7342618,
+  "lon": 150.9639777
+ },
+ {
+  "name": "Bella Vista",
+  "kind": "metro",
+  "lat": -33.7306227,
+  "lon": 150.943986
+ },
+ {
+  "name": "Kellyville",
+  "kind": "metro",
+  "lat": -33.7131238,
+  "lon": 150.9350813
+ },
+ {
+  "name": "Rouse Hill",
+  "kind": "metro",
+  "lat": -33.6918128,
+  "lon": 150.9241449
+ },
+ {
+  "name": "Tallawong",
+  "kind": "metro",
+  "lat": -33.6917547,
+  "lon": 150.9055286
+ },
+ {
+  "name": "Central",
+  "kind": "train",
+  "lat": -33.8838807,
+  "lon": 151.2059708
+ },
+ {
+  "name": "Chinatown",
+  "kind": "train",
+  "lat": -33.8786137,
+  "lon": 151.2055603
+ },
+ {
+  "name": "Haymarket",
+  "kind": "train",
+  "lat": -33.8814484,
+  "lon": 151.2053643
+ },
+ {
+  "name": "Moore Park",
+  "kind": "train",
+  "lat": -33.8936298,
+  "lon": 151.2218107
+ },
+ {
+  "name": "Randwick",
+  "kind": "train",
+  "lat": -33.9171286,
+  "lon": 151.2405483
+ },
+ {
+  "name": "Surry Hills",
+  "kind": "train",
+  "lat": -33.8880987,
+  "lon": 151.2118718
+ },
+ {
+  "name": "Royal Randwick",
+  "kind": "train",
+  "lat": -33.9051719,
+  "lon": 151.2288501
+ },
+ {
+  "name": "Wansey Road",
+  "kind": "train",
+  "lat": -33.9105023,
+  "lon": 151.2351954
+ },
+ {
+  "name": "UNSW High Street",
+  "kind": "train",
+  "lat": -33.9163817,
+  "lon": 151.2355384
+ },
+ {
+  "name": "Circular Quay",
+  "kind": "train",
+  "lat": -33.8615109,
+  "lon": 151.2100521
+ },
+ {
+  "name": "Town Hall",
+  "kind": "train",
+  "lat": -33.8738575,
+  "lon": 151.2068941
+ },
+ {
+  "name": "QVB",
+  "kind": "train",
+  "lat": -33.8715701,
+  "lon": 151.2069676
+ },
+ {
+  "name": "Wynyard",
+  "kind": "train",
+  "lat": -33.8666673,
+  "lon": 151.2071759
+ },
+ {
+  "name": "Bridge Street",
+  "kind": "train",
+  "lat": -33.864126,
+  "lon": 151.2074568
+ },
+ {
+  "name": "Central Chalmers Street",
+  "kind": "train",
+  "lat": -33.884214,
+  "lon": 151.2076626
+ },
+ {
+  "name": "ES Marks",
+  "kind": "train",
+  "lat": -33.905626,
+  "lon": 151.2239576
+ },
+ {
+  "name": "UNSW Anzac Parade",
+  "kind": "train",
+  "lat": -33.9166756,
+  "lon": 151.2259046
+ },
+ {
+  "name": "Kensington",
+  "kind": "train",
+  "lat": -33.9094123,
+  "lon": 151.2233468
+ },
+ {
+  "name": "Kingsford",
+  "kind": "train",
+  "lat": -33.9217862,
+  "lon": 151.2268694
+ },
+ {
+  "name": "Killara",
+  "kind": "train",
+  "lat": -33.7654902,
+  "lon": 151.1616904
+ },
+ {
+  "name": "St James",
+  "kind": "train",
+  "lat": -33.8708996,
+  "lon": 151.21182
+ },
+ {
+  "name": "Glebe",
+  "kind": "train",
+  "lat": -33.8772077,
+  "lon": 151.1874173
+ },
+ {
+  "name": "Westmead",
+  "kind": "train",
+  "lat": -33.807478,
+  "lon": 150.9876766
+ },
+ {
+  "name": "Crows Nest",
+  "kind": "metro",
+  "lat": -33.8257383,
+  "lon": 151.1992543
+ },
+ {
+  "name": "Victoria Cross",
+  "kind": "metro",
+  "lat": -33.836203,
+  "lon": 151.2077604
+ },
+ {
+  "name": "Barangaroo",
+  "kind": "metro",
+  "lat": -33.8596761,
+  "lon": 151.2025428
+ },
+ {
+  "name": "Martin Place",
+  "kind": "metro",
+  "lat": -33.8672957,
+  "lon": 151.2102515
+ },
+ {
+  "name": "Gadigal",
+  "kind": "metro",
+  "lat": -33.8738448,
+  "lon": 151.2086297
+ },
+ {
+  "name": "Waterloo",
+  "kind": "metro",
+  "lat": -33.8977144,
+  "lon": 151.2003242
+ },
+ {
+  "name": "Cowan",
+  "kind": "train",
+  "lat": -33.5931149,
+  "lon": 151.1716862
+ }
+]

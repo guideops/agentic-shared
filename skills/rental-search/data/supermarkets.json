@@ -1,0 +1,5096 @@
+[
+ {
+  "name": "Woolworths",
+  "lat": -34.0436411,
+  "lon": 151.1183731,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9445458,
+  "lon": 151.2249659,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.9512672,
+  "lon": 151.2499369,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8770719,
+  "lon": 151.2071568,
+  "major": true
+ },
+ {
+  "name": "Coles Chatswood Chase",
+  "lat": -33.7935172,
+  "lon": 151.1864637,
+  "major": true
+ },
+ {
+  "name": "Mt Riverview Supermarket",
+  "lat": -33.7313416,
+  "lon": 150.6294751,
+  "major": false
+ },
+ {
+  "name": "Ritchies Supa IGA",
+  "lat": -33.8237916,
+  "lon": 151.2403688,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8888624,
+  "lon": 151.1235965,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8900655,
+  "lon": 151.1248645,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8747396,
+  "lon": 151.1069987,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8744396,
+  "lon": 151.1050072,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.778528,
+  "lon": 151.107676,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.743567,
+  "lon": 150.6083812,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7326235,
+  "lon": 151.1273443,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7340511,
+  "lon": 151.1267779,
+  "major": true
+ },
+ {
+  "name": "IGA Local Grocer Wahroonga Fresh",
+  "lat": -33.718077,
+  "lon": 151.1164002,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7313049,
+  "lon": 151.0819032,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.755084,
+  "lon": 151.1518233,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8957343,
+  "lon": 151.1992232,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6712368,
+  "lon": 150.6080029,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0640468,
+  "lon": 151.0137778,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8959703,
+  "lon": 151.1805746,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.6818597,
+  "lon": 151.0280654,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7337606,
+  "lon": 150.928205,
+  "major": true
+ },
+ {
+  "name": "Supamart IGA Cremorne",
+  "lat": -33.8286756,
+  "lon": 151.2299385,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9182121,
+  "lon": 150.9239052,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8867361,
+  "lon": 150.8897456,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7578989,
+  "lon": 150.6925299,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.789278,
+  "lon": 150.6684464,
+  "major": true
+ },
+ {
+  "name": "Hammondville IGA",
+  "lat": -33.9484837,
+  "lon": 150.954579,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7182834,
+  "lon": 150.9201619,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.867843,
+  "lon": 151.1290895,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7527934,
+  "lon": 150.6587882,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7523025,
+  "lon": 150.659185,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6758204,
+  "lon": 151.3055511,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9443176,
+  "lon": 151.2238456,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.7668797,
+  "lon": 150.6226034,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8287181,
+  "lon": 150.9514309,
+  "major": true
+ },
+ {
+  "name": "Oatlands IGA",
+  "lat": -33.7973304,
+  "lon": 151.0255588,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8181755,
+  "lon": 150.9331628,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.818392,
+  "lon": 151.0902623,
+  "major": true
+ },
+ {
+  "name": "Get & Go",
+  "lat": -33.8653581,
+  "lon": 151.2066638,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8151359,
+  "lon": 151.1691258,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.6609277,
+  "lon": 151.0060908,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7465487,
+  "lon": 150.9522412,
+  "major": true
+ },
+ {
+  "name": "Lucky Mart",
+  "lat": -33.8080772,
+  "lon": 151.1851058,
+  "major": false
+ },
+ {
+  "name": "Dee Why Fruit Market",
+  "lat": -33.753885,
+  "lon": 151.287396,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9142324,
+  "lon": 151.2013529,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9594429,
+  "lon": 151.15442,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8648113,
+  "lon": 151.2064613,
+  "major": true
+ },
+ {
+  "name": "Oakdale Freindly Grocer",
+  "lat": -34.0793614,
+  "lon": 150.5094485,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -34.084019,
+  "lon": 151.1517013,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7586008,
+  "lon": 150.9923688,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7587504,
+  "lon": 150.9914378,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7300036,
+  "lon": 151.0057637,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7590089,
+  "lon": 150.9909112,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8579345,
+  "lon": 151.1811878,
+  "major": true
+ },
+ {
+  "name": "IGA Woronora Heights",
+  "lat": -34.0335237,
+  "lon": 151.026282,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9805714,
+  "lon": 151.0805747,
+  "major": true
+ },
+ {
+  "name": "Coles Oatley West",
+  "lat": -33.980438,
+  "lon": 151.0760584,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9564771,
+  "lon": 150.9987075,
+  "major": true
+ },
+ {
+  "name": "The Village Fruit Market",
+  "lat": -33.6744819,
+  "lon": 151.3057989,
+  "major": false
+ },
+ {
+  "name": "Tower Street Mixed Business",
+  "lat": -33.9579432,
+  "lon": 151.0113694,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7443556,
+  "lon": 150.8094212,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9239787,
+  "lon": 151.227595,
+  "major": true
+ },
+ {
+  "name": "Ka Lot Fuk Supermarket",
+  "lat": -33.9675989,
+  "lon": 151.1052721,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6070776,
+  "lon": 150.818948,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6051584,
+  "lon": 150.8214583,
+  "major": true
+ },
+ {
+  "name": "Hurstville Groceries",
+  "lat": -33.9673975,
+  "lon": 151.1040193,
+  "major": false
+ },
+ {
+  "name": "Li Cheng Supermarket",
+  "lat": -33.9675783,
+  "lon": 151.1038763,
+  "major": false
+ },
+ {
+  "name": "Coles Hurstville",
+  "lat": -33.9665259,
+  "lon": 151.1051259,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9663598,
+  "lon": 151.1061192,
+  "major": true
+ },
+ {
+  "name": "Coles Hurstville Station",
+  "lat": -33.9672223,
+  "lon": 151.1022627,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.962419,
+  "lon": 151.1328907,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.656192,
+  "lon": 151.1338842,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7128398,
+  "lon": 150.9720455,
+  "major": true
+ },
+ {
+  "name": "Lloyds Supa IGA",
+  "lat": -34.0518247,
+  "lon": 151.1526635,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7781165,
+  "lon": 151.1209738,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7776776,
+  "lon": 151.1201923,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -34.0538968,
+  "lon": 151.1524304,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8391632,
+  "lon": 151.208347,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9194401,
+  "lon": 150.9246498,
+  "major": true
+ },
+ {
+  "name": "Tokyo Mart",
+  "lat": -33.8099595,
+  "lon": 151.20916,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8102799,
+  "lon": 151.2085435,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7726145,
+  "lon": 150.9700783,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7506749,
+  "lon": 150.6905954,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7503212,
+  "lon": 150.6912771,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.769033,
+  "lon": 151.2661234,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.6775598,
+  "lon": 151.3022081,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8656811,
+  "lon": 151.2062069,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7658958,
+  "lon": 151.2647602,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.5817415,
+  "lon": 150.7207911,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -34.0335278,
+  "lon": 151.0581875,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.7541159,
+  "lon": 150.8105656,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7679775,
+  "lon": 150.8197084,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8945995,
+  "lon": 151.2049073,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8325095,
+  "lon": 150.9685296,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.9390492,
+  "lon": 151.1149829,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7989033,
+  "lon": 151.2870032,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.815448,
+  "lon": 150.9714286,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8701406,
+  "lon": 151.2252405,
+  "major": true
+ },
+ {
+  "name": "Welcome Mart",
+  "lat": -33.8999297,
+  "lon": 151.1845753,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8801277,
+  "lon": 151.1874169,
+  "major": true
+ },
+ {
+  "name": "Woolworths Chester Hill",
+  "lat": -33.8821986,
+  "lon": 151.0002949,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9390557,
+  "lon": 150.8446601,
+  "major": true
+ },
+ {
+  "name": "IGA, Pitt Town",
+  "lat": -33.5863544,
+  "lon": 150.8594804,
+  "major": true
+ },
+ {
+  "name": "Woolworths Newington",
+  "lat": -33.8340473,
+  "lon": 151.0556606,
+  "major": true
+ },
+ {
+  "name": "Newington Asian Grocery",
+  "lat": -33.8337745,
+  "lon": 151.0567335,
+  "major": false
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.8285434,
+  "lon": 151.1182669,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7669754,
+  "lon": 150.7699916,
+  "major": true
+ },
+ {
+  "name": "IGA Express",
+  "lat": -33.7702563,
+  "lon": 150.7731251,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6015297,
+  "lon": 151.0069111,
+  "major": true
+ },
+ {
+  "name": "Riverstone IGA",
+  "lat": -33.6785918,
+  "lon": 150.8608733,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8863247,
+  "lon": 151.1582955,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.5987603,
+  "lon": 150.7544025,
+  "major": true
+ },
+ {
+  "name": "IGA Xpress South Turramurra",
+  "lat": -33.7488881,
+  "lon": 151.1119792,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7284705,
+  "lon": 151.2174015,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8296546,
+  "lon": 151.2186431,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9145805,
+  "lon": 150.9621001,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9477743,
+  "lon": 150.8994282,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.785756,
+  "lon": 150.8004797,
+  "major": true
+ },
+ {
+  "name": "Genki Mart",
+  "lat": -33.8758585,
+  "lon": 151.2053439,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -34.0726624,
+  "lon": 150.8425648,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7941619,
+  "lon": 151.1224484,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6902023,
+  "lon": 150.9275802,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6921072,
+  "lon": 150.9258191,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.681948,
+  "lon": 150.916518,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.6851459,
+  "lon": 150.9183556,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8683497,
+  "lon": 150.9582151,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8932306,
+  "lon": 150.9385289,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.85721,
+  "lon": 151.1031659,
+  "major": true
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.8224654,
+  "lon": 151.1336321,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8220911,
+  "lon": 151.1339111,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7047506,
+  "lon": 151.0993583,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7049693,
+  "lon": 151.10056,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7032774,
+  "lon": 151.1011196,
+  "major": true
+ },
+ {
+  "name": "IGA Local Grocer West Pymble",
+  "lat": -33.7609158,
+  "lon": 151.1283553,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7893949,
+  "lon": 150.890104,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8750628,
+  "lon": 151.2224263,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9018541,
+  "lon": 151.2005587,
+  "major": true
+ },
+ {
+  "name": "Eastern Groceries",
+  "lat": -33.95374,
+  "lon": 151.0338439,
+  "major": false
+ },
+ {
+  "name": "QE Foodstores",
+  "lat": -33.8877225,
+  "lon": 151.180329,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7121947,
+  "lon": 151.2979876,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8833118,
+  "lon": 151.2159415,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0683674,
+  "lon": 150.8111495,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0683942,
+  "lon": 150.8101469,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0754121,
+  "lon": 150.7980966,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0757276,
+  "lon": 150.7981771,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0714712,
+  "lon": 150.8038638,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7935191,
+  "lon": 151.2644589,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9151746,
+  "lon": 151.0409224,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0349243,
+  "lon": 151.0989592,
+  "major": true
+ },
+ {
+  "name": "Coles Parramatta North",
+  "lat": -33.8083685,
+  "lon": 151.0064546,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6957119,
+  "lon": 151.2952831,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6964885,
+  "lon": 151.2949301,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7499745,
+  "lon": 151.2239906,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7505958,
+  "lon": 151.2246462,
+  "major": true
+ },
+ {
+  "name": "Mint Fresh IGA",
+  "lat": -33.7567928,
+  "lon": 151.0031234,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8776361,
+  "lon": 151.2129954,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9305917,
+  "lon": 151.1541661,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.623517,
+  "lon": 150.8364678,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.065619,
+  "lon": 151.0144536,
+  "major": true
+ },
+ {
+  "name": "QE Foodstores",
+  "lat": -33.899954,
+  "lon": 151.178239,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7329862,
+  "lon": 150.9626977,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.8988646,
+  "lon": 151.1724307,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9334853,
+  "lon": 150.9492869,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9195577,
+  "lon": 150.9537876,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.8521289,
+  "lon": 151.0848495,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9990316,
+  "lon": 150.8639334,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7896344,
+  "lon": 150.996782,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7489665,
+  "lon": 150.879534,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.869488,
+  "lon": 151.1963751,
+  "major": true
+ },
+ {
+  "name": "Udaya Spice",
+  "lat": -33.8094961,
+  "lon": 150.9717792,
+  "major": false
+ },
+ {
+  "name": "Woolworths Berala",
+  "lat": -33.8716758,
+  "lon": 151.0320995,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.882121,
+  "lon": 151.2278436,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8975883,
+  "lon": 151.2133838,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8035289,
+  "lon": 150.9795849,
+  "major": true
+ },
+ {
+  "name": "Just Organics Fruit & Veg",
+  "lat": -33.8906262,
+  "lon": 151.2438372,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7921756,
+  "lon": 151.08149,
+  "major": true
+ },
+ {
+  "name": "Thai Kee IGA",
+  "lat": -33.8796334,
+  "lon": 151.2031238,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8027349,
+  "lon": 150.95554,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7862557,
+  "lon": 150.9670347,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9163633,
+  "lon": 151.0373091,
+  "major": true
+ },
+ {
+  "name": "IGA Romeo's Food Hall",
+  "lat": -33.8228231,
+  "lon": 151.194663,
+  "major": true
+ },
+ {
+  "name": "Asian Point Grocery",
+  "lat": -33.822744,
+  "lon": 151.193998,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9343534,
+  "lon": 151.0690979,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9243293,
+  "lon": 151.2122813,
+  "major": true
+ },
+ {
+  "name": "Lloyds Supa IGA",
+  "lat": -33.6987766,
+  "lon": 150.5658227,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9197639,
+  "lon": 150.8830457,
+  "major": true
+ },
+ {
+  "name": "IGA Stanmore Plaza",
+  "lat": -33.8950211,
+  "lon": 151.1641443,
+  "major": true
+ },
+ {
+  "name": "Supa IGA",
+  "lat": -33.698298,
+  "lon": 150.9411644,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8420522,
+  "lon": 151.1082152,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.9069604,
+  "lon": 151.0237104,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7689648,
+  "lon": 151.0299572,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7687743,
+  "lon": 151.0278074,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.890006,
+  "lon": 151.2717803,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.776417,
+  "lon": 151.0528086,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8821949,
+  "lon": 151.1732298,
+  "major": true
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.8730451,
+  "lon": 151.2239054,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.870228,
+  "lon": 151.1929945,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8792614,
+  "lon": 151.2355134,
+  "major": true
+ },
+ {
+  "name": "Coles Illawong",
+  "lat": -33.9968174,
+  "lon": 151.0422476,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9375995,
+  "lon": 151.1462176,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7464733,
+  "lon": 150.7408965,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.774145,
+  "lon": 150.696101,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8851142,
+  "lon": 151.1494127,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8849317,
+  "lon": 151.1483629,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7755774,
+  "lon": 150.9312462,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.897751,
+  "lon": 151.2122218,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.775667,
+  "lon": 151.052619,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6127001,
+  "lon": 151.1381686,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7661197,
+  "lon": 150.8210589,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7433082,
+  "lon": 150.9233881,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.729437,
+  "lon": 151.0061383,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0160052,
+  "lon": 151.0660093,
+  "major": true
+ },
+ {
+  "name": "Hornsby Health Food Products and Video",
+  "lat": -33.7020507,
+  "lon": 151.097621,
+  "major": false
+ },
+ {
+  "name": "Hornsby Mart",
+  "lat": -33.7020634,
+  "lon": 151.0977216,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9369318,
+  "lon": 150.8457869,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0481635,
+  "lon": 150.759667,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.050462,
+  "lon": 150.7554712,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0419437,
+  "lon": 150.7384975,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0391422,
+  "lon": 150.7374799,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8642366,
+  "lon": 150.9388534,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7975012,
+  "lon": 151.1841794,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8900018,
+  "lon": 151.1248879,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.5955212,
+  "lon": 150.7494905,
+  "major": true
+ },
+ {
+  "name": "IGA North Epping",
+  "lat": -33.7590149,
+  "lon": 151.0933343,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.7921829,
+  "lon": 150.7806388,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7298013,
+  "lon": 151.1598144,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9048457,
+  "lon": 151.2131902,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7874338,
+  "lon": 150.8327098,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8794577,
+  "lon": 151.2368122,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9410869,
+  "lon": 151.1001385,
+  "major": true
+ },
+ {
+  "name": "ALG Mini Mart",
+  "lat": -33.9242449,
+  "lon": 151.1874259,
+  "major": false
+ },
+ {
+  "name": "Killara Bakery Cafe & Groceries",
+  "lat": -33.7536254,
+  "lon": 151.1758164,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8830311,
+  "lon": 151.1943353,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8838408,
+  "lon": 151.1932625,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8998685,
+  "lon": 150.9927387,
+  "major": true
+ },
+ {
+  "name": "Woolworths Bass Hill",
+  "lat": -33.899708,
+  "lon": 150.9932269,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8937596,
+  "lon": 151.0610814,
+  "major": true
+ },
+ {
+  "name": "Woolworths Chullora",
+  "lat": -33.892446,
+  "lon": 151.0616339,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6010009,
+  "lon": 150.753114,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7725474,
+  "lon": 150.9681496,
+  "major": true
+ },
+ {
+  "name": "Coles Winston Hills",
+  "lat": -33.7728999,
+  "lon": 150.971111,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8600863,
+  "lon": 150.8977335,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8067023,
+  "lon": 151.08824,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0302192,
+  "lon": 150.8495955,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8057925,
+  "lon": 151.0879015,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8785274,
+  "lon": 151.243768,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8313696,
+  "lon": 151.1279539,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9872443,
+  "lon": 150.8909891,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8492864,
+  "lon": 151.0486602,
+  "major": true
+ },
+ {
+  "name": "Woolworths Lidcombe",
+  "lat": -33.8490044,
+  "lon": 151.0479237,
+  "major": true
+ },
+ {
+  "name": "Friendly Grocer",
+  "lat": -33.8732903,
+  "lon": 151.1957989,
+  "major": false
+ },
+ {
+  "name": "Ultimo Pyrmont Supermarket",
+  "lat": -33.8737683,
+  "lon": 151.1960375,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8810537,
+  "lon": 151.2027041,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8847889,
+  "lon": 151.200639,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7703388,
+  "lon": 150.9071803,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9069731,
+  "lon": 150.8678055,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9078123,
+  "lon": 150.8676258,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.870859,
+  "lon": 151.2684341,
+  "major": true
+ },
+ {
+  "name": "Fresh Basket",
+  "lat": -33.8927638,
+  "lon": 151.1864819,
+  "major": false
+ },
+ {
+  "name": "Miracle",
+  "lat": -33.8928234,
+  "lon": 151.1861078,
+  "major": false
+ },
+ {
+  "name": "Miracle Asian Supermarket",
+  "lat": -33.8774327,
+  "lon": 151.2068763,
+  "major": false
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8837104,
+  "lon": 151.2084909,
+  "major": true
+ },
+ {
+  "name": "Elizabeth Bay Deli",
+  "lat": -33.8721554,
+  "lon": 151.2288401,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8788576,
+  "lon": 151.2135219,
+  "major": true
+ },
+ {
+  "name": "Harris Farms Markets",
+  "lat": -33.8235242,
+  "lon": 151.209472,
+  "major": true
+ },
+ {
+  "name": "Spar",
+  "lat": -33.892622,
+  "lon": 151.1995018,
+  "major": false
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8738128,
+  "lon": 151.2162076,
+  "major": true
+ },
+ {
+  "name": "Kukku's Indian Groceries",
+  "lat": -33.7597363,
+  "lon": 150.7201769,
+  "major": false
+ },
+ {
+  "name": "Hallini's Groceries and Take-away",
+  "lat": -33.7611124,
+  "lon": 150.7204706,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7326254,
+  "lon": 150.7817723,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0329589,
+  "lon": 150.8164863,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8891623,
+  "lon": 151.2755238,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8838548,
+  "lon": 150.6937977,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.891633,
+  "lon": 151.2515022,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8929814,
+  "lon": 151.250827,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7460229,
+  "lon": 150.8361623,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8931329,
+  "lon": 151.2482153,
+  "major": true
+ },
+ {
+  "name": "Concord West Supermarket",
+  "lat": -33.8478586,
+  "lon": 151.0864213,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7197659,
+  "lon": 150.9192853,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.703851,
+  "lon": 150.8759113,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7698463,
+  "lon": 150.9046957,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.9442003,
+  "lon": 151.2233551,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9684191,
+  "lon": 151.0648948,
+  "major": true
+ },
+ {
+  "name": "Hao De",
+  "lat": -33.7040676,
+  "lon": 151.1017584,
+  "major": false
+ },
+ {
+  "name": "Hornsby indian Bazaar",
+  "lat": -33.704022,
+  "lon": 151.1014445,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8392858,
+  "lon": 151.2089699,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8679205,
+  "lon": 150.9230191,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.9621833,
+  "lon": 151.1329508,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7173548,
+  "lon": 150.8407332,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9229274,
+  "lon": 151.1858394,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8274991,
+  "lon": 151.2016989,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7060477,
+  "lon": 150.9114223,
+  "major": true
+ },
+ {
+  "name": "Woolworths Strathfield",
+  "lat": -33.8727087,
+  "lon": 151.0930478,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0282621,
+  "lon": 150.7339588,
+  "major": true
+ },
+ {
+  "name": "Coles Local",
+  "lat": -33.797209,
+  "lon": 151.1828281,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8655396,
+  "lon": 151.2778593,
+  "major": true
+ },
+ {
+  "name": "Tongli",
+  "lat": -33.7937316,
+  "lon": 151.1863203,
+  "major": false
+ },
+ {
+  "name": "Asian City",
+  "lat": -33.7953506,
+  "lon": 151.185705,
+  "major": false
+ },
+ {
+  "name": "Chatswood New Yen Yen Supermarket",
+  "lat": -33.7957703,
+  "lon": 151.1816321,
+  "major": false
+ },
+ {
+  "name": "Yonghui Supermarket",
+  "lat": -33.7968814,
+  "lon": 151.1845363,
+  "major": false
+ },
+ {
+  "name": "IGA - Drummoyne",
+  "lat": -33.8510173,
+  "lon": 151.1541531,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8130731,
+  "lon": 151.1060339,
+  "major": true
+ },
+ {
+  "name": "Mayfair Fresh",
+  "lat": -33.8963345,
+  "lon": 151.1587466,
+  "major": false
+ },
+ {
+  "name": "MGM Spices",
+  "lat": -33.8915961,
+  "lon": 151.2140183,
+  "major": false
+ },
+ {
+  "name": "Fisher Road Store",
+  "lat": -33.7482458,
+  "lon": 151.2857247,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7451415,
+  "lon": 151.0302737,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8401322,
+  "lon": 150.6495588,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9413484,
+  "lon": 151.238906,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.865314,
+  "lon": 151.2026518,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9200959,
+  "lon": 151.2538217,
+  "major": true
+ },
+ {
+  "name": "Jusco Supermarket",
+  "lat": -33.7789905,
+  "lon": 151.0530225,
+  "major": false
+ },
+ {
+  "name": "Coles Local",
+  "lat": -33.7989581,
+  "lon": 151.2852807,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9527939,
+  "lon": 151.0512303,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7434269,
+  "lon": 150.9223303,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.8964409,
+  "lon": 151.1537982,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9027374,
+  "lon": 151.1946733,
+  "major": true
+ },
+ {
+  "name": "Supamart",
+  "lat": -33.8761678,
+  "lon": 151.1779475,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6860202,
+  "lon": 150.9513799,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8930023,
+  "lon": 151.2482435,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9125035,
+  "lon": 151.1180258,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8636718,
+  "lon": 151.0885904,
+  "major": true
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.8895763,
+  "lon": 151.2717565,
+  "major": true
+ },
+ {
+  "name": "Earth Food Store",
+  "lat": -33.8905654,
+  "lon": 151.2735812,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9232794,
+  "lon": 151.1018842,
+  "major": true
+ },
+ {
+  "name": "Xpress Supermarket",
+  "lat": -33.7703928,
+  "lon": 150.9094159,
+  "major": false
+ },
+ {
+  "name": "Turis Mini Market",
+  "lat": -33.9332761,
+  "lon": 151.142585,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.6987885,
+  "lon": 150.9581045,
+  "major": true
+ },
+ {
+  "name": "Miracle Supermarket Mandarin Center",
+  "lat": -33.7978479,
+  "lon": 151.1821666,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.6525321,
+  "lon": 151.0463207,
+  "major": true
+ },
+ {
+  "name": "ALDI Corner Store",
+  "lat": -33.8982656,
+  "lon": 151.1787524,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8135343,
+  "lon": 151.1692596,
+  "major": true
+ },
+ {
+  "name": "Tong Li Asian Supermarket Castle Hill",
+  "lat": -33.7329106,
+  "lon": 151.0062985,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8340275,
+  "lon": 151.1429359,
+  "major": true
+ },
+ {
+  "name": "WCA Supermarket",
+  "lat": -33.952655,
+  "lon": 151.1374616,
+  "major": false
+ },
+ {
+  "name": "Mint Fresh IGA",
+  "lat": -33.7948053,
+  "lon": 150.9346176,
+  "major": true
+ },
+ {
+  "name": "Sing Kee Asian Grocery Store",
+  "lat": -33.8180634,
+  "lon": 151.0038378,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8520541,
+  "lon": 151.0317336,
+  "major": true
+ },
+ {
+  "name": "IGA X-press",
+  "lat": -33.8567941,
+  "lon": 151.2058458,
+  "major": true
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.7742374,
+  "lon": 151.1689571,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8509187,
+  "lon": 150.9095217,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7655226,
+  "lon": 150.827603,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.0347234,
+  "lon": 151.1029029,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9155365,
+  "lon": 151.2281128,
+  "major": true
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.8929381,
+  "lon": 151.2500097,
+  "major": true
+ },
+ {
+  "name": "Kensington Supermarket",
+  "lat": -33.9057605,
+  "lon": 151.224186,
+  "major": false
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.9121992,
+  "lon": 151.2238904,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0345703,
+  "lon": 151.1028151,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8746624,
+  "lon": 151.1645976,
+  "major": true
+ },
+ {
+  "name": "IGA Romeo's Food Hall",
+  "lat": -33.8401714,
+  "lon": 151.2077695,
+  "major": true
+ },
+ {
+  "name": "Wu Ming Market",
+  "lat": -33.79671,
+  "lon": 151.1819491,
+  "major": false
+ },
+ {
+  "name": "Supamart IGA",
+  "lat": -33.7745185,
+  "lon": 151.1695608,
+  "major": true
+ },
+ {
+  "name": "Best Value Supermart",
+  "lat": -33.9185384,
+  "lon": 151.0331576,
+  "major": false
+ },
+ {
+  "name": "Thien Huong Asian Grocery",
+  "lat": -33.91833,
+  "lon": 151.032679,
+  "major": false
+ },
+ {
+  "name": "Li\u00ean An Asian Grocery & Food Centre",
+  "lat": -33.9187091,
+  "lon": 151.0320012,
+  "major": false
+ },
+ {
+  "name": "Quang Minh Asian Grocery",
+  "lat": -33.9189691,
+  "lon": 151.031822,
+  "major": false
+ },
+ {
+  "name": "Merabi Groceries",
+  "lat": -33.9192109,
+  "lon": 151.0344175,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8237568,
+  "lon": 151.1240415,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8377281,
+  "lon": 151.2069538,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.9061256,
+  "lon": 151.2044827,
+  "major": true
+ },
+ {
+  "name": "G&L Supermarket",
+  "lat": -33.7674798,
+  "lon": 150.9102523,
+  "major": false
+ },
+ {
+  "name": "Radhe Indian Grocery",
+  "lat": -33.7653015,
+  "lon": 150.9085389,
+  "major": false
+ },
+ {
+  "name": "Main Grocery Market",
+  "lat": -33.7707629,
+  "lon": 150.9098431,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9963476,
+  "lon": 150.7923122,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9965386,
+  "lon": 150.7920619,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -34.0685245,
+  "lon": 150.8104863,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9532004,
+  "lon": 151.014525,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9963733,
+  "lon": 150.8669353,
+  "major": true
+ },
+ {
+  "name": "Gourmet Life",
+  "lat": -33.876972,
+  "lon": 151.2333163,
+  "major": false
+ },
+ {
+  "name": "Woolworths Cherrybrook Village",
+  "lat": -33.7204955,
+  "lon": 151.044149,
+  "major": true
+ },
+ {
+  "name": "Harris Farm",
+  "lat": -33.8533828,
+  "lon": 151.1564228,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.9120483,
+  "lon": 151.2622797,
+  "major": false
+ },
+ {
+  "name": "Asquith Spices",
+  "lat": -33.6884379,
+  "lon": 151.1076465,
+  "major": false
+ },
+ {
+  "name": "IGA Romeos",
+  "lat": -33.8679267,
+  "lon": 151.2094139,
+  "major": true
+ },
+ {
+  "name": "Park n' Shop Asian Supermarket",
+  "lat": -33.9161803,
+  "lon": 151.2403568,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7776316,
+  "lon": 151.1213817,
+  "major": true
+ },
+ {
+  "name": "Hidaka Asian Supermarket",
+  "lat": -33.9205709,
+  "lon": 151.2268476,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9511631,
+  "lon": 151.2305818,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.9514891,
+  "lon": 151.2308608,
+  "major": true
+ },
+ {
+  "name": "Randwick Oriental",
+  "lat": -33.9231966,
+  "lon": 151.2275943,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -34.0326914,
+  "lon": 151.0739521,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0334396,
+  "lon": 151.0732731,
+  "major": true
+ },
+ {
+  "name": "Jaam e Jam Supermarket",
+  "lat": -33.7065637,
+  "lon": 151.0987045,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7873563,
+  "lon": 150.6682155,
+  "major": true
+ },
+ {
+  "name": "Friendly Grocer",
+  "lat": -33.7065709,
+  "lon": 151.1100107,
+  "major": false
+ },
+ {
+  "name": "Market city",
+  "lat": -33.8799335,
+  "lon": 151.2036189,
+  "major": false
+ },
+ {
+  "name": "Kings Wharf Supermarket",
+  "lat": -33.8670373,
+  "lon": 151.2023687,
+  "major": false
+ },
+ {
+  "name": "Collaroy Plateau Fruit Market",
+  "lat": -33.7273562,
+  "lon": 151.2870254,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7530672,
+  "lon": 151.2876039,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6539986,
+  "lon": 151.3213907,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.95191,
+  "lon": 150.8553215,
+  "major": true
+ },
+ {
+  "name": "Deli on Dolphin Supermarket",
+  "lat": -33.9187955,
+  "lon": 151.2574462,
+  "major": false
+ },
+ {
+  "name": "Cheong Kwan Jiang Chatswood Brand Store",
+  "lat": -33.7959521,
+  "lon": 151.1822337,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9762791,
+  "lon": 150.8123905,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.95218,
+  "lon": 151.0510396,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0699631,
+  "lon": 150.7286456,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0178858,
+  "lon": 151.0805261,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6932248,
+  "lon": 151.018303,
+  "major": true
+ },
+ {
+  "name": "Urban Grocer",
+  "lat": -33.8668243,
+  "lon": 151.2052488,
+  "major": false
+ },
+ {
+  "name": "Centro",
+  "lat": -33.8093598,
+  "lon": 151.1852951,
+  "major": false
+ },
+ {
+  "name": "Flannery's",
+  "lat": -33.6758293,
+  "lon": 151.3045226,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9660028,
+  "lon": 151.106241,
+  "major": true
+ },
+ {
+  "name": "Lloyds Supa IGA",
+  "lat": -33.9775879,
+  "lon": 151.1039175,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8244009,
+  "lon": 151.0790184,
+  "major": true
+ },
+ {
+  "name": "Scoop wholefoods",
+  "lat": -33.8242259,
+  "lon": 151.2409117,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9578094,
+  "lon": 151.2313441,
+  "major": true
+ },
+ {
+  "name": "Lucky Supermarket",
+  "lat": -33.9082211,
+  "lon": 151.2237856,
+  "major": false
+ },
+ {
+  "name": "NeedAStop",
+  "lat": -33.9240894,
+  "lon": 151.2276588,
+  "major": false
+ },
+ {
+  "name": "Asian Food",
+  "lat": -33.9241353,
+  "lon": 151.2276853,
+  "major": false
+ },
+ {
+  "name": "Tokyo Super",
+  "lat": -33.9220515,
+  "lon": 151.2267242,
+  "major": false
+ },
+ {
+  "name": "Avalon wholefoods store",
+  "lat": -33.6372168,
+  "lon": 151.3285337,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.87014,
+  "lon": 151.2700797,
+  "major": true
+ },
+ {
+  "name": "IGA Local Grocer Dee Why Beach",
+  "lat": -33.7543736,
+  "lon": 151.2962391,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7549618,
+  "lon": 151.2848787,
+  "major": true
+ },
+ {
+  "name": "Vicolo Market",
+  "lat": -33.7548582,
+  "lon": 151.2848532,
+  "major": false
+ },
+ {
+  "name": "Woolworths Parramatta",
+  "lat": -33.8180336,
+  "lon": 151.0029769,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8176983,
+  "lon": 150.9999003,
+  "major": true
+ },
+ {
+  "name": "Woolworths Parramatta Station (Metro)",
+  "lat": -33.8175801,
+  "lon": 151.0044795,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.823142,
+  "lon": 151.2011466,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9548008,
+  "lon": 150.9440374,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8963633,
+  "lon": 151.1049512,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8461532,
+  "lon": 151.2128814,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7875241,
+  "lon": 150.6689626,
+  "major": true
+ },
+ {
+  "name": "KK Supermarket",
+  "lat": -33.8913611,
+  "lon": 151.1956808,
+  "major": false
+ },
+ {
+  "name": "Paddy's Market Flemington",
+  "lat": -33.8612052,
+  "lon": 151.0720144,
+  "major": false
+ },
+ {
+  "name": "Tonyon Supermarket",
+  "lat": -33.7918492,
+  "lon": 151.0796488,
+  "major": false
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8693268,
+  "lon": 151.2081628,
+  "major": true
+ },
+ {
+  "name": "Da Jia Hao",
+  "lat": -33.7525687,
+  "lon": 151.2878749,
+  "major": false
+ },
+ {
+  "name": "Woolworths Burwood Plaza",
+  "lat": -33.8774571,
+  "lon": 151.1019714,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7492979,
+  "lon": 151.0646824,
+  "major": true
+ },
+ {
+  "name": "QE Foodstore",
+  "lat": -33.8456104,
+  "lon": 151.211098,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.9299232,
+  "lon": 151.1525331,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.926105,
+  "lon": 151.058126,
+  "major": true
+ },
+ {
+  "name": "Friendly Grocer",
+  "lat": -33.553579,
+  "lon": 150.6666121,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.6929978,
+  "lon": 151.0186481,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.5804968,
+  "lon": 150.7197634,
+  "major": true
+ },
+ {
+  "name": "Spar",
+  "lat": -33.8046955,
+  "lon": 151.0126833,
+  "major": false
+ },
+ {
+  "name": "Presti's Grocer",
+  "lat": -33.9137911,
+  "lon": 151.1697813,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -34.0590328,
+  "lon": 151.121191,
+  "major": true
+ },
+ {
+  "name": "Lamonica IGA",
+  "lat": -33.879934,
+  "lon": 151.1387207,
+  "major": true
+ },
+ {
+  "name": "Harris Farm",
+  "lat": -33.8856921,
+  "lon": 151.1583627,
+  "major": true
+ },
+ {
+  "name": "New Yen Yen Supermarket",
+  "lat": -33.8811911,
+  "lon": 151.203509,
+  "major": false
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8743762,
+  "lon": 151.22275,
+  "major": true
+ },
+ {
+  "name": "Dutton Plaza",
+  "lat": -33.8941344,
+  "lon": 150.9358995,
+  "major": false
+ },
+ {
+  "name": "Balmain East Liquor & Deli",
+  "lat": -33.8575103,
+  "lon": 151.1933303,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7252298,
+  "lon": 150.8452528,
+  "major": true
+ },
+ {
+  "name": "Simon Johnson",
+  "lat": -33.9174552,
+  "lon": 151.1984281,
+  "major": false
+ },
+ {
+  "name": "Friendly Grocer",
+  "lat": -33.8773141,
+  "lon": 151.1851804,
+  "major": false
+ },
+ {
+  "name": "Zetciti Asian Grocery",
+  "lat": -33.8248322,
+  "lon": 151.0784589,
+  "major": false
+ },
+ {
+  "name": "R & R Providores",
+  "lat": -33.8927413,
+  "lon": 151.205606,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8313118,
+  "lon": 151.1863947,
+  "major": true
+ },
+ {
+  "name": "Manly Food Co-op",
+  "lat": -33.7987092,
+  "lon": 151.2872711,
+  "major": false
+ },
+ {
+  "name": "Brenda's Supermarket",
+  "lat": -33.9243444,
+  "lon": 151.1885189,
+  "major": false
+ },
+ {
+  "name": "Mega Mart Asian Supermarket",
+  "lat": -33.875852,
+  "lon": 151.1031787,
+  "major": false
+ },
+ {
+  "name": "Market Place Hen Lee Asian grocery",
+  "lat": -33.8780194,
+  "lon": 151.1019958,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.769139,
+  "lon": 150.7346232,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.970356,
+  "lon": 150.8583333,
+  "major": true
+ },
+ {
+  "name": "Orange Supermarket (Asian)",
+  "lat": -33.9290997,
+  "lon": 151.1536498,
+  "major": false
+ },
+ {
+  "name": "Harris Farm",
+  "lat": -33.8731765,
+  "lon": 151.2735366,
+  "major": true
+ },
+ {
+  "name": "ChemaDiHatti Indian store",
+  "lat": -33.8354365,
+  "lon": 151.0105368,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8138914,
+  "lon": 151.1690286,
+  "major": true
+ },
+ {
+  "name": "QE Foodstore Waterloo",
+  "lat": -33.9018064,
+  "lon": 151.2098673,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7933008,
+  "lon": 151.1341846,
+  "major": true
+ },
+ {
+  "name": "Miracle Supermarket",
+  "lat": -33.9027182,
+  "lon": 151.207431,
+  "major": false
+ },
+ {
+  "name": "Miracle Supermarket",
+  "lat": -33.90561,
+  "lon": 151.2030644,
+  "major": false
+ },
+ {
+  "name": "Honest to Goodness",
+  "lat": -33.9025056,
+  "lon": 151.1976483,
+  "major": false
+ },
+ {
+  "name": "Ustore",
+  "lat": -33.9014042,
+  "lon": 151.212825,
+  "major": false
+ },
+ {
+  "name": "Waterloo Asian Supermarket",
+  "lat": -33.900753,
+  "lon": 151.2114517,
+  "major": false
+ },
+ {
+  "name": "Simon Johnson Providore",
+  "lat": -33.8889359,
+  "lon": 151.2352677,
+  "major": false
+ },
+ {
+  "name": "Romeo's Food Group",
+  "lat": -33.8227964,
+  "lon": 151.1947257,
+  "major": false
+ },
+ {
+  "name": "Romeo's Food Group",
+  "lat": -33.8678081,
+  "lon": 151.2091566,
+  "major": false
+ },
+ {
+  "name": "Romeo's Food Group",
+  "lat": -33.8870186,
+  "lon": 151.2291805,
+  "major": false
+ },
+ {
+  "name": "Romeo's Food Group",
+  "lat": -33.7720878,
+  "lon": 150.8764628,
+  "major": false
+ },
+ {
+  "name": "SUPA IGA Summer Hill",
+  "lat": -33.8909576,
+  "lon": 151.1370778,
+  "major": true
+ },
+ {
+  "name": "Romeo's Food Group",
+  "lat": -33.8777121,
+  "lon": 151.2129608,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7399817,
+  "lon": 150.8858965,
+  "major": true
+ },
+ {
+  "name": "Shangke Asian Supermarket",
+  "lat": -33.8990653,
+  "lon": 151.2129499,
+  "major": false
+ },
+ {
+  "name": "Hanho Asian Grocery",
+  "lat": -33.899646,
+  "lon": 151.2121712,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.6958861,
+  "lon": 151.2801528,
+  "major": true
+ },
+ {
+  "name": "Balgowlah Heights IGA",
+  "lat": -33.8009319,
+  "lon": 151.2571192,
+  "major": true
+ },
+ {
+  "name": "Meat Favor & Hapigo Supermarket",
+  "lat": -33.7907084,
+  "lon": 151.0808005,
+  "major": false
+ },
+ {
+  "name": "Sakura Supermarket",
+  "lat": -33.7914833,
+  "lon": 151.0810443,
+  "major": false
+ },
+ {
+  "name": "Desiworld Supermarket Parramatta",
+  "lat": -33.8208716,
+  "lon": 151.0065531,
+  "major": false
+ },
+ {
+  "name": "Aria Store",
+  "lat": -33.8077021,
+  "lon": 151.0070293,
+  "major": false
+ },
+ {
+  "name": "SaengSeng Mart Korean Groceries",
+  "lat": -33.8070987,
+  "lon": 151.0044194,
+  "major": false
+ },
+ {
+  "name": "Chowking Oriental Foodmart",
+  "lat": -33.8188073,
+  "lon": 151.0039506,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8173927,
+  "lon": 151.0044269,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9412895,
+  "lon": 151.238897,
+  "major": true
+ },
+ {
+  "name": "IGA Romeo's Food Hall",
+  "lat": -33.9696812,
+  "lon": 151.0795837,
+  "major": true
+ },
+ {
+  "name": "Coles Local",
+  "lat": -33.8704197,
+  "lon": 151.2065633,
+  "major": true
+ },
+ {
+  "name": "Dirani's MFC Supermarket",
+  "lat": -33.7580905,
+  "lon": 150.7568458,
+  "major": false
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.7487431,
+  "lon": 150.8240935,
+  "major": false
+ },
+ {
+  "name": "Friendly Grocer",
+  "lat": -33.8079092,
+  "lon": 150.9883193,
+  "major": false
+ },
+ {
+  "name": "Moonlight Nepalese & Indian Grocery",
+  "lat": -33.7807959,
+  "lon": 151.1132462,
+  "major": false
+ },
+ {
+  "name": "Everyday Mart",
+  "lat": -33.7807652,
+  "lon": 151.1140307,
+  "major": false
+ },
+ {
+  "name": "GOG Supermarket",
+  "lat": -33.822571,
+  "lon": 151.2007881,
+  "major": false
+ },
+ {
+  "name": "\u0110\u1ea1i Th\u00e0nh",
+  "lat": -33.8837857,
+  "lon": 150.926014,
+  "major": false
+ },
+ {
+  "name": "An Phat Supermarket",
+  "lat": -33.8839049,
+  "lon": 150.9270634,
+  "major": false
+ },
+ {
+  "name": "Thuan Loi",
+  "lat": -33.8843962,
+  "lon": 150.9252046,
+  "major": false
+ },
+ {
+  "name": "Tru'\u00f2'ng Ly",
+  "lat": -33.8840812,
+  "lon": 150.9261067,
+  "major": false
+ },
+ {
+  "name": "Young Mart",
+  "lat": -33.7944387,
+  "lon": 151.1819228,
+  "major": false
+ },
+ {
+  "name": "Romeo's Food Hall",
+  "lat": -33.8944115,
+  "lon": 151.1959306,
+  "major": false
+ },
+ {
+  "name": "Chris's Family IGA",
+  "lat": -33.7138069,
+  "lon": 151.1472555,
+  "major": true
+ },
+ {
+  "name": "Victoria Park Supermarket",
+  "lat": -33.9070258,
+  "lon": 151.2088065,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9486298,
+  "lon": 150.8999046,
+  "major": true
+ },
+ {
+  "name": "The Food Store",
+  "lat": -33.7458087,
+  "lon": 150.6218013,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.6952596,
+  "lon": 151.296484,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6957965,
+  "lon": 150.8201378,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9186845,
+  "lon": 150.8550807,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7057021,
+  "lon": 150.8761413,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9041623,
+  "lon": 151.1899282,
+  "major": true
+ },
+ {
+  "name": "Trins Asian Mart",
+  "lat": -33.7505846,
+  "lon": 150.6910185,
+  "major": false
+ },
+ {
+  "name": "Queen St Grocers",
+  "lat": -33.7647032,
+  "lon": 150.7741968,
+  "major": false
+ },
+ {
+  "name": "Sto Nino Oriental Mini Mart",
+  "lat": -33.7629007,
+  "lon": 150.774815,
+  "major": false
+ },
+ {
+  "name": "Pacific Green Grocery",
+  "lat": -33.7633097,
+  "lon": 150.7747548,
+  "major": false
+ },
+ {
+  "name": "Jayam Supermarket",
+  "lat": -33.7643845,
+  "lon": 150.7746205,
+  "major": false
+ },
+ {
+  "name": "3 Star Spices And Groceries",
+  "lat": -34.0677873,
+  "lon": 150.8135216,
+  "major": false
+ },
+ {
+  "name": "Hana Fruit Veg Groceries",
+  "lat": -34.0679385,
+  "lon": 150.8133884,
+  "major": false
+ },
+ {
+  "name": "That Luang Asian Grocery",
+  "lat": -34.0683147,
+  "lon": 150.8135078,
+  "major": false
+ },
+ {
+  "name": "Crown Supermarket",
+  "lat": -34.0683742,
+  "lon": 150.8135571,
+  "major": false
+ },
+ {
+  "name": "Foodworld Indian Supermarket",
+  "lat": -34.0684623,
+  "lon": 150.8136306,
+  "major": false
+ },
+ {
+  "name": "Alquds Food & Deli",
+  "lat": -34.0665639,
+  "lon": 150.8137627,
+  "major": false
+ },
+ {
+  "name": "El-Sadik Supermarket",
+  "lat": -34.0667334,
+  "lon": 150.8135924,
+  "major": false
+ },
+ {
+  "name": "IGA plus Liquor",
+  "lat": -33.7172972,
+  "lon": 151.1736847,
+  "major": true
+ },
+ {
+  "name": "Chan's Grocery Asian Food Centre",
+  "lat": -33.9501015,
+  "lon": 151.0304982,
+  "major": false
+ },
+ {
+  "name": "Alpha Mart",
+  "lat": -33.9497813,
+  "lon": 151.0301258,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8561511,
+  "lon": 151.1307295,
+  "major": true
+ },
+ {
+  "name": "Coles Merrylands",
+  "lat": -33.8345794,
+  "lon": 150.9908519,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8347102,
+  "lon": 150.9885033,
+  "major": true
+ },
+ {
+  "name": "Woolworths Merrylands",
+  "lat": -33.8350097,
+  "lon": 150.9902499,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8593696,
+  "lon": 150.8975809,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7786076,
+  "lon": 151.2856062,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7083246,
+  "lon": 150.7511274,
+  "major": true
+ },
+ {
+  "name": "M.F.C Supermarket",
+  "lat": -33.9220575,
+  "lon": 151.2001109,
+  "major": false
+ },
+ {
+  "name": "Family Asian Supermarket",
+  "lat": -33.9137619,
+  "lon": 151.2069416,
+  "major": false
+ },
+ {
+  "name": "Friendly Grocer",
+  "lat": -33.7774558,
+  "lon": 150.788898,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8561794,
+  "lon": 151.1626686,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8558213,
+  "lon": 151.1634046,
+  "major": true
+ },
+ {
+  "name": "Locali by Romeo's IGA",
+  "lat": -33.8685486,
+  "lon": 151.2074143,
+  "major": true
+ },
+ {
+  "name": "Locali's by Romeo IGA",
+  "lat": -33.8657874,
+  "lon": 151.2069208,
+  "major": true
+ },
+ {
+  "name": "Sydney Murugan Store",
+  "lat": -33.9247647,
+  "lon": 150.9213125,
+  "major": false
+ },
+ {
+  "name": "Liverpool India",
+  "lat": -33.9257183,
+  "lon": 150.9215767,
+  "major": false
+ },
+ {
+  "name": "EzyMart",
+  "lat": -33.7836246,
+  "lon": 151.1303105,
+  "major": false
+ },
+ {
+  "name": "Desiworld Supermarket",
+  "lat": -33.7185912,
+  "lon": 150.8454399,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7269341,
+  "lon": 150.7251381,
+  "major": true
+ },
+ {
+  "name": "Panetta Mercado",
+  "lat": -33.9083246,
+  "lon": 151.1718179,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.908082,
+  "lon": 151.1720376,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7743828,
+  "lon": 150.7492504,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8939774,
+  "lon": 151.2630931,
+  "major": true
+ },
+ {
+  "name": "The Source Bulk Foods",
+  "lat": -34.0331146,
+  "lon": 151.0730271,
+  "major": false
+ },
+ {
+  "name": "Panetta Mercato",
+  "lat": -34.0332323,
+  "lon": 151.073314,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0344795,
+  "lon": 151.0734026,
+  "major": true
+ },
+ {
+  "name": "Tong Li Supermarket",
+  "lat": -33.9676769,
+  "lon": 151.1029662,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8712642,
+  "lon": 150.8903624,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.811587,
+  "lon": 151.1069803,
+  "major": true
+ },
+ {
+  "name": "North Bondi Grocer",
+  "lat": -33.8894266,
+  "lon": 151.2830514,
+  "major": false
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.8147452,
+  "lon": 151.1676517,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9597685,
+  "lon": 151.0630747,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.9242586,
+  "lon": 151.2119291,
+  "major": true
+ },
+ {
+  "name": "PacificWay",
+  "lat": -33.9857517,
+  "lon": 150.8921054,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -34.0784931,
+  "lon": 150.5705824,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7751676,
+  "lon": 150.9338876,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0133477,
+  "lon": 151.0160731,
+  "major": true
+ },
+ {
+  "name": "My Indian Bazaar",
+  "lat": -33.7059191,
+  "lon": 150.9118209,
+  "major": false
+ },
+ {
+  "name": "Horbour Market - Persian Grocery",
+  "lat": -33.7004298,
+  "lon": 150.9271521,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7836728,
+  "lon": 150.85313,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7676137,
+  "lon": 151.1874337,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.731971,
+  "lon": 151.0798497,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.1011299,
+  "lon": 150.799585,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8118455,
+  "lon": 151.1074631,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0270745,
+  "lon": 150.7778457,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8173448,
+  "lon": 151.0000983,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -34.0843322,
+  "lon": 150.8133683,
+  "major": true
+ },
+ {
+  "name": "Rooty Hill IGA",
+  "lat": -33.7704322,
+  "lon": 150.843485,
+  "major": true
+ },
+ {
+  "name": "Fresh Food Market Rooty Hill",
+  "lat": -33.769743,
+  "lon": 150.8428889,
+  "major": false
+ },
+ {
+  "name": "Super Orange",
+  "lat": -33.7967283,
+  "lon": 151.1824076,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6581552,
+  "lon": 150.8802688,
+  "major": true
+ },
+ {
+  "name": "Ashcroft's IGA",
+  "lat": -33.8042565,
+  "lon": 150.8038171,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.6589109,
+  "lon": 150.8804691,
+  "major": true
+ },
+ {
+  "name": "Abu Salim Supermarket",
+  "lat": -33.9082865,
+  "lon": 151.0574334,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9673466,
+  "lon": 151.1111388,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9060201,
+  "lon": 151.0564875,
+  "major": true
+ },
+ {
+  "name": "Ashfield Korea Mart",
+  "lat": -33.8873698,
+  "lon": 151.126233,
+  "major": false
+ },
+ {
+  "name": "Deshi Groceries",
+  "lat": -33.8873939,
+  "lon": 151.1263039,
+  "major": false
+ },
+ {
+  "name": "Thank You Mart",
+  "lat": -33.8880379,
+  "lon": 151.1254081,
+  "major": false
+ },
+ {
+  "name": "Daju Bhaiko Pasal",
+  "lat": -33.8881036,
+  "lon": 151.1256795,
+  "major": false
+ },
+ {
+  "name": "Indian House Ashfield",
+  "lat": -33.8889406,
+  "lon": 151.1252711,
+  "major": false
+ },
+ {
+  "name": "Yu Fu Supermarket",
+  "lat": -33.8878465,
+  "lon": 151.1234083,
+  "major": false
+ },
+ {
+  "name": "Little Shanghai Asian Supermarket",
+  "lat": -33.887869,
+  "lon": 151.1234647,
+  "major": false
+ },
+ {
+  "name": "Sohrab Supermarket",
+  "lat": -33.8514103,
+  "lon": 151.0332753,
+  "major": false
+ },
+ {
+  "name": "Millet Supermarket",
+  "lat": -33.851317,
+  "lon": 151.0336836,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9619452,
+  "lon": 150.8063384,
+  "major": true
+ },
+ {
+  "name": "Yaochii",
+  "lat": -33.8238568,
+  "lon": 151.195115,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8236372,
+  "lon": 151.1950876,
+  "major": true
+ },
+ {
+  "name": "Bismillah Butchery and BBQ",
+  "lat": -33.9229813,
+  "lon": 151.0787722,
+  "major": false
+ },
+ {
+  "name": "Woolworths Auburn",
+  "lat": -33.8502351,
+  "lon": 151.0319064,
+  "major": true
+ },
+ {
+  "name": "Aldi Auburn",
+  "lat": -33.8499105,
+  "lon": 151.0316494,
+  "major": true
+ },
+ {
+  "name": "Radhe",
+  "lat": -33.8220996,
+  "lon": 151.0081987,
+  "major": false
+ },
+ {
+  "name": "Woolworths Carter St Metro",
+  "lat": -33.8506453,
+  "lon": 151.0603977,
+  "major": true
+ },
+ {
+  "name": "Sydney Olympic Asian Market",
+  "lat": -33.8507296,
+  "lon": 151.0605729,
+  "major": false
+ },
+ {
+  "name": "Novel Fresh IGA Epping",
+  "lat": -33.7732459,
+  "lon": 151.0834157,
+  "major": true
+ },
+ {
+  "name": "Patel Brothers",
+  "lat": -33.8227383,
+  "lon": 151.0104674,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.6528638,
+  "lon": 151.0458717,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8479605,
+  "lon": 151.2115114,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7919122,
+  "lon": 150.9993311,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7768245,
+  "lon": 151.1203324,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8809551,
+  "lon": 151.1317423,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8684498,
+  "lon": 150.9566816,
+  "major": true
+ },
+ {
+  "name": "Little India Supermarket",
+  "lat": -33.8213701,
+  "lon": 151.0089494,
+  "major": false
+ },
+ {
+  "name": "Shun Hing Long Grocery",
+  "lat": -33.9118402,
+  "lon": 151.1595806,
+  "major": false
+ },
+ {
+  "name": "Tongli",
+  "lat": -33.7053538,
+  "lon": 151.1003098,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9181527,
+  "lon": 151.0757911,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8920493,
+  "lon": 151.1998321,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.8924002,
+  "lon": 151.1996512,
+  "major": false
+ },
+ {
+  "name": "Lakemba Supermarket",
+  "lat": -33.9204046,
+  "lon": 151.0772077,
+  "major": false
+ },
+ {
+  "name": "Exim Supermarket",
+  "lat": -33.9204892,
+  "lon": 151.0772606,
+  "major": false
+ },
+ {
+  "name": "Coles Chullora",
+  "lat": -33.8929981,
+  "lon": 151.0616442,
+  "major": true
+ },
+ {
+  "name": "Pathan SuperMarket",
+  "lat": -33.8206063,
+  "lon": 151.0090893,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0099239,
+  "lon": 151.1035857,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0105957,
+  "lon": 151.1034746,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9583382,
+  "lon": 151.1406466,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.957756,
+  "lon": 151.138544,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7511556,
+  "lon": 150.6937139,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8759889,
+  "lon": 150.8771575,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7698348,
+  "lon": 150.9059279,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8360618,
+  "lon": 151.0845422,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7301922,
+  "lon": 151.1577059,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.7131375,
+  "lon": 150.9941859,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9353534,
+  "lon": 151.0690219,
+  "major": true
+ },
+ {
+  "name": "Woolworths Rhodes",
+  "lat": -33.8301207,
+  "lon": 151.0860029,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0384197,
+  "lon": 151.1420573,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7876027,
+  "lon": 150.9492426,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8868041,
+  "lon": 150.8489957,
+  "major": true
+ },
+ {
+  "name": "Woolworths Cowper St Metro",
+  "lat": -33.8323973,
+  "lon": 151.0134885,
+  "major": true
+ },
+ {
+  "name": "Amazing Asian Market",
+  "lat": -33.885233,
+  "lon": 151.2006398,
+  "major": false
+ },
+ {
+  "name": "Foodworks",
+  "lat": -34.044076,
+  "lon": 150.8108199,
+  "major": false
+ },
+ {
+  "name": "Orange Grocery",
+  "lat": -33.823105,
+  "lon": 151.0788904,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.0265111,
+  "lon": 150.7787551,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8701994,
+  "lon": 150.911642,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.0383693,
+  "lon": 151.1420651,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9946629,
+  "lon": 150.7245064,
+  "major": true
+ },
+ {
+  "name": "Am Mart",
+  "lat": -33.7388251,
+  "lon": 151.2102034,
+  "major": false
+ },
+ {
+  "name": "IGA Austral",
+  "lat": -33.9324554,
+  "lon": 150.8128102,
+  "major": true
+ },
+ {
+  "name": "IGA Botany",
+  "lat": -33.9450339,
+  "lon": 151.1964994,
+  "major": true
+ },
+ {
+  "name": "Grace Supermarket",
+  "lat": -33.8082877,
+  "lon": 151.1837389,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8919417,
+  "lon": 151.2120328,
+  "major": true
+ },
+ {
+  "name": "Harris Farm",
+  "lat": -33.8917353,
+  "lon": 151.2120732,
+  "major": true
+ },
+ {
+  "name": "Maloney's",
+  "lat": -33.8866732,
+  "lon": 151.2138781,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8941577,
+  "lon": 151.1961256,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9225304,
+  "lon": 151.0118555,
+  "major": true
+ },
+ {
+  "name": "Tong Li Supermarket Cabramatta",
+  "lat": -33.8943841,
+  "lon": 150.9384819,
+  "major": false
+ },
+ {
+  "name": "Gor.Gai That Grocery",
+  "lat": -33.8934819,
+  "lon": 150.9375638,
+  "major": false
+ },
+ {
+  "name": "Sanfa Supermaket",
+  "lat": -33.8940227,
+  "lon": 150.935805,
+  "major": false
+ },
+ {
+  "name": "Eastland Supermarket Sieu Thi Dong Khanh",
+  "lat": -33.8947109,
+  "lon": 150.9346757,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8670834,
+  "lon": 150.9521896,
+  "major": true
+ },
+ {
+  "name": "Sam's Supermarket",
+  "lat": -33.8957301,
+  "lon": 150.9025452,
+  "major": false
+ },
+ {
+  "name": "Supersave Market",
+  "lat": -33.8959102,
+  "lon": 150.9017198,
+  "major": false
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.7299107,
+  "lon": 151.1590011,
+  "major": true
+ },
+ {
+  "name": "Sai Grocery Mart",
+  "lat": -33.8198898,
+  "lon": 151.0079601,
+  "major": false
+ },
+ {
+  "name": "Handy Market",
+  "lat": -33.8223877,
+  "lon": 151.0094956,
+  "major": false
+ },
+ {
+  "name": "Am Mart",
+  "lat": -33.7302552,
+  "lon": 151.1582415,
+  "major": false
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.6361287,
+  "lon": 151.3298692,
+  "major": true
+ },
+ {
+  "name": "Zaytouna Supermarket",
+  "lat": -33.924182,
+  "lon": 150.9617477,
+  "major": false
+ },
+ {
+  "name": "IGA Local Grocer",
+  "lat": -33.6466763,
+  "lon": 151.3133588,
+  "major": true
+ },
+ {
+  "name": "Indian Grocery Warehouse Chatswood",
+  "lat": -33.7924407,
+  "lon": 151.1950618,
+  "major": false
+ },
+ {
+  "name": "Desi Bazar",
+  "lat": -33.9205297,
+  "lon": 151.077284,
+  "major": false
+ },
+ {
+  "name": "Tongli Supermarket",
+  "lat": -33.916686,
+  "lon": 151.0368333,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.6861076,
+  "lon": 151.2899087,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -34.0866523,
+  "lon": 151.0085257,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9768323,
+  "lon": 151.1245081,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7741145,
+  "lon": 151.1672143,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8913331,
+  "lon": 150.6190303,
+  "major": true
+ },
+ {
+  "name": "Tongli Supermarket",
+  "lat": -33.9132301,
+  "lon": 151.1031471,
+  "major": false
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.906189,
+  "lon": 151.2625303,
+  "major": true
+ },
+ {
+  "name": "QE Foodstores",
+  "lat": -33.8564631,
+  "lon": 151.1784491,
+  "major": false
+ },
+ {
+  "name": "IGA Allambie Heights",
+  "lat": -33.7659365,
+  "lon": 151.2506048,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7969215,
+  "lon": 151.2518483,
+  "major": true
+ },
+ {
+  "name": "Spices of Asia",
+  "lat": -33.8150845,
+  "lon": 151.169843,
+  "major": false
+ },
+ {
+  "name": "Tongli Supermarket",
+  "lat": -33.8179745,
+  "lon": 151.0002157,
+  "major": false
+ },
+ {
+  "name": "The Source Bulk Foods",
+  "lat": -33.8806948,
+  "lon": 151.1878437,
+  "major": false
+ },
+ {
+  "name": "Greens Supermarket",
+  "lat": -33.8984814,
+  "lon": 151.1758419,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8893655,
+  "lon": 151.123685,
+  "major": true
+ },
+ {
+  "name": "Mayalu Mini Market",
+  "lat": -33.968682,
+  "lon": 151.1248465,
+  "major": false
+ },
+ {
+  "name": "A J supermarket",
+  "lat": -33.8611247,
+  "lon": 151.0452928,
+  "major": false
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.6759991,
+  "lon": 151.3055163,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.9801339,
+  "lon": 151.2453836,
+  "major": false
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.7380817,
+  "lon": 151.0709515,
+  "major": true
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.9090162,
+  "lon": 151.1635363,
+  "major": true
+ },
+ {
+  "name": "New Yen Yen Supermarket",
+  "lat": -33.9676189,
+  "lon": 151.1072141,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9482811,
+  "lon": 151.0811934,
+  "major": true
+ },
+ {
+  "name": "ST Asian Grocery",
+  "lat": -33.941285,
+  "lon": 151.1013902,
+  "major": false
+ },
+ {
+  "name": "Supabarn",
+  "lat": -33.8829727,
+  "lon": 151.1748023,
+  "major": false
+ },
+ {
+  "name": "Ghumti Grocery",
+  "lat": -33.9698143,
+  "lon": 151.1132145,
+  "major": false
+ },
+ {
+  "name": "Taste Organic",
+  "lat": -33.8212323,
+  "lon": 151.210462,
+  "major": false
+ },
+ {
+  "name": "Summit Asian Supermarket",
+  "lat": -33.8926218,
+  "lon": 151.2481591,
+  "major": false
+ },
+ {
+  "name": "Welcome Asian Supermarket",
+  "lat": -33.967299,
+  "lon": 151.1055643,
+  "major": false
+ },
+ {
+  "name": "Mayalu Mini Market",
+  "lat": -33.9672381,
+  "lon": 151.1066496,
+  "major": false
+ },
+ {
+  "name": "Leichhardt IGA",
+  "lat": -33.8825196,
+  "lon": 151.1567588,
+  "major": true
+ },
+ {
+  "name": "Coles Local",
+  "lat": -33.941604,
+  "lon": 151.2254192,
+  "major": true
+ },
+ {
+  "name": "Kmall09",
+  "lat": -33.8488803,
+  "lon": 151.0482359,
+  "major": false
+ },
+ {
+  "name": "Orange Supermarket",
+  "lat": -33.8315616,
+  "lon": 151.0865317,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9218111,
+  "lon": 150.9229388,
+  "major": true
+ },
+ {
+  "name": "Taste Growers Market",
+  "lat": -33.9057378,
+  "lon": 151.2129396,
+  "major": false
+ },
+ {
+  "name": "McMahons Point Grocer",
+  "lat": -33.8430897,
+  "lon": 151.2046317,
+  "major": false
+ },
+ {
+  "name": "Chriss Family IGA Eastern Road",
+  "lat": -33.7208129,
+  "lon": 151.1310437,
+  "major": true
+ },
+ {
+  "name": "Greenwood Grocer",
+  "lat": -33.8404964,
+  "lon": 151.2072705,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8353137,
+  "lon": 151.2078464,
+  "major": true
+ },
+ {
+  "name": "Panetta Mercato",
+  "lat": -34.0386256,
+  "lon": 151.1423652,
+  "major": false
+ },
+ {
+  "name": "Kathmandu Convenience Store",
+  "lat": -33.8285017,
+  "lon": 151.2089151,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7190008,
+  "lon": 150.9543384,
+  "major": true
+ },
+ {
+  "name": "Tae supermarket",
+  "lat": -33.8725729,
+  "lon": 151.0944682,
+  "major": false
+ },
+ {
+  "name": "Supabarn",
+  "lat": -33.9930278,
+  "lon": 151.1320039,
+  "major": false
+ },
+ {
+  "name": "Darshan namaste",
+  "lat": -33.8736878,
+  "lon": 151.0939827,
+  "major": false
+ },
+ {
+  "name": "Shop 10",
+  "lat": -33.7919648,
+  "lon": 150.9744824,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7276336,
+  "lon": 151.286971,
+  "major": true
+ },
+ {
+  "name": "IGA Quay Quarter",
+  "lat": -33.8626057,
+  "lon": 151.2116907,
+  "major": true
+ },
+ {
+  "name": "Beijing Dim Sim",
+  "lat": -33.7877772,
+  "lon": 151.0857122,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6243037,
+  "lon": 150.9102301,
+  "major": true
+ },
+ {
+  "name": "K-Mall-09",
+  "lat": -33.8758821,
+  "lon": 151.2059639,
+  "major": false
+ },
+ {
+  "name": "AM Mart",
+  "lat": -33.8859374,
+  "lon": 151.1584372,
+  "major": false
+ },
+ {
+  "name": "Abu Salim",
+  "lat": -33.9081906,
+  "lon": 151.0286141,
+  "major": false
+ },
+ {
+  "name": "Miracle Supermarket",
+  "lat": -33.9080226,
+  "lon": 151.1716622,
+  "major": false
+ },
+ {
+  "name": "Le Gou Supermarket",
+  "lat": -33.9650841,
+  "lon": 151.1004183,
+  "major": false
+ },
+ {
+  "name": "Hamro Harvin Spices",
+  "lat": -33.9657824,
+  "lon": 151.1009532,
+  "major": false
+ },
+ {
+  "name": "Come On Store",
+  "lat": -33.96656,
+  "lon": 151.1024425,
+  "major": false
+ },
+ {
+  "name": "Panda Asia Mart",
+  "lat": -33.963556,
+  "lon": 151.132713,
+  "major": false
+ },
+ {
+  "name": "Elite Supermarket",
+  "lat": -33.9636064,
+  "lon": 151.1326922,
+  "major": false
+ },
+ {
+  "name": "Kogarah Indian Bazaar",
+  "lat": -33.9621605,
+  "lon": 151.1343746,
+  "major": false
+ },
+ {
+  "name": "Grocery Hub",
+  "lat": -33.9550229,
+  "lon": 151.137833,
+  "major": false
+ },
+ {
+  "name": "Rockdale Express Mart",
+  "lat": -33.9541443,
+  "lon": 151.1377481,
+  "major": false
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.9521505,
+  "lon": 151.1382793,
+  "major": false
+ },
+ {
+  "name": "SUPA IGA",
+  "lat": -33.8910075,
+  "lon": 151.136873,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.6881581,
+  "lon": 151.1066579,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9515717,
+  "lon": 151.0127164,
+  "major": true
+ },
+ {
+  "name": "Woolworths Granville",
+  "lat": -33.8417343,
+  "lon": 151.0093121,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8320703,
+  "lon": 151.2235314,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7663683,
+  "lon": 151.2673418,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0540691,
+  "lon": 150.6936738,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0571349,
+  "lon": 150.6936141,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -34.0497462,
+  "lon": 150.7573343,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9538666,
+  "lon": 151.0343184,
+  "major": true
+ },
+ {
+  "name": "Forestway Fresh",
+  "lat": -33.6996355,
+  "lon": 151.2125127,
+  "major": false
+ },
+ {
+  "name": "Komart",
+  "lat": -33.8629193,
+  "lon": 151.0876812,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8635658,
+  "lon": 151.0879724,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.816051,
+  "lon": 150.9697549,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0648856,
+  "lon": 151.0111708,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -34.0334089,
+  "lon": 151.0569428,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7851655,
+  "lon": 151.2687502,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7719776,
+  "lon": 151.0799947,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.8305196,
+  "lon": 151.2225088,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -34.0631859,
+  "lon": 150.8070023,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.0285778,
+  "lon": 150.8491152,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8933863,
+  "lon": 150.89011,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7620085,
+  "lon": 151.2159368,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7545651,
+  "lon": 150.706153,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7891562,
+  "lon": 150.8899679,
+  "major": true
+ },
+ {
+  "name": "Carlo's IGA Plus Liquor",
+  "lat": -33.8906748,
+  "lon": 151.022617,
+  "major": true
+ },
+ {
+  "name": "Colours of India Grocery & Unique Accounting",
+  "lat": -33.808891,
+  "lon": 151.0159144,
+  "major": false
+ },
+ {
+  "name": "Oriental City Centre",
+  "lat": -33.894013,
+  "lon": 150.938394,
+  "major": false
+ },
+ {
+  "name": "Kee Ree Roum Asian Grocery",
+  "lat": -33.8950869,
+  "lon": 150.9392459,
+  "major": false
+ },
+ {
+  "name": "Jip Hong Supermarket",
+  "lat": -33.894936,
+  "lon": 150.9392774,
+  "major": false
+ },
+ {
+  "name": "Woolworths North Strathfield (Metro)",
+  "lat": -33.8588325,
+  "lon": 151.0927084,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.984893,
+  "lon": 150.892112,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9137362,
+  "lon": 151.0340227,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7138357,
+  "lon": 150.9729918,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8985898,
+  "lon": 151.1817036,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8126989,
+  "lon": 151.0420988,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7174132,
+  "lon": 150.8914674,
+  "major": true
+ },
+ {
+  "name": "Four Square Seven Day Food",
+  "lat": -33.9449996,
+  "lon": 151.1400412,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.7699808,
+  "lon": 150.7714345,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9654795,
+  "lon": 151.0897731,
+  "major": true
+ },
+ {
+  "name": "Sefton fresh4less",
+  "lat": -33.8861919,
+  "lon": 151.0116493,
+  "major": false
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7467187,
+  "lon": 151.0502221,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.914039,
+  "lon": 151.1029731,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7131678,
+  "lon": 150.9710841,
+  "major": true
+ },
+ {
+  "name": "Summer Hill Organic Fruit Market",
+  "lat": -33.8953301,
+  "lon": 151.1397938,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8685542,
+  "lon": 150.9232071,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7876851,
+  "lon": 151.2672814,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9106127,
+  "lon": 151.1199892,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.8733505,
+  "lon": 151.207381,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9539986,
+  "lon": 150.8968658,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.9282494,
+  "lon": 150.9811762,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7521463,
+  "lon": 151.2895962,
+  "major": true
+ },
+ {
+  "name": "Harris Farm Markets",
+  "lat": -33.7870547,
+  "lon": 151.2813562,
+  "major": true
+ },
+ {
+  "name": "Woolworths Ermington",
+  "lat": -33.8146313,
+  "lon": 151.0543895,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.8038796,
+  "lon": 150.8050391,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.7404646,
+  "lon": 150.7182475,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7432054,
+  "lon": 150.7127183,
+  "major": true
+ },
+ {
+  "name": "Woolworths Rosehill",
+  "lat": -33.8197618,
+  "lon": 151.0203386,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.7375527,
+  "lon": 150.8161793,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.8825123,
+  "lon": 150.9767524,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.7974078,
+  "lon": 151.1816974,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.928004,
+  "lon": 150.9077254,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8777311,
+  "lon": 151.2128935,
+  "major": true
+ },
+ {
+  "name": "About Life",
+  "lat": -33.8813765,
+  "lon": 151.2144295,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.796376,
+  "lon": 150.9050362,
+  "major": true
+ },
+ {
+  "name": "Lloyd's IGA",
+  "lat": -33.8956921,
+  "lon": 151.1804767,
+  "major": true
+ },
+ {
+  "name": "Ritchies",
+  "lat": -34.0258159,
+  "lon": 151.1180637,
+  "major": false
+ },
+ {
+  "name": "Gima Supermarket",
+  "lat": -33.8520788,
+  "lon": 151.0336468,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.914704,
+  "lon": 151.2407291,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.916242,
+  "lon": 151.2398779,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9071953,
+  "lon": 151.1711557,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.9064459,
+  "lon": 151.1727889,
+  "major": true
+ },
+ {
+  "name": "Asian Food Market",
+  "lat": -33.7686145,
+  "lon": 150.9102438,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8988876,
+  "lon": 151.1716411,
+  "major": true
+ },
+ {
+  "name": "Taste Organic",
+  "lat": -33.8991504,
+  "lon": 151.172775,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9543732,
+  "lon": 150.8582646,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.0412488,
+  "lon": 150.7346059,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.8532545,
+  "lon": 150.9858355,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -34.0180019,
+  "lon": 151.0108014,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8846881,
+  "lon": 151.26863,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.9244736,
+  "lon": 151.0793615,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8870222,
+  "lon": 151.2291643,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.9165951,
+  "lon": 151.1503796,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.9032417,
+  "lon": 151.1432535,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9260592,
+  "lon": 151.1245724,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.8611384,
+  "lon": 151.1712289,
+  "major": true
+ },
+ {
+  "name": "QE Foodstores",
+  "lat": -33.9080365,
+  "lon": 151.2487349,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.0331618,
+  "lon": 151.0994054,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.9140572,
+  "lon": 151.2062247,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7953772,
+  "lon": 150.7882171,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.842028,
+  "lon": 150.8467704,
+  "major": true
+ },
+ {
+  "name": "Aldi",
+  "lat": -34.0853256,
+  "lon": 150.8009167,
+  "major": true
+ },
+ {
+  "name": "Taste Organic",
+  "lat": -33.7277598,
+  "lon": 151.1419186,
+  "major": false
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.9112971,
+  "lon": 151.1551523,
+  "major": true
+ },
+ {
+  "name": "Thai Hung Supermarket",
+  "lat": -33.9120248,
+  "lon": 151.155206,
+  "major": false
+ },
+ {
+  "name": "Thuc Pham A Chau",
+  "lat": -33.9118082,
+  "lon": 151.1554225,
+  "major": false
+ },
+ {
+  "name": "Filo Pride",
+  "lat": -33.9108691,
+  "lon": 151.1575924,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7862293,
+  "lon": 151.198138,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7197855,
+  "lon": 150.7103192,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7200867,
+  "lon": 150.7109507,
+  "major": true
+ },
+ {
+  "name": "Kung Fu Grocery",
+  "lat": -33.9119398,
+  "lon": 151.1553081,
+  "major": false
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7951496,
+  "lon": 151.1883297,
+  "major": true
+ },
+ {
+  "name": "Udaya Supermart",
+  "lat": -33.8092744,
+  "lon": 150.9720117,
+  "major": false
+ },
+ {
+  "name": "Aldi",
+  "lat": -33.849482,
+  "lon": 150.9965869,
+  "major": true
+ },
+ {
+  "name": "Foodworks",
+  "lat": -33.9626516,
+  "lon": 151.2471754,
+  "major": false
+ },
+ {
+  "name": "IGA",
+  "lat": -33.8235331,
+  "lon": 151.1081546,
+  "major": true
+ },
+ {
+  "name": "Go Win Supermarket",
+  "lat": -33.909693,
+  "lon": 151.1031578,
+  "major": false
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.7392464,
+  "lon": 151.2094431,
+  "major": true
+ },
+ {
+  "name": "ALDI",
+  "lat": -33.7386178,
+  "lon": 151.2107779,
+  "major": true
+ },
+ {
+  "name": "Woolworths Metro",
+  "lat": -33.7127575,
+  "lon": 151.1469335,
+  "major": true
+ },
+ {
+  "name": "Coles",
+  "lat": -33.9975825,
+  "lon": 150.7406453,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -34.0003644,
+  "lon": 150.7405423,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.6753959,
+  "lon": 151.3024229,
+  "major": true
+ },
+ {
+  "name": "IGA",
+  "lat": -33.7630803,
+  "lon": 150.8691539,
+  "major": true
+ },
+ {
+  "name": "Woolworths",
+  "lat": -33.70122,
+  "lon": 150.8061774,
+  "major": true
+ },
+ {
+  "name": "Grandma's Secret Orchard",
+  "lat": -33.7954469,
+  "lon": 151.0449706,
+  "major": false
+ }
+]

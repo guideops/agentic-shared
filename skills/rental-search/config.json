@@ -1,0 +1,31 @@
+{
+  "_comment": "Runs on a laptop (residential IP), so it reads the listing sites directly - no Apify, no cost.",
+
+  "spreadsheet_id": "1RQhAq_sQSf3FFibGAMTufgJCps5CxeJWl2ZBFZGn8bA",
+  "output_tab": "ChatGPT Output",
+  "apartments_tab_gid": 1796609129,
+  "ai_output_tab": "AI Output",
+  "service_account_key": "service-account.json",
+
+  "suburbs": [
+    {"slug": "macquarie-park-nsw-2113", "name": "Macquarie Park"},
+    {"slug": "north-ryde-nsw-2113",     "name": "North Ryde"},
+    {"slug": "rhodes-nsw-2138",         "name": "Rhodes"},
+    {"slug": "hurstville-nsw-2220",     "name": "Hurstville"},
+    {"slug": "epping-nsw-2121",         "name": "Epping"}
+  ],
+
+  "min_price_per_week": 650,
+  "max_price_per_week": 780,
+  "min_bedrooms": 1,
+  "max_bedrooms": 4,
+  "min_floor": 6,
+  "max_station_walk_mins": 10,
+  "prefer_station_walk_mins": 8,
+  "max_supermarket_walk_mins": 12,
+  "target_count": 10,
+
+  "fetch_delay_seconds": 2,
+  "max_pages": 40,
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+}
