@@ -65,10 +65,27 @@ same wall that forces `rental-search` onto a residential connection. The photo
 *URLs* are free - they arrive inside the Apify payload the cron already pays for
 and are stored in `state.json`. Only the bytes are blocked.
 
-So: run `--fetch-photos` once from your laptop. Photos land in
+So: run `--fetch-photos` from your laptop. Photos land in
 `photos/<listing_id>.jpg` and every later render, server-side included, picks
 them up from that cache. A stop with no cached photo still renders - it just
 shows the map pin instead of an empty frame.
+
+**A residential IP is necessary but not sufficient.** Both the listing pages and
+the image CDN refuse a plain `urllib` GET outright - 403 from domain.com.au, 429
+from realestate.com.au, 400 from the image CDN - because the tell is the client,
+not only the address. So this reuses **`rental-search`'s `browser.Session`**: a
+real Chromium under patchright, sharing that skill's cookie profile, with the
+image bytes pulled through the browser context's own request API so the signed
+CDN urls are served to the client that loaded the page. There is deliberately no
+urllib fallback; it would only add a guaranteed failure to every run.
+
+That makes `rental-search` a hard prerequisite for photos:
+
+```bash
+pip install patchright && patchright install chromium
+```
+
+Without it you get a warning and an itinerary with no photos - never a crash.
 
 Two sources, tried in order: the stored Apify urls, then the listing page's
 `og:image` tag. The second is what covers hand-added rows that never went

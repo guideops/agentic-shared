@@ -226,3 +226,30 @@ class Session:
             except Exception:
                 pass
         return None
+
+    def get_bytes(self, url, referer=None):
+        """Fetch a binary asset through the browser context. None if refused.
+
+        Goes through the context's own request API rather than urllib so the
+        cookies, TLS fingerprint and header order are the browser's. Domain's
+        image CDN returns 400 to anything else - the signed thumbor urls are
+        served only to a client that looks like the one that loaded the page.
+        """
+        if self._ctx is None:
+            raise RuntimeError("Session used outside its context manager")
+        self._throttle()
+        try:
+            resp = self._ctx.request.get(
+                url, headers={"Referer": referer} if referer else None,
+                timeout=self.timeout)
+        except Exception as exc:
+            print(f"  [error] asset {url[:70]}: {exc}", file=sys.stderr)
+            return None
+        self.last_status = resp.status
+        if not resp.ok:
+            print(f"  [{resp.status}] asset {url[:80]}", file=sys.stderr)
+            return None
+        try:
+            return resp.body()
+        except Exception:
+            return None

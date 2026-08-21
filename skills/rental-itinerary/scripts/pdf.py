@@ -214,36 +214,67 @@ def render_map(points, width=MAP_W, height=MAP_H, frame_all=False):
 # --------------------------------------------------------------------------
 # photos
 # --------------------------------------------------------------------------
-BROWSER_UA = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36",
-    "Accept-Language": "en-AU,en;q=0.9",
-}
+# rental-search already solved "how do you read these sites at all": a real
+# Chromium under patchright, on a residential connection. Photos hit the exact
+# same wall, so we borrow its browser rather than growing a second one.
+SEARCH_SCRIPTS = HERE.parent.parent / "rental-search" / "scripts"
 
 
-def scrape_og_image(page_url):
-    """Read a listing page's og:image tag.
+def open_browser():
+    """A live rental-search browser session, or None with the reason printed.
+
+    Only ever needed for --fetch-photos. Everything else in this file works
+    with no browser at all.
+    """
+    if not SEARCH_SCRIPTS.exists():
+        print(f"[warn] no rental-search skill at {SEARCH_SCRIPTS} - no photos",
+              file=sys.stderr)
+        return None
+    sys.path.insert(0, str(SEARCH_SCRIPTS))
+    try:
+        import browser  # noqa
+    except Exception as exc:
+        print(f"[warn] browser module unavailable: {exc}", file=sys.stderr)
+        return None
+    cfg = {}
+    cfg_path = SEARCH_SCRIPTS.parent / "config.json"
+    if cfg_path.exists():
+        try:
+            cfg = json.loads(cfg_path.read_text())
+        except Exception:
+            cfg = {}
+    # Share rental-search's profile deliberately: its cookies are what make the
+    # first request of a run succeed instead of eating a challenge.
+    profile = SEARCH_SCRIPTS.parent / cfg.get("browser_profile_dir", "browser-profile")
+    try:
+        return browser.Session(profile, headless=cfg.get("headless", True),
+                               channel=cfg.get("browser_channel"),
+                               delay_seconds=cfg.get("fetch_delay_seconds", 2))
+    except Exception as exc:
+        print(f"[warn] could not build a browser session: {exc}", file=sys.stderr)
+        return None
+
+
+def scrape_og_image(page_url, session):
+    """Read a listing page's og:image tag, through the real browser.
 
     The fallback for rows that never came through the watcher - hand-added
-    properties have no stored photo urls at all. Needs a connection the site
-    will actually serve, so this only ever succeeds from the laptop.
+    properties have no stored photo urls at all. A plain GET is refused by both
+    sites (403 / 429), so there is deliberately no urllib path here.
     """
-    if not page_url:
+    if not page_url or session is None:
         return []
-    try:
-        req = urllib.request.Request(page_url, headers={
-            **BROWSER_UA, "Referer": "https://www.google.com/"})
-        html_txt = urllib.request.urlopen(req, timeout=30).read().decode(
-            "utf-8", "ignore")
-    except Exception as exc:
-        print(f"[warn] og:image {page_url[:60]}: {exc}", file=sys.stderr)
+    doc = session.get(page_url)
+    if not doc:
         return []
     import re
-    return re.findall(r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"',
-                      html_txt)[:3]
+    urls = re.findall(r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"', doc)
+    if not urls:  # realestate.com.au hydrates its gallery instead
+        urls = re.findall(r'https://[^"\\ ]+?\.(?:jpg|jpeg|png)', doc)
+    return urls[:3]
 
 
-def photo_for(listing_id, images, fetch, page_url=None):
+def photo_for(listing_id, images, fetch, page_url=None, session=None):
     """Cached photo as a data URI, fetching it first if we are allowed to.
 
     Returns None rather than a placeholder: an empty frame on every card would
@@ -253,22 +284,14 @@ def photo_for(listing_id, images, fetch, page_url=None):
         return None
     PHOTO_DIR.mkdir(parents=True, exist_ok=True)
     path = PHOTO_DIR / f"{listing_id}.jpg"
-    if not path.exists() and fetch:
+    if not path.exists() and fetch and session is not None:
         if not images:
-            images = scrape_og_image(page_url)
+            images = scrape_og_image(page_url, session)
         for u in images or []:
-            try:
-                req = urllib.request.Request(u, headers={
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                                  "AppleWebKit/537.36 (KHTML, like Gecko) "
-                                  "Chrome/122.0 Safari/537.36",
-                    "Referer": "https://www.domain.com.au/"})
-                data = urllib.request.urlopen(req, timeout=25).read()
-                if len(data) > 2000:
-                    path.write_bytes(data)
-                    break
-            except Exception as exc:
-                print(f"[warn] photo {listing_id}: {exc}", file=sys.stderr)
+            data = session.get_bytes(u, referer=page_url or "https://www.domain.com.au/")
+            if data and len(data) > 2000:
+                path.write_bytes(data)
+                break
     if not path.exists():
         return None
     return "data:image/jpeg;base64," + base64.b64encode(path.read_bytes()).decode()
@@ -312,7 +335,7 @@ def walk_class(rule):
 E = lambda v: html.escape(str(v if v is not None else ""))
 
 
-def build_html(plan, fetch_photos=False):
+def build_html(plan, fetch_photos=False, session=None):
     stops = plan["stops"]
     base = plan["base"]
     try:
@@ -394,7 +417,8 @@ def build_html(plan, fetch_photos=False):
             # the plan carries its own urls so this renders anywhere; state.json
             # is only a fallback for plans written before that was true
             imgs = s.get("images") or (state.get(lid) or {}).get("images") or []
-            ph = photo_for(lid, imgs, fetch_photos, page_url=s.get("link"))
+            ph = photo_for(lid, imgs, fetch_photos, page_url=s.get("link"),
+                           session=session)
             n_photos += 1 if ph else 0
             pri = s.get("priority") or "Low"
             wc = walk_class(s.get("walk_rule"))
@@ -526,7 +550,20 @@ a { color:#1d4ed8; text-decoration:none; }
 
 def build(plan_path, out_path=None, fetch_photos=False):
     plan = json.loads(pathlib.Path(plan_path).read_text())
-    doc = build_html(plan, fetch_photos=fetch_photos)
+    doc = None
+    if fetch_photos:
+        sess = open_browser()
+        if sess is not None:
+            # The driver is only loaded on __enter__, so a machine with no
+            # patchright installed fails here, not above. Missing photos must
+            # never cost you the itinerary - degrade and say why.
+            try:
+                with sess as live:
+                    doc = build_html(plan, fetch_photos=True, session=live)
+            except Exception as exc:
+                print(f"[warn] no photos this run: {exc}", file=sys.stderr)
+    if doc is None:
+        doc = build_html(plan, fetch_photos=False)
     out = pathlib.Path(out_path) if out_path else \
         pathlib.Path("/root/Documents/Hermes/viewing-itinerary.pdf")
     out.parent.mkdir(parents=True, exist_ok=True)
