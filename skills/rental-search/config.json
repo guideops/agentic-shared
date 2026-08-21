@@ -1,5 +1,5 @@
 {
-  "_comment": "Runs on a laptop (residential IP), so it reads the listing sites directly - no Apify, no cost.",
+  "_comment": "Runs on a personal machine via a real Chromium (Playwright) - no Apify, no cost. A residential IP is necessary but not sufficient: both sites also check that the client is a real browser, so a plain HTTP GET fails on any connection.",
 
   "spreadsheet_id": "1RQhAq_sQSf3FFibGAMTufgJCps5CxeJWl2ZBFZGn8bA",
   "output_tab": "ChatGPT Output",
@@ -27,5 +27,9 @@
 
   "fetch_delay_seconds": 2,
   "max_pages": 40,
-  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+  "_browser": "headless false opens a visible Chrome window - slower and noisier, but it is the fallback when realestate.com.au's Kasada refuses the headless one. browser_channel null uses the Chromium from 'playwright install chromium'; set it to 'chrome' to drive your own installed Chrome instead.",
+  "headless": true,
+  "browser_channel": null,
+  "browser_profile_dir": "browser-profile"
 }

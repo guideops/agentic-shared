@@ -24,14 +24,11 @@ import json
 import pathlib
 import re
 import sys
-import time
-import urllib.error
-import urllib.parse
-import urllib.request
 
 HERE = pathlib.Path(__file__).parent
 ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
+import browser     # noqa: E402
 import sheets      # noqa: E402
 import walking     # noqa: E402
 
@@ -44,30 +41,20 @@ BUILDINGS = json.loads((DATA / "buildings.json").read_text())
 WALK = walking.WalkCache(ROOT / "walk-cache.json")
 KEY = ROOT / CONFIG["service_account_key"]
 
-UA = {"User-Agent": CONFIG["user_agent"],
-      "Accept": "text/html,application/xhtml+xml",
-      "Accept-Language": "en-AU,en;q=0.9"}
-_last = [0.0]
+SESSION = None          # the live browser, opened by main()
 
 
 def fetch(url):
-    """Polite GET. Returns html text or None. No evasion: a block is a block."""
-    gap = CONFIG["fetch_delay_seconds"] - (time.monotonic() - _last[0])
-    if gap > 0:
-        time.sleep(gap)
-    _last[0] = time.monotonic()
-    try:
-        req = urllib.request.Request(url, headers=UA)
-        with urllib.request.urlopen(req, timeout=40) as r:
-            return r.read().decode("utf-8", "replace")
-    except urllib.error.HTTPError as exc:
-        print(f"  [{exc.code}] {url[:90]}", file=sys.stderr)
-        if exc.code in (403, 429):
-            print("  -> the site is refusing this connection. If you are on a VPN "
-                  "or hotspot, try your normal home connection.", file=sys.stderr)
-    except Exception as exc:
-        print(f"  [error] {url[:70]}: {exc}", file=sys.stderr)
-    return None
+    """Fetch one page through the real browser. Returns html text or None.
+
+    There is deliberately no urllib fallback. A plain GET is refused by both
+    sites before it is even read - browser.py records the detail - so a fallback
+    would only add a guaranteed failure to every run. A block is still a block:
+    if the browser is refused too, we say so rather than inventing a result.
+    """
+    if SESSION is None:
+        raise RuntimeError("fetch() called before the browser session opened")
+    return SESSION.get(url)
 
 
 # --------------------------------------------------------------------------
@@ -386,27 +373,51 @@ def main():
     print(f"excluding {len(suppress)} already-judged listings; "
           f"{len(ai_ids)} known to the server pipeline\n", file=sys.stderr)
 
+    global SESSION
     rows, pages, blocked = {}, 0, []
-    for source, suburb, url in search_urls():
-        if pages >= CONFIG["max_pages"]:
-            break
-        pages += 1
-        print(f"  fetching {source:6} {suburb}", file=sys.stderr)
-        page = fetch(url)
-        if not page:
-            blocked.append(f"{source}/{suburb}")
-            continue
-        got = parse_domain(page, suburb) if source == "domain" else parse_rea(page, suburb)
-        if not got:
-            dbg = ROOT / f"debug-{source}-{suburb.replace(' ', '-').lower()}.html"
-            dbg.write_text(page[:400000])
-            print(f"    parsed 0 - saved {dbg.name} so the parser can be fixed",
-                  file=sys.stderr)
-        for r in got:
-            if r["listing_id"] in suppress or r["listing_id"] in rows:
-                continue
-            rows[r["listing_id"]] = r
-    WALK.save()
+    session = browser.Session(
+        ROOT / CONFIG.get("browser_profile_dir", "browser-profile"),
+        headless=CONFIG.get("headless", True),
+        channel=CONFIG.get("browser_channel"),
+        delay_seconds=CONFIG["fetch_delay_seconds"])
+
+    # BrowserUnavailable surfaces on __enter__, not on construction, so the
+    # guard has to sit outside the `with` rather than around the constructor.
+    try:
+        with session as SESSION:
+            mode = "headless" if CONFIG.get("headless", True) else "visible"
+            print(f"  browser up ({mode})", file=sys.stderr)
+            for source, suburb, url in search_urls():
+                if pages >= CONFIG["max_pages"]:
+                    break
+                pages += 1
+                print(f"  fetching {source:6} {suburb}", file=sys.stderr)
+                page = fetch(url)
+                slug = f"{source}-{suburb.replace(' ', '-').lower()}"
+                if not page:
+                    blocked.append(f"{source}/{suburb}")
+                    # the refusal page itself is the evidence - keep it
+                    if SESSION.last_html:
+                        dbg = ROOT / f"debug-blocked-{slug}.html"
+                        dbg.write_text(SESSION.last_html[:400000])
+                        print(f"    saved {dbg.name}", file=sys.stderr)
+                    continue
+                got = (parse_domain(page, suburb) if source == "domain"
+                       else parse_rea(page, suburb))
+                if not got:
+                    dbg = ROOT / f"debug-{slug}.html"
+                    dbg.write_text(page[:400000])
+                    print(f"    parsed 0 - saved {dbg.name} so the parser can be fixed",
+                          file=sys.stderr)
+                for r in got:
+                    if r["listing_id"] in suppress or r["listing_id"] in rows:
+                        continue
+                    rows[r["listing_id"]] = r
+    except browser.BrowserUnavailable as exc:
+        print(f"[error] {exc}", file=sys.stderr)
+        return 1
+    finally:
+        SESSION = None
 
     if blocked:
         print(f"\n[warn] blocked or failed: {', '.join(blocked)}", file=sys.stderr)
@@ -419,6 +430,7 @@ def main():
         assess(r)
         r["tier"], r["fails"] = verdict(r)
         r["matches_ai_output"] = "yes - also found by AI Output" if r["listing_id"] in ai_ids else ""
+    WALK.save()      # after assess(), which is what actually populates the cache
 
     matches = sorted([r for r in rows.values() if r["tier"] == "match"], key=score)
     near = sorted([r for r in rows.values() if r["tier"] == "near"], key=score)

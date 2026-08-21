@@ -1,6 +1,6 @@
 ---
 name: rental-search
-description: On-demand Sydney rental search run from a personal machine (laptop), reading domain.com.au and realestate.com.au directly and writing results to the 'ChatGPT Output' tab of the rental spreadsheet. Free — no scraping credits. Use when the user says /rental-search, "search for apartments", "find me rentals", "run the rental search", or wants a fresh look outside the daily server cron. Works identically under Claude Code and Codex.
+description: On-demand Sydney rental search run from a personal machine (laptop) on a residential connection, reading domain.com.au and realestate.com.au through a real Chromium via Playwright and writing results to the 'ChatGPT Output' tab of the rental spreadsheet. Free — no scraping credits. Requires a one-time `playwright install chromium` on each machine. Use when the user says /rental-search, "search for apartments", "find me rentals", "run the rental search", or wants a fresh look outside the daily server cron. Works identically under Claude Code and Codex.
 ---
 
 # Rental search (laptop)
@@ -15,14 +15,56 @@ python3 scripts/search.py --show-all   # also list the rejects and why
 python3 scripts/search.py --no-sheet   # just print, touch nothing
 ```
 
-## Why this runs on a laptop and not the server
+## One-time setup, per machine
 
-`domain.com.au` and `realestate.com.au` return **403 / 429 to datacentre IPs**.
-The server pipeline therefore pays a scraping service to reach them. A home
-connection reads both sites directly, for nothing — so this script costs $0 and
-can also see realestate.com.au, which the server pipeline is blind to.
+```bash
+pip install playwright PyJWT cryptography
+playwright install chromium      # ~150 MB, downloaded once
+```
 
-If it reports 403s, check you are not on a VPN or a mobile hotspot.
+Without this the script stops immediately and tells you to run it. The browser
+cannot be committed to the repo, so every new machine needs this step. `PyJWT`
+and `cryptography` are for signing the service-account token in `sheets.py`;
+skip them only if you always run `--no-sheet`.
+
+A run takes **60–90 seconds** — slower than the old plain-GET version, which was
+fast because it was being refused.
+
+## Why a real browser, and why not the server
+
+Two separate blocks, and **neither is about the IP address**:
+
+- **domain.com.au** — Akamai Bot Manager. Fingerprints the TLS handshake and the
+  HTTP/2 SETTINGS frame, and wants an `_abck` cookie that only its own
+  JavaScript sets. A `urllib` request speaks HTTP/1.1 with a Python TLS
+  fingerprint and is refused before the request is read.
+- **realestate.com.au** — Kasada. Answers the *first* request from any IP, with
+  no prior traffic, with `429 Too Many Requests` plus a fresh `x-kpsdk-ct` token
+  and a `KP_UIDz` cookie. That is not rate limiting, it is "you have no token".
+  There is no cooldown to wait out, and the challenge is an obfuscated JS VM
+  that no HTTP client can execute.
+
+So the script drives an actual Chromium. That is not evasion — it runs their
+JavaScript and honours their cookies, which is exactly what both systems ask
+for. An earlier version sent a polite plain GET and could never have worked; the
+claim that "a home connection reads both sites directly" was reasoned from the
+server's problem and was wrong.
+
+The **server still cannot use this**. Its datacentre IP is reputation-blocked by
+Akamai regardless of browser, which is why the daily cron keeps paying Apify.
+A residential IP is necessary but not sufficient; a real browser is the other
+half.
+
+### If it is still refused
+
+1. Set `"headless": false` in `config.json` — Kasada detects headless Chromium
+   specifically. A visible window opens for the length of the run.
+2. Set `"browser_channel": "chrome"` to drive your own installed Chrome.
+3. Open the site once by hand; the profile in `browser-profile/` is persistent,
+   so the run inherits the session.
+
+Every refusal writes `debug-blocked-*.html` next to the config, so the actual
+refusal page can be read rather than guessed at.
 
 ## The brief it implements
 

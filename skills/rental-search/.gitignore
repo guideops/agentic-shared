@@ -2,3 +2,4 @@ service-account.json
 walk-cache.json
 debug-*.html
 __pycache__/
+browser-profile/
