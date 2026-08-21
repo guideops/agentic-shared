@@ -18,14 +18,27 @@ python3 scripts/search.py --no-sheet   # just print, touch nothing
 ## One-time setup, per machine
 
 ```bash
-pip install playwright PyJWT cryptography
-playwright install chromium      # ~150 MB, downloaded once
+pip install patchright PyJWT cryptography
+patchright install chromium      # ~150 MB, downloaded once
 ```
 
 Without this the script stops immediately and tells you to run it. The browser
 cannot be committed to the repo, so every new machine needs this step. `PyJWT`
 and `cryptography` are for signing the service-account token in `sheets.py`;
 skip them only if you always run `--no-sheet`.
+
+**Why patchright and not plain Playwright.** Driving a browser is not enough:
+both sites detect the *automation* on top of the browser, independently of
+`headless` and independently of the user agent. The tells live in the CDP layer
+— `Runtime.enable` is observable from page JS, as are the stack-trace artefacts
+CDP leaves behind. patchright is a drop-in Playwright fork that closes exactly
+those leaks. Stock Playwright still works as a fallback and the script will use
+it automatically, it is just far more visible.
+
+Two things that look like omissions but are deliberate: under patchright the
+script does **not** patch `navigator.webdriver` and does **not** pass custom
+launch args. `add_init_script` is itself detectable, so adding either back
+reintroduces the tell they were meant to remove.
 
 A run takes **60–90 seconds** — slower than the old plain-GET version, which was
 fast because it was being refused.

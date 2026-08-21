@@ -24,8 +24,8 @@ systems are asking for. The old `fetch()` was polite but could never succeed.
 
 One-time setup on each machine:
 
-    pip install playwright
-    playwright install chromium
+    pip install patchright
+    patchright install chromium
 
 The profile directory is persistent, so cookies and any solved token survive
 between runs. The second run of the day is usually faster and less challenged
@@ -40,7 +40,43 @@ CHALLENGE_CODES = (403, 429, 503)
 
 
 class BrowserUnavailable(RuntimeError):
-    """Playwright is not installed, or its Chromium was never downloaded."""
+    """No browser driver is installed, or its Chromium was never downloaded."""
+
+
+def _load_driver():
+    """Prefer patchright over stock Playwright. Returns (sync_playwright, name).
+
+    Driving a browser is not enough on its own - both sites also detect the
+    *automation*, independently of `headless` and independently of the UA. The
+    tells live in the CDP layer: `Runtime.enable` is observable from page JS,
+    and so are the stack-trace artefacts CDP leaves behind. A real Chrome on a
+    residential connection still gets an Access Denied page while the same
+    machine's ordinary Chrome loads the site fine, which is how we know the
+    remaining signal is automation rather than IP or geo.
+
+    patchright is a drop-in Playwright fork that closes those specific leaks.
+    Two consequences worth knowing, because they invert the usual advice:
+
+      * `add_init_script` is itself detectable, so under patchright we do NOT
+        patch `navigator.webdriver` - patchright already handles it, and adding
+        our own script would reintroduce the tell we are trying to remove.
+      * custom launch args are likewise a fingerprint; patchright picks its own.
+
+    Stock Playwright still works as a fallback, it is just far more visible.
+    """
+    try:
+        from patchright.sync_api import sync_playwright
+        return sync_playwright, "patchright"
+    except ImportError:
+        pass
+    try:
+        from playwright.sync_api import sync_playwright
+        return sync_playwright, "playwright"
+    except ImportError as exc:
+        raise BrowserUnavailable(
+            "no browser driver installed. Run:\n"
+            "    pip install patchright && patchright install chromium"
+        ) from exc
 
 
 class Session:
@@ -60,19 +96,14 @@ class Session:
         self.attempts = max(1, int(attempts))
         self._pw = None
         self._ctx = None
+        self.driver = None         # "patchright" or "playwright", set on enter
         self._last = 0.0
         self.last_status = None
         self.last_html = None      # body of the last refusal, for debugging
 
     # -- lifecycle ---------------------------------------------------------
     def __enter__(self):
-        try:
-            from playwright.sync_api import sync_playwright
-        except ImportError as exc:
-            raise BrowserUnavailable(
-                "playwright is not installed. Run:\n"
-                "    pip install playwright && playwright install chromium"
-            ) from exc
+        sync_playwright, self.driver = _load_driver()
 
         self._pw = sync_playwright().start()
         launch = dict(
@@ -80,26 +111,38 @@ class Session:
             headless=self.headless,
             locale="en-AU",
             timezone_id="Australia/Sydney",
-            viewport={"width": 1440, "height": 900},
-            args=["--disable-blink-features=AutomationControlled"],
+            no_viewport=True,          # a fixed viewport is itself a signal
         )
-        if self.channel:
-            launch["channel"] = self.channel
-        try:
-            self._ctx = self._pw.chromium.launch_persistent_context(**launch)
-        except Exception as exc:
+        if self.driver == "playwright":
+            # Stock Playwright leaks automation everywhere, so a couple of
+            # patches are better than nothing. Under patchright these same two
+            # lines are *harmful* - see the note in _load_driver().
+            launch["args"] = ["--disable-blink-features=AutomationControlled"]
+
+        # Real Chrome beats bundled Chromium: the bundle has its own build
+        # fingerprint. Fall back to the bundle if Chrome is not installed.
+        for channel in ([self.channel] if self.channel else ["chrome", None]):
+            attempt = dict(launch)
+            if channel:
+                attempt["channel"] = channel
+            try:
+                self._ctx = self._pw.chromium.launch_persistent_context(**attempt)
+                self.channel = channel
+                break
+            except Exception as exc:
+                last = exc
+        else:
             self._pw.stop()
             self._pw = None
             raise BrowserUnavailable(
-                f"could not launch Chromium ({exc}).\n"
-                "If this is a fresh machine, run: playwright install chromium"
-            ) from exc
+                f"could not launch a browser ({last}).\n"
+                f"On a fresh machine run: {self.driver} install chromium"
+            )
 
-        # `navigator.webdriver` is the one automation flag that is trivially
-        # readable from page JS and that both vendors check for.
-        self._ctx.add_init_script(
-            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-        )
+        if self.driver == "playwright":
+            self._ctx.add_init_script(
+                "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+            )
         self._ctx.set_default_timeout(self.timeout)
         return self
 

@@ -386,7 +386,9 @@ def main():
     try:
         with session as SESSION:
             mode = "headless" if CONFIG.get("headless", True) else "visible"
-            print(f"  browser up ({mode})", file=sys.stderr)
+            print(f"  browser up ({SESSION.driver}, "
+                  f"{SESSION.channel or 'bundled chromium'}, {mode})",
+                  file=sys.stderr)
             for source, suburb, url in search_urls():
                 if pages >= CONFIG["max_pages"]:
                     break

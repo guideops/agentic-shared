@@ -28,7 +28,7 @@
   "fetch_delay_seconds": 2,
   "max_pages": 40,
 
-  "_browser": "headless false opens a visible Chrome window - slower and noisier, but it is the fallback when realestate.com.au's Kasada refuses the headless one. browser_channel null uses the Chromium from 'playwright install chromium'; set it to 'chrome' to drive your own installed Chrome instead.",
+  "_browser": "headless false opens a visible window - slower, but it is the fallback when Kasada refuses the headless one. browser_channel null means 'try your installed Chrome first, fall back to the bundled Chromium'; force one with 'chrome' or 'chromium'.",
   "headless": true,
   "browser_channel": null,
   "browser_profile_dir": "browser-profile"
