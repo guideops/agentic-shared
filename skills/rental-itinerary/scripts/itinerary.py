@@ -34,6 +34,13 @@ KEY = BASE_DIR / "service-account.json"
 STATIONS = json.loads((BASE_DIR / "stations.json").read_text())
 WALK = walking.WalkCache(BASE_DIR / "walk-cache.json")
 GEO_CACHE = pathlib.Path(__file__).parent.parent / "geocode-cache.json"
+PLAN_JSON = pathlib.Path(__file__).parent.parent / "plan.json"
+
+
+def listing_id(url: str) -> str:
+    """The trailing numeric id in a listing url - the key everything joins on."""
+    m = re.search(r"-(\d{6,})(?:[?#]|$)", (url or "").split("?")[0])
+    return m.group(1) if m else ""
 
 UA = {"User-Agent": "sydney-rentals-itinerary/1.0 (personal rental search)"}
 STREET_WORDS = {
@@ -234,6 +241,11 @@ def main():
                     help="viewings per day; keeps the trip humane")
     ap.add_argument("--tab", default="Viewing Plan")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--pdf", nargs="?", const="", default=None, metavar="PATH",
+                    help="also render the illustrated PDF itinerary")
+    ap.add_argument("--fetch-photos", action="store_true",
+                    help="download listing photos while building the PDF; only "
+                         "works from a machine Domain's CDN will serve (laptop)")
     args = ap.parse_args()
 
     src_gid = (CONFIG.get("exclude_tab_gids") or [None])[0]
@@ -334,6 +346,10 @@ def main():
                 "walk_rule": walk_verdict(stop),
                 "located_by": stop["located_by"],
                 "your_comments": stop["comments"], "link": stop["link"],
+                "lat": stop["lat"], "lon": stop["lon"],
+                "listing_id": listing_id(stop["link"]),
+                "station_lat": (stop["station"] or {}).get("lat"),
+                "station_lon": (stop["station"] or {}).get("lon"),
             })
             cur = stop
 
@@ -351,11 +367,35 @@ def main():
               file=sys.stderr)
         return 0
 
+    # Sidecar for the PDF renderer: coordinates and listing ids that the flat
+    # sheet has no column for. The sheet stays the thing you correct data in;
+    # this is only ever derived from it.
+    # Carry the photo URLs into the plan itself. They cost nothing (they ride in
+    # the Apify payload the watcher already pays for) and baking them in here is
+    # what lets the PDF be rendered on a laptop that has no state.json, no
+    # service-account key, and no copy of the watcher at all.
+    try:
+        st = json.loads((BASE_DIR / "state.json").read_text())
+    except Exception:
+        st = {}
+    for row in plan:
+        row["images"] = (st.get(row.get("listing_id") or "") or {}).get("images") or []
+
+    PLAN_JSON.write_text(json.dumps(
+        {"base": {k: base[k] for k in ("name", "lat", "lon")},
+         "trip": CONFIG.get("trip", {}), "stops": plan}, indent=1))
+
     gid = sheets.ensure_tab(CONFIG["spreadsheet_id"], KEY, args.tab)
     rows_out = [{c: p.get(c, "") for c in cols} for p in plan]
     sheets.replace(CONFIG["spreadsheet_id"], KEY, cols, rows_out, gid,
                    signature={"day", "stop", "link"})
     print(f"[info] wrote {len(plan)} stops to '{args.tab}'", file=sys.stderr)
+
+    if args.pdf is not None:
+        import pdf as pdfmod
+        out = pdfmod.build(PLAN_JSON, args.pdf or None,
+                           fetch_photos=args.fetch_photos)
+        print(f"[info] pdf: {out}", file=sys.stderr)
     return 0
 
 

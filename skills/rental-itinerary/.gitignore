@@ -1,2 +1,4 @@
 geocode-cache.json
 __pycache__/
+tile-cache/
+photos/

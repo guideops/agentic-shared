@@ -1,12 +1,14 @@
 ---
 name: rental-itinerary
-description: Build a property-viewing itinerary from the operator's 'Apartments' tab in the Sydney rental spreadsheet. Orders viewings High → Medium → Low priority, groups them by location so one trip covers a whole suburb, and costs every hop from the Rydges North Sydney base. Use when the user says /rental-itinerary, "plan the viewings", "viewing plan", "plan of attack", "itinerary for the apartments", or has just updated the Apartments shortlist and wants a fresh route. Rebuild it as often as the list changes.
+description: Build a property-viewing itinerary from the operator's 'Apartments' tab in the Sydney rental spreadsheet. Orders viewings High → Medium → Low priority, groups them by location so one trip covers a whole suburb, and costs every hop from the Rydges North Sydney base, then renders both a 'Viewing Plan' sheet and a phone-readable PDF with per-day maps and tappable links. Use when the user says /rental-itinerary, "plan the viewings", "viewing plan", "plan of attack", "itinerary for the apartments", or has just updated the Apartments shortlist and wants a fresh route. Rebuild it as often as the list changes.
 ---
 
 # Rental viewing itinerary
 
-Turns the hand-curated **'Apartments'** tab into a **'Viewing Plan'** tab: what to
-see, in what order, on which day, and how long each hop takes.
+Turns the hand-curated **'Apartments'** tab into a **'Viewing Plan'** tab and an
+illustrated **PDF**: what to see, in what order, on which day, and how long each
+hop takes. The sheet is where you check and correct the data; the PDF is what
+you carry on your phone.
 
 ## Run it
 
@@ -19,6 +21,73 @@ python3 /opt/agentic/shared/skills/rental-itinerary/scripts/itinerary.py
 | `--per-day N` | `4` | Viewings per day. The trip is a fortnight; burning out in three days helps nobody. |
 | `--tab NAME` | `Viewing Plan` | Destination tab. Created if missing. |
 | `--dry-run` | off | Print the plan, write nothing. |
+| `--pdf [PATH]` | off | Also render the illustrated PDF. Default path `/root/Documents/Hermes/viewing-itinerary.pdf`. |
+| `--fetch-photos` | off | Download listing photos into `photos/`. **Laptop only** - see below. |
+
+## The PDF
+
+```bash
+python3 .../itinerary.py --pdf              # plan + sheet + pdf
+python3 .../scripts/pdf.py                  # re-render from the last plan.json
+```
+
+A5 portrait, built for reading on a phone while you are moving. One card per
+viewing: number, priority, `$/wk`, the travel leg from the previous stop, the
+station and its walk verdict, your own comments, and two **tappable** links -
+`Open listing` and `Directions` (a Google Maps deep link to the exact
+coordinates).
+
+Each day opens with **two** maps, because they answer different questions:
+
+1. **`B` &rarr; `1`** - the hotel to the first viewing, framed to fit both, with
+   the rail leg dashed and the route and minutes in the header.
+2. **The detail map** - that day's stops at street level, solid line in visiting
+   order. The dashed leg runs off the edge toward the hotel, so you can see
+   which way you came in.
+
+One map cannot do both: a frame wide enough to hold the hotel shrinks the day's
+actual stops to specks. Properties that share a suburb centroid are fanned out
+so every number stays readable.
+
+Everything in the PDF is derived from the sheet. Correct data on **Apartments**,
+never in the PDF.
+
+### Costs nothing
+
+Map tiles come from `tile.openstreetmap.org` (free, no key, cached in
+`tile-cache/`). Rendering is local headless Chrome. **No Apify call is made by
+this skill at any point** - Apify is only ever touched by the daily watcher cron.
+
+### Photos need your laptop
+
+Domain's image CDN refuses this server (Kuala Lumpur; every request 400s), the
+same wall that forces `rental-search` onto a residential connection. The photo
+*URLs* are free - they arrive inside the Apify payload the cron already pays for
+and are stored in `state.json`. Only the bytes are blocked.
+
+So: run `--fetch-photos` once from your laptop. Photos land in
+`photos/<listing_id>.jpg` and every later render, server-side included, picks
+them up from that cache. A stop with no cached photo still renders - it just
+shows the map pin instead of an empty frame.
+
+Two sources, tried in order: the stored Apify urls, then the listing page's
+`og:image` tag. The second is what covers hand-added rows that never went
+through the watcher and so have no stored urls at all.
+
+### Rendering the PDF away from the server
+
+`plan.json` is committed on purpose. It carries everything the renderer needs -
+coordinates, listing ids, comments and photo urls - so on a laptop this is the
+whole job:
+
+```bash
+git pull
+python3 skills/rental-itinerary/scripts/pdf.py --fetch-photos
+```
+
+No service-account key, no `state.json`, no copy of the watcher. `plan.json` is
+refreshed on the server every time `itinerary.py` runs, so pull before you
+render. Needs `Pillow` and Chrome; without Pillow you get the cards and no maps.
 
 Takes 1–3 minutes: it geocodes any new addresses and routes real walking paths.
 Both are cached, so a re-run after adding two properties only costs those two.
@@ -50,6 +119,10 @@ immediately whether a proposed slot is reachable from the previous one.
 `day`, `stop`, `priority`, `why_now`, `suburb`, `address`, `cost_pw`, `from`,
 `travel_via`, `travel_mins`, `station`, `walk_from_station_mins`, `walk_rule`,
 `located_by`, `your_comments`, `link`
+
+The PDF additionally uses `plan.json`, a sidecar written next to the skill
+holding each stop's coordinates and listing id - the things a flat sheet has no
+column for.
 
 `walk_rule` scores each property against the operator's station rule — under
 8 min preferred, up to 10 tolerated, over 10 is out. `your_comments` carries
