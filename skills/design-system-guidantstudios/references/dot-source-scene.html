@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>/design-system-guidantstudios · Animated Dot-Matrix Scenes</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#07070a;--paper:#f6f6f3;--cobalt:#1433d6;--muted:#7a7e88;}
+  html{color-scheme:dark;} *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{background:var(--ink);color:#fff;font:400 15px/1.4 'Archivo',system-ui,sans-serif;overflow:hidden;}
+  #stage{position:fixed;inset:0;} canvas{display:block;width:100%;height:100%;}
+  .top{position:fixed;top:20px;left:0;right:0;display:flex;justify-content:center;pointer-events:none;z-index:5;}
+  .badge{display:flex;align-items:center;gap:14px;padding:9px 18px;border:1.5px solid rgba(255,255,255,.16);background:rgba(7,7,10,.5);backdrop-filter:blur(6px);}
+  .kick{letter-spacing:5px;text-transform:uppercase;font-size:11px;color:var(--muted);}
+  .stat{font-family:'Doto',monospace;font-weight:900;letter-spacing:2px;font-size:15px;color:var(--cobalt);min-width:96px;text-align:right;}
+  .bar{position:fixed;bottom:20px;left:0;right:0;display:flex;justify-content:center;z-index:5;}
+  .panel{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center;padding:11px 16px;border:1.5px solid rgba(255,255,255,.16);background:rgba(7,7,10,.55);backdrop-filter:blur(8px);}
+  .grp{display:flex;align-items:center;gap:7px;} .lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
+  button{font:inherit;color:#fff;background:transparent;border:1.5px solid rgba(255,255,255,.2);padding:7px 12px;cursor:pointer;letter-spacing:.5px;font-size:13px;transition:.13s;}
+  button:hover{border-color:var(--cobalt);color:var(--cobalt);}
+  button.on{background:var(--cobalt);border-color:var(--cobalt);color:var(--ink);font-weight:700;}
+  .seg{display:flex;gap:6px;} input[type=range]{width:88px;accent-color:var(--cobalt);cursor:pointer;}
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="c"></canvas></div>
+<div class="top"><div class="badge"><span class="kick">Dot Matrix // Animated Scene</span><span class="stat" id="status">-</span></div></div>
+<div class="bar"><div class="panel">
+  <div class="grp"><span class="lbl">Scene</span><div class="seg" id="sceneSeg">
+    <button data-scene="rocket" class="on">Rocket</button>
+    <button data-scene="swell">Swell</button>
+    <button data-scene="bars">Bars</button>
+  </div></div>
+  <div class="grp"><span class="lbl">Mode</span><div class="seg" id="modeSeg">
+    <button data-mode="source" class="on">Source</button>
+    <button data-mode="mono">Mono</button>
+    <button data-mode="paper">Paper</button>
+  </div></div>
+  <div class="grp"><span class="lbl">Density</span><input id="density" type="range" min="6" max="16" value="9"></div>
+  <div class="grp"><span class="lbl">Dot</span><input id="dot" type="range" min="40" max="80" value="56"></div>
+  <button id="play" class="on">❚❚ Pause</button>
+  <button id="replay">↻</button>
+</div></div>
+
+<script>
+/* ============================================================
+   REUSABLE ENGINE - copy this block into any /design-system-guidantstudios build.
+   A "scene" is a function (bx, cols, rows, t, dt, api) that
+   DRAWS into the small buffer. The engine turns the buffer's
+   brightness into dots every frame. To add a scene: register
+   one function in SCENES. Nothing else changes.
+   ============================================================ */
+const cv=document.getElementById('c'), ctx=cv.getContext('2d');
+const buf=document.createElement('canvas'), bx=buf.getContext('2d',{willReadFrequently:true});
+let W,H,cell=9,cols,rows,dpr, dotScale=0.56, mode='source', scene='rocket', playing=true;
+
+function resize(){
+  dpr=Math.min(window.devicePixelRatio||1,2); W=innerWidth; H=innerHeight;
+  cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+  cols=Math.ceil(W/cell); rows=Math.ceil(H/cell); buf.width=cols; buf.height=rows; bx.imageSmoothingEnabled=true;
+  api.stars=Array.from({length:Math.round(cols*rows*0.012)},()=>({x:Math.random()*cols,y:Math.random()*rows*0.78,a:.25+Math.random()*.5,sp:.6+Math.random()*2,ph:Math.random()*6.28}));
+}
+// shared helpers passed to scenes
+const api={ stars:[], parts:[], rnd:(a=1)=>Math.random()*a,
+  spawn(p){api.parts.push(p);}, clearParts(){api.parts=[];} };
+
+function dotPass(status){
+  ctx.fillStyle = (mode==='paper')?'#f6f6f3':'#07070a'; ctx.fillRect(0,0,W,H);
+  const d=bx.getImageData(0,0,cols,rows).data, maxR=cell*dotScale, base=(mode==='paper')?'28,26,22':'232,226,210';
+  for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){
+    const i=(y*cols+x)*4, r=d[i],g=d[i+1],b=d[i+2];
+    let bri=(0.299*r+0.587*g+0.114*b)/255;
+    let s=(mode==='paper')?(bri):(bri); // both: brightness drives size; paper recolors below
+    if(s<0.06) continue;
+    const warm=(r>120&&r>g+22&&g>=b-12);
+    let col;
+    if(mode==='mono') col=`rgba(20,51,214,${0.3+0.7*s})`;
+    else if(mode==='paper') col= warm?`rgba(20,51,214,0.95)`:`rgba(${base},${0.3+0.7*s})`;
+    else col=`rgb(${r},${g},${b})`;
+    const rad=maxR*(0.32+0.68*s);
+    ctx.fillStyle=col; ctx.beginPath(); ctx.arc(x*cell+cell/2,y*cell+cell/2,rad,0,6.2832); ctx.fill();
+  }
+  document.getElementById('status').textContent=status||'';
+}
+
+/* ===================== SCENES ===================== */
+const SCENES={};
+
+// 1) ROCKET LAUNCH - particle animation, loops ~8.2s
+SCENES.rocket=(bx,cols,rows,t,dt)=>{
+  bx.fillStyle='#000'; bx.fillRect(0,0,cols,rows);
+  for(const s of api.stars){const tw=s.a*(0.55+0.45*Math.sin(t*s.sp+s.ph));bx.fillStyle=`rgba(220,225,255,${tw})`;bx.fillRect(s.x,s.y,1,1);}
+  const cx=cols*0.5, bw=rows*0.052, coneH=bw*1.25, bodyLen=rows*0.30, nozH=bw*0.45, totalH=coneH+bodyLen+nozH;
+  const restNose=rows*0.80-totalH, offNose=-totalH-rows*0.25;
+  let status='STANDBY',flame=0,p=0,shake=0;
+  const tt=t%8.2;
+  if(tt<2.2){status='STANDBY';}
+  else if(tt<3.5){const k=(tt-2.2)/1.3;flame=.25+.75*k;shake=.5+k*1.4;const cd=3-Math.floor(k*3);status=cd>0?('T-MINUS '+cd):'IGNITION';}
+  else if(tt<6.3){status='LIFTOFF';flame=1;p=((tt-3.5)/2.8)**2;shake=1.1*(1-p);}
+  else {status='IN ORBIT';p=1;}
+  let nose=restNose+(offNose-restNose)*p; const sx=(Math.random()-.5)*shake; nose+=(Math.random()-.5)*shake;
+  const RX=cx+sx, bTop=nose+coneH, bBot=bTop+bodyLen, nBot=bBot+nozH, padY=rows*0.80;
+  if(tt<3.6){bx.fillStyle='rgba(150,150,150,.85)';bx.fillRect(cx-bw*1.6,padY+nozH+1,bw*3.2,Math.max(1,rows*0.006));}
+  if(flame>.15){
+    for(let i=0;i<Math.round(flame*4);i++)api.spawn({t:'e',x:RX+(Math.random()-.5)*cols*0.02,y:nBot,vx:(Math.random()-.5)*0.4,vy:0.6+Math.random()*1.4,r:cols*0.004+Math.random()*cols*0.004,life:1,dk:0.02+Math.random()*0.03});
+    const sm=(n,push,x,y)=>{for(let i=0;i<n;i++){const ang=-Math.PI/2+(Math.random()-.5)*Math.PI*1.4,sp=(.15+Math.random()*.5)*push;api.spawn({t:'s',x:x+(Math.random()-.5)*cols*.04,y,vx:Math.cos(ang)*sp*(Math.random()<.5?1.6:1),vy:Math.sin(ang)*sp-.05,r:cols*.015,gr:cols*.0016+Math.random()*cols*.0016,life:1,dk:.004+Math.random()*.006,g:120+Math.random()*70|0});}};
+    if(p<0.02) sm(Math.round(flame*7),1,cx,padY+nozH); else if(p<0.85){sm(2,.9,cx,padY+nozH);sm(2,.5,RX,nBot);}
+  }
+  for(const pt of api.parts){pt.x+=pt.vx*dt*60;pt.y+=pt.vy*dt*60;if(pt.t==='s'){pt.r+=pt.gr*dt*60;pt.vx*=.985;pt.vy*=.985;pt.life-=pt.dk*dt*60;}else{pt.vy+=.04*dt*60;pt.life-=pt.dk*dt*60;}}
+  api.parts=api.parts.filter(p=>p.life>0&&p.r<cols*0.5); if(api.parts.length>1400)api.parts.splice(0,api.parts.length-1400);
+  for(const pt of api.parts){if(pt.t!=='s')continue;const a=Math.min(.5,pt.life*.5),gg=pt.g;const grd=bx.createRadialGradient(pt.x,pt.y,0,pt.x,pt.y,pt.r);grd.addColorStop(0,`rgba(${gg},${gg},${gg},${a})`);grd.addColorStop(1,`rgba(${gg},${gg},${gg},0)`);bx.fillStyle=grd;bx.beginPath();bx.arc(pt.x,pt.y,pt.r,0,6.2832);bx.fill();}
+  if(flame>.05){const pl=(bodyLen*.7+rows*.05)*flame*(.8+.2*Math.sin(t*40)),pw=bw*.55;const grd=bx.createLinearGradient(0,nBot,0,nBot+pl);grd.addColorStop(0,'rgba(255,255,255,.95)');grd.addColorStop(.35,'rgba(197,202,210,.95)');grd.addColorStop(1,'rgba(20,51,214,0)');bx.fillStyle=grd;bx.beginPath();bx.moveTo(RX-pw,nBot);bx.quadraticCurveTo(RX-pw*.3,nBot+pl*.7,RX+(Math.random()-.5)*pw*.4,nBot+pl);bx.quadraticCurveTo(RX+pw*.3,nBot+pl*.7,RX+pw,nBot);bx.closePath();bx.fill();}
+  for(const pt of api.parts){if(pt.t!=='e')continue;bx.fillStyle=`rgba(255,${150+Math.random()*80|0},40,${Math.min(1,pt.life)})`;bx.beginPath();bx.arc(pt.x,pt.y,pt.r,0,6.2832);bx.fill();}
+  bx.fillStyle='#f4f4f4';
+  bx.beginPath();bx.moveTo(RX,nose);bx.lineTo(RX-bw,bTop);bx.lineTo(RX+bw,bTop);bx.closePath();bx.fill();
+  bx.fillRect(RX-bw,bTop,bw*2,bodyLen);
+  bx.beginPath();bx.moveTo(RX-bw,bBot-bodyLen*.22);bx.lineTo(RX-bw*2.1,bBot);bx.lineTo(RX-bw,bBot);bx.closePath();bx.fill();
+  bx.beginPath();bx.moveTo(RX+bw,bBot-bodyLen*.22);bx.lineTo(RX+bw*2.1,bBot);bx.lineTo(RX+bw,bBot);bx.closePath();bx.fill();
+  bx.fillStyle='#bdbdbd';bx.beginPath();bx.moveTo(RX-bw*.6,bBot);bx.lineTo(RX-bw*.95,nBot);bx.lineTo(RX+bw*.95,nBot);bx.lineTo(RX+bw*.6,bBot);bx.closePath();bx.fill();
+  bx.fillStyle='#3a56ec';bx.beginPath();bx.arc(RX,bTop+bodyLen*.26,bw*.42,0,6.2832);bx.fill();
+  return status;
+};
+
+// 2) SWELL - flowing wave field (math, no particles)
+SCENES.swell=(bx,cols,rows,t)=>{
+  bx.fillStyle='#000'; bx.fillRect(0,0,cols,rows);
+  for(let x=0;x<cols;x++){
+    const u=x/cols;
+    const crest=rows*(0.42+0.16*Math.sin(u*7+t*1.6)+0.07*Math.sin(u*17-t*2.3));
+    const grd=bx.createLinearGradient(0,crest,0,rows);
+    grd.addColorStop(0,'rgba(84,112,240,0.95)');
+    grd.addColorStop(0.5,'rgba(20,51,214,0.7)');
+    grd.addColorStop(1,'rgba(7,12,80,0.15)');
+    bx.fillStyle=grd; bx.fillRect(x,crest,1.5,rows-crest);
+    bx.fillStyle='rgba(225,231,255,0.95)'; bx.fillRect(x,crest,1.5,Math.max(1,rows*0.012)); // bright crest line
+  }
+  return 'SWELL';
+};
+
+// 3) BARS - bouncing equalizer (math, no particles)
+SCENES.bars=(bx,cols,rows,t)=>{
+  bx.fillStyle='#000'; bx.fillRect(0,0,cols,rows);
+  const N=16, bw=cols/N;
+  for(let i=0;i<N;i++){
+    const h=(0.25+0.7*Math.abs(Math.sin(t*1.7+i*0.6)*0.6+Math.sin(t*2.9+i*1.3)*0.4))*rows*0.7;
+    const x0=i*bw+bw*0.18, w=bw*0.64, y0=rows*0.86-h;
+    const grd=bx.createLinearGradient(0,y0,0,y0+h);
+    grd.addColorStop(0,'rgba(160,178,255,0.95)'); grd.addColorStop(1,'rgba(20,51,214,0.55)');
+    bx.fillStyle=grd; bx.fillRect(x0,y0,w,h);
+  }
+  bx.fillStyle='rgba(150,150,150,0.6)'; bx.fillRect(0,rows*0.86,cols,Math.max(1,rows*0.006)); // floor
+  return 'EQUALIZER';
+};
+
+/* ===================== LOOP ===================== */
+let start=performance.now(), last=start, acc=0;
+function frame(now){
+  let dt=(now-last)/1000; last=now; if(dt>0.05)dt=0.05;
+  if(playing) acc+=dt;
+  const t=acc;
+  const status=SCENES[scene](bx,cols,rows,t,dt,api);
+  dotPass(status);
+  requestAnimationFrame(frame);
+}
+
+/* ===================== UI ===================== */
+function setOn(sel,b){document.querySelectorAll(sel+' button').forEach(x=>x.classList.toggle('on',x===b));}
+document.querySelectorAll('#sceneSeg button').forEach(b=>b.addEventListener('click',()=>{scene=b.dataset.scene;api.clearParts();start=performance.now();acc=0;setOn('#sceneSeg',b);}));
+document.querySelectorAll('#modeSeg button').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;setOn('#modeSeg',b);}));
+document.getElementById('density').addEventListener('input',e=>{cell=+e.target.value;resize();});
+document.getElementById('dot').addEventListener('input',e=>{dotScale=(+e.target.value)/100;});
+document.getElementById('play').addEventListener('click',e=>{playing=!playing;e.target.textContent=playing?'❚❚ Pause':'▶ Play';e.target.classList.toggle('on',playing);});
+document.getElementById('replay').addEventListener('click',()=>{api.clearParts();acc=0;});
+addEventListener('resize',resize);
+// query: ?scene=swell&seek=4.5 (headless screenshots / deep links)
+const Q=new URLSearchParams(location.search);
+if(Q.get('scene')&&SCENES[Q.get('scene')]){scene=Q.get('scene');setOn('#sceneSeg',[...document.querySelectorAll('#sceneSeg button')].find(b=>b.dataset.scene===scene));}
+if(Q.get('seek')){acc=+Q.get('seek');}
+resize(); requestAnimationFrame(frame);
+</script>
+</body>
+</html>

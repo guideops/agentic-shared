@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cobalt panel - /design-system-guidantstudios components</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<style>
+:root, html[data-theme="light"] {
+  --bg:#f6f6f3; --surface:#ffffff; --surface-2:#ececea; --line:#d7d8dc;
+  --text:#0b0b0f; --muted:#5d6069; --accent:#1433d6; --on-accent:#ffffff; --slab:#0b0b0f;
+  --cobalt:#1433d6; --on-cobalt:#ffffff; --ink:#0b0b0f; color-scheme:light;
+}
+html[data-theme="dark"] {
+  --bg:#0b0b0f; --surface:#15161b; --surface-2:#1e2026; --line:#2a2c33;
+  --text:#f2f3f5; --muted:#9a9ea8; --accent:#6f86ff; --on-accent:#0b0b0f; --slab:#2a2c33; color-scheme:dark;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font:400 16px/1.6 'Archivo',system-ui,sans-serif; -webkit-font-smoothing:antialiased;
+  transition:background .25s,color .25s; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:72px 28px; }
+::selection { background:var(--accent); color:var(--on-accent); }
+.stage { width:100%; max-width:960px; }
+.kicker { font-stretch:125%; font-weight:600; text-transform:uppercase; font-size:11px; letter-spacing:.18em; color:var(--muted); display:block; margin-bottom:12px; }
+.mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.doto { font-family:'Doto',monospace; font-weight:900; color:var(--accent); margin:0 .18em; }
+.btn { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:14px 24px; border-radius:4px;
+  font:600 13px/1 'Archivo',sans-serif; font-stretch:125%; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; cursor:pointer;
+  background:var(--surface); color:var(--text); border:2px solid var(--text); transition:transform .15s ease, box-shadow .15s ease; }
+html[data-theme="dark"] .btn { border-color:var(--line); }
+.btn:hover { transform:translate(-2px,-2px); box-shadow:4px 4px 0 var(--slab); }
+.btn:active { transform:translate(1px,1px); box-shadow:none; transition-duration:.06s; }
+.btn-primary { background:var(--accent); border-color:var(--accent) !important; color:var(--on-accent); }
+.btn .arr { transition:transform .15s ease; } .btn:hover .arr { transform:translateX(4px); }
+.ascii { font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0; white-space:pre; color:var(--text); margin:0; }
+.ascii .ascii-hot { color:var(--accent); font-weight:400; }
+.ascii-rule { font:400 12px/1 'JetBrains Mono',monospace; color:var(--muted); white-space:nowrap; overflow:hidden; width:0; min-width:100%; }
+#themeToggle { position:fixed; top:16px; right:16px; z-index:100; width:40px; height:40px; border:2px solid var(--text); border-radius:4px;
+  background:var(--surface); color:var(--text); cursor:pointer; font:500 16px/1 'JetBrains Mono',monospace; }
+
+body { padding:0; display:block; }
+.stage { max-width:none; }
+.cobalt { background:#1433d6; color:#fff; display:grid; grid-template-columns:1fr 1fr; min-height:520px; overflow:hidden; }
+.cobalt .l { padding:48px; display:flex; flex-direction:column; justify-content:space-between; }
+.stack { font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:clamp(56px,8vw,112px); line-height:.86; letter-spacing:-.01em; }
+.stack span { display:block; }
+.cobalt .tag { font:500 11px/1 'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.04em; border:1.5px solid #fff; border-radius:2px; padding:4px 8px; align-self:flex-start; }
+.cobalt .r { display:grid; place-items:center; padding:32px; }
+.cobalt svg.tube { width:min(100%,300px); aspect-ratio:3/5; height:auto; overflow:visible; }
+.tube * { fill:none; stroke:#fff; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+.tube .solid { fill:#1433d6; }
+.btn-onc { background:#fff; color:#1433d6; border-color:#fff !important; }
+.checker { position:relative; height:360px; background-color:#fff; overflow:hidden;
+  background-image:conic-gradient(#1433d6 25%, transparent 0 50%, #1433d6 0 75%, transparent 0); background-size:96px 96px; }
+.checker .mask { position:absolute; inset:0; background:#fff;
+  clip-path:polygon(0 0,100% 0,100% 100%,84% 100%,84% 80%,66% 80%,66% 60%,48% 60%,48% 40%,30% 40%,30% 20%,12% 20%,12% 0); }
+.checker .w { position:absolute; color:#0b0b0f; font-weight:700; font-size:clamp(28px,4.4vw,60px); letter-spacing:-.04em; line-height:72px; white-space:nowrap; }
+.checker .w1 { left:13%; top:0; } .checker .w2 { left:31%; top:20%; } .checker .w3 { left:49%; top:40%; } .checker .w4 { left:67%; top:60%; } .checker .w5 { left:85%; top:80%; }
+.checker .note { position:absolute; right:32px; top:96px; max-width:30ch; font-size:13px; color:#0b0b0f; line-height:1.45; }
+.checker .note::before { content:""; display:block; width:28px; height:8px; background:#1433d6; margin-bottom:8px; }
+@media (max-width:760px){ .cobalt{grid-template-columns:1fr;} .checker .note{display:none;} }
+
+</style>
+</head>
+<body>
+<button id="themeToggle" aria-label="Toggle dark / light mode">◐</button>
+<div class="stage">
+<section class="cobalt" aria-label="Cobalt panel">
+  <div class="l">
+    <span class="tag">cobalt panel · repeat stack</span>
+    <div class="stack" aria-label="Studio"><span>studio</span><span>studio</span><span>studio</span><span>studio</span></div>
+    <div><a class="btn btn-onc" href="#">Book a call <span class="arr">→</span></a></div>
+  </div>
+  <div class="r">
+    <svg class="tube" viewBox="0 0 150 250" aria-label="Line-art product outline">
+      <rect class="solid" x="35" y="12" width="80" height="22" rx="3"/>
+      <path d="M41 16v14M51 16v14M61 16v14M71 16v14M81 16v14M91 16v14M101 16v14M109 16v14"/>
+      <path class="solid" d="M30 34h90l-6 196q-1 8-9 8H45q-8 0-9-8z"/>
+      <path d="M40 70h70M40 200h70"/>
+      <text x="75" y="150" text-anchor="middle" style="fill:#fff;stroke:none;font:800 30px 'Archivo';font-stretch:125%" transform="rotate(-90 75 140)">GS 01</text>
+    </svg>
+  </div>
+</section>
+<section class="checker" aria-label="Checker step">
+  <div class="mask"></div>
+  <div class="w w1">take</div><div class="w w2">small</div><div class="w w3">steps</div><div class="w w4">at a</div><div class="w w5">time</div>
+  <p class="note">Checker step: hard-stop cobalt grid cut as a staircase, heavy ink type stepping down it.</p>
+</section>
+</div>
+<script>
+(function () {
+  const root = document.documentElement;
+  const apply = t => { root.setAttribute('data-theme', t); root.style.colorScheme = t; if (window.gsRedraw) window.gsRedraw(); };
+  let saved = null; try { saved = localStorage.getItem('gs-theme'); } catch (e) {}
+  apply(new URLSearchParams(location.search).get('theme') || saved || 'light');
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('gs-theme', next); } catch (e) {}
+    apply(next);
+  });
+  window.addEventListener('message', e => { if (e.data && e.data.gsTheme) apply(e.data.gsTheme); });
+})();
+</script>
+<script src="../assets/ascii/gs-ascii.js"></script>
+
+</body>
+</html>

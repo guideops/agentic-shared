@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASCII Lab - /design-system-guidantstudios reference</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<style>
+:root, html[data-theme="light"] {
+  --bg:#f6f6f3; --surface:#ffffff; --surface-2:#ececea; --line:#d7d8dc;
+  --text:#0b0b0f; --muted:#5d6069; --accent:#1433d6; --on-accent:#ffffff; --slab:#0b0b0f; color-scheme:light;
+}
+html[data-theme="dark"] {
+  --bg:#0b0b0f; --surface:#15161b; --surface-2:#1e2026; --line:#2a2c33;
+  --text:#f2f3f5; --muted:#9a9ea8; --accent:#6f86ff; --on-accent:#0b0b0f; --slab:#2a2c33; color-scheme:dark;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font:400 16px/1.6 'Archivo',system-ui,sans-serif; -webkit-font-smoothing:antialiased; transition:background .25s,color .25s; }
+::selection { background:var(--accent); color:var(--on-accent); }
+.wrap { max-width:1200px; margin:0 auto; padding:0 32px; }
+section { padding:64px 0; border-top:1px solid var(--line); }
+h1 { font-weight:700; font-size:clamp(40px,6vw,72px); letter-spacing:-.04em; line-height:.95; }
+h2 { font-weight:700; font-size:clamp(26px,3vw,36px); letter-spacing:-.03em; line-height:1.05; margin-bottom:8px; }
+.lead { font-size:18px; color:var(--muted); max-width:64ch; margin-top:16px; }
+.kicker { font-stretch:125%; font-weight:600; text-transform:uppercase; font-size:11px; letter-spacing:.18em; color:var(--muted); display:block; margin-bottom:12px; }
+.doto { font-family:'Doto',monospace; font-weight:900; color:var(--accent); margin:0 .18em; }
+.mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.note { font-size:14px; color:var(--muted); max-width:70ch; }
+.ascii { font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0; white-space:pre; color:var(--text); margin:0; }
+.ascii .ascii-hot { color:var(--accent); font-weight:400; }
+.ascii-rule { font:400 12px/1 'JetBrains Mono',monospace; color:var(--muted); white-space:nowrap; overflow:hidden; width:0; min-width:100%; }
+.btn { display:inline-flex; align-items:center; gap:8px; min-height:40px; padding:10px 18px; border-radius:4px;
+  font:600 12px/1 'Archivo',sans-serif; font-stretch:125%; letter-spacing:.08em; text-transform:uppercase; cursor:pointer;
+  background:var(--surface); color:var(--text); border:2px solid var(--text); transition:transform .15s ease, box-shadow .15s ease; }
+html[data-theme="dark"] .btn { border-color:var(--line); }
+.btn:hover { transform:translate(-2px,-2px); box-shadow:4px 4px 0 var(--slab); }
+.btn:active { transform:translate(1px,1px); box-shadow:none; transition-duration:.06s; }
+.btn-primary { background:var(--accent); border-color:var(--accent) !important; color:var(--on-accent); }
+.top { display:flex; align-items:center; gap:12px; padding:20px 0; }
+.top .mark { width:24px; height:24px; color:var(--accent); }
+.top .wm { font-weight:700; letter-spacing:-.04em; color:var(--accent); font-size:18px; }
+.top .sp { flex:1; }
+#themeToggle { width:40px; height:40px; border:2px solid var(--text); border-radius:4px; background:var(--surface); color:var(--text); cursor:pointer; font:500 16px/1 'JetBrains Mono',monospace; }
+.tool { display:grid; grid-template-columns:280px 1fr; gap:32px; margin-top:32px; align-items:start; }
+.ctrl { display:flex; flex-direction:column; gap:16px; background:var(--surface); border:2px solid var(--text); border-radius:4px; padding:20px; box-shadow:6px 6px 0 var(--slab); }
+html[data-theme="dark"] .ctrl { border:1px solid var(--line); }
+.ctrl label { font:500 11px/1 'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); display:flex; justify-content:space-between; margin-bottom:6px; }
+.ctrl select, .ctrl textarea { width:100%; font:400 13px 'JetBrains Mono',monospace; padding:8px 10px; border:2px solid var(--text); border-radius:4px; background:var(--surface); color:var(--text); }
+html[data-theme="dark"] .ctrl select, html[data-theme="dark"] .ctrl textarea { border:1px solid var(--line); }
+.ctrl input[type=range] { width:100%; accent-color:var(--accent); }
+.ctrl .row { display:flex; gap:12px; flex-wrap:wrap; }
+.out { background:var(--surface); border:2px solid var(--text); border-radius:4px; padding:24px; overflow:auto; min-height:320px; box-shadow:6px 6px 0 var(--slab); }
+html[data-theme="dark"] .out { border:1px solid var(--line); }
+.out.oncobalt { background:#1433d6; border-color:#1433d6; --text:#ffffff; --accent:#ffffff; }
+.drop { border:2px dashed var(--muted); border-radius:4px; padding:16px; text-align:center; font:500 12px/1.5 'JetBrains Mono',monospace; color:var(--muted); cursor:pointer; }
+.drop.over { border-color:var(--accent); color:var(--accent); }
+.agents { display:flex; gap:32px; flex-wrap:wrap; margin-top:24px; align-items:flex-end; }
+.agents figure { display:flex; flex-direction:column; align-items:center; gap:10px; }
+.agents pre { font:400 8px/1 'JetBrains Mono',monospace; white-space:pre; color:var(--text); }
+.agents figure:first-child pre { color:var(--accent); }
+.agents figcaption { font:500 11px/1 'JetBrains Mono',monospace; color:var(--muted); }
+.rules { display:flex; flex-direction:column; gap:16px; margin-top:24px; }
+.rules div { display:grid; grid-template-columns:80px 1fr; gap:16px; align-items:center; }
+.rules code { font:500 12px 'JetBrains Mono',monospace; color:var(--muted); }
+.bgstage { position:relative; height:360px; margin-top:24px; border:2px solid var(--text); border-radius:4px; overflow:hidden; background:var(--surface); }
+html[data-theme="dark"] .bgstage { border:1px solid var(--line); }
+.bgstage canvas { position:absolute; left:0; top:0; width:100%; height:100%; }
+.bgstage .lab { position:absolute; left:24px; top:24px; }
+@media (max-width:860px){ .tool{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <svg class="mark" viewBox="0 0 56 56" aria-label="Guidant Studios"><path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/></svg>
+    <span class="wm">guidant studios</span><span class="sp"></span>
+    <button id="themeToggle" aria-label="Toggle dark / light mode">◐</button>
+  </div>
+  <div style="padding:48px 0 64px">
+    <span class="kicker mono" data-ascii-scramble>reference · ascii lab</span>
+    <h1>the <span class="doto">ascii</span> lab</h1>
+    <p class="lead">Every tool for the signature layer, live. Engine: <span class="mono">assets/ascii/gs-ascii.js</span> (window.GSAscii). Copy outputs straight into builds.</p>
+  </div>
+</div>
+
+<!-- 01 recipe twins -->
+<section><div class="wrap">
+  <span class="kicker">01 · recipe twins</span>
+  <h2>every dot recipe has an ascii twin</h2>
+  <p class="note">Same brightness functions as the halftone engine, sampled into the locked ramp. Optional cobalt feature layer = <span class="mono">fn2</span>.</p>
+  <div class="tool">
+    <div class="ctrl">
+      <div><label for="rcp">recipe</label><select id="rcp"><option>sphere</option><option>hexagon</option><option>wave</option><option>bars</option><option>sunburst</option><option>mountain</option><option>arrow</option></select></div>
+      <div><label for="rcols">columns <span id="rcolsV">72</span></label><input type="range" id="rcols" min="32" max="140" value="72"></div>
+      <div><label for="rsize">font size <span id="rsizeV">9</span>px</label><input type="range" id="rsize" min="5" max="14" value="9"></div>
+      <div><label for="rramp">ramp</label><select id="rramp"><option value="std">standard  ' .:-=+*#%@'</option><option value="blk">block  ' ░▒▓█'</option></select></div>
+      <div><label for="racc">feature layer</label><select id="racc"><option value="1">cobalt on</option><option value="0">off</option></select></div>
+      <div class="row"><button class="btn btn-primary" id="rcopy">Copy text</button></div>
+    </div>
+    <div class="out"><pre class="ascii" id="rout"></pre></div>
+  </div>
+</div></section>
+
+<!-- 02 image to ascii -->
+<section><div class="wrap">
+  <span class="kicker">02 · image → ascii</span>
+  <h2>photos and artwork as type</h2>
+  <p class="note">Drop, paste (Ctrl+V) or pick an image. Ink on light, off-white on dark, white on a cobalt panel. Export .txt or a PNG at 2x.</p>
+  <div class="tool">
+    <div class="ctrl">
+      <div class="drop" id="drop">drop / paste / click to pick<input type="file" id="file" accept="image/*" hidden></div>
+      <div><label for="icols">columns <span id="icolsV">110</span></label><input type="range" id="icols" min="40" max="220" value="110"></div>
+      <div><label for="icon">contrast <span id="iconV">1.2</span></label><input type="range" id="icon" min="0.6" max="2.4" step="0.05" value="1.2"></div>
+      <div><label for="isize">font size <span id="isizeV">7</span>px</label><input type="range" id="isize" min="4" max="12" value="7"></div>
+      <div><label for="imode">surface</label><select id="imode"><option value="page">page (theme)</option><option value="cobalt">cobalt panel</option></select></div>
+      <div><label for="iinv">invert</label><select id="iinv"><option value="auto">auto (by surface)</option><option value="0">off</option><option value="1">on</option></select></div>
+      <div class="row"><button class="btn btn-primary" id="itxt">Save .txt</button><button class="btn" id="ipng">Save PNG</button></div>
+    </div>
+    <div class="out" id="iwrap"><pre class="ascii" id="iout"></pre></div>
+  </div>
+</div></section>
+
+<!-- 03 agents -->
+<section><div class="wrap">
+  <span class="kicker">03 · agents</span>
+  <h2>the team in block characters</h2>
+  <p class="note">Solid blocks only (<span class="mono">GSAscii.agent('a1')</span> or <span class="mono">&lt;pre data-ascii-agent="a1"&gt;</span>). A1 leads in the accent. Never a ramp-shaded agent.</p>
+  <div class="agents">
+    <figure><pre data-ascii-agent="a1"></pre><figcaption>A1 · lead</figcaption></figure>
+    <figure><pre data-ascii-agent="a2"></pre><figcaption>A2</figcaption></figure>
+    <figure><pre data-ascii-agent="a3"></pre><figcaption>A3</figcaption></figure>
+    <figure><pre data-ascii-agent="a4"></pre><figcaption>A4</figcaption></figure>
+    <figure><pre data-ascii-agent="a5"></pre><figcaption>A5</figcaption></figure>
+    <figure><pre data-ascii-agent="a6"></pre><figcaption>A6</figcaption></figure>
+  </div>
+</div></section>
+
+<!-- 04 frames + rules -->
+<section><div class="wrap">
+  <span class="kicker">04 · frames + rules</span>
+  <h2>box frames and dividers</h2>
+  <div class="tool">
+    <div class="ctrl">
+      <div><label for="flines">lines</label><textarea id="flines" rows="5">agent    A1 · lead
+status   rendering
+brief    drop 01 hero</textarea></div>
+      <div><label for="ftitle">title</label><textarea id="ftitle" rows="1">run 0042</textarea></div>
+      <div><label for="fstyle">style</label><select id="fstyle"><option>single</option><option>double</option><option>heavy</option><option>ascii</option></select></div>
+      <div class="row"><button class="btn btn-primary" id="fcopy">Copy frame</button></div>
+    </div>
+    <div class="out"><pre class="ascii" id="fout" style="font-size:14px"></pre></div>
+  </div>
+  <div class="rules">
+    <div><code>+-</code><span class="ascii-rule" data-ascii-rule="+-"></span></div>
+    <div><code>─</code><span class="ascii-rule" data-ascii-rule="─"></span></div>
+    <div><code>═</code><span class="ascii-rule" data-ascii-rule="═"></span></div>
+    <div><code>·␣</code><span class="ascii-rule" data-ascii-rule="· "></span></div>
+    <div><code>▚</code><span class="ascii-rule" data-ascii-rule="▚"></span></div>
+  </div>
+</div></section>
+
+<!-- 05 background (the page's one animated effect) -->
+<section><div class="wrap">
+  <span class="kicker">05 · backgrounds</span>
+  <h2>swell, drift, rain</h2>
+  <p class="note">One animated effect per page - this lab shows them one at a time in the same canvas. Strength = max field alpha.</p>
+  <div class="ctrl" style="flex-direction:row;flex-wrap:wrap;margin-top:24px;box-shadow:none">
+    <button class="btn btn-primary" data-bgmode="swell">swell</button><button class="btn" data-bgmode="drift">drift</button><button class="btn" data-bgmode="rain">rain</button>
+  </div>
+  <div class="bgstage"><canvas id="bgc"></canvas><div class="lab"><span class="kicker mono" data-ascii-scramble="hover">hover to scramble</span><h2>text sits on top</h2></div></div>
+</div></section>
+
+<div class="wrap" style="padding:48px 32px 96px"><p class="note mono" style="font-size:12px">ASCII rules: JetBrains Mono · line-height 1 · ramp ' .:-=+*#%@' · deterministic static art · one scramble per section · ASCII + metal never share a section.</p></div>
+
+<script>
+(function () {
+  const root = document.documentElement;
+  const apply = t => { root.setAttribute('data-theme', t); root.style.colorScheme = t; if (window.gsRedraw) window.gsRedraw(); };
+  let saved = null; try { saved = localStorage.getItem('gs-theme'); } catch (e) {}
+  apply(new URLSearchParams(location.search).get('theme') || saved || 'light');
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('gs-theme', next); } catch (e) {}
+    apply(next);
+  });
+})();
+</script>
+<script src="../assets/ascii/gs-ascii.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const RAMPS = { std: GSAscii.RAMP, blk: GSAscii.RAMP_BLOCK };
+const inPoly = (pts, u, v) => { let s = false; for (let i = 0, j = pts.length-1; i < pts.length; j = i++) if ((pts[i][1] > v) !== (pts[j][1] > v) && u < (pts[j][0]-pts[i][0])*(v-pts[i][1])/(pts[j][1]-pts[i][1])+pts[i][0]) s = !s; return s; };
+const L = [-.55, -.6, .58];
+const sphere = (u, v) => { const x = (u-.5)/.44, y = (v-.5)/.44, d = x*x+y*y; if (d > 1) return 0; const z = Math.sqrt(1-d); return Math.max(.06, x*L[0]+y*L[1]+z*L[2]); };
+const HEX = [[.5,.04],[.94,.27],[.94,.73],[.5,.96],[.06,.73],[.06,.27]];
+const H = [.35,.55,.42,.8,.62];
+const RECIPES = {
+  sphere: [sphere, (u,v) => sphere(u,v) > .86 ? 1 : 0],
+  hexagon: [(u,v) => inPoly(HEX,u,v) ? .2 + .8*Math.max(0, 1-(u*.8+v*.7)) : 0, (u,v) => { const d = Math.hypot(u-.5, v-.5); return inPoly(HEX,u,v) && d < .12 ? 1 : 0; }],
+  wave: [(u,v) => { const c = .45 + .14*Math.sin(u*9); return v > c ? Math.min(1,(v-c)*2.6) : 0; }, (u,v) => Math.abs(v-(.45+.14*Math.sin(u*9))) < .03 ? 1 : 0],
+  bars: [(u,v) => { const i = Math.floor(u*5), f = u*5-i; if (f < .18 || f > .82 || i === 3) return 0; return v > 1-H[i] ? .35 + .65*(v-(1-H[i]))/H[i] : 0; },
+         (u,v) => { const i = Math.floor(u*5), f = u*5-i; if (i !== 3 || f < .18 || f > .82) return 0; return v > 1-H[i] ? .5 + .5*(v-(1-H[i]))/H[i] : 0; }],
+  sunburst: [(u,v) => { const x = u-.5, y = v-.5, r = Math.hypot(x,y), a = Math.atan2(y,x); if (r < .16 || r > .5) return 0; return (.5+.5*Math.sin(a*14)) * (1-(r-.16)/.34); }, (u,v) => { const r = Math.hypot(u-.5,v-.5); return r > .13 && r < .16 ? 1 : 0; }],
+  mountain: [(u,v) => { const h = .25 + .5*Math.abs(Math.sin(u*3.2+.4)) * (1-Math.abs(u-.5)); const top = 1-h; return v > top ? .3 + .7*(1-(v-top)/h) * (u < .5 ? 1 : .55) : 0; },
+             (u,v) => { const h = .25 + .5*Math.abs(Math.sin(u*3.2+.4)) * (1-Math.abs(u-.5)); return Math.abs(v-(1-h)) < .025 ? 1 : 0; }],
+  arrow: [(u,v) => { const shaft = u > .08 && u < .62 && Math.abs(v-.5) < .12; const head = u >= .62 && u < .94 && Math.abs(v-.5) < (.94-u)*1.2; return shaft || head ? .25 + .75*u : 0; }, (u,v) => u >= .62 && u < .94 && Math.abs(v-.5) < (.94-u)*1.2 && u > .84 ? 1 : 0],
+};
+function drawRecipe() {
+  const cols = +$('rcols').value; $('rcolsV').textContent = cols;
+  $('rsizeV').textContent = $('rsize').value; $('rout').style.fontSize = $('rsize').value + 'px';
+  const [fn, fn2] = RECIPES[$('rcp').value];
+  GSAscii.field($('rout'), { cols, rows: Math.round(cols * .6), fn, fn2: $('racc').value === '1' ? fn2 : null, ramp: RAMPS[$('rramp').value] });
+}
+['rcp','rcols','rsize','rramp','racc'].forEach(id => $(id).addEventListener('input', drawRecipe));
+$('rcopy').onclick = () => navigator.clipboard.writeText($('rout').textContent);
+
+/* image -> ascii */
+let img = null;
+function drawImage() {
+  $('icolsV').textContent = $('icols').value; $('iconV').textContent = $('icon').value; $('isizeV').textContent = $('isize').value;
+  $('iout').style.fontSize = $('isize').value + 'px';
+  const cobalt = $('imode').value === 'cobalt';
+  $('iwrap').classList.toggle('oncobalt', cobalt);
+  if (!img) { $('iout').textContent = GSAscii.box(['no image yet', 'drop / paste / pick one'], { style: 'single', title: 'image' }); return; }
+  const darkSurface = cobalt || document.documentElement.getAttribute('data-theme') === 'dark';
+  const inv = $('iinv').value === 'auto' ? darkSurface : $('iinv').value === '1';
+  GSAscii.fromImage($('iout'), img, { cols: +$('icols').value, contrast: +$('icon').value, invert: inv });
+}
+function load(file) { if (!file || !file.type.startsWith('image/')) return; const u = URL.createObjectURL(file); const im = new Image(); im.onload = () => { img = im; drawImage(); }; im.src = u; }
+$('drop').onclick = () => $('file').click();
+$('file').onchange = e => load(e.target.files[0]);
+$('drop').addEventListener('dragover', e => { e.preventDefault(); $('drop').classList.add('over'); });
+$('drop').addEventListener('dragleave', () => $('drop').classList.remove('over'));
+$('drop').addEventListener('drop', e => { e.preventDefault(); $('drop').classList.remove('over'); load(e.dataTransfer.files[0]); });
+window.addEventListener('paste', e => { const it = [...(e.clipboardData || {}).items || []].find(i => i.type.startsWith('image/')); if (it) load(it.getAsFile()); });
+['icols','icon','isize','imode','iinv'].forEach(id => $(id).addEventListener('input', drawImage));
+const save = (blob, name) => { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); };
+$('itxt').onclick = () => save(new Blob([$('iout').textContent], { type: 'text/plain' }), 'gs-ascii.txt');
+$('ipng').onclick = () => {
+  const lines = $('iout').textContent.replace(/\n$/, '').split('\n'), fs = +$('isize').value * 2, cw = fs * .6;
+  const c = document.createElement('canvas'); c.width = Math.ceil(Math.max(...lines.map(l => l.length)) * cw) + 48; c.height = lines.length * fs + 48;
+  const ctx = c.getContext('2d'), cs = getComputedStyle($('iwrap'));
+  ctx.fillStyle = cs.backgroundColor; ctx.fillRect(0, 0, c.width, c.height);
+  ctx.fillStyle = getComputedStyle($('iout')).color; ctx.font = `400 ${fs}px 'JetBrains Mono', monospace`; ctx.textBaseline = 'top';
+  lines.forEach((l, i) => ctx.fillText(l, 24, 24 + i * fs));
+  c.toBlob(b => save(b, 'gs-ascii.png'));
+};
+
+/* frames */
+function drawFrame() { $('fout').textContent = GSAscii.box($('flines').value.split('\n'), { style: $('fstyle').value, title: $('ftitle').value.trim() }); }
+['flines','ftitle','fstyle'].forEach(id => $(id).addEventListener('input', drawFrame));
+$('fcopy').onclick = () => navigator.clipboard.writeText($('fout').textContent);
+
+/* background (one at a time) */
+let bgInst = null;
+function setBg(mode) {
+  if (bgInst) bgInst.destroy();
+  const old = $('bgc'), fresh = old.cloneNode(); old.replaceWith(fresh);
+  bgInst = GSAscii.bg(fresh, { mode, strength: .35 });
+  document.querySelectorAll('[data-bgmode]').forEach(b => b.classList.toggle('btn-primary', b.dataset.bgmode === mode));
+}
+document.querySelectorAll('[data-bgmode]').forEach(b => b.onclick = () => setBg(b.dataset.bgmode));
+
+window.gsRedraw = () => { drawRecipe(); drawImage(); };
+(document.fonts ? document.fonts.ready : Promise.resolve()).then(() => { drawRecipe(); drawImage(); drawFrame(); setBg('swell'); });
+</script>
+</body>
+</html>

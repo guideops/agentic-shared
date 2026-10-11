@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>/design-system-guidantstudios · Dots that show form</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--cobalt:#1433d6;--off-white:#f2f3f5;--muted:#9a9ea8;--bg:#07070a;}
+  html{color-scheme:dark;} *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--off-white);font:400 16px/1.5 'Archivo',system-ui,sans-serif;
+       min-height:100vh;padding:46px 24px 70px;text-align:center;
+       background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:11px 11px;}
+  h1{font-weight:600;letter-spacing:-1.4px;font-size:clamp(28px,4.6vw,48px);line-height:1.05;}
+  h1 .doto{font-family:'Doto',monospace;font-weight:900;color:var(--cobalt);margin:0 .18em;}
+  .sub{color:var(--muted);font-size:clamp(14px,1.7vw,18px);margin-top:12px;max-width:62ch;margin-inline:auto;}
+  .pair,.forms{display:flex;gap:30px;justify-content:center;align-items:flex-start;flex-wrap:wrap;}
+  .pair{margin-top:40px;} .forms{margin-top:40px;}
+  .cellitem{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .chip{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
+  .chip.hot{color:var(--cobalt);}
+  canvas{display:block;background:transparent;}
+  .cap{font-size:12.5px;color:var(--muted);max-width:22ch;}
+  .divider{display:flex;align-items:center;font-family:'Doto',monospace;font-weight:900;color:var(--cobalt);font-size:30px;align-self:center;padding-top:70px;}
+</style>
+</head>
+<body>
+  <h1>Dots that show <span class="doto">FORM</span></h1>
+  <div class="sub">Dot size already follows brightness. So shading isn't a setting - you put light &amp; shade in the source, and the dots swell in the light, shrink into shadow.</div>
+
+  <div class="pair">
+    <div class="cellitem"><div class="chip">Flat fill</div><canvas id="flat" width="240" height="240"></canvas><div class="cap">Uniform colour → every dot the same size → reads flat, like a coin.</div></div>
+    <div class="divider">→</div>
+    <div class="cellitem"><div class="chip hot">Shaded</div><canvas id="sphere" width="240" height="240"></canvas><div class="cap">Same circle, lit from upper-left → dots taper to shadow → a sphere.</div></div>
+  </div>
+
+  <div class="forms">
+    <div class="cellitem"><div class="chip">Cylinder</div><canvas id="cyl" width="220" height="240"></canvas><div class="cap">Curved shading across the width.</div></div>
+    <div class="cellitem"><div class="chip">Cube</div><canvas id="cube" width="220" height="240"></canvas><div class="cap">Three flat faces at three brightnesses - stepped dots.</div></div>
+    <div class="cellitem"><div class="chip">Cone</div><canvas id="cone" width="220" height="240"></canvas><div class="cap">Curved shading that narrows to the tip.</div></div>
+  </div>
+
+  <div class="forms" style="margin-top:54px;">
+    <div class="cellitem"><div class="chip hot">Brain</div><canvas id="brain" width="380" height="320"></canvas><div class="cap">Organic shading: the folds become bands of fat dots on the ridges and tiny dots down in the grooves.</div></div>
+  </div>
+
+<script>
+const CELL=6, DOT=0.42;   // dot size to show range; the default is 30 (0.30) - bumped a touch so the size variation reads
+// halftone renderer: fn(u,v) -> brightness 0..1; dot radius = maxR * brightness
+function dots(id, fn, color){
+  const cv=document.getElementById(id), ctx=cv.getContext('2d');
+  const W=cv.width, H=cv.height, dpr=Math.min(devicePixelRatio||1,2);
+  cv.width=W*dpr; cv.height=H*dpr; cv.style.width=W+'px'; cv.style.height=H+'px'; ctx.scale(dpr,dpr);
+  const maxR=CELL*DOT;
+  for(let y=CELL/2;y<H;y+=CELL) for(let x=CELL/2;x<W;x+=CELL){
+    const b=fn(x/W, y/H); if(b<0.05) continue;
+    ctx.fillStyle=color; ctx.beginPath(); ctx.arc(x,y,maxR*b,0,6.2832); ctx.fill();
+  }
+}
+function inPoly(p,u,v){let s=false;for(let i=0,j=p.length-1;i<p.length;j=i++)if((p[i][1]>v)!==(p[j][1]>v)&&u<(p[j][0]-p[i][0])*(v-p[i][1])/(p[j][1]-p[i][1])+p[i][0])s=!s;return s;}
+
+// flat disc - uniform brightness
+dots('flat', (u,v)=>{ const x=(u-0.5)*2,y=(v-0.5)*2; return (x*x+y*y<0.80)?0.92:0; }, '#f2f3f5');
+
+// shaded sphere - lambert lighting (the hero, cobalt)
+dots('sphere', (u,v)=>{
+  const x=(u-0.5)*2, y=(v-0.5)*2, r2=x*x+y*y, R=0.9; if(r2>R*R) return 0;
+  const z=Math.sqrt(R*R-r2), nx=x/R, ny=y/R, nz=z/R;
+  const lx=-0.5, ly=-0.6, lz=0.62, ll=Math.hypot(lx,ly,lz);
+  let d=Math.max(0,(nx*lx+ny*ly+nz*lz)/ll);
+  return 0.10+0.90*d;
+}, '#1433d6');
+
+// cylinder - cos shading across width, light from left
+dots('cyl', (u,v)=>{
+  if(u<0.30||u>0.70||v<0.14||v>0.86) return 0;
+  const t=(u-0.30)/0.40, ang=(t-0.5)*Math.PI;
+  return 0.12+0.88*Math.max(0, Math.cos(ang-0.55));
+}, '#f2f3f5');
+
+// cube - 3 faces, quantized shading
+const TOP=[[0.5,0.16],[0.80,0.33],[0.5,0.50],[0.20,0.33]];
+const LEFTF=[[0.20,0.33],[0.5,0.50],[0.5,0.84],[0.20,0.67]];
+const RIGHTF=[[0.5,0.50],[0.80,0.33],[0.80,0.67],[0.5,0.84]];
+dots('cube', (u,v)=>{
+  if(inPoly(TOP,u,v)) return 1.0;
+  if(inPoly(LEFTF,u,v)) return 0.55;
+  if(inPoly(RIGHTF,u,v)) return 0.30;
+  return 0;
+}, '#f2f3f5');
+
+// cone - narrows to tip, curved shading across
+dots('cone', (u,v)=>{
+  if(v<0.16||v>0.84) return 0;
+  const t=(v-0.16)/0.68, halfW=0.03+t*0.24, dx=u-0.5;
+  if(Math.abs(dx)>halfW) return 0;
+  const tt=(dx/halfW+1)/2, ang=(tt-0.5)*Math.PI;
+  return 0.12+0.88*Math.max(0, Math.cos(ang-0.55));
+}, '#f2f3f5');
+
+// brain - two hemispheres, central fissure, wavy gyri grooves, domed shading
+dots('brain', (u,v)=>{
+  const x=(u-0.5), y=(v-0.5);
+  const ex=x/0.36, ey=y/0.40;
+  const ang=Math.atan2(ey,ex), rr=Math.hypot(ex,ey);
+  const bound=1.0 + 0.05*Math.sin(ang*7+0.3) + 0.05*Math.sin(ang*4+1.0);
+  if(rr>bound) return 0;
+  // domed form (brighter toward the crown)
+  const zz=Math.sqrt(Math.max(0,bound*bound-rr*rr));
+  let form=0.45+0.55*(0.35+0.65*zz/bound);
+  // gyri: wavy ridges running out from the midline, per hemisphere
+  const side=x<0?-1:1, ax=Math.abs(x);
+  const warp=3.4*Math.sin(y*7.2 + side*1.1);
+  let fold=0.5+0.5*Math.sin(30*ax + warp);
+  fold=0.28+0.72*Math.pow(fold,0.85);
+  // central longitudinal fissure (dark groove between hemispheres)
+  const fis=1.0-0.85*Math.exp(-Math.pow(x/0.020,2));
+  return Math.max(0,Math.min(1, form*fold*fis));
+}, '#1433d6');
+</script>
+</body>
+</html>

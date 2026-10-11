@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUIDANT STUDIOS - Particle Typography</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<style>
+html { color-scheme: light; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:#f6f6f3; color:#0b0b0f;
+  font-family:'Archivo',sans-serif; font-weight:400;
+  font-size:15px; line-height:1.6;
+}
+::selection { background:#1433d6; color:#fff; }
+.doto { font-family:'Doto',sans-serif; font-weight:900; color:#1433d6; margin:0 .18em; }
+header { padding:42px 40px 10px; max-width:1180px; margin:0 auto; }
+.kicker { font-size:12px; letter-spacing:6px; text-transform:uppercase; color:#5d6069; margin-bottom:10px; }
+h1 { font-weight:600; font-size:clamp(28px,4vw,44px); letter-spacing:-1px; line-height:1.1; }
+.sub { color:#5d6069; margin-top:10px; max-width:640px; }
+section { max-width:1180px; margin:0 auto; padding:28px 40px; }
+h2 { font-weight:600; font-size:22px; letter-spacing:-0.5px; margin-bottom:6px; }
+.note { font-size:13px; color:#5d6069; margin-bottom:14px; }
+.stage { position:relative; border:2px solid #0b0b0f; box-shadow:6px 6px 0 rgba(11,11,15,0.9); overflow:hidden; }
+.stage canvas { display:block; width:100%; height:100%; cursor:crosshair; }
+.stage .tag {
+  position:absolute; top:12px; left:14px; pointer-events:none;
+  font-size:11px; letter-spacing:4px; text-transform:uppercase; color:#9a9ea8;
+}
+.stage.dark  { background:#0b0b0f; height:420px; }
+.stage.paper { background:#f6f6f3; height:300px; }
+.controls { display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; }
+.controls input {
+  font-family:'Archivo',sans-serif; font-size:14px; padding:9px 12px;
+  border:2px solid #0b0b0f; background:#ffffff; color:#0b0b0f; min-width:260px;
+}
+.controls button {
+  font-family:'Archivo',sans-serif; font-weight:600; font-size:13px; letter-spacing:1px;
+  text-transform:uppercase; padding:9px 16px; cursor:pointer;
+  border:2px solid #0b0b0f; background:#ffffff; color:#0b0b0f;
+  box-shadow:3px 3px 0 rgba(11,11,15,0.9);
+}
+.controls button.hot { background:#1433d6; border-color:#1433d6; color:#fff; box-shadow:3px 3px 0 rgba(11,11,15,0.9); }
+.controls button:active { transform:translate(2px,2px); box-shadow:1px 1px 0 rgba(11,11,15,0.9); }
+pre {
+  background:#0b0b0f; color:#f2f3f5; font-size:12.5px; line-height:1.55;
+  padding:20px 22px; overflow-x:auto; border:2px solid #0b0b0f;
+  box-shadow:6px 6px 0 rgba(11,11,15,0.9);
+}
+table { border-collapse:collapse; width:100%; font-size:13.5px; }
+th, td { text-align:left; padding:8px 12px; border-bottom:1px solid #d7d8dc; vertical-align:top; }
+th { font-weight:600; letter-spacing:1px; text-transform:uppercase; font-size:11px; color:#5d6069; }
+td code { font-family:'JetBrains Mono',monospace; font-size:12.5px; background:#e9e9e6; padding:1px 5px; }
+footer { max-width:1180px; margin:0 auto; padding:20px 40px 50px; font-size:12px; color:#5d6069; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">/design-system-guidantstudios reference - interactive effect</div>
+  <h1>Particle <span class="doto">TYPOGRAPHY</span></h1>
+  <p class="sub">Text sampled into a few thousand square dots. Each dot springs back to its letter. The mouse shoves them aside with momentum. Move your cursor through the words below.</p>
+</header>
+
+<section>
+  <h2>Dark stage - off-white dots, cobalt flecks</h2>
+  <p class="note">Default hero treatment. Phrases cycle every ~5s. Type your own line and hit SET.</p>
+  <div class="stage dark">
+    <canvas id="cvDark" aria-label="Interactive particle typography: dots form words and scatter around your cursor"></canvas>
+    <span class="tag">black · off-white · cobalt 7%</span>
+  </div>
+  <div class="controls">
+    <input id="phraseIn" type="text" placeholder="Type a phrase…" maxlength="26">
+    <button class="hot" id="btnSet">Set</button>
+    <button id="btnFont">Font: Archivo</button>
+  </div>
+</section>
+
+<section>
+  <h2>Paper stage - ink dots</h2>
+  <p class="note">Same engine on the light background. Ink dots, same cobalt fraction.</p>
+  <div class="stage paper">
+    <canvas id="cvPaper" aria-label="Interactive particle typography on paper background"></canvas>
+    <span class="tag">paper · ink · cobalt 7%</span>
+  </div>
+</section>
+
+<section>
+  <h2>The engine - copy this block</h2>
+  <p class="note">One function, self-contained. Call <code style="font-family:'JetBrains Mono',monospace">particleText(canvas, opts)</code>; it returns <code style="font-family:'JetBrains Mono',monospace">{ setText, destroy }</code>. Respects prefers-reduced-motion (renders the text once, static).</p>
+<pre id="engineSrc"></pre>
+</section>
+
+<section>
+  <h2>Options</h2>
+  <table>
+    <tr><th>Option</th><th>Default</th><th>What it does</th></tr>
+    <tr><td><code>phrases</code></td><td><code>['GUIDANT STUDIOS']</code></td><td>Lines to cycle through. One entry = no cycling.</td></tr>
+    <tr><td><code>cycleMs</code></td><td><code>5200</code></td><td>Time per phrase. <code>0</code> disables cycling.</td></tr>
+    <tr><td><code>dot</code></td><td><code>'#f2f3f5'</code></td><td>Base dot colour. Paper bg → ink <code>#0b0b0f</code>.</td></tr>
+    <tr><td><code>accent</code> / <code>accentFrac</code></td><td><code>'#1433d6'</code> / <code>0.07</code></td><td>Cobalt fleck colour and fraction. Keep the fraction small - cobalt discipline applies.</td></tr>
+    <tr><td><code>bg</code></td><td><code>'#0b0b0f'</code></td><td>Frame clear colour. Use <code>'transparent'</code> to sit over another background (clearRect instead of fill).</td></tr>
+    <tr><td><code>font</code></td><td><code>'600 FSpx Archivo'</code></td><td>Sampling font. Archivo 600 fills well; Doto 900 gives a sparse double-dotted look.</td></tr>
+    <tr><td><code>maxParticles</code></td><td><code>3200</code> (1900 mobile)</td><td>Dot budget. More = denser letters, more CPU.</td></tr>
+    <tr><td><code>mouseR</code></td><td><code>110</code></td><td>Repulsion radius in px.</td></tr>
+  </table>
+</section>
+
+<footer>
+  Part of the /design-system-guidantstudios skill · adapted 2026-07-08 · square dots, spring k 0.012, damping 0.86, mouse momentum 0.06
+</footer>
+
+<script id="engine">
+/* ============================================================
+   PARTICLE TYPOGRAPHY - /design-system-guidantstudios interactive text engine
+   Text -> offscreen sample -> dots spring to letter positions,
+   mouse repels with momentum. Copy this whole block.
+   ============================================================ */
+function particleText(canvas, opts = {}) {
+  const o = Object.assign({
+    phrases: ['GUIDANT STUDIOS'], cycleMs: 5200,
+    dot: '#f2f3f5', accent: '#1433d6', accentFrac: 0.07,
+    bg: '#0b0b0f', fontFamily: 'Archivo', fontWeight: 600,
+    maxParticles: null, mouseR: 110
+  }, opts);
+  const ctx = canvas.getContext('2d');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  let W = 0, H = 0, particles = [], idx = 0, raf = 0, lastSwitch = performance.now();
+  const mouse = { x: -9999, y: -9999, vx: 0, vy: 0 };
+  let lastM = { x: 0, y: 0 };
+
+  function size() {
+    const r = canvas.parentElement.getBoundingClientRect();
+    W = r.width; H = r.height;
+    canvas.width = W * DPR; canvas.height = H * DPR;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  }
+
+  function sample(text) {
+    const off = document.createElement('canvas');
+    const s = 0.5;                                  // sample at half res
+    off.width = Math.max(2, W * s); off.height = Math.max(2, H * s);
+    const c = off.getContext('2d');
+    c.fillStyle = '#000'; c.fillRect(0, 0, off.width, off.height);
+    const mobile = W < 700;
+    let lines = [text];
+    if (mobile && text.length > 10 && text.includes(' ')) { // 2 lines on small screens
+      const mid = text.length / 2; let best = -1, bd = 1e9;
+      for (let i = 0; i < text.length; i++)
+        if (text[i] === ' ' && Math.abs(i - mid) < bd) { best = i; bd = Math.abs(i - mid); }
+      lines = [text.slice(0, best), text.slice(best + 1)];
+    }
+    const longest = Math.max(...lines.map(l => l.length));
+    let fs = (W * s * 0.92) / (longest * (mobile ? 0.56 : 0.6));
+    fs = Math.min(fs, (H * s * 0.5) / lines.length);
+    c.fillStyle = '#fff';
+    c.font = `${o.fontWeight} ${fs}px '${o.fontFamily}', sans-serif`;
+    c.textAlign = 'center'; c.textBaseline = 'middle';
+    lines.forEach((ln, i) =>
+      c.fillText(ln, off.width / 2, off.height / 2 + (i - (lines.length - 1) / 2) * fs * 1.15));
+    const data = c.getImageData(0, 0, off.width, off.height).data;
+    const pts = [];
+    for (let y = 0; y < off.height; y += 2)
+      for (let x = 0; x < off.width; x += 2)
+        if (data[(y * off.width + x) * 4] > 128) pts.push({ x: x / s, y: y / s });
+    return pts;
+  }
+
+  function build(text) {
+    const pts = sample(text);
+    const mobile = W < 700;
+    const cap = o.maxParticles || (mobile ? 1900 : 3200);
+    const target = Math.min(pts.length, cap);
+    const szS = mobile ? 2.1 : 1.4, szB = mobile ? 3.2 : 2.4;
+    for (let i = pts.length - 1; i > 0; i--) {       // shuffle so trimming is even
+      const j = (Math.random() * (i + 1)) | 0; [pts[i], pts[j]] = [pts[j], pts[i]];
+    }
+    const chosen = pts.slice(0, target);
+    while (particles.length < chosen.length)
+      particles.push({ x: Math.random() * W, y: Math.random() * H, vx: 0, vy: 0, tx: 0, ty: 0,
+        size: Math.random() < 0.08 ? szB : szS, acc: Math.random() < o.accentFrac });
+    particles.length = chosen.length;
+    for (let i = 0; i < particles.length; i++) { particles[i].tx = chosen[i].x; particles[i].ty = chosen[i].y; }
+  }
+
+  function clear() {
+    if (o.bg === 'transparent') ctx.clearRect(0, 0, W, H);
+    else { ctx.fillStyle = o.bg; ctx.fillRect(0, 0, W, H); }
+  }
+
+  function frame(now) {
+    clear();
+    if (o.cycleMs && o.phrases.length > 1 && now - lastSwitch > o.cycleMs) {
+      lastSwitch = now; idx = (idx + 1) % o.phrases.length; build(o.phrases[idx]);
+    }
+    const mr = o.mouseR, t = now * 0.00045;
+    for (const p of particles) {
+      p.vx += (p.tx - p.x) * 0.012 + Math.sin(t + p.ty * 0.05) * 0.012;  // spring + idle breath
+      p.vy += (p.ty - p.y) * 0.012 + Math.cos(t + p.tx * 0.05) * 0.012;
+      const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
+      if (d2 < mr * mr) {                                               // mouse repulsion + momentum
+        const d = Math.sqrt(d2) || 1, f = (1 - d / mr) * 3.2;
+        p.vx += (dx / d) * f + mouse.vx * 0.06;
+        p.vy += (dy / d) * f + mouse.vy * 0.06;
+      }
+      p.vx *= 0.86; p.vy *= 0.86;
+      p.x += p.vx; p.y += p.vy;
+      ctx.fillStyle = p.acc ? o.accent : o.dot;
+      ctx.fillRect(p.x, p.y, p.size, p.size);
+    }
+    mouse.vx *= 0.8; mouse.vy *= 0.8;
+    raf = requestAnimationFrame(frame);
+  }
+
+  function onMove(e) {
+    const r = canvas.getBoundingClientRect();
+    const x = e.clientX - r.left, y = e.clientY - r.top;
+    mouse.vx = x - lastM.x; mouse.vy = y - lastM.y;
+    mouse.x = x; mouse.y = y; lastM = { x, y };
+  }
+  function onLeave() { mouse.x = -9999; mouse.y = -9999; }
+  canvas.addEventListener('pointermove', onMove);
+  canvas.addEventListener('pointerleave', onLeave);
+
+  function staticDraw() {
+    clear();
+    for (const p of particles) { ctx.fillStyle = p.acc ? o.accent : o.dot; ctx.fillRect(p.tx, p.ty, p.size, p.size); }
+  }
+  function start() {
+    size(); build(o.phrases[idx]);
+    if (reduced) staticDraw(); else raf = requestAnimationFrame(frame);
+  }
+
+  let rT;
+  function onResize() {
+    clearTimeout(rT);
+    rT = setTimeout(() => { size(); build(o.phrases[idx]); if (reduced) staticDraw(); }, 150);
+  }
+  window.addEventListener('resize', onResize);
+
+  // wait for fonts so sampling matches the loaded face
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(start);
+    setTimeout(() => { if (particles.length === 0) start(); }, 1500);
+  } else start();
+
+  return {
+    setText(text) { o.phrases = [text]; idx = 0; lastSwitch = performance.now(); if (W) { build(text); if (reduced) staticDraw(); } },
+    setFont(family, weight) { o.fontFamily = family; if (weight) o.fontWeight = weight; if (W) { build(o.phrases[idx]); if (reduced) staticDraw(); } },
+    destroy() {
+      cancelAnimationFrame(raf);
+      canvas.removeEventListener('pointermove', onMove);
+      canvas.removeEventListener('pointerleave', onLeave);
+      window.removeEventListener('resize', onResize);
+    }
+  };
+}
+/* ============================ end engine ============================ */
+</script>
+
+<script>
+// demo wiring
+const dark = particleText(document.getElementById('cvDark'), {
+  phrases: ['GUIDANT STUDIOS', 'DOTS OBEY', 'MOVE THE MOUSE', 'PAPER BLACK COBALT'],
+  bg: '#0b0b0f', dot: '#f2f3f5'
+});
+const paper = particleText(document.getElementById('cvPaper'), {
+  phrases: ['INK ON PAPER'], cycleMs: 0,
+  bg: '#f6f6f3', dot: '#0b0b0f'
+});
+document.getElementById('btnSet').addEventListener('click', () => {
+  const v = document.getElementById('phraseIn').value.trim().toUpperCase();
+  if (v) { dark.setText(v); paper.setText(v); }
+});
+document.getElementById('phraseIn').addEventListener('keydown', e => {
+  if (e.key === 'Enter') document.getElementById('btnSet').click();
+});
+let fontIsDoto = false;
+document.getElementById('btnFont').addEventListener('click', function () {
+  fontIsDoto = !fontIsDoto;
+  const fam = fontIsDoto ? 'Doto' : 'Archivo', w = fontIsDoto ? 900 : 600;
+  dark.setFont(fam, w); paper.setFont(fam, w);
+  this.textContent = 'Font: ' + fam;
+});
+// show the engine source in the docs block
+document.getElementById('engineSrc').textContent = document.getElementById('engine').textContent.trim();
+</script>
+</body>
+</html>

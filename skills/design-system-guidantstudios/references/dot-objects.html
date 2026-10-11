@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>/design-system-guidantstudios · Shaded complex objects</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--cobalt:#1433d6;--off-white:#f2f3f5;--muted:#9a9ea8;--bg:#07070a;}
+  html{color-scheme:dark;} *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--off-white);font:400 16px/1.5 'Archivo',system-ui,sans-serif;
+       min-height:100vh;padding:46px 24px 70px;text-align:center;
+       background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:11px 11px;}
+  h1{font-weight:600;letter-spacing:-1.4px;font-size:clamp(28px,4.6vw,46px);}
+  h1 .doto{font-family:'Doto',monospace;font-weight:900;color:var(--cobalt);margin:0 .18em;}
+  .sub{color:var(--muted);font-size:clamp(14px,1.7vw,18px);margin-top:12px;max-width:62ch;margin-inline:auto;}
+  .grid{display:grid;grid-template-columns:repeat(2,auto);gap:30px 40px;justify-content:center;margin-top:44px;}
+  .cellitem{display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .chip{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
+  .chip.hot{color:var(--cobalt);}
+  canvas{display:block;background:transparent;}
+</style>
+</head>
+<body>
+  <h1>Shaded, even when it gets <span class="doto">COMPLEX</span></h1>
+  <div class="sub">Same rule, bigger objects: light &amp; shade live in the source, dot size follows. Cobalt marks the one thing to look at.</div>
+
+  <div class="grid">
+    <div class="cellitem"><div class="chip">Bar chart</div><canvas id="bars" width="380" height="320"></canvas></div>
+    <div class="cellitem"><div class="chip">Rocket</div><canvas id="rocket" width="300" height="320"></canvas></div>
+    <div class="cellitem"><div class="chip hot">Nugget</div><canvas id="nugget" width="340" height="300"></canvas></div>
+    <div class="cellitem"><div class="chip">Calendar</div><canvas id="cal" width="340" height="300"></canvas></div>
+  </div>
+
+<script>
+const CELL=6, DOT=0.42;
+const buf=document.createElement('canvas'), bx=buf.getContext('2d',{willReadFrequently:true});
+
+// brightness-function renderer (color fixed)
+function dotsFn(id, fn, color){
+  const cv=document.getElementById(id), ctx=cv.getContext('2d');
+  const W=cv.width, H=cv.height, dpr=Math.min(devicePixelRatio||1,2);
+  cv.width=W*dpr; cv.height=H*dpr; cv.style.width=W+'px'; cv.style.height=H+'px'; ctx.scale(dpr,dpr);
+  const maxR=CELL*DOT;
+  for(let y=CELL/2;y<H;y+=CELL) for(let x=CELL/2;x<W;x+=CELL){
+    const b=fn(x/W,y/H); if(b<0.05) continue;
+    ctx.fillStyle=color; ctx.beginPath(); ctx.arc(x,y,maxR*b,0,6.2832); ctx.fill();
+  }
+}
+// draw-to-buffer renderer (color sampled from the drawing → off-white + cobalt)
+function dotsCanvas(id, draw){
+  const cv=document.getElementById(id), ctx=cv.getContext('2d');
+  const W=cv.width, H=cv.height, dpr=Math.min(devicePixelRatio||1,2);
+  const sc=document.createElement('canvas'); sc.width=W; sc.height=H;
+  draw(sc.getContext('2d'), W, H);
+  cv.width=W*dpr; cv.height=H*dpr; cv.style.width=W+'px'; cv.style.height=H+'px'; ctx.setTransform(dpr,0,0,dpr,0,0);
+  const cols=Math.round(W/CELL), rows=Math.round(H/CELL);
+  buf.width=cols; buf.height=rows; bx.imageSmoothingEnabled=true; bx.clearRect(0,0,cols,rows); bx.drawImage(sc,0,0,cols,rows);
+  const d=bx.getImageData(0,0,cols,rows).data, cw=W/cols, ch=H/rows, maxR=Math.min(cw,ch)*DOT;
+  for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){
+    const i=(y*cols+x)*4, r=d[i],g=d[i+1],b=d[i+2]; const s=Math.max(r,g,b)/255;
+    if(s<0.07) continue;
+    ctx.fillStyle=`rgb(${r},${g},${b})`;
+    ctx.beginPath(); ctx.arc(x*cw+cw/2,y*ch+ch/2,maxR*(0.16+0.84*s),0,6.2832); ctx.fill();
+  }
+}
+
+// ---------- BAR CHART (extruded 3D bars; tallest = cobalt) ----------
+dotsCanvas('bars', (g,W,H)=>{
+  g.clearRect(0,0,W,H);
+  const base=270, x0=60, bw=38, gap=20, dep=16;
+  const data=[80,120,160,104,206], hot=4;
+  // axis
+  g.fillStyle='#7a7e88'; g.fillRect(x0-8, base, W-2*x0+30, 4);
+  data.forEach((h,i)=>{
+    const x=x0+i*(bw+gap), yT=base-h, yB=base;
+    const front = i===hot?['#1433d6']:['#cfd1d6'];
+    const top   = i===hot? '#5470f0':'#ededea';
+    const side  = i===hot? '#0f27a8':'#9a9ea8';
+    // front face (vertical gradient for a little curve)
+    const gr=g.createLinearGradient(x,0,x+bw,0);
+    if(i===hot){gr.addColorStop(0,'#3a56ec');gr.addColorStop(.5,'#1433d6');gr.addColorStop(1,'#0f27a8');}
+    else{gr.addColorStop(0,'#e3e4e6');gr.addColorStop(.5,'#cfd1d6');gr.addColorStop(1,'#a6a9b0');}
+    g.fillStyle=gr; g.fillRect(x,yT,bw,h);
+    // top face
+    g.fillStyle=top; g.beginPath(); g.moveTo(x,yT); g.lineTo(x+bw,yT); g.lineTo(x+bw+dep,yT-dep); g.lineTo(x+dep,yT-dep); g.closePath(); g.fill();
+    // side face
+    g.fillStyle=side; g.beginPath(); g.moveTo(x+bw,yT); g.lineTo(x+bw+dep,yT-dep); g.lineTo(x+bw+dep,yB-dep); g.lineTo(x+bw,yB); g.closePath(); g.fill();
+  });
+});
+
+// ---------- ROCKET (cylindrical body, shaded; cobalt window + flame) ----------
+dotsCanvas('rocket', (g,W,H)=>{
+  g.clearRect(0,0,W,H);
+  const cx=150;
+  const bodyL=cx-28, bodyR=cx+28, bTop=118, bBot=248;
+  const cyl=g.createLinearGradient(bodyL,0,bodyR,0);
+  cyl.addColorStop(0,'#565a63'); cyl.addColorStop(.30,'#f1f1ee'); cyl.addColorStop(.58,'#cfd1d6'); cyl.addColorStop(1,'#474a52');
+  // nose cone
+  g.fillStyle=cyl; g.beginPath(); g.moveTo(cx,54); g.lineTo(bodyL,bTop); g.lineTo(bodyR,bTop); g.closePath(); g.fill();
+  // body
+  g.fillStyle=cyl; g.fillRect(bodyL,bTop,56,bBot-bTop);
+  // fins
+  const fin=g.createLinearGradient(0,0,0,0);
+  g.fillStyle='#b0b3ba'; g.beginPath(); g.moveTo(bodyL,bBot-44); g.lineTo(bodyL-30,bBot); g.lineTo(bodyL,bBot); g.closePath(); g.fill();
+  g.fillStyle='#7a7e88'; g.beginPath(); g.moveTo(bodyR,bBot-44); g.lineTo(bodyR+30,bBot); g.lineTo(bodyR,bBot); g.closePath(); g.fill();
+  // nozzle
+  g.fillStyle='#9a9ea8'; g.beginPath(); g.moveTo(bodyL+8,bBot); g.lineTo(bodyR-8,bBot); g.lineTo(bodyR-2,bBot+22); g.lineTo(bodyL+2,bBot+22); g.closePath(); g.fill();
+  // window (cobalt, glossy)
+  const wg=g.createRadialGradient(cx-5,160-5,2,cx,160,18);
+  wg.addColorStop(0,'#c9d2ff'); wg.addColorStop(.5,'#1433d6'); wg.addColorStop(1,'#0c2090');
+  g.fillStyle=wg; g.beginPath(); g.arc(cx,162,17,0,6.2832); g.fill();
+  // flame
+  const fl=g.createLinearGradient(0,bBot+22,0,bBot+92);
+  fl.addColorStop(0,'#ffffff'); fl.addColorStop(.35,'#dfe3e8'); fl.addColorStop(1,'rgba(20,51,214,0)');
+  g.fillStyle=fl; g.beginPath(); g.moveTo(bodyL+6,bBot+22); g.quadraticCurveTo(cx,bBot+108,bodyR-6,bBot+22); g.closePath(); g.fill();
+});
+
+// ---------- NUGGET (glossy organic blob; brand cobalt) ----------
+dotsFn('nugget', (u,v)=>{
+  const x=(u-0.5), y=(v-0.5);
+  const ex=x/0.42, ey=y/0.34;
+  const ang=Math.atan2(ey,ex), rr=Math.hypot(ex,ey);
+  const bound=1.0 + 0.10*Math.sin(ang*3+0.5) + 0.07*Math.sin(ang*5-0.8) + 0.045*Math.sin(ang*7+2.0);
+  if(rr>bound) return 0;
+  // dome form
+  const zz=Math.sqrt(Math.max(0,bound*bound-rr*rr));
+  let form=0.30+0.62*(zz/bound);
+  // glossy highlight, upper-left
+  const gx=(x+0.13)/0.17, gy=(y+0.11)/0.15, gd=gx*gx+gy*gy;
+  const gloss=0.65*Math.exp(-gd*1.3);
+  return Math.max(0,Math.min(1, form + gloss));
+}, '#1433d6');
+
+// ---------- CALENDAR (page + rings + day grid; one day = cobalt) ----------
+dotsCanvas('cal', (g,W,H)=>{
+  g.clearRect(0,0,W,H);
+  const x0=64, x1=276, y0=84, y1=266;
+  // page with vertical gradient (slight form)
+  const pg=g.createLinearGradient(0,y0,0,y1);
+  pg.addColorStop(0,'#efefec'); pg.addColorStop(1,'#c2c4c9');
+  g.fillStyle=pg; g.fillRect(x0,y0,x1-x0,y1-y0);
+  // header band (muted) + rings
+  g.fillStyle='#5d6069'; g.fillRect(x0,y0,x1-x0,34);
+  g.fillStyle='#b0b3ba'; g.fillRect(120,y0-14,12,26); g.fillRect(208,y0-14,12,26);
+  // day grid grooves (dark lines) over body
+  const gx0=x0+10, gx1=x1-10, gy0=y0+44, gy1=y1-12, cols=7, rows=4;
+  g.strokeStyle='#54575f'; g.lineWidth=4;
+  for(let c=0;c<=cols;c++){const xx=gx0+(gx1-gx0)*c/cols; g.beginPath(); g.moveTo(xx,gy0); g.lineTo(xx,gy1); g.stroke();}
+  for(let r=0;r<=rows;r++){const yy=gy0+(gy1-gy0)*r/rows; g.beginPath(); g.moveTo(gx0,yy); g.lineTo(gx1,yy); g.stroke();}
+  // one highlighted day (cobalt, glossy)
+  const cc=4, rr=1, cw=(gx1-gx0)/cols, ch=(gy1-gy0)/rows;
+  const dx=gx0+cc*cw, dy=gy0+rr*ch;
+  const dg=g.createLinearGradient(dx,dy,dx,dy+ch);
+  dg.addColorStop(0,'#3a56ec'); dg.addColorStop(1,'#0f27a8');
+  g.fillStyle=dg; g.fillRect(dx+3,dy+3,cw-6,ch-6);
+});
+</script>
+</body>
+</html>

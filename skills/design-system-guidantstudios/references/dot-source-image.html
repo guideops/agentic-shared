@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>/design-system-guidantstudios · Image → Dot Matrix</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b0b0f;--paper:#f6f6f3;--card:#ffffff;--cobalt:#1433d6;--muted:#7a7e88;--bgdark:#07070a;}
+  html{color-scheme:dark;} *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{background:var(--bgdark);color:#f2f3f5;font:400 15px/1.4 'Archivo',system-ui,sans-serif;overflow:hidden;display:flex;}
+
+  /* stage */
+  #stage{flex:1;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;
+         background-image:radial-gradient(rgba(255,255,255,.035) 1px,transparent 1px);background-size:11px 11px;}
+  #stage.over{outline:2px dashed var(--cobalt);outline-offset:-14px;}
+  #out{max-width:100%;max-height:100%;}
+  .empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;color:var(--muted);pointer-events:none;}
+  .empty .big{font-family:'Doto',monospace;font-weight:900;font-size:34px;letter-spacing:2px;color:#f2f3f5;}
+  .empty .o{color:var(--cobalt);}
+
+  /* panel */
+  .panel{width:320px;height:100%;overflow-y:auto;background:rgba(16,17,21,.96);border-left:1.5px solid rgba(255,255,255,.1);padding:18px 18px 40px;}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+  .brand .dot{width:13px;height:13px;background:var(--cobalt);border-radius:50%;}
+  .brand b{font-weight:700;letter-spacing:.5px;}
+  .brand span{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-left:auto;}
+  .sect{margin-top:20px;}
+  .sect>h4{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:10px;font-weight:700;}
+  .src{display:flex;align-items:center;gap:12px;border:1.5px solid rgba(255,255,255,.12);padding:10px;}
+  .src canvas{width:48px;height:48px;object-fit:cover;background:#000;border:1px solid rgba(255,255,255,.1);}
+  .src .meta{font-size:12px;line-height:1.5;}
+  .src .meta b{color:#f2f3f5;font-weight:700;}
+  .src .meta small{color:var(--muted);}
+
+  .seg{display:flex;flex-wrap:wrap;gap:6px;}
+  button{font:inherit;color:#f2f3f5;background:transparent;border:1.5px solid rgba(255,255,255,.18);
+         padding:7px 12px;cursor:pointer;letter-spacing:.5px;font-size:13px;transition:.13s;}
+  button:hover{border-color:var(--cobalt);color:var(--cobalt);}
+  button.on{background:var(--cobalt);border-color:var(--cobalt);color:var(--bgdark);font-weight:700;}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:11px 0;}
+  .row label{font-size:13px;color:#cfd1d6;}
+  .row .val{font-family:'Doto',monospace;font-weight:700;color:var(--cobalt);font-size:13px;min-width:38px;text-align:right;}
+  input[type=range]{width:150px;accent-color:var(--cobalt);cursor:pointer;}
+  .full{width:100%;}
+  .actions{display:flex;gap:8px;margin-top:8px;}
+  .actions button{flex:1;}
+  .dl{background:var(--cobalt);border-color:var(--cobalt);color:var(--bgdark);font-weight:700;}
+  .hint{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5;}
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="out"></canvas>
+  <div class="empty" id="empty">
+    <div class="big">DROP AN <span class="o">IMAGE</span></div>
+    <div>drag a file here &nbsp;·&nbsp; paste with Ctrl+V &nbsp;·&nbsp; or click Load</div>
+  </div>
+</div>
+
+<aside class="panel">
+  <div class="brand"><span class="dot"></span><b>Image → Dot Matrix</b><span>/design-system-guidantstudios</span></div>
+
+  <div class="sect">
+    <div class="src">
+      <canvas id="thumb" width="48" height="48"></canvas>
+      <div class="meta"><b id="srcname">No source</b><br><small id="srcdim">drop · paste · load</small></div>
+    </div>
+    <div class="actions" style="margin-top:10px;">
+      <button id="pick">Load image</button>
+      <button id="sample">Sample</button>
+    </div>
+    <input type="file" id="file" accept="image/*" hidden>
+  </div>
+
+  <div class="sect">
+    <h4>Style</h4>
+    <div class="seg" id="modeSeg">
+      <button data-mode="orig" class="on">Source</button>
+      <button data-mode="mono">Mono</button>
+      <button data-mode="duo">Duo</button>
+    </div>
+    <div class="seg" id="shapeSeg" style="margin-top:8px;">
+      <button data-shape="dot" class="on">● Dots</button>
+      <button data-shape="square">■ Grid</button>
+    </div>
+  </div>
+
+  <div class="sect">
+    <h4>Background</h4>
+    <div class="seg" id="bgSeg">
+      <button data-bg="black" class="on">Black</button>
+      <button data-bg="paper">Paper</button>
+      <button data-bg="trans">Transparent</button>
+    </div>
+  </div>
+
+  <div class="sect">
+    <h4>Adjust</h4>
+    <div class="row"><label>Density</label><input id="density" type="range" min="4" max="20" value="6"><span class="val" id="vDensity">6</span></div>
+    <div class="row"><label>Dot size</label><input id="dot" type="range" min="30" max="80" value="30"><span class="val" id="vDot">30</span></div>
+    <div class="row"><label>Contrast</label><input id="contrast" type="range" min="50" max="260" value="115"><span class="val" id="vContrast">1.2</span></div>
+    <div class="row"><label>Brightness</label><input id="brightness" type="range" min="-40" max="40" value="0"><span class="val" id="vBright">0</span></div>
+    <div class="seg" style="margin-top:6px;">
+      <button id="invert">Invert</button>
+    </div>
+  </div>
+
+  <div class="sect">
+    <h4>Export</h4>
+    <div class="actions">
+      <button class="dl" id="download">↓ Download PNG</button>
+    </div>
+    <div class="hint">Same dot engine throughout: the photo is drawn small, then every grid cell becomes a dot sized by the brightness under it.</div>
+  </div>
+</aside>
+
+<script>
+const stage = document.getElementById('stage');
+const out = document.getElementById('out');
+const ctx = out.getContext('2d');
+const buf = document.createElement('canvas');
+const bx = buf.getContext('2d', {willReadFrequently:true});
+const thumb = document.getElementById('thumb');
+const tx = thumb.getContext('2d');
+
+let img = null;
+const S = { cell:6, dot:0.30, contrast:1.2, bright:0, mode:'orig', shape:'dot', bg:'black', invert:false };
+
+function loadImage(src, name){
+  const i = new Image();
+  i.crossOrigin = 'anonymous';
+  i.onload = ()=>{
+    img = i;
+    document.getElementById('empty').style.display = 'none';
+    document.getElementById('srcname').textContent = name || 'image';
+    document.getElementById('srcdim').textContent = i.naturalWidth + ' × ' + i.naturalHeight;
+    tx.clearRect(0,0,48,48);
+    const ar = i.naturalWidth/i.naturalHeight; let tw=48,th=48; if(ar>1){th=48/ar;}else{tw=48*ar;}
+    tx.drawImage(i,(48-tw)/2,(48-th)/2,tw,th);
+    render();
+  };
+  i.onerror = ()=>{ document.getElementById('srcdim').textContent = 'could not load'; };
+  i.src = src;
+}
+
+function render(){
+  if(!img) return;
+  const stageW = stage.clientWidth - 28, stageH = stage.clientHeight - 28;
+  const ar = img.naturalWidth/img.naturalHeight;
+  let dw = stageW, dh = dw/ar;
+  if(dh > stageH){ dh = stageH; dw = dh*ar; }
+
+  const cols = Math.max(2, Math.round(dw/S.cell));
+  const rows = Math.max(2, Math.round(dh/S.cell));
+  buf.width = cols; buf.height = rows;
+  bx.clearRect(0,0,cols,rows);
+  bx.drawImage(img, 0, 0, cols, rows);
+  const data = bx.getImageData(0,0,cols,rows).data;
+
+  const dpr = Math.min(window.devicePixelRatio||1, 2);
+  out.width = Math.round(dw*dpr); out.height = Math.round(dh*dpr);
+  out.style.width = dw+'px'; out.style.height = dh+'px';
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.clearRect(0,0,dw,dh);
+  if(S.bg==='black'){ ctx.fillStyle='#07070a'; ctx.fillRect(0,0,dw,dh); }
+  else if(S.bg==='paper'){ ctx.fillStyle='#f6f6f3'; ctx.fillRect(0,0,dw,dh); }
+
+  const cw = dw/cols, ch = dh/rows;
+  const maxR = Math.min(cw,ch)*S.dot;
+  const baseDot = (S.bg==='paper') ? '28,26,22' : '232,226,210';
+
+  for(let y=0;y<rows;y++) for(let x=0;x<cols;x++){
+    const i=(y*cols+x)*4;
+    const a = data[i+3]/255;
+    if(a<0.04) continue;
+    let lum = (0.299*data[i]+0.587*data[i+1]+0.114*data[i+2])/255;
+    lum = (lum-0.5)*S.contrast + 0.5 + S.bright;
+    lum = Math.max(0, Math.min(1, lum));
+    // strength: bright source on dark bg, dark source on paper
+    let s = (S.bg==='paper') ? (1-lum) : lum;
+    if(S.invert) s = 1-s;
+    s *= a;
+    if(s<0.05) continue;
+
+    let col;
+    if(S.mode==='mono'){
+      col = `rgba(20,51,214,${0.35+0.65*s})`;
+    } else if(S.mode==='duo'){
+      const r=data[i],g=data[i+1],b=data[i+2];
+      const warm = (r>110 && r>g+18 && g>=b-10);
+      col = warm ? `rgba(20,51,214,${0.4+0.6*s})` : `rgba(${baseDot},${0.35+0.65*s})`;
+    } else { // source colour
+      col = `rgba(${data[i]},${data[i+1]},${data[i+2]},${Math.max(0.4,a)})`;
+    }
+
+    const cxp = x*cw+cw/2, cyp = y*ch+ch/2, r = maxR*(0.18+0.82*s);
+    ctx.fillStyle = col;
+    if(S.shape==='square'){ ctx.fillRect(cxp-r, cyp-r, r*2, r*2); }
+    else { ctx.beginPath(); ctx.arc(cxp,cyp,r,0,6.2832); ctx.fill(); }
+  }
+}
+
+// ---- inputs ----
+function bindSeg(id, key, cast){
+  document.querySelectorAll('#'+id+' button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      S[key] = cast(b.dataset[key] ?? b.dataset.mode ?? b.dataset.shape ?? b.dataset.bg);
+      document.querySelectorAll('#'+id+' button').forEach(x=>x.classList.toggle('on', x===b));
+      render();
+    });
+  });
+}
+document.querySelectorAll('#modeSeg button').forEach(b=>b.addEventListener('click',()=>{S.mode=b.dataset.mode;setOn('#modeSeg',b);render();}));
+document.querySelectorAll('#shapeSeg button').forEach(b=>b.addEventListener('click',()=>{S.shape=b.dataset.shape;setOn('#shapeSeg',b);render();}));
+document.querySelectorAll('#bgSeg button').forEach(b=>b.addEventListener('click',()=>{S.bg=b.dataset.bg;setOn('#bgSeg',b);render();}));
+function setOn(sel,b){document.querySelectorAll(sel+' button').forEach(x=>x.classList.toggle('on',x===b));}
+
+const bind = (id, fn) => document.getElementById(id).addEventListener('input', fn);
+bind('density', e=>{S.cell=+e.target.value;document.getElementById('vDensity').textContent=S.cell;render();});
+bind('dot', e=>{S.dot=(+e.target.value)/100;document.getElementById('vDot').textContent=e.target.value;render();});
+bind('contrast', e=>{S.contrast=(+e.target.value)/100;document.getElementById('vContrast').textContent=S.contrast.toFixed(1);render();});
+bind('brightness', e=>{S.bright=(+e.target.value)/100;document.getElementById('vBright').textContent=e.target.value;render();});
+document.getElementById('invert').addEventListener('click', e=>{S.invert=!S.invert;e.target.classList.toggle('on',S.invert);render();});
+
+// load image: pick / drop / paste / sample / ?src
+document.getElementById('pick').addEventListener('click',()=>document.getElementById('file').click());
+document.getElementById('file').addEventListener('change',e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const url=URL.createObjectURL(f); loadImage(url, f.name);
+});
+['dragenter','dragover'].forEach(ev=>stage.addEventListener(ev,e=>{e.preventDefault();stage.classList.add('over');}));
+['dragleave','drop'].forEach(ev=>stage.addEventListener(ev,e=>{e.preventDefault();stage.classList.remove('over');}));
+stage.addEventListener('drop',e=>{
+  const f=[...e.dataTransfer.files].find(f=>f.type.startsWith('image/'));
+  if(f) loadImage(URL.createObjectURL(f), f.name);
+});
+window.addEventListener('paste',e=>{
+  const it=[...e.clipboardData.items].find(i=>i.type.startsWith('image/'));
+  if(it){ const f=it.getAsFile(); loadImage(URL.createObjectURL(f), 'pasted image'); }
+});
+document.getElementById('sample').addEventListener('click',()=>{
+  // procedural /design-system-guidantstudios sample: cobalt gradient sphere on dark - proves the engine with no file
+  const c=document.createElement('canvas');c.width=c.height=480;const g=c.getContext('2d');
+  g.fillStyle='#07070a';g.fillRect(0,0,480,480);
+  const rg=g.createRadialGradient(190,170,10,240,240,230);
+  rg.addColorStop(0,'#fff');rg.addColorStop(0.25,'#c9d2ff');rg.addColorStop(0.6,'#1433d6');rg.addColorStop(1,'#070a2e');
+  g.fillStyle=rg;g.beginPath();g.arc(240,240,200,0,6.2832);g.fill();
+  loadImage(c.toDataURL(), 'sample sphere');
+});
+document.getElementById('download').addEventListener('click',()=>{
+  if(!img) return;
+  const a=document.createElement('a');
+  a.download='robo-dotmatrix.png'; a.href=out.toDataURL('image/png'); a.click();
+});
+
+window.addEventListener('resize', render);
+
+// optional query params: ?src= (bake an image in) + ?mode/bg/density/contrast (preset link)
+const Q = new URLSearchParams(location.search);
+function applyParam(key, val){
+  if(val==null) return;
+  if(['mode','shape','bg'].includes(key)){ S[key]=val; setOn('#'+key+'Seg', [...document.querySelectorAll('#'+key+'Seg button')].find(b=>(b.dataset.mode||b.dataset.shape||b.dataset.bg)===val)||document.querySelector('#'+key+'Seg button')); }
+  if(key==='density'){ S.cell=+val; document.getElementById('density').value=val; document.getElementById('vDensity').textContent=val; }
+  if(key==='contrast'){ S.contrast=+val/100; document.getElementById('contrast').value=val; document.getElementById('vContrast').textContent=(val/100).toFixed(1); }
+}
+['mode','shape','bg','density','contrast'].forEach(k=>applyParam(k, Q.get(k)));
+const q = Q.get('src');
+if(q){ loadImage(q, q.split(/[\\/]/).pop()); }
+</script>
+</body>
+</html>

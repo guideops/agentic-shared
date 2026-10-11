@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>/design-system-guidantstudios · Agent sprites bob (solid only)</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b0b0f;--paper:#f6f6f3;--card:#ffffff;--cobalt:#1433d6;--muted:#5d6069;}
+  html{color-scheme:light;} *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--paper);color:var(--ink);font:400 16px/1.5 'Archivo',system-ui,sans-serif;
+       min-height:100vh;padding:54px 24px 70px;text-align:center;
+       background-image:radial-gradient(rgba(11,11,15,.05) 1px,transparent 1px);background-size:11px 11px;}
+  h1{font-weight:600;letter-spacing:-1.4px;font-size:clamp(28px,4.4vw,46px);}
+  h1 .doto{font-family:'Doto',monospace;font-weight:900;color:var(--cobalt);margin:0 .18em;}
+  .sub{color:var(--muted);font-size:clamp(14px,1.7vw,18px);margin-top:12px;max-width:64ch;margin-inline:auto;}
+  .panel{background:var(--card);border:2px solid var(--ink);box-shadow:6px 6px 0 rgba(11,11,15,.9);
+         max-width:900px;margin:40px auto 0;padding:34px 24px 26px;}
+  .row{display:flex;gap:34px;justify-content:center;align-items:flex-end;flex-wrap:wrap;}
+  .agent{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .agent svg{width:72px;height:80px;overflow:visible;}
+  .lbl{font-size:13px;font-weight:600;letter-spacing:.5px;}
+  .agent.lead .lbl{color:var(--cobalt);}
+  .tag{font-family:'Doto',monospace;font-weight:700;font-size:10px;color:var(--cobalt);letter-spacing:2px;}
+  .rule{max-width:760px;margin:26px auto 0;color:var(--muted);font-size:13.5px;}
+  /* exact bob: whole sprite hops as one group; ground shadow squashes. 1.2s, staggered. */
+  @keyframes agHop { 0%,100%{transform:translateY(0)} 15%{transform:translateY(-0.6px)} 30%{transform:translateY(0)} }
+  @keyframes agSh  { 0%,100%{opacity:.12;transform:scaleX(1)} 15%{opacity:.05;transform:scaleX(.7)} 30%{opacity:.12;transform:scaleX(1)} }
+  .aghop{ animation:agHop 1.2s ease-in-out infinite; }
+  .agsh { animation:agSh 1.2s ease-in-out infinite; transform-origin:4px 8.5px; }
+</style>
+</head>
+<body>
+  <h1>Agent sprites <span class="doto">BOB</span> - solid only</h1>
+  <div class="sub">RULE: agent icons are always SOLID pixel sprites (never a shaded/dot-matrix version), and they bob by default. A1 leads in cobalt.</div>
+
+  <div class="panel">
+    <div class="row" id="row"></div>
+    <div class="rule">The bob = the exact dashboard Agents-tab hop: whole sprite up as one group, ground shadow squashing in time, 1.2s ease-in-out, staggered 0.2s per agent.</div>
+  </div>
+
+<script>
+const AGENTS = {
+  a1: [[0,0,1,0],[1,1,1,1],[1,1,1,1],[1,0,1,1],[1,1,1,1],[1,1,1,1],[1,0,0,1],[0,0,0,0]],
+  a2: [[0,0,1,0],[0,1,1,1],[1,1,1,1],[0,1,0,1],[0,1,1,1],[1,1,1,0],[0,0,1,0],[0,0,0,0]],
+  a3: [[0,0,1,0],[0,0,1,1],[0,1,1,1],[0,1,0,1],[0,1,1,1],[1,1,1,1],[1,0,1,0],[0,0,0,0]],
+  a4: [[1,0,0,0],[1,1,0,0],[0,1,1,1],[0,1,1,1],[1,1,0,1],[0,1,1,1],[0,1,0,1],[0,0,0,0]],
+  a5: [[0,0,1,0],[0,0,1,1],[0,1,1,1],[1,1,0,1],[1,1,1,1],[1,1,1,1],[1,0,0,1],[0,0,0,0]],
+  a6: [[0,0,1,1],[0,1,1,1],[1,1,1,1],[1,1,0,1],[1,1,1,1],[0,1,1,1],[0,0,1,1],[0,0,0,0]],
+};
+const ORDER = ['a1','a2','a3','a4','a5','a6'];
+function hopSvg(pixels, color, idx){
+  let rects=''; const cols=8;
+  for(let y=0;y<pixels.length;y++) for(let x=0;x<pixels[y].length;x++) if(pixels[y][x]){
+    rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${color}"/>`;
+    rects+=`<rect x="${cols-1-x}" y="${y}" width="1" height="1" fill="${color}"/>`;
+  }
+  const d=(idx*0.2).toFixed(2);
+  return `<svg viewBox="0 0 8 9">
+    <ellipse class="agsh" cx="4" cy="8.5" rx="2.5" ry="0.25" fill="#0b0b0f" style="animation-delay:${d}s"/>
+    <g class="aghop" style="animation-delay:${d}s">${rects}</g>
+  </svg>`;
+}
+const row=document.getElementById('row');
+ORDER.forEach((id,idx)=>{
+  const lead=id==='a1', color=lead?'#1433d6':'#0b0b0f';
+  const el=document.createElement('div'); el.className='agent'+(lead?' lead':'');
+  el.innerHTML=`${hopSvg(AGENTS[id],color,idx)}<div class="lbl">${id.charAt(0).toUpperCase()+id.slice(1)}</div>${lead?'<div class="tag">LEAD</div>':''}`;
+  row.appendChild(el);
+});
+</script>
+</body>
+</html>
