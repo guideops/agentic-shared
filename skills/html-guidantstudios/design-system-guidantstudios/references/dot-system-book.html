@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUIDANT STUDIOS Style - Brand Book</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f6f6f3; --bg2: #ffffff; --dk: #0b0b0f; --ink: #0b0b0f; --off-white: #f2f3f5; --mut: #5d6069; --mutd: #9a9ea8; --cobalt: #1433d6; --yellow: #c5cad2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+  body { font-family: 'Archivo', sans-serif; background: var(--dk); }
+  .slide { height: 100vh; scroll-snap-align: start; overflow: hidden; position: relative; }
+  .nav { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 9px; z-index: 10; mix-blend-mode: difference; }
+  .nav a { width: 7px; height: 7px; border-radius: 50%; background: #888; display: block; }
+  .nav a:hover { background: var(--cobalt); }
+  canvas { display: block; }
+  .pixcanvas { image-rendering: pixelated; }
+  .px { margin: 0 0.12em; } /* TOPLINE: Doto needs breathing room on BOTH edges (locked 2026-06-29) */
+
+  .kick { font-weight: 400; font-size: clamp(12px, 1.1vw, 14px); letter-spacing: 6px; text-transform: uppercase; color: var(--cobalt); }
+  h2.sec { font-weight: 600; font-size: clamp(30px, 3.6vw, 52px); letter-spacing: -1px; line-height: 1.05; margin-top: 1.6vh; }
+  h2.sec .px { font-family: 'Doto'; font-weight: 900; color: var(--cobalt); }
+  .body-t { font-weight: 400; font-size: clamp(13.5px, 1.3vw, 16px); color: var(--mut); line-height: 1.65; }
+  .lab { font-weight: 400; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--mut); }
+
+  /* B1 cover */
+  .b1 { background: var(--bg); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .b1 h1 { font-weight: 600; font-size: clamp(48px, 6.5vw, 100px); letter-spacing: -2px; line-height: 1.02; text-align: center; }
+  .b1 h1 .px { font-family: 'Doto'; font-weight: 900; color: var(--cobalt); }
+  .b1 .sub { font-weight: 400; font-size: clamp(13px, 1.3vw, 16px); letter-spacing: 6px; text-transform: uppercase; color: var(--mut); margin-top: 2.6vh; }
+  .b1 .hexwrap { margin-top: 4.5vh; }
+
+  /* B2 colors */
+  .b2 { background: var(--bg); color: var(--ink); display: flex; flex-direction: column; justify-content: center; padding: 0 8vw; }
+  .b2 .sw-row { display: grid; grid-template-columns: 1.3fr 1.3fr 1fr 0.8fr; gap: 18px; margin-top: 5vh; }
+  .b2 .sw { border: 2px solid var(--ink); box-shadow: 6px 6px 0 rgba(11,11,15,0.85); padding: 0; }
+  .b2 .sw .chip { height: 17vh; }
+  .b2 .sw .meta { padding: 14px 16px; background: var(--bg2); border-top: 2px solid var(--ink); }
+  .b2 .sw .nm { font-weight: 700; font-size: clamp(14px, 1.4vw, 17px); }
+  .b2 .sw .hex { font-family: 'Doto'; font-weight: 700; font-size: 13px; color: var(--mut); margin-top: 3px; letter-spacing: 1px; }
+  .b2 .sw .use { font-weight: 400; font-size: 11.5px; color: var(--mut); margin-top: 8px; line-height: 1.5; }
+
+  /* B3 typography */
+  .b3 { background: var(--bg); color: var(--ink); display: flex; flex-direction: column; justify-content: center; padding: 0 8vw; }
+  .b3 .tline { display: grid; grid-template-columns: 220px 1fr; gap: 3vw; align-items: baseline; padding: 2.6vh 0; border-bottom: 1px solid rgba(11,11,15,0.18); }
+  .b3 .tline:last-of-type { border-bottom: none; }
+  .b3 .demo-head { font-weight: 600; font-size: clamp(28px, 3.2vw, 46px); letter-spacing: -1px; }
+  .b3 .demo-head .px { font-family: 'Doto'; font-weight: 900; color: var(--cobalt); }
+  .b3 .demo-body { font-weight: 400; font-size: clamp(14px, 1.4vw, 17px); color: var(--ink); max-width: 50ch; line-height: 1.65; }
+  .b3 .demo-kick { font-weight: 400; font-size: 13px; letter-spacing: 6px; text-transform: uppercase; color: var(--cobalt); }
+  .b3 .demo-doto { font-family: 'Doto'; font-weight: 900; font-size: clamp(28px, 3.2vw, 46px); }
+  .b3 .demo-insani { font-family: 'Archivo',sans-serif; font-stretch:125%; text-transform:uppercase; font-weight: 800; font-size: clamp(34px, 4vw, 58px); }
+  .b3 .demo-insani .o { color: var(--cobalt); }
+
+  /* B4 dots principle - dark */
+  .b4 { background: var(--dk); color: var(--off-white); display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 0 7vw; gap: 4vw; }
+  .b4 .rules { display: flex; flex-direction: column; gap: 2.6vh; }
+  .b4 .rule { display: grid; grid-template-columns: 44px 1fr; gap: 18px; align-items: start; }
+  .b4 .rule .n { font-family: 'Doto'; font-weight: 900; font-size: 22px; color: var(--cobalt); }
+  .b4 .rule .t { font-weight: 700; font-size: clamp(14px, 1.4vw, 17px); color: var(--off-white); }
+  .b4 .rule .d { font-weight: 400; font-size: clamp(12.5px, 1.2vw, 15px); color: var(--mutd); margin-top: 4px; line-height: 1.6; }
+  .b4 .vis { display: flex; flex-direction: column; align-items: center; gap: 1.6vh; }
+
+  /* B5 shape recipes */
+  .b5 { background: var(--bg); color: var(--ink); display: flex; flex-direction: column; justify-content: center; padding: 0 7vw; }
+  .b5 .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 4.5vh; }
+  .b5 .shape { border: 2px solid var(--ink); background: var(--bg2); box-shadow: 5px 5px 0 rgba(11,11,15,0.85); padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .b5 .shape .nm { font-weight: 700; font-size: 13.5px; }
+
+  /* B6 cards + icons */
+  .b6 { background: var(--bg); color: var(--ink); display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 0 8vw; gap: 4vw; }
+  .b6 .cards { display: flex; flex-direction: column; gap: 16px; }
+  .b6 .card { border: 2px solid var(--ink); background: var(--bg2); border-radius: 4px; box-shadow: 6px 6px 0 rgba(11,11,15,0.9); padding: 15px 19px; display: grid; grid-template-columns: 46px 1fr; gap: 15px; align-items: center; transition: transform .18s ease, box-shadow .18s ease; }
+  .b6 .card:hover { transform: translate(-2px,-4px); box-shadow: 9px 9px 0 rgba(11,11,15,0.9); }
+  .b6 .card.hot { border-color: var(--cobalt); box-shadow: 6px 6px 0 var(--cobalt); }
+  .b6 .card.hot:hover { box-shadow: 9px 9px 0 var(--cobalt); }
+  .b6 .card .t { font-weight: 700; font-size: clamp(14px, 1.4vw, 17px); }
+  .b6 .card .s { font-weight: 400; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--mut); margin-top: 2px; }
+  .b6 .card.hot .s { color: var(--cobalt); }
+  .b6 .specs { margin-top: 3vh; display: flex; flex-direction: column; gap: 1.4vh; }
+  .b6 .spec { font-weight: 400; font-size: clamp(12.5px, 1.2vw, 15px); color: var(--mut); display: flex; gap: 10px; }
+  .b6 .spec::before { content: '·'; color: var(--cobalt); font-weight: 700; }
+  .b6 .spec b { color: var(--ink); font-weight: 700; }
+
+  /* B6b agent icons */
+  .b6b { background: var(--bg); color: var(--ink); display: flex; flex-direction: column; justify-content: center; padding: 0 8vw; }
+  .b6b .agents { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; margin-top: 5vh; }
+  .b6b .agent { border: 2px solid var(--ink); background: var(--bg2); box-shadow: 5px 5px 0 rgba(11,11,15,0.85); padding: 26px 14px 18px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .b6b .agent.hot { border-color: var(--cobalt); box-shadow: 5px 5px 0 var(--cobalt); }
+  .b6b .agent .nm { font-weight: 700; font-size: clamp(13px, 1.3vw, 16px); }
+  .b6b .agent .rl { font-weight: 400; font-size: 10.5px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--mut); }
+  .b6b .agent.hot .rl { color: var(--cobalt); }
+  .b6b .anote { margin-top: 3.4vh; font-weight: 400; font-size: clamp(12.5px, 1.2vw, 15px); color: var(--mut); }
+  .b6b .anote b { color: var(--ink); font-weight: 700; }
+
+  /* B7 layout rules - dark */
+  .b7 { background: var(--dk); color: var(--off-white); display: flex; flex-direction: column; justify-content: center; padding: 0 8vw; }
+  .b7 .lrules { display: grid; grid-template-columns: 1fr 1fr; gap: 2.8vh 4vw; margin-top: 4.5vh; }
+  .b7 .lr { border-top: 2px solid #1e2026; padding-top: 1.8vh; }
+  .b7 .lr .t { font-weight: 700; font-size: clamp(15px, 1.5vw, 19px); }
+  .b7 .lr .t .px { font-family: 'Doto'; font-weight: 900; color: var(--cobalt); }
+  .b7 .lr .d { font-weight: 400; font-size: clamp(12.5px, 1.25vw, 15px); color: var(--mutd); margin-top: 6px; line-height: 1.6; }
+
+  /* B8 closer */
+  .b8 { background: var(--dk); color: var(--off-white); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .b8 h1 { font-family: 'Archivo',sans-serif; font-stretch:125%; text-transform:uppercase; font-weight: 800; font-size: clamp(54px, 7.5vw, 120px); text-align: center; line-height: 1; }
+  .b8 h1 .o { color: var(--cobalt); }
+  .b8 .sub { font-weight: 400; font-size: clamp(12px, 1.2vw, 15px); letter-spacing: 6px; text-transform: uppercase; color: var(--mutd); margin-top: 3vh; }
+  .b8 .wavebottom { position: absolute; left: 0; right: 0; bottom: 0; }
+
+  /* B1b routing */
+  .b1b { background: var(--dk); color: var(--off-white); display:flex; flex-direction:column; justify-content:center; padding:0 8vw; }
+  .b1b .routes { display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:20px; margin-top:5vh; }
+  .b1b .route { border:2px solid #1e2026; padding:24px; }
+  .b1b .route.base { border-color: var(--cobalt); }
+  .b1b .route .h { font-weight:700; font-size:clamp(15px,1.5vw,19px); }
+  .b1b .route .h .px { font-family:'Doto'; font-weight:900; color:var(--cobalt); }
+  .b1b .route .f { font-family:'Doto'; font-weight:700; font-size:12px; color:var(--mutd); margin-top:3px; letter-spacing:1px; }
+  .b1b .route .d { font-weight:400; font-size:clamp(12px,1.2vw,14.5px); color:var(--mutd); margin-top:12px; line-height:1.6; }
+
+  /* B6c marks */
+  .b6c { background: var(--bg); color: var(--ink); display:flex; flex-direction:column; justify-content:center; padding:0 8vw; }
+  .b6c .marks { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:4.5vh; }
+  .b6c .mark { border:2px solid var(--ink); background:var(--bg2); box-shadow:6px 6px 0 rgba(11,11,15,0.85); padding:22px; display:flex; flex-direction:column; align-items:center; }
+  .b6c .mark canvas, .b6c .mark svg, .b6c .mark img { width:140px; height:140px; object-fit:contain; }
+  .b6c .mark .nm { font-weight:700; font-size:clamp(15px,1.5vw,18px); letter-spacing:1px; margin-top:10px; }
+  .b6c .mark .rl { font-weight:400; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--mut); margin-top:3px; }
+  .b6c .mark .eq { font-family:'Doto'; font-weight:700; font-size:11px; color:var(--cobalt); letter-spacing:1px; text-transform:uppercase; margin-top:6px; }
+  .b6c .anote { margin-top:3vh; font-weight:400; font-size:clamp(12.5px,1.2vw,15px); color:var(--mut); }
+  .b6c .anote b { color:var(--ink); font-weight:700; }
+
+  /* B7b apps */
+  .b7b { background: var(--bg); color: var(--ink); display:grid; grid-template-columns:1fr 1fr; align-items:center; padding:0 8vw; gap:4vw; }
+  .b7b .specs { display:flex; flex-direction:column; gap:1.5vh; margin-top:3vh; }
+  .b7b .spec { font-weight:400; font-size:clamp(12.5px,1.2vw,15px); color:var(--mut); display:flex; gap:10px; }
+  .b7b .spec::before { content:'·'; color:var(--cobalt); font-weight:700; }
+  .b7b .spec b { color:var(--ink); font-weight:700; }
+  .b7b .demo { display:flex; flex-direction:column; align-items:center; gap:20px; }
+  .b7b .toggle { display:flex; border:2px solid var(--ink); box-shadow:5px 5px 0 rgba(11,11,15,0.85); }
+  .b7b .toggle div { padding:15px 28px; font-weight:700; font-size:15px; position:relative; }
+  .b7b .toggle .dk { background:var(--dk); color:var(--off-white); }
+  .b7b .toggle .lt { background:var(--bg2); color:var(--ink); }
+  .b7b .toggle .on::after { content:''; position:absolute; inset:0; box-shadow: inset 0 0 0 3px var(--cobalt); }
+  .b7b .pals { display:flex; gap:24px; }
+  .b7b .pal { display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .b7b .pal .row { display:flex; gap:6px; }
+  .b7b .pal .row span { width:30px; height:30px; border:2px solid var(--ink); }
+  .b7b .pal .cap { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--mut); }
+</style>
+</head>
+<body>
+
+<nav class="nav"><a href="#b1"></a><a href="#b1b"></a><a href="#b2"></a><a href="#b3"></a><a href="#b4"></a><a href="#b5"></a><a href="#b6"></a><a href="#b6b"></a><a href="#b6c"></a><a href="#b7"></a><a href="#b7b"></a><a href="#b8"></a></nav>
+
+<!-- B1 · COVER -->
+<section class="slide b1" id="b1">
+  <div class="kick">Brand book</div>
+  <h1>The <span class="px">STUDIO</span> style</h1>
+  <div class="sub">static · dotted · cobalt</div>
+  <div class="hexwrap"><canvas id="cHex"></canvas></div>
+</section>
+
+<!-- B1b · SKILL MAP / ROUTING -->
+<section class="slide b1b" id="b1b">
+  <div class="kick">00 · How the skill is built</div>
+  <h2 class="sec" style="color:var(--off-white)">One baseline, <span class="px">TWO</span> routes</h2>
+  <div class="routes">
+    <div class="route base">
+      <div class="h"><span class="px">BASELINE</span></div>
+      <div class="f">DESIGN-SYSTEM.md</div>
+      <div class="d">Loads every build: palette, type, the dot-matrix engine, cards, the icon marks. The brand DNA. Then read one route below.</div>
+    </div>
+    <div class="route">
+      <div class="h">Slides</div>
+      <div class="f">slides.md</div>
+      <div class="d">Decks: centered layout, scroll-snap, arrow-key nav, the motion extension, slide workflow.</div>
+    </div>
+    <div class="route">
+      <div class="h">Apps</div>
+      <div class="f">apps.md</div>
+      <div class="d">Tools, dashboards, UI: the dark/light toggle by default, app-shell patterns.</div>
+    </div>
+  </div>
+</section>
+
+<!-- B2 · COLORS -->
+<section class="slide b2" id="b2">
+  <div class="kick">01 · Color</div>
+  <h2 class="sec">Four colors. <span class="px">ONE</span> accent.</h2>
+  <div class="sw-row">
+    <div class="sw">
+      <div class="chip" style="background:#f6f6f3; border-bottom:none;"></div>
+      <div class="meta"><div class="nm">Paper</div><div class="hex">#f6f6f3</div><div class="use">main background · cards lighten to #ffffff</div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#0b0b0f;"></div>
+      <div class="meta"><div class="nm">Black</div><div class="hex">#0b0b0f</div><div class="use">emphasis slides · half-slide splits</div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#1433d6;"></div>
+      <div class="meta"><div class="nm">Cobalt</div><div class="hex">#1433d6</div><div class="use">the only highlight - words, key dots, hot cards</div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#c5cad2;"></div>
+      <div class="meta"><div class="nm">Yellow</div><div class="hex">#c5cad2</div><div class="use">second accent · ONLY when explicitly asked</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- B3 · TYPOGRAPHY -->
+<section class="slide b3" id="b3">
+  <div class="kick">02 · Type</div>
+  <h2 class="sec">Three voices, <span class="px">CLEAR</span> jobs</h2>
+  <div style="margin-top:2vh;">
+    <div class="tline">
+      <div class="lab">Headings<br>Archivo 500</div>
+      <div class="demo-head">Swap the <span class="px">ENGINE</span>, keep the system</div>
+    </div>
+    <div class="tline">
+      <div class="lab">Body<br>Archivo 400</div>
+      <div class="demo-body">Body text stays at weight 400 - readable, never thinner. One short supporting line per slide at most.</div>
+    </div>
+    <div class="tline">
+      <div class="lab">Kickers<br>Archivo 400 · spaced</div>
+      <div class="demo-kick">Model day · system report</div>
+    </div>
+    <div class="tline">
+      <div class="lab">Pixel emphasis<br>Doto 900 · headers only</div>
+      <div class="demo-doto">UPGRADE <span style="color:var(--cobalt)">DAY</span></div>
+    </div>
+    <div class="tline">
+      <div class="lab">Marquee · sparingly<br>Display face</div>
+      <div class="demo-insani">SMARTER <span class="o">OVERNIGHT</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- B4 · DOT MATRIX PRINCIPLE -->
+<section class="slide b4" id="b4">
+  <div>
+    <div class="kick">03 · Visuals</div>
+    <h2 class="sec" style="color:var(--off-white)">Dots carry the <span class="px">SHAPE</span></h2>
+    <div class="rules" style="margin-top:4vh;">
+      <div class="rule"><div class="n">01</div><div><div class="t">Size makes the image</div><div class="d">fixed grid, dot radius = brightness. shapes emerge from thickness, like halftone print.</div></div></div>
+      <div class="rule"><div class="n">02</div><div><div class="t">Two layers max</div><div class="d">ink or off-white field + one cobalt feature. never more.</div></div></div>
+      <div class="rule"><div class="n">03</div><div><div class="t">Text wins over dots</div><div class="d">dots behind text drop to 20% opacity - or the shape leaves a hollow zone.</div></div></div>
+      <div class="rule"><div class="n">04</div><div><div class="t">Functions, not files</div><div class="d">every shape is a 10-30 line brightness function. cheap, reproducible, infinite.</div></div></div>
+    </div>
+  </div>
+  <div class="vis">
+    <canvas id="cSphereDemo"></canvas>
+    <div class="lab" style="color:var(--mutd)">one sphere · one function</div>
+  </div>
+</section>
+
+<!-- B5 · SHAPE RECIPES -->
+<section class="slide b5" id="b5">
+  <div class="kick">04 · Recipe library</div>
+  <h2 class="sec">Eight shapes, <span class="px">READY</span></h2>
+  <div class="grid">
+    <div class="shape"><canvas id="sHour"></canvas><div class="nm">hourglass</div></div>
+    <div class="shape"><canvas id="sBars"></canvas><div class="nm">bar chart</div></div>
+    <div class="shape"><canvas id="sWave"></canvas><div class="nm">wave</div></div>
+    <div class="shape"><canvas id="sArrow"></canvas><div class="nm">arrow</div></div>
+    <div class="shape"><canvas id="sBurst"></canvas><div class="nm">sunburst</div></div>
+    <div class="shape"><canvas id="sHexS"></canvas><div class="nm">brand hex</div></div>
+    <div class="shape"><canvas id="sSphereS"></canvas><div class="nm">sphere</div></div>
+    <div class="shape"><canvas id="sMt"></canvas><div class="nm">mountain</div></div>
+  </div>
+</section>
+
+<!-- B6 · CARDS + ICONS -->
+<section class="slide b6" id="b6">
+  <div>
+    <div class="kick">05 · Cards + icons</div>
+    <h2 class="sec">Ink Well <span class="px">SOFT</span> cards</h2>
+    <div class="specs">
+      <div class="spec"><span><b>8px radius</b> · light: 2px ink border + 6px offset shadow · <b>dark: NO border</b> - raised #15161b surface on a black shadow (locked 2026-07-08)</span></div>
+      <div class="spec"><span><b>cobalt border + shadow</b> marks THE highlight card - one per group · hover lifts, shadow grows to 9px</span></div>
+      <div class="spec"><span>icons are <b>10×10 pixel sprites</b> on canvas - never vector SVG</span></div>
+      <div class="spec"><span><b>outline icons in ink</b> · solid fill reserved for the cobalt one</span></div>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card"><canvas id="ic1" class="pixcanvas"></canvas><div><div class="t">folders + markdown</div><div class="s">yours forever</div></div></div>
+    <div class="card"><canvas id="ic2" class="pixcanvas"></canvas><div><div class="t">skills + router</div><div class="s">yours forever</div></div></div>
+    <div class="card hot"><canvas id="ic3" class="pixcanvas"></canvas><div><div class="t">the model</div><div class="s">swap anytime</div></div></div>
+  </div>
+</section>
+
+<!-- B6b · AGENT ICONS -->
+<section class="slide b6b" id="b6b">
+  <div class="kick">05b · Agents</div>
+  <h2 class="sec">The team, in <span class="px">STUDIO</span> colors</h2>
+  <div class="agents" id="agentGrid"></div>
+  <div class="anote">8×8 pixel grids from the app - <b>recolored to ink, A1 in cobalt</b> · <b>only the agent icons bob</b> - the brand marks stay static · the hop matches the dashboard's Agents tab exactly (whole sprite + squashing shadow)</div>
+</section>
+
+<!-- B6c · BRAND & ICON MARKS -->
+<section class="slide b6c" id="b6c">
+  <div class="kick">05c · The marks</div>
+  <h2 class="sec">Four marks, <span class="px">ONE</span> family</h2>
+  <div class="marks">
+    <div class="mark">
+      <svg viewBox="0 0 48 48" fill="none" stroke="#1433d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 6l18 10v16L24 42 6 32V16Z"/>
+        <path d="M24 6v16l18 10" opacity="0.5"/>
+        <path d="M24 22L6 32" opacity="0.5"/>
+      </svg>
+      <div class="nm">THE DASHBOARD</div><div class="rl">the product</div><div class="eq">= cube hexagon</div>
+    </div>
+    <div class="mark">
+      <svg viewBox="0 0 56 56" stroke-linejoin="round"><path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/></svg>
+      <div class="nm">THE STUDIO</div><div class="rl">the mark</div><div class="eq">= faceted mark</div>
+    </div>
+    <div class="mark">
+      <svg viewBox="0 0 56 56" stroke-linejoin="round"><path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/></svg>
+      <div class="nm">THE BRAND</div><div class="rl">the brand</div><div class="eq">= faceted mark</div>
+    </div>
+  </div>
+  <div class="anote">the marks · the 6 agents are the team (A1 leads)</div>
+</section>
+
+<!-- B7 · LAYOUT RULES -->
+<section class="slide b7" id="b7">
+  <div class="kick">06 · Layout</div>
+  <h2 class="sec" style="color:var(--off-white)">Less is the <span class="px">RULE</span></h2>
+  <div class="lrules">
+    <div class="lr"><div class="t">Minimal text</div><div class="d">title ≤6 words · one support line max. if it reads like a sentence, cut it.</div></div>
+    <div class="lr"><div class="t"><span class="px">CENTERED</span> by default</div><div class="d">heading + visual centered. size the stage columns to content - never strand a label against the edge.</div></div>
+    <div class="lr"><div class="t">No kickers by default</div><div class="d">no module codes or section labels above the heading. one header per slide unless asked.</div></div>
+    <div class="lr"><div class="t"><span class="px">STATIC</span> by default</div><div class="d">print energy. the only motion: sparing dot-matrix animation + the agent bob.</div></div>
+    <div class="lr"><div class="t">No corner text</div><div class="d">no watermarks, tags, slide numbers, or folio labels. clean canvas.</div></div>
+    <div class="lr"><div class="t">One idea per slide</div><div class="d">one heading, one visual. split before you cram.</div></div>
+    <div class="lr"><div class="t">Mix the backgrounds</div><div class="d">mostly paper · black for emphasis beats · half/half splits for variety.</div></div>
+    <div class="lr"><div class="t">One display voice</div><div class="d">Doto emphasis OR a display marquee per slide - never both.</div></div>
+  </div>
+</section>
+
+<!-- B7b · APPS -->
+<section class="slide b7b" id="b7b">
+  <div>
+    <div class="kick">06b · Apps</div>
+    <h2 class="sec">Apps <span class="px">CHOOSE</span> their mode</h2>
+    <div class="specs">
+      <div class="spec"><span>every robo app ships a <b>dark/light toggle</b> by default - the user always chooses</span></div>
+      <div class="spec"><span>first load is <b>dark</b> · the choice is remembered across reloads</span></div>
+      <div class="spec"><span>both themes map onto the <b>locked palette</b> - no new colors</span></div>
+      <div class="spec"><span><b>cobalt stays the accent</b> in both modes · dot-matrix art repaints on flip</span></div>
+    </div>
+  </div>
+  <div class="demo">
+    <div class="toggle"><div class="dk on">Dark</div><div class="lt">Light</div></div>
+    <div class="pals">
+      <div class="pal"><div class="row"><span style="background:#0b0b0f"></span><span style="background:#0b0b0f"></span><span style="background:#f2f3f5"></span><span style="background:#1433d6"></span></div><div class="cap">dark</div></div>
+      <div class="pal"><div class="row"><span style="background:#f6f6f3"></span><span style="background:#ffffff"></span><span style="background:#0b0b0f"></span><span style="background:#1433d6"></span></div><div class="cap">light</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- B8 · CLOSER -->
+<section class="slide b8" id="b8">
+  <div class="wavebottom"><canvas id="cWave"></canvas></div>
+  <h1>BUILD IT <span class="o">ONCE</span></h1>
+  <div class="sub">/design-system-guidantstudios · the studio design system</div>
+</section>
+
+<script>
+function halftone(id, w, h, step, maxR, color, fn, color2, fn2) {
+  const c = document.getElementById(id); if (!c) return;
+  const ctx = c.getContext('2d'); const dpr = window.devicePixelRatio || 1;
+  c.width = w * dpr; c.height = h * dpr; c.style.width = w + 'px'; c.style.height = h + 'px'; ctx.scale(dpr, dpr);
+  for (let y = step / 2; y < h; y += step) for (let x = step / 2; x < w; x += step) {
+    const u = x / w, v = y / h;
+    let b = fn(u, v), col = color;
+    if (fn2) { const b2 = fn2(u, v); if (b2 > b) { b = b2; col = color2; } }
+    if (b <= 0.02) continue;
+    ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, y, Math.min(maxR, b * maxR), 0, Math.PI * 2); ctx.fill();
+  }
+}
+function pn(x, y) { const v = Math.sin(x * 127.1 + y * 311.7) * 43758.5453; return v - Math.floor(v); }
+function inPoly(pts, u, v) { let s = false; for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) if ((pts[i][1] > v) !== (pts[j][1] > v) && u < (pts[j][0] - pts[i][0]) * (v - pts[i][1]) / (pts[j][1] - pts[i][1]) + pts[i][0]) s = !s; return s; }
+function sprite(canvasId, rows, palette, px) {
+  const c = document.getElementById(canvasId); if (!c) return;
+  const ctx = c.getContext('2d');
+  c.width = rows[0].length * px; c.height = rows.length * px;
+  rows.forEach((row, y) => [...row].forEach((k, x) => {
+    if (k !== '.') { ctx.fillStyle = palette[k]; ctx.fillRect(x * px, y * px, px, px); }
+  }));
+}
+const INK = 'rgba(11,11,15,0.88)', CREAM = 'rgba(242,243,245,0.85)', OR = '#1433d6';
+const HEX = [[0.47,0.12],[0.78,0.22],[0.84,0.50],[0.62,0.80],[0.25,0.74],[0.16,0.38]];
+const hexFn = (u, v) => inPoly(HEX, u, v) ? Math.min(1, 0.2 + (u * 0.5 + (1 - v) * 0.6) * 0.85) : 0;
+const hexEdge = (u, v) => {
+  if (!inPoly(HEX, u, v)) return 0;
+  const sh = HEX.map(([x, y]) => [0.5 + (x - 0.5) * 0.86, 0.46 + (y - 0.46) * 0.86]);
+  return (!inPoly(sh, u, v) && u + (1 - v) > 1.05) ? 0.95 : 0;
+};
+
+/* B1 cover hex */
+halftone('cHex', 320, 300, 9, 3.8, INK, hexFn, OR, hexEdge);
+
+/* B4 sphere demo */
+halftone('cSphereDemo', 380, 380, 8, 3.4, CREAM, (u, v) => {
+  const dx = u - 0.5, dy = v - 0.5, d = Math.hypot(dx, dy);
+  if (d > 0.44) return 0;
+  const z = Math.sqrt(Math.max(0, 0.44 * 0.44 - d * d)) / 0.44;
+  return 0.1 + 0.85 * Math.max(0, (-dx * 0.55 - dy * 0.6 + z * 0.62));
+}, OR, (u, v) => {
+  const dx = u - 0.5, dy = v - 0.5;
+  if (Math.hypot(dx, dy) > 0.44) return 0;
+  return Math.abs(dy * 0.92 + dx * 0.30) < 0.022 ? 0.9 : 0;
+});
+
+/* B5 recipe thumbnails - all 150x110 */
+const TW = 150, TH = 110, TS = 7, TR = 2.8;
+halftone('sHour', TW, TH, TS, TR, INK, (u, v) => {
+  const hw = 0.10 + Math.abs(v - 0.5) * 0.55;
+  if (Math.abs(u - 0.5) > hw) return 0;
+  const edge = hw - Math.abs(u - 0.5);
+  if (edge < 0.05) return 0.85;
+  if (v < 0.5) return v > 0.30 ? 0.5 : 0;
+  const heap = 0.95 - 0.3 * Math.max(0, 1 - Math.abs(u - 0.5) / 0.28);
+  return v > heap ? 0.7 : 0;
+}, '#c5cad2', (u, v) => (Math.abs(u - 0.5) < 0.03 && v > 0.32 && v < 0.8) ? 0.8 : 0);   // yellow stream - sanctioned cameo
+halftone('sBars', TW, TH, TS, TR, INK, (u, v) => {
+  const n = 5, col = Math.floor(u * n), g = u * n - col;
+  if (g < 0.2 || g > 0.9 || col === 4) return 0;
+  const hgt = [0.3, 0.45, 0.6, 0.75][col];
+  return v < 1 - hgt ? 0 : 0.3 + (v - (1 - hgt)) / hgt * 0.7;
+}, OR, (u, v) => {
+  const n = 5, col = Math.floor(u * n), g = u * n - col;
+  return (col === 4 && g >= 0.2 && g <= 0.9 && v > 0.08) ? 0.35 + v * 0.65 : 0;
+});
+halftone('sWave', TW, TH, TS, TR, INK, (u, v) => {
+  const crest = 0.42 + 0.2 * Math.sin(u * 9);
+  return v < crest ? 0 : Math.min(1, (v - crest) * 2.4);
+}, OR, (u, v) => { const crest = 0.42 + 0.2 * Math.sin(u * 9); return (v > crest && v < crest + 0.09 && pn(u * 40, v * 40) > 0.6) ? 0.8 : 0; });
+halftone('sArrow', TW, TH, TS, TR, INK, (u, v) => {
+  const shaft = u < 0.62 && Math.abs(v - 0.5) < 0.16;
+  const head = u >= 0.62 && Math.abs(v - 0.5) < (1 - (u - 0.62) / 0.38) * 0.4;
+  return (shaft || head) ? 0.2 + u * 0.8 : 0;
+});
+halftone('sBurst', TW, TH, TS, TR, OR, (u, v) => {
+  const dx = u - 0.5, dy = (v - 0.5) * (TH / TW), d = Math.hypot(dx, dy);
+  if (d > 0.4 || d < 0.1) return 0;
+  return ((Math.sin(Math.atan2(dy, dx) * 10) + 1) / 2) * Math.max(0, 1 - d * 2.6);
+});
+halftone('sHexS', TW, TH, TS, TR, INK, (u, v) => hexFn(0.5 + (u - 0.5) * 1.4, v), OR, (u, v) => hexEdge(0.5 + (u - 0.5) * 1.4, v));
+halftone('sSphereS', TW, TH, TS, TR, INK, (u, v) => {
+  const dx = (u - 0.5) * (TW / TH), dy = v - 0.5, d = Math.hypot(dx, dy);
+  if (d > 0.42) return 0;
+  const z = Math.sqrt(Math.max(0, 0.42 * 0.42 - d * d)) / 0.42;
+  return 0.1 + 0.8 * Math.max(0, (-dx * 0.5 - dy * 0.6 + z * 0.65));
+});
+halftone('sMt', TW, TH, TS, TR, INK, (u, v) => {
+  const ridge = 0.25 + Math.abs(u - 0.5) * 1.1;
+  return v < ridge ? 0 : Math.min(1, (v - ridge) * 1.8 + 0.1);
+}, OR, (u, v) => {
+  const ridge = 0.25 + Math.abs(u - 0.5) * 1.1;
+  return (v > ridge && v - ridge < 0.07 && Math.abs(u - 0.5) < 0.18) ? 0.85 : 0;
+});
+
+/* B6 icons */
+const K = { k: '#0b0b0f' };
+sprite('ic1', ['..........','.kkkk.....','k....k....','k....kkkkk','k........k','k........k','k........k','k........k','.kkkkkkkk.','..........'], K, 4.2);
+sprite('ic2', ['..........','....kk....','...k..k...','..k....k..','.kkkkkkkk.','.k......k.','.k......k.','.k......k.','.kkkkkkkk.','..........'], K, 4.2);
+sprite('ic3', ['....oo....','...oooo...','.oooooooo.','oooooooooo','o.oooooo.o','oooooooooo','oooooooooo','o.oooooo.o','.oooooooo.','....oo....'], { o: OR }, 4.2);
+
+/* B6b - agent icons: 8x8 grids (SIDEBAR_ICON_DATA), recolored to /design-system-guidantstudios palette, bob animation */
+const AGENTS = [
+  { id: 'a1', nm: 'A1', rl: 'orchestrator', hot: true,  pixels: [[0,0,1,0],[1,1,1,1],[1,1,1,1],[1,0,1,1],[1,1,1,1],[1,1,1,1],[1,0,0,1],[0,0,0,0]] },
+  { id: 'a2', nm: 'A2', rl: 'development',  hot: false, pixels: [[0,0,1,0],[0,1,1,1],[1,1,1,1],[0,1,0,1],[0,1,1,1],[1,1,1,0],[0,0,1,0],[0,0,0,0]] },
+  { id: 'a3', nm: 'A3', rl: 'content',      hot: false, pixels: [[0,0,1,0],[0,0,1,1],[0,1,1,1],[0,1,0,1],[0,1,1,1],[1,1,1,1],[1,0,1,0],[0,0,0,0]] },
+  { id: 'a4', nm: 'A4', rl: 'business',     hot: false, pixels: [[1,0,0,0],[1,1,0,0],[0,1,1,1],[0,1,1,1],[1,1,0,1],[0,1,1,1],[0,1,0,1],[0,0,0,0]] },
+  { id: 'a5', nm: 'A5', rl: 'community',    hot: false, pixels: [[0,0,1,0],[0,0,1,1],[0,1,1,1],[1,1,0,1],[1,1,1,1],[1,1,1,1],[1,0,0,1],[0,0,0,0]] },
+  { id: 'a6', nm: 'A6', rl: 'assistant',    hot: false, pixels: [[0,0,1,1],[0,1,1,1],[1,1,1,1],[1,1,0,1],[1,1,1,1],[0,1,1,1],[0,0,1,1],[0,0,0,0]] },
+];
+(function () {
+  const grid = document.getElementById('agentGrid'); if (!grid) return;
+  const cols = 8;
+  AGENTS.forEach((a, i) => {
+    const color = a.hot ? '#1433d6' : '#0b0b0f';
+    let rects = '';
+    a.pixels.forEach((row, y) => row.forEach((bit, x) => {
+      if (!bit) return;
+      rects += `<rect x="${x}" y="${y}" width="1" height="1" fill="${color}"/><rect x="${cols - 1 - x}" y="${y}" width="1" height="1" fill="${color}"/>`;
+    }));
+    const id = 'ag' + a.id;
+    const card = document.createElement('div');
+    card.className = 'agent' + (a.hot ? ' hot' : '');
+    card.innerHTML = `
+      <svg viewBox="0 0 8 9" width="52" height="58" style="image-rendering:pixelated;overflow:visible;">
+        <style>
+          .${id}b{animation:${id}h 1.2s ease-in-out infinite; animation-delay:${i * 0.2}s}
+          @keyframes ${id}h{0%,100%{transform:translateY(0)}15%{transform:translateY(-0.6px)}30%{transform:translateY(0)}}
+          .${id}s{animation:${id}sh 1.2s ease-in-out infinite; transform-origin:4px 8.5px; animation-delay:${i * 0.2}s}
+          @keyframes ${id}sh{0%,100%{opacity:.12;transform:scaleX(1)}15%{opacity:.06;transform:scaleX(.7)}30%{opacity:.12;transform:scaleX(1)}}
+        </style>
+        <ellipse class="${id}s" cx="4" cy="8.5" rx="2.5" ry="0.25" fill="#0b0b0f"/>
+        <g class="${id}b">${rects}</g>
+      </svg>
+      <div><div class="nm" style="text-align:center;">${a.nm}</div><div class="rl" style="text-align:center; margin-top:3px;">${a.rl}</div></div>`;
+    grid.appendChild(card);
+  });
+})();
+
+/* B8 wave */
+(function () {
+  const w = window.innerWidth, h = Math.round(window.innerHeight * 0.26);
+  const c = document.getElementById('cWave'); const dpr = window.devicePixelRatio || 1;
+  c.width = w * dpr; c.height = h * dpr; c.style.width = w + 'px'; c.style.height = h + 'px';
+  const ctx = c.getContext('2d'); ctx.scale(dpr, dpr);
+  const step = 11;
+  for (let y = step / 2; y < h; y += step) for (let x = step / 2; x < w; x += step) {
+    const u = x / w, v = y / h;
+    const crest = 0.38 + 0.2 * Math.sin(u * 8) + 0.07 * Math.sin(u * 21 + 2);
+    const d = v - crest; if (d < 0) continue;
+    const b = Math.min(1, d * 2.4);
+    const n = pn(x * 0.07, y * 0.07);
+    ctx.fillStyle = n > 0.88 ? OR : (n < 0.015 ? '#c5cad2' : 'rgba(242,243,245,' + (0.15 + b * 0.4) + ')');   // rare yellow flecks in the closer wave
+    ctx.beginPath(); ctx.arc(x, y, 0.8 + b * 3.2, 0, Math.PI * 2); ctx.fill();
+  }
+})();
+</script>
+</body>
+</html>

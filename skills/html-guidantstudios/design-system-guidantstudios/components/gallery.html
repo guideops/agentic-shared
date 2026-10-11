@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>/design-system-guidantstudios Component Library</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+html { color-scheme: dark; }
+html[data-theme="light"] { color-scheme: light; }
+:root, html[data-theme="dark"] {
+  --bg:#0b0b0f; --card:#0b0b0f; --text:#f2f3f5; --muted:#9a9ea8; --accent:#4466ff;
+  --line:rgba(242,243,245,.22); --shadow:rgba(242,243,245,.35);
+}
+html[data-theme="light"] {
+  --bg:#f6f6f3; --card:#ffffff; --text:#0b0b0f; --muted:#5d6069; --accent:#1433d6;
+  --line:rgba(11,11,15,.18); --shadow:rgba(11,11,15,.9);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--bg); color:var(--text);
+  font-family:'Archivo',sans-serif; font-weight:400;
+  transition:background .25s, color .25s;
+  min-height:100vh; display:flex; align-items:center; justify-content:center;
+  padding:72px 28px;
+}
+.doto { font-family:'Doto',sans-serif; font-weight:900; margin:0 .18em; }
+.kicker {
+  font-size:11px; font-weight:400; letter-spacing:6px; text-transform:uppercase;
+  color:var(--muted);
+}
+.stage { width:100%; max-width:860px; }
+#themeToggle {
+  position:fixed; top:16px; right:16px; z-index:100;
+  width:40px; height:40px; border:2px solid var(--text); background:var(--card);
+  color:var(--text); border-radius:0; cursor:pointer; font-size:18px; line-height:1;
+  font-family:'Archivo',sans-serif; box-shadow:3px 3px 0 var(--shadow);
+}
+#themeToggle:active { box-shadow:1px 1px 0 var(--shadow); transform:translate(2px,2px); }
+
+body { display:block; padding:0 0 120px; }
+.stage { max-width:none; }
+.hero {
+  max-width:1060px; margin:0 auto; padding:96px 40px 30px;
+}
+.hero h1 { font-size:54px; font-weight:600; letter-spacing:-2px; line-height:1.05; margin:20px 0 18px; }
+.hero h1 .doto { color:var(--accent); }
+.hero p { font-size:16.5px; color:var(--muted); max-width:56ch; line-height:1.6; }
+.toc { max-width:1060px; margin:34px auto 0; padding:0 40px; display:flex; flex-wrap:wrap; gap:10px; }
+.toc a { font-size:11px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; color:var(--muted); border:1px solid var(--line); padding:6px 12px; }
+.toc a:hover { color:var(--accent); border-color:var(--accent); }
+.comp { max-width:1060px; margin:88px auto 0; padding:0 40px; }
+.comp-head { display:flex; align-items:baseline; gap:18px; margin-bottom:18px; }
+.comp-no { font-family:'Doto',sans-serif; font-weight:900; font-size:15px; color:var(--accent); }
+.comp-t { font-size:24px; font-weight:600; letter-spacing:-0.6px; }
+.comp-open { margin-left:auto; font-size:12.5px; color:var(--muted); text-decoration:none; letter-spacing:1px; }
+.comp-open:hover { color:var(--accent); }
+iframe { width:100%; height:460px; border:2px solid var(--text); background:var(--bg); box-shadow:8px 8px 0 var(--shadow); display:block; }
+.snip { margin-top:16px; border:1px solid var(--line); }
+.snip summary { cursor:pointer; padding:12px 16px; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); user-select:none; }
+.snip summary:hover { color:var(--text); }
+.snip-bar { display:flex; justify-content:space-between; align-items:center; padding:10px 16px; border-top:1px solid var(--line); }
+.copy { font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:1px; border:2px solid var(--text); background:var(--card); color:var(--text); padding:6px 14px; cursor:pointer; box-shadow:2px 2px 0 var(--shadow); }
+.copy:active { transform:translate(1px,1px); box-shadow:0 0 0 var(--shadow); }
+pre { overflow-x:auto; padding:16px 18px; background:var(--card); font:12.5px/1.6 'JetBrains Mono',ui-monospace,monospace; color:var(--muted); }
+.sig-div { max-width:1060px; margin:120px auto 0; padding:44px 40px; border-top:2px solid var(--text); border-bottom:2px solid var(--text); }
+.sig-t { font-size:38px; font-weight:600; letter-spacing:-1.4px; margin-top:12px; }
+</style>
+</head>
+<body>
+<button id="themeToggle" aria-label="Toggle dark / light mode">◐</button>
+<header class="hero">
+  <span class="kicker">the studio · Design system</span>
+  <h1>the <span class="doto">studio</span> component library</h1>
+  <p>36 components for decks, dashboards, one-pagers, and infographics - robo's 32 re-skinned plus 4 Guidant Studios signatures (ASCII hero, ASCII frame card, foil panel, cobalt panel). Each one is a self-contained file - open it, or lift the snippet straight into a build. Toggle the theme top-right; every component follows.</p>
+</header>
+<nav class="toc"><a href="#01-buttons">Buttons</a><a href="#02-card">Card</a><a href="#03-stat-tile">Stat tile</a><a href="#04-table">Table</a><a href="#05-navbar">Nav bar</a><a href="#06-hero">Hero block</a><a href="#07-section-header">Section header</a><a href="#08-callout">Callout</a><a href="#09-quote">Quote block</a><a href="#10-timeline">Timeline</a><a href="#11-pricing-row">Pricing rows</a><a href="#12-progress">Progress bars</a><a href="#13-badges">Badges</a><a href="#14-chart-bar">Bar chart</a><a href="#15-chart-line">Line chart</a><a href="#16-chart-donut">Donut chart</a><a href="#17-footer">Footer</a><a href="#18-illustration">Illustration container</a><a href="#19-form-input">Form input</a><a href="#20-checklist">Checklist</a><a href="#21-agent-row">Agent row</a><a href="#22-divider">Section divider</a><a href="#23-flipdot-ticker">Flip-dot ticker</a><a href="#24-receipt">Receipt card</a><a href="#25-light-sphere">Light-play sphere</a><a href="#26-heatmap">Streak heatmap</a><a href="#27-radar">Radar chart</a><a href="#28-gauge">Dot gauge</a><a href="#29-ticket">Session ticket</a><a href="#30-leaderboard">Challenge leaderboard</a><a href="#31-terminal">Agent terminal</a><a href="#32-marquee">Kinetic marquee</a><a href="#33-ascii-hero">ASCII hero</a><a href="#34-ascii-frame">ASCII frame card</a><a href="#35-foil-panel">Foil panel</a><a href="#36-cobalt-panel">Cobalt panel</a></nav>
+
+<section class="comp" id="01-buttons">
+  <div class="comp-head">
+    <span class="comp-no">01</span>
+    <h2 class="comp-t">Buttons</h2>
+    <a class="comp-open" href="01-buttons.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="01-buttons.html" title="Buttons"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="btn-row"&gt;
+  &lt;a class="btn btn-primary" href="#"&gt;Start the build&lt;/a&gt;
+  &lt;a class="btn" href="#"&gt;Watch the lesson&lt;/a&gt;
+  &lt;a class="btn btn-ghost" href="#"&gt;Browse all templates&lt;span class="arr"&gt;→&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="02-card">
+  <div class="comp-head">
+    <span class="comp-no">02</span>
+    <h2 class="comp-t">Card</h2>
+    <a class="comp-open" href="02-card.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="02-card.html" title="Card"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="rcard"&gt;
+  &lt;canvas class="rcard-ic" id="icDoc"&gt;&lt;/canvas&gt;
+  &lt;div class="rcard-k"&gt;Module 03&lt;/div&gt;
+  &lt;div class="rcard-t"&gt;Ship your first agent&lt;/div&gt;
+  &lt;div class="rcard-s"&gt;Wire one skill, one memory file, and one schedule - then let it run a real task overnight.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="03-stat-tile">
+  <div class="comp-head">
+    <span class="comp-no">03</span>
+    <h2 class="comp-t">Stat tile</h2>
+    <a class="comp-open" href="03-stat-tile.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="03-stat-tile.html" title="Stat tile"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="stats"&gt;
+  &lt;div class="stat hot"&gt;
+    &lt;div class="stat-k"&gt;Subscribers&lt;/div&gt;
+    &lt;div class="stat-n"&gt;212K&lt;/div&gt;
+    &lt;div class="stat-d"&gt;&lt;b&gt;+9.4K&lt;/b&gt; this month&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="stat"&gt;
+    &lt;div class="stat-k"&gt;Retention&lt;/div&gt;
+    &lt;div class="stat-n"&gt;88%&lt;/div&gt;
+    &lt;div class="stat-d"&gt;target &lt;b&gt;90%&lt;/b&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="stat"&gt;
+    &lt;div class="stat-k"&gt;Lessons shipped&lt;/div&gt;
+    &lt;div class="stat-n"&gt;52&lt;/div&gt;
+    &lt;div class="stat-d"&gt;&lt;b&gt;1 / week&lt;/b&gt;, no misses&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="04-table">
+  <div class="comp-head">
+    <span class="comp-no">04</span>
+    <h2 class="comp-t">Table</h2>
+    <a class="comp-open" href="04-table.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="04-table.html" title="Table"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;table class="rtable"&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Lesson&lt;/th&gt;&lt;th&gt;Published&lt;/th&gt;&lt;th class="num"&gt;Views&lt;/th&gt;&lt;th class="num"&gt;Watch time&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Build a client-ready agent in 40 minutes&lt;/td&gt;&lt;td&gt;Jun 12&lt;/td&gt;&lt;td class="num"&gt;64,210&lt;/td&gt;&lt;td class="num"&gt;8:12&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr class="hot"&gt;&lt;td&gt;Replace PowerPoint with Claude Design&lt;/td&gt;&lt;td&gt;Jun 19&lt;/td&gt;&lt;td class="num"&gt;118,904&lt;/td&gt;&lt;td class="num"&gt;9:47&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;The 5-file memory system&lt;/td&gt;&lt;td&gt;Jun 26&lt;/td&gt;&lt;td class="num"&gt;41,388&lt;/td&gt;&lt;td class="num"&gt;7:03&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Sell the system, give away the prompt&lt;/td&gt;&lt;td&gt;Jul 03&lt;/td&gt;&lt;td class="num"&gt;22,751&lt;/td&gt;&lt;td class="num"&gt;6:28&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="05-navbar">
+  <div class="comp-head">
+    <span class="comp-no">05</span>
+    <h2 class="comp-t">Nav bar</h2>
+    <a class="comp-open" href="05-navbar.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="05-navbar.html" title="Nav bar"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;nav class="nav"&gt;
+  &lt;div class="nav-brand"&gt;
+    &lt;svg viewBox="0 0 56 56" aria-label="brand mark"&gt;&lt;path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/&gt;&lt;/svg&gt;
+    the studio
+  &lt;/div&gt;
+  &lt;div class="nav-links"&gt;
+    &lt;a class="on" href="#"&gt;Lessons&lt;/a&gt;
+    &lt;a href="#"&gt;Templates&lt;/a&gt;
+    &lt;a href="#"&gt;Community&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;a class="nav-cta" href="#"&gt;Join the brand&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="06-hero">
+  <div class="comp-head">
+    <span class="comp-no">06</span>
+    <h2 class="comp-t">Hero block</h2>
+    <a class="comp-open" href="06-hero.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="06-hero.html" title="Hero block"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;section class="hero"&gt;
+  &lt;div&gt;
+    &lt;div class="kicker hero-k"&gt;the brand · Weekly build&lt;/div&gt;
+    &lt;h1 class="hero-h"&gt;Agents that work while you&lt;span class="doto"&gt;SLEEP&lt;/span&gt;&lt;/h1&gt;
+    &lt;p class="hero-s"&gt;One sellable system a week. The prompt is free, the build is yours - learn to make both.&lt;/p&gt;
+    &lt;a class="hero-cta" href="#"&gt;Get this week's build&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;canvas class="hero-art" id="heroDots"&gt;&lt;/canvas&gt;
+&lt;/section&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="07-section-header">
+  <div class="comp-head">
+    <span class="comp-no">07</span>
+    <h2 class="comp-t">Section header</h2>
+    <a class="comp-open" href="07-section-header.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="07-section-header.html" title="Section header"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;header class="sec"&gt;
+  &lt;div class="sec-top"&gt;&lt;span class="sec-no"&gt;02&lt;/span&gt;&lt;span class="kicker"&gt;The operating model&lt;/span&gt;&lt;span class="sec-rule"&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;h2 class="sec-h"&gt;Sell what appreciates, give away what depreciates&lt;/h2&gt;
+  &lt;p class="sec-s"&gt;Prompts age in weeks. Systems compound. Every lesson hands out the prompt and sells the build.&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="08-callout">
+  <div class="comp-head">
+    <span class="comp-no">08</span>
+    <h2 class="comp-t">Callout</h2>
+    <a class="comp-open" href="08-callout.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="08-callout.html" title="Callout"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;aside class="callout"&gt;
+  &lt;div class="callout-k"&gt;Before you record&lt;/div&gt;
+  &lt;div class="callout-b"&gt;Run the build end-to-end once on a clean machine. &lt;b&gt;Half of all re-records&lt;/b&gt; trace back to a step that only worked on the dev laptop.&lt;/div&gt;
+&lt;/aside&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="09-quote">
+  <div class="comp-head">
+    <span class="comp-no">09</span>
+    <h2 class="comp-t">Quote block</h2>
+    <a class="comp-open" href="09-quote.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="09-quote.html" title="Quote block"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="quote"&gt;
+  &lt;blockquote class="quote-t"&gt;"I sold the first system I built from a Tuesday lesson. &lt;em&gt;One video paid for two years&lt;/em&gt; of the community."&lt;/blockquote&gt;
+  &lt;figcaption class="quote-who"&gt;
+    &lt;span class="quote-av"&gt;MK&lt;/span&gt;
+    &lt;span&gt;&lt;span class="quote-n"&gt;Marta K.&lt;/span&gt;&lt;br&gt;&lt;span class="quote-r"&gt;the brand member since 2025&lt;/span&gt;&lt;/span&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="10-timeline">
+  <div class="comp-head">
+    <span class="comp-no">10</span>
+    <h2 class="comp-t">Timeline</h2>
+    <a class="comp-open" href="10-timeline.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="10-timeline.html" title="Timeline"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;ol class="tl" style="list-style:none"&gt;
+  &lt;li class="tl-item"&gt;&lt;span class="tl-dot"&gt;&lt;/span&gt;
+    &lt;div class="tl-when"&gt;Q1&lt;/div&gt;&lt;div class="tl-t"&gt;100K subscribers&lt;/div&gt;
+    &lt;div class="tl-s"&gt;Weekly cadence locked, zero missed uploads.&lt;/div&gt;&lt;/li&gt;
+  &lt;li class="tl-item hot"&gt;&lt;span class="tl-dot"&gt;&lt;/span&gt;
+    &lt;div class="tl-when"&gt;Now · Q3&lt;/div&gt;&lt;div class="tl-t"&gt;Community retention push&lt;/div&gt;
+    &lt;div class="tl-s"&gt;Onboarding rebuild + biweekly cancel audits toward 90%.&lt;/div&gt;&lt;/li&gt;
+  &lt;li class="tl-item"&gt;&lt;span class="tl-dot"&gt;&lt;/span&gt;
+    &lt;div class="tl-when"&gt;Q4&lt;/div&gt;&lt;div class="tl-t"&gt;500K subscribers&lt;/div&gt;
+    &lt;div class="tl-s"&gt;Compounding lesson library + one flagship launch.&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="11-pricing-row">
+  <div class="comp-head">
+    <span class="comp-no">11</span>
+    <h2 class="comp-t">Pricing rows</h2>
+    <a class="comp-open" href="11-pricing-row.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="11-pricing-row.html" title="Pricing rows"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="price"&gt;
+  &lt;div class="price-row"&gt;
+    &lt;div&gt;&lt;div class="price-t"&gt;Free lessons&lt;/div&gt;&lt;div class="price-s"&gt;Weekly YouTube build + the prompt, always free&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="price-n"&gt;$0&lt;/div&gt;
+    &lt;a class="price-cta" href="#"&gt;Subscribe&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="price-row hot"&gt;
+    &lt;div&gt;&lt;div class="price-t"&gt;the brand&lt;span class="price-tag"&gt;Most picked&lt;/span&gt;&lt;/div&gt;&lt;div class="price-s"&gt;Every build's full system, live sessions, $100 challenges&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="price-n"&gt;$97&lt;small&gt;/mo&lt;/small&gt;&lt;/div&gt;
+    &lt;a class="price-cta" href="#"&gt;Join now&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="price-row"&gt;
+    &lt;div&gt;&lt;div class="price-t"&gt;Annual&lt;/div&gt;&lt;div class="price-s"&gt;Two months free, same everything&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="price-n"&gt;$697&lt;small&gt;/yr&lt;/small&gt;&lt;/div&gt;
+    &lt;a class="price-cta" href="#"&gt;Go annual&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="12-progress">
+  <div class="comp-head">
+    <span class="comp-no">12</span>
+    <h2 class="comp-t">Progress bars</h2>
+    <a class="comp-open" href="12-progress.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="12-progress.html" title="Progress bars"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="prog"&gt;
+  &lt;div class="prog-row"&gt;
+    &lt;div class="prog-top"&gt;&lt;span class="prog-l"&gt;500K subscribers&lt;/span&gt;&lt;span class="prog-v"&gt;42%&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="prog-track"&gt;&lt;div class="prog-fill" style="width:42%"&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="prog-row quiet"&gt;
+    &lt;div class="prog-top"&gt;&lt;span class="prog-l"&gt;90% retention&lt;/span&gt;&lt;span class="prog-v"&gt;88%&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="prog-track"&gt;&lt;div class="prog-fill" style="width:88%"&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="prog-row quiet"&gt;
+    &lt;div class="prog-top"&gt;&lt;span class="prog-l"&gt;Hyrox #2 training block&lt;/span&gt;&lt;span class="prog-v"&gt;61%&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="prog-track"&gt;&lt;div class="prog-fill" style="width:61%"&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="13-badges">
+  <div class="comp-head">
+    <span class="comp-no">13</span>
+    <h2 class="comp-t">Badges</h2>
+    <a class="comp-open" href="13-badges.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="13-badges.html" title="Badges"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="badges"&gt;
+  &lt;span class="badge hot"&gt;New build&lt;/span&gt;
+  &lt;span class="badge"&gt;In production&lt;/span&gt;
+  &lt;span class="badge muted"&gt;Archived&lt;/span&gt;
+  &lt;span class="badge"&gt;Member only&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="14-chart-bar">
+  <div class="comp-head">
+    <span class="comp-no">14</span>
+    <h2 class="comp-t">Bar chart</h2>
+    <a class="comp-open" href="14-chart-bar.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="14-chart-bar.html" title="Bar chart"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="chart"&gt;
+  &lt;div class="kicker chart-k"&gt;Uploads · views per lesson&lt;/div&gt;
+  &lt;div class="chart-t"&gt;June ran &lt;span style="color:var(--accent)"&gt;2.1×&lt;/span&gt; the spring average&lt;/div&gt;
+  &lt;canvas id="barDots"&gt;&lt;/canvas&gt;
+  &lt;div class="chart-x"&gt;&lt;span&gt;Feb&lt;/span&gt;&lt;span&gt;Mar&lt;/span&gt;&lt;span&gt;Apr&lt;/span&gt;&lt;span&gt;May&lt;/span&gt;&lt;span&gt;Jun&lt;/span&gt;&lt;span&gt;Jul&lt;/span&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="15-chart-line">
+  <div class="comp-head">
+    <span class="comp-no">15</span>
+    <h2 class="comp-t">Line chart</h2>
+    <a class="comp-open" href="15-chart-line.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="15-chart-line.html" title="Line chart"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="chart"&gt;
+  &lt;div class="kicker"&gt;Members · monthly&lt;/div&gt;
+  &lt;div class="chart-t"&gt;Retention holds while the free list grows&lt;/div&gt;
+  &lt;svg class="lchart" viewBox="0 0 500 190"&gt;
+    &lt;line class="grid" x1="0" y1="150" x2="500" y2="150"/&gt;
+    &lt;line class="grid" x1="0" y1="95" x2="500" y2="95"/&gt;
+    &lt;line class="grid" x1="0" y1="40" x2="500" y2="40"/&gt;
+    &lt;polyline class="s2" points="10,120 108,112 206,118 304,104 402,96 490,92"/&gt;
+    &lt;polyline class="s1" points="10,132 108,116 206,96 304,84 402,52 490,34"/&gt;
+    &lt;circle class="pt" cx="490" cy="34" r="4.5"/&gt;
+    &lt;text class="lbl" x="10" y="172"&gt;Feb&lt;/text&gt;&lt;text class="lbl" x="206" y="172"&gt;Apr&lt;/text&gt;&lt;text class="lbl" x="402" y="172"&gt;Jun&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;div class="leg"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;Paid members&lt;/span&gt;&lt;span class="q"&gt;&lt;i&gt;&lt;/i&gt;Free newsletter&lt;/span&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="16-chart-donut">
+  <div class="comp-head">
+    <span class="comp-no">16</span>
+    <h2 class="comp-t">Donut chart</h2>
+    <a class="comp-open" href="16-chart-donut.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="16-chart-donut.html" title="Donut chart"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="chart"&gt;
+  &lt;div class="donut"&gt;
+    &lt;svg viewBox="0 0 170 170" width="170" height="170"&gt;
+      &lt;circle class="ring" cx="85" cy="85" r="66" stroke-width="18"/&gt;
+      &lt;circle class="seg" cx="85" cy="85" r="66" stroke-width="18" stroke="var(--accent)" stroke-dasharray="236 415" /&gt;
+      &lt;circle class="seg" cx="85" cy="85" r="66" stroke-width="18" stroke="var(--text)" stroke-dasharray="104 415" stroke-dashoffset="-236"/&gt;
+    &lt;/svg&gt;
+    &lt;div class="donut-mid"&gt;&lt;div&gt;&lt;div class="donut-n"&gt;57%&lt;/div&gt;&lt;div class="donut-l"&gt;from lessons&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="dleg"&gt;
+    &lt;div class="dleg-row a"&gt;&lt;i&gt;&lt;/i&gt;YouTube lessons&lt;span class="dleg-v"&gt;57%&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="dleg-row b"&gt;&lt;i&gt;&lt;/i&gt;Member referrals&lt;span class="dleg-v"&gt;25%&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="dleg-row c"&gt;&lt;i&gt;&lt;/i&gt;Everything else&lt;span class="dleg-v"&gt;18%&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="17-footer">
+  <div class="comp-head">
+    <span class="comp-no">17</span>
+    <h2 class="comp-t">Footer</h2>
+    <a class="comp-open" href="17-footer.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="17-footer.html" title="Footer"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;footer class="foot"&gt;
+  &lt;div class="foot-grid"&gt;
+    &lt;div&gt;
+      &lt;div class="foot-brand"&gt;&lt;svg viewBox="0 0 56 56" aria-label="brand mark"&gt;&lt;path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/&gt;&lt;/svg&gt;the studio&lt;/div&gt;
+      &lt;p class="foot-tag"&gt;The command center for AI agents. Built in public, one lesson a week.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;div class="foot-h"&gt;Learn&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;Weekly lessons&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#"&gt;Masterclasses&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#"&gt;Templates&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;div class="foot-h"&gt;Community&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;the brand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#"&gt;$100 challenges&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#"&gt;Newsletter&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="foot-base"&gt;&lt;span&gt;© the studio. Learn more at the brand.&lt;/span&gt;&lt;span&gt;Made with agents.&lt;/span&gt;&lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="18-illustration">
+  <div class="comp-head">
+    <span class="comp-no">18</span>
+    <h2 class="comp-t">Illustration container</h2>
+    <a class="comp-open" href="18-illustration.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="18-illustration.html" title="Illustration container"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="illus"&gt;
+  &lt;div class="illus-stage"&gt;&lt;canvas id="illusDots"&gt;&lt;/canvas&gt;&lt;/div&gt;
+  &lt;figcaption class="illus-cap"&gt;&lt;span class="kicker"&gt;Fig. The compounding curve&lt;/span&gt;&lt;span class="illus-no"&gt;04&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="19-form-input">
+  <div class="comp-head">
+    <span class="comp-no">19</span>
+    <h2 class="comp-t">Form input</h2>
+    <a class="comp-open" href="19-form-input.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="19-form-input.html" title="Form input"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;form class="form" onsubmit="return false"&gt;
+  &lt;div class="field"&gt;
+    &lt;label for="f-email"&gt;Email&lt;/label&gt;
+    &lt;input id="f-email" type="email" placeholder="you@studio.com"&gt;
+    &lt;span class="field-hint"&gt;One build a week. No noise.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label for="f-goal"&gt;What are you automating first?&lt;/label&gt;
+    &lt;textarea id="f-goal" rows="3" placeholder="Client reporting, every Monday, before I wake up."&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;button class="form-cta" type="submit"&gt;Send it&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="20-checklist">
+  <div class="comp-head">
+    <span class="comp-no">20</span>
+    <h2 class="comp-t">Checklist</h2>
+    <a class="comp-open" href="20-checklist.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="20-checklist.html" title="Checklist"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="check"&gt;
+  &lt;div class="check-head kicker"&gt;Launch day · Tuesday&lt;/div&gt;
+  &lt;div class="check-row done"&gt;&lt;span class="check-box"&gt;&lt;/span&gt;&lt;span&gt;Thumbnail A/B pair exported&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="check-row done"&gt;&lt;span class="check-box"&gt;&lt;/span&gt;&lt;span&gt;Build tested on a clean machine&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="check-row"&gt;&lt;span class="check-box"&gt;&lt;/span&gt;&lt;span&gt;Community post scheduled for 9:00&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="check-row"&gt;&lt;span class="check-box"&gt;&lt;/span&gt;&lt;span&gt;Newsletter draft to review&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="21-agent-row">
+  <div class="comp-head">
+    <span class="comp-no">21</span>
+    <h2 class="comp-t">Agent row</h2>
+    <a class="comp-open" href="21-agent-row.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="21-agent-row.html" title="Agent row"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="agents" id="agentRow"&gt;&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="22-divider">
+  <div class="comp-head">
+    <span class="comp-no">22</span>
+    <h2 class="comp-t">Section divider</h2>
+    <a class="comp-open" href="22-divider.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="22-divider.html" title="Section divider"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="divs"&gt;
+  &lt;div class="div-dots"&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class="div-mark"&gt;&lt;svg viewBox="0 0 56 56"&gt;&lt;path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/&gt;&lt;/svg&gt;&lt;/div&gt;
+  &lt;div class="div-label"&gt;&lt;span class="kicker"&gt;Part two · The build&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<div class="sig-div">
+  <span class="kicker">Signature series</span>
+  <h2 class="sig-t">only the <span class="doto" style="color:var(--accent)">studio</span> ships these</h2>
+</div>
+<section class="comp" id="23-flipdot-ticker">
+  <div class="comp-head">
+    <span class="comp-no">23</span>
+    <h2 class="comp-t">Flip-dot ticker</h2>
+    <a class="comp-open" href="23-flipdot-ticker.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="23-flipdot-ticker.html" title="Flip-dot ticker"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="tick"&gt;
+  &lt;span class="kicker"&gt;This week we&lt;/span&gt;
+  &lt;canvas id="flip"&gt;&lt;/canvas&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="24-receipt">
+  <div class="comp-head">
+    <span class="comp-no">24</span>
+    <h2 class="comp-t">Receipt card</h2>
+    <a class="comp-open" href="24-receipt.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="24-receipt.html" title="Receipt card"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="rcpt"&gt;
+  &lt;div class="rcpt-h"&gt;THE STUDIO&lt;/div&gt;
+  &lt;div class="rcpt-sub"&gt;One build, itemized · Tue 09:00&lt;/div&gt;
+  &lt;div class="rcpt-line"&gt;&lt;/div&gt;
+  &lt;div class="rcpt-row"&gt;&lt;span&gt;Research + script&lt;/span&gt;&lt;span class="m"&gt;3.5 hrs&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="rcpt-row"&gt;&lt;span&gt;Build + clean-machine test&lt;/span&gt;&lt;span class="m"&gt;4.0 hrs&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="rcpt-row"&gt;&lt;span&gt;Record + edit pipeline&lt;/span&gt;&lt;span class="m"&gt;2.5 hrs&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="rcpt-row"&gt;&lt;span&gt;Free prompt (given away)&lt;/span&gt;&lt;span class="m"&gt;$0&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="rcpt-line"&gt;&lt;/div&gt;
+  &lt;div class="rcpt-tot"&gt;&lt;span&gt;Sold as a system&lt;/span&gt;&lt;span class="doto"&gt;$4,800&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="rcpt-bar"&gt;&lt;/div&gt;
+  &lt;div class="rcpt-foot"&gt;SELL WHAT APPRECIATES&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="25-light-sphere">
+  <div class="comp-head">
+    <span class="comp-no">25</span>
+    <h2 class="comp-t">Light-play sphere</h2>
+    <a class="comp-open" href="25-light-sphere.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="25-light-sphere.html" title="Light-play sphere"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="orb" id="orbBox"&gt;
+  &lt;canvas id="orbDots"&gt;&lt;/canvas&gt;
+  &lt;figcaption class="kicker"&gt;Move the light · shading is the quality bar&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="26-heatmap">
+  <div class="comp-head">
+    <span class="comp-no">26</span>
+    <h2 class="comp-t">Streak heatmap</h2>
+    <a class="comp-open" href="26-heatmap.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="26-heatmap.html" title="Streak heatmap"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="heat"&gt;
+  &lt;span class="kicker"&gt;Uploads · last 26 weeks&lt;/span&gt;
+  &lt;div class="heat-t"&gt;The streak is the strategy - &lt;b&gt;0 missed weeks&lt;/b&gt;&lt;/div&gt;
+  &lt;div class="heat-grid" id="heatGrid"&gt;&lt;/div&gt;
+  &lt;div class="heat-leg"&gt;less &lt;i style="opacity:.15"&gt;&lt;/i&gt;&lt;i style="opacity:.3"&gt;&lt;/i&gt;&lt;i style="opacity:.6"&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt; more&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="27-radar">
+  <div class="comp-head">
+    <span class="comp-no">27</span>
+    <h2 class="comp-t">Radar chart</h2>
+    <a class="comp-open" href="27-radar.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="27-radar.html" title="Radar chart"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="radar"&gt;
+  &lt;svg viewBox="0 0 260 240" width="260" height="240"&gt;
+    &lt;defs&gt;&lt;pattern id="rdots" width="7" height="7" patternUnits="userSpaceOnUse"&gt;&lt;circle cx="3.5" cy="3.5" r="1.6" fill="#1433d6" opacity=".55"/&gt;&lt;/pattern&gt;&lt;/defs&gt;
+    &lt;g id="radarWeb"&gt;&lt;/g&gt;
+    &lt;polygon class="shape" id="radarShape"/&gt;
+    &lt;g id="radarLbls"&gt;&lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;div class="radar-side"&gt;
+    &lt;span class="kicker"&gt;Channel health&lt;/span&gt;
+    &lt;div class="radar-t"&gt;Strong hooks, retention next&lt;/div&gt;
+    &lt;div class="radar-s"&gt;Scored monthly against the 16-step content process.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="28-gauge">
+  <div class="comp-head">
+    <span class="comp-no">28</span>
+    <h2 class="comp-t">Dot gauge</h2>
+    <a class="comp-open" href="28-gauge.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="28-gauge.html" title="Dot gauge"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;figure class="gauge"&gt;
+  &lt;canvas id="gaugeDots"&gt;&lt;/canvas&gt;
+  &lt;div class="gauge-n"&gt;72&lt;/div&gt;
+  &lt;div class="gauge-l"&gt;Momentum · this sprint&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="29-ticket">
+  <div class="comp-head">
+    <span class="comp-no">29</span>
+    <h2 class="comp-t">Session ticket</h2>
+    <a class="comp-open" href="29-ticket.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="29-ticket.html" title="Session ticket"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="tix"&gt;
+  &lt;div class="tix-main"&gt;
+    &lt;div class="tix-k"&gt;Create Session · Live&lt;/div&gt;
+    &lt;div class="tix-t"&gt;Build night: agents that invoice clients&lt;/div&gt;
+    &lt;div class="tix-meta"&gt;
+      &lt;span&gt;Date&lt;b&gt;Thu Jul 17&lt;/b&gt;&lt;/span&gt;
+      &lt;span&gt;Time&lt;b&gt;7:00 PM AEST&lt;/b&gt;&lt;/span&gt;
+      &lt;span&gt;Where&lt;b&gt;the brand · Zoom&lt;/b&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="tix-stub"&gt;
+    &lt;span class="kicker"&gt;Admit one&lt;/span&gt;
+    &lt;span class="tix-no"&gt;N°214&lt;/span&gt;
+    &lt;span class="kicker"&gt;Member&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="30-leaderboard">
+  <div class="comp-head">
+    <span class="comp-no">30</span>
+    <h2 class="comp-t">Challenge leaderboard</h2>
+    <a class="comp-open" href="30-leaderboard.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="30-leaderboard.html" title="Challenge leaderboard"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="lb"&gt;
+  &lt;div class="lb-head"&gt;&lt;span class="kicker"&gt;$100 challenge · Wk 28&lt;/span&gt;&lt;span class="lb-t"&gt;Automate your worst task&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="lb-row win"&gt;&lt;span class="lb-rank"&gt;01&lt;/span&gt;&lt;span class="lb-av" data-a="a1"&gt;&lt;/span&gt;&lt;span&gt;&lt;div class="lb-n"&gt;Priya S.&lt;/div&gt;&lt;div class="lb-e"&gt;Quote-to-invoice agent, 6 hrs/wk saved&lt;/div&gt;&lt;/span&gt;&lt;span class="lb-pts"&gt;98&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="lb-row"&gt;&lt;span class="lb-rank"&gt;02&lt;/span&gt;&lt;span class="lb-av" data-a="a2"&gt;&lt;/span&gt;&lt;span&gt;&lt;div class="lb-n"&gt;Tom W.&lt;/div&gt;&lt;div class="lb-e"&gt;Podcast clip picker with review queue&lt;/div&gt;&lt;/span&gt;&lt;span class="lb-pts"&gt;91&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="lb-row"&gt;&lt;span class="lb-rank"&gt;03&lt;/span&gt;&lt;span class="lb-av" data-a="a5"&gt;&lt;/span&gt;&lt;span&gt;&lt;div class="lb-n"&gt;Ana R.&lt;/div&gt;&lt;div class="lb-e"&gt;Client onboarding pack generator&lt;/div&gt;&lt;/span&gt;&lt;span class="lb-pts"&gt;87&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="31-terminal">
+  <div class="comp-head">
+    <span class="comp-no">31</span>
+    <h2 class="comp-t">Agent terminal</h2>
+    <a class="comp-open" href="31-terminal.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="31-terminal.html" title="Agent terminal"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="term"&gt;
+  &lt;div class="term-bar"&gt;&lt;span class="term-dot on"&gt;&lt;/span&gt;&lt;span class="term-dot"&gt;&lt;/span&gt;&lt;span class="term-dot"&gt;&lt;/span&gt;&lt;span class="term-title"&gt;a1 · overnight run&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="term-body" id="termOut"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+
+<section class="comp" id="32-marquee">
+  <div class="comp-head">
+    <span class="comp-no">32</span>
+    <h2 class="comp-t">Kinetic marquee</h2>
+    <a class="comp-open" href="32-marquee.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="32-marquee.html" title="Kinetic marquee"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="mq" aria-label="Build, teach, sell, repeat"&gt;
+  &lt;div class="mq-track"&gt;
+    &lt;span class="mq-item"&gt;BUILD&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+    &lt;span class="mq-item"&gt;TEACH&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+    &lt;span class="mq-item o"&gt;SELL&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+    &lt;span class="mq-item"&gt;REPEAT&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+    &lt;span class="mq-item"&gt;BUILD&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+    &lt;span class="mq-item"&gt;TEACH&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+    &lt;span class="mq-item o"&gt;SELL&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+    &lt;span class="mq-item"&gt;REPEAT&lt;/span&gt;&lt;span class="mq-sep"&gt;✳&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+<div class="sig-div">
+  <span class="kicker">Guidant Studios signatures</span>
+  <div class="sig-t">ascii leads, metal supports</div>
+</div>
+
+<section class="comp" id="33-ascii-hero">
+  <div class="comp-head">
+    <span class="comp-no">33</span>
+    <h2 class="comp-t">ASCII hero</h2>
+    <a class="comp-open" href="33-ascii-hero.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="33-ascii-hero.html" title="ASCII hero"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;section class="hero"&gt;
+  &lt;div&gt;
+    &lt;span class="kicker mono" data-ascii-scramble&gt;studio · drop 01&lt;/span&gt;
+    &lt;h1&gt;made by agents, &lt;span class="doto"&gt;art&lt;/span&gt; directed&lt;/h1&gt;
+    &lt;a class="btn btn-primary" href="#"&gt;Start a brief &lt;span class="arr"&gt;→&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;pre class="ascii" id="hexAscii" aria-hidden="true"&gt;&lt;/pre&gt;
+&lt;/section&gt;
+&lt;script src="assets/ascii/gs-ascii.js"&gt;&lt;/script&gt;
+&lt;script&gt;GSAscii.field(document.getElementById('hexAscii'), { cols: 60, rows: 36, fn: body, fn2: rim });&lt;/script&gt;</code></pre>
+  </details>
+</section>
+<section class="comp" id="34-ascii-frame">
+  <div class="comp-head">
+    <span class="comp-no">34</span>
+    <h2 class="comp-t">ASCII frame card</h2>
+    <a class="comp-open" href="34-ascii-frame.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="34-ascii-frame.html" title="ASCII frame card"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;pre class="frame" id="f1"&gt;&lt;/pre&gt;
+&lt;button class="btn-ascii" data-ascii-scramble="hover"&gt;&lt;span class="br"&gt;[&lt;/span&gt; run agent &lt;span class="br"&gt;]&lt;/span&gt;&lt;/button&gt;
+&lt;pre class="agent-pre lead" data-ascii-agent="a1"&gt;&lt;/pre&gt;
+&lt;script&gt;
+document.getElementById('f1').textContent = GSAscii.box(
+  ['agent    A1 · lead', 'status   rendering'], { style: 'single', title: 'run 0042' });
+&lt;/script&gt;</code></pre>
+  </details>
+</section>
+<section class="comp" id="35-foil-panel">
+  <div class="comp-head">
+    <span class="comp-no">35</span>
+    <h2 class="comp-t">Foil panel</h2>
+    <a class="comp-open" href="35-foil-panel.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="35-foil-panel.html" title="Foil panel" style="height:600px"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;div class="split"&gt;
+  &lt;div class="copy"&gt;&lt;span class="kicker"&gt;launch · coming soon&lt;/span&gt;&lt;h2&gt;the first drop lands friday&lt;/h2&gt;&lt;/div&gt;
+  &lt;div class="foil crumple"&gt;
+    &lt;span class="kicker"&gt;guidant studios&lt;/span&gt;
+    &lt;div class="big"&gt;drop&lt;br&gt;01&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</section>
+<section class="comp" id="36-cobalt-panel">
+  <div class="comp-head">
+    <span class="comp-no">36</span>
+    <h2 class="comp-t">Cobalt panel</h2>
+    <a class="comp-open" href="36-cobalt-panel.html" target="_blank">Open file →</a>
+  </div>
+  <iframe loading="lazy" src="36-cobalt-panel.html" title="Cobalt panel" style="height:900px"></iframe>
+  <details class="snip">
+    <summary>Copy-paste snippet</summary>
+    <div class="snip-bar"><span class="kicker">HTML</span><button class="copy" type="button">Copy</button></div>
+    <pre><code>&lt;section class="cobalt"&gt;
+  &lt;div class="l"&gt;
+    &lt;div class="stack"&gt;&lt;span&gt;studio&lt;/span&gt;&lt;span&gt;studio&lt;/span&gt;&lt;span&gt;studio&lt;/span&gt;&lt;span&gt;studio&lt;/span&gt;&lt;/div&gt;
+    &lt;a class="btn btn-onc" href="#"&gt;Book a call &lt;span class="arr"&gt;→&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="r"&gt;&lt;!-- white line-art object --&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class="checker"&gt;&lt;div class="mask"&gt;&lt;/div&gt;
+  &lt;div class="w w1"&gt;take&lt;/div&gt;&lt;div class="w w2"&gt;small&lt;/div&gt;&lt;div class="w w3"&gt;steps&lt;/div&gt;&lt;div class="w w4"&gt;at a&lt;/div&gt;&lt;div class="w w5"&gt;time&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  </details>
+</section>
+<script>
+(function () {
+  const root = document.documentElement;
+  const apply = t => { root.setAttribute('data-theme', t); root.style.colorScheme = t; };
+  const forced = new URLSearchParams(location.search).get('theme');
+  apply(forced || localStorage.getItem('gs-theme') || 'light');
+  if (forced) document.querySelectorAll('iframe').forEach(f => f.src += (f.src.includes('?') ? '&' : '?') + 'theme=' + forced);
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('gs-theme', next);
+    apply(next);
+    document.querySelectorAll('iframe').forEach(f => {
+      try { f.contentWindow.postMessage({ gsTheme: next }, '*'); } catch (e) {}
+    });
+  });
+  document.querySelectorAll('.copy').forEach(btn => btn.addEventListener('click', () => {
+    const code = btn.closest('.snip').querySelector('code').textContent;
+    navigator.clipboard.writeText(code).then(() => {
+      btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy', 1400);
+    });
+  }));
+})();
+</script>
+</body>
+</html>

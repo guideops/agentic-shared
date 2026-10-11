@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1433d6">
+<title>Guidant Studios - Brand Book</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<style>
+:root, html[data-theme="light"] {
+  --bg:#f6f6f3; --surface:#ffffff; --surface-2:#ececea; --line:#d7d8dc;
+  --text:#0b0b0f; --muted:#5d6069; --accent:#1433d6; --on-accent:#ffffff; --slab:#0b0b0f;
+  --cobalt:#1433d6; --on-cobalt:#ffffff; --ink:#0b0b0f;
+  --silver-hi:#f2f4f7; --silver:#c5cad2; --silver-lo:#8a909a;
+  color-scheme:light;
+}
+html[data-theme="dark"] {
+  --bg:#0b0b0f; --surface:#15161b; --surface-2:#1e2026; --line:#2a2c33;
+  --text:#f2f3f5; --muted:#9a9ea8; --accent:#4466ff; --on-accent:#ffffff; --slab:#2a2c33;
+  color-scheme:dark;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font:400 16px/1.6 'Archivo',system-ui,sans-serif; -webkit-font-smoothing:antialiased; transition:background .25s,color .25s; }
+::selection { background:var(--accent); color:var(--on-accent); }
+.wrap { max-width:1200px; margin:0 auto; padding:0 32px; }
+section { padding:96px 0; }
+h1 { font-weight:700; font-size:clamp(44px,7vw,96px); letter-spacing:-.04em; line-height:.95; }
+h2 { font-weight:700; font-size:clamp(30px,4vw,48px); letter-spacing:-.03em; line-height:1.02; margin-bottom:16px; }
+h3 { font-weight:600; font-size:20px; letter-spacing:-.01em; line-height:1.3; }
+p { max-width:68ch; }
+.lead { font-size:19px; line-height:1.55; color:var(--muted); }
+.kicker, .xp { font-stretch:125%; font-weight:600; text-transform:uppercase; }
+.kicker { font-size:11px; letter-spacing:.18em; color:var(--muted); margin-bottom:12px; display:block; }
+.marquee { font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:clamp(56px,10vw,160px); letter-spacing:-.01em; line-height:.9; }
+.doto { font-family:'Doto',monospace; font-weight:900; color:var(--accent); margin:0 .18em; }
+.stat { font-family:'Doto',monospace; font-weight:900; font-size:56px; letter-spacing:1px; line-height:1; }
+.mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.wordmark { font-weight:700; letter-spacing:-.04em; text-transform:lowercase; color:var(--accent); }
+.btn { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:14px 24px; border-radius:4px;
+  font:600 13px/1 'Archivo',sans-serif; font-stretch:125%; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; cursor:pointer;
+  background:var(--surface); color:var(--text); border:2px solid var(--text); transition:transform .15s ease, box-shadow .15s ease; }
+html[data-theme="dark"] .btn { border-color:var(--line); }
+.btn:hover { transform:translate(-2px,-2px); box-shadow:4px 4px 0 var(--slab); }
+.btn:active { transform:translate(1px,1px); box-shadow:none; transition-duration:.06s; }
+.btn:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.btn-primary { background:var(--accent); border-color:var(--accent) !important; color:var(--on-accent); }
+.btn .arr { transition:transform .15s ease; } .btn:hover .arr { transform:translateX(4px); }
+.btn-ghost { border-color:transparent !important; background:none; padding-left:0; padding-right:0; }
+.btn-ghost:hover { box-shadow:none; transform:none; color:var(--accent); }
+.btn-ascii { font:500 13px/1 'JetBrains Mono',monospace; text-transform:lowercase; letter-spacing:0; background:none; border:none; color:var(--text); cursor:pointer; padding:12px 0; }
+.btn-ascii .br { transition:color .15s; } .btn-ascii:hover .br { color:var(--accent); }
+.card { background:var(--surface); border:2px solid var(--text); border-radius:4px; padding:24px;
+  box-shadow:6px 6px 0 var(--slab); transition:transform .18s ease, box-shadow .18s ease; }
+html[data-theme="dark"] .card { border:1px solid var(--line); }
+.card:hover { transform:translate(-2px,-4px); box-shadow:9px 9px 0 var(--slab); }
+.card.hot { border-color:var(--accent); box-shadow:6px 6px 0 var(--accent); }
+.card.hot:hover { box-shadow:9px 9px 0 var(--accent); }
+.card.hot .card-title { color:var(--accent); }
+.card-title { font-size:21px; font-weight:600; letter-spacing:-.01em; margin-bottom:8px; }
+.card-body { font-size:14px; line-height:1.55; color:var(--muted); }
+.tag { display:inline-block; border:1.5px solid currentColor; border-radius:2px; padding:4px 8px;
+  font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:.04em; text-transform:uppercase; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; }
+.panel-cobalt { background:var(--cobalt); color:var(--on-cobalt); --text:#ffffff; --muted:rgba(255,255,255,.78); --accent:#ffffff; --on-accent:#1433d6; --slab:#0b0b0f; }
+.panel-ink { background:var(--ink); color:#f2f3f5; --text:#f2f3f5; --muted:#9a9ea8; --accent:#4466ff; --on-accent:#ffffff; --surface:#15161b; --line:#2a2c33; --slab:#2a2c33; }
+.ascii { font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0; white-space:pre; color:var(--text); margin:0; }
+.ascii .ascii-hot { color:var(--accent); font-weight:400; }
+.ascii-rule { font:400 12px/1 'JetBrains Mono',monospace; color:var(--muted); white-space:nowrap; overflow:hidden; width:0; min-width:100%; } /* width:0 trick: never widens its grid/flex parent */
+.foil { position:relative; overflow:hidden; color:#0b0b0f;
+  background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.6) 46%,transparent 62%) -160% 0/250% 100% no-repeat,
+    repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 1px,rgba(0,0,0,.035) 1px 3px),
+    linear-gradient(180deg,#f2f4f7 0%,#c5cad2 42%,#8a909a 64%,#dfe3e8 100%);
+  transition:background-position .9s ease; }
+.foil:hover { background-position:160% 0,0 0,0 0; }
+.foil.crumple::after { content:""; position:absolute; inset:0; pointer-events:none; mix-blend-mode:multiply; opacity:.5;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.016' numOctaves='5' seed='7'/%3E%3CfeDiffuseLighting lighting-color='%23fff' surfaceScale='6' diffuseConstant='1.15'%3E%3CfeDistantLight azimuth='235' elevation='40'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E") center/cover; }
+.foil > * { position:relative; z-index:1; }
+@media (max-width:640px){ .wrap{padding:0 20px;} section{padding:64px 0;} }
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important;} }
+
+/* ---- brand-book layout ---- */
+.topbar { position:sticky; top:0; z-index:20; background:var(--bg); border-bottom:1px solid var(--line); }
+.topbar .wrap { display:flex; align-items:center; gap:12px; height:64px; }
+.topbar .mark { width:24px; height:24px; color:var(--accent); }
+.topbar .wordmark { font-size:18px; }
+.topbar nav { margin-left:auto; display:flex; gap:20px; }
+.topbar nav a { font:500 11px/1 'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); text-decoration:none; }
+.topbar nav a:hover { color:var(--accent); }
+#themeToggle { width:40px; height:40px; border:2px solid var(--text); border-radius:4px; background:var(--surface); color:var(--text); cursor:pointer; font:500 16px/1 'JetBrains Mono',monospace; margin-left:12px; }
+.secno { font:500 12px/1 'JetBrains Mono',monospace; color:var(--accent); margin-bottom:16px; display:block; }
+.rule-row { margin:0 0 0; }
+.cover { position:relative; overflow:hidden; padding:128px 0 96px; }
+.cover canvas { position:absolute; left:0; bottom:0; width:100%; height:72%; }
+.cover .wrap { position:relative; }
+.cover h1 { max-width:12ch; }
+.cover h1 .low { color:var(--accent); }
+.swatches { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:24px; margin-top:48px; }
+.sw { border:2px solid var(--text); border-radius:4px; overflow:hidden; background:var(--surface); box-shadow:6px 6px 0 var(--slab); }
+html[data-theme="dark"] .sw { border:1px solid var(--line); }
+.sw .chip { height:112px; border-bottom:2px solid var(--text); }
+html[data-theme="dark"] .sw .chip { border-bottom:1px solid var(--line); }
+.sw .meta { padding:12px 16px 16px; }
+.sw .nm { font-weight:600; font-size:15px; }
+.sw .hx { font:500 12px/1.4 'JetBrains Mono',monospace; color:var(--muted); margin-top:4px; }
+.sw .use { font-size:12.5px; color:var(--muted); margin-top:8px; line-height:1.45; }
+.tline { display:grid; grid-template-columns:240px 1fr; gap:32px; align-items:baseline; padding:24px 0; border-bottom:1px solid var(--line); }
+.tline .lab { font:500 12px/1.5 'JetBrains Mono',monospace; color:var(--muted); }
+.panels { display:grid; grid-template-columns:repeat(3,1fr); gap:0; }
+.pan { min-height:420px; padding:32px; position:relative; overflow:hidden; display:flex; flex-direction:column; }
+.pan .lab { font:500 11px/1 'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.04em; opacity:.8; margin-top:auto; padding-top:16px; }
+.stack { font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:64px; line-height:.86; letter-spacing:-.01em; }
+.checker { background-color:#fff; background-image:conic-gradient(#1433d6 25%, transparent 0 50%, #1433d6 0 75%, transparent 0); background-size:96px 96px; }
+.checker-step { position:absolute; inset:0; background:#fff; clip-path:polygon(0 0,100% 0,100% 100%,82% 100%,82% 82%,64% 82%,64% 64%,46% 64%,46% 46%,28% 46%,28% 28%,10% 28%,10% 0); }
+.stepword { position:relative; color:#0b0b0f; font-weight:700; font-size:44px; letter-spacing:-.04em; line-height:.92; margin-left:22%; }
+.two { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+.demo-box { background:var(--surface); border:2px solid var(--text); border-radius:4px; padding:24px; box-shadow:6px 6px 0 var(--slab); }
+html[data-theme="dark"] .demo-box { border:1px solid var(--line); }
+.twins { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:32px; }
+.twin { display:flex; flex-direction:column; gap:12px; align-items:flex-start; }
+.twin pre { font-size:6px; }
+.agents-row { display:flex; gap:32px; flex-wrap:wrap; align-items:flex-end; margin-top:32px; }
+.ag-wrap { display:flex; flex-direction:column; align-items:center; gap:10px; }
+.ag-wrap svg { width:64px; height:64px; overflow:visible; }
+.ag-wrap .ag { fill:var(--text); } .ag-wrap.lead .ag { fill:var(--accent); }
+.ag-wrap .hop { animation:hop 1.2s ease-in-out infinite; }
+.ag-wrap .shadow { fill:var(--text); animation:sq 1.2s ease-in-out infinite; transform-origin:32px 66px; }
+@keyframes hop { 0%,100%{transform:translateY(0)} 15%{transform:translateY(-4px)} 30%{transform:translateY(0)} }
+@keyframes sq { 0%,100%{opacity:.12;transform:scaleX(1)} 15%{opacity:.06;transform:scaleX(.7)} 30%{opacity:.12;transform:scaleX(1)} }
+.ag-wrap .lab { font:500 11px/1 'JetBrains Mono',monospace; color:var(--muted); }
+.agent-pre { font:400 6px/1 'JetBrains Mono',monospace; white-space:pre; color:var(--text); }
+.agent-pre.lead { color:var(--accent); }
+.foil-tile { min-height:340px; border-radius:0; padding:32px; display:flex; flex-direction:column; justify-content:space-between; }
+.foil-tile .big { font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:56px; line-height:.9; color:#1433d6; }
+.roundbtn { width:64px; height:64px; border-radius:50%; background:#0b0b0f; color:#fff; border:none; display:grid; place-items:center; font-size:22px; cursor:pointer; }
+.tokens { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px; }
+.tok h3 { margin-bottom:12px; }
+.tok table { width:100%; border-collapse:collapse; font-size:14px; }
+.tok td { padding:8px 0; border-bottom:1px solid var(--line); }
+.tok td:last-child { font:500 12px/1.4 'JetBrains Mono',monospace; color:var(--muted); text-align:right; }
+.spacebar { display:flex; align-items:flex-end; gap:12px; margin-top:16px; }
+.spacebar i { display:block; background:var(--accent); width:12px; }
+.input { width:100%; min-height:44px; padding:12px 14px; border:2px solid var(--text); border-radius:4px; background:var(--surface); color:var(--text);
+  font:400 15px 'Archivo',sans-serif; box-shadow:4px 4px 0 rgba(20,51,214,0); transition:box-shadow .3s, border-color .3s; outline:none; }
+html[data-theme="dark"] .input { border:1px solid var(--line); box-shadow:4px 4px 0 rgba(68,102,255,0); }
+.input:focus { border-color:var(--accent); box-shadow:4px 4px 0 var(--accent); }
+.not { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:48px; }
+.not ul { list-style:none; display:flex; flex-direction:column; gap:10px; font-size:14.5px; }
+.not li { display:grid; grid-template-columns:20px 1fr; color:var(--muted); }
+.not li::before { content:'×'; font:700 14px/1.5 'JetBrains Mono',monospace; color:var(--text); }
+.oval { display:inline-block; border:1.5px solid currentColor; border-radius:50%; padding:8px 22px; }
+.wall { height:280px; background-color:#ffffff; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath transform='translate(17 17) scale(.25)' d='M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z' fill='%231433d6'/%3E%3C/svg%3E"); background-size:48px 48px; }
+@media (max-width:900px){ .panels,.two,.tokens,.not{grid-template-columns:1fr;} .twins{grid-template-columns:repeat(2,1fr);} .tline{grid-template-columns:1fr; gap:8px;} .topbar nav{display:none;} }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 56 56" aria-label="Guidant Studios"><path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/></svg>
+    <span class="wordmark">guidant studios</span>
+    <nav>
+      <a href="#colour">colour</a><a href="#type">type</a><a href="#panels">panels</a><a href="#ascii">ascii</a><a href="#metal">metal</a><a href="#agents">agents</a><a href="#components">components</a><a href="#not">not</a>
+    </nav>
+    <button id="themeToggle" aria-label="Toggle dark / light mode">◐</button>
+  </div>
+</header>
+
+<!-- COVER - the page's ONE animated effect: ASCII swell background -->
+<section class="cover">
+  <canvas data-ascii-bg="swell" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="kicker mono" data-ascii-scramble>brand book · v1 · locked</span>
+    <h1>the studio's <span class="low">visual language</span></h1>
+    <p class="lead" style="margin-top:24px">Originals cobalt on gallery white. Sharp sport-catalogue type. ASCII as the signature, silver as the material, robo's dot-matrix and agents underneath.</p>
+    <div style="display:flex;gap:16px;margin-top:32px;flex-wrap:wrap">
+      <a class="btn btn-primary" href="components/gallery.html">Component gallery <span class="arr">→</span></a>
+      <a class="btn" href="references/ascii-lab.html">ASCII lab</a>
+    </div>
+  </div>
+</section>
+
+<!-- 01 COLOUR -->
+<section id="colour">
+  <div class="wrap">
+    <span class="secno">01 / colour</span>
+    <h2>one cobalt. everything else is <span class="doto">quiet</span></h2>
+    <p class="lead">Cobalt is either the one highlight in a view or a full-bleed panel. Never decoration. No second blue, no purple, no status rainbow.</p>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#1433d6"></div><div class="meta"><div class="nm">Originals Cobalt</div><div class="hx">#1433D6 · dark #4466ff</div><div class="use">The one highlight. Cobalt panels. White text on it (8.5:1).</div></div></div>
+      <div class="sw"><div class="chip" style="background:#f6f6f3"></div><div class="meta"><div class="nm">Gallery White</div><div class="hx">#F6F6F3</div><div class="use">Page background (light, default).</div></div></div>
+      <div class="sw"><div class="chip" style="background:#ffffff"></div><div class="meta"><div class="nm">Surface</div><div class="hx">#FFFFFF · dark #15161B</div><div class="use">Cards, inputs, panels.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#0b0b0f"></div><div class="meta"><div class="nm">Ink</div><div class="hx">#0B0B0F</div><div class="use">Text, slabs, ink panels, dark bg.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#5d6069"></div><div class="meta"><div class="nm">Muted</div><div class="hx">#5D6069 · dark #9A9EA8</div><div class="use">Kickers, captions, labels.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#d7d8dc"></div><div class="meta"><div class="nm">Line</div><div class="hx">#D7D8DC · dark #2A2C33</div><div class="use">Dividers, rules, dark borders.</div></div></div>
+      <div class="sw"><div class="chip foil crumple"></div><div class="meta"><div class="nm">Silver (material)</div><div class="hx">#F2F4F7 · #C5CAD2 · #8A909A</div><div class="use">Foil recipe only. Never text or accent.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ascii-rule" data-ascii-rule="+-"></div></div>
+
+<!-- 02 TYPE -->
+<section id="type">
+  <div class="wrap">
+    <span class="secno">02 / type</span>
+    <h2>three families, one job each</h2>
+    <div style="margin-top:32px">
+      <div class="tline"><div class="lab">MARQUEE<br>Archivo 125 · 800 · UPPER</div><div class="marquee" style="font-size:clamp(48px,8vw,112px)">Originals</div></div>
+      <div class="tline"><div class="lab">DISPLAY / H1<br>Archivo 700 · -0.04em</div><h1 style="font-size:clamp(40px,5.5vw,72px)">small steps, <span class="doto">big</span> work</h1></div>
+      <div class="tline"><div class="lab">H2<br>Archivo 700 · -0.03em</div><h2 style="margin:0">the system is yours</h2></div>
+      <div class="tline"><div class="lab">BODY<br>Archivo 400 · 16/1.6</div><p>Every rule is an exact value. If something isn't covered, extend it with the existing tokens. Never import a new colour, font, radius or shadow.</p></div>
+      <div class="tline"><div class="lab">KICKER + BUTTON<br>Archivo 125 · 600 · UPPER</div><div><span class="kicker" style="margin:0 0 12px">sustain &amp; strengthen</span><a class="btn btn-primary" href="#">Primary <span class="arr">→</span></a></div></div>
+      <div class="tline"><div class="lab">MONO<br>JetBrains Mono 400/500/700</div><div class="mono" style="font-size:14px">agent.run(<span style="color:var(--accent)">"brief"</span>) · 12:04:31 · <span class="tag">live</span></div></div>
+      <div class="tline"><div class="lab">STAT<br>Doto 900</div><div class="stat" style="color:var(--accent)">2,060</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 PANELS -->
+<section id="panels" style="padding-bottom:0">
+  <div class="wrap">
+    <span class="secno">03 / panels + compositions</span>
+    <h2>cobalt panel, ink panel, checker step</h2>
+    <p class="lead">Full-bleed beats, max one cobalt panel per three sections. Everything on cobalt is white.</p>
+  </div>
+  <div class="panels" style="margin-top:48px">
+    <div class="pan panel-cobalt">
+      <div class="stack">plus<br>plus<br>plus<br>plus<br>plus</div>
+      <div class="lab">cobalt panel · repeat stack</div>
+    </div>
+    <div class="pan panel-ink">
+      <span class="kicker">coming soon</span>
+      <div class="marquee" style="font-size:56px">studio<br>drop 01</div>
+      <div class="lab">ink panel · marquee</div>
+    </div>
+    <div class="pan checker" style="padding:0">
+      <div class="checker-step"></div>
+      <div class="stepword" style="margin-top:32%">take<br>small<br>steps</div>
+      <div class="lab" style="position:relative;padding:32px;color:#0b0b0f">checker step · hard stops</div>
+    </div>
+  </div>
+  <div class="wall" role="img" aria-label="Logo wall"></div>
+</section>
+
+<!-- 04 ASCII -->
+<section id="ascii">
+  <div class="wrap">
+    <span class="secno">04 / ascii · the signature</span>
+    <h2>characters as an <span class="doto">image</span> medium</h2>
+    <p class="lead">JetBrains Mono, line-height 1, ramp <span class="mono" style="color:var(--text)">' .:-=+*#%@'</span>. Every dot recipe has an ASCII twin. Static art is deterministic.</p>
+    <div class="twins">
+      <div class="twin"><pre class="ascii" id="tw1"></pre><span class="tag">sphere</span></div>
+      <div class="twin"><pre class="ascii" id="tw2"></pre><span class="tag">hexagon</span></div>
+      <div class="twin"><pre class="ascii" id="tw3"></pre><span class="tag">wave</span></div>
+      <div class="twin"><pre class="ascii" id="tw4"></pre><span class="tag">bars</span></div>
+    </div>
+    <div class="two" style="margin-top:64px">
+      <div>
+        <h3>frames, rules, scramble, buttons</h3>
+        <p class="card-body" style="margin:8px 0 24px">Box frames replace borders in technical contexts. One scramble per section, only on fixed-width text.</p>
+        <pre class="ascii" id="frame" style="font-size:13px;line-height:1"></pre>
+        <div style="margin-top:24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+          <button class="btn-ascii" data-ascii-scramble="hover"><span class="br">[</span> run agent <span class="br">]</span></button>
+          <span class="mono" style="font-size:12px;color:var(--muted)">hover me →</span>
+        </div>
+        <div class="ascii-rule" data-ascii-rule="═" style="margin-top:24px"></div>
+        <div class="ascii-rule" data-ascii-rule="· " style="margin-top:12px"></div>
+        <div class="ascii-rule" data-ascii-rule="▚" style="margin-top:12px"></div>
+      </div>
+      <div class="demo-box">
+        <span class="kicker">agents in ascii · solid blocks only</span>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:16px">
+          <pre class="agent-pre lead" data-ascii-agent="a1"></pre><pre class="agent-pre" data-ascii-agent="a2"></pre><pre class="agent-pre" data-ascii-agent="a3"></pre>
+          <pre class="agent-pre" data-ascii-agent="a4"></pre><pre class="agent-pre" data-ascii-agent="a5"></pre><pre class="agent-pre" data-ascii-agent="a6"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 METAL -->
+<section id="metal" class="panel-ink">
+  <div class="wrap two">
+    <div>
+      <span class="secno" style="color:var(--accent)">05 / metal · the material</span>
+      <h2>silver is a surface, never paint</h2>
+      <p class="lead">One metal element per view: a foil object or a liquid-silver frame. Never metal text, labelled buttons, inputs or card grids. Never in the same section as an ASCII signature.</p>
+      <div style="display:flex;gap:24px;align-items:center;margin-top:32px">
+        <button class="roundbtn" data-metal="circle" aria-label="Play">▶</button>
+        <span class="mono" style="font-size:12px;color:var(--muted)">data-metal="circle" · liquid-silver frame (WebGL, auto-fallback)</span>
+      </div>
+    </div>
+    <div class="foil crumple foil-tile">
+      <span class="kicker" style="color:#0b0b0f">foil · crumple · hover for the sweep</span>
+      <div class="big">drop<br>01</div>
+      <span class="mono" style="font-size:12px">.foil.crumple</span>
+    </div>
+  </div>
+</section>
+
+<!-- 06 AGENTS + MARKS -->
+<section id="agents">
+  <div class="wrap">
+    <span class="secno">06 / agents + marks</span>
+    <h2>the team, A1 leads</h2>
+    <p class="lead">Six solid pixel sprites. A1 in cobalt, the rest in ink. They bob; nothing else does.</p>
+    <div class="agents-row" id="agentRow"></div>
+    <div class="grid" style="margin-top:64px">
+      <div class="card"><span class="kicker">default mark</span>
+        <svg viewBox="0 0 56 56" style="width:72px;height:72px;color:var(--accent);margin:16px 0" aria-label="Pixel G"><path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/></svg>
+        <div class="card-title">Pixel G</div><div class="card-body">7×7 grid, flat currentColor. Placeholder until the official logo lands.</div></div>
+      <div class="card"><span class="kicker">wordmark</span><div class="wordmark" style="font-size:40px;margin:24px 0">guidant studios</div><div class="card-title">Lowercase, always</div><div class="card-body">Archivo 700, -0.04em, cobalt. Never uppercase, expanded or mono.</div></div>
+      <div class="card"><span class="kicker">oval lockup</span><div style="margin:28px 0;color:var(--accent)"><span class="oval wordmark" style="font-size:22px">guidant studios</span></div><div class="card-title">Badge / closer</div><div class="card-body">Once per view at most. Stickers, closers, packaging.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 COMPONENTS + TOKENS -->
+<section id="components" style="background:var(--surface-2)">
+  <div class="wrap">
+    <span class="secno">07 / components + tokens</span>
+    <h2>buttons, cards, inputs</h2>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <a class="btn btn-primary" href="#">Primary <span class="arr">→</span></a>
+      <a class="btn" href="#">Secondary</a>
+      <a class="btn btn-ghost" href="#">Ghost link <span class="arr">→</span></a>
+      <span class="tag">tag</span> <span class="tag" style="color:var(--accent)">new</span>
+    </div>
+    <div class="grid" style="margin-top:48px">
+      <div class="card"><span class="kicker">module 01</span><div class="card-title">Brief</div><div class="card-body">One idea, one visual, one call to action.</div></div>
+      <div class="card hot"><span class="kicker">recommended</span><div class="card-title">Ship it</div><div class="card-body">The hot card - one per group, cobalt slab.</div></div>
+      <div class="card"><span class="kicker">module 03</span><div class="card-title">Review</div><div class="card-body">Pre-flight checklist before delivery.</div></div>
+    </div>
+    <div style="max-width:420px;margin-top:48px"><label class="kicker" for="em">email</label><input class="input" id="em" placeholder="you@studio.com"></div>
+    <div class="tokens">
+      <div class="tok"><h3>spacing · 4px base</h3><div class="spacebar"><i style="height:4px"></i><i style="height:8px"></i><i style="height:12px"></i><i style="height:16px"></i><i style="height:24px"></i><i style="height:32px"></i><i style="height:48px"></i><i style="height:64px"></i><i style="height:96px"></i><i style="height:128px"></i></div><p class="mono" style="font-size:12px;color:var(--muted);margin-top:12px">4 8 12 16 24 32 48 64 96 128</p></div>
+      <div class="tok"><h3>corners</h3><table><tr><td>buttons, cards, inputs</td><td>4px</td></tr><tr><td>tags, chips</td><td>2px</td></tr><tr><td>panels, images, posters</td><td>0</td></tr><tr><td>dots, avatars, oval, round btn</td><td>50%</td></tr></table></div>
+      <div class="tok"><h3>shadows · zero blur</h3><table><tr><td>card rest / hover</td><td>6 6 0 / 9 9 0</td></tr><tr><td>button hover</td><td>4 4 0</td></tr><tr><td>hot</td><td>cobalt slab</td></tr><tr><td>input focus</td><td>4 4 0 fade-in</td></tr></table></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 NOT -->
+<section id="not">
+  <div class="wrap">
+    <span class="secno">08 / what this style is not</span>
+    <h2>the drift list</h2>
+    <div class="not">
+      <div><h3 style="margin-bottom:16px">fonts</h3><ul><li>Outfit, Inter, Roboto, Helvetica, Poppins, Montserrat, Space Grotesk, Syne, Unbounded</li><li>any serif or script</li><li>Courier / Fira / Space Mono - mono is JetBrains only</li><li>Archivo widths other than 100/125; weights 100-300, 900</li><li>Doto for body, labels, buttons, nav</li><li>figlet banner headlines; uppercase normal-width heads</li></ul></div>
+      <div><h3 style="margin-bottom:16px">colours</h3><ul><li>a second blue - navy, sky, cyan, teal, neon</li><li>purple or blue-to-purple "AI" gradients</li><li>robo orange/cream, dsx silver accent</li><li>red/green status fills, rainbow charts</li><li>gradients except foil, metal-fx, hard-stop patterns</li><li>pure #000 backgrounds, pure #fff text on dark</li></ul></div>
+      <div><h3 style="margin-bottom:16px">effects</h3><ul><li>blurred or glowing shadows, neon outlines</li><li>glassmorphism, backdrop blur</li><li>pills, radii above 4px</li><li>ASCII + metal in one section; metal text or buttons</li><li>matrix-green rain, scanlines, RGB glitch</li><li>dotted or halftone agents; ring/orbit shape</li><li>more than one animated effect per page</li><li>stock photos, 3D clay, emoji icons, icon fonts</li></ul></div>
+    </div>
+    <div style="margin-top:96px;display:flex;align-items:center;gap:24px;color:var(--accent)">
+      <span class="oval wordmark" style="font-size:20px">guidant studios</span>
+      <span class="mono" style="font-size:12px;color:var(--muted)">built on robo by RoboNuggets · CC BY 4.0</span>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  const root = document.documentElement;
+  const apply = t => { root.setAttribute('data-theme', t); root.style.colorScheme = t; if (window.gsRedraw) window.gsRedraw(); };
+  let saved = null; try { saved = localStorage.getItem('gs-theme'); } catch (e) {}
+  apply(new URLSearchParams(location.search).get('theme') || saved || 'light');
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('gs-theme', next); } catch (e) {}
+    apply(next);
+  });
+})();
+</script>
+<script src="assets/ascii/gs-ascii.js"></script>
+<script>
+const AGENTS = GSAscii.AGENTS;
+function agSvg(key, c) { const d = AGENTS[key]; let s = '';
+  for (let y = 0; y < 8; y++) for (let x = 0; x < 4; x++) if (d[y][x]) {
+    s += `<rect x="${x*c}" y="${y*c}" width="${c}" height="${c}"/><rect x="${(7-x)*c}" y="${y*c}" width="${c}" height="${c}"/>`; }
+  return s; }
+document.getElementById('agentRow').innerHTML = ['a1','a2','a3','a4','a5','a6'].map((k, i) =>
+  `<div class="ag-wrap ${i ? '' : 'lead'}"><svg viewBox="0 0 64 70" aria-label="${k.toUpperCase()}"><ellipse class="shadow" cx="32" cy="66" rx="20" ry="3" style="animation-delay:${i*.2}s"/><g class="ag hop" shape-rendering="crispEdges" style="animation-delay:${i*.2}s">${agSvg(k, 8)}</g></svg><span class="lab">${k.toUpperCase()}${i ? '' : ' · lead'}</span></div>`).join('');
+
+function draw() {
+  const L = [-.55, -.6, .58];
+  const sphere = (u, v) => { const x = (u-.5)/.44, y = (v-.5)/.44, d = x*x+y*y; if (d > 1) return 0; const z = Math.sqrt(1-d); return Math.max(.06, x*L[0]+y*L[1]+z*L[2]); };
+  GSAscii.field(document.getElementById('tw1'), { cols: 46, rows: 28, fn: sphere, fn2: (u,v) => sphere(u,v) > .86 ? 1 : 0 });
+  const HEX = [[.5,.06],[.9,.28],[.9,.72],[.5,.94],[.1,.72],[.1,.28]];
+  const inPoly = (pts, u, v) => { let s = false; for (let i = 0, j = pts.length-1; i < pts.length; j = i++) if ((pts[i][1] > v) !== (pts[j][1] > v) && u < (pts[j][0]-pts[i][0])*(v-pts[i][1])/(pts[j][1]-pts[i][1])+pts[i][0]) s = !s; return s; };
+  GSAscii.field(document.getElementById('tw2'), { cols: 46, rows: 28, fn: (u,v) => inPoly(HEX,u,v) ? .25 + .75*(1-(u+v)/2) : 0 });
+  GSAscii.field(document.getElementById('tw3'), { cols: 46, rows: 28, fn: (u,v) => { const c = .45 + .14*Math.sin(u*9); return v > c ? Math.min(1,(v-c)*2.6) : 0; },
+    fn2: (u,v) => { const c = .45 + .14*Math.sin(u*9); return Math.abs(v-c) < .035 ? 1 : 0; } });
+  const H = [.35,.55,.42,.8,.62];
+  GSAscii.field(document.getElementById('tw4'), { cols: 46, rows: 28, fn: (u,v) => { const i = Math.floor(u*5), f = u*5-i; if (f < .18 || f > .82 || i === 3) return 0; return v > 1-H[i] ? .35 + .65*(v-(1-H[i]))/H[i] : 0; },
+    fn2: (u,v) => { const i = Math.floor(u*5), f = u*5-i; if (i !== 3 || f < .18 || f > .82) return 0; return v > 1-H[i] ? .5 + .5*(v-(1-H[i]))/H[i] : 0; } });
+  document.getElementById('frame').textContent = GSAscii.box(['agent   A1 · lead', 'status  running', 'brief   drop 01 hero', 'eta     00:04:12'], { style: 'single', title: 'run 0042' });
+}
+window.gsRedraw = draw; draw();
+</script>
+<script src="assets/metal/dsx-metal.js"></script>
+</body>
+</html>

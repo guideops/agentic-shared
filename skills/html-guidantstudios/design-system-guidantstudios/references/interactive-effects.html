@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUIDANT STUDIOS - 5 Interactive Dot Effects</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<style>
+html { color-scheme: light; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:#f6f6f3; color:#0b0b0f;
+  font-family:'Archivo',sans-serif; font-weight:400;
+  font-size:15px; line-height:1.6;
+}
+::selection { background:#1433d6; color:#fff; }
+.doto { font-family:'Doto',sans-serif; font-weight:900; color:#1433d6; margin:0 .18em; }
+header { padding:46px 40px 6px; max-width:1180px; margin:0 auto; }
+.kicker { font-size:12px; letter-spacing:6px; text-transform:uppercase; color:#5d6069; margin-bottom:10px; }
+h1 { font-weight:600; font-size:clamp(28px,4vw,44px); letter-spacing:-1px; line-height:1.1; }
+.sub { color:#5d6069; margin-top:10px; max-width:660px; }
+section { max-width:1180px; margin:0 auto; padding:30px 40px 6px; }
+.head { display:flex; align-items:baseline; gap:14px; margin-bottom:4px; flex-wrap:wrap; }
+.num { font-family:'Doto',sans-serif; font-weight:900; color:#1433d6; font-size:22px; }
+h2 { font-weight:600; font-size:22px; letter-spacing:-0.5px; }
+.use { font-size:13px; color:#5d6069; margin-bottom:14px; max-width:760px; }
+.use b { font-weight:600; color:#0b0b0f; }
+.stage { position:relative; border:2px solid #0b0b0f; box-shadow:6px 6px 0 rgba(11,11,15,0.9); overflow:hidden; }
+.stage canvas { display:block; width:100%; height:100%; cursor:crosshair; }
+.stage .tag {
+  position:absolute; top:12px; left:14px; pointer-events:none; z-index:2;
+  font-size:11px; letter-spacing:4px; text-transform:uppercase; color:#9a9ea8;
+}
+.dark  { background:#0b0b0f; }
+.paper { background:#f6f6f3; }
+.h420 { height:420px; } .h340 { height:340px; } .h300 { height:300px; }
+footer { max-width:1180px; margin:0 auto; padding:34px 40px 60px; font-size:12px; color:#5d6069; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">/design-system-guidantstudios reference - interactive effects</div>
+  <h1>Five interactive <span class="doto">DOT</span> effects</h1>
+  <p class="sub">Same family as the particle typography: everything is dots in paper, black and cobalt, and everything answers the mouse. Move your cursor through each stage. All five are part of the skill - copy the matching IIFE block straight from this file.</p>
+</header>
+
+<section>
+  <div class="head"><span class="num">01</span><h2>Torch reveal</h2></div>
+  <p class="use"><b>Use it for:</b> a hero that starts almost empty - a shaded dot-matrix subject only materialises where the cursor sweeps, and slowly fades again behind you. Great for "explore this" landing moments and product teasers.</p>
+  <div class="stage dark h420"><canvas id="c1"></canvas><span class="tag">sweep the dark · lambert-shaded sphere + hex</span></div>
+</section>
+
+<section>
+  <div class="head"><span class="num">02</span><h2>Flow field</h2></div>
+  <p class="use"><b>Use it for:</b> an ambient background with real physics - dot-dust drifting along an invisible current. The cursor stirs the field like a hand in water. Calmer than the text effect, so it can sit behind content.</p>
+  <div class="stage paper h340"><canvas id="c2"></canvas><span class="tag">stir it · ink dust, cobalt strays</span></div>
+</section>
+
+<section>
+  <div class="head"><span class="num">03</span><h2>Agent constellation</h2></div>
+  <p class="use"><b>Use it for:</b> the network metaphor - agents, community, systems talking to each other. Nodes drift quietly; near your cursor they link up with lines and the closest ones go cobalt. Perfect for community and multi-agent slides.</p>
+  <div class="stage dark h340"><canvas id="c3"></canvas><span class="tag">hover to connect · nodes + links</span></div>
+</section>
+
+<section>
+  <div class="head"><span class="num">04</span><h2>Elastic grid</h2></div>
+  <p class="use"><b>Use it for:</b> a disciplined, architectural texture that turns out to be alive - a perfect halftone grid that bows away from the cursor and springs back. <b>Click for a shockwave.</b> Works behind section headers where the wilder effects would be too loud.</p>
+  <div class="stage paper h300"><canvas id="c4"></canvas><span class="tag">push it · click = shockwave</span></div>
+</section>
+
+<section>
+  <div class="head"><span class="num">05</span><h2>Shape morph</h2></div>
+  <p class="use"><b>Use it for:</b> storytelling transitions - the same particles reform from the studio hex into a bar chart into an arrow. Same spring-and-fling physics as the text engine, so the mouse still scatters them mid-morph. <b>Click to jump to the next shape.</b></p>
+  <div class="stage dark h420"><canvas id="c5"></canvas><span class="tag">click to morph · hex → chart → arrow → nugget</span></div>
+</section>
+
+<footer>
+  /design-system-guidantstudios skill reference · locked 2026-07-08 · all five share the house physics: spring 0.012-0.06, damping ~0.86, mouse momentum · square/round dots at small-dot calibration
+</footer>
+
+<script>
+"use strict";
+const COBALT = '#1433d6', PAPER = '#f6f6f3', INK = '#0b0b0f', CREAM = '#f2f3f5';
+const DPR = Math.min(window.devicePixelRatio || 1, 2);
+const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// deterministic noise helpers (house pn + smooth value noise)
+function pn(x, y) { const v = Math.sin(x * 127.1 + y * 311.7) * 43758.5453; return v - Math.floor(v); }
+function vnoise(x, y) {
+  const xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi;
+  const u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
+  const a = pn(xi, yi), b = pn(xi + 1, yi), c = pn(xi, yi + 1), d = pn(xi + 1, yi + 1);
+  return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
+}
+
+// shared per-canvas setup: sizing + mouse with velocity
+function setup(id) {
+  const cv = document.getElementById(id), ctx = cv.getContext('2d');
+  const st = { cv, ctx, W: 0, H: 0, mouse: { x: -9999, y: -9999, vx: 0, vy: 0 }, _lm: { x: 0, y: 0 } };
+  st.size = () => {
+    const r = cv.parentElement.getBoundingClientRect();
+    st.W = r.width; st.H = r.height;
+    cv.width = st.W * DPR; cv.height = st.H * DPR;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  };
+  cv.addEventListener('pointermove', e => {
+    const r = cv.getBoundingClientRect();
+    const x = e.clientX - r.left, y = e.clientY - r.top;
+    st.mouse.vx = x - st._lm.x; st.mouse.vy = y - st._lm.y;
+    st.mouse.x = x; st.mouse.y = y; st._lm = { x, y };
+  });
+  cv.addEventListener('pointerleave', () => { st.mouse.x = -9999; st.mouse.y = -9999; });
+  st.size();
+  return st;
+}
+const RESIZERS = [];
+let rzT;
+window.addEventListener('resize', () => { clearTimeout(rzT); rzT = setTimeout(() => RESIZERS.forEach(f => f()), 150); });
+
+/* ============================================================
+   01 TORCH REVEAL - brightness field only visible near cursor,
+   with slow-decay memory so your sweep leaves a fading trace
+   ============================================================ */
+(() => {
+  const s = setup('c1');
+  const STEP = 6, TORCH = 150;
+  let cells = [];
+  function buildField() {
+    cells = [];
+    const cx1 = s.W * 0.36, cy1 = s.H * 0.5, R = Math.min(s.W, s.H) * 0.33; // sphere
+    const hx = s.W * 0.74, hy = s.H * 0.5, hr = Math.min(s.W, s.H) * 0.26;  // hex
+    const HEX = [[0.5,0.03],[0.95,0.27],[0.95,0.75],[0.5,0.99],[0.05,0.75],[0.05,0.27]];
+    const inPoly = (pts, u, v) => { let f = false; for (let i = 0, j = pts.length - 1; i < pts.length; j = i++)
+      if ((pts[i][1] > v) !== (pts[j][1] > v) && u < (pts[j][0] - pts[i][0]) * (v - pts[i][1]) / (pts[j][1] - pts[i][1]) + pts[i][0]) f = !f; return f; };
+    for (let y = STEP / 2; y < s.H; y += STEP) for (let x = STEP / 2; x < s.W; x += STEP) {
+      let b = 0, cobalt = false;
+      // lambert-shaded sphere (light from upper-left)
+      const dx = (x - cx1) / R, dy = (y - cy1) / R, d2 = dx * dx + dy * dy;
+      if (d2 < 1) {
+        const z = Math.sqrt(1 - d2);
+        b = Math.max(0, (-dx * 0.55 - dy * 0.55 + z * 0.62)) * 0.95 + 0.06;
+      }
+      // faceted hex, 3-tone quantized shading, cobalt
+      const u = (x - (hx - hr)) / (2 * hr), v = (y - (hy - hr)) / (2 * hr);
+      if (u >= 0 && u <= 1 && v >= 0 && v <= 1 && inPoly(HEX, u, v)) {
+        const tone = u + v < 0.85 ? 0.95 : (u > v ? 0.55 : 0.3);
+        if (tone > b) { b = tone; cobalt = true; }
+      }
+      if (b > 0.04) cells.push({ x, y, b, o: cobalt, vis: 0 });
+    }
+  }
+  buildField();
+  RESIZERS.push(() => { s.size(); buildField(); });
+  function frame() {
+    s.ctx.fillStyle = '#0b0b0f'; s.ctx.fillRect(0, 0, s.W, s.H);
+    const m = s.mouse;
+    for (const c of cells) {
+      const dx = c.x - m.x, dy = c.y - m.y, d2 = dx * dx + dy * dy;
+      if (d2 < TORCH * TORCH) {
+        const t = 1 - Math.sqrt(d2) / TORCH;
+        c.vis = Math.min(1, c.vis + t * t * 0.35);      // light up fast under the torch
+      }
+      c.vis *= 0.988;                                    // slow fade = the trace
+      if (c.vis < 0.02) continue;
+      const r = c.b * c.vis * (STEP * 0.34);
+      s.ctx.fillStyle = c.o ? COBALT : CREAM;
+      s.ctx.globalAlpha = Math.min(1, c.vis + 0.1);
+      s.ctx.beginPath(); s.ctx.arc(c.x, c.y, r, 0, Math.PI * 2); s.ctx.fill();
+    }
+    s.ctx.globalAlpha = 1;
+    if (!REDUCED) requestAnimationFrame(frame);
+  }
+  if (REDUCED) { cells.forEach(c => c.vis = 1); }        // reduced motion: show it all, once
+  frame();
+})();
+
+/* ============================================================
+   02 FLOW FIELD - dust drifts along a noise current,
+   the cursor stirs and drags the field
+   ============================================================ */
+(() => {
+  const s = setup('c2');
+  const N = Math.min(750, Math.floor(s.W * s.H / 900));
+  const pts = [];
+  for (let i = 0; i < N; i++)
+    pts.push({ x: Math.random() * s.W, y: Math.random() * s.H, vx: 0, vy: 0, o: Math.random() < 0.06 });
+  RESIZERS.push(() => { s.size(); s.ctx.fillStyle = PAPER; s.ctx.fillRect(0, 0, s.W, s.H); });
+  s.ctx.fillStyle = PAPER; s.ctx.fillRect(0, 0, s.W, s.H);
+  function frame(now) {
+    s.ctx.fillStyle = 'rgba(246,246,243,0.16)';          // translucent clear = trails
+    s.ctx.fillRect(0, 0, s.W, s.H);
+    const t = now * 0.00006, m = s.mouse, MR = 120;
+    for (const p of pts) {
+      const a = vnoise(p.x * 0.004 + t, p.y * 0.004) * Math.PI * 4;
+      p.vx += Math.cos(a) * 0.045; p.vy += Math.sin(a) * 0.045;
+      const dx = p.x - m.x, dy = p.y - m.y, d2 = dx * dx + dy * dy;
+      if (d2 < MR * MR) {                                // the stir: push + drag along cursor motion
+        const d = Math.sqrt(d2) || 1, f = (1 - d / MR);
+        p.vx += (dx / d) * f * 1.1 + m.vx * 0.05 * f;
+        p.vy += (dy / d) * f * 1.1 + m.vy * 0.05 * f;
+      }
+      p.vx *= 0.94; p.vy *= 0.94;
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < -4) p.x = s.W + 4; if (p.x > s.W + 4) p.x = -4;
+      if (p.y < -4) p.y = s.H + 4; if (p.y > s.H + 4) p.y = -4;
+      s.ctx.fillStyle = p.o ? COBALT : 'rgba(11,11,15,0.8)';
+      const sz = p.o ? 2.2 : 1.5;
+      s.ctx.fillRect(p.x, p.y, sz, sz);
+    }
+    if (!REDUCED) requestAnimationFrame(frame);
+  }
+  frame(0);
+})();
+
+/* ============================================================
+   03 AGENT CONSTELLATION - drifting nodes, links + cobalt
+   highlights wake up around the cursor
+   ============================================================ */
+(() => {
+  const s = setup('c3');
+  const N = Math.min(90, Math.floor(s.W / 12));
+  const nodes = [];
+  for (let i = 0; i < N; i++)
+    nodes.push({ x: Math.random() * s.W, y: Math.random() * s.H,
+      vx: (Math.random() - 0.5) * 0.22, vy: (Math.random() - 0.5) * 0.22,
+      r: 1.6 + Math.random() * 1.8 });
+  RESIZERS.push(() => s.size());
+  const LINK = 92, WAKE = 170;
+  function frame() {
+    s.ctx.fillStyle = '#0b0b0f'; s.ctx.fillRect(0, 0, s.W, s.H);
+    const m = s.mouse;
+    for (const n of nodes) {
+      n.x += n.vx; n.y += n.vy;
+      if (n.x < 0 || n.x > s.W) n.vx *= -1;
+      if (n.y < 0 || n.y > s.H) n.vy *= -1;
+      const dm = Math.hypot(n.x - m.x, n.y - m.y);
+      n.wake = Math.max(0, 1 - dm / WAKE);               // 0..1 nearness to cursor
+    }
+    // links: only meaningfully visible where the cursor is
+    for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) {
+      const a = nodes[i], b = nodes[j];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (d > LINK) continue;
+      const wake = Math.max(a.wake, b.wake);
+      const alpha = (1 - d / LINK) * (0.06 + wake * 0.55);
+      if (alpha < 0.03) continue;
+      s.ctx.strokeStyle = wake > 0.55 ? 'rgba(20,51,214,' + alpha + ')' : 'rgba(242,243,245,' + alpha + ')';
+      s.ctx.lineWidth = 1;
+      s.ctx.beginPath(); s.ctx.moveTo(a.x, a.y); s.ctx.lineTo(b.x, b.y); s.ctx.stroke();
+    }
+    for (const n of nodes) {
+      const hot = n.wake > 0.5;
+      s.ctx.fillStyle = hot ? COBALT : CREAM;
+      const r = n.r * (1 + n.wake * 0.9);
+      s.ctx.fillRect(n.x - r / 2, n.y - r / 2, r, r);    // square nodes, house pixel feel
+    }
+    if (!REDUCED) requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+/* ============================================================
+   04 ELASTIC GRID - perfect halftone grid, cursor bows it,
+   click sends a shockwave ring through it
+   ============================================================ */
+(() => {
+  const s = setup('c4');
+  const STEP = 17;
+  let dots = [];
+  const waves = [];
+  function build() {
+    dots = [];
+    for (let y = STEP / 2; y < s.H; y += STEP) for (let x = STEP / 2; x < s.W; x += STEP)
+      dots.push({ hx: x, hy: y, x, y, vx: 0, vy: 0 });
+  }
+  build();
+  RESIZERS.push(() => { s.size(); build(); });
+  s.cv.addEventListener('pointerdown', e => {
+    const r = s.cv.getBoundingClientRect();
+    waves.push({ x: e.clientX - r.left, y: e.clientY - r.top, r: 0 });
+  });
+  const MR = 95;
+  function frame() {
+    s.ctx.fillStyle = PAPER; s.ctx.fillRect(0, 0, s.W, s.H);
+    for (let w = waves.length - 1; w >= 0; w--) {
+      waves[w].r += 7.5;
+      if (waves[w].r > Math.max(s.W, s.H) * 1.2) waves.splice(w, 1);
+    }
+    const m = s.mouse;
+    for (const d of dots) {
+      d.vx += (d.hx - d.x) * 0.06; d.vy += (d.hy - d.y) * 0.06;   // stiff spring home
+      const dx = d.hx - m.x, dy = d.hy - m.y, d2 = dx * dx + dy * dy;
+      if (d2 < MR * MR) {
+        const dist = Math.sqrt(d2) || 1, f = (1 - dist / MR) * 2.6;
+        d.vx += (dx / dist) * f; d.vy += (dy / dist) * f;
+      }
+      for (const w of waves) {                                     // shockwave: a 26px-thick ring
+        const dw = Math.hypot(d.hx - w.x, d.hy - w.y) - w.r;
+        if (Math.abs(dw) < 26) {
+          const f = (1 - Math.abs(dw) / 26) * 3.4;
+          const dist = Math.hypot(d.hx - w.x, d.hy - w.y) || 1;
+          d.vx += ((d.hx - w.x) / dist) * f; d.vy += ((d.hy - w.y) / dist) * f;
+        }
+      }
+      d.vx *= 0.82; d.vy *= 0.82;
+      d.x += d.vx; d.y += d.vy;
+      const disp = Math.hypot(d.x - d.hx, d.y - d.hy);
+      const hot = disp > 7;
+      s.ctx.fillStyle = hot ? COBALT : 'rgba(11,11,15,0.85)';
+      const r = 1.7 + Math.min(2.2, disp * 0.12);                  // displaced dots swell
+      s.ctx.beginPath(); s.ctx.arc(d.x, d.y, r, 0, Math.PI * 2); s.ctx.fill();
+    }
+    if (!REDUCED) requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+/* ============================================================
+   05 SHAPE MORPH - one particle pool reforms between brand
+   shapes; same spring + mouse-fling physics as particle text
+   ============================================================ */
+(() => {
+  const s = setup('c5');
+  const SHAPES = ['hex', 'bars', 'arrow', 'nugget'];
+  let particles = [], idx = 0, lastSwitch = performance.now();
+  const CYCLE = 4200;
+
+  function drawShape(c, w, h, name) {                    // paint the target into a buffer
+    c.fillStyle = '#000'; c.fillRect(0, 0, w, h);
+    c.fillStyle = '#fff';
+    const cx = w / 2, cy = h / 2, R = Math.min(w, h) * 0.4;
+    if (name === 'hex') {
+      c.beginPath();
+      c.moveTo(cx - R * 0.1, cy - R * 0.95);
+      c.lineTo(cx + R * 0.75, cy - R * 0.7); c.lineTo(cx + R * 0.92, cy + R * 0.05);
+      c.lineTo(cx + R * 0.35, cy + R * 0.85); c.lineTo(cx - R * 0.68, cy + R * 0.68);
+      c.lineTo(cx - R * 0.92, cy - R * 0.25); c.closePath(); c.fill();
+    } else if (name === 'bars') {
+      const hs = [0.35, 0.6, 0.45, 0.85, 1.0];
+      const bw = R * 0.36, gap = R * 0.14, total = hs.length * bw + (hs.length - 1) * gap;
+      hs.forEach((v, i) => c.fillRect(cx - total / 2 + i * (bw + gap), cy + R * 0.9 - v * R * 1.7, bw, v * R * 1.7));
+    } else if (name === 'arrow') {
+      c.beginPath();
+      c.moveTo(cx - R * 1.05, cy + R * 0.55); c.lineTo(cx + R * 0.15, cy - R * 0.35);
+      c.lineTo(cx + R * 0.15, cy + R * 0.02);                       // shaft bend
+      c.lineTo(cx - R * 0.9, cy + R * 0.9); c.closePath(); c.fill();
+      c.beginPath();                                                // head
+      c.moveTo(cx + R * 0.05, cy - R * 0.75); c.lineTo(cx + R * 0.95, cy - R * 0.75);
+      c.lineTo(cx + R * 0.95, cy + R * 0.15); c.closePath(); c.fill();
+    } else {                                                        // nugget: blobby circle
+      c.beginPath();
+      for (let a = 0; a <= Math.PI * 2 + 0.01; a += 0.08) {
+        const rr = R * (0.85 + 0.14 * Math.sin(a * 3 + 1.2) + 0.06 * Math.sin(a * 7));
+        const x = cx + Math.cos(a) * rr, y = cy + Math.sin(a) * rr * 0.88;
+        a === 0 ? c.moveTo(x, y) : c.lineTo(x, y);
+      }
+      c.closePath(); c.fill();
+    }
+  }
+
+  function sampleShape(name) {
+    const off = document.createElement('canvas');
+    const sc = 0.5;
+    off.width = Math.max(2, s.W * sc); off.height = Math.max(2, s.H * sc);
+    const c = off.getContext('2d');
+    drawShape(c, off.width, off.height, name);
+    const data = c.getImageData(0, 0, off.width, off.height).data;
+    const pts = [];
+    for (let y = 0; y < off.height; y += 2) for (let x = 0; x < off.width; x += 2)
+      if (data[(y * off.width + x) * 4] > 128) pts.push({ x: x / sc, y: y / sc });
+    return pts;
+  }
+
+  function build(name) {
+    const pts = sampleShape(name);
+    const target = Math.min(pts.length, 2600);
+    for (let i = pts.length - 1; i > 0; i--) { const j = (Math.random() * (i + 1)) | 0; [pts[i], pts[j]] = [pts[j], pts[i]]; }
+    const chosen = pts.slice(0, target);
+    while (particles.length < chosen.length)
+      particles.push({ x: Math.random() * s.W, y: Math.random() * s.H, vx: 0, vy: 0, tx: 0, ty: 0,
+        size: Math.random() < 0.08 ? 2.6 : 1.5, o: Math.random() < 0.09 });
+    particles.length = chosen.length;
+    for (let i = 0; i < particles.length; i++) { particles[i].tx = chosen[i].x; particles[i].ty = chosen[i].y; }
+  }
+  build(SHAPES[idx]);
+  RESIZERS.push(() => { s.size(); build(SHAPES[idx]); });
+  s.cv.addEventListener('pointerdown', () => {
+    idx = (idx + 1) % SHAPES.length; lastSwitch = performance.now(); build(SHAPES[idx]);
+  });
+
+  function frame(now) {
+    s.ctx.fillStyle = '#0b0b0f'; s.ctx.fillRect(0, 0, s.W, s.H);
+    if (now - lastSwitch > CYCLE) { lastSwitch = now; idx = (idx + 1) % SHAPES.length; build(SHAPES[idx]); }
+    const m = s.mouse, MR = 110, t = now * 0.00045;
+    for (const p of particles) {
+      p.vx += (p.tx - p.x) * 0.012 + Math.sin(t + p.ty * 0.05) * 0.012;
+      p.vy += (p.ty - p.y) * 0.012 + Math.cos(t + p.tx * 0.05) * 0.012;
+      const dx = p.x - m.x, dy = p.y - m.y, d2 = dx * dx + dy * dy;
+      if (d2 < MR * MR) {
+        const d = Math.sqrt(d2) || 1, f = (1 - d / MR) * 3.2;
+        p.vx += (dx / d) * f + m.vx * 0.06;
+        p.vy += (dy / d) * f + m.vy * 0.06;
+      }
+      p.vx *= 0.86; p.vy *= 0.86;
+      p.x += p.vx; p.y += p.vy;
+      s.ctx.fillStyle = p.o ? COBALT : CREAM;
+      s.ctx.fillRect(p.x, p.y, p.size, p.size);
+    }
+    if (!REDUCED) requestAnimationFrame(frame);
+  }
+  frame(performance.now());
+})();
+</script>
+</body>
+</html>

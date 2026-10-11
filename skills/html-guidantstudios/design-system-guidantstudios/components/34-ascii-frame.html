@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASCII frame card - /design-system-guidantstudios components</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<style>
+:root, html[data-theme="light"] {
+  --bg:#f6f6f3; --surface:#ffffff; --surface-2:#ececea; --line:#d7d8dc;
+  --text:#0b0b0f; --muted:#5d6069; --accent:#1433d6; --on-accent:#ffffff; --slab:#0b0b0f;
+  --cobalt:#1433d6; --on-cobalt:#ffffff; --ink:#0b0b0f; color-scheme:light;
+}
+html[data-theme="dark"] {
+  --bg:#0b0b0f; --surface:#15161b; --surface-2:#1e2026; --line:#2a2c33;
+  --text:#f2f3f5; --muted:#9a9ea8; --accent:#4466ff; --on-accent:#ffffff; --slab:#2a2c33; color-scheme:dark;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font:400 16px/1.6 'Archivo',system-ui,sans-serif; -webkit-font-smoothing:antialiased;
+  transition:background .25s,color .25s; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:72px 28px; }
+::selection { background:var(--accent); color:var(--on-accent); }
+.stage { width:100%; max-width:960px; }
+.kicker { font-stretch:125%; font-weight:600; text-transform:uppercase; font-size:11px; letter-spacing:.18em; color:var(--muted); display:block; margin-bottom:12px; }
+.mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.doto { font-family:'Doto',monospace; font-weight:900; color:var(--accent); margin:0 .18em; }
+.btn { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:14px 24px; border-radius:4px;
+  font:600 13px/1 'Archivo',sans-serif; font-stretch:125%; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; cursor:pointer;
+  background:var(--surface); color:var(--text); border:2px solid var(--text); transition:transform .15s ease, box-shadow .15s ease; }
+html[data-theme="dark"] .btn { border-color:var(--line); }
+.btn:hover { transform:translate(-2px,-2px); box-shadow:4px 4px 0 var(--slab); }
+.btn:active { transform:translate(1px,1px); box-shadow:none; transition-duration:.06s; }
+.btn-primary { background:var(--accent); border-color:var(--accent) !important; color:var(--on-accent); }
+.btn .arr { transition:transform .15s ease; } .btn:hover .arr { transform:translateX(4px); }
+.ascii { font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0; white-space:pre; color:var(--text); margin:0; }
+.ascii .ascii-hot { color:var(--accent); font-weight:400; }
+.ascii-rule { font:400 12px/1 'JetBrains Mono',monospace; color:var(--muted); white-space:nowrap; overflow:hidden; width:0; min-width:100%; }
+#themeToggle { position:fixed; top:16px; right:16px; z-index:100; width:40px; height:40px; border:2px solid var(--text); border-radius:4px;
+  background:var(--surface); color:var(--text); cursor:pointer; font:500 16px/1 'JetBrains Mono',monospace; }
+
+.row { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:32px; align-items:start; }
+.frame { font:400 13px/1.25 'JetBrains Mono',monospace; white-space:pre; color:var(--text); }
+.frame .hl { color:var(--accent); }
+.agentline { display:flex; gap:16px; align-items:flex-end; margin-top:16px; }
+.agent-pre { font:400 5px/1 'JetBrains Mono',monospace; white-space:pre; color:var(--text); }
+.agent-pre.lead { color:var(--accent); }
+.btn-ascii { font:500 13px/1 'JetBrains Mono',monospace; background:none; border:none; color:var(--text); cursor:pointer; padding:12px 0; }
+.btn-ascii .br { transition:color .15s; } .btn-ascii:hover .br { color:var(--accent); }
+.bar { font:400 13px/1 'JetBrains Mono',monospace; }
+.bar .on { color:var(--accent); }
+
+</style>
+</head>
+<body>
+<button id="themeToggle" aria-label="Toggle dark / light mode">◐</button>
+<div class="stage">
+<div class="row">
+  <div>
+    <span class="kicker">ascii frame card</span>
+    <pre class="frame" id="f1"></pre>
+    <div style="margin-top:16px;display:flex;gap:24px;align-items:center">
+      <button class="btn-ascii" data-ascii-scramble="hover"><span class="br">[</span> run agent <span class="br">]</span></button>
+      <span class="bar"><span class="on">██████████</span>······ 62%</span>
+    </div>
+  </div>
+  <div>
+    <span class="kicker">agent lineup · ascii · A1 leads</span>
+    <div class="agentline">
+      <pre class="agent-pre lead" data-ascii-agent="a1"></pre><pre class="agent-pre" data-ascii-agent="a2"></pre><pre class="agent-pre" data-ascii-agent="a3"></pre>
+      <pre class="agent-pre" data-ascii-agent="a4"></pre><pre class="agent-pre" data-ascii-agent="a5"></pre><pre class="agent-pre" data-ascii-agent="a6"></pre>
+    </div>
+    <div class="ascii-rule" data-ascii-rule="+-" style="margin:24px 0"></div>
+    <pre class="frame" id="f2"></pre>
+  </div>
+</div>
+</div>
+<script>
+(function () {
+  const root = document.documentElement;
+  const apply = t => { root.setAttribute('data-theme', t); root.style.colorScheme = t; if (window.gsRedraw) window.gsRedraw(); };
+  let saved = null; try { saved = localStorage.getItem('gs-theme'); } catch (e) {}
+  apply(new URLSearchParams(location.search).get('theme') || saved || 'light');
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('gs-theme', next); } catch (e) {}
+    apply(next);
+  });
+  window.addEventListener('message', e => { if (e.data && e.data.gsTheme) apply(e.data.gsTheme); });
+})();
+</script>
+<script src="../assets/ascii/gs-ascii.js"></script>
+<script>
+document.getElementById('f1').textContent = GSAscii.box(['agent    A1 · lead', 'task     hero visual, drop 01', 'status   rendering', 'elapsed  00:01:42'], { style: 'single', title: 'run 0042' });
+document.getElementById('f2').textContent = GSAscii.box(['brief    →  approved', 'design   →  in review', 'motion   →  queued'], { style: 'double', title: 'pipeline' });
+</script>
+</body>
+</html>

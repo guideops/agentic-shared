@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TITLE</title>
+<meta name="theme-color" content="#1433d6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231433d6'/%3E%3Cpath d='M17 11h6v6h-6zM23 11h6v6h-6zM29 11h6v6h-6zM35 11h6v6h-6zM41 11h6v6h-6zM11 17h6v6h-6zM11 23h6v6h-6zM11 29h6v6h-6zM29 29h6v6h-6zM35 29h6v6h-6zM41 29h6v6h-6zM47 29h6v6h-6zM11 35h6v6h-6zM47 35h6v6h-6zM11 41h6v6h-6zM47 41h6v6h-6zM17 47h6v6h-6zM23 47h6v6h-6zM29 47h6v6h-6zM35 47h6v6h-6zM41 47h6v6h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<style>
+/* ===== design-system-guidantstudios foundation - do not edit tokens per build ===== */
+:root, html[data-theme="light"] {
+  --bg:#f6f6f3; --surface:#ffffff; --surface-2:#ececea; --line:#d7d8dc;
+  --text:#0b0b0f; --muted:#5d6069; --accent:#1433d6; --on-accent:#ffffff; --slab:#0b0b0f;
+  --cobalt:#1433d6; --on-cobalt:#ffffff; --ink:#0b0b0f;
+  --silver-hi:#f2f4f7; --silver:#c5cad2; --silver-lo:#8a909a;
+  --card-border:2px solid var(--text);
+  color-scheme:light;
+}
+html[data-theme="dark"] {
+  --bg:#0b0b0f; --surface:#15161b; --surface-2:#1e2026; --line:#2a2c33;
+  --text:#f2f3f5; --muted:#9a9ea8; --accent:#4466ff; --on-accent:#ffffff; --slab:#2a2c33;
+  --card-border:1px solid var(--line);
+  color-scheme:dark;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font:400 16px/1.6 'Archivo',system-ui,sans-serif; -webkit-font-smoothing:antialiased; transition:background .25s, color .25s; }
+::selection { background:var(--accent); color:var(--on-accent); }
+.wrap { max-width:1200px; margin:0 auto; padding:0 32px; }
+section { padding:96px 0; }
+h1 { font-weight:700; font-size:clamp(44px,7vw,96px); letter-spacing:-.04em; line-height:.95; }
+h2 { font-weight:700; font-size:clamp(30px,4vw,48px); letter-spacing:-.03em; line-height:1.02; margin-bottom:16px; }
+h3 { font-weight:600; font-size:20px; letter-spacing:-.01em; line-height:1.3; }
+p { max-width:68ch; }
+.lead { font-size:19px; line-height:1.55; color:var(--muted); }
+.kicker, .xp { font-stretch:125%; font-weight:600; text-transform:uppercase; }
+.kicker { font-size:11px; letter-spacing:.18em; color:var(--muted); margin-bottom:12px; display:block; }
+.marquee { font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:clamp(56px,10vw,160px); letter-spacing:-.01em; line-height:.9; }
+.doto { font-family:'Doto',monospace; font-weight:900; color:var(--accent); margin:0 .18em; }
+.stat { font-family:'Doto',monospace; font-weight:900; font-size:56px; letter-spacing:1px; line-height:1; }
+.mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.wordmark { font-weight:700; letter-spacing:-.04em; text-transform:lowercase; color:var(--accent); }
+.btn { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:14px 24px; border-radius:4px;
+  font:600 13px/1 'Archivo',sans-serif; font-stretch:125%; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; cursor:pointer;
+  background:var(--surface); color:var(--text); border:2px solid var(--text); transition:transform .15s ease, box-shadow .15s ease; }
+html[data-theme="dark"] .btn { border-color:var(--line); }
+.btn:hover { transform:translate(-2px,-2px); box-shadow:4px 4px 0 var(--slab); }
+.btn:active { transform:translate(1px,1px); box-shadow:none; transition-duration:.06s; }
+.btn:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.btn-primary { background:var(--accent); border-color:var(--accent) !important; color:var(--on-accent); }
+.btn-ghost { background:none; border-color:transparent !important; padding:14px 4px; }
+.btn-ghost:hover { transform:none; box-shadow:none; color:var(--accent); }
+.btn .arr { transition:transform .15s ease; } .btn:hover .arr { transform:translateX(4px); }
+.btn-ascii { font:500 13px/1 'JetBrains Mono',monospace; background:none; border:none; color:var(--text); cursor:pointer; padding:12px 0; }
+.btn-ascii .br { transition:color .15s; } .btn-ascii:hover .br { color:var(--accent); }
+.card { background:var(--surface); border:var(--card-border); border-radius:4px; padding:24px;
+  box-shadow:6px 6px 0 var(--slab); transition:transform .18s ease, box-shadow .18s ease; }
+a.card, .card.clickable { cursor:pointer; text-decoration:none; color:inherit; display:block; }
+a.card:hover, .card.clickable:hover { transform:translate(-2px,-4px); box-shadow:9px 9px 0 var(--slab); }
+.card.hot { border-color:var(--accent); box-shadow:6px 6px 0 var(--accent); }
+.card.hot:hover { box-shadow:9px 9px 0 var(--accent); }
+.card.hot .card-title { color:var(--accent); }
+.card-title { font-size:21px; font-weight:600; letter-spacing:-.01em; margin-bottom:8px; }
+.card-body { font-size:14px; line-height:1.55; color:var(--muted); }
+.tag { display:inline-block; border:1.5px solid currentColor; border-radius:2px; padding:4px 8px;
+  font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:.04em; text-transform:uppercase; }
+.field { display:grid; gap:8px; }
+.field label { font-stretch:125%; font-weight:600; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
+.field input, .field textarea { font:400 16px/1.4 'Archivo',sans-serif; color:var(--text); background:var(--surface);
+  border:2px solid var(--text); border-radius:4px; padding:12px 14px; outline:none;
+  box-shadow:4px 4px 0 transparent; transition:box-shadow .3s, border-color .3s; }
+html[data-theme="dark"] .field input, html[data-theme="dark"] .field textarea { border:1px solid var(--line); }
+.field input:focus, .field textarea:focus { border-color:var(--accent); box-shadow:4px 4px 0 var(--accent); }
+.field input::placeholder, .field textarea::placeholder { color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; }
+.panel-cobalt { background:var(--cobalt); color:var(--on-cobalt); --text:#ffffff; --muted:rgba(255,255,255,.78); --accent:#ffffff; --on-accent:#1433d6; --slab:#0b0b0f; }
+.panel-ink { background:var(--ink); color:#f2f3f5; --text:#f2f3f5; --muted:#9a9ea8; --accent:#4466ff; --on-accent:#ffffff; --surface:#15161b; --line:#2a2c33; --slab:#2a2c33; }
+.ascii { font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0; white-space:pre; color:var(--text); margin:0; }
+.ascii .ascii-hot { color:var(--accent); font-weight:400; }
+.ascii-rule { font:400 12px/1 'JetBrains Mono',monospace; color:var(--muted); white-space:nowrap; overflow:hidden; width:0; min-width:100%; }
+.foil { position:relative; overflow:hidden; color:#0b0b0f;
+  background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.6) 46%,transparent 62%) -160% 0/250% 100% no-repeat,
+    repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 1px,rgba(0,0,0,.035) 1px 3px),
+    linear-gradient(180deg,#f2f4f7 0%,#c5cad2 42%,#8a909a 64%,#dfe3e8 100%);
+  transition:background-position .9s ease; }
+.foil:hover { background-position:160% 0,0 0,0 0; }
+.foil.crumple::after { content:""; position:absolute; inset:0; pointer-events:none; mix-blend-mode:multiply; opacity:.5;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.016' numOctaves='5' seed='7'/%3E%3CfeDiffuseLighting lighting-color='%23fff' surfaceScale='6' diffuseConstant='1.15'%3E%3CfeDistantLight azimuth='235' elevation='40'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E") center/cover; }
+.foil > * { position:relative; z-index:1; }
+/* Studio top bar: Pixel G + lowercase wordmark + mono meta + theme toggle (every page) */
+.studio-bar { position:sticky; top:0; z-index:60; background:var(--bg); border-bottom:1px solid var(--line); }
+.studio-bar .in { max-width:1200px; margin:0 auto; padding:0 32px; height:64px; display:flex; align-items:center; gap:12px; }
+.studio-bar .mark { width:24px; height:24px; color:var(--accent); flex:none; }
+.studio-bar .wordmark { font-size:18px; }
+.studio-bar .meta { margin-left:auto; font:500 12px/1 'JetBrains Mono',monospace; color:var(--muted); }
+#themeToggle { width:40px; height:40px; border-radius:4px; border:2px solid var(--text); background:var(--surface); color:var(--text);
+  cursor:pointer; font:500 16px/1 'JetBrains Mono',monospace; flex:none; }
+html[data-theme="dark"] #themeToggle { border-color:var(--line); }
+@media (max-width:640px){ .studio-bar .in{padding:0 20px;} .studio-bar .meta{display:none;} #themeToggle{margin-left:auto;} }
+/* Hero: text left, ASCII field right (the signature moment) */
+.hero { display:grid; grid-template-columns:minmax(0,1.2fr) auto; gap:48px; align-items:center; }
+.hero .ascii { font-size:8px; justify-self:end; }
+@media (max-width:880px){ .hero{grid-template-columns:1fr;} .hero .ascii{justify-self:start; font-size:6px;} }
+/* TL;DR carries the lead agent */
+.tldr.agent { display:grid; grid-template-columns:auto 1fr; gap:24px; align-items:center; }
+.agent-pre { font:400 6px/1 'JetBrains Mono',monospace; white-space:pre; color:var(--text); }
+.agent-pre.lead { color:var(--accent); }
+/* Agent sprites (SVG) bob - the only thing that bobs */
+.ag { fill:var(--text); } .ag.lead { fill:var(--accent); }
+.ag-hop { animation:gsHop 1.2s ease-in-out infinite; }
+.ag-shadow { fill:var(--text); animation:gsSquash 1.2s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+@keyframes gsHop { 0%,100%{transform:translateY(0)} 15%{transform:translateY(-.6px)} 30%{transform:translateY(0)} }
+@keyframes gsSquash { 0%,100%{opacity:.12;transform:scaleX(1)} 15%{opacity:.06;transform:scaleX(.7)} 30%{opacity:.12;transform:scaleX(1)} }
+canvas.icon { image-rendering:pixelated; width:40px; height:40px; }
+/* Section divider = ASCII rule */
+.page > .ascii-rule { margin:0; }
+.page > section { border-bottom:none; }
+/* Footer lockup */
+.studio-foot { display:flex; align-items:center; gap:24px; flex-wrap:wrap; padding:48px 0 0; margin-top:48px; border-top:1px solid var(--line); color:var(--accent); }
+.studio-foot .oval { display:inline-block; border:1.5px solid currentColor; border-radius:50%; padding:6px 18px; font-size:16px; }
+.studio-foot .mono { font-size:12px; color:var(--muted); }
+@media (max-width:640px){ .wrap{padding:0 20px;} section{padding:64px 0;} }
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important;} }
+/* ===== end foundation ===== */
+
+/* ===== html-skill patterns (design-system-guidantstudios tokens only) ===== */
+.page { max-width:1200px; margin:0 auto; padding:48px 32px 64px; }
+.page > section { padding:48px 0; border-bottom:1px solid var(--line); }
+.page > section:last-child { border-bottom:none; }
+/* TL;DR / verdict card */
+.tldr { background:var(--surface); border:var(--card-border); border-radius:4px; padding:24px; box-shadow:6px 6px 0 var(--slab); margin-top:32px; }
+.tldr .kicker { margin-bottom:8px; }
+/* Doc layout with sticky TOC (L1 > 1500 words) */
+.doc { display:grid; grid-template-columns:220px minmax(0,1fr); gap:48px; align-items:start; }
+.toc { position:sticky; top:24px; display:grid; gap:8px; font:500 13px/1.4 'JetBrains Mono',monospace; }
+.toc a { color:var(--muted); text-decoration:none; padding-left:12px; border-left:2px solid var(--line); }
+.toc a:hover, .toc a.active { color:var(--text); border-left-color:var(--accent); }
+@media (max-width:880px){ .doc{grid-template-columns:1fr;} .toc{position:static;} }
+/* Callout + pull-quote */
+.callout { background:var(--surface-2); border-left:2px solid var(--text); border-radius:4px; padding:16px 20px; margin:24px 0; }
+.callout.hot { border-left-color:var(--accent); }
+.pull { font-size:28px; font-weight:700; letter-spacing:-.03em; line-height:1.15; padding:24px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin:32px 0; max-width:none; }
+/* Tables */
+.tbl-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:15px; }
+th, td { text-align:left; padding:12px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { font:500 11px/1.2 'JetBrains Mono',monospace; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
+td.num, th.num { text-align:right; font-family:'JetBrains Mono',monospace; font-variant-numeric:tabular-nums; }
+tr.hot td { background:color-mix(in srgb, var(--accent) 10%, transparent); }
+/* Code */
+code { font:400 .88em 'JetBrains Mono',ui-monospace,monospace; background:var(--surface-2); border-radius:2px; padding:2px 6px; }
+pre { background:var(--surface-2); border:1px solid var(--line); border-radius:4px; padding:16px 20px; overflow-x:auto; margin:16px 0; }
+pre code { background:none; padding:0; font-size:13.5px; line-height:1.6; }
+pre.ascii, pre.agent-pre { background:none; border:none; border-radius:0; padding:0; margin:0; overflow:visible; }
+/* Inline SVG diagrams/charts: theme via CSS classes, not var() in attributes */
+.fig svg { width:100%; height:auto; display:block; }
+.fig .s-line { stroke:var(--text); fill:none; stroke-width:2; }
+.fig .s-muted { stroke:var(--muted); fill:none; stroke-width:1.5; }
+.fig .s-acc { stroke:var(--accent); fill:none; stroke-width:2; }
+.fig .f-surface { fill:var(--surface); } .fig .f-text { fill:var(--text); } .fig .f-muted { fill:var(--muted); } .fig .f-acc { fill:var(--accent); }
+.fig text { font-family:'Archivo',sans-serif; font-size:13px; fill:var(--text); }
+.fig text.mono { font-family:'JetBrains Mono',monospace; font-size:12px; }
+.fig figcaption { font-size:14px; color:var(--muted); margin-top:12px; }
+/* L3 pick cards: .pick toggles .hot (one per group) */
+.pick { cursor:pointer; }
+.pick:hover { transform:translate(-2px,-4px); box-shadow:9px 9px 0 var(--slab); }
+.pick.hot:hover { box-shadow:9px 9px 0 var(--accent); }
+/* L3 per-item comment box */
+.comment { width:100%; min-height:72px; margin-top:12px; resize:vertical; font:400 15px/1.5 'Archivo',sans-serif; color:var(--text);
+  background:var(--surface-2); border:1px solid var(--line); border-radius:4px; padding:12px 14px; outline:none;
+  box-shadow:4px 4px 0 transparent; transition:box-shadow .3s, border-color .3s; }
+.comment:focus { border-color:var(--accent); box-shadow:4px 4px 0 var(--accent); }
+.comment::placeholder { color:var(--muted); }
+/* L3 tri-state status: blank -> approve -> reject (data-state on the button) */
+.tri { width:44px; height:44px; border-radius:4px; border:2px solid var(--text); background:var(--surface); color:var(--text); font:700 16px/1 'JetBrains Mono',monospace; cursor:pointer; }
+html[data-theme="dark"] .tri { border-color:var(--line); }
+.tri[data-state="approve"] { background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
+.tri[data-state="reject"] { color:var(--muted); text-decoration:line-through; }
+/* Range / select controls */
+input[type=range] { width:100%; accent-color:var(--accent); }
+select { font:400 15px 'Archivo',sans-serif; color:var(--text); background:var(--surface); border:2px solid var(--text); border-radius:4px; padding:10px 12px; }
+html[data-theme="dark"] select { border:1px solid var(--line); }
+/* L4 tool shell */
+.toolbar { position:sticky; top:0; z-index:50; display:flex; gap:12px; align-items:center; padding:12px 24px; background:var(--bg); border-bottom:1px solid var(--line); }
+.toolbar .spacer { flex:1; }
+.shell { display:grid; grid-template-columns:240px minmax(0,1fr) 280px; min-height:calc(100vh - 69px); }
+.shell > aside, .shell > .inspector { background:var(--surface); border-right:1px solid var(--line); padding:24px; }
+.shell > .inspector { border-right:none; border-left:1px solid var(--line); }
+.shell > main { padding:24px; }
+@media (max-width:880px){ .shell{grid-template-columns:1fr;} }
+.warn { font-size:14px; color:var(--text); border-left:2px solid var(--accent); padding-left:12px; }
+.warn::before { content:"[!] "; font:700 12px 'JetBrains Mono',monospace; color:var(--accent); }
+/* Export bar - the contract at L3+ */
+.export { display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-top:48px; padding-top:24px; border-top:1px solid var(--line); }
+.btn.copied { background:var(--surface); color:var(--text); border-color:var(--accent) !important; }
+.summary { font:500 13px/1.4 'JetBrains Mono',monospace; color:var(--muted); }
+/* Slide deck (L2) */
+.deck { height:100vh; overflow-y:auto; scroll-snap-type:y mandatory; }
+.slide { min-height:100vh; scroll-snap-align:start; display:flex; flex-direction:column; justify-content:center; padding:64px 32px; border-bottom:1px solid var(--line); }
+/* Print = light tokens, no shadows, toggle, export or animation */
+@media print {
+  :root, html[data-theme] { --bg:#ffffff; --surface:#ffffff; --surface-2:#f6f6f3; --line:#d7d8dc; --text:#0b0b0f; --muted:#5d6069; --accent:#1433d6; --on-accent:#ffffff; --slab:transparent; --card-border:1px solid #d7d8dc; color-scheme:light; }
+  #themeToggle, .export, .toolbar, canvas[data-ascii-bg] { display:none !important; }
+  .studio-bar { position:static; }
+  .card, .tldr { box-shadow:none !important; break-inside:avoid; }
+}
+/* ===== build-specific styles below ===== */
+</style>
+</head>
+<body>
+<header class="studio-bar"><div class="in">
+  <svg class="mark" viewBox="0 0 56 56" aria-label="Guidant Studios"><path d="M8 0h8v8h-8zM16 0h8v8h-8zM24 0h8v8h-8zM32 0h8v8h-8zM40 0h8v8h-8zM0 8h8v8h-8zM0 16h8v8h-8zM0 24h8v8h-8zM24 24h8v8h-8zM32 24h8v8h-8zM40 24h8v8h-8zM48 24h8v8h-8zM0 32h8v8h-8zM48 32h8v8h-8zM0 40h8v8h-8zM48 40h8v8h-8zM8 48h8v8h-8zM16 48h8v8h-8zM24 48h8v8h-8zM32 48h8v8h-8zM40 48h8v8h-8z" fill="currentColor"/></svg>
+  <span class="wordmark">guidant studios</span>
+  <span class="meta">DOC TYPE · YYYY-MM-DD</span>
+  <button id="themeToggle" aria-label="Toggle dark / light mode">◐</button>
+</div></header>
+<div class="page">
+  <header class="hero">
+    <div>
+      <span class="kicker mono" data-ascii-scramble>level 1 · static doc</span>
+      <h1>title with <span class="doto">one</span> word</h1>
+      <p class="lead" style="margin-top:16px">One-line framing in muted.</p>
+    </div>
+    <!-- Signature: ASCII twin of the concept. Swap the recipe in heroArt(). Remove for metal-led pages. -->
+    <pre class="ascii" id="heroAscii" aria-hidden="true"></pre>
+  </header>
+  <div class="tldr agent">
+    <pre class="agent-pre lead" data-ascii-agent="a1" aria-hidden="true"></pre>
+    <div><span class="kicker">TL;DR</span><p>The verdict in two sentences.</p></div>
+  </div>
+
+  <div class="ascii-rule" data-ascii-rule="+-" style="margin-top:48px"></div>
+  <section id="s1">
+    <span class="kicker">01</span>
+    <h2>section</h2>
+    <p>Body copy.</p>
+  </section>
+
+  <!-- L3+: end with the export bar
+  <div class="export"><button id="copyBtn" class="btn btn-primary">Copy as markdown</button><span class="summary" id="summary"></span></div>
+  -->
+
+  <footer class="studio-foot">
+    <span class="oval wordmark">guidant studios</span>
+    <span class="mono">/html-guidantstudios · level 1</span>
+  </footer>
+</div>
+<script>
+/* Theme toggle (light default). Redraw canvases / ASCII fields via window.gsRedraw if any. */
+(function(){
+  const root=document.documentElement;
+  const apply=t=>{ root.setAttribute('data-theme',t); root.style.colorScheme=t; if(window.gsRedraw) window.gsRedraw(); };
+  let saved=null; try{ saved=localStorage.getItem('gs-theme'); }catch(e){}
+  apply(new URLSearchParams(location.search).get('theme')||saved||'light');
+  document.getElementById('themeToggle').addEventListener('click',()=>{
+    const next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    try{ localStorage.setItem('gs-theme',next); }catch(e){}
+    apply(next);
+  });
+})();
+/* L3+ export contract: define buildExport() to return the string. */
+(function(){
+  const btn=document.getElementById('copyBtn'); if(!btn) return;
+  const label=btn.textContent;
+  btn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(buildExport()).then(()=>{
+      btn.textContent='✓ Copied'; btn.classList.add('copied');
+      setTimeout(()=>{ btn.textContent=label; btn.classList.remove('copied'); },2000);
+    });
+  });
+})();
+</script>
+<!-- ASCII (always): replace this tag with the inlined contents of design-system-guidantstudios/assets/ascii/gs-ascii.js for single-file deliverables (~9 KB) -->
+<script src="../design-system-guidantstudios/assets/ascii/gs-ascii.js"></script>
+<script>
+/* Studio helpers - delete what the build doesn't use. */
+/* Hero ASCII field: lambert sphere + accent cap. Recipes: design-system-guidantstudios/references/ascii-lab.html */
+function heroArt(){
+  const el=document.getElementById('heroAscii'); if(!el||!window.GSAscii) return;
+  const L=[-.55,-.6,.58];
+  const sphere=(u,v)=>{ const x=(u-.5)/.44, y=(v-.5)/.44, d=x*x+y*y; if(d>1) return 0; const z=Math.sqrt(1-d); return Math.max(.06,x*L[0]+y*L[1]+z*L[2]); };
+  GSAscii.field(el,{ cols:56, rows:34, fn:sphere, fn2:(u,v)=>sphere(u,v)>.97?1:0 });
+}
+/* Agent sprite as bobbing SVG: agentSvg('a3', 6, false) -> markup. A1/lead uses the accent. */
+function agentSvg(key,cell,lead,i){
+  const d=GSAscii.AGENTS[key]||GSAscii.AGENTS.a1; let r='';
+  for(let y=0;y<8;y++) for(let x=0;x<4;x++) if(d[y][x]) r+=`<rect x="${x*cell}" y="${y*cell}" width="${cell}" height="${cell}"/><rect x="${(7-x)*cell}" y="${y*cell}" width="${cell}" height="${cell}"/>`;
+  const w=8*cell, dl=`animation-delay:${(i||0)*.2}s`;
+  return `<svg viewBox="0 0 ${w} ${w+6}" width="${w}" height="${w+6}" aria-label="${key.toUpperCase()}"><ellipse class="ag-shadow" cx="${w/2}" cy="${w+3}" rx="${w/3}" ry="2" style="${dl}"/><g class="ag ag-hop${lead?' lead':''}" shape-rendering="crispEdges" style="${dl}">${r}</g></svg>`;
+}
+/* Pixel icon on canvas: sprite('id', rows, 4.5) - '.' empty, 'k' = --text, 'o' = --accent */
+function sprite(id,rows,px){
+  const c=document.getElementById(id); if(!c) return; const cs=getComputedStyle(document.documentElement);
+  const pal={k:cs.getPropertyValue('--text').trim(), o:cs.getPropertyValue('--accent').trim()};
+  c.width=rows[0].length*px; c.height=rows.length*px; const x=c.getContext('2d'); x.clearRect(0,0,c.width,c.height);
+  rows.forEach((row,yy)=>[...row].forEach((k,xx)=>{ if(k!=='.'){ x.fillStyle=pal[k]||pal.k; x.fillRect(xx*px,yy*px,px,px); } }));
+}
+window.gsRedraw=()=>{ heroArt(); /* re-run sprite() calls here */ };
+(document.fonts?document.fonts.ready:Promise.resolve()).then(window.gsRedraw);
+</script>
+<!-- METAL (only if the page uses data-metal - max one element per view): inline design-system-guidantstudios/assets/metal/dsx-metal.js here -->
+</body>
+</html>
