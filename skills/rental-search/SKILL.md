@@ -84,7 +84,7 @@ refusal page can be read rather than guessed at.
 - Close to public transport, **walking** — within 10 minutes of a station, under 8 preferred
 - Close to amenities — within 12 minutes' walk of a major supermarket
 - **Above the 6th floor** — to avoid insects
-- **$650–780 per week**
+- **$650–800 per week**
 - Modern style, safe area
 - Available now
 - 1 bedroom or more; a study or second room is a bonus

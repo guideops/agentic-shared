@@ -1,0 +1,3602 @@
+[
+{
+"w": "ที่",
+"pb": "tîi",
+"rtgs": "thi",
+"ipa": "/tʰiː˥˩/",
+"pos": "prep,noun,classifier,pron,prefix,particle",
+"en": "at; to; on the site of; within; amidst; at the location of | for; during; at the time of | land; place; area; seat (booking and reservations); site; location",
+"rank": 1
+},
+{
+"w": "การ",
+"pb": "gaan",
+"rtgs": "kan",
+"ipa": "/kaːn˧/",
+"pos": "noun,prefix",
+"en": "work; matter; task; affair | prefixed to nouns to form noun derivatives, meaning “affairs of.; matters of .; -ery; -y” | prefixed to action verbs to form abstract nouns, meaning “act of .; -ing”",
+"rank": 2
+},
+{
+"w": "เป็น",
+"pb": "bpen",
+"rtgs": "pen",
+"ipa": "/pen˧/",
+"pos": "verb,adj,conj,adv",
+"en": "to be | to get; to have; to experience; to suffer | used at the end of an expression to indicate that the person concerned can or knows how to do the related action",
+"rank": 3
+},
+{
+"w": "ใน",
+"pb": "nai",
+"rtgs": "nai",
+"ipa": "/naj˧/",
+"pos": "prep,adj",
+"en": "in; inside; within; amidst; into | on; at; during | internal; interior; inner",
+"rank": 4
+},
+{
+"w": "ของ",
+"pb": "kɔ̌ɔng",
+"rtgs": "khong",
+"ipa": "/kʰɔːŋ˩˩˦/",
+"pos": "noun,prep",
+"en": "thing; item; article; stuff; matter | possession; belonging; property; someone or something that is owned or possessed | occult thing, magical thing; the magic or occult science itself",
+"rank": 5
+},
+{
+"w": "มี",
+"pb": "mii",
+"rtgs": "mi",
+"ipa": "/miː˧/",
+"pos": "verb,adj,noun,prep",
+"en": "to have; to own; to possess | to contain; to include; to consist of; to be composed of | to be; to exist; to come into existence; to happen; to occur; to take place",
+"rank": 6
+},
+{
+"w": "จะ",
+"pb": "jà",
+"rtgs": "cha",
+"ipa": "/t͡ɕaʔ˨˩/",
+"pos": "verb,adv,conj",
+"en": "used to indicate a future tense: will; would; to be to; to be about to; to be going to; etc. | almost; nearly | used to introduce alternatives: whether; either; etc.",
+"rank": 7
+},
+{
+"w": "และ",
+"pb": "lɛ́",
+"rtgs": "lae",
+"ipa": "/lɛʔ˦˥/",
+"pos": "conj",
+"en": "and",
+"rank": 8
+},
+{
+"w": "ไม่",
+"pb": "mâi",
+"rtgs": "mai",
+"ipa": "/maj˥˩/",
+"pos": "adv,conj,intj,noun",
+"en": "no; not | neither; nor | no",
+"rank": 9
+},
+{
+"w": "ได้",
+"pb": "dâai",
+"rtgs": "dai",
+"ipa": "/daːj˥˩/",
+"pos": "verb,intj",
+"en": "to get; to obtain; to receive | used before a verb to indicate that one has done or has an opportunity to do the action | used after a verb to express that the action can be or has been done",
+"rank": 10
+},
+{
+"w": "ให้",
+"pb": "hâi",
+"rtgs": "hai",
+"ipa": "/haj˥˩/",
+"pos": "verb,noun,prep",
+"en": "to give; to grant | to gratuitously give; to donate | to allow; to permit",
+"rank": 11
+},
+{
+"w": "ว่า",
+"pb": "wâa",
+"rtgs": "wa",
+"ipa": "/waː˥˩/",
+"pos": "verb,conj",
+"en": "to say, to speak, to tell; to utter, to pronounce | to instruct; to direct | to address; to deal (with); to handle; to administer; to manage",
+"rank": 12
+},
+{
+"w": "ไป",
+"pb": "bpai",
+"rtgs": "pai",
+"ipa": "/paj˧/",
+"pos": "verb,adv,intj",
+"en": "to go; to move (away from the speaker); to leave; to depart | used to indicate motion away from the speaker's direction | used to indicate motion that still continues or that continues up to a certain point of time",
+"rank": 13
+},
+{
+"w": "มา",
+"pb": "maa",
+"rtgs": "ma",
+"ipa": "/maː˧/",
+"pos": "verb,adv,noun",
+"en": "to move or come (towards the speaker's direction); to arrive | used to indicate motion towards the speaker's direction | used to indicate motion that still continues or that continues up to a certain point of time",
+"rank": 14
+},
+{
+"w": "ก็",
+"pb": "gɔ̂",
+"rtgs": "ko",
+"ipa": "/kɔʔ˥˩/",
+"pos": "conj,particle",
+"en": "used to indicate a consequence or result: so, thus, then, next, accordingly, etc. | also; as well | used just for linking words or for starting or emphasising an expression",
+"rank": 15
+},
+{
+"w": "ความ",
+"pb": "kwaam",
+"rtgs": "khwam",
+"ipa": "/kʰwaːm˧/",
+"pos": "noun,prefix",
+"en": "affair; matter | content; essence | legal case; legal matter; lawsuit",
+"rank": 17
+},
+{
+"w": "คน",
+"pb": "kon",
+"rtgs": "khon",
+"ipa": "/kʰon˧/",
+"pos": "noun,classifier,verb",
+"en": "person; people; human being (Classifiers: คน or หัว or ราย or นาย or ท่าน) | Classifier for most human beings. ⇒ all nouns using this classifier | to stir; to scramble; to mix",
+"rank": 18
+},
+{
+"w": "กับ",
+"pb": "gàp",
+"rtgs": "kap",
+"ipa": "/kap̚˨˩/",
+"pos": "noun,conj,adv,prep,classifier",
+"en": "trap; gin | trap | and; as well as",
+"rank": 19
+},
+{
+"w": "แล้ว",
+"pb": "lɛ́ɛo",
+"rtgs": "laeo",
+"ipa": "/lɛːw˦˥/",
+"pos": "verb,adj,adv",
+"en": "to end; to come to an end | to complete; to finish | Used at the end of a sentence to indicate completion of an action, or beginning of a new situation; Indicating an action completion",
+"rank": 20
+},
+{
+"w": "อยู่",
+"pb": "yùu",
+"rtgs": "yu",
+"ipa": "/juː˨˩/",
+"pos": "verb,adv",
+"en": "to be (at, in, on some place, some condition, etc.) | to dwell, to live, to reside; to remain, to stay | used to indicate that an action is being done or a condition is happening; still",
+"rank": 21
+},
+{
+"w": "หรือ",
+"pb": "rʉ̌ʉ",
+"rtgs": "rue",
+"ipa": "/rɯː˩˩˦/",
+"pos": "conj,particle",
+"en": "or | final interrogative particle on a yes-no question",
+"rank": 22
+},
+{
+"w": "จาก",
+"pb": "jàak",
+"rtgs": "chak",
+"ipa": "/t͡ɕaːk̚˨˩/",
+"pos": "noun,verb,prep",
+"en": "nipa, a palm tree of the species Nypa fruticans | to depart, to leave | from",
+"rank": 23
+},
+{
+"w": "กัน",
+"pb": "gan",
+"rtgs": "kan",
+"ipa": "/kan˧/",
+"pos": "adv,pron,verb,noun",
+"en": "together; jointly; altogether | each other; one another | to hinder; to prevent; to bar",
+"rank": 24
+},
+{
+"w": "นี้",
+"pb": "níi",
+"rtgs": "ni",
+"ipa": "/niː˦˥/",
+"pos": "det",
+"en": "this; these",
+"rank": 25
+},
+{
+"w": "แต่",
+"pb": "dtɛ̀ɛ",
+"rtgs": "tae",
+"ipa": "/tɛː˨˩/",
+"pos": "adv,prep,adj,conj",
+"en": "each and every (one of), every single (followed by a classifier) | from; since | only; just; nothing but",
+"rank": 26
+},
+{
+"w": "อย่าง",
+"pb": "yàang",
+"rtgs": "yang",
+"ipa": "/jaːŋ˨˩/",
+"pos": "noun,adj,prefix,classifier",
+"en": "variety | style; pattern | kind; sort; type",
+"rank": 27
+},
+{
+"w": "ต้อง",
+"pb": "dtɔ̂ng",
+"rtgs": "tong",
+"ipa": "/tɔŋ˥˩/",
+"pos": "verb",
+"en": "to touch; to come into contact (with); to hit | to be subject to; to be liable to; to be susceptible of; to be affected by | to be in accordance (with); to be in line (with); to agree (with); to be compatible (with); to meet",
+"rank": 28
+},
+{
+"w": "ด้วย",
+"pb": "dûai",
+"rtgs": "duai",
+"ipa": "/dua̯j˥˩/",
+"pos": "conj,adv,prep",
+"en": "because; as; since | also; as well; too | used at the end of an expression to indicate an appeal, request, or requirement",
+"rank": 29
+},
+{
+"w": "ขึ้น",
+"pb": "kʉ̂n",
+"rtgs": "khuen",
+"ipa": "/kʰɯn˥˩/",
+"pos": "verb,adv,adj,noun",
+"en": "to wax | to move or go up, upwards, frontwards, northwards, or eastwards | to come above the horizon, as a heavenly body",
+"rank": 30
+},
+{
+"w": "เขา",
+"pb": "kǎo",
+"rtgs": "khao",
+"ipa": "/kʰaw˩˩˦/",
+"pos": "pron,noun",
+"en": "he; she; they | I; oneself | one who is not on someone's part or side or is not a member of someone's group, entity, etc.",
+"rank": 31
+},
+{
+"w": "นั้น",
+"pb": "nán",
+"rtgs": "nan",
+"ipa": "/nan˦˥/",
+"pos": "det",
+"en": "that; those",
+"rank": 32
+},
+{
+"w": "ผู้",
+"pb": "pûu",
+"rtgs": "phu",
+"ipa": "/pʰuː˥˩/",
+"pos": "noun,adj,pron",
+"en": "person; people | male | those; those who",
+"rank": 33
+},
+{
+"w": "ซึ่ง",
+"pb": "sʉ̂ng",
+"rtgs": "sueng",
+"ipa": "/sɯŋ˥˩/",
+"pos": "prep,pron",
+"en": "placed before a noun, noun phrase, or noun substitute to indicate that it serves as an object. | used to represent a specified or implied antecedent, or to indicate anyone or anything previously mentioned or supposed to be understood: that, which, who, whom, etc.",
+"rank": 34
+},
+{
+"w": "ตาม",
+"pb": "dtaam",
+"rtgs": "tam",
+"ipa": "/taːm˧/",
+"pos": "verb,conj,adv,prep",
+"en": "to follow; to come after; to go after | to pursue; to chase | to chase up",
+"rank": 35
+},
+{
+"w": "มาก",
+"pb": "mâak",
+"rtgs": "mak",
+"ipa": "/maːk̚˥˩/",
+"pos": "adv",
+"en": "a lot; much; many; very",
+"rank": 36
+},
+{
+"w": "โดย",
+"pb": "dooi",
+"rtgs": "doi",
+"ipa": "/doːj˧/",
+"pos": "prep,noun",
+"en": "by; with; by means of | water",
+"rank": 37
+},
+{
+"w": "ใช้",
+"pb": "chái",
+"rtgs": "chai",
+"ipa": "/t͡ɕʰaj˦˥/",
+"pos": "verb",
+"en": "to use; to employ | to put to use; to utilise | to apply (a law, rule, etc)",
+"rank": 38
+},
+{
+"w": "ทาง",
+"pb": "taang",
+"rtgs": "thang",
+"ipa": "/tʰaːŋ˧/",
+"pos": "noun,classifier,prep",
+"en": "way, route, or course for travel | opportunity; chance | section; part; side",
+"rank": 39
+},
+{
+"w": "เรื่อง",
+"pb": "rʉ̂ʉang",
+"rtgs": "rueang",
+"ipa": "/rɯa̯ŋ˥˩/",
+"pos": "noun,prep,classifier",
+"en": "story | tale; account | essence; content",
+"rank": 40
+},
+{
+"w": "เรา",
+"pb": "rao",
+"rtgs": "rao",
+"ipa": "/raw˧/",
+"pos": "pron",
+"en": "a first person plural/singular pronoun employed when addressing a person of equal or lower status; I, we | a second person pronoun employed when addressing a person of lower status; you",
+"rank": 41
+},
+{
+"w": "ยัง",
+"pb": "yang",
+"rtgs": "yang",
+"ipa": "/jaŋ˧/",
+"pos": "verb,adv,prep,noun",
+"en": "to be, have | to exist; to be alive; to be living; to survive | to stay; to remain",
+"rank": 42
+},
+{
+"w": "ทำ",
+"pb": "tam",
+"rtgs": "tham",
+"ipa": "/tʰam˧/",
+"pos": "verb",
+"en": "to make; to do; to perform; to conduct; to carry out; to execute | to make; to create; to invent | to harm; to hurt; to injure; to subject to something bad or unfavourable",
+"rank": 43
+},
+{
+"w": "เพื่อ",
+"pb": "pʉ̂ʉa",
+"rtgs": "phuea",
+"ipa": "/pʰɯa̯˥˩/",
+"pos": "prep,conj,adv,intj",
+"en": "for | why | why?; for what?",
+"rank": 44
+},
+{
+"w": "ผม",
+"pb": "pǒm",
+"rtgs": "phom",
+"ipa": "/pʰom˩˩˦/",
+"pos": "noun,pron",
+"en": "headhair. | a first person pronoun employed by a male when addressing any commoner.",
+"rank": 45
+},
+{
+"w": "อีก",
+"pb": "ìik",
+"rtgs": "ik",
+"ipa": "/ʔiːk̚˨˩/",
+"pos": "adj,adv",
+"en": "more; additional; further | other; different | more; additionally; further",
+"rank": 46
+},
+{
+"w": "หนึ่ง",
+"pb": "nʉ̀ng",
+"rtgs": "nueng",
+"ipa": "/nɯŋ˨˩/",
+"pos": "num,noun,adj,adv,conj,prep",
+"en": "1 (Thai numeral: ๑) | one | one; whole",
+"rank": 47
+},
+{
+"w": "เมื่อ",
+"pb": "mʉ̂ʉa",
+"rtgs": "muea",
+"ipa": "/mɯa̯˥˩/",
+"pos": "classifier,conj",
+"en": "classifier for a time, times | when",
+"rank": 48
+},
+{
+"w": "ถึง",
+"pb": "tʉ̌ng",
+"rtgs": "thueng",
+"ipa": "/tʰɯŋ˩˩˦/",
+"pos": "verb,prep,conj,noun",
+"en": "to arrive (at, in, on, etc); to reach; to attain | to have or contain sufficiently | to meet (a criterion, requirement, etc.)",
+"rank": 49
+},
+{
+"w": "เข้า",
+"pb": "kâo",
+"rtgs": "khao",
+"ipa": "/kʰaw˥˩/",
+"pos": "verb,adv,noun",
+"en": "to move in or inwards: to come in, to go in, to enter, etc; to cause to do so | to arrive | to include",
+"rank": 50
+},
+{
+"w": "เพราะ",
+"pb": "prɔ́",
+"rtgs": "phro",
+"ipa": "/pʰrɔʔ˦˥/",
+"pos": "adj,conj",
+"en": "melodious; pleasing to the ear | because",
+"rank": 51
+},
+{
+"w": "ดี",
+"pb": "dii",
+"rtgs": "di",
+"ipa": "/diː˧/",
+"pos": "adj,adv,noun,intj",
+"en": "good:; nice; fine; excellent; satisfactory; agreeable; pleasant; favourable | good:; beautiful; adorable; lovely; attractive; handsome | good:; moral, virtuous, righteous; kind, benevolent; friendly",
+"rank": 52
+},
+{
+"w": "ออก",
+"pb": "ɔ̀ɔk",
+"rtgs": "ok",
+"ipa": "/ʔɔːk̚˨˩/",
+"pos": "verb,adj,adv,noun",
+"en": "to pay (a monetary sum) | to come under (a governing power) | to come or go out, into view, or into being; to cause to do so",
+"rank": 53
+},
+{
+"w": "ฉัน",
+"pb": "chǎn",
+"rtgs": "chan",
+"ipa": "/t͡ɕʰan˩˩˦/",
+"pos": "pron,conj,prep,verb,adj",
+"en": "a first-person pronoun used by anyone when addressing a person of equal or lower status | as; like; as if | as; like",
+"rank": 54
+},
+{
+"w": "เกิด",
+"pb": "gə̀ət",
+"rtgs": "koet",
+"ipa": "/kɤːt̚˨˩/",
+"pos": "verb,conj",
+"en": "to come into being: to be born, to rise, to originate, to emerge, to occur, to happen, to take place, etc. | to rise; to shine; to be or become conspicuous, prominent, or popular | used to introduce a likelihood, possibility, or supposition: if, should, in case that, if it happens to be that, etc.",
+"rank": 55
+},
+{
+"w": "คือ",
+"pb": "kʉʉ",
+"rtgs": "khue",
+"ipa": "/kʰɯː˧/",
+"pos": "verb",
+"en": "to be | to be as follows",
+"rank": 56
+},
+{
+"w": "เห็น",
+"pb": "hěn",
+"rtgs": "hen",
+"ipa": "/hen˩˩˦/",
+"pos": "verb,noun",
+"en": "to see: to perceive visually or mentally | to think; to opine; to view; to consider; to feel | to seem, to appear; to be likely (to), to have the possibility (for, to, etc.)",
+"rank": 57
+},
+{
+"w": "จึง",
+"pb": "jʉng",
+"rtgs": "chueng",
+"ipa": "/t͡ɕɯŋ˧/",
+"pos": "conj",
+"en": "so, thus, therefore, accordingly, consequentially, because of that, for that reason, hence; then",
+"rank": 58
+},
+{
+"w": "ทำให้",
+"pb": "tam-hâi",
+"rtgs": "tham-hai",
+"ipa": "/tʰam˧.haj˥˩/",
+"pos": "verb",
+"en": "to cause (something to be or do); to make (do something).",
+"rank": 59
+},
+{
+"w": "กว่า",
+"pb": "gwàa",
+"rtgs": "kwa",
+"ipa": "/kwaː˨˩/",
+"pos": "adv,prep,pron",
+"en": "more; in a superior or inferior extent; to a superior or inferior degree | than | more than; over; beyond",
+"rank": 60
+},
+{
+"w": "ไทย",
+"pb": "tai",
+"rtgs": "thai",
+"ipa": "/tʰaj˧/",
+"pos": "noun,adj",
+"en": "Thai person | not universally or internationally recognised, accepted, or practised; only done or taking place in Thailand | that should be given",
+"rank": 61
+},
+{
+"w": "ไว้",
+"pb": "wái",
+"rtgs": "wai",
+"ipa": "/waj˦˥/",
+"pos": "verb",
+"en": "to place; to locate | to keep; to hold; to maintain; to preserve | to keep, wear, or sport (a style of moustache, for example)",
+"rank": 62
+},
+{
+"w": "ตัว",
+"pb": "dtuua",
+"rtgs": "tua",
+"ipa": "/tua̯˧/",
+"pos": "noun,pron,classifier",
+"en": "self; person | body; physique | figure; form; shape",
+"rank": 63
+},
+{
+"w": "ปี",
+"pb": "bpii",
+"rtgs": "pi",
+"ipa": "/piː˧/",
+"pos": "noun",
+"en": "year (amount or period of time)",
+"rank": 64
+},
+{
+"w": "เธอ",
+"pb": "təə",
+"rtgs": "thoe",
+"ipa": "/tʰɤː˧/",
+"pos": "pron,noun",
+"en": "a second-person pronoun used to address a person of equal or lower status | a third-person pronoun used to refer to a person of equal or lower status, commonly feminine | an agentive referring to a monarch, chiefly used in royal titles",
+"rank": 65
+},
+{
+"w": "คุณ",
+"pb": "kun",
+"rtgs": "khun",
+"ipa": "/kʰun˧/",
+"pos": "noun,pron",
+"en": "attribute; characteristic; property | benefit; interest; use | magic; black magic; black art; occult; supernatural power",
+"rank": 66
+},
+{
+"w": "ต่อ",
+"pb": "dtɔ̀ɔ",
+"rtgs": "to",
+"ipa": "/tɔː˨˩/",
+"pos": "noun,verb,adj,classifier,prep",
+"en": "wasp | to extend; to prolong | to connect; to join",
+"rank": 67
+},
+{
+"w": "ทั้ง",
+"pb": "táng",
+"rtgs": "thang",
+"ipa": "/tʰaŋ˦˥/",
+"pos": "adj,adv,prep,conj",
+"en": "all; entire; whole; total | throughout | also; too",
+"rank": 68
+},
+{
+"w": "มัน",
+"pb": "man",
+"rtgs": "man",
+"ipa": "/man˧/",
+"pos": "noun,adj,pron",
+"en": "fat; grease; oil; tallow | greasy; oily | tasting like coconut milk, fat, oil, etc.",
+"rank": 69
+},
+{
+"w": "เลย",
+"pb": "ləəi",
+"rtgs": "loei",
+"ipa": "/lɤːj˧/",
+"pos": "adv,verb,conj",
+"en": "really; completely; entirely; at all!; so much!; extremely (used for emphasis at the end of a statement) | so; therefore; as a result | further; beyond; more",
+"rank": 70
+},
+{
+"w": "ถ้า",
+"pb": "tâa",
+"rtgs": "tha",
+"ipa": "/tʰaː˥˩/",
+"pos": "conj",
+"en": "if",
+"rank": 71
+},
+{
+"w": "อะไร",
+"pb": "à-rai",
+"rtgs": "a-rai",
+"ipa": "/ʔa˨˩.raj˧/",
+"pos": "pron",
+"en": "what? | something; anything | whatever",
+"rank": 72
+},
+{
+"w": "เวลา",
+"pb": "wee-laa",
+"rtgs": "we-la",
+"ipa": "/weː˧.laː˧/",
+"pos": "noun,conj",
+"en": "time; period of time; point of time; occasion | when; whenever; while",
+"rank": 73
+},
+{
+"w": "ลง",
+"pb": "long",
+"rtgs": "long",
+"ipa": "/loŋ˧/",
+"pos": "verb,adv",
+"en": "to come down; to get down; to descend | to cause to do so | to get on; to embark; to enter; to board",
+"rank": 74
+},
+{
+"w": "ต่าง",
+"pb": "dtàang",
+"rtgs": "tang",
+"ipa": "/taːŋ˨˩/",
+"pos": "noun,verb,adj,adv,prep,pron",
+"en": "a shoulder pole carried by a beast of burden | a packsaddle | to carry; to put on or take on a load, as of passengers, goods, etc.",
+"rank": 75
+},
+{
+"w": "ส่วน",
+"pb": "sùuan",
+"rtgs": "suan",
+"ipa": "/sua̯n˨˩/",
+"pos": "noun,prep",
+"en": "part; portion; piece | part; participation; role | division; section",
+"rank": 76
+},
+{
+"w": "ประเทศ",
+"pb": "bprà-têet",
+"rtgs": "pra-thet",
+"ipa": "/pra˨˩.tʰeːt̚˥˩/",
+"pos": "noun",
+"en": "nation; also used as a prefix to the name of a nation | area; district; locality; place; region; spot | city; province",
+"rank": 77
+},
+{
+"w": "อาจ",
+"pb": "àat",
+"rtgs": "at",
+"ipa": "/ʔaːt̚˨˩/",
+"pos": "verb",
+"en": "may; might | to dare to",
+"rank": 78
+},
+{
+"w": "แบบ",
+"pb": "bɛ̀ɛp",
+"rtgs": "baep",
+"ipa": "/bɛːp̚˨˩/",
+"pos": "noun,conj,adv,classifier,verb",
+"en": "form; pattern; design; model; template | example; instance | form; shape",
+"rank": 79
+},
+{
+"w": "ถูก",
+"pb": "tùuk",
+"rtgs": "thuk",
+"ipa": "/tʰuːk̚˨˩/",
+"pos": "adj,verb",
+"en": "cheap; inexpensive; low | to touch; to contact; to come into contact with | to be in accordance with; to be in line with; to agree with; to conform to",
+"rank": 80
+},
+{
+"w": "ทุก",
+"pb": "túk",
+"rtgs": "thuk",
+"ipa": "/tʰuk̚˦˥/",
+"pos": "adj",
+"en": "every, each",
+"rank": 81
+},
+{
+"w": "วัน",
+"pb": "wan",
+"rtgs": "wan",
+"ipa": "/wan˧/",
+"pos": "noun",
+"en": "day | daytime | today",
+"rank": 82
+},
+{
+"w": "ก่อน",
+"pb": "gɔ̀ɔn",
+"rtgs": "kon",
+"ipa": "/kɔːn˨˩/",
+"pos": "adv,adj,prep,conj",
+"en": "before | early | first",
+"rank": 83
+},
+{
+"w": "เช่น",
+"pb": "chên",
+"rtgs": "chen",
+"ipa": "/t͡ɕʰen˥˩/",
+"pos": "noun,conj",
+"en": "example, sample. | such as, like.",
+"rank": 84
+},
+{
+"w": "อื่น",
+"pb": "ʉ̀ʉn",
+"rtgs": "uen",
+"ipa": "/ʔɯːn˨˩/",
+"pos": "adj",
+"en": "other",
+"rank": 85
+},
+{
+"w": "ดู",
+"pb": "duu",
+"rtgs": "du",
+"ipa": "/duː˧/",
+"pos": "verb,adv",
+"en": "to view; to look; to watch | to view; to consider; to examine; to inspect | to view; to consider; to regard; to deem",
+"rank": 86
+},
+{
+"w": "ครั้ง",
+"pb": "kráng",
+"rtgs": "khrang",
+"ipa": "/kʰraŋ˦˥/",
+"pos": "noun,classifier",
+"en": "time; instance, occurrence; occasion | Classifier for the amount of time taken for an action, phenomenon, etc.",
+"rank": 87
+},
+{
+"w": "รู้",
+"pb": "rúu",
+"rtgs": "ru",
+"ipa": "/ruː˦˥/",
+"pos": "verb",
+"en": "to know (information), to be aware | to understand",
+"rank": 88
+},
+{
+"w": "เอา",
+"pb": "ao",
+"rtgs": "ao",
+"ipa": "/ʔaw˧/",
+"pos": "verb",
+"en": "to bring; to take | to capture; to seize | to cope; to handle",
+"rank": 89
+},
+{
+"w": "สอง",
+"pb": "sɔ̌ɔng",
+"rtgs": "song",
+"ipa": "/sɔːŋ˩˩˦/",
+"pos": "num",
+"en": "2 (Thai numeral: ๒ (2))",
+"rank": 90
+},
+{
+"w": "นำ",
+"pb": "nam",
+"rtgs": "nam",
+"ipa": "/nam˧/",
+"pos": "verb",
+"en": "to lead | to bring",
+"rank": 91
+},
+{
+"w": "งาน",
+"pb": "ngaan",
+"rtgs": "ngan",
+"ipa": "/ŋaːn˧/",
+"pos": "noun",
+"en": "work:; act; action; activity; deed | work:; duty; task; undertaking | work:; employment; trade; occupation; profession",
+"rank": 92
+},
+{
+"w": "สามารถ",
+"pb": "sǎa-mâat",
+"rtgs": "sa-mat",
+"ipa": "/saː˩˩˦.maːt̚˥˩/",
+"pos": "verb",
+"en": "can; may; to be able (to) or suitable (for)",
+"rank": 93
+},
+{
+"w": "นาย",
+"pb": "naai",
+"rtgs": "nai",
+"ipa": "/naːj˧/",
+"pos": "noun,classifier",
+"en": "man. | chief; lord; master; ruler; leader; boss; person in charge. | a prefix indicating leadership or the state of being in charge of something.",
+"rank": 94
+},
+{
+"w": "นะ",
+"pb": "ná",
+"rtgs": "na",
+"ipa": "/naʔ˦˥/",
+"pos": "particle",
+"en": "isn't it?.",
+"rank": 95
+},
+{
+"w": "หน้า",
+"pb": "nâa",
+"rtgs": "na",
+"ipa": "/naː˥˩/",
+"pos": "noun,adj,adv,prep",
+"en": "face; surface; front | person | reputation; dignity",
+"rank": 96
+},
+{
+"w": "บอก",
+"pb": "bɔ̀ɔk",
+"rtgs": "bok",
+"ipa": "/bɔːk̚˨˩/",
+"pos": "verb",
+"en": "to tell",
+"rank": 97
+},
+{
+"w": "กลับ",
+"pb": "glàp",
+"rtgs": "klap",
+"ipa": "/klap̚˨˩/",
+"pos": "verb",
+"en": "to return; to come back | to flip; to turn over",
+"rank": 98
+},
+{
+"w": "แห่ง",
+"pb": "hɛ̀ng",
+"rtgs": "haeng",
+"ipa": "/hɛŋ˨˩/",
+"pos": "noun,classifier,prep",
+"en": "place | Classifier for places or locations. ⇒ all nouns using this classifier | of",
+"rank": 99
+},
+{
+"w": "บาง",
+"pb": "baang",
+"rtgs": "bang",
+"ipa": "/baːŋ˧/",
+"pos": "noun,adj",
+"en": "narrow or small watercourse | community or polity located near such watercourse or at the place used to be such watercourse | collectivity; entirety",
+"rank": 100
+},
+{
+"w": "จน",
+"pb": "jon",
+"rtgs": "chon",
+"ipa": "/t͡ɕon˧/",
+"pos": "adj,verb,conj",
+"en": "poor, not rich | to lose, be defeated | to be stuck, up against it",
+"rank": 102
+},
+{
+"w": "ด้าน",
+"pb": "dâan",
+"rtgs": "dan",
+"ipa": "/daːn˥˩/",
+"pos": "noun,adj",
+"en": "side, sector, part | direction, field, aspect | hard, callous, coarse, rough",
+"rank": 103
+},
+{
+"w": "คิด",
+"pb": "kít",
+"rtgs": "khit",
+"ipa": "/kʰit̚˦˥/",
+"pos": "verb",
+"en": "to think; to contemplate; to form in mind | to consider; to view; to opine | to figure; to guess; to conjecture; to imagine",
+"rank": 104
+},
+{
+"w": "เด็ก",
+"pb": "dèk",
+"rtgs": "dek",
+"ipa": "/dek̚˨˩/",
+"pos": "noun,adj",
+"en": "child: person below the age of adulthood | young person | childish person",
+"rank": 105
+},
+{
+"w": "ชีวิต",
+"pb": "chii-wít",
+"rtgs": "chi-wit",
+"ipa": "/t͡ɕʰiː˧.wit̚˦˥/",
+"pos": "noun,classifier",
+"en": "life | Classifier for living beings.",
+"rank": 106
+},
+{
+"w": "สิ่ง",
+"pb": "sìng",
+"rtgs": "sing",
+"ipa": "/siŋ˨˩/",
+"pos": "noun",
+"en": "thing (physical or abstract)",
+"rank": 107
+},
+{
+"w": "พระ",
+"pb": "prá",
+"rtgs": "phra",
+"ipa": "/pʰraʔ˦˥/",
+"pos": "noun",
+"en": "god, deity; someone or something revered as a god or deity | priest | representation, as image, statue, sculpture, etc, of a god, deity, someone or something revered as a god or deity, or priest",
+"rank": 108
+},
+{
+"w": "เหมือน",
+"pb": "mʉ̌ʉan",
+"rtgs": "muean",
+"ipa": "/mɯa̯n˩˩˦/",
+"pos": "adj,conj",
+"en": "same, similar | as, like, as if, similar to",
+"rank": 109
+},
+{
+"w": "รับ",
+"pb": "ráp",
+"rtgs": "rap",
+"ipa": "/rap̚˦˥/",
+"pos": "verb",
+"en": "to greet; to receive; to welcome | to acquire; to get; to obtain; to receive; to take | to accept; to acknowledge; to agree; to admit",
+"rank": 110
+},
+{
+"w": "หลาย",
+"pb": "lǎai",
+"rtgs": "lai",
+"ipa": "/laːj˩˩˦/",
+"pos": "adj",
+"en": "several; numerous | many",
+"rank": 111
+},
+{
+"w": "พูด",
+"pb": "pûut",
+"rtgs": "phut",
+"ipa": "/pʰuːt̚˥˩/",
+"pos": "verb",
+"en": "to speak",
+"rank": 112
+},
+{
+"w": "บ้าน",
+"pb": "bâan",
+"rtgs": "ban",
+"ipa": "/baːn˥˩/",
+"pos": "noun,adj",
+"en": "house:; place of habitation; residence | house:; family; household | house:; building for any purpose",
+"rank": 113
+},
+{
+"w": "ใหม่",
+"pb": "mài",
+"rtgs": "mai",
+"ipa": "/maj˨˩/",
+"pos": "adj,adv",
+"en": "new; fresh | latest; recent | modern",
+"rank": 114
+},
+{
+"w": "เคย",
+"pb": "kəəi",
+"rtgs": "khoei",
+"ipa": "/kʰɤːj˧/",
+"pos": "adv,verb,noun",
+"en": "ever | never, at all | to use to (usually express a past tense)",
+"rank": 115
+},
+{
+"w": "นี่",
+"pb": "nîi",
+"rtgs": "ni",
+"ipa": "/niː˥˩/",
+"pos": "adj,pron,noun",
+"en": "this; these | used as a first person pronoun: I, we, etc.",
+"rank": 116
+},
+{
+"w": "กลุ่ม",
+"pb": "glùm",
+"rtgs": "klum",
+"ipa": "/klum˨˩/",
+"pos": "noun",
+"en": "group",
+"rank": 117
+},
+{
+"w": "ปัญหา",
+"pb": "bpan-hǎa",
+"rtgs": "pan-ha",
+"ipa": "/pan˧.haː˩˩˦/",
+"pos": "noun",
+"en": "problem; trouble; difficulty | question | riddle; puzzle",
+"rank": 118
+},
+{
+"w": "สังคม",
+"pb": "sǎng-kom",
+"rtgs": "sang-khom",
+"ipa": "/saŋ˩˩˦.kʰom˧/",
+"pos": "noun,adj",
+"en": "society | community | social",
+"rank": 119
+},
+{
+"w": "ใคร",
+"pb": "krai",
+"rtgs": "khrai",
+"ipa": "/kʰraj˧/",
+"pos": "pron",
+"en": "who; which person; what person? | whoever; anyone; someone; everyone; they (people in general) | person; one",
+"rank": 120
+},
+{
+"w": "หา",
+"pb": "hǎa",
+"rtgs": "ha",
+"ipa": "/haː˩˩˦/",
+"pos": "intj,verb,prep,adv",
+"en": "used to express surprise, bewilderment, disbelief, contempt, or interrogation | to call; to summon | to seek; to find; to search; to look (for)",
+"rank": 121
+},
+{
+"w": "คำ",
+"pb": "kam",
+"rtgs": "kham",
+"ipa": "/kʰam˧/",
+"pos": "noun",
+"en": "gold | word | speech",
+"rank": 122
+},
+{
+"w": "อยาก",
+"pb": "yàak",
+"rtgs": "yak",
+"ipa": "/jaːk̚˨˩/",
+"pos": "verb",
+"en": "to want; to desire | to want to; to wish to | to be hungry; to be thirsty",
+"rank": 123
+},
+{
+"w": "ใด",
+"pb": "dai",
+"rtgs": "dai",
+"ipa": "/daj˧/",
+"pos": "pron",
+"en": "any | which",
+"rank": 124
+},
+{
+"w": "เสียง",
+"pb": "sǐiang",
+"rtgs": "siang",
+"ipa": "/sia̯ŋ˩˩˦/",
+"pos": "noun",
+"en": "sound, including voice, a sensation perceived by the ear | opinion; view (as in ออกเสียง (ɔ̀ɔk-sǐiang)) | popularity; appreciation (as in ชื่อเสียง (chʉ̂ʉ-sǐiang))",
+"rank": 125
+},
+{
+"w": "คง",
+"pb": "kong",
+"rtgs": "khong",
+"ipa": "/kʰoŋ˧/",
+"pos": "verb,adv",
+"en": "to endure; to last; to remain; to stay. | used to express a conjecture, inclination, or opinion. | still: as yet; even then or now as formerly; in the future as in the past.",
+"rank": 126
+},
+{
+"w": "มอง",
+"pb": "mɔɔng",
+"rtgs": "mong",
+"ipa": "/mɔːŋ˧/",
+"pos": "verb",
+"en": "to watch | to look",
+"rank": 127
+},
+{
+"w": "ระหว่าง",
+"pb": "rá-wàang",
+"rtgs": "ra-wang",
+"ipa": "/ra˦˥.waːŋ˨˩/",
+"pos": "noun,prep",
+"en": "distance (between two points in space or time): space, gap; interval, duration, period; meanwhile; etc. | time; occasion | between; amongst; amidst; against; versus",
+"rank": 128
+},
+{
+"w": "สำหรับ",
+"pb": "sǎm-ràp",
+"rtgs": "sam-rap",
+"ipa": "/sam˩˩˦.rap̚˨˩/",
+"pos": "prep",
+"en": "for | intended for; meant for",
+"rank": 129
+},
+{
+"w": "น้ำ",
+"pb": "náam",
+"rtgs": "nam",
+"ipa": "/naːm˦˥/",
+"pos": "noun,classifier",
+"en": "water; any liquid or fluid (Classifier changes according to its container.) | body of water, as lake, river, sea, ocean, etc.; water thereof | used as a title for a body of water, often prefixed to its name",
+"rank": 130
+},
+{
+"w": "ผล",
+"pb": "pǒn",
+"rtgs": "phon",
+"ipa": "/pʰon˩˩˦/",
+"pos": "noun,classifier",
+"en": "result; outcome; profit; effect | fruit | Classifier for fruits.",
+"rank": 131
+},
+{
+"w": "ใช่",
+"pb": "châi",
+"rtgs": "chai",
+"ipa": "/t͡ɕʰaj˥˩/",
+"pos": "adv,verb,adj,intj",
+"en": "used to express negation: no, not, never, etc. | be | good; appropriate; suitable; satisfactory; acceptable; correct",
+"rank": 133
+},
+{
+"w": "แสดง",
+"pb": "sà-dɛɛng",
+"rtgs": "sa-daeng",
+"ipa": "/sa˨˩.dɛːŋ˧/",
+"pos": "verb",
+"en": "to act or perform (as, in, etc) | to display; to express; to make known; to reveal; to show | to declare; to demonstrate; to explain; to indicate; to state; to tell",
+"rank": 134
+},
+{
+"w": "กำลัง",
+"pb": "gam-lang",
+"rtgs": "kam-lang",
+"ipa": "/kam˧.laŋ˧/",
+"pos": "noun,verb",
+"en": "force; strength; power; vigour | power: product of equal factors | power: rate of doing work",
+"rank": 135
+},
+{
+"w": "สร้าง",
+"pb": "sâang",
+"rtgs": "sang",
+"ipa": "/saːŋ˥˩/",
+"pos": "verb",
+"en": "to bring into being: to build, to construct, to create, to make, etc.",
+"rank": 136
+},
+{
+"w": "ท่าน",
+"pb": "tâan",
+"rtgs": "than",
+"ipa": "/tʰaːn˥˩/",
+"pos": "noun,pron,classifier",
+"en": "added before or after a name, title, etc, to show respect | a second or third person pronoun, giving a sense of either neutrality or respect | Classifier for human beings. ⇒ all nouns using this classifier",
+"rank": 137
+},
+{
+"w": "เงิน",
+"pb": "ngən",
+"rtgs": "ngoen",
+"ipa": "/ŋɤn˧/",
+"pos": "noun",
+"en": "silver (metal) | silver (color) | money",
+"rank": 138
+},
+{
+"w": "โลก",
+"pb": "lôok",
+"rtgs": "lok",
+"ipa": "/loːk̚˥˩/",
+"pos": "noun",
+"en": "land; country | mankind; humanity | world",
+"rank": 139
+},
+{
+"w": "ช่วย",
+"pb": "chûai",
+"rtgs": "chuai",
+"ipa": "/t͡ɕʰua̯j˥˩/",
+"pos": "verb",
+"en": "to help",
+"rank": 140
+},
+{
+"w": "กำหนด",
+"pb": "gam-nòt",
+"rtgs": "kam-not",
+"ipa": "/kam˧.not̚˨˩/",
+"pos": "verb,noun",
+"en": "to fix, to set, to determine; to designate, to indicate, to specify; to establish, to create, to set up | to direct; to instruct; to order; to command; to require | determination, designation, indication, specification; law, rule, regulation",
+"rank": 141
+},
+{
+"w": "จริง",
+"pb": "jing",
+"rtgs": "ching",
+"ipa": "/t͡ɕiŋ˧/",
+"pos": "adj,adv",
+"en": "real; true; actual | authentic; genuine | really; truly; indeed",
+"rank": 142
+},
+{
+"w": "ขอ",
+"pb": "kɔ̌ɔ",
+"rtgs": "kho",
+"ipa": "/kʰɔː˩˩˦/",
+"pos": "noun,verb",
+"en": "hook (curved or angular piece of metal or other hard substance for catching, pulling, holding, or suspending something) | to beg, to ask, to request; to want, to wish, to desire | used to express a wish, desire, or command: would like, would want; may, let; etc",
+"rank": 143
+},
+{
+"w": "ทำงาน",
+"pb": "tam-ngaan",
+"rtgs": "tham-ngan",
+"ipa": "/tʰam˧.ŋaːn˧/",
+"pos": "verb",
+"en": "to work; to perform work",
+"rank": 144
+},
+{
+"w": "ระบบ",
+"pb": "rá-bòp",
+"rtgs": "ra-bop",
+"ipa": "/ra˦˥.bop̚˨˩/",
+"pos": "noun",
+"en": "system.",
+"rank": 145
+},
+{
+"w": "ใหญ่",
+"pb": "yài",
+"rtgs": "yai",
+"ipa": "/jaj˨˩/",
+"pos": "adj,verb",
+"en": "big; very big; large; great | important; main | to be big; to be large; to be huge; to be enormous",
+"rank": 146
+},
+{
+"w": "ลูก",
+"pb": "lûuk",
+"rtgs": "luk",
+"ipa": "/luːk̚˥˩/",
+"pos": "noun,classifier",
+"en": "child; offspring; issue | son; daughter | ball; round object",
+"rank": 147
+},
+{
+"w": "เอง",
+"pb": "eeng",
+"rtgs": "eng",
+"ipa": "/ʔeːŋ˧/",
+"pos": "pron,adv",
+"en": "oneself | by oneself, alone | only, just",
+"rank": 148
+},
+{
+"w": "อัน",
+"pb": "an",
+"rtgs": "an",
+"ipa": "/ʔan˧/",
+"pos": "noun,pron,classifier",
+"en": "item; piece | one | Classifier for small objects; the general classifier for small inanimate things. ⇒ all nouns using this classifier",
+"rank": 149
+},
+{
+"w": "พอ",
+"pb": "pɔɔ",
+"rtgs": "pho",
+"ipa": "/pʰɔː˧/",
+"pos": "adv,conj",
+"en": "enough, sufficiently | just as soon as, just as, when",
+"rank": 150
+},
+{
+"w": "ที่สุด",
+"pb": "tîi-sùt",
+"rtgs": "thi-sut",
+"ipa": "/tʰiː˥˩.sut̚˨˩/",
+"pos": "adv",
+"en": "the most, very most",
+"rank": 151
+},
+{
+"w": "แม่",
+"pb": "mɛ̂ɛ",
+"rtgs": "mae",
+"ipa": "/mɛː˥˩/",
+"pos": "noun",
+"en": "mother:; female parent, mother-in-law, or person regarded as a female parent | mother:; female parent of an animal | female head, chief, or leader; woman in charge; woman in authority",
+"rank": 152
+},
+{
+"w": "พบ",
+"pb": "póp",
+"rtgs": "phop",
+"ipa": "/pʰop̚˦˥/",
+"pos": "verb",
+"en": "to meet, to encounter | to find",
+"rank": 153
+},
+{
+"w": "บน",
+"pb": "bon",
+"rtgs": "bon",
+"ipa": "/bon˧/",
+"pos": "prep,adj,verb,noun",
+"en": "on; up; upon; above; over | upper; high; higher | to ask (a supernatural being) to grant one's wish, with a promise to give or do something in return",
+"rank": 154
+},
+{
+"w": "เสีย",
+"pb": "sǐia",
+"rtgs": "sia",
+"ipa": "/sia̯˩˩˦/",
+"pos": "verb,particle",
+"en": "to degenerate; to deteriorate; to worsen; to decay | to die | to lose; to be deprived of; to have no more",
+"rank": 155
+},
+{
+"w": "แก่",
+"pb": "gɛ̀ɛ",
+"rtgs": "kae",
+"ipa": "/kɛː˨˩/",
+"pos": "prep,adj,adv",
+"en": "to: used for identifying the person or thing affected by or receiving something | old; aged; aging | mature; ripe",
+"rank": 156
+},
+{
+"w": "ควร",
+"pb": "kuuan",
+"rtgs": "khuan",
+"ipa": "/kʰua̯n˧/",
+"pos": "verb",
+"en": "should, ought to, must",
+"rank": 157
+},
+{
+"w": "เมือง",
+"pb": "mʉʉang",
+"rtgs": "mueang",
+"ipa": "/mɯa̯ŋ˧/",
+"pos": "noun",
+"en": "any polity, as district, town, city, state, nation, etc. | region, sphere, or domain within which someone or something occurs, prevails, or dominates | urban area",
+"rank": 158
+},
+{
+"w": "น้อย",
+"pb": "nɔ́ɔi",
+"rtgs": "noi",
+"ipa": "/nɔːj˦˥/",
+"pos": "adj,adv",
+"en": "little, few | small | a little, a few",
+"rank": 159
+},
+{
+"w": "เดิน",
+"pb": "dəən",
+"rtgs": "doen",
+"ipa": "/dɤːn˧/",
+"pos": "verb",
+"en": "to move on or as if on foot: to walk, to step, to run, to flow, etc. | to cause to go or move, to set in motion: to run, to operate, to propel, to steer, to carry (out, on, etc), to drive, to direct, etc. | to install",
+"rank": 160
+},
+{
+"w": "สี",
+"pb": "sǐi",
+"rtgs": "si",
+"ipa": "/siː˩˩˦/",
+"pos": "noun,adj,verb",
+"en": "color, colour | สีแดงเป็นสีมงคลของชาวจีน | สีแดงเป็นสีมงคลของชาวจีน\nsǐi dɛɛng bpen sǐi mong-kon kɔ̌ɔng chaao jiin\nRed (color) is an auspicious color of the Chinese (people).; sǐi dɛɛng bpen sǐi mong-kon kɔ̌ɔng chaao jiin",
+"rank": 161
+},
+{
+"w": "น่า",
+"pb": "nâa",
+"rtgs": "na",
+"ipa": "/naː˥˩/",
+"pos": "prefix,particle",
+"en": "prefix to a verb or adjective similar to English -able | particle used to add a persuasive quality to a sentence",
+"rank": 162
+},
+{
+"w": "พี่",
+"pb": "pîi",
+"rtgs": "phi",
+"ipa": "/pʰiː˥˩/",
+"pos": "noun",
+"en": "elder brother; elder sister | older person | superior; master; leader; boss",
+"rank": 163
+},
+{
+"w": "ร่วม",
+"pb": "rûuam",
+"rtgs": "ruam",
+"ipa": "/rua̯m˥˩/",
+"pos": "verb,adv",
+"en": "to join in; to participate; to share | in participation, jointly, together | nearly; almost; about",
+"rank": 164
+},
+{
+"w": "พัฒนา",
+"pb": "pát-tá-naa",
+"rtgs": "phat-tha-na",
+"ipa": "/pʰat̚˦˥.tʰa˦˥.naː˧/",
+"pos": "verb",
+"en": "to progress; to advance | to develop; to create | to evolve",
+"rank": 165
+},
+{
+"w": "ใจ",
+"pb": "jai",
+"rtgs": "chai",
+"ipa": "/t͡ɕaj˧/",
+"pos": "noun,verb,intj",
+"en": "heart | mind; spirit | breath",
+"rank": 166
+},
+{
+"w": "หาก",
+"pb": "hàak",
+"rtgs": "hak",
+"ipa": "/haːk̚˨˩/",
+"pos": "adj,conj",
+"en": "separate; apart | if",
+"rank": 167
+},
+{
+"w": "มาตรา",
+"pb": "mâat-dtraa",
+"rtgs": "mat-tra",
+"ipa": "/maːt̚˥˩.traː˧/",
+"pos": "noun",
+"en": "system (of units of seize, time, volume, etc.) | distinct portion or provision of a law: article, section, etc. Abbreviation: ม. (mɔɔ) | category assigned to a syllable based on its ending sound:; the category กก (gòk) for a syllable ended by the sound [k], which is represented by the letter ก (gɔɔ), ข (kɔ̌ɔ), ฃ (kɔ̌ɔ), ค (kɔɔ), ฅ (kɔɔ), or ฆ (kɔɔ)",
+"rank": 168
+},
+{
+"w": "สูง",
+"pb": "sǔung",
+"rtgs": "sung",
+"ipa": "/suːŋ˩˩˦/",
+"pos": "adj",
+"en": "tall | high",
+"rank": 169
+},
+{
+"w": "กิน",
+"pb": "gin",
+"rtgs": "kin",
+"ipa": "/kin˧/",
+"pos": "verb",
+"en": "to consume:; to eat; to take; to drink | to consume:; to absorb; to engross; to occupy | to consume:; to destroy, as by decomposition or burning",
+"rank": 170
+},
+{
+"w": "ส่ง",
+"pb": "sòng",
+"rtgs": "song",
+"ipa": "/soŋ˨˩/",
+"pos": "verb",
+"en": "to send | to deliver; to drop off | to see off",
+"rank": 171
+},
+{
+"w": "เดียว",
+"pb": "diao",
+"rtgs": "diao",
+"ipa": "/dia̯w˧/",
+"pos": "adj",
+"en": "only one; sole; single; alone",
+"rank": 172
+},
+{
+"w": "แรก",
+"pb": "rɛ̂ɛk",
+"rtgs": "raek",
+"ipa": "/rɛːk̚˥˩/",
+"pos": "adj,adv,verb",
+"en": "first; being before all others with respect to time, order, rank, importance, etc. | of, relating to, or occurring at the beginning | original",
+"rank": 173
+},
+{
+"w": "กรณี",
+"pb": "gɔɔ-rá-nii",
+"rtgs": "ko-ra-ni",
+"ipa": "/kɔː˧.ra˦˥.niː˧/",
+"pos": "noun",
+"en": "case; circumstance; event; incident; instance; matter",
+"rank": 174
+},
+{
+"w": "ระดับ",
+"pb": "rá-dàp",
+"rtgs": "ra-dap",
+"ipa": "/ra˦˥.dap̚˨˩/",
+"pos": "noun,verb",
+"en": "level; class; rank; degree; order; sequence. | to put or place in a horizontal position or position of rest; to set down.",
+"rank": 175
+},
+{
+"w": "ตัวเอง",
+"pb": "dtuua-eeng",
+"rtgs": "tua-eng",
+"ipa": "/tua̯˧.ʔeːŋ˧/",
+"pos": "pron",
+"en": "oneself | ourselves | second person pronoun",
+"rank": 176
+},
+{
+"w": "กฎหมาย",
+"pb": "gòt-mǎai",
+"rtgs": "kot-mai",
+"ipa": "/kot̚˨˩.maːj˩˩˦/",
+"pos": "verb,noun",
+"en": "law; rule; regulation; legislation; statute",
+"rank": 177
+},
+{
+"w": "กล่าว",
+"pb": "glàao",
+"rtgs": "klao",
+"ipa": "/klaːw˨˩/",
+"pos": "verb",
+"en": "to express in words: to declare, to mention, to say, to speak, to tell, etc.",
+"rank": 178
+},
+{
+"w": "อาหาร",
+"pb": "aa-hǎan",
+"rtgs": "a-han",
+"ipa": "/ʔaː˧.haːn˩˩˦/",
+"pos": "noun",
+"en": "food; meal; diet",
+"rank": 179
+},
+{
+"w": "เกี่ยวกับ",
+"pb": "gìao-gàp",
+"rtgs": "kiao-kap",
+"ipa": "/kia̯w˨˩.kap̚˨˩/",
+"pos": "prep,verb",
+"en": "about; regarding; concerning. | Used other than figuratively or idiomatically: see เกี่ยว (gìao), กับ (gàp).",
+"rank": 180
+},
+{
+"w": "ดังกล่าว",
+"pb": "dang-glàao",
+"rtgs": "dang-klao",
+"ipa": "/daŋ˧.klaːw˨˩/",
+"pos": "adj,adv,conj",
+"en": "such; (previously) said; (previously) mentioned. | so; thus. | as (previously) said; as (previousy) mentioned.",
+"rank": 181
+},
+{
+"w": "นัก",
+"pb": "nák",
+"rtgs": "nak",
+"ipa": "/nak̚˦˥/",
+"pos": "noun,adj,adv",
+"en": "used to prefix any word to form an agent noun | many; much | much; quite; very",
+"rank": 182
+},
+{
+"w": "จัด",
+"pb": "jàt",
+"rtgs": "chat",
+"ipa": "/t͡ɕat̚˨˩/",
+"pos": "verb,adj,adv",
+"en": "to consider; to deem; to count | to set; to arrange; to order; to organize; to systematize | to arrange (for); to make arrangements (for)",
+"rank": 183
+},
+{
+"w": "ช่วง",
+"pb": "chûuang",
+"rtgs": "chuang",
+"ipa": "/t͡ɕʰua̯ŋ˥˩/",
+"pos": "noun,adj",
+"en": "portion; section; part; period. | bright; luminous; brilliant.",
+"rank": 184
+},
+{
+"w": "ฝ่าย",
+"pb": "fàai",
+"rtgs": "fai",
+"ipa": "/faːj˨˩/",
+"pos": "noun",
+"en": "part; section; side. | faction; party.",
+"rank": 185
+},
+{
+"w": "เพียง",
+"pb": "piiang",
+"rtgs": "phiang",
+"ipa": "/pʰia̯ŋ˧/",
+"pos": "adv",
+"en": "up to, equal to | only, as much as, as far as, till, just until | like, as if",
+"rank": 186
+},
+{
+"w": "ลักษณะ",
+"pb": "lák-sà-nà",
+"rtgs": "lak-sa-na",
+"ipa": "/lak̚˦˥.sa˨˩.naʔ˨˩/",
+"pos": "noun",
+"en": "characteristic; quality; nature; manner; appearance. | kind; type. | document; letter; message.",
+"rank": 187
+},
+{
+"w": "หลัง",
+"pb": "lǎng",
+"rtgs": "lang",
+"ipa": "/laŋ˩˩˦/",
+"pos": "noun,adj,adv,prep,classifier",
+"en": "back | back; rear | next; after; later; hind",
+"rank": 188
+},
+{
+"w": "จำนวน",
+"pb": "jam-nuuan",
+"rtgs": "cham-nuan",
+"ipa": "/t͡ɕam˧.nua̯n˧/",
+"pos": "noun",
+"en": "amount; quantity; number",
+"rank": 189
+},
+{
+"w": "ข้อ",
+"pb": "kɔ̂ɔ",
+"rtgs": "kho",
+"ipa": "/kʰɔː˥˩/",
+"pos": "noun,classifier",
+"en": "joint | part; section | point; item",
+"rank": 190
+},
+{
+"w": "พวก",
+"pb": "pûuak",
+"rtgs": "phuak",
+"ipa": "/pʰua̯k̚˥˩/",
+"pos": "noun,classifier",
+"en": "group; party (of people, animals) | Classifier for a group.",
+"rank": 191
+},
+{
+"w": "ตน",
+"pb": "dton",
+"rtgs": "ton",
+"ipa": "/ton˧/",
+"pos": "noun,classifier",
+"en": "self; oneself | Classifier for giants, demons, hermits, ascetics, and the like.",
+"rank": 192
+},
+{
+"w": "รวม",
+"pb": "ruuam",
+"rtgs": "ruam",
+"ipa": "/rua̯m˧/",
+"pos": "verb,adj",
+"en": "to gather; to assemble; to collect; to compile | to include; to add; to cover | to mix; to merge",
+"rank": 193
+},
+{
+"w": "เริ่ม",
+"pb": "rə̂əm",
+"rtgs": "roem",
+"ipa": "/rɤːm˥˩/",
+"pos": "verb",
+"en": "to begin; to start",
+"rank": 194
+},
+{
+"w": "สาว",
+"pb": "sǎao",
+"rtgs": "sao",
+"ipa": "/saːw˩˩˦/",
+"pos": "noun,adj,verb",
+"en": "girl, young woman | bride | youthful, juvenile, girlish",
+"rank": 195
+},
+{
+"w": "เพื่อน",
+"pb": "pʉ̂ʉan",
+"rtgs": "phuean",
+"ipa": "/pʰɯa̯n˥˩/",
+"pos": "pron,noun",
+"en": "anyone or anything else; any other person or thing; other(s); the other(s) | person whom one knows, likes, trusts, is allied with, or receives support from: friend, buddy, mate; familiar, intimate; patron, supporter, ally; etc. | person going somewhere or doing something with someone as companion or escort",
+"rank": 196
+},
+{
+"w": "บุคคล",
+"pb": "bùk-kon",
+"rtgs": "buk-khon",
+"ipa": "/buk̚˨˩.kʰon˧/",
+"pos": "noun",
+"en": "person, as natural person, legal person, etc.",
+"rank": 197
+},
+{
+"w": "ถาม",
+"pb": "tǎam",
+"rtgs": "tham",
+"ipa": "/tʰaːm˩˩˦/",
+"pos": "verb",
+"en": "to ask",
+"rank": 198
+},
+{
+"w": "ครับ",
+"pb": "kráp",
+"rtgs": "khrap",
+"ipa": "/kʰrap̚˦˥/",
+"pos": "particle",
+"en": "employed by males to express affirmation or assent, or to politely end any expression.",
+"rank": 199
+},
+{
+"w": "บ้าง",
+"pb": "bâng",
+"rtgs": "bang",
+"ipa": "/baŋ˥˩/",
+"pos": "adv",
+"en": "some (normally modifies a verb and conveys the sense of “to some extent”)",
+"rank": 200
+},
+{
+"w": "พิจารณา",
+"pb": "pí-jaa-rá-naa",
+"rtgs": "phi-cha-ra-na",
+"ipa": "/pʰi˦˥.t͡ɕaː˧.ra˦˥.naː˧/",
+"pos": "verb",
+"en": "to consider; to examine; to review | to try",
+"rank": 201
+},
+{
+"w": "อำนาจ",
+"pb": "am-nâat",
+"rtgs": "am-nat",
+"ipa": "/ʔam˧.naːt̚˥˩/",
+"pos": "noun",
+"en": "authority; force; influence; power",
+"rank": 202
+},
+{
+"w": "รัก",
+"pb": "rák",
+"rtgs": "rak",
+"ipa": "/rak̚˦˥/",
+"pos": "verb,noun,adj",
+"en": "to love, to have affection (for), to adore, to admire, to cherish, to be fond (of); to prefer, to favour | love, affection, adoration, admiration, cherishment, fondness; preference, favour | loved; beloved; adored; admired; cherished; dear; darling",
+"rank": 203
+},
+{
+"w": "วันที่",
+"pb": "wan-tîi",
+"rtgs": "wan-thi",
+"ipa": "/wan˧.tʰiː˥˩/",
+"pos": "noun",
+"en": "date (calendar).",
+"rank": 204
+},
+{
+"w": "ภาพ",
+"pb": "pâap",
+"rtgs": "phap",
+"ipa": "/pʰaːp̚˥˩/",
+"pos": "noun",
+"en": "condition, state (as in compound words) | picture, image",
+"rank": 205
+},
+{
+"w": "ตา",
+"pb": "dtaa",
+"rtgs": "ta",
+"ipa": "/taː˧/",
+"pos": "noun",
+"en": "eye | one who does something with an eye or the eyes, especially as a profession | anything that is like an eye, as in terms of appearance or functions: hole; opening; aperture; etc.",
+"rank": 206
+},
+{
+"w": "ค่า",
+"pb": "kâa",
+"rtgs": "kha",
+"ipa": "/kʰaː˥˩/",
+"pos": "noun,conj,particle",
+"en": "price, cost, fee, value, worth | used in ค่าที่ (“because, owing to the fact that, on account of the fact that”) | alternative form of ค่ะ (kâ)",
+"rank": 207
+},
+{
+"w": "ผ่าน",
+"pb": "pàan",
+"rtgs": "phan",
+"ipa": "/pʰaːn˨˩/",
+"pos": "verb,prep,noun",
+"en": "to pass: to move or proceed (from one to another, past, over, beyond, across, or through) | to pass: to go through or beyond (as a gate, barrier, etc.) | to pass; to elapse; to go by",
+"rank": 208
+},
+{
+"w": "ห้อง",
+"pb": "hɔ̂ng",
+"rtgs": "hong",
+"ipa": "/hɔŋ˥˩/",
+"pos": "noun",
+"en": "room (division of building) | measure, bar",
+"rank": 209
+},
+{
+"w": "หนังสือ",
+"pb": "nǎng-sʉ̌ʉ",
+"rtgs": "nang-sue",
+"ipa": "/naŋ˩˩˦.sɯː˩˩˦/",
+"pos": "noun",
+"en": "letter; character; script | written form | written message",
+"rank": 210
+},
+{
+"w": "ข้อมูล",
+"pb": "kɔ̂ɔ-muun",
+"rtgs": "kho-mun",
+"ipa": "/kʰɔː˥˩.muːn˧/",
+"pos": "noun",
+"en": "data; information (in any context)",
+"rank": 211
+},
+{
+"w": "ยิ่ง",
+"pb": "yîng",
+"rtgs": "ying",
+"ipa": "/jiŋ˥˩/",
+"pos": "adj",
+"en": "extreme; utmost.",
+"rank": 212
+},
+{
+"w": "ดัง",
+"pb": "dang",
+"rtgs": "dang",
+"ipa": "/daŋ˧/",
+"pos": "adj,prep,noun",
+"en": "loud; noisy. | famous; popular. | like; as.",
+"rank": 213
+},
+{
+"w": "เพิ่ม",
+"pb": "pə̂əm",
+"rtgs": "phoem",
+"ipa": "/pʰɤːm˥˩/",
+"pos": "verb,adv",
+"en": "to add; to insert; to include | to make greater: to increase, to augment, to enhance, to expand, etc. | to become greater: to increase, to multiply, to grow, etc.",
+"rank": 214
+},
+{
+"w": "ทรง",
+"pb": "song",
+"rtgs": "song",
+"ipa": "/soŋ˧/",
+"pos": "verb,adj,adv,noun",
+"en": "to bear; to hold; to carry | to bear; to hold up; to support | to have; to possess; to contain",
+"rank": 215
+},
+{
+"w": "ตั้งแต่",
+"pb": "dtâng-dtɛ̀ɛ",
+"rtgs": "tang-tae",
+"ipa": "/taŋ˥˩.tɛː˨˩/",
+"pos": "prep",
+"en": "from; since",
+"rank": 216
+},
+{
+"w": "พ่อ",
+"pb": "pɔ̂ɔ",
+"rtgs": "pho",
+"ipa": "/pʰɔː˥˩/",
+"pos": "noun",
+"en": "father:; male parent, father-in-law, or person regarded as a male parent | father:; male parent of an animal | male head, lord, leader, or master; man in charge; man in authority.",
+"rank": 217
+},
+{
+"w": "ต่อไป",
+"pb": "dtɔ̀ɔ-bpai",
+"rtgs": "to-pai",
+"ipa": "/tɔː˨˩.paj˧/",
+"pos": "adv",
+"en": "next; later. | continually; further; afterward.",
+"rank": 218
+},
+{
+"w": "สำคัญ",
+"pb": "sǎm-kan",
+"rtgs": "sam-khan",
+"ipa": "/sam˩˩˦.kʰan˧/",
+"pos": "adj,noun,verb",
+"en": "distinct; notable; noteworthy; special; remarkable | chief, key, main, principal; important, significant; first, major, prime | precious; valuable",
+"rank": 219
+},
+{
+"w": "เปิด",
+"pb": "bpə̀ət",
+"rtgs": "poet",
+"ipa": "/pɤːt̚˨˩/",
+"pos": "verb,adj",
+"en": "to open: to render unclosed or uncovered; to undo or remove the cover, lid, or fastening of; to part | to undo or remove (as the cover, lid, or fastening of something) | to open: to spread; to burst; to come apart",
+"rank": 220
+},
+{
+"w": "เศรษฐกิจ",
+"pb": "sèet-tà-gìt",
+"rtgs": "set-tha-kit",
+"ipa": "/seːt̚˨˩.tʰa˨˩.kit̚˨˩/",
+"pos": "noun",
+"en": "economy.",
+"rank": 221
+},
+{
+"w": "ไหน",
+"pb": "nǎi",
+"rtgs": "nai",
+"ipa": "/naj˩˩˦/",
+"pos": "pron,particle,noun",
+"en": "which; where; who (for question) | which; why (used to express complaining, claiming, or doubting mood) | plum",
+"rank": 222
+},
+{
+"w": "กระทำ",
+"pb": "grà-tam",
+"rtgs": "kra-tham",
+"ipa": "/kra˨˩.tʰam˧/",
+"pos": "verb",
+"en": "to do; to perform; to carry out",
+"rank": 223
+},
+{
+"w": "ตั้ง",
+"pb": "dtâng",
+"rtgs": "tang",
+"ipa": "/taŋ˥˩/",
+"pos": "classifier,noun,adv,verb",
+"en": "Classifier for things piled up or placed over, above, or on one another. | occasion; round; time | as much as, as many as, so far as; up to; almost",
+"rank": 224
+},
+{
+"w": "เข้าใจ",
+"pb": "kâo-jai",
+"rtgs": "khao-chai",
+"ipa": "/kʰaw˥˩.t͡ɕaj˧/",
+"pos": "verb",
+"en": "to understand",
+"rank": 225
+},
+{
+"w": "ชอบ",
+"pb": "chɔ̂ɔp",
+"rtgs": "chop",
+"ipa": "/t͡ɕʰɔːp̚˥˩/",
+"pos": "verb,adv,prep,adj,noun",
+"en": "to like; to admire; to appreciate; to adore; to approve; to be in favour (of) | to tend (to); to be likely (to); to be disposed (to) | often; frequently; habitually; as a tendency or habit",
+"rank": 226
+},
+{
+"w": "ภาษา",
+"pb": "paa-sǎa",
+"rtgs": "pha-sa",
+"ipa": "/pʰaː˧.saː˩˩˦/",
+"pos": "noun",
+"en": "language (form of communication using words: spoken, gestured, or written) | language (computer language) | any matter, content, or story that is understood by the people discussing it",
+"rank": 227
+},
+{
+"w": "ตรง",
+"pb": "dtrong",
+"rtgs": "trong",
+"ipa": "/troŋ˧/",
+"pos": "adj,prep",
+"en": "straight; not bent | honest | at",
+"rank": 228
+},
+{
+"w": "เรียน",
+"pb": "riian",
+"rtgs": "rian",
+"ipa": "/ria̯n˧/",
+"pos": "verb,adv",
+"en": "to learn; to study | to address, inform, notify, speak to, or tell (a person of equal or higher status) | used as an expression of respect or conventional greeting when addressing a person of equal or higher status, as in a letter, speech, etc.",
+"rank": 229
+},
+{
+"w": "ตอน",
+"pb": "dtɔɔn",
+"rtgs": "ton",
+"ipa": "/tɔːn˧/",
+"pos": "verb,noun,prep",
+"en": "to castrate | to graft | part; section; portion; division",
+"rank": 230
+},
+{
+"w": "รัฐ",
+"pb": "rát",
+"rtgs": "rat",
+"ipa": "/rat̚˦˥/",
+"pos": "noun",
+"en": "state (polity) | Shortening of รัฐบาล (rát-tà-baan, “government”)",
+"rank": 232
+},
+{
+"w": "การศึกษา",
+"pb": "gaan-sʉ̀k-sǎa",
+"rtgs": "kan-suek-sa",
+"ipa": "/kaːn˧.sɯk̚˨˩.saː˩˩˦/",
+"pos": "noun",
+"en": "abstract noun of ศึกษา (sʉ̀k-sǎa): education",
+"rank": 233
+},
+{
+"w": "ก็ได้",
+"pb": "gɔ̂ɔ-dâai",
+"rtgs": "ko-dai",
+"ipa": "/kɔː˥˩.daːj˥˩/",
+"pos": "intj,phrase",
+"en": "used to express agreement, allowance, or approval: well; very well; all right; good; fine; okay; etc. | used at the end of an expression of agreement, allowance, or approval",
+"rank": 234
+},
+{
+"w": "รู้สึก",
+"pb": "rúu-sʉ̀k",
+"rtgs": "ru-suek",
+"ipa": "/ruː˦˥.sɯk̚˨˩/",
+"pos": "verb",
+"en": "to feel",
+"rank": 235
+},
+{
+"w": "ขนาด",
+"pb": "kà-nàat",
+"rtgs": "kha-nat",
+"ipa": "/kʰa˨˩.naːt̚˨˩/",
+"pos": "noun,adv",
+"en": "size; dimension; proportion; measure; magnitude. | point; extent; degree. | portion; quantity; amount.",
+"rank": 236
+},
+{
+"w": "เท่านั้น",
+"pb": "tâo-nán",
+"rtgs": "thao-nan",
+"ipa": "/tʰaw˥˩.nan˦˥/",
+"pos": "adv",
+"en": "only, just, no more than",
+"rank": 237
+},
+{
+"w": "นั่ง",
+"pb": "nâng",
+"rtgs": "nang",
+"ipa": "/naŋ˥˩/",
+"pos": "verb",
+"en": "to sit; to be seated | to stay; to reside",
+"rank": 238
+},
+{
+"w": "ชื่อ",
+"pb": "chʉ̂ʉ",
+"rtgs": "chue",
+"ipa": "/t͡ɕʰɯː˥˩/",
+"pos": "noun",
+"en": "name; title (Classifier: ชื่อ) | dignity; glory; honour; reputation",
+"rank": 239
+},
+{
+"w": "เดือน",
+"pb": "dʉʉan",
+"rtgs": "duean",
+"ipa": "/dɯa̯n˧/",
+"pos": "noun",
+"en": "moon (Classifier: ดวง) | month (Classifier: เดือน)",
+"rank": 240
+},
+{
+"w": "ชาติ",
+"pb": "châat",
+"rtgs": "chat",
+"ipa": "/t͡ɕʰaːt̚˥˩/",
+"pos": "noun",
+"en": "birth; origin | life | very long time",
+"rank": 241
+},
+{
+"w": "ผิด",
+"pb": "pìt",
+"rtgs": "phit",
+"ipa": "/pʰit̚˨˩/",
+"pos": "adj",
+"en": "wrong, incorrect | different",
+"rank": 242
+},
+{
+"w": "รัฐบาล",
+"pb": "rát-tà-baan",
+"rtgs": "rat-tha-ban",
+"ipa": "/rat̚˦˥.tʰa˨˩.baːn˧/",
+"pos": "noun",
+"en": "government: governing body of persons in a state or community; particular group of persons forming a cabinet",
+"rank": 243
+},
+{
+"w": "หลัก",
+"pb": "làk",
+"rtgs": "lak",
+"ipa": "/lak̚˨˩/",
+"pos": "noun,num",
+"en": "pillar; post | basis; core; principle | foundation",
+"rank": 244
+},
+{
+"w": "นาน",
+"pb": "naan",
+"rtgs": "nan",
+"ipa": "/naːn˧/",
+"pos": "adj,adv,noun",
+"en": "long (having considerable duration in space or time) | long (of a specified number of units in extent or duration) | old (far advanced in age or time)",
+"rank": 245
+},
+{
+"w": "รถ",
+"pb": "rót",
+"rtgs": "rot",
+"ipa": "/rot̚˦˥/",
+"pos": "noun",
+"en": "wheeled vehicle (of any kind) | used as a title for a wheeled vehicle",
+"rank": 246
+},
+{
+"w": "จีน",
+"pb": "jiin",
+"rtgs": "chin",
+"ipa": "/t͡ɕiːn˧/",
+"pos": "noun",
+"en": "Chinese person | any of the Chinese languages | a type of traditional Thai songs, as จีนขวัญอ่อน (jiin-kwǎn-ɔ̀ɔn), จีนลั่นถัน (jiin-lân-tǎn), จีนขิมเล็ก (jiin-kǐm-lék), etc.",
+"rank": 248
+},
+{
+"w": "ฟัง",
+"pb": "fang",
+"rtgs": "fang",
+"ipa": "/faŋ˧/",
+"pos": "verb",
+"en": "to listen; to hear | to obey; to comply with",
+"rank": 249
+},
+{
+"w": "เล็ก",
+"pb": "lék",
+"rtgs": "lek",
+"ipa": "/lek̚˦˥/",
+"pos": "adj",
+"en": "small",
+"rank": 250
+},
+{
+"w": "ภายใน",
+"pb": "paai-nai",
+"rtgs": "phai-nai",
+"ipa": "/pʰaːj˧.naj˧/",
+"pos": "prep,adj",
+"en": "within; inside. | interior. | internal.",
+"rank": 251
+},
+{
+"w": "แต่ละ",
+"pb": "dtɛ̀ɛ-lá",
+"rtgs": "tae-la",
+"ipa": "/tɛː˨˩.laʔ˦˥/",
+"pos": "adj",
+"en": "each; every; each and every (usually followed by classifier).",
+"rank": 252
+},
+{
+"w": "ละ",
+"pb": "lá",
+"rtgs": "la",
+"ipa": "/laʔ˦˥/",
+"pos": "particle,verb",
+"en": "particle used often with mildly entreative or corroborative force | each, per | to vacate; to depart; to leave; to abandon",
+"rank": 253
+},
+{
+"w": "ต้องการ",
+"pb": "dtɔ̂ng-gaan",
+"rtgs": "tong-kan",
+"ipa": "/tɔŋ˥˩.kaːn˧/",
+"pos": "verb,adj",
+"en": "to need | to want; to wish; to desire; to yearn; to crave | to require; to demand",
+"rank": 254
+},
+{
+"w": "ตาย",
+"pb": "dtaai",
+"rtgs": "tai",
+"ipa": "/taːj˧/",
+"pos": "verb,adj,adv",
+"en": "to die (to cease to live; to cease to function; to cease to move) | to render dead | dead (numb; bereft of sensation; lacking sensitivity of feeling; no longer functioning; no longer moving)",
+"rank": 255
+},
+{
+"w": "มือ",
+"pb": "mʉʉ",
+"rtgs": "mue",
+"ipa": "/mɯː˧/",
+"pos": "noun",
+"en": "(classifier ข้าง) hand | handlike part of anything: hand, handle, etc. | one who does something with the hand, especially as a profession",
+"rank": 256
+},
+{
+"w": "หญิง",
+"pb": "yǐng",
+"rtgs": "ying",
+"ipa": "/jiŋ˩˩˦/",
+"pos": "noun",
+"en": "woman; female | used as a title for or term of address to a noblewoman, and used by a noblewoman to refer to herself",
+"rank": 257
+},
+{
+"w": "เรียก",
+"pb": "rîiak",
+"rtgs": "riak",
+"ipa": "/ria̯k̚˥˩/",
+"pos": "verb",
+"en": "to call: to cry out or shout | to call: to name, address, or designate | to call: to summon",
+"rank": 258
+},
+{
+"w": "รูป",
+"pb": "rûup",
+"rtgs": "rup",
+"ipa": "/ruːp̚˥˩/",
+"pos": "noun,classifier,pron",
+"en": "outward appearance | shape; form; figure | image: physical representation or likeness, as picture, photograph, painting, sculpture, etc.",
+"rank": 259
+},
+{
+"w": "บาท",
+"pb": "bàat",
+"rtgs": "bat",
+"ipa": "/baːt̚˨˩/",
+"pos": "noun",
+"en": "foot | baht (Thai unit of currency, equal to 4 สลึง (sà-lʉ̌ng)) | a Thai unit of poem: line, stanza, verse, etc",
+"rank": 260
+},
+{
+"w": "ประชาชน",
+"pb": "bprà-chaa-chon",
+"rtgs": "pra-cha-chon",
+"ipa": "/pra˨˩.t͡ɕʰaː˧.t͡ɕʰon˧/",
+"pos": "noun",
+"en": "national, citizen; citizenry, the people (of a nation), the public; people in general, the general public | private person, as opposed to one of rank or office",
+"rank": 261
+},
+{
+"w": "ยา",
+"pb": "yaa",
+"rtgs": "ya",
+"ipa": "/jaː˧/",
+"pos": "noun,verb",
+"en": "medicine; drug | tobacco | cigarette",
+"rank": 262
+},
+{
+"w": "มนุษย์",
+"pb": "má-nút",
+"rtgs": "ma-nut",
+"ipa": "/ma˦˥.nut̚˦˥/",
+"pos": "noun",
+"en": "human; human being | man; person",
+"rank": 263
+},
+{
+"w": "สาม",
+"pb": "sǎam",
+"rtgs": "sam",
+"ipa": "/saːm˩˩˦/",
+"pos": "num,noun",
+"en": "3 (Thai numeral: ๓ (3)) | three",
+"rank": 264
+},
+{
+"w": "ลด",
+"pb": "lót",
+"rtgs": "lot",
+"ipa": "/lot̚˦˥/",
+"pos": "verb",
+"en": "to lower, to reduce | to alleviate",
+"rank": 265
+},
+{
+"w": "ผลิต",
+"pb": "pà-lìt",
+"rtgs": "pha-lit",
+"ipa": "/pʰa˨˩.lit̚˨˩/",
+"pos": "verb",
+"en": "to produce, manufacture",
+"rank": 266
+},
+{
+"w": "เล่น",
+"pb": "lên",
+"rtgs": "len",
+"ipa": "/len˥˩/",
+"pos": "verb,adv",
+"en": "to play: to employ oneself in amusement or recreation | to kid; to jest; to be unserious | to do, perform, use, engage (in), etc, especially for pleasure, amusement, or recreation",
+"rank": 267
+},
+{
+"w": "ซื้อ",
+"pb": "sʉ́ʉ",
+"rtgs": "sue",
+"ipa": "/sɯː˦˥/",
+"pos": "verb",
+"en": "to buy; to purchase",
+"rank": 268
+},
+{
+"w": "หมด",
+"pb": "mòt",
+"rtgs": "mot",
+"ipa": "/mot̚˨˩/",
+"pos": "verb,adv,prep",
+"en": "to have no more; to run out (of) | to be no longer available; to be no more; to no longer exist; to end | all; every; completely",
+"rank": 269
+},
+{
+"w": "การเมือง",
+"pb": "gaan-mʉʉang",
+"rtgs": "kan-mueang",
+"ipa": "/kaːn˧.mɯa̯ŋ˧/",
+"pos": "noun",
+"en": "politics",
+"rank": 270
+},
+{
+"w": "ขาย",
+"pb": "kǎai",
+"rtgs": "khai",
+"ipa": "/kʰaːj˩˩˦/",
+"pos": "verb",
+"en": "to sell",
+"rank": 271
+},
+{
+"w": "เสนอ",
+"pb": "sà-nə̌ə",
+"rtgs": "sa-noe",
+"ipa": "/sa˨˩.nɤː˩˩˦/",
+"pos": "verb",
+"en": "to offer; to propose | to present; to introduce",
+"rank": 272
+},
+{
+"w": "ปฏิบัติ",
+"pb": "bpà-dtì-bàt",
+"rtgs": "pa-ti-bat",
+"ipa": "/pa˨˩.ti˨˩.bat̚˨˩/",
+"pos": "verb",
+"en": "to conduct; to do; to perform; to carry out. | to conduct; to behave. | to treat: to act or behave (towards someone in some way).",
+"rank": 273
+},
+{
+"w": "ชาว",
+"pb": "chaao",
+"rtgs": "chao",
+"ipa": "/t͡ɕʰaːw˧/",
+"pos": "noun",
+"en": "approx. -er, -an, -ese, -ist etc.; people sharing something together, as nationality, duty, role, occupation, residence, religion, etc.",
+"rank": 274
+},
+{
+"w": "พร้อม",
+"pb": "prɔ́ɔm",
+"rtgs": "phrom",
+"ipa": "/pʰrɔːm˦˥/",
+"pos": "adj,adv",
+"en": "ready; prepared; set | together | simultaneously",
+"rank": 275
+},
+{
+"w": "มัก",
+"pb": "mák",
+"rtgs": "mak",
+"ipa": "/mak̚˦˥/",
+"pos": "verb,adv",
+"en": "to like; to satisfy with | often; usually | likely to; inclined to",
+"rank": 276
+},
+{
+"w": "รักษา",
+"pb": "rák-sǎa",
+"rtgs": "rak-sa",
+"ipa": "/rak̚˦˥.saː˩˩˦/",
+"pos": "verb",
+"en": "to keep; to maintain; to preserve; to conserve | to observe; to uphold | to watch; to guard; to protect; to take care (of)",
+"rank": 277
+},
+{
+"w": "เลือก",
+"pb": "lʉ̂ʉak",
+"rtgs": "lueak",
+"ipa": "/lɯa̯k̚˥˩/",
+"pos": "verb",
+"en": "to choose; to select; to pick; to elect",
+"rank": 278
+},
+{
+"w": "อ่าน",
+"pb": "àan",
+"rtgs": "an",
+"ipa": "/ʔaːn˨˩/",
+"pos": "verb",
+"en": "to read | to count",
+"rank": 279
+},
+{
+"w": "อย่างไร",
+"pb": "yàang-rai",
+"rtgs": "yang-rai",
+"ipa": "/jaːŋ˨˩.raj˧/",
+"pos": "pron,phrase",
+"en": "how? what? in what manner? in what way? by what means? | whatever; however; no matter what; whatever happens",
+"rank": 280
+},
+{
+"w": "เขียน",
+"pb": "kǐian",
+"rtgs": "khian",
+"ipa": "/kʰia̯n˩˩˦/",
+"pos": "verb",
+"en": "to write; to draw | to compose; to draw up",
+"rank": 281
+},
+{
+"w": "ล่ะ",
+"pb": "lâ",
+"rtgs": "la",
+"ipa": "/laʔ˥˩/",
+"pos": "particle",
+"en": "alternative form of เล่า (lâo)",
+"rank": 283
+},
+{
+"w": "ระยะ",
+"pb": "rá-yá",
+"rtgs": "ra-ya",
+"ipa": "/ra˦˥.jaʔ˦˥/",
+"pos": "noun",
+"en": "space; interval or separation (as in punctuation); period; stage; distance; time",
+"rank": 284
+},
+{
+"w": "ค่ะ",
+"pb": "kâ",
+"rtgs": "kha",
+"ipa": "/kʰaʔ˥˩/",
+"pos": "intj,particle",
+"en": "used to express affirmation, agreement, or acknowledgment. | used to express annoyance or frustration. | used at the end of an indicative expression, request, or wish.",
+"rank": 285
+},
+{
+"w": "ตลอด",
+"pb": "dtà-lɔ̀ɔt",
+"rtgs": "ta-lot",
+"ipa": "/ta˨˩.lɔːt̚˨˩/",
+"pos": "prep,adv",
+"en": "through; throughout. | throughly. | always.",
+"rank": 286
+},
+{
+"w": "สู่",
+"pb": "sùu",
+"rtgs": "su",
+"ipa": "/suː˨˩/",
+"pos": "verb,prep",
+"en": "to be directed towards | to; towards",
+"rank": 287
+},
+{
+"w": "ความคิด",
+"pb": "kwaam-kít",
+"rtgs": "khwam-khit",
+"ipa": "/kʰwaːm˧.kʰit̚˦˥/",
+"pos": "noun",
+"en": "thought; idea. | abstract noun of คิด (kít)",
+"rank": 288
+},
+{
+"w": "หน้าที่",
+"pb": "nâa-tîi",
+"rtgs": "na-thi",
+"ipa": "/naː˥˩.tʰiː˥˩/",
+"pos": "noun",
+"en": "duty; function; office",
+"rank": 290
+},
+{
+"w": "ราคา",
+"pb": "raa-kaa",
+"rtgs": "ra-kha",
+"ipa": "/raː˧.kʰaː˧/",
+"pos": "noun",
+"en": "price; cost",
+"rank": 291
+},
+{
+"w": "ประชุม",
+"pb": "bprà-chum",
+"rtgs": "pra-chum",
+"ipa": "/pra˨˩.t͡ɕʰum˧/",
+"pos": "verb,noun",
+"en": "to assemble; to gather; to cause to meet; to bring together | to assemble; to gather; to meet; to come together | to attend a meeting; to have a meeting",
+"rank": 292
+},
+{
+"w": "ผู้หญิง",
+"pb": "pûu-yǐng",
+"rtgs": "phu-ying",
+"ipa": "/pʰuː˥˩.jiŋ˩˩˦/",
+"pos": "noun",
+"en": "female; woman",
+"rank": 293
+},
+{
+"w": "ติด",
+"pb": "dtìt",
+"rtgs": "tit",
+"ipa": "/tit̚˨˩/",
+"pos": "verb,adv,prep",
+"en": "to apply (to) | to attach; to affix; to fasten | to cling (to); to adhere (to); to lie next or close (to)",
+"rank": 294
+},
+{
+"w": "ใส่",
+"pb": "sài",
+"rtgs": "sai",
+"ipa": "/saj˨˩/",
+"pos": "verb,prep",
+"en": "to don; to wear; to put on | to put, place, or set (in, into, etc); to cause to be in, into, etc; to insert; to add | to hit, to strike; to punch, to jab",
+"rank": 295
+},
+{
+"w": "ศึกษา",
+"pb": "sʉ̀k-sǎa",
+"rtgs": "suek-sa",
+"ipa": "/sɯk̚˨˩.saː˩˩˦/",
+"pos": "noun,verb",
+"en": "studying; learning; education | to study; to learn; to be educated",
+"rank": 296
+},
+{
+"w": "เก็บ",
+"pb": "gèp",
+"rtgs": "kep",
+"ipa": "/kep̚˨˩/",
+"pos": "adj,verb",
+"en": "kept; stored | to accumulate; to heap up; to collect | to compel or demand (financial payment)",
+"rank": 297
+},
+{
+"w": "ชั้น",
+"pb": "chán",
+"rtgs": "chan",
+"ipa": "/t͡ɕʰan˦˥/",
+"pos": "noun",
+"en": "class, rank, grade | storey, floor, level | layer",
+"rank": 298
+},
+{
+"w": "เดียวกัน",
+"pb": "diao-gan",
+"rtgs": "diao-kan",
+"ipa": "/dia̯w˧.kan˧/",
+"pos": "adj",
+"en": "identical; same.",
+"rank": 299
+},
+{
+"w": "สิทธิ",
+"pb": "sìt-tí",
+"rtgs": "sit-thi",
+"ipa": "/sit̚˨˩.tʰiʔ˦˥/",
+"pos": "noun",
+"en": "entitlement; right; title | possibility; potential",
+"rank": 300
+},
+{
+"w": "ประโยชน์",
+"pb": "bprà-yòot",
+"rtgs": "pra-yot",
+"ipa": "/pra˨˩.joːt̚˨˩/",
+"pos": "noun",
+"en": "purpose; objective; aim | interest, benefit; advantage, use",
+"rank": 301
+},
+{
+"w": "คณะกรรมการ",
+"pb": "ká-ná-gam-má-gaan",
+"rtgs": "kha-na-kam-ma-kan",
+"ipa": "/kʰa˦˥.na˦˥.kam˧.ma˦˥.kaːn˧/",
+"pos": "noun",
+"en": "group of persons set up to perform certain functions: board, committee, commission, council, etc.",
+"rank": 302
+},
+{
+"w": "แค่",
+"pb": "kɛ̂ɛ",
+"rtgs": "khae",
+"ipa": "/kʰɛː˥˩/",
+"pos": "adj,adv,det",
+"en": "only; mere | only; merely | a degree, extent, or quantity of",
+"rank": 303
+},
+{
+"w": "เปลี่ยน",
+"pb": "bplìian",
+"rtgs": "plian",
+"ipa": "/plia̯n˨˩/",
+"pos": "verb",
+"en": "to change; to modify; to alter; to make different | to change; to undergo a change; to become different | to shift; to switch; to replace",
+"rank": 304
+},
+{
+"w": "ปัจจุบัน",
+"pb": "bpàt-jù-ban",
+"rtgs": "pat-chu-ban",
+"ipa": "/pat̚˨˩.t͡ɕu˨˩.ban˧/",
+"pos": "noun,adj,adv",
+"en": "now; present | present; current | modern; up-to-date; updated",
+"rank": 305
+},
+{
+"w": "เจ้า",
+"pb": "jâao",
+"rtgs": "chao",
+"ipa": "/t͡ɕaːw˥˩/",
+"pos": "noun,classifier,pron,particle",
+"en": "god; deity | chief; lord; master | ruler; administrator; governor",
+"rank": 306
+},
+{
+"w": "พื้นที่",
+"pb": "pʉ́ʉn-tîi",
+"rtgs": "phuen-thi",
+"ipa": "/pʰɯːn˦˥.tʰiː˥˩/",
+"pos": "noun",
+"en": "area.",
+"rank": 307
+},
+{
+"w": "คะ",
+"pb": "ká",
+"rtgs": "kha",
+"ipa": "/kʰaʔ˦˥/",
+"pos": "intj,particle",
+"en": "used to express doubt, interrogation, suggestion. | used at the end of an expression of doubt, interrogation, or suggestion.",
+"rank": 308
+},
+{
+"w": "วิธี",
+"pb": "wí-tii",
+"rtgs": "wi-thi",
+"ipa": "/wi˦˥.tʰiː˧/",
+"pos": "noun",
+"en": "method; mode; means; way.",
+"rank": 309
+},
+{
+"w": "ตำแหน่ง",
+"pb": "dtam-nɛ̀ng",
+"rtgs": "tam-naeng",
+"ipa": "/tam˧.nɛŋ˨˩/",
+"pos": "noun",
+"en": "position; location; point; spot | position; office",
+"rank": 310
+},
+{
+"w": "ทำไม",
+"pb": "tam-mai",
+"rtgs": "tham-mai",
+"ipa": "/tʰam˧.maj˧/",
+"pos": "pron",
+"en": "why? what? for what? for what purpose, reason, or cause? | what to do?",
+"rank": 311
+},
+{
+"w": "ประจำ",
+"pb": "bprà-jam",
+"rtgs": "pra-cham",
+"ipa": "/pra˨˩.t͡ɕam˧/",
+"pos": "adj,noun,verb",
+"en": "regular:; constant; frequent; habitual | regular:; customary; normal | fixed; permanent",
+"rank": 312
+},
+{
+"w": "พยายาม",
+"pb": "pá-yaa-yaam",
+"rtgs": "pha-ya-yam",
+"ipa": "/pʰa˦˥.jaː˧.jaːm˧/",
+"pos": "verb,noun",
+"en": "to make an effort; to endeavor; to strive; to struggle; to try; to attempt; to persevere; to persist | to attempt: to make a substantial but unsuccessful effort (to commit a crime) | attempt: substantial but unsuccessful effort (to commit a crime)",
+"rank": 313
+},
+{
+"w": "เนื่องจาก",
+"pb": "nʉ̂ʉang-jàak",
+"rtgs": "nueang-chak",
+"ipa": "/nɯa̯ŋ˥˩.t͡ɕaːk̚˨˩/",
+"pos": "conj",
+"en": "owing to; due to; because.",
+"rank": 314
+},
+{
+"w": "โอกาส",
+"pb": "oo-gàat",
+"rtgs": "o-kat",
+"ipa": "/ʔoː˧.kaːt̚˨˩/",
+"pos": "noun",
+"en": "chance; occasion; opportunity",
+"rank": 315
+},
+{
+"w": "แม้",
+"pb": "mɛ́ɛ",
+"rtgs": "mae",
+"ipa": "/mɛː˦˥/",
+"pos": "adv,conj",
+"en": "even | although; in spite of (the fact that)",
+"rank": 316
+},
+{
+"w": "สมัย",
+"pb": "sà-mǎi",
+"rtgs": "sa-mai",
+"ipa": "/sa˨˩.maj˩˩˦/",
+"pos": "noun",
+"en": "time | era",
+"rank": 317
+},
+{
+"w": "อย่า",
+"pb": "yàa",
+"rtgs": "ya",
+"ipa": "/jaː˨˩/",
+"pos": "adv",
+"en": "don't, do not",
+"rank": 318
+},
+{
+"w": "สัมพันธ์",
+"pb": "sǎm-pan",
+"rtgs": "sam-phan",
+"ipa": "/sam˩˩˦.pʰan˧/",
+"pos": "verb",
+"en": "to relate; to associate; to be related (to).",
+"rank": 319
+},
+{
+"w": "ประเภท",
+"pb": "bprà-pêet",
+"rtgs": "pra-phet",
+"ipa": "/pra˨˩.pʰeːt̚˥˩/",
+"pos": "noun",
+"en": "category; class; kind.",
+"rank": 320
+},
+{
+"w": "เหตุ",
+"pb": "hèet",
+"rtgs": "het",
+"ipa": "/heːt̚˨˩/",
+"pos": "noun,conj",
+"en": "cause, factor; ground, reason | event; incident; situation; happening; occurrence; circumstance | because; because of",
+"rank": 321
+},
+{
+"w": "ตอบ",
+"pb": "dtɔ̀ɔp",
+"rtgs": "top",
+"ipa": "/tɔːp̚˨˩/",
+"pos": "verb",
+"en": "to counter (with same action) | to solve | to answer",
+"rank": 322
+},
+{
+"w": "วัฒนธรรม",
+"pb": "wát-tá-ná-tam",
+"rtgs": "wat-tha-na-tham",
+"ipa": "/wat̚˦˥.tʰa˦˥.na˦˥.tʰam˧/",
+"pos": "noun",
+"en": "culture.",
+"rank": 323
+},
+{
+"w": "ตนเอง",
+"pb": "dton-eeng",
+"rtgs": "ton-eng",
+"ipa": "/ton˧.ʔeːŋ˧/",
+"pos": "pron",
+"en": "oneself",
+"rank": 324
+},
+{
+"w": "นั่น",
+"pb": "nân",
+"rtgs": "nan",
+"ipa": "/nan˥˩/",
+"pos": "pron",
+"en": "that; those",
+"rank": 325
+},
+{
+"w": "สัก",
+"pb": "sàk",
+"rtgs": "sak",
+"ipa": "/sak̚˨˩/",
+"pos": "adv,prep,noun,verb",
+"en": "just; about; around | as little as; merely | at; to",
+"rank": 326
+},
+{
+"w": "สินค้า",
+"pb": "sǐn-káa",
+"rtgs": "sin-kha",
+"ipa": "/sin˩˩˦.kʰaː˦˥/",
+"pos": "noun",
+"en": "merchandise; goods; product.",
+"rank": 327
+},
+{
+"w": "เดิม",
+"pb": "dəəm",
+"rtgs": "doem",
+"ipa": "/dɤːm˧/",
+"pos": "adj,noun",
+"en": "original; first | origin, beginning",
+"rank": 328
+},
+{
+"w": "จำเป็น",
+"pb": "jam-bpen",
+"rtgs": "cham-pen",
+"ipa": "/t͡ɕam˧.pen˧/",
+"pos": "adj",
+"en": "necessary; essential; to need to",
+"rank": 329
+},
+{
+"w": "เปลี่ยนแปลง",
+"pb": "bplìian-bplɛɛng",
+"rtgs": "plian-plaeng",
+"ipa": "/plia̯n˨˩.plɛːŋ˧/",
+"pos": "verb",
+"en": "to change.",
+"rank": 330
+},
+{
+"w": "ถือ",
+"pb": "tʉ̌ʉ",
+"rtgs": "thue",
+"ipa": "/tʰɯː˩˩˦/",
+"pos": "verb",
+"en": "to hold, carry, or bear, with or as if with a hand | to wield; to handle | to hold; to have; to occupy",
+"rank": 331
+},
+{
+"w": "เล่า",
+"pb": "lâo",
+"rtgs": "lao",
+"ipa": "/law˥˩/",
+"pos": "verb,particle,noun",
+"en": "to narrate; to tell | placed after an expression for emphasis",
+"rank": 332
+},
+{
+"w": "ประกอบ",
+"pb": "bprà-gɔ̀ɔp",
+"rtgs": "pra-kop",
+"ipa": "/pra˨˩.kɔːp̚˨˩/",
+"pos": "verb",
+"en": "to put together; to assemble. | to do; to perform. | to consist of; to be composed of.",
+"rank": 333
+},
+{
+"w": "ชนิด",
+"pb": "chá-nít",
+"rtgs": "cha-nit",
+"ipa": "/t͡ɕʰa˦˥.nit̚˦˥/",
+"pos": "noun",
+"en": "type; kind; class; sort; variety | species",
+"rank": 334
+},
+{
+"w": "กระทรวง",
+"pb": "grà-suuang",
+"rtgs": "kra-suang",
+"ipa": "/kra˨˩.sua̯ŋ˧/",
+"pos": "noun",
+"en": "ministry or equivalent organisation, as federal executive department in the United States",
+"rank": 335
+},
+{
+"w": "ปรากฏ",
+"pb": "bpraa-gòt",
+"rtgs": "pra-kot",
+"ipa": "/praː˧.kot̚˨˩/",
+"pos": "verb",
+"en": "to appear; to occur; to be or become shown; to be or become known | to show; to exhibit | to appear; to seem",
+"rank": 336
+},
+{
+"w": "แล้วก็",
+"pb": "lɛ́ɛo-gɔ̂ɔ",
+"rtgs": "laeo-ko",
+"ipa": "/lɛːw˦˥.kɔː˥˩/",
+"pos": "conj",
+"en": "then, and then",
+"rank": 337
+},
+{
+"w": "ชาย",
+"pb": "chaai",
+"rtgs": "chai",
+"ipa": "/t͡ɕʰaːj˧/",
+"pos": "noun,verb,adv",
+"en": "male; man | edge | eaves",
+"rank": 338
+},
+{
+"w": "ดำเนินการ",
+"pb": "dam-nəən-gaan",
+"rtgs": "dam-noen-kan",
+"ipa": "/dam˧.nɤːn˧.kaːn˧/",
+"pos": "verb",
+"en": "to operate; to run; to carry out work.",
+"rank": 339
+},
+{
+"w": "รอบ",
+"pb": "rɔ̂ɔp",
+"rtgs": "rop",
+"ipa": "/rɔːp̚˥˩/",
+"pos": "noun,classifier,adv,prep",
+"en": "cycle; round; turn; period | cycle (of twelve years); period (of twelve years) | time; occasion",
+"rank": 340
+},
+{
+"w": "บริษัท",
+"pb": "bɔɔ-rí-sàt",
+"rtgs": "bo-ri-sat",
+"ipa": "/bɔː˧.ri˦˥.sat̚˨˩/",
+"pos": "noun",
+"en": "company: group or number (as of individuals associated or assembled together). | business entity, as company, corporation, or firm, that is established under a general law; as opposed to บรรษัท (ban-sàt), one established by a specific law. | any business company, corporation, or firm.",
+"rank": 341
+},
+{
+"w": "จังหวัด",
+"pb": "jang-wàt",
+"rtgs": "chang-wat",
+"ipa": "/t͡ɕaŋ˧.wat̚˨˩/",
+"pos": "noun",
+"en": "province: highest administrative division of Thailand, governed by ผู้ว่าราชการ (pûu-wâa-râat-chá-gaan), divided into อำเภอ (am-pəə, “districts”), กิ่งอำเภอ (“minor districts”), and ตำบล (dtam-bon, “subdistrict”), respectively | province: a type of area subject to the territorial jurisdiction of a ศาลจังหวัด (“provincial court”) | similar administrative division, as department in France, prefecture in Japan, voivodeship in Poland, etc.",
+"rank": 342
+},
+{
+"w": "ใบ",
+"pb": "bai",
+"rtgs": "bai",
+"ipa": "/baj˧/",
+"pos": "noun,classifier",
+"en": "leaf (of a plant) | sail (of a boat) | sheet (as of paper)",
+"rank": 343
+},
+{
+"w": "นอน",
+"pb": "nɔɔn",
+"rtgs": "non",
+"ipa": "/nɔːn˧/",
+"pos": "verb,adj",
+"en": "to lie or lay (down, flat, etc.) | to sleep; to go to bed; to take a nap; to be in or as in the state of sleep; to cease being awake; to be asleep | to sleep: to have sex",
+"rank": 344
+},
+{
+"w": "ทั้งหมด",
+"pb": "táng-mòt",
+"rtgs": "thang-mot",
+"ipa": "/tʰaŋ˦˥.mot̚˨˩/",
+"pos": "pron",
+"en": "all",
+"rank": 345
+},
+{
+"w": "เกิน",
+"pb": "gəən",
+"rtgs": "koen",
+"ipa": "/kɤːn˧/",
+"pos": "verb,adv",
+"en": "to exceed | too much, too",
+"rank": 346
+},
+{
+"w": "สุข",
+"pb": "sùk",
+"rtgs": "suk",
+"ipa": "/suk̚˨˩/",
+"pos": "noun",
+"en": "joy; happiness | delight",
+"rank": 347
+},
+{
+"w": "รู้จัก",
+"pb": "rúu-jàk",
+"rtgs": "ru-chak",
+"ipa": "/ruː˦˥.t͡ɕak̚˨˩/",
+"pos": "verb",
+"en": "to know (a person); to be acquainted with",
+"rank": 348
+},
+{
+"w": "ครู",
+"pb": "kruu",
+"rtgs": "khru",
+"ipa": "/kʰruː˧/",
+"pos": "noun",
+"en": "teacher; schoolteacher; instructor",
+"rank": 349
+},
+{
+"w": "โดยเฉพาะ",
+"pb": "dooi-chà-pɔ́",
+"rtgs": "doi-cha-pho",
+"ipa": "/doːj˧.t͡ɕʰa˨˩.pʰɔʔ˦˥/",
+"pos": "adv",
+"en": "specifically; especially; particularly; in particular.",
+"rank": 350
+},
+{
+"w": "ดังนั้น",
+"pb": "dang-nán",
+"rtgs": "dang-nan",
+"ipa": "/daŋ˧.nan˦˥/",
+"pos": "adv",
+"en": "like that; as such; thus; therefore.",
+"rank": 351
+},
+{
+"w": "ร้าน",
+"pb": "ráan",
+"rtgs": "ran",
+"ipa": "/raːn˦˥/",
+"pos": "noun,classifier",
+"en": "platform for a certain activity, as stand, stage, stall, etc. | stand for supporting a plant, especially a climbing plant | cucumber: the plant Cucumis sativus of the gourd family",
+"rank": 352
+},
+{
+"w": "บริการ",
+"pb": "bɔɔ-rí-gaan",
+"rtgs": "bo-ri-kan",
+"ipa": "/bɔː˧.ri˦˥.kaːn˧/",
+"pos": "noun,verb",
+"en": "service | to service, to serve; to help, to assist",
+"rank": 353
+},
+{
+"w": "ทราบ",
+"pb": "sâap",
+"rtgs": "sap",
+"ipa": "/saːp̚˥˩/",
+"pos": "verb",
+"en": "to know; to understand; to realize",
+"rank": 354
+},
+{
+"w": "ประมาณ",
+"pb": "bprà-maan",
+"rtgs": "pra-man",
+"ipa": "/pra˨˩.maːn˧/",
+"pos": "verb,adv,prep",
+"en": "to measure, to determine; to approximate, to estimate. | approximately; about; around; roughly. | like; as.",
+"rank": 355
+},
+{
+"w": "จุด",
+"pb": "jùt",
+"rtgs": "chut",
+"ipa": "/t͡ɕut̚˨˩/",
+"pos": "verb,noun",
+"en": "to light | dot; point; period | to make a dot or point",
+"rank": 356
+},
+{
+"w": "ง่าย",
+"pb": "ngâai",
+"rtgs": "ngai",
+"ipa": "/ŋaːj˥˩/",
+"pos": "adj,adv",
+"en": "easy, simple | easily; at ease; simply",
+"rank": 357
+},
+{
+"w": "โครงการ",
+"pb": "kroong-gaan",
+"rtgs": "khrong-kan",
+"ipa": "/kʰroːŋ˧.kaːn˧/",
+"pos": "noun",
+"en": "project, plan",
+"rank": 358
+},
+{
+"w": "ตัวอย่าง",
+"pb": "dtuua-yàang",
+"rtgs": "tua-yang",
+"ipa": "/tua̯˧.jaːŋ˨˩/",
+"pos": "noun,adj",
+"en": "example; sample. | exemplary.",
+"rank": 359
+},
+{
+"w": "ข้าง",
+"pb": "kâang",
+"rtgs": "khang",
+"ipa": "/kʰaːŋ˥˩/",
+"pos": "prep,noun,adv,classifier",
+"en": "towards; in the direction of | beside; on the side of; by | side; flank",
+"rank": 360
+},
+{
+"w": "ภาค",
+"pb": "pâak",
+"rtgs": "phak",
+"ipa": "/pʰaːk̚˥˩/",
+"pos": "noun",
+"en": "(if belonging to a god, high priest, or royal person: พระ~) luck; good luck; good fortune | part; section; division; region; area | part; piece; portion; fraction; fragment",
+"rank": 361
+},
+{
+"w": "เรียกว่า",
+"pb": "rîiak-wâa",
+"rtgs": "riak-wa",
+"ipa": "/ria̯k̚˥˩.waː˥˩/",
+"pos": "verb",
+"en": "to be called",
+"rank": 362
+},
+{
+"w": "คืน",
+"pb": "kʉʉn",
+"rtgs": "khuen",
+"ipa": "/kʰɯːn˧/",
+"pos": "noun,verb,adv",
+"en": "night (Classifier: คืน) | to be or cause to be back: to return; to give back, to send back; to bring back, to take back, to restore; to come back, to go back | back",
+"rank": 363
+},
+{
+"w": "หรอก",
+"pb": "rɔ̀k",
+"rtgs": "rok",
+"ipa": "/rɔk̚˨˩/",
+"pos": "particle",
+"en": "at all",
+"rank": 364
+},
+{
+"w": "โรค",
+"pb": "rôok",
+"rtgs": "rok",
+"ipa": "/roːk̚˥˩/",
+"pos": "noun",
+"en": "disease; sickness",
+"rank": 365
+},
+{
+"w": "อาการ",
+"pb": "aa-gaan",
+"rtgs": "a-kan",
+"ipa": "/ʔaː˧.kaːn˧/",
+"pos": "noun",
+"en": "condition; state; status | symptom; manifestation; indication | manner; way; style; fashion",
+"rank": 366
+},
+{
+"w": "อายุ",
+"pb": "aa-yú",
+"rtgs": "a-yu",
+"ipa": "/ʔaː˧.juʔ˦˥/",
+"pos": "noun,verb",
+"en": "age: length of life | duration; term | to be aged; to be old",
+"rank": 367
+},
+{
+"w": "เหล่านี้",
+"pb": "lào-níi",
+"rtgs": "lao-ni",
+"ipa": "/law˨˩.niː˦˥/",
+"pos": "pron",
+"en": "these, this group",
+"rank": 368
+},
+{
+"w": "พา",
+"pb": "paa",
+"rtgs": "pha",
+"ipa": "/pʰaː˧/",
+"pos": "verb",
+"en": "to lead; to bring; to take | to direct; to conduct; to guide | to carry or have (on one's body, with oneself, or around one)",
+"rank": 369
+},
+{
+"w": "แก",
+"pb": "gɛɛ",
+"rtgs": "kae",
+"ipa": "/kɛː˧/",
+"pos": "pron",
+"en": "a second person pronoun used to address a person of equal or lower status out of affection or intimacy | a second person pronoun used to address a person of equal or lower status out of contempt | a third person pronoun, often used to refer to an older person or person of higher status",
+"rank": 370
+},
+{
+"w": "แตกต่าง",
+"pb": "dtɛ̀ɛk-dtàang",
+"rtgs": "taek-tang",
+"ipa": "/tɛːk̚˨˩.taːŋ˨˩/",
+"pos": "verb",
+"en": "to differ; to be different.",
+"rank": 371
+},
+{
+"w": "วิธีการ",
+"pb": "wí-tii-gaan",
+"rtgs": "wi-thi-kan",
+"ipa": "/wi˦˥.tʰiː˧.kaːn˧/",
+"pos": "noun",
+"en": "methodology, method",
+"rank": 372
+},
+{
+"w": "น้อง",
+"pb": "nɔ́ɔng",
+"rtgs": "nong",
+"ipa": "/nɔːŋ˦˥/",
+"pos": "noun",
+"en": "younger brother; younger sister | younger person | baby; infant; young child",
+"rank": 373
+},
+{
+"w": "หมอ",
+"pb": "mɔ̌ɔ",
+"rtgs": "mo",
+"ipa": "/mɔː˩˩˦/",
+"pos": "noun",
+"en": "person specialising in something: expert, specialist, professional, etc. | person specialising in magic, the occult, or the like: shaman, astrologer, soothsayer, etc. | person specialising in medicine: doctor, physician, etc.",
+"rank": 374
+},
+{
+"w": "ความรู้สึก",
+"pb": "kwaam-rúu-sʉ̀k",
+"rtgs": "khwam-ru-suek",
+"ipa": "/kʰwaːm˧.ruː˦˥.sɯk̚˨˩/",
+"pos": "noun",
+"en": "abstract noun of รู้สึก (rúu-sʉ̀k): feeling; emotion",
+"rank": 375
+},
+{
+"w": "แทน",
+"pb": "tɛɛn",
+"rtgs": "thaen",
+"ipa": "/tʰɛːn˧/",
+"pos": "verb,adv,adj",
+"en": "to represent; to take place of | to replace | to repay; to retaliate",
+"rank": 376
+},
+{
+"w": "ที่อยู่",
+"pb": "tîi-yùu",
+"rtgs": "thi-yu",
+"ipa": "/tʰiː˥˩.juː˨˩/",
+"pos": "noun",
+"en": "address",
+"rank": 377
+},
+{
+"w": "เชื่อ",
+"pb": "chʉ̂ʉa",
+"rtgs": "chuea",
+"ipa": "/t͡ɕʰɯa̯˥˩/",
+"pos": "verb",
+"en": "to believe | to rely on | to trust",
+"rank": 378
+},
+{
+"w": "ล้าน",
+"pb": "láan",
+"rtgs": "lan",
+"ipa": "/laːn˦˥/",
+"pos": "adj,num",
+"en": "bald | million",
+"rank": 379
+},
+{
+"w": "ยาว",
+"pb": "yaao",
+"rtgs": "yao",
+"ipa": "/jaːw˧/",
+"pos": "adj,adv,verb",
+"en": "long | for a long or longer period of time | to prolong; to extend; to lengthen",
+"rank": 380
+},
+{
+"w": "ราชการ",
+"pb": "râat-chá-gaan",
+"rtgs": "rat-cha-kan",
+"ipa": "/raːt̚˥˩.t͡ɕʰa˦˥.kaːn˧/",
+"pos": "noun,adj",
+"en": "government affair; public affair; affair of the state | government service; public service | government sector; public sector",
+"rank": 381
+},
+{
+"w": "ครอบครัว",
+"pb": "krɔ̂ɔp-kruua",
+"rtgs": "khrop-khrua",
+"ipa": "/kʰrɔːp̚˥˩.kʰrua̯˧/",
+"pos": "noun",
+"en": "family",
+"rank": 382
+},
+{
+"w": "ไหม",
+"pb": "mǎi",
+"rtgs": "mai",
+"ipa": "/maj˩˩˦/",
+"pos": "particle,noun,verb",
+"en": "or not? | silkworm. | thread.",
+"rank": 383
+},
+{
+"w": "เดินทาง",
+"pb": "dəən-taang",
+"rtgs": "doen-thang",
+"ipa": "/dɤːn˧.tʰaːŋ˧/",
+"pos": "verb",
+"en": "to travel; to go on a trip",
+"rank": 384
+},
+{
+"w": "นา",
+"pb": "naa",
+"rtgs": "na",
+"ipa": "/naː˧/",
+"pos": "noun,adv,particle",
+"en": "paddy field | area similar to rice field used for other purposes | used in ชั่วนาตาปี (chûua-naa-dtaa-bpii, “year in and year out, forever”)",
+"rank": 385
+},
+{
+"w": "โรงเรียน",
+"pb": "roong-riian",
+"rtgs": "rong-rian",
+"ipa": "/roːŋ˧.ria̯n˧/",
+"pos": "noun",
+"en": "school",
+"rank": 386
+},
+{
+"w": "คณะ",
+"pb": "ká-ná",
+"rtgs": "kha-na",
+"ipa": "/kʰa˦˥.naʔ˦˥/",
+"pos": "noun,classifier",
+"en": "group; body; party; company; assemblage | department; section; division | faculty (department of learning)",
+"rank": 387
+},
+{
+"w": "สภา",
+"pb": "sà-paa",
+"rtgs": "sa-pha",
+"ipa": "/sa˨˩.pʰaː˧/",
+"pos": "noun",
+"en": "assembly; council; congress; convention; conference; meeting; gathering; forum",
+"rank": 388
+},
+{
+"w": "สภาพ",
+"pb": "sà-pâap",
+"rtgs": "sa-phap",
+"ipa": "/sa˨˩.pʰaːp̚˥˩/",
+"pos": "noun",
+"en": "state",
+"rank": 389
+},
+{
+"w": "ที",
+"pb": "tii",
+"rtgs": "thi",
+"ipa": "/tʰiː˧/",
+"pos": "noun,classifier",
+"en": "chance, occasion, opportunity, time; round, turn | advantage; upper hand | gesture, manner, motion, posture; appearance, bearing, demeanor, mien",
+"rank": 390
+},
+{
+"w": "พรรค",
+"pb": "pák",
+"rtgs": "phak",
+"ipa": "/pʰak̚˦˥/",
+"pos": "noun",
+"en": "group, band, or company (of people). | side, part: one of two or more contesting groups, parties, etc. | kind, type, or class (of people).",
+"rank": 391
+},
+{
+"w": "วัด",
+"pb": "wát",
+"rtgs": "wat",
+"ipa": "/wat̚˦˥/",
+"pos": "noun,verb",
+"en": "religious compound or place of worship, as temple, sanctuary, monastery, etc. | Buddhist compound; Buddhist place of worship; Buddhist temple; Buddhist monastery | to compare; to measure",
+"rank": 392
+},
+{
+"w": "ประกาศ",
+"pb": "bprà-gàat",
+"rtgs": "pra-kat",
+"ipa": "/pra˨˩.kaːt̚˨˩/",
+"pos": "verb,noun",
+"en": "to announce; to declare; to proclaim; to give notice (of) | announcement; declaration; proclamation; notice; notification | sign; mark",
+"rank": 393
+},
+{
+"w": "นาง",
+"pb": "naang",
+"rtgs": "nang",
+"ipa": "/naːŋ˧/",
+"pos": "noun,classifier",
+"en": "woman | a prefix or suffix indicating a woman or femininity | a title given to the wife of a nobleman ranking below พระยา (prá-yaa)",
+"rank": 394
+},
+{
+"w": "หัว",
+"pb": "hǔua",
+"rtgs": "hua",
+"ipa": "/hua̯˩˩˦/",
+"pos": "noun,verb",
+"en": "head:; the upper part of the body (Classifier: หัว) | head:; chief; leader | head:; top; peak; summit (Classifiers: หัว or ยอด)",
+"rank": 395
+},
+{
+"w": "กลาง",
+"pb": "glaang",
+"rtgs": "klang",
+"ipa": "/klaːŋ˧/",
+"pos": "noun,prep,adj",
+"en": "middle; center | in the middle of; amidst; amongst | during",
+"rank": 396
+},
+{
+"w": "แรง",
+"pb": "rɛɛng",
+"rtgs": "raeng",
+"ipa": "/rɛːŋ˧/",
+"pos": "noun,adj",
+"en": "force; strength; power; energy | labour; effort | strong; intense",
+"rank": 397
+},
+{
+"w": "คู่",
+"pb": "kûu",
+"rtgs": "khu",
+"ipa": "/kʰuː˥˩/",
+"pos": "noun,classifier,verb",
+"en": "pair | even number | couple; partner",
+"rank": 398
+},
+{
+"w": "ตลาด",
+"pb": "dtà-làat",
+"rtgs": "ta-lat",
+"ipa": "/ta˨˩.laːt̚˨˩/",
+"pos": "noun",
+"en": "market",
+"rank": 399
+},
+{
+"w": "จับ",
+"pb": "jàp",
+"rtgs": "chap",
+"ipa": "/t͡ɕap̚˨˩/",
+"pos": "verb,classifier",
+"en": "to touch | to grab; to grasp; to grip; to hold; to take hold; to seize | to catch; to capture; to apprehend; to arrest",
+"rank": 401
+},
+{
+"w": "วิจัย",
+"pb": "wí-jai",
+"rtgs": "wi-chai",
+"ipa": "/wi˦˥.t͡ɕaj˧/",
+"pos": "noun,verb",
+"en": "collection; compilation; assemblage; accumulation; gathering | research | to research",
+"rank": 402
+},
+{
+"w": "แนว",
+"pb": "nɛɛo",
+"rtgs": "naeo",
+"ipa": "/nɛːw˧/",
+"pos": "noun,classifier",
+"en": "row; column; line | style; trend; fashion | Classifier for lines, rows, strips, ways, processes.",
+"rank": 403
+},
+{
+"w": "ข้าว",
+"pb": "kâao",
+"rtgs": "khao",
+"ipa": "/kʰaːw˥˩/",
+"pos": "noun",
+"en": "rice | food; meal | article, object, thing; belonging, possession",
+"rank": 404
+},
+{
+"w": "หัน",
+"pb": "hǎn",
+"rtgs": "han",
+"ipa": "/han˩˩˦/",
+"pos": "verb",
+"en": "to turn; to rotate",
+"rank": 405
+},
+{
+"w": "ไม่ว่า",
+"pb": "mâi-wâa",
+"rtgs": "mai-wa",
+"ipa": "/maj˥˩.waː˥˩/",
+"pos": "conj",
+"en": "regardless of; irrespective of; whether; no matter",
+"rank": 406
+},
+{
+"w": "เฉพาะ",
+"pb": "chà-pɔ́",
+"rtgs": "cha-pho",
+"ipa": "/t͡ɕʰa˨˩.pʰɔʔ˦˥/",
+"pos": "adj",
+"en": "specific; particular; peculiar.",
+"rank": 407
+},
+{
+"w": "ยก",
+"pb": "yók",
+"rtgs": "yok",
+"ipa": "/jok̚˦˥/",
+"pos": "noun,verb,adj",
+"en": "a unit of measuring wooden boards, equal to 1 cubit wide, 16 wa long, and 1 inch thick | period of time; round | a round of flogging, consisting of 30 strokes",
+"rank": 408
+}
+]

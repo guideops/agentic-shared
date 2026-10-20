@@ -47,7 +47,7 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    and its `window.nowISO` is less than 24 hours old. If it is missing or stale, do NOT
    author insights from it — write a single `session`-pillar "engine health" insight instead
    ("Dream signal pack is missing/stale since <date> — the overnight pipeline needs attention",
-   with the check to run in `action.snippet`) and stop. Never invent numbers.
+   with `action: {"kind":"unsupported"}`) and stop. Never invent numbers.
    On `/dream doctor`: only run the checks and report — signal-pack age, `dream-latest.json`
    age vs `dream.schedule.cadence`, vault path resolution, and whether the `dream-review`
    Hermes cron job exists and is active (`hermes cron list`). No insights, no writes.
@@ -62,12 +62,15 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
 1b. **Read last night before writing tonight.** Load the previous
    `server/data/dream-latest.json` (if any) and note each prior insight's `pillar`, `title`,
    the numbers it cited, and its `status`:
-   - **Never re-emit an insight the user `dismissed`** — that is the user saying no.
-   - A repeat of an `open`/`skipped` insight is allowed **only if its number moved
+   - **Never re-emit a semantically matching insight the user `dismissed`** — that is the user saying no,
+     even when tonight's date-based `id`, title, or prose differs. The server identifies a match by
+     `pillar + action.kind + typed action input`. Re-open it only when its stated impact has at least
+     **doubled** (for example, $100/mo → $200/mo); say exactly what crossed that threshold.
+   - A repeat of an `open`/`declined` insight is allowed **only if its number moved
      materially** — and the body must say so ("Opus share still 61%, up from 54% last week").
      A daily run over a 7-day window overlaps ~6/7 night-to-night; without this rule,
      repetition is the default output, not the exception.
-   - If a prior insight was `applied`, check whether its metric actually moved in tonight's
+   - If a prior insight `execution.state` is `succeeded`, check whether its metric actually moved in tonight's
      pack and report the result as evidence — a win is a valid insight.
 
 1c. **Norms file.** Read `server/data/dream-norms.md` if it exists. Each line records
@@ -79,12 +82,19 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
 
 1d. **Weekly postmortem (Monday runs only).** When `window.nowISO` falls on a Monday, score
    the trail before authoring: read `server/data/dream-archive/dream-latest-*.json` entries
-   7–14 days old, and for each insight check (a) status — did the user apply, skip, or
-   dismiss it? — and (b) whether the metric it cited actually moved in tonight's signal pack
-   versus its archived pack (est vs actual). Add a **Postmortem** section to the vault digest:
-   per-insight verdict (HIT / MISS / IGNORED) and the running hit rate. A pillar whose
-   insights keep landing IGNORED must not lead tonight's insights. Skip silently if the
-   archive is empty (it fills nightly from now on).
+   7–14 days old and their matching archived signal packs. Use execution outcomes, not old button
+   labels: `succeeded` is **HIT** only when executor evidence exists *and* the cited metric moved
+   in the expected direction; `failed` is **FAILED** (never a hit); `unsupported` is **UNSUPPORTED**
+   (a registry/ranking gap, never a hit); `declined` and `dismissed` are **DECLINED** / **DISMISSED**;
+   an untouched `proposed` item is **UNATTEMPTED**. A successful action with evidence but no metric
+   movement is **EXECUTED, NO EFFECT** — useful evidence, not a hit. Report outcome counts and a
+   hit rate whose denominator is only succeeded actions with a measurable expected metric.
+   A pillar repeatedly declined/dismissed must not lead tonight's insights; recurring unsupported
+   suggestions must be phrased as evidence-only until the registry gains a real safe executor.
+   Append one concise ranking-learning entry to `domains/research/learnings.md` when the same
+   semantic recommendation is unsupported or dismissed twice (include pillar, action kind, and
+   why it was suppressed), so a later registry/ranking change is deliberate. Skip silently if
+   the archive is empty (it fills nightly from now on).
 
 2. **Analyze through the 8-pillar lens** — this is *how Dream thinks*, not UI:
    - **cost** — model mix, Opus over-use, cache reuse → routing/savings opportunities.
@@ -105,7 +115,10 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    rather than padding: fewer than 3 pillars carrying real, non-repeated signal means fewer
    insights, and a quiet week is a valid result ("Quiet week — 1 improvement found"). Never
    pad to reach a count. Derive `headline` count from the number of insights (no hardcoding).
-   Order insights by expected impact (est $ saved + minutes saved), best first.
+   Order insights by actionability first, then expected impact (est $ saved + minutes saved): a
+   safe supported action with strong evidence outranks an equally-sized unsupported suggestion.
+   Do not add a weak insight merely to make Apply available; `0` insights is correct when no
+   actionable or worthwhile evidence survives repeat suppression.
 
    ```json
    {
@@ -122,7 +135,7 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
        "title": "You're paying Opus prices for jobs Haiku can do",
        "body": "Roughly 60% of yesterday's Opus calls were plain file reads…",
        "why": ["1.4M of 2.3M Opus tokens were file reads", "Haiku scored identically last month"],
-       "action": { "label": "TRY IT NOW — PASTE THIS INTO CLAUDE CODE", "snippet": "claude -p \"/route-reads haiku\"" },
+       "action": { "kind": "direct.cost-review" },
        "estSavingUsdPerMo": 348,
        "minutesSaved": 0,
        "evidence": "observed",
@@ -140,13 +153,21 @@ If no workspace resolves, say so and stop — do not invent a signal pack.
    - `kicker`: short imperative (e.g. "Sharpen your memory"). `title`: bold one-liner.
    - `body`: 1–3 sentences of prose with specifics from the pack.
    - `why`: 1–3 short evidence bullets (the numbers behind the call).
-   - `action`: optional — include only when there's a concrete command to paste; else `null`.
+   - `action`: optional. It may contain only a registry `kind` and its declared structured
+     `input`; never emit a shell command, path, URL, prompt, endpoint, or author-supplied
+     executor/label/risk/summary. The initial allowed kinds are `direct.cost-review`,
+     `operator.create-task` with `input: {"taskType":"review-cost-anomaly"}`, and
+     `unsupported`. Choose a supported kind only when the signal pack provides every required
+     typed input and the proposed work is within that kind's fixed contract; otherwise use
+     `null` or `{ "kind": "unsupported" }` (including session compaction). A display-only `investigate` note may contain a
+     suggestion, but it is never an action payload.
    - `estSavingUsdPerMo` / `minutesSaved`: integers, best estimate, `0` if unknown.
    - `evidence`: `"observed"` (directly counted in the signal pack) or `"inferred"`
      (pattern guess). `confidence`: `"high"` / `"med"` / `"low"`. Only an
      observed + high insight may carry `estSavingUsdPerMo` > 0 — an inferred saving
      estimate is a made-up number.
-   - `status`: always `"open"` for new insights.
+   - `status`: always `"open"` for new insights. The server adds `execution`; never author
+     `applied` or `skipped` (old values are display-only history).
 
 5. **Append a human digest** to the connected Obsidian vault at
    `<vault>/Agentic Output/digests/dream-YYYY-MM-DD.md` (date from the window's `nowISO`):

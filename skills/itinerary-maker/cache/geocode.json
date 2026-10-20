@@ -1,0 +1,700 @@
+{
+ "1876, queenstown, new zealand": {
+  "display": "1876, Ballarat Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0314702,
+  "lon": 168.6626163
+ },
+ "19 st samantha lane, queenstown 9300, new zealand": {
+  "display": "19, St Samantha Lane, Goldfield Heights, Queenstown, Queenstown-Lakes District, Otago, 9300, New Zealand / Aotearoa",
+  "lat": -45.0254035,
+  "lon": 168.6870836
+ },
+ "35 brecon street, queenstown, new zealand": {
+  "display": "ANITA GELATO, 35, Brecon Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9300, New Zealand / Aotearoa",
+  "lat": -45.0297022,
+  "lon": 168.6570866
+ },
+ "altice arena, lisbon, portugal": {
+  "display": "MEO Arena, Rossio dos Olivais, Parque das Na\u00e7\u00f5es, Lisboa, 1990-193, Portugal",
+  "lat": 38.7684689,
+  "lon": -9.0939002
+ },
+ "aosta, arrowtown, new zealand": {
+  "display": "Little Aosta, Arrow Lane, Arrowtown, Queenstown-Lakes District, Otago, 9302, New Zealand / Aotearoa",
+  "lat": -44.9386511,
+  "lon": 168.8309383
+ },
+ "arrowtown, new zealand": {
+  "display": "Arrowtown, Queenstown-Lakes District, Otago, 9302, New Zealand / Aotearoa",
+  "lat": -44.9405627,
+  "lon": 168.8350761
+ },
+ "australia, lisbon, portugal": {
+  "display": "Embaixada da Austr\u00e1lia, 200, Avenida da Liberdade, Cora\u00e7\u00e3o de Jesus, Santo Ant\u00f3nio, Madalena, Lisboa, 1250-147, Portugal",
+  "lat": 38.7214,
+  "lon": -9.1459312
+ },
+ "ayrburn, arrowtown, new zealand": {
+  "_miss": 2
+ },
+ "bas\u00edlica da estrela, lisbon, portugal": {
+  "display": "Bas\u00edlica da Estrela, Pra\u00e7a da Estrela, Lapa, Prazeres, Estrela, Lisboa, 1200-747, Portugal",
+  "lat": 38.7132508,
+  "lon": -9.1605133
+ },
+ "bathhouse restaurant, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "beach street, queenstown, new zealand": {
+  "display": "Beach Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0326587,
+  "lon": 168.6585168
+ },
+ "bennetts bluff lookout, glenorchy road, new zealand": {
+  "_miss": 2
+ },
+ "blue kanu, queenstown, new zealand": {
+  "display": "Blue Kanu, Church Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0330901,
+  "lon": 168.6615602
+ },
+ "boatshed cafe, frankton, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "bobs cove, queenstown, new zealand": {
+  "display": "Bobs Cove, Bobs Cove Track, Queenstown-Lakes District, Otago, New Zealand / Aotearoa",
+  "lat": -45.0699913,
+  "lon": 168.5088895
+ },
+ "botswana butchery, queenstown, new zealand": {
+  "display": "Botswana Butchery, Marine Parade, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0333629,
+  "lon": 168.6617025
+ },
+ "brazil, lisbon, portugal": {
+  "display": "Embaixada do Brasil, 144, Estrada das Laranjeiras, Campo Pequeno, Avenidas Novas, Lisboa, 1649-021, Portugal",
+  "lat": 38.7425353,
+  "lon": -9.164556
+ },
+ "bunker bar, queenstown, new zealand": {
+  "display": "The Bunker, Cow Lane, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0321761,
+  "lon": 168.6605125
+ },
+ "calouste gulbenkian museum, lisbon, portugal": {
+  "display": "Museu Calouste Gulbenkian, Percurso do Lago, Campo Pequeno, Avenidas Novas, Lisboa, 1050-078, Portugal",
+  "lat": 38.7378228,
+  "lon": -9.1535149
+ },
+ "canada, lisbon, portugal": {
+  "_miss": 2
+ },
+ "cascais, portugal": {
+  "display": "Cascais, Lisboa, Portugal",
+  "lat": 38.6968919,
+  "lon": -9.4204495
+ },
+ "casino lisboa, lisbon, portugal": {
+  "display": "Casino Lisboa, Rua do Mar do Norte, Parque das Na\u00e7\u00f5es, Lisboa, 1990-203, Portugal",
+  "lat": 38.76488,
+  "lon": -9.0969987
+ },
+ "castelo de s\u00e3o jorge, lisbon, portugal": {
+  "display": "Castelo de S\u00e3o Jorge, Rua de Santa Cruz do Castelo, Castelo, Santa Maria Maior, Madalena, Lisboa, 1100-478, Portugal",
+  "lat": 38.7139258,
+  "lon": -9.133483
+ },
+ "caza das vellas loreto, lisbon, portugal": {
+  "display": "Caza das Vellas Loreto, Rua do Loreto, Bairro Alto, Miseric\u00f3rdia, Lisboa, 1200-241, Portugal",
+  "lat": 38.7106018,
+  "lon": -9.1449045
+ },
+ "centro colombo, lisbon, portugal": {
+  "display": "Centro Comercial Colombo, Avenida Lus\u00edada, Benfica, Lisboa, 1500-392, Portugal",
+  "lat": 38.7547749,
+  "lon": -9.1889082
+ },
+ "centro cultural de bel\u00e9m, lisbon, portugal": {
+  "display": "Centro Cultural de Bel\u00e9m, Pra\u00e7a do Imp\u00e9rio, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-206, Portugal",
+  "lat": 38.6953052,
+  "lon": -9.2085388
+ },
+ "centro de arte moderna, lisbon, portugal": {
+  "_miss": 2
+ },
+ "centro vasco da gama, lisbon, portugal": {
+  "display": "Centro Comercial Vasco da Gama, 40, Avenida Dom Jo\u00e3o II, Quinta das Laranjeiras, Parque das Na\u00e7\u00f5es, Lisboa, 1990-094, Portugal",
+  "lat": 38.7676651,
+  "lon": -9.0968435
+ },
+ "china, lisbon, portugal": {
+  "display": "Embaixada da China, 11-13, Rua Pau da Bandeira, Prazeres, Estrela, Lisboa, 1200-756, Portugal",
+  "lat": 38.7069632,
+  "lon": -9.1649454
+ },
+ "chocolataria equador, lisbon, portugal": {
+  "display": "Chocolataria Equador, 72, Rua da Miseric\u00f3rdia, Bairro Alto, Miseric\u00f3rdia, Lisboa, 1200-271, Portugal",
+  "lat": 38.7123137,
+  "lon": -9.1429602
+ },
+ "coliseu dos recreios, lisbon, portugal": {
+  "display": "Coliseu dos Recreios, Rua das Portas de Santo Ant\u00e3o, Santa Justa, Santa Maria Maior, Madalena, Lisboa, 1150-268, Portugal",
+  "lat": 38.7166468,
+  "lon": -9.1403476
+ },
+ "coronet peak, queenstown, new zealand": {
+  "display": "Coronet Peak, Queenstown-Lakes District, Otago, New Zealand / Aotearoa",
+  "lat": -44.9158907,
+  "lon": 168.7395712
+ },
+ "czech republic, queenstown, new zealand": {
+  "display": "Honorary Consulate of the Czech Republic, 11-17, Church Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9300, New Zealand / Aotearoa",
+  "lat": -45.0328136,
+  "lon": 168.661305
+ },
+ "devil burger, queenstown, new zealand": {
+  "display": "Devil Burger, 5/11, Church Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9300, New Zealand / Aotearoa",
+  "lat": -45.0326134,
+  "lon": 168.6615617
+ },
+ "dias da m\u00fasica em bel\u00e9m, lisbon, portugal": {
+  "_miss": 2
+ },
+ "dorothy browns cinema, arrowtown, new zealand": {
+  "_miss": 2
+ },
+ "egypt, lisbon, portugal": {
+  "display": "Embaixada do Egito, 8, Avenida Dom Vasco da Gama, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-128, Portugal",
+  "lat": 38.70257,
+  "lon": -9.2184745
+ },
+ "english comedy showcase, lisbon, portugal": {
+  "_miss": 2
+ },
+ "feira internacional de lisboa, lisbon, portugal": {
+  "display": "Feira Internacional de Lisboa, Avenida do Atl\u00e2ntico, Parque das Na\u00e7\u00f5es, Lisboa, 1998-010, Portugal",
+  "lat": 38.7709304,
+  "lon": -9.0939393
+ },
+ "fergburger, queenstown, new zealand": {
+  "display": "Fergburger, best burger!!, 42, Shotover Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0317416,
+  "lon": 168.6594621
+ },
+ "festas dos santos, lisbon, portugal": {
+  "_miss": 2
+ },
+ "finland, lisbon, portugal": {
+  "display": "Embaixada da Finl\u00e2ndia, 76, Rua do Possolo, Lapa, Prazeres, Estrela, Lisboa, 1350-251, Portugal",
+  "lat": 38.7125526,
+  "lon": -9.165265
+ },
+ "france, lisbon, portugal": {
+  "display": "Embaixada de Fran\u00e7a, 1, Rua de Santos-o-Velho, Santos-o-Velho, Prazeres, Estrela, Lisboa, 1200-813, Portugal",
+  "lat": 38.7073099,
+  "lon": -9.1563414
+ },
+ "gibbston tavern, gibbston, new zealand": {
+  "display": "Gibbston Tavern, 8, Gibbston Highway, Gibbston, Queenstown-Lakes District, Otago, 9371, New Zealand / Aotearoa",
+  "lat": -45.024031,
+  "lon": 168.9546204
+ },
+ "gibbston valley winery, gibbston, new zealand": {
+  "display": "Gibbston Valley Wines, Gibbston Highway, Gibbston, Queenstown-Lakes District, Otago, New Zealand / Aotearoa",
+  "lat": -45.0122832,
+  "lon": 168.9151536
+ },
+ "gibbston, new zealand": {
+  "display": "Gibbston, Queenstown-Lakes District, Otago, New Zealand / Aotearoa",
+  "lat": -45.0232944,
+  "lon": 168.9552426
+ },
+ "glenorchy lagoon, new zealand": {
+  "display": "Glenorchy Lagoon Wildlife Management Reserve, Glenorchy, Queenstown-Lakes District, Otago, New Zealand / Aotearoa",
+  "lat": -44.8413999,
+  "lon": 168.3927313
+ },
+ "glenorchy, new zealand": {
+  "display": "Glenorchy, Queenstown-Lakes District, Otago, 9372, New Zealand / Aotearoa",
+  "lat": -44.849749,
+  "lon": 168.3851983
+ },
+ "glenorchy, otago, new zealand": {
+  "display": "Glenorchy, Queenstown-Lakes District, Otago, 9372, New Zealand / Aotearoa",
+  "lat": -44.849749,
+  "lon": 168.3851983
+ },
+ "greece, lisbon, portugal": {
+  "display": "Embaixada Grecia, Avenida da Torre de Bel\u00e9m, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-342, Portugal",
+  "lat": 38.6960279,
+  "lon": -9.2152554
+ },
+ "heliworks, queenstown, new zealand": {
+  "display": "Heliworks, Tex Smith Lane, Remarkables Park, Frankton, Queenstown-Lakes District, Otago, 9371, New Zealand / Aotearoa",
+  "lat": -45.0244249,
+  "lon": 168.7404821
+ },
+ "holy see, lisbon, portugal": {
+  "_miss": 2
+ },
+ "igreja de nossa senhora da concei\u00e7\u00e3o velha, lisbon, portugal": {
+  "display": "Igreja da Concei\u00e7\u00e3o Velha, 112, Rua da Alf\u00e2ndega, S\u00e9, Santa Maria Maior, Madalena, Lisboa, 1100-068, Portugal",
+  "lat": 38.7088849,
+  "lon": -9.1342198
+ },
+ "igreja e mosteiro de s\u00e3o vicente de fora, lisbon, portugal": {
+  "display": "Igreja de S\u00e3o Vicente de Fora, Largo de S\u00e3o Vicente, S\u00e3o Vicente de Fora, Gra\u00e7a, S\u00e3o Vicente, Lisboa, 1100-572, Portugal",
+  "lat": 38.7147286,
+  "lon": -9.1274895
+ },
+ "india, lisbon, portugal": {
+  "display": "Largo dos Castanheiros da \u00cdndia, Bairro dos Alfinetes, Marvila, Lisboa, Portugal",
+  "lat": 38.7399834,
+  "lon": -9.1124968
+ },
+ "indielisboa, lisbon, portugal": {
+  "_miss": 2
+ },
+ "indonesia, lisbon, portugal": {
+  "display": "Embaixada da Indon\u00e9sia, 40, Avenida Dom Vasco da Gama, Pedrou\u00e7os, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1449-039, Portugal",
+  "lat": 38.7000285,
+  "lon": -9.2243871
+ },
+ "iraq, lisbon, portugal": {
+  "display": "Embaixada do Iraque, 9, Rua da Arriaga, Santos-o-Velho, Prazeres, Estrela, Lisboa, 1200-608, Portugal",
+  "lat": 38.7056132,
+  "lon": -9.1630979
+ },
+ "ireland, lisbon, portugal": {
+  "display": "Embaixada da Irlanda, 200, Avenida da Liberdade, Cora\u00e7\u00e3o de Jesus, Santo Ant\u00f3nio, Madalena, Lisboa, 1250-147, Portugal",
+  "lat": 38.7213522,
+  "lon": -9.1458917
+ },
+ "israel, lisbon, portugal": {
+  "display": "Embaixada de Israel, 16, Rua Ant\u00f3nio Enes, S\u00e3o Sebasti\u00e3o da Pedreira, Campo Pequeno, Avenidas Novas, Lisboa, 1050-025, Portugal",
+  "lat": 38.7345442,
+  "lon": -9.1483866
+ },
+ "italy, lisbon, portugal": {
+  "display": "Italy caffe ristorante, 26B, Avenida Duque de \u00c1vila, Campo Pequeno, Avenidas Novas, Lisboa, 1000-141, Portugal",
+  "lat": 38.7352875,
+  "lon": -9.1442936
+ },
+ "jacks point golf course, queenstown, new zealand": {
+  "display": "Jacks Point Golf Course, Refuge Lane, Queenstown-Lakes District, Otago, 9371, New Zealand / Aotearoa",
+  "lat": -45.0744259,
+  "lon": 168.7394329
+ },
+ "japan, lisbon, portugal": {
+  "display": "Embaixada do Jap\u00e3o, 51, Rua Ramalho Ortig\u00e3o, Campolide, Lisboa, 1070-229, Portugal",
+  "lat": 38.7357364,
+  "lon": -9.1597212
+ },
+ "jardim da estrela, lisbon, portugal": {
+  "display": "Jardim da Estrela, Prazeres, Estrela, Lisboa, Portugal",
+  "lat": 38.7146949,
+  "lon": -9.1590528
+ },
+ "jardim garcia de orta, lisbon, portugal": {
+  "display": "Jardim Garcia de Orta, Parque das Na\u00e7\u00f5es, Lisboa, 1990-048, Portugal",
+  "lat": 38.7740192,
+  "lon": -9.0918135
+ },
+ "jazz em agosto, lisbon, portugal": {
+  "_miss": 2
+ },
+ "kingpin, queenstown, new zealand": {
+  "display": "Kingpin Queenstown, Brecon Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0297321,
+  "lon": 168.6575513
+ },
+ "kinross, gibbston, new zealand": {
+  "display": "Kinross, 2282, Gibbston Highway, Gibbston, Queenstown-Lakes District, Otago, New Zealand / Aotearoa",
+  "lat": -45.0278718,
+  "lon": 168.9680692
+ },
+ "kosovo, lisbon, portugal": {
+  "display": "Embaixada do Kosovo, 33, Rua Gon\u00e7alo Velho Cabral, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-188, Portugal",
+  "lat": 38.7066689,
+  "lon": -9.2134726
+ },
+ "lake wakatipu wilson bay, new zealand": {
+  "_miss": 2
+ },
+ "lisbon oceanarium, lisbon, portugal": {
+  "_miss": 2
+ },
+ "lisbon, portugal": {
+  "display": "Lisboa, Portugal",
+  "lat": 38.7077507,
+  "lon": -9.1365919
+ },
+ "loco, queenstown, new zealand": {
+  "display": "Loco, Shotover Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0318911,
+  "lon": 168.6585658
+ },
+ "luge, queenstown, new zealand": {
+  "display": "Dart Luge Track, Skyline Loop Track, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0264076,
+  "lon": 168.647019
+ },
+ "macau, lisbon, portugal": {
+  "display": "Museu do Centro Cient\u00edfico e Cultural de Macau, 30, Rua da Junqueira, Junqueira, Alc\u00e2ntara, Lisboa, 1300-343, Portugal",
+  "lat": 38.700849,
+  "lon": -9.1824432
+ },
+ "milford sound, new zealand": {
+  "display": "Milford Sound / Piopiotahi, Fiordland Community, Southland, New Zealand / Aotearoa",
+  "lat": -44.6190189,
+  "lon": 167.8687603
+ },
+ "miradouro de santa luzia, lisbon, portugal": {
+  "display": "Miradouro de Santa Luzia, Largo de Santa Luzia, Santiago, Santa Maria Maior, Madalena, Lisboa, 1100-487, Portugal",
+  "lat": 38.7117413,
+  "lon": -9.130216
+ },
+ "moda lisboa, lisbon, portugal": {
+  "display": "Moda, 67, Rua Morais Soares, Penha de Fran\u00e7a, Lisboa, 1900-998, Portugal",
+  "lat": 38.7323393,
+  "lon": -9.1295133
+ },
+ "monaco, lisbon, portugal": {
+  "display": "M\u00f3naco, Estrada de Benfica, Benfica, Lisboa, 1500-112, Portugal",
+  "lat": 38.7526387,
+  "lon": -9.2079896
+ },
+ "morocco, lisbon, portugal": {
+  "display": "Embaixada de Marrocos, 21, Rua do Alto do Duque, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-099, Portugal",
+  "lat": 38.7022902,
+  "lon": -9.2198734
+ },
+ "mrs woollys general store, glenorchy, new zealand": {
+  "_miss": 2
+ },
+ "mude \u2013 museu do design e da moda, lisbon, portugal": {
+  "_miss": 2
+ },
+ "museu da marinha, lisbon, portugal": {
+  "display": "Biblioteca Central de Marinha, Pra\u00e7a do Imp\u00e9rio, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-206, Portugal",
+  "lat": 38.6979714,
+  "lon": -9.2081765
+ },
+ "museu da \u00e1gua, lisbon, portugal": {
+  "display": "Aqueduto das \u00c1guas Livres, 6, Cal\u00e7ada da Quintinha, Campolide, Lisboa, 1070-225, Portugal",
+  "lat": 38.7265653,
+  "lon": -9.1663029
+ },
+ "museu militar de lisboa, lisbon, portugal": {
+  "display": "Museu Militar de Lisboa, Largo do Museu de Artilharia, Alfama, Santa Maria Maior, Madalena, Lisboa, 1100-366, Portugal",
+  "lat": 38.7130774,
+  "lon": -9.1243809
+ },
+ "museu nacional do azulejo, lisbon, portugal": {
+  "display": "Museu Nacional do Azulejo, 4, Rua da Madre de Deus, S\u00e3o Jo\u00e3o, Penha de Fran\u00e7a, Lisboa, 1900-455, Portugal",
+  "lat": 38.7247242,
+  "lon": -9.113914
+ },
+ "museum of art, architecture and technology, lisbon, portugal": {
+  "_miss": 2
+ },
+ "nest queenstown, new zealand": {
+  "display": "Crows Nest Road, Arthurs Point, Queenstown-Lakes District, Otago, 9306, New Zealand / Aotearoa",
+  "lat": -44.9914758,
+  "lon": 168.6695504
+ },
+ "netherlands, lisbon, portugal": {
+  "display": "Embaixada da Holanda, 43, Avenida Infante Santo, Lapa, Prazeres, Estrela, Lisboa, 1399-011, Portugal",
+  "lat": 38.7084058,
+  "lon": -9.1674002
+ },
+ "nevis bungy, queenstown, new zealand": {
+  "display": "Nevis Bungy, Kawarau Gorge Trail, Cromwell Community, Central Otago District, Otago, New Zealand / Aotearoa",
+  "lat": -45.0647976,
+  "lon": 169.0288845
+ },
+ "new zealand, lisbon, portugal": {
+  "_miss": 2
+ },
+ "nzone skydive, queenstown, new zealand": {
+  "display": "NZOne Skydive, 35, Shotover Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0312228,
+  "lon": 168.6596978
+ },
+ "onsen hot pools, queenstown, new zealand": {
+  "display": "Onsen Hot Pools, Powder Terrace, Arthurs Point, Queenstown-Lakes District, Otago, 9306, New Zealand / Aotearoa",
+  "lat": -44.9809952,
+  "lon": 168.6854275
+ },
+ "pakistan, lisbon, portugal": {
+  "display": "Taste of Pakistan, Rua de S\u00e3o Pedro M\u00e1rtir, Mouraria, Santa Maria Maior, Madalena, Lisboa, 1100-034, Portugal",
+  "lat": 38.7145701,
+  "lon": -9.1359799
+ },
+ "palestinian authority, lisbon, portugal": {
+  "_miss": 2
+ },
+ "pal\u00e1cio alverca, lisbon, portugal": {
+  "display": "Casa do Alentejo, 44, Rua das Portas de Santo Ant\u00e3o, Santa Justa, Santa Maria Maior, Madalena, Lisboa, 1150-069, Portugal",
+  "lat": 38.715923,
+  "lon": -9.1398541
+ },
+ "pal\u00e1cio de s\u00e3o bento, lisbon, portugal": {
+  "display": "Pal\u00e1cio de S\u00e3o Bento, Pra\u00e7a da Constitui\u00e7\u00e3o de 1976, Prazeres, Estrela, Lisboa, 1249-068, Portugal",
+  "lat": 38.7127151,
+  "lon": -9.1538085
+ },
+ "paradise, glenorchy, new zealand": {
+  "display": "Glenorchy Paradise Road, Glenorchy, Queenstown-Lakes District, Otago, 9372, New Zealand / Aotearoa",
+  "lat": -44.8226064,
+  "lon": 168.398584
+ },
+ "parque eduardo vii, lisbon, portugal": {
+  "display": "Parque Eduardo VII, Campo Pequeno, Avenidas Novas, Lisboa, Portugal",
+  "lat": 38.7282116,
+  "lon": -9.1530143
+ },
+ "pavilh\u00e3o do conhecimento - centro ci\u00eancia viva, lisbon, portugal": {
+  "_miss": 2
+ },
+ "peixe em lisboa, lisbon, portugal": {
+  "display": "O Pica-Peixe, 209, Rua dos Canteiros, N\u00facleo Urbano Hist\u00f3rico de Tires, Tires, S\u00e3o Domingos de Rana, Cascais, Lisboa, 2785-619, Portugal",
+  "lat": 38.7169722,
+  "lon": -9.3483443
+ },
+ "planet\u00e1rio calouste gulbenkian, lisbon, portugal": {
+  "display": "Planet\u00e1rio de Marinha, Rua Dom Francisco de Almeida, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-239, Portugal",
+  "lat": 38.6980743,
+  "lon": -9.2089221
+ },
+ "ponte vasco da gama, lisbon, portugal": {
+  "display": "Ponte Vasco da Gama, Parque das Na\u00e7\u00f5es, Lisboa, 1990-516, Portugal",
+  "lat": 38.7866125,
+  "lon": -9.0956655
+ },
+ "pra\u00e7a da figueira, lisbon, portugal": {
+  "display": "Pra\u00e7a da Figueira, S\u00e3o Crist\u00f3v\u00e3o e S\u00e3o Louren\u00e7o, Santa Maria Maior, Madalena, Lisboa, 1100-240, Portugal",
+  "lat": 38.7137176,
+  "lon": -9.1377891
+ },
+ "pra\u00e7a dom pedro iv, lisbon, portugal": {
+  "display": "Pra\u00e7a Dom Pedro IV, Santa Justa, Santa Maria Maior, Madalena, Lisboa, Portugal",
+  "lat": 38.7137564,
+  "lon": -9.1393431
+ },
+ "pra\u00e7a dos restauradores, lisbon, portugal": {
+  "display": "Pra\u00e7a dos Restauradores, Santa Justa, Santa Maria Maior, Madalena, Lisboa, 1250-188, Portugal",
+  "lat": 38.7157093,
+  "lon": -9.1416527
+ },
+ "public kitchen and bar, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "queenstown airport, new zealand": {
+  "display": "Queenstown Airport, Kawarau Road, Remarkables Park, Frankton, Queenstown-Lakes District, Otago, 9300, New Zealand / Aotearoa",
+  "lat": -45.0193,
+  "lon": 168.7434399
+ },
+ "queenstown gardens, queenstown, new zealand": {
+  "display": "Queenstown Gardens, Boydtown, Queenstown, Queenstown-Lakes District, Otago, New Zealand / Aotearoa",
+  "lat": -45.0363315,
+  "lon": 168.6617071
+ },
+ "queenstown medical centre, queenstown, new zealand": {
+  "display": "Queenstown Medical Centre, 9, Isle Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0299233,
+  "lon": 168.6582531
+ },
+ "queenstown police station, queenstown, new zealand": {
+  "display": "Queenstown Police Station, Coronation Drive, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0319807,
+  "lon": 168.6631163
+ },
+ "queenstown, new zealand": {
+  "display": "Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0321923,
+  "lon": 168.661
+ },
+ "rata restaurant, queenstown, new zealand": {
+  "display": "Rata Dining, 43, Ballarat Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0315723,
+  "lon": 168.6627773
+ },
+ "rock in rio lisboa, lisbon, portugal": {
+  "display": "Geomonumento da Rua da Judiaria, Rua da Judiaria, S\u00e3o Miguel, Santa Maria Maior, Madalena, Lisboa, 1100-172, Portugal",
+  "lat": 38.710297,
+  "lon": -9.129522
+ },
+ "roki collection, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "roki, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "romania, lisbon, portugal": {
+  "display": "Embaixada da Rom\u00e9nia, 5, Rua de S\u00e3o Caetano, Lapa, Prazeres, Estrela, Lisboa, 1200-828, Portugal",
+  "lat": 38.7092021,
+  "lon": -9.1634706
+ },
+ "russia, lisbon, portugal": {
+  "display": "R\u00fassia, IC 19;A 37, Fontainhas, Tercena, Barcarena, Oeiras, Lisboa, 2730-098, Portugal",
+  "lat": 38.7488595,
+  "lon": -9.2825754
+ },
+ "san marino, lisbon, portugal": {
+  "_miss": 2
+ },
+ "saudi arabia, lisbon, portugal": {
+  "display": "Embaixada da Ar\u00e1bia Saudita, 42, Avenida do Restelo, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-315, Portugal",
+  "lat": 38.7019108,
+  "lon": -9.2162978
+ },
+ "scroggin, wanaka, new zealand": {
+  "display": "Scroggin Coffee and Eatery, 71, Ardmore Street, W\u0101naka, Queenstown-Lakes District, Otago, 9305, New Zealand / Aotearoa",
+  "lat": -44.6942373,
+  "lon": 169.1373822
+ },
+ "searle lane, queenstown, new zealand": {
+  "display": "Searle Lane, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0325058,
+  "lon": 168.6613339
+ },
+ "serbia, lisbon, portugal": {
+  "display": "Embaixada da S\u00e9rvia, 11, Rua de Alcolena, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-004, Portugal",
+  "lat": 38.700702,
+  "lon": -9.2114894
+ },
+ "sintra, portugal": {
+  "display": "Sintra, Lisboa, Portugal",
+  "lat": 38.8355446,
+  "lon": -9.3522371
+ },
+ "skippers canyon, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "skyline gondola, queenstown, new zealand": {
+  "display": "Skyline Gondola, Tiki Walking Track, Fernhill, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0275278,
+  "lon": 168.6524646
+ },
+ "south africa, lisbon, portugal": {
+  "display": "Embaixada da \u00c1frica do Sul, 10, Avenida Lu\u00eds B\u00edvar, S\u00e3o Sebasti\u00e3o da Pedreira, Campo Pequeno, Avenidas Novas, Lisboa, 1069-024, Portugal",
+  "lat": 38.7327009,
+  "lon": -9.1502741
+ },
+ "south korea, lisbon, portugal": {
+  "_miss": 2
+ },
+ "st samantha lane, queenstown, new zealand": {
+  "display": "St Samantha Lane, Goldfield Heights, Queenstown, Queenstown-Lakes District, Otago, 9300, New Zealand / Aotearoa",
+  "lat": -45.0257354,
+  "lon": 168.6869471
+ },
+ "sundeck, queenstown, new zealand": {
+  "display": "The Sundeck Rooftop Bar, Queenstown Mall, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0324931,
+  "lon": 168.6604495
+ },
+ "sunfire restaurant, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "sunfire, queenstown, new zealand": {
+  "_miss": 2
+ },
+ "surreal bar & restaurant, queenstown, new zealand": {
+  "display": "Surreal Bar & Restaurant, Rees Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9200, New Zealand / Aotearoa",
+  "lat": -45.0323697,
+  "lon": 168.6601943
+ },
+ "sweden, lisbon, portugal": {
+  "display": "Embaixada da Su\u00e9cia, 12, Rua Miguel Lupi, Santos-o-Velho, Prazeres, Estrela, Lisboa, 1249-077, Portugal",
+  "lat": 38.7118355,
+  "lon": -9.1551038
+ },
+ "taiwan, lisbon, portugal": {
+  "_miss": 2
+ },
+ "te anau, new zealand": {
+  "display": "Te Anau, Fiordland Community, Southland District, Southland, 9600, New Zealand / Aotearoa",
+  "lat": -45.41449,
+  "lon": 167.717489
+ },
+ "teatro maria vit\u00f3ria, lisbon, portugal": {
+  "display": "Teatro Maria Vit\u00f3ria, Rua do Salitre, S\u00e3o Jos\u00e9, Santo Ant\u00f3nio, Madalena, Lisboa, 1250-135, Portugal",
+  "lat": 38.7193425,
+  "lon": -9.1464119
+ },
+ "teatro nacional dona maria ii, lisbon, portugal": {
+  "display": "Teatro Nacional Dona Maria II, 1, Pra\u00e7a Dom Pedro IV, Santa Justa, Santa Maria Maior, Madalena, Lisboa, 1100-201, Portugal",
+  "lat": 38.7147786,
+  "lon": -9.1397709
+ },
+ "tejo power station, lisbon, portugal": {
+  "display": "MAAT - A F\u00e1brica da Eletricidade, Passeio Carlos do Carmo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1300-999, Portugal",
+  "lat": 38.6957445,
+  "lon": -9.1953987
+ },
+ "telef\u00e9rico do parque das na\u00e7\u00f5es, lisbon, portugal": {
+  "display": "Telef\u00e9rico do Parque das Na\u00e7\u00f5es, Rua da Pimenta, Parque das Na\u00e7\u00f5es, Lisboa, 1990-048, Portugal",
+  "lat": 38.7671534,
+  "lon": -9.0919322
+ },
+ "thailand, lisbon, portugal": {
+  "display": "Embaixada da Tail\u00e2ndia, 12, Rua de Alcolena, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-005, Portugal",
+  "lat": 38.7012032,
+  "lon": -9.2113333
+ },
+ "the remarkables ski area, queenstown, new zealand": {
+  "display": "The Remarkables Ski Area, Lake Alta Track, Queenstown-Lakes District, Otago, 9371, New Zealand / Aotearoa",
+  "lat": -45.0549855,
+  "lon": 168.8168978
+ },
+ "the world bar, queenstown, new zealand": {
+  "display": "The World Bar, 12, Church Street, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9300, New Zealand / Aotearoa",
+  "lat": -45.0329452,
+  "lon": 168.6618252
+ },
+ "timor leste, lisbon, portugal": {
+  "display": "Embaixada de Timor-Leste, 3, Largo dos Jer\u00f3nimos, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-209, Portugal",
+  "lat": 38.6982106,
+  "lon": -9.2044589
+ },
+ "torre de bel\u00e9m, lisbon, portugal": {
+  "display": "Torre de Bel\u00e9m, Avenida de Bras\u00edlia, Pedrou\u00e7os, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-038, Portugal",
+  "lat": 38.691586,
+  "lon": -9.2159288
+ },
+ "turkey, lisbon, portugal": {
+  "display": "Embaixada da Turquia, 22, Avenida das Descobertas, Restelo, S\u00e3o Francisco Xavier, Bel\u00e9m, Lisboa, 1400-092, Portugal",
+  "lat": 38.7071741,
+  "lon": -9.215492
+ },
+ "united arab emirates, lisbon, portugal": {
+  "display": "Embaixada dos Emirados \u00c1rabes Unidos, 15;16;17, Pra\u00e7a do Pr\u00edncipe Real, Merc\u00eas, Santo Ant\u00f3nio, Miseric\u00f3rdia, Lisboa, 1269-127, Portugal",
+  "lat": 38.715756,
+  "lon": -9.1494229
+ },
+ "united kingdom, lisbon, portugal": {
+  "_miss": 2
+ },
+ "united states, lisbon, portugal": {
+  "display": "Embaixada dos Estados Unidos da Am\u00e9rica, 133, Avenida das For\u00e7as Armadas, Avenidas Novas, Lisboa, 1600-081, Portugal",
+  "lat": 38.7436491,
+  "lon": -9.1623655
+ },
+ "wanaka, new zealand": {
+  "display": "W\u0101naka, Queenstown-Lakes District, Otago, 9305, New Zealand / Aotearoa",
+  "lat": -44.6941691,
+  "lon": 169.1364637
+ },
+ "winnies, queenstown, new zealand": {
+  "display": "Winnies, Queenstown Mall, Boydtown, Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+  "lat": -45.0325263,
+  "lon": 168.6607626
+ },
+ "wolf coffee, arrowtown, new zealand": {
+  "display": "Wolf Coffee Roastery and Cafe, 44, Buckingham Street, Arrowtown, Queenstown-Lakes District, Otago, 9302, New Zealand / Aotearoa",
+  "lat": -44.9386179,
+  "lon": 168.8323855
+ }
+}

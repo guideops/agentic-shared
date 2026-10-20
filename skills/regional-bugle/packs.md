@@ -24,7 +24,12 @@ discovered in fallback mode. Keep the format exactly as below so runs can parse 
 | Bangkok Post — Thailand | https://www.bangkokpost.com/rss/data/thailand.xml | en | daily | verified 2026-08-03 |
 | Khaosod English | https://www.khaosodenglish.com/feed/ | en | daily | verified 2026-08-03 |
 | Prachatai English | https://prachataienglish.com/rss.xml | en | indie | verified 2026-08-03 |
-| Thairath | https://www.thairath.co.th/rss/news | th | daily | verified 2026-08-03 |
+| Thairath | https://www.thairath.co.th/rss/news | th | daily | verified 2026-08-07 |
+| Matichon | https://www.matichon.co.th/feed | th | daily | verified 2026-08-07 |
+| Khaosod (Thai) | https://www.khaosod.co.th/feed | th | daily | verified 2026-08-07 |
+| Dailynews (via Google News relay) | https://news.google.com/rss/search?q=site:dailynews.co.th&hl=th&gl=TH&ceid=TH:th | th | daily | verified 2026-08-07 |
+
+Note: the Dailynews relay is a Google News search feed scoped to dailynews.co.th — treat items as Dailynews (daily tier), not aggregator-only, but click through before quoting since relay titles can be truncated. Direct feed is Cloudflare-blocked from this server (see Known-dead).
 
 ## australia
 | Source | Feed | Lang | Tier | Status |
@@ -61,3 +66,4 @@ discovered in fallback mode. Keep the format exactly as below so runs can parse 
 - Thai PBS World `thaipbsworld.com/feed/` and `/rss` — returns HTML, not a feed (2026-08-03)
 - Nation Thailand `nationthailand.com/rss` — returns HTML, not a feed (2026-08-03)
 - Korea JoongAng Daily `koreajoongangdaily.joins.com/xmls/joins` — 404 (2026-08-03)
+- Dailynews direct `dailynews.co.th/feed/` — Cloudflare 403 challenge blocks automated fetch; use the Google News relay in the thailand pack instead (2026-08-07)

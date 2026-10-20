@@ -10,6 +10,19 @@ metadata:
 Produce a concise national/regional briefing in English for one country per run.
 Companion to `daily-bugle`: that skill is global-only; this one is country-focused.
 
+## Segment mode (`/regional-bugle <region> --segment`)
+`<Region>` is the region's display name (`United Kingdom`, `Australia`, `Thailand`, `New Zealand`).
+
+Segment mode is how the scheduled morning run works: five segments (World, United Kingdom, Australia, Thailand, New Zealand) each add one section to a single daily note, `Agentic Output/News/<YYYY>/<MM Month>/<date> - Global Brief.md` (e.g. `News/2026/10 October/2026-10-16 - Global Brief.md`). The run script owns that file; you only produce your section. The script passes `--date YYYY-MM-DD` (New Zealand date); use it as the note date.
+
+1. **Do not write, create or edit any vault file.** Print the section markdown to stdout and nothing else: no preamble, no "here is", no closing remarks, no code fences.
+2. The section starts with exactly `## <Region>` on the first line, then a blank line, then `> **Top line:** <one sentence, the single most important thing in this section>`. The Telegram summary is built from that line, so keep it under 200 characters.
+3. Use `###` for subsections (never `#` or `##` inside the section).
+4. **Continuity:** read the `## <Region>` section of the last 3 `Agentic Output/News/**/* - Global Brief.md` notes (sorted by date; look in the previous month folder too) and apply the Continuity rules to those. If fewer than 3 merged notes exist, also read the most recent `digests/regional/<region>/*.md` notes.
+5. **Today so far:** if the date's Global Brief note already exists, read it first. Do not repeat a story another section already covers; give the local angle in one clause and write "(see World)" or the section name.
+6. Source Health goes in a final `### Source Health` subsection as one line.
+7. Subsections, in order: `### Top Headlines`, `### Emerging / Gaining Attention`, `### Global Stories, Local Angle` (omit if none), `### Tone / Sentiment`, `### Source Health`. No Update or Sources sections; cite inline as usual.
+
 ## Region resolution (do this first)
 1. **Inline argument** (`/regional-bugle thailand`, "regional bugle for south korea"): use it. Normalize to the kebab-case pack names in `packs.md` (e.g. "UK", "Britain" → `united-kingdom`; "korea" → `south-korea`).
 2. **No region given, interactive session**: ask one question — "Which region?" — offering the packs currently in `packs.md` plus "somewhere else". Do not ask anything beyond the region.

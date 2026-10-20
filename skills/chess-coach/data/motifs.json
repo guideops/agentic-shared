@@ -1,0 +1,62 @@
+[
+  {
+    "name": "The fork",
+    "theme": "fork",
+    "lesson": "One piece attacks two targets at once — the opponent can only save one. Knights are the fork machines because they attack squares no other piece covers, and beginners constantly miss them. How to spot it: whenever your knight can jump, check if the landing square attacks two undefended things (king + queen and king + rook are the jackpots). Try tonight: before every knight move — yours or theirs — name every square that knight would attack from its new home."
+  },
+  {
+    "name": "The pin",
+    "theme": "pin",
+    "lesson": "A piece can't move (or shouldn't) because a bigger piece stands behind it on the same line. Bishops pinning a knight against king or queen is the most common at your level. A pinned piece is half-frozen: pile up attackers on it. How to spot it: scan every straight line from their king and queen — any of your bishops or rooks that can reach that line creates a pin. Try tonight: when their piece is pinned, ask 'can I attack it once more?' before doing anything else."
+  },
+  {
+    "name": "The skewer",
+    "theme": "skewer",
+    "lesson": "A pin in reverse: the big piece is in front and must move, exposing the smaller one behind. Classic: check their king along a line, and when it steps aside, take the rook that was hiding behind it. How to spot it: look for their king and a valuable piece on the same rank, file, or diagonal. Try tonight: every time their king and queen (or rook) line up, stop and look for a check on that line."
+  },
+  {
+    "name": "The hanging piece",
+    "theme": "hangingPiece",
+    "lesson": "A piece nobody defends. At 300–800 this decides most games — not clever tactics, just free material offered and free material missed. How to spot it: each turn, count each attacked piece: attackers vs defenders. Undefended and attacked = free. Try tonight: before every single move, say 'what of mine is undefended, what of theirs is undefended' — this one habit alone is worth about 300 rating points."
+  },
+  {
+    "name": "The discovered attack",
+    "theme": "discoveredAttack",
+    "lesson": "You move one piece and unmask an attack from the piece behind it — so the moving piece can do anything it likes for free, because the unmasked threat must be answered. The deadliest version is discovered check. How to spot it: whenever your bishop, rook, or queen has one of your own pieces blocking its line toward something valuable, ask what happens if the blocker jumps away with its own threat. Try tonight: find your blocked long-range pieces before you look at anything else."
+  },
+  {
+    "name": "The back-rank mate",
+    "theme": "backRankMate",
+    "lesson": "A king castled behind three unmoved pawns has zero escape squares — one rook or queen landing on the back rank is checkmate. Beginners lose to this constantly and win with it constantly. How to spot it: is the back rank defended by only one rook? Trade it off or drive it away, then land yours. Defensively: once the queens and a pair of rooks are on the board, spend one move giving your king an air hole (h3/h6). Try tonight: check both back ranks every time a rook trade is possible."
+  },
+  {
+    "name": "Remove the defender",
+    "theme": "defendersRemoval",
+    "lesson": "A target that looks defended is only as safe as its defender. Capture, chase, or overload the defender, and the target falls next move. This is your first true 2-move-deep tactic: move one sets up move two. How to spot it: find a piece you wish you could take, name its defender, then ask 'can I take, attack, or distract that defender?' Try tonight: every time you think 'defended, never mind' — ask who the defender is before moving on."
+  },
+  {
+    "name": "The double attack",
+    "theme": "doubleCheck",
+    "lesson": "Any move that creates two threats at once — two pieces attacked, or a threat plus a checkmate idea. One threat gets answered; two usually can't be. Queens are the natural double-attackers: from the right square a queen hits two loose pieces on different lines. How to spot it: list their loose (undefended) pieces, then look for one square that attacks two of them. Try tonight: after castling, spend one scan per turn hunting for a two-threat queen move."
+  },
+  {
+    "name": "Mate in one — never miss it",
+    "theme": "mateIn1",
+    "lesson": "Missing a mate in one (yours or theirs) is pure checklist failure, not talent. The fix is mechanical: every turn, look at all your checks first — there are usually only two or three — and for each, ask 'does the king have any reply?' How to spot it: checks first, always, before considering any other move. Try tonight: even in winning positions, list every check you have before you move."
+  },
+  {
+    "name": "Mate in two — your first calculation",
+    "theme": "mateIn2",
+    "lesson": "This is where thinking ahead actually starts: a forcing check where every king reply runs into a second, final blow. The secret is that forcing moves make calculation easy — if their reply is forced, you only have one line to see, not twenty. How to spot it: try each check and ask 'what are ALL the legal replies?' If only one, look one move deeper. Try tonight: in puzzles, say the full line out loud before touching a piece — 'Qg6+, Kh8, Qxh7 mate' — never move on a hunch."
+  },
+  {
+    "name": "The trapped piece",
+    "theme": "trappedPiece",
+    "lesson": "A piece with no safe squares is lost even if nothing attacks it yet — one pawn nudge and it's gone. Knights on the rim and greedy queens grabbing the b2/b7 pawn are the classic victims. How to spot it: count the safe squares of any advanced piece (yours too). Zero or one means danger. Try tonight: before sending your queen or knight into their half, name its retreat square first — no retreat, no trip."
+  },
+  {
+    "name": "Deflection and attraction",
+    "theme": "deflection",
+    "lesson": "Force a piece onto a bad square (attraction) or away from a good one (deflection) — usually with a sacrifice that looks insane for half a second. 'Qxf7+!? Kxf7, and now the knight fork picks up the queen.' This is trap-setting: the sacrifice only works because of the follow-up. How to spot it: when a fork or mate almost works except one defender is in the way, ask 'can I force that defender to move — even at a price?' Try tonight: when a tactic almost works, don't discard it — ask what would need to change, then look for a forcing move that changes it."
+  }
+]

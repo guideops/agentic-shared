@@ -109,9 +109,21 @@ Raw fetch output goes to `$INSIGHTS_DATA_DIR` or `~/.insights/` (not the vault).
    Failed sources from `errors`, or "all green".
    ```
 
-4. **Log the run**: append to `server/data/runs.json` in the agentic-workspace
-   checkout if one is present, and note anything learned (dead source, ranking
-   miss) in `domains/content/learnings.md`.
+4. **Log the run**: append ONE object to the JSON array in
+   `server/data/runs.json` in the agentic-workspace checkout if one is present,
+   using exactly these field names (the workspace stats page reads
+   `timestamp`; other names like `startedAt` break it):
+   ```json
+   {
+     "skill": "insights-recon",
+     "date": "<digest date, YYYY-MM-DD>",
+     "timestamp": "<real current UTC time, ISO 8601, e.g. 2026-10-11T19:02:36.603Z — from `date -u +%FT%T.%3NZ`, never a made-up midnight>",
+     "status": "ok | error",
+     "notes": "<one paragraph: what the day looked like, anything odd>"
+   }
+   ```
+   Then note anything learned (dead source, ranking miss) in
+   `domains/content/learnings.md`.
 
 5. **Deliver** (only when running under Hermes cron with a delivery channel):
    send the TL;DR and the teaser titles/angles to Telegram. If the digest has

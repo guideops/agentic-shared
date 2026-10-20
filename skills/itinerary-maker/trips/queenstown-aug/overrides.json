@@ -1,0 +1,686 @@
+{
+  "_note": "Agent research layer. The scripts do arithmetic; this file carries judgement and anything only a human-facing source knows. Everything here wins over the harvested value. Researched 2026-08-21 via web search - prices are indicative and still worth a check at the operator's own booking time. | 2026-08-22: merged the operator's own vault research ('00 Inbox/queenstown  itinerary.md', incl. TikTok food finds) and added price estimates throughout. Prices are indicative, not quotes.",
+  "_sources": [
+    "https://queenstownhouselakeside.co.nz/blogs/queenstown-ski-season-opening-dates-2026new-blog-post/",
+    "https://www.coronetpeak.co.nz/",
+    "https://queenstown.skyline.co.nz/pricing-and-packages/",
+    "https://www.realnz.com/en/blog/can-you-drive-to-milford-sound-from-queenstown/",
+    "https://www.newzealand.com/nz/feature/gibbston-and-queenstown-wineries/",
+    "https://www.queenstownnz.co.nz/things-to-do/  (official DMO - reachable)",
+    "https://www.civitatis.com/en/queenstown/      (reachable; prices in USD)",
+    "https://www.musement.com/us/queenstown/       (reachable)",
+    "https://www.headout.com/queenstown/           (reachable)",
+    "https://queenstowntourism.com/blog/best-restaurants-queenstown/",
+    "https://api.open-meteo.com/  (forecast, free/keyless)",
+    "Operator's vault note: 00 Inbox/queenstown  itinerary.md (own research + TikTok)",
+    "https://www.coronetpeak.co.nz/all-passes/lift-passes",
+    "https://bathhouse.co.nz/",
+    "https://www.coronetpeak.co.nz/all-passes/lift-passes  (afternoon pass 12:30-16:00)",
+    "https://www.onsen.co.nz/  (Arthurs Point, open 11:00-23:00)",
+    "https://www.queenstownnz.co.nz/stories/post/fun-things-to-do-in-queenstown-when-youre-not-skiing/",
+    "https://thebathhousegroup.com/queenstown/",
+    "https://www.coronetpeak.co.nz/sightseeing/"
+  ],
+  "patch": [
+    {
+      "name": "Luge",
+      "price": "$99 gondola + 3 luge rides; $140 gondola + unlimited luge (2026)",
+      "hours": "Daily from 10:00, weather permitting",
+      "duration_min": 120,
+      "desc": "Skyline's gravity luge carts on a purpose-built track above town. Both luge combos include the gondola up, which you need anyway: $99 for 3 rides, $140 unlimited. Runs in winter but closes in high wind or heavy snow - check the day's status before driving up.",
+      "url": "https://queenstown.skyline.co.nz/pricing-and-packages/"
+    },
+    {
+      "name": "Skyline Gondola",
+      "price": "$69 adult return; $99 with 3 luge rides; $140 with unlimited luge (2026)",
+      "duration_min": 90,
+      "desc": "The steepest cable car lift in the Southern Hemisphere, up Bob's Peak for the postcard view over Lake Wakatipu and The Remarkables. Winter sunsets from the top are the reason to time this late - but check the last gondola down.",
+      "url": "https://queenstown.skyline.co.nz/pricing-and-packages/"
+    },
+    {
+      "name": "Shotover Jet",
+      "price": "~$199 adult (2026, verify at booking)",
+      "duration_min": 90,
+      "desc": "Jet boat through the Shotover Canyons at speed, 10 min from town at Arthurs Point. Runs year round - it is cold in August, and they supply the layers."
+    },
+    {
+      "name": "Kawarau Bridge Bungy",
+      "price": "PRICE UNVERIFIED - the $205 figure is from a 2017 listing and is certainly low now",
+      "duration_min": 90
+    },
+    {
+      "name": "Coronet Peak Ski Area",
+      "kind": "do",
+      "price": "Afternoon pass NZ$135 + rental NZ$65 + jacket & pants NZ$45 = NZ$245 all in (your research)",
+      "hours": "09:00-16:00 daily in season",
+      "duration_min": 300,
+      "weather_sensitive": true,
+      "indoor": false,
+      "desc": "The closest field to town, ~25 min from Goldfield Heights. Season 13 Jun to 4 Oct 2026 and late August is the best coverage of the year. Budget roughly NZ$230-290 a head all in: pass, gear and outerwear. Rental prices are the operator's own research.",
+      "price_nzd": [
+        200,
+        245
+      ]
+    },
+    {
+      "name": "Luge",
+      "price": "Gondola only NZ$69 - with 3 luge rides NZ$99 - unlimited luge NZ$140 (2026)",
+      "desc": "Skyline gondola up Bob's Peak then the luge track. Five minutes from Fergburger. Gondola only NZ$69, NZ$99 with 3 luge rides, NZ$140 unlimited. Closes in high wind or heavy snow - check the day's status before driving up.",
+      "url": "https://queenstown.skyline.co.nz/pricing-and-packages/"
+    },
+    {
+      "name": "Coronet Peak Ski Area",
+      "kind": "do",
+      "price": "Afternoon pass NZ$135 + rental NZ$65 + jacket & pants NZ$45 = NZ$245 all in (your research)",
+      "hours": "09:00-16:00 daily in season",
+      "duration_min": 330,
+      "desc": "The closest field to town, ~25 min from Goldfield Heights. Season 13 Jun to 4 Oct 2026 and late August is the best coverage of the year. Budget roughly NZ$230-290 a head all in: pass, gear and outerwear. Rental prices are the operator's own research.",
+      "price_nzd": [
+        200,
+        245
+      ]
+    },
+    {
+      "name": "Coronet Peak Ski Area",
+      "duration_min": 330,
+      "price": "Afternoon pass NZ$135 + rental NZ$65 + jacket & pants NZ$45 = NZ$245 all in (your research)",
+      "price_nzd": [
+        200,
+        245
+      ]
+    },
+    {
+      "name": "Coronet Peak Ski Area",
+      "price": "Afternoon pass NZ$135 + rental NZ$65 + jacket & pants NZ$45 = NZ$245 all in (your research)",
+      "price_nzd": [
+        200,
+        245
+      ]
+    }
+  ],
+  "add": [
+    {
+      "name": "Milford Sound coach & cruise (guided, from Queenstown)",
+      "geocode_as": "Queenstown, New Zealand",
+      "kind": "do",
+      "day_trip_hub": "Milford Sound",
+      "hub_drive_mins": 211,
+      "duration_min": 660,
+      "price": "NZ$136-219 per adult (2026); winter rates run 20-35% below summer",
+      "url": "https://www.realnz.com/en/blog/can-you-drive-to-milford-sound-from-queenstown/",
+      "indoor": false,
+      "weather_sensitive": false,
+      "desc": "The same 13-hour day as self-driving, except somebody else does the 9 hours behind the wheel. In winter the Milford Road can require chains and the drive is genuinely arduous; tour drivers carry them and are trained for it. For a 3-day trip with only one spare day, this is the version that does not cost you the following morning.",
+      "themes_hint": "scenic",
+      "price_nzd": [
+        225,
+        360
+      ]
+    },
+    {
+      "name": "Milford Sound nature cruise (2 hours)",
+      "geocode_as": "Milford Sound, New Zealand",
+      "kind": "do",
+      "day_trip_hub": "Milford Sound",
+      "hub_drive_mins": 211,
+      "duration_min": 120,
+      "price": "NZ$140-200 pp (est)",
+      "indoor": false,
+      "weather_sensitive": false,
+      "desc": "The actual reason to go: out under Mitre Peak to the Tasman Sea and back, past Stirling and Bowen Falls. Rain makes it better, not worse - the walls run with hundreds of temporary waterfalls.",
+      "themes_hint": "scenic",
+      "price_nzd": [
+        140,
+        200
+      ]
+    },
+    {
+      "name": "Coronet Peak Night Ski (Wed & Fri only - your Friday is 28 Aug)",
+      "geocode_as": "Coronet Peak, Queenstown, New Zealand",
+      "kind": "do",
+      "duration_min": 180,
+      "hours": "16:00-21:00",
+      "price": "Night pass - check current rate",
+      "url": "https://www.coronetpeak.co.nz/",
+      "indoor": false,
+      "weather_sensitive": true,
+      "desc": "Floodlit skiing 4pm to 9pm, Wednesdays and Fridays through to 4 September 2026. The one thing in Queenstown that adds usable hours to an August day rather than losing them to the 18:12 sunset. Only Day 1 of your trip qualifies.",
+      "themes_hint": "snow,scenic",
+      "only_weekdays": [
+        "wed",
+        "fri"
+      ]
+    },
+    {
+      "name": "The Remarkables Ski Area",
+      "geocode_as": "The Remarkables Ski Area, Queenstown, New Zealand",
+      "kind": "do",
+      "duration_min": 330,
+      "hours": "09:00-16:00 daily in season",
+      "price": "Day pass - check current rate; season runs to 11 Oct 2026",
+      "indoor": false,
+      "weather_sensitive": true,
+      "desc": "Alpine bowls and the better scenery of the two fields, 40-45 min from town including the access road. Terrain for everyone from first-timers to advanced.",
+      "themes_hint": "snow,scenic"
+    },
+    {
+      "name": "Gibbston Valley Winery & Wine Cave",
+      "geocode_as": "Gibbston Valley Winery, Gibbston, New Zealand",
+      "kind": "do",
+      "duration_min": 120,
+      "price": "Cave tour & tasting NZ$25-55 pp (est)",
+      "indoor": true,
+      "weather_sensitive": false,
+      "desc": "New Zealand's largest underground wine cave, in the Gibbston valley 25 min from town on the way to the Kawarau bungy bridge. Indoor, open year round, and a genuine wet-weather answer to a cancelled outdoor day.",
+      "themes_hint": "wine,culture",
+      "price_nzd": [
+        25,
+        55
+      ]
+    },
+    {
+      "name": "Kinross Cellar Door",
+      "geocode_as": "Kinross, Gibbston, New Zealand",
+      "kind": "do",
+      "duration_min": 90,
+      "indoor": true,
+      "weather_sensitive": false,
+      "desc": "Five small Central Otago producers pouring under one roof, with a fire going in winter. Easy to combine with Gibbston Valley and Arrowtown in one loop.",
+      "themes_hint": "wine",
+      "price_nzd": [
+        20,
+        45
+      ],
+      "price": "Tasting flight NZ$20-45 pp (est)"
+    },
+    {
+      "name": "The Gibbston Tavern",
+      "geocode_as": "Gibbston Tavern, Gibbston, New Zealand",
+      "kind": "eat",
+      "duration_min": 75,
+      "indoor": true,
+      "weather_sensitive": false,
+      "desc": "Wood-fired pizza and craft beer in the middle of the wine valley. The unpretentious stop on a wine day.",
+      "themes_hint": "wine,food",
+      "price_nzd": [
+        25,
+        45
+      ],
+      "price": "NZ$25-45 pp (est)",
+      "area": "Gibbston",
+      "highlight_only": true,
+      "url": "https://www.gibbstontavern.co.nz/"
+    },
+    {
+      "name": "Gibbston Hop-On Hop-Off Wine Tour (someone else drives)",
+      "geocode_as": "Gibbston, New Zealand",
+      "kind": "do",
+      "duration_min": 300,
+      "price": "from US$59.50 (~NZ$100)",
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "wine,food",
+      "desc": "A shuttle loop between Gibbston cellar doors at your own pace. The best wet-weather answer in the whole region: cellar doors are indoors with fires going, and nobody has to stay sober to drive. Booked through Civitatis/Queenstown Wine Trail.",
+      "price_nzd": [
+        98,
+        160
+      ]
+    },
+    {
+      "name": "Glenorchy & Paradise scenic day trip (guided)",
+      "geocode_as": "Glenorchy, New Zealand",
+      "kind": "do",
+      "duration_min": 270,
+      "price": "~NZ$235-300 (est)",
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic",
+      "desc": "The Glenorchy road is the best short drive in the country. Guided means you watch it instead of watching the road - worth it on a wet day when the surface is greasy.",
+      "price_nzd": [
+        235,
+        300
+      ]
+    },
+    {
+      "name": "Lord of the Rings filming locations tour",
+      "geocode_as": "Queenstown, New Zealand",
+      "kind": "do",
+      "duration_min": 240,
+      "price": "~NZ$295-360 (est)",
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic,culture",
+      "desc": "Four hours around the filming sites, most of them within 40 min of town. Runs in most weather because the stops are short.",
+      "price_nzd": [
+        295,
+        360
+      ]
+    },
+    {
+      "name": "Skippers Canyon 4WD tour",
+      "geocode_as": "Skippers Canyon, Queenstown, New Zealand",
+      "kind": "do",
+      "duration_min": 240,
+      "price": "~NZ$295-360 (est)",
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic,adrenaline,culture",
+      "desc": "The gold-rush road most rental agreements forbid you to drive - which is exactly why you take the tour. Vertiginous, historic, and someone else's tyres.",
+      "price_nzd": [
+        295,
+        360
+      ]
+    },
+    {
+      "name": "The Boatshed Cafe (Frankton)",
+      "kind": "eat",
+      "meal": "breakfast",
+      "duration_min": 60,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "food",
+      "price": "NZ$20-30 pp (est)",
+      "price_nzd": [
+        20,
+        30
+      ],
+      "url": "https://www.boatshedqueenstown.co.nz/",
+      "desc": "Your Frankton breakfast pick, and the closest of the three to Goldfield Heights - about 5 minutes.",
+      "lat": -45.0197,
+      "lon": 168.7,
+      "maps_query": "Boatshed Cafe Frankton",
+      "located_by": "approximate - map link searches by name",
+      "area": "Frankton",
+      "highlight_only": false
+    },
+    {
+      "name": "Wolf Coffee Roasters (Arrowtown)",
+      "kind": "eat",
+      "meal": "breakfast",
+      "duration_min": 45,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "food",
+      "price": "NZ$15-25 pp (est)",
+      "price_nzd": [
+        15,
+        25
+      ],
+      "url": "https://www.arrowtown.com/directory/food-and-drink/wolf-coffee/",
+      "desc": "Your Arrowtown breakfast pick. Five minutes from Ayrburn, so it pairs with a Tuesday out that way.",
+      "lat": -44.9394,
+      "lon": 168.833,
+      "maps_query": "Wolf Coffee Arrowtown",
+      "located_by": "approximate - map link searches by name",
+      "area": "Arrowtown",
+      "highlight_only": true
+    },
+    {
+      "name": "Sunfire",
+      "kind": "eat",
+      "meal": "dinner",
+      "duration_min": 105,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "food",
+      "price": "NZ$80-90 pp; ~NZ$40 if you order light",
+      "price_nzd": [
+        80,
+        90
+      ],
+      "url": "https://www.sunfire.co.nz/menu",
+      "desc": "Your oyster pick. Seafood-led.",
+      "lat": -45.0327,
+      "lon": 168.6585,
+      "maps_query": "Sunfire Queenstown",
+      "located_by": "approximate - map link searches by name",
+      "area": "Queenstown",
+      "highlight_only": false
+    },
+    {
+      "name": "Blue Kanu",
+      "kind": "eat",
+      "meal": "dinner",
+      "duration_min": 90,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "food",
+      "price": "NZ$45-70 pp (est)",
+      "price_nzd": [
+        45,
+        70
+      ],
+      "url": "https://bluekanu.co.nz/",
+      "desc": "Asian fusion, Polynesian-tiki room. Your easiest booking of the four, and the best fit for all seven.",
+      "lat": -45.032,
+      "lon": 168.6606,
+      "maps_query": "Blue Kanu Queenstown",
+      "located_by": "approximate - map link searches by name",
+      "area": "Queenstown",
+      "highlight_only": false
+    },
+    {
+      "name": "Sundeck Rooftop Bar",
+      "kind": "drink",
+      "meal": "drinks",
+      "duration_min": 75,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "food,scenic",
+      "price": "NZ$15-25 a drink",
+      "price_nzd": [
+        15,
+        25
+      ],
+      "url": "https://www.thesundeck.nz/",
+      "desc": "Your rooftop drinks pick. Outdoor, so it wants the good-weather evening - Monday or Tuesday, not Wednesday.",
+      "lat": -45.0318,
+      "lon": 168.66,
+      "maps_query": "The Sundeck Queenstown",
+      "located_by": "approximate - map link searches by name",
+      "area": "Queenstown",
+      "highlight_only": false
+    },
+    {
+      "name": "Scroggin Bakehouse (Wanaka)",
+      "geocode_as": "Scroggin, Wanaka, New Zealand",
+      "kind": "eat",
+      "duration_min": 45,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "food",
+      "price": "NZ$10-20 pp (est)",
+      "desc": "Your Wanaka pick - the tiramisu danish. Only relevant if you take the Wanaka day option.",
+      "price_nzd": [
+        10,
+        20
+      ],
+      "area": "Wanaka",
+      "highlight_only": true,
+      "url": "https://scroggin.co.nz/"
+    },
+    {
+      "name": "Bob's Cove",
+      "geocode_as": "Bobs Cove, Queenstown, New Zealand",
+      "kind": "see",
+      "duration_min": 75,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic,walking",
+      "price": "free",
+      "desc": "Your short-drive pick: 15 km west on the Glenorchy road, a 45-60 min loop track to a clear-water cove and an old lime kiln. Far closer than Glenorchy for the same kind of view.",
+      "price_nzd": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ayrburn",
+      "kind": "do",
+      "duration_min": 180,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "wine,food",
+      "price": "NZ$60-120 pp with food (est)",
+      "desc": "Your winery pick. A restored 1860s farm precinct between Arrowtown and Lake Hayes with several venues on one site - all indoors with fires, so it holds up whatever the weather. Five minutes from Arrowtown, 25 from town.",
+      "price_nzd": [
+        60,
+        120
+      ],
+      "hours": "10:00-22:00",
+      "lat": -44.97,
+      "lon": 168.806,
+      "maps_query": "Ayrburn Arrowtown",
+      "located_by": "approximate - map link searches by name"
+    },
+    {
+      "name": "Jack's Point Golf Course",
+      "geocode_as": "Jacks Point Golf Course, Queenstown, New Zealand",
+      "kind": "do",
+      "duration_min": 270,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic",
+      "price": "NZ$275 for 18 holes",
+      "desc": "Your golf pick. Spectacular, and your own note flags the catch: not much in the way of food options on site, so eat before or after.",
+      "price_nzd": [
+        275,
+        275
+      ]
+    },
+    {
+      "name": "Sunset over Lake Wakatipu",
+      "geocode_as": "Queenstown Gardens, Queenstown, New Zealand",
+      "kind": "see",
+      "duration_min": 45,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic",
+      "price": "free",
+      "desc": "Your Monday-evening pick. Sunset is 18:07 on the 24th and Monday is the driest evening of the three - take it that night rather than saving it. Queenstown Gardens or the Bob's Cove side both work.",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "hours": "17:15-19:00"
+    },
+    {
+      "name": "Coronet Peak afternoon pass (12:30-16:00)",
+      "geocode_as": "Coronet Peak, Queenstown, New Zealand",
+      "kind": "do",
+      "duration_min": 210,
+      "indoor": false,
+      "weather_sensitive": true,
+      "hours": "12:30-16:00",
+      "themes_hint": "snow,scenic",
+      "price": "Afternoon pass ~NZ$95-135 + rental NZ$65 + outerwear NZ$45 (est)",
+      "price_nzd": [
+        205,
+        245
+      ],
+      "desc": "Half-day access from 12:30 to 16:00, built for late starters. Cheaper than a full day and it leaves the morning free - which is what makes the group split work."
+    },
+    {
+      "name": "The Bathhouse Cafe (Queenstown Gardens)",
+      "kind": "eat",
+      "meal": "breakfast",
+      "duration_min": 60,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "food,scenic",
+      "price": "NZ$20-35 pp (est)",
+      "price_nzd": [
+        20,
+        35
+      ],
+      "url": "https://bathhouse.co.nz/",
+      "desc": "Your Queenstown breakfast pick. A 1911 bathhouse on the beach at Queenstown Gardens - note this is the CAFE, not the Bathhouse spa on Brecon St.",
+      "lat": -45.0355,
+      "lon": 168.6633,
+      "maps_query": "Bathhouse Restaurant Queenstown Gardens",
+      "located_by": "approximate - map link searches by name",
+      "area": "Queenstown",
+      "highlight_only": false
+    },
+    {
+      "name": "Fergburger",
+      "geocode_as": "Fergburger, Queenstown, New Zealand",
+      "kind": "eat",
+      "meal": "lunch",
+      "duration_min": 60,
+      "indoor": true,
+      "weather_sensitive": false,
+      "themes_hint": "food",
+      "price": "NZ$18-25",
+      "price_nzd": [
+        18,
+        25
+      ],
+      "url": "https://fergburger.com/",
+      "desc": "Your lunch pick. Shortest queue before noon or after 9pm.",
+      "area": "Queenstown",
+      "highlight_only": false
+    },
+    {
+      "name": "The Bathhouse Spa (35 Brecon St)",
+      "kind": "do",
+      "duration_min": 90,
+      "indoor": true,
+      "weather_sensitive": false,
+      "hours": "09:00-21:30",
+      "themes_hint": "relax",
+      "price": "90 min NZ$79-119 pp; ~NZ$200 for two",
+      "price_nzd": [
+        79,
+        119
+      ],
+      "url": "https://thebathhousegroup.com/queenstown/",
+      "desc": "A European-style bathhouse, not a massage spa: 38, 34 and 12 degree pools, Finnish sauna, scented steam room, two infrared saunas and a tea lounge, self-serve at your own pace. Open to 21:30, so it works after a day on the mountain. BOOKINGS REQUIRED - they do not take walk-ins.",
+      "lat": -45.0313,
+      "lon": 168.658,
+      "maps_query": "The Bathhouse Queenstown Brecon Street",
+      "located_by": "approximate - map link searches by name"
+    },
+    {
+      "name": "Coronet Peak sightseeing - gondola, toboggan, Heidi's Hut",
+      "geocode_as": "Coronet Peak, Queenstown, New Zealand",
+      "kind": "do",
+      "duration_min": 210,
+      "indoor": false,
+      "weather_sensitive": true,
+      "hours": "09:00-16:00",
+      "themes_hint": "snow,scenic",
+      "price": "Peak Gondola Pass NZ$39 + toboggan/lunch",
+      "price_nzd": [
+        39,
+        90
+      ],
+      "url": "https://www.coronetpeak.co.nz/sightseeing/",
+      "desc": "The Peak Gondola to the summit and back, the designated snowplay and toboggan area, and Heidi's Hut - a small cosy restaurant with an indoor fire."
+    },
+    {
+      "name": "Bennett's Bluff Lookout",
+      "lat": -44.9346,
+      "lon": 168.4318,
+      "kind": "see",
+      "duration_min": 25,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic",
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "desc": "The stop on the Glenorchy road - Pigeon and Pig Islands below, the Humboldts across the water. Roughly 35 min from town. In heavy rain the cloud sits low on the range, which is its own kind of good.",
+      "day_trip_hub": "Glenorchy",
+      "hub_drive_mins": 59
+    },
+    {
+      "name": "Wilson Bay lookout",
+      "lat": -44.9767,
+      "lon": 168.4805,
+      "kind": "see",
+      "duration_min": 20,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic",
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "desc": "First proper pull-off on the Glenorchy road, right on the lake edge. Two minutes out of the car.",
+      "day_trip_hub": "Glenorchy",
+      "hub_drive_mins": 59
+    },
+    {
+      "name": "Glenorchy township & the red boatshed",
+      "lat": -44.84975,
+      "lon": 168.3852,
+      "kind": "see",
+      "duration_min": 75,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic,culture",
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "url": "https://www.glenorchyinfocentre.co.nz/",
+      "desc": "The end of the road, 46 km and about an hour from town. The red boatshed on the wharf is the photograph; Mrs Woolly's General Store is the coffee and the shelter.",
+      "day_trip_hub": "Glenorchy",
+      "hub_drive_mins": 59
+    },
+    {
+      "name": "Glenorchy Lagoon boardwalk",
+      "lat": -44.8414,
+      "lon": 168.39273,
+      "kind": "see",
+      "duration_min": 40,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic,walking",
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "desc": "A flat 30-40 min loop on boardwalk behind the township, through wetland with the Humboldts as a backdrop. Easy underfoot even wet.",
+      "day_trip_hub": "Glenorchy",
+      "hub_drive_mins": 59
+    },
+    {
+      "name": "Paradise & Diamond Lake",
+      "lat": -44.82261,
+      "lon": 168.39858,
+      "kind": "see",
+      "duration_min": 60,
+      "indoor": false,
+      "weather_sensitive": true,
+      "themes_hint": "scenic",
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "desc": "Twenty minutes beyond Glenorchy on UNSEALED road with fords. Spectacular, and the first thing to drop in heavy rain - check your rental agreement covers unsealed roads before you commit.",
+      "day_trip_hub": "Glenorchy",
+      "hub_drive_mins": 59
+    }
+  ],
+  "exclude": [
+    "Aosta",
+    "Backpackers Express /Buckleys",
+    "Big Fig",
+    "Bob's Cove",
+    "Cardrona",
+    "Dart River Jet Safaris",
+    "Four Square Queenstown",
+    "Fresh Choice",
+    "Halfway Remarkables",
+    "Ivan Clarke Gallery",
+    "Kayak Kinloch",
+    "Kepler Restaurant",
+    "Kingpin Queenstown",
+    "La Toundra",
+    "Miles Better Pies",
+    "Nest",
+    "New World Queenstown",
+    "Onsen Hot Pools",
+    "Pak n' Save",
+    "Public Kitchen & Bar",
+    "Rata",
+    "Redcliff Cafe",
+    "Roki",
+    "Sandfly Cafe",
+    "Sunset over Lake Wakatipu",
+    "Te Anau Bakery",
+    "The Bath House Cafe",
+    "The Remarkables Ski Area",
+    "Treble Cone",
+    "Woolworths"
+  ],
+  "dining_note": "Queenstown shows everything - it is the base for three days. Arrowtown, Gibbston and Wanaka show one highlight each, because you are passing through."
+}

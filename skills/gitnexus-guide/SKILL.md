@@ -126,3 +126,16 @@ Lightweight reads (~100-500 tokens) for navigation:
 MATCH (caller)-[:CodeRelation {type: 'CALLS'}]->(f:Function {name: "myFunc"})
 RETURN caller.name, caller.filePath
 ```
+
+## Sub-skills (Plan 51: collapsed sub-skills)
+
+The skills named in the table above are not listed in the session; Read the file when the table points to one.
+
+- `gitnexus-cli`: `/opt/agentic/shared/skills/gitnexus-cli/SKILL.md`
+- `gitnexus-debugging`: `/opt/agentic/shared/skills/gitnexus-debugging/SKILL.md`
+- `gitnexus-exploring`: `/opt/agentic/shared/skills/gitnexus-exploring/SKILL.md`
+- `gitnexus-impact-analysis`: `/opt/agentic/shared/skills/gitnexus-impact-analysis/SKILL.md`
+- `gitnexus-pdg-query`: `/opt/agentic/shared/skills/gitnexus-pdg-query/SKILL.md`
+- `gitnexus-pr-review`: `/opt/agentic/shared/skills/gitnexus-pr-review/SKILL.md`
+- `gitnexus-refactoring`: `/opt/agentic/shared/skills/gitnexus-refactoring/SKILL.md`
+- `gitnexus-taint-analysis`: `/opt/agentic/shared/skills/gitnexus-taint-analysis/SKILL.md`

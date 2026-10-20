@@ -1,0 +1,7114 @@
+[
+{
+"w": "为",
+"t": "爲",
+"p": "wéi",
+"pos": "动",
+"en": "as (in the capacity of); to take sth as; to act as"
+},
+{
+"w": "对",
+"t": "對",
+"p": "duì",
+"pos": "形、介、（动、量）",
+"en": "right; correct; towards"
+},
+{
+"w": "着",
+"t": "著",
+"p": "zháo",
+"pos": "动",
+"en": "a move in chess (Taiwan pr. [zhuo2]); trick; tactic"
+},
+{
+"w": "与",
+"t": "與",
+"p": "yǔ",
+"pos": "介、连",
+"en": "variant of 歟|欤[yu2]"
+},
+{
+"w": "将",
+"t": "將",
+"p": "jiāng",
+"pos": "介、副",
+"en": "will; shall; to use"
+},
+{
+"w": "日",
+"t": "",
+"p": "rì",
+"pos": "量、（名）",
+"en": "abbr. for 日本[Ri4 ben3], Japan"
+},
+{
+"w": "好",
+"t": "",
+"p": "hǎo",
+"pos": "形、（副）、（动）",
+"en": "good; appropriate; proper"
+},
+{
+"w": "等",
+"t": "",
+"p": "děng",
+"pos": "助、（名、量）",
+"en": "to wait for; to await; by the time"
+},
+{
+"w": "而",
+"t": "",
+"p": "ér",
+"pos": "连",
+"en": "and; as well as; and so"
+},
+{
+"w": "两",
+"t": "兩",
+"p": "liǎng",
+"pos": "量",
+"en": "two; both; some"
+},
+{
+"w": "从",
+"t": "從",
+"p": "cóng",
+"pos": "介、（副）",
+"en": "variant of 從|从[cong2]; from; through"
+},
+{
+"w": "啊",
+"t": "",
+"p": "ā",
+"pos": "叹",
+"en": "interjection of surprise; Ah!; Oh!"
+},
+{
+"w": "让",
+"t": "讓",
+"p": "ràng",
+"pos": "动、（介）",
+"en": "to yield; to permit; to let sb do sth"
+},
+{
+"w": "就是",
+"t": "",
+"p": "jiùshì",
+"pos": "助、副、连",
+"en": "exactly; precisely; only"
+},
+{
+"w": "之",
+"t": "",
+"p": "zhī",
+"pos": "助",
+"en": "(possessive particle, literary equivalent of 的[de5]); him; her"
+},
+{
+"w": "进行",
+"t": "進行",
+"p": "jìnxíng",
+"pos": "动",
+"en": "(of a process etc) to proceed; to be in progress; to be underway"
+},
+{
+"w": "记者",
+"t": "記者",
+"p": "jìzhě",
+"pos": "名",
+"en": "reporter; journalist; CL:個|个[ge4]"
+},
+{
+"w": "并",
+"t": "竝",
+"p": "bìng",
+"pos": "动、副、连",
+"en": "and; furthermore; also"
+},
+{
+"w": "真",
+"t": "",
+"p": "zhēn",
+"pos": "副、（形）",
+"en": "really; truly; indeed"
+},
+{
+"w": "已",
+"t": "",
+"p": "yǐ",
+"pos": "副",
+"en": "already; to stop; then"
+},
+{
+"w": "市场",
+"t": "市場",
+"p": "shìchǎng",
+"pos": "名",
+"en": "marketplace; market; bazaar"
+},
+{
+"w": "种",
+"t": "種",
+"p": "zhòng",
+"pos": "动",
+"en": "seed; species; kind"
+},
+{
+"w": "内",
+"t": "內",
+"p": "nèi",
+"pos": "名",
+"en": "inside; inner; internal"
+},
+{
+"w": "道",
+"t": "",
+"p": "dào",
+"pos": "名、量",
+"en": "road; path (CL:條|条[tiao2],股[gu3]); (bound form) way"
+},
+{
+"w": "却",
+"t": "卻",
+"p": "què",
+"pos": "副",
+"en": "old variant of 卻|却[que4]; but; yet"
+},
+{
+"w": "经济",
+"t": "經濟",
+"p": "jīngjì",
+"pos": "名、（形）",
+"en": "economy; economic"
+},
+{
+"w": "由",
+"t": "",
+"p": "yóu",
+"pos": "介",
+"en": "to follow; from; because of"
+},
+{
+"w": "目前",
+"t": "",
+"p": "mùqián",
+"pos": "名",
+"en": "at the present time; currently"
+},
+{
+"w": "活动",
+"t": "活動",
+"p": "huódòng",
+"pos": "动、名",
+"en": "to exercise; to move about; to work out"
+},
+{
+"w": "使",
+"t": "",
+"p": "shǐ",
+"pos": "动",
+"en": "to make; to cause; to enable"
+},
+{
+"w": "管理",
+"t": "",
+"p": "guǎnlǐ",
+"pos": "动",
+"en": "to supervise; to manage; to administer"
+},
+{
+"w": "通过",
+"t": "通過",
+"p": "tōngguò",
+"pos": "动、介",
+"en": "to pass through; to get through; to adopt (a resolution)"
+},
+{
+"w": "社会",
+"t": "社會",
+"p": "shèhuì",
+"pos": "名",
+"en": "society; CL:個|个[ge4]"
+},
+{
+"w": "表示",
+"t": "",
+"p": "biǎoshì",
+"pos": "动",
+"en": "(of sb) to express; to state; to show"
+},
+{
+"w": "情况",
+"t": "情況",
+"p": "qíngkuàng",
+"pos": "名",
+"en": "circumstances; state of affairs; situation"
+},
+{
+"w": "当",
+"t": "當",
+"p": "dāng",
+"pos": "动、介",
+"en": "(onom.) dong; ding dong (bell); to be"
+},
+{
+"w": "各",
+"t": "",
+"p": "gè",
+"pos": "代、副",
+"en": "each; every"
+},
+{
+"w": "同时",
+"t": "同時",
+"p": "tóngshí",
+"pos": "名、连",
+"en": "at the same time; simultaneously"
+},
+{
+"w": "成为",
+"t": "成為",
+"p": "chéngwéi",
+"pos": "动",
+"en": "to become; to turn into"
+},
+{
+"w": "技术",
+"t": "技術",
+"p": "jìshù",
+"pos": "名",
+"en": "technology; technique; skill"
+},
+{
+"w": "无",
+"t": "無",
+"p": "wú",
+"pos": "动",
+"en": "used in 南無|南无[na1 mo2]"
+},
+{
+"w": "出现",
+"t": "出現",
+"p": "chūxiàn",
+"pos": "动",
+"en": "to appear; to arise; to emerge"
+},
+{
+"w": "由于",
+"t": "由於",
+"p": "yóuyú",
+"pos": "介、连",
+"en": "due to; as a result of; thanks to"
+},
+{
+"w": "心",
+"t": "",
+"p": "xīn",
+"pos": "名",
+"en": "heart; mind; intention"
+},
+{
+"w": "方面",
+"t": "",
+"p": "fāngmiàn",
+"pos": "名",
+"en": "respect; aspect; field"
+},
+{
+"w": "像",
+"t": "",
+"p": "xiàng",
+"pos": "动、（副）、（名）",
+"en": "to resemble; to be like; to look as if"
+},
+{
+"w": "国际",
+"t": "國際",
+"p": "guójì",
+"pos": "形、名",
+"en": "international"
+},
+{
+"w": "价格",
+"t": "價格",
+"p": "jiàgé",
+"pos": "名",
+"en": "price; CL:個|个[ge4]"
+},
+{
+"w": "研究",
+"t": "",
+"p": "yánjiū",
+"pos": "动",
+"en": "research; a study; CL:項|项[xiang4]"
+},
+{
+"w": "美",
+"t": "",
+"p": "měi",
+"pos": "形",
+"en": "(bound form) the Americas (abbr. for 美洲[Mei3 zhou1]); (bound form) USA (abbr. for 美國|美国[Mei3 guo2])"
+},
+{
+"w": "部门",
+"t": "部門",
+"p": "bùmén",
+"pos": "名",
+"en": "department; branch; section"
+},
+{
+"w": "作为",
+"t": "作為",
+"p": "zuòwéi",
+"pos": "动、介",
+"en": "one's conduct; deed; activity"
+},
+{
+"w": "部",
+"t": "",
+"p": "bù",
+"pos": "名、量",
+"en": "ministry; department; section"
+},
+{
+"w": "场",
+"t": "塲",
+"p": "chǎng",
+"pos": "量",
+"en": "threshing floor; classifier for events and happenings: spell, episode, bout; variant of 場|场[chang2]"
+},
+{
+"w": "其中",
+"t": "",
+"p": "qízhōng",
+"pos": "名",
+"en": "among; in; included among these"
+},
+{
+"w": "不过",
+"t": "不過",
+"p": "búguò",
+"pos": "连、（副）",
+"en": "only; merely; no more than"
+},
+{
+"w": "死",
+"t": "",
+"p": "sǐ",
+"pos": "动、形、（副）",
+"en": "to die; impassable; uncrossable"
+},
+{
+"w": "结果",
+"t": "結果",
+"p": "jiéguǒ",
+"pos": "名、连",
+"en": "to bear fruit"
+},
+{
+"w": "对于",
+"t": "對於",
+"p": "duìyú",
+"pos": "介",
+"en": "regarding; as far as (sth) is concerned; with regard to"
+},
+{
+"w": "教育",
+"t": "",
+"p": "jiàoyù",
+"pos": "名、动",
+"en": "to educate; to teach; education"
+},
+{
+"w": "人员",
+"t": "人員",
+"p": "rényuán",
+"pos": "名",
+"en": "staff; crew; personnel"
+},
+{
+"w": "叫",
+"t": "呌",
+"p": "jiào",
+"pos": "动、（介）",
+"en": "to shout; to call; to order"
+},
+{
+"w": "提供",
+"t": "",
+"p": "tígōng",
+"pos": "动",
+"en": "to offer; to supply; to provide"
+},
+{
+"w": "因此",
+"t": "",
+"p": "yīncǐ",
+"pos": "连",
+"en": "thus; consequently; as a result"
+},
+{
+"w": "支持",
+"t": "",
+"p": "zhīchí",
+"pos": "动",
+"en": "to be in favor of; to support; to back"
+},
+{
+"w": "使用",
+"t": "",
+"p": "shǐyòng",
+"pos": "动",
+"en": "to use; to employ; to apply"
+},
+{
+"w": "之后",
+"t": "之後",
+"p": "zhīhòu",
+"pos": "名",
+"en": "after; behind; (at the beginning of a sentence) afterwards"
+},
+{
+"w": "自",
+"t": "",
+"p": "zì",
+"pos": "介",
+"en": "(bound form) self; oneself; from"
+},
+{
+"w": "继续",
+"t": "繼續",
+"p": "jìxù",
+"pos": "动",
+"en": "to continue; to proceed with; to go on with"
+},
+{
+"w": "老",
+"t": "",
+"p": "lǎo",
+"pos": "形、前缀、（副）",
+"en": "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity; old (of people); venerable (person)"
+},
+{
+"w": "组",
+"t": "組",
+"p": "zǔ",
+"pos": "名、（动、量）",
+"en": "surname Zu"
+},
+{
+"w": "关系",
+"t": "關系",
+"p": "guānxì",
+"pos": "名、（动）",
+"en": "relation; relationship; to concern"
+},
+{
+"w": "省",
+"t": "",
+"p": "shěng",
+"pos": "名",
+"en": "to save; to economize; to be frugal"
+},
+{
+"w": "获得",
+"t": "獲得",
+"p": "huòdé",
+"pos": "动",
+"en": "to obtain; to receive; to get"
+},
+{
+"w": "图",
+"t": "圖",
+"p": "tú",
+"pos": "名、（动）",
+"en": "diagram; picture; drawing"
+},
+{
+"w": "增加",
+"t": "",
+"p": "zēngjiā",
+"pos": "动",
+"en": "to raise; to increase"
+},
+{
+"w": "能力",
+"t": "",
+"p": "nénglì",
+"pos": "名",
+"en": "capability; ability; CL:個|个[ge4]"
+},
+{
+"w": "增长",
+"t": "增長",
+"p": "zēngzhǎng",
+"pos": "动",
+"en": "to grow; to increase"
+},
+{
+"w": "进入",
+"t": "進入",
+"p": "jìnrù",
+"pos": "动",
+"en": "to enter; to join; to go into"
+},
+{
+"w": "区",
+"t": "區",
+"p": "qū",
+"pos": "名",
+"en": "surname Ou"
+},
+{
+"w": "所有",
+"t": "",
+"p": "suǒyǒu",
+"pos": "形、（动、名）",
+"en": "all; to have; to possess"
+},
+{
+"w": "一下",
+"t": "",
+"p": "yíxià",
+"pos": "数量、（副）",
+"en": "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try); all at once"
+},
+{
+"w": "每",
+"t": "",
+"p": "měi",
+"pos": "代、（副）",
+"en": "each; every"
+},
+{
+"w": "身",
+"t": "",
+"p": "shēn",
+"pos": "名、量",
+"en": "body; life; oneself"
+},
+{
+"w": "规定",
+"t": "規定",
+"p": "guīdìng",
+"pos": "动、名",
+"en": "to stipulate; to specify; to prescribe"
+},
+{
+"w": "此",
+"t": "",
+"p": "cǐ",
+"pos": "代",
+"en": "this; these"
+},
+{
+"w": "项",
+"t": "項",
+"p": "xiàng",
+"pos": "量",
+"en": "surname Xiang"
+},
+{
+"w": "方式",
+"t": "",
+"p": "fāngshì",
+"pos": "名",
+"en": "way; method; manner"
+},
+{
+"w": "作用",
+"t": "",
+"p": "zuòyòng",
+"pos": "名、（动）",
+"en": "to act on; to affect; action"
+},
+{
+"w": "感觉",
+"t": "感覺",
+"p": "gǎnjué",
+"pos": "名、动",
+"en": "feeling; impression; sensation"
+},
+{
+"w": "转",
+"t": "轉",
+"p": "zhuǎn",
+"pos": "动",
+"en": "see 轉文|转文[zhuai3 wen2]"
+},
+{
+"w": "能够",
+"t": "能夠",
+"p": "nénggòu",
+"pos": "动",
+"en": "to be capable of; to be able to; can"
+},
+{
+"w": "达到",
+"t": "達到",
+"p": "dádào",
+"pos": "动",
+"en": "to reach; to achieve; to attain"
+},
+{
+"w": "全",
+"t": "",
+"p": "quán",
+"pos": "形、副",
+"en": "surname Quan"
+},
+{
+"w": "入",
+"t": "",
+"p": "rù",
+"pos": "动",
+"en": "to enter; to go into; to join"
+},
+{
+"w": "过程",
+"t": "過程",
+"p": "guòchéng",
+"pos": "名",
+"en": "course of events; process; CL:個|个[ge4]"
+},
+{
+"w": "连",
+"t": "連",
+"p": "lián",
+"pos": "介、（动、副）",
+"en": "surname Lian"
+},
+{
+"w": "信息",
+"t": "",
+"p": "xìnxī",
+"pos": "名",
+"en": "information; news; message"
+},
+{
+"w": "强",
+"t": "彊",
+"p": "qiáng",
+"pos": "形",
+"en": "surname Qiang"
+},
+{
+"w": "低",
+"t": "",
+"p": "dī",
+"pos": "形、动",
+"en": "low; beneath; to lower (one's head)"
+},
+{
+"w": "标准",
+"t": "標準",
+"p": "biāozhǔn",
+"pos": "名、形",
+"en": "standard; norm; criterion"
+},
+{
+"w": "部分",
+"t": "",
+"p": "bùfen",
+"pos": "名",
+"en": "part; portion; piece"
+},
+{
+"w": "提出",
+"t": "",
+"p": "tíchū",
+"pos": "动",
+"en": "to raise (an issue); to propose; to put forward"
+},
+{
+"w": "之间",
+"t": "之間",
+"p": "zhījiān",
+"pos": "名",
+"en": "(after a noun) between; among; amid"
+},
+{
+"w": "各种",
+"t": "各種",
+"p": "gèzhǒng",
+"pos": "代",
+"en": "every kind of; all kinds of; various"
+},
+{
+"w": "成功",
+"t": "",
+"p": "chénggōng",
+"pos": "动、形",
+"en": "Chenggong or Chengkung town in Taitung County 臺東縣|台东县[Tai2 dong1 Xian4], southeast Taiwan"
+},
+{
+"w": "单位",
+"t": "單位",
+"p": "dānwèi",
+"pos": "名",
+"en": "unit (of measure); unit (group of people as a whole); work unit (place of employment, esp. in the PRC prior to economic reform)"
+},
+{
+"w": "片",
+"t": "",
+"p": "piàn",
+"pos": "名、量",
+"en": "disk; sheet"
+},
+{
+"w": "队",
+"t": "隊",
+"p": "duì",
+"pos": "名、（量）",
+"en": "squadron; team; group"
+},
+{
+"w": "计划",
+"t": "計劃",
+"p": "jìhuà",
+"pos": "名、动",
+"en": "plan; project; program"
+},
+{
+"w": "表现",
+"t": "表現",
+"p": "biǎoxiàn",
+"pos": "动",
+"en": "to show; to show off; to display"
+},
+{
+"w": "不断",
+"t": "不斷",
+"p": "búduàn",
+"pos": "动、副",
+"en": "unceasing; uninterrupted; continuous"
+},
+{
+"w": "基本",
+"t": "",
+"p": "jīběn",
+"pos": "形、副",
+"en": "basic; fundamental; main"
+},
+{
+"w": "原因",
+"t": "",
+"p": "yuányīn",
+"pos": "名",
+"en": "cause; origin; root cause"
+},
+{
+"w": "直接",
+"t": "",
+"p": "zhíjiē",
+"pos": "形",
+"en": "direct (opposite: indirect 間接|间接[jian4 jie1]); immediate; straightforward"
+},
+{
+"w": "基础",
+"t": "基礎",
+"p": "jīchǔ",
+"pos": "名",
+"en": "base; foundation; basis"
+},
+{
+"w": "任何",
+"t": "",
+"p": "rènhé",
+"pos": "代",
+"en": "any; whatever; whichever"
+},
+{
+"w": "加强",
+"t": "加強",
+"p": "jiāqiáng",
+"pos": "动",
+"en": "to reinforce; to strengthen; to enhance"
+},
+{
+"w": "接受",
+"t": "",
+"p": "jiēshòu",
+"pos": "动",
+"en": "to accept (a suggestion, punishment, bribe etc); to acquiesce"
+},
+{
+"w": "消息",
+"t": "",
+"p": "xiāoxi",
+"pos": "名",
+"en": "(piece of) news; information; message"
+},
+{
+"w": "甚至",
+"t": "",
+"p": "shènzhì",
+"pos": "连",
+"en": "even; so much so that"
+},
+{
+"w": "完全",
+"t": "",
+"p": "wánquán",
+"pos": "形、副",
+"en": "complete; whole; totally"
+},
+{
+"w": "调查",
+"t": "調查",
+"p": "diàochá",
+"pos": "动",
+"en": "investigation; inquiry; to investigate"
+},
+{
+"w": "间",
+"t": "間",
+"p": "jiān",
+"pos": "量、（名）",
+"en": "between; among; within a definite time or space"
+},
+{
+"w": "条件",
+"t": "條件",
+"p": "tiáojiàn",
+"pos": "名",
+"en": "condition; circumstance; term"
+},
+{
+"w": "一切",
+"t": "",
+"p": "yíqiè",
+"pos": "代",
+"en": "everything; every; all"
+},
+{
+"w": "仅",
+"t": "僅",
+"p": "jǐn",
+"pos": "副",
+"en": "barely; only; merely"
+},
+{
+"w": "按",
+"t": "",
+"p": "àn",
+"pos": "动、介",
+"en": "to press; to push; to leave aside or shelve"
+},
+{
+"w": "左右",
+"t": "",
+"p": "zuǒyòu",
+"pos": "名、（动）",
+"en": "left and right; nearby; approximately"
+},
+{
+"w": "台",
+"t": "颱",
+"p": "tái",
+"pos": "量、（名）",
+"en": "Taiwan (abbr.); surname Tai; Taiwan (abbr.)"
+},
+{
+"w": "当时",
+"t": "當時",
+"p": "dāngshí",
+"pos": "名",
+"en": "then; at that time; while"
+},
+{
+"w": "幸福",
+"t": "",
+"p": "xìngfú",
+"pos": "名、形",
+"en": "happiness; happy; blessed"
+},
+{
+"w": "座",
+"t": "",
+"p": "zuò",
+"pos": "名、量",
+"en": "seat; base; stand"
+},
+{
+"w": "质量",
+"t": "質量",
+"p": "zhìliàng",
+"pos": "名",
+"en": "(physics) mass; quality (i.e. degree of excellence); quality and quantity"
+},
+{
+"w": "许多",
+"t": "許多",
+"p": "xǔduō",
+"pos": "数",
+"en": "many; a lot of; much"
+},
+{
+"w": "生",
+"t": "",
+"p": "shēng",
+"pos": "形、（副）",
+"en": "to be born; to give birth; life"
+},
+{
+"w": "无法",
+"t": "無法",
+"p": "wúfǎ",
+"pos": "动",
+"en": "unable to; incapable of"
+},
+{
+"w": "拉",
+"t": "",
+"p": "lā",
+"pos": "动",
+"en": "to pull; to play (a bowed instrument); to drag"
+},
+{
+"w": "内容",
+"t": "內容",
+"p": "nèiróng",
+"pos": "名",
+"en": "content; substance; details"
+},
+{
+"w": "目标",
+"t": "目標",
+"p": "mùbiāo",
+"pos": "名",
+"en": "target; goal; objective"
+},
+{
+"w": "约",
+"t": "約",
+"p": "yuē",
+"pos": "动、副",
+"en": "to weigh in a balance or on a scale"
+},
+{
+"w": "回复",
+"t": "回復",
+"p": "huífù",
+"pos": "动",
+"en": "to recover; to revert; to return to (good health, normal condition etc)"
+},
+{
+"w": "交",
+"t": "",
+"p": "jiāo",
+"pos": "动、（名）",
+"en": "to hand over; to deliver; to pay (money)"
+},
+{
+"w": "原来",
+"t": "原來",
+"p": "yuánlái",
+"pos": "名、形、副",
+"en": "original; former; originally"
+},
+{
+"w": "重",
+"t": "",
+"p": "zhòng",
+"pos": "名、形",
+"en": "to repeat; repetition; again"
+},
+{
+"w": "举行",
+"t": "舉行",
+"p": "jǔxíng",
+"pos": "动",
+"en": "to hold (a meeting, ceremony etc)"
+},
+{
+"w": "全部",
+"t": "",
+"p": "quánbù",
+"pos": "名",
+"en": "whole; all"
+},
+{
+"w": "积极",
+"t": "積極",
+"p": "jījí",
+"pos": "形",
+"en": "active; energetic; vigorous"
+},
+{
+"w": "产生",
+"t": "產生",
+"p": "chǎnshēng",
+"pos": "动",
+"en": "to arise; to come into being; to come about"
+},
+{
+"w": "是否",
+"t": "",
+"p": "shìfǒu",
+"pos": "副",
+"en": "whether (or not); if; is or isn't"
+},
+{
+"w": "城",
+"t": "",
+"p": "chéng",
+"pos": "名",
+"en": "city walls; city; town"
+},
+{
+"w": "严重",
+"t": "嚴重",
+"p": "yánzhòng",
+"pos": "形",
+"en": "grave; serious; severe"
+},
+{
+"w": "保护",
+"t": "保護",
+"p": "bǎohù",
+"pos": "动",
+"en": "to protect; to defend; to safeguard"
+},
+{
+"w": "数",
+"t": "數",
+"p": "shù",
+"pos": "名、数",
+"en": "to count; to count as; to regard as"
+},
+{
+"w": "真正",
+"t": "",
+"p": "zhēnzhèng",
+"pos": "形、副",
+"en": "genuine; real; true"
+},
+{
+"w": "自然",
+"t": "",
+"p": "zìrán",
+"pos": "名、形、副",
+"en": "nature; natural; naturally"
+},
+{
+"w": "取得",
+"t": "",
+"p": "qǔdé",
+"pos": "动",
+"en": "to acquire; to get; to obtain"
+},
+{
+"w": "专业",
+"t": "專業",
+"p": "zhuānyè",
+"pos": "名、形",
+"en": "specialty; specialized field; main field of study (at university)"
+},
+{
+"w": "超过",
+"t": "超過",
+"p": "chāoguò",
+"pos": "动",
+"en": "to surpass; to exceed; to outstrip"
+},
+{
+"w": "仍",
+"t": "",
+"p": "réng",
+"pos": "副",
+"en": "still; yet; to remain"
+},
+{
+"w": "重点",
+"t": "重點",
+"p": "zhòngdiǎn",
+"pos": "名、副",
+"en": "to recount (e.g. results of election); to re-evaluate"
+},
+{
+"w": "不仅",
+"t": "不僅",
+"p": "bùjǐn",
+"pos": "连",
+"en": "not just; not limited to; (as a correlative conjunction) not only (..., but also ...)"
+},
+{
+"w": "法律",
+"t": "",
+"p": "fǎlǜ",
+"pos": "名",
+"en": "law; CL:條|条[tiao2], 套[tao4], 個|个[ge4]"
+},
+{
+"w": "整个",
+"t": "整個",
+"p": "zhěnggè",
+"pos": "形",
+"en": "whole; entire; total"
+},
+{
+"w": "改变",
+"t": "改變",
+"p": "gǎibiàn",
+"pos": "动",
+"en": "to change; to alter; to transform"
+},
+{
+"w": "共",
+"t": "",
+"p": "gòng",
+"pos": "副",
+"en": "common; general; to share"
+},
+{
+"w": "拍",
+"t": "",
+"p": "pāi",
+"pos": "动、名",
+"en": "to pat; to clap; to slap"
+},
+{
+"w": "农村",
+"t": "農村",
+"p": "nóngcūn",
+"pos": "名",
+"en": "rural area; village; CL:個|个[ge4]"
+},
+{
+"w": "任务",
+"t": "任務",
+"p": "rènwu",
+"pos": "名",
+"en": "mission; assignment; task"
+},
+{
+"w": "按照",
+"t": "",
+"p": "ànzhào",
+"pos": "介",
+"en": "according to; in accordance with; on the basis of"
+},
+{
+"w": "考虑",
+"t": "考慮",
+"p": "kǎolǜ",
+"pos": "动",
+"en": "to think over; to consider; consideration"
+},
+{
+"w": "科技",
+"t": "",
+"p": "kējì",
+"pos": "名",
+"en": "science and technology"
+},
+{
+"w": "者",
+"t": "",
+"p": "zhě",
+"pos": "助",
+"en": "(after a verb or adjective) one who (is) ...; (after a noun) person involved in ...; -er"
+},
+{
+"w": "另外",
+"t": "",
+"p": "lìngwài",
+"pos": "代、副、连",
+"en": "additional; in addition; besides"
+},
+{
+"w": "期",
+"t": "",
+"p": "qī",
+"pos": "量",
+"en": "variant of 期[qi1]; period; cycle"
+},
+{
+"w": "管",
+"t": "",
+"p": "guǎn",
+"pos": "动、（名、量）",
+"en": "variant of 管[guan3]; to take care (of); to control"
+},
+{
+"w": "另",
+"t": "",
+"p": "lìng",
+"pos": "代、（副）",
+"en": "other; another; separate"
+},
+{
+"w": "指",
+"t": "",
+"p": "zhǐ",
+"pos": "动",
+"en": "finger; to point at or to; to indicate or refer to"
+},
+{
+"w": "有效",
+"t": "",
+"p": "yǒuxiào",
+"pos": "动",
+"en": "effective; in effect; valid"
+},
+{
+"w": "收入",
+"t": "",
+"p": "shōurù",
+"pos": "动、名",
+"en": "to take in; income; revenue"
+},
+{
+"w": "十分",
+"t": "",
+"p": "shífēn",
+"pos": "副",
+"en": "very; completely; utterly"
+},
+{
+"w": "之前",
+"t": "",
+"p": "zhīqián",
+"pos": "名",
+"en": "before; prior to; ago"
+},
+{
+"w": "正常",
+"t": "",
+"p": "zhèngcháng",
+"pos": "形",
+"en": "regular; normal; ordinary"
+},
+{
+"w": "地址",
+"t": "",
+"p": "dìzhǐ",
+"pos": "名",
+"en": "address; CL:個|个[ge4]"
+},
+{
+"w": "改",
+"t": "",
+"p": "gǎi",
+"pos": "动",
+"en": "to change; to alter; to transform"
+},
+{
+"w": "克",
+"t": "尅",
+"p": "kè",
+"pos": "量",
+"en": "abbr. for 克羅地亞|克罗地亚[Ke4 luo2 di4 ya4], Croatia; (Tw) abbr. for 克羅埃西亞|克罗埃西亚[Ke4 luo2 ai1 xi1 ya4], Croatia; Ke (c. 2000 BC), seventh of the legendary Flame Emperors, 炎帝[Yan2 di4] descended from Shennong 神農|神农[Shen2 nong2] Farmer God"
+},
+{
+"w": "实际",
+"t": "實際",
+"p": "shíjì",
+"pos": "名、形",
+"en": "reality; practice; practical"
+},
+{
+"w": "最终",
+"t": "最終",
+"p": "zuìzhōng",
+"pos": "名",
+"en": "final; ultimate"
+},
+{
+"w": "保证",
+"t": "保證",
+"p": "bǎozhèng",
+"pos": "动、名",
+"en": "guarantee; to guarantee; to ensure"
+},
+{
+"w": "首",
+"t": "",
+"p": "shǒu",
+"pos": "量",
+"en": "head; chief; first (occasion, thing etc)"
+},
+{
+"w": "效果",
+"t": "",
+"p": "xiàoguǒ",
+"pos": "名",
+"en": "result; effect; efficacy"
+},
+{
+"w": "责任",
+"t": "責任",
+"p": "zérèn",
+"pos": "名",
+"en": "responsibility; blame; duty"
+},
+{
+"w": "科学",
+"t": "科學",
+"p": "kēxué",
+"pos": "名、形",
+"en": "science; scientific knowledge; scientific"
+},
+{
+"w": "共同",
+"t": "",
+"p": "gòngtóng",
+"pos": "形",
+"en": "common; joint; jointly"
+},
+{
+"w": "气",
+"t": "氣",
+"p": "qì",
+"pos": "名、动",
+"en": "gas; air; smell"
+},
+{
+"w": "指出",
+"t": "",
+"p": "zhǐchū",
+"pos": "动",
+"en": "to indicate; to point out"
+},
+{
+"w": "经验",
+"t": "經驗",
+"p": "jīngyàn",
+"pos": "名",
+"en": "experience; to go through; to experience"
+},
+{
+"w": "建议",
+"t": "建議",
+"p": "jiànyì",
+"pos": "动、名",
+"en": "to propose; to suggest; to recommend"
+},
+{
+"w": "法",
+"t": "灋",
+"p": "fǎ",
+"pos": "名",
+"en": "variant of 法[fa3]; law; method"
+},
+{
+"w": "正式",
+"t": "",
+"p": "zhèngshì",
+"pos": "形",
+"en": "formal; official"
+},
+{
+"w": "家庭",
+"t": "",
+"p": "jiātíng",
+"pos": "名",
+"en": "family; household; CL:戶|户[hu4],個|个[ge4]"
+},
+{
+"w": "肯定",
+"t": "",
+"p": "kěndìng",
+"pos": "动、形、副",
+"en": "to be certain; to be positive; assuredly"
+},
+{
+"w": "光",
+"t": "",
+"p": "guāng",
+"pos": "名、形、动、副",
+"en": "light; ray (CL:道[dao4]); bright"
+},
+{
+"w": "血",
+"t": "",
+"p": "xiě",
+"pos": "名",
+"en": "see 血[xue4]"
+},
+{
+"w": "联系",
+"t": "聯繫",
+"p": "liánxì",
+"pos": "动",
+"en": "variant of 聯繫|联系[lian2 xi4]; connection; contact"
+},
+{
+"w": "定",
+"t": "",
+"p": "dìng",
+"pos": "动",
+"en": "to fix; to set; to make definite"
+},
+{
+"w": "更加",
+"t": "",
+"p": "gèngjiā",
+"pos": "副",
+"en": "more (than sth else); even more"
+},
+{
+"w": "深",
+"t": "",
+"p": "shēn",
+"pos": "形、（副）",
+"en": "old variant of 深[shen1]; deep (lit. and fig.)"
+},
+{
+"w": "引起",
+"t": "",
+"p": "yǐnqǐ",
+"pos": "动",
+"en": "to give rise to; to lead to; to cause"
+},
+{
+"w": "油",
+"t": "",
+"p": "yóu",
+"pos": "名",
+"en": "oil; fat; grease"
+},
+{
+"w": "人生",
+"t": "",
+"p": "rénshēng",
+"pos": "名",
+"en": "life (one's time on earth)"
+},
+{
+"w": "活",
+"t": "",
+"p": "huó",
+"pos": "动、形、名",
+"en": "to live; alive; living"
+},
+{
+"w": "减少",
+"t": "減少",
+"p": "jiǎnshǎo",
+"pos": "动",
+"en": "to lessen; to decrease; to reduce"
+},
+{
+"w": "压力",
+"t": "壓力",
+"p": "yālì",
+"pos": "名",
+"en": "pressure"
+},
+{
+"w": "竞争",
+"t": "競爭",
+"p": "jìngzhēng",
+"pos": "动",
+"en": "to compete; competition"
+},
+{
+"w": "干",
+"t": "幹",
+"p": "gān",
+"pos": "形、（名）",
+"en": "old variant of 乾|干[gan1]; dry; dried food"
+},
+{
+"w": "装",
+"t": "裝",
+"p": "zhuāng",
+"pos": "动",
+"en": "adornment; to adorn; dress"
+},
+{
+"w": "全球",
+"t": "",
+"p": "quánqiú",
+"pos": "名",
+"en": "the whole world; worldwide; global"
+},
+{
+"w": "永远",
+"t": "永遠",
+"p": "yǒngyuǎn",
+"pos": "副、名",
+"en": "forever; eternal"
+},
+{
+"w": "半",
+"t": "",
+"p": "bàn",
+"pos": "数、（副）",
+"en": "half; semi-; incomplete"
+},
+{
+"w": "生命",
+"t": "",
+"p": "shēngmìng",
+"pos": "名",
+"en": "life (as the characteristic of living beings); living being; creature (CL:個|个[ge4],條|条[tiao2])"
+},
+{
+"w": "性",
+"t": "",
+"p": "xìng",
+"pos": "后缀",
+"en": "nature; character; property"
+},
+{
+"w": "速度",
+"t": "",
+"p": "sùdù",
+"pos": "名",
+"en": "speed; rate; velocity"
+},
+{
+"w": "掉",
+"t": "",
+"p": "diào",
+"pos": "动",
+"en": "to fall; to drop; to lag behind"
+},
+{
+"w": "值",
+"t": "",
+"p": "zhí",
+"pos": "动、形",
+"en": "value; (to be) worth; to happen to"
+},
+{
+"w": "大量",
+"t": "",
+"p": "dàliàng",
+"pos": "形",
+"en": "great amount; large quantity; bulk"
+},
+{
+"w": "爱情",
+"t": "愛情",
+"p": "àiqíng",
+"pos": "名",
+"en": "romance; love (romantic); CL:份[fen4]"
+},
+{
+"w": "份",
+"t": "",
+"p": "fèn",
+"pos": "量",
+"en": "classifier for gifts, newspaper, magazine, papers, reports, contracts etc; variant of 分[fen4]"
+},
+{
+"w": "于是",
+"t": "於是",
+"p": "yúshì",
+"pos": "连",
+"en": "thereupon; as a result; consequently"
+},
+{
+"w": "既",
+"t": "",
+"p": "jì",
+"pos": "副、连",
+"en": "already; since; both... (and...)"
+},
+{
+"w": "转发",
+"t": "轉發",
+"p": "zhuǎnfā",
+"pos": "动",
+"en": "to transmit; to forward (mail, SMS, packets of data); to pass on"
+},
+{
+"w": "交通",
+"t": "",
+"p": "jiāotōng",
+"pos": "名",
+"en": "to be connected; traffic; transportation"
+},
+{
+"w": "再次",
+"t": "",
+"p": "zàicì",
+"pos": "副",
+"en": "once more; once again"
+},
+{
+"w": "意见",
+"t": "意見",
+"p": "yìjiàn",
+"pos": "名",
+"en": "idea; opinion; suggestion"
+},
+{
+"w": "首先",
+"t": "",
+"p": "shǒuxiān",
+"pos": "副、代",
+"en": "first (of all); in the first place"
+},
+{
+"w": "感",
+"t": "",
+"p": "gǎn",
+"pos": "后缀",
+"en": "to feel; to move; to touch"
+},
+{
+"w": "推出",
+"t": "",
+"p": "tuīchū",
+"pos": "动",
+"en": "to push out; to release; to launch"
+},
+{
+"w": "底",
+"t": "",
+"p": "dǐ",
+"pos": "名",
+"en": "(equivalent to 的 as possessive particle)"
+},
+{
+"w": "面对",
+"t": "面對",
+"p": "miànduì",
+"pos": "动",
+"en": "to face; to confront"
+},
+{
+"w": "证",
+"t": "證",
+"p": "zhèng",
+"pos": "名",
+"en": "to admonish; variant of 證|证[zheng4]; certificate"
+},
+{
+"w": "知识",
+"t": "知識",
+"p": "zhīshi",
+"pos": "名",
+"en": "knowledge; CL:門|门[men2]; intellectual"
+},
+{
+"w": "尽管",
+"t": "儘管",
+"p": "jǐnguǎn",
+"pos": "副、连",
+"en": "despite; although; even though"
+},
+{
+"w": "厂",
+"t": "廠",
+"p": "chǎng",
+"pos": "名",
+"en": "'cliff' radical in Chinese characters (Kangxi radical 27), occurring in 原, 历, 压 etc"
+},
+{
+"w": "说明",
+"t": "說明",
+"p": "shuōmíng",
+"pos": "动、名",
+"en": "to explain; to illustrate; to indicate"
+},
+{
+"w": "下降",
+"t": "",
+"p": "xiàjiàng",
+"pos": "动",
+"en": "to decline; to drop; to fall"
+},
+{
+"w": "表",
+"t": "錶",
+"p": "biǎo",
+"pos": "名、（动）",
+"en": "exterior surface; family relationship via females; to show (one's opinion)"
+},
+{
+"w": "心情",
+"t": "",
+"p": "xīnqíng",
+"pos": "名",
+"en": "mood; frame of mind; CL:個|个[ge4]"
+},
+{
+"w": "同样",
+"t": "同樣",
+"p": "tóngyàng",
+"pos": "形",
+"en": "same; equal; similar"
+},
+{
+"w": "对方",
+"t": "對方",
+"p": "duìfāng",
+"pos": "名",
+"en": "the other person; the other side; the other party"
+},
+{
+"w": "并且",
+"t": "並且",
+"p": "bìngqiě",
+"pos": "连",
+"en": "and; besides; moreover"
+},
+{
+"w": "购买",
+"t": "購買",
+"p": "gòumǎi",
+"pos": "动",
+"en": "to purchase; to buy"
+},
+{
+"w": "村",
+"t": "邨",
+"p": "cūn",
+"pos": "名",
+"en": "village; (dialect) to scold; rustic"
+},
+{
+"w": "困难",
+"t": "困難",
+"p": "kùnnan",
+"pos": "形、名",
+"en": "difficult; challenging; straitened circumstances"
+},
+{
+"w": "资料",
+"t": "資料",
+"p": "zīliào",
+"pos": "名",
+"en": "material; resources; data"
+},
+{
+"w": "此次",
+"t": "",
+"p": "cǐ cì",
+"pos": "",
+"en": "this time"
+},
+{
+"w": "安排",
+"t": "",
+"p": "ānpái",
+"pos": "动",
+"en": "to arrange; to plan; to set up"
+},
+{
+"w": "排",
+"t": "",
+"p": "pái",
+"pos": "动、名、量",
+"en": "a row; a line; to set in order"
+},
+{
+"w": "负责",
+"t": "負責",
+"p": "fùzé",
+"pos": "动、形",
+"en": "to be responsible for; to be in charge of; to bear responsibility for"
+},
+{
+"w": "满",
+"t": "滿",
+"p": "mǎn",
+"pos": "形、动",
+"en": "Manchu ethnic group"
+},
+{
+"w": "关键",
+"t": "關鍵",
+"p": "guānjiàn",
+"pos": "名、形",
+"en": "crucial point; crux; CL:個|个[ge4]"
+},
+{
+"w": "节",
+"t": "節",
+"p": "jié",
+"pos": "量、名、（动）",
+"en": "see 節骨眼|节骨眼[jie1 gu5 yan3]"
+},
+{
+"w": "倍",
+"t": "",
+"p": "bèi",
+"pos": "量",
+"en": "(two, three etc) -fold; times (multiplier); double"
+},
+{
+"w": "倒",
+"t": "",
+"p": "dào",
+"pos": "动、（副）",
+"en": "to fall; to collapse; to lie horizontally"
+},
+{
+"w": "幅",
+"t": "",
+"p": "fú",
+"pos": "量",
+"en": "width; roll; classifier for textiles or pictures"
+},
+{
+"w": "出口",
+"t": "",
+"p": "chūkǒu",
+"pos": "名、（动）",
+"en": "an exit; CL:個|个[ge4]; to speak"
+},
+{
+"w": "广告",
+"t": "廣告",
+"p": "guǎnggào",
+"pos": "名",
+"en": "to advertise; a commercial; advertisement"
+},
+{
+"w": "目的",
+"t": "",
+"p": "mùdì",
+"pos": "名",
+"en": "purpose; aim; goal"
+},
+{
+"w": "负责人",
+"t": "負責人",
+"p": "fùzérén",
+"pos": "名",
+"en": "person in charge"
+},
+{
+"w": "仍然",
+"t": "",
+"p": "réngrán",
+"pos": "副",
+"en": "still; as before; yet"
+},
+{
+"w": "留",
+"t": "畱",
+"p": "liú",
+"pos": "动",
+"en": "old variant of 留[liu2]; to leave (a message etc); to retain"
+},
+{
+"w": "也许",
+"t": "也許",
+"p": "yěxǔ",
+"pos": "副",
+"en": "perhaps; maybe"
+},
+{
+"w": "民族",
+"t": "",
+"p": "mínzú",
+"pos": "名",
+"en": "nationality; ethnic group; CL:個|个[ge4]"
+},
+{
+"w": "无论",
+"t": "無論",
+"p": "wúlùn",
+"pos": "连",
+"en": "no matter what or how; regardless of whether..."
+},
+{
+"w": "梦",
+"t": "夢",
+"p": "mèng",
+"pos": "名、动",
+"en": "dream (CL:場|场[chang2],個|个[ge4]); (bound form) to dream"
+},
+{
+"w": "流",
+"t": "",
+"p": "liú",
+"pos": "动",
+"en": "to flow; to disseminate; to circulate or spread"
+},
+{
+"w": "末",
+"t": "",
+"p": "mò",
+"pos": "名",
+"en": "variant of 麼|么[me5]"
+},
+{
+"w": "作品",
+"t": "",
+"p": "zuòpǐn",
+"pos": "名",
+"en": "work (of art); opus; CL:部[bu4],篇[pian1]"
+},
+{
+"w": "量",
+"t": "",
+"p": "liáng",
+"pos": "动",
+"en": "to measure"
+},
+{
+"w": "好好",
+"t": "",
+"p": "hǎohǎo",
+"pos": "形、副",
+"en": "well; carefully; nicely"
+},
+{
+"w": "降低",
+"t": "",
+"p": "jiàngdī",
+"pos": "动",
+"en": "to reduce; to lower; to bring down"
+},
+{
+"w": "教学",
+"t": "教學",
+"p": "jiàoxué",
+"pos": "名",
+"en": "to teach (as a professor)"
+},
+{
+"w": "然而",
+"t": "",
+"p": "rán’ér",
+"pos": "连",
+"en": "however; but; yet"
+},
+{
+"w": "怕",
+"t": "",
+"p": "pà",
+"pos": "动、（副）",
+"en": "surname Pa"
+},
+{
+"w": "值得",
+"t": "",
+"p": "zhídé",
+"pos": "动",
+"en": "worth the money; to merit; to deserve"
+},
+{
+"w": "讨论",
+"t": "討論",
+"p": "tǎolùn",
+"pos": "动",
+"en": "to discuss; to talk over"
+},
+{
+"w": "材料",
+"t": "",
+"p": "cáiliào",
+"pos": "名",
+"en": "(raw) material; data; (fig.) person who has the potential to do the job"
+},
+{
+"w": "世纪",
+"t": "世紀",
+"p": "shìjì",
+"pos": "名",
+"en": "century; CL:個|个[ge4]"
+},
+{
+"w": "夜",
+"t": "",
+"p": "yè",
+"pos": "名、量",
+"en": "variant of 夜[ye4]; night"
+},
+{
+"w": "商品",
+"t": "",
+"p": "shāngpǐn",
+"pos": "名",
+"en": "commodity; goods; merchandise"
+},
+{
+"w": "秒",
+"t": "",
+"p": "miǎo",
+"pos": "量",
+"en": "second (unit of time); arc second (angular measurement unit); (coll.) instantly"
+},
+{
+"w": "感谢",
+"t": "感謝",
+"p": "gǎnxiè",
+"pos": "动",
+"en": "(express) thanks; gratitude; grateful"
+},
+{
+"w": "证明",
+"t": "證明",
+"p": "zhèngmíng",
+"pos": "动、名",
+"en": "proof; certificate; identification"
+},
+{
+"w": "特点",
+"t": "特點",
+"p": "tèdiǎn",
+"pos": "名",
+"en": "characteristic (feature); trait; feature"
+},
+{
+"w": "算",
+"t": "",
+"p": "suàn",
+"pos": "动、副",
+"en": "to regard as; to figure; to calculate"
+},
+{
+"w": "即使",
+"t": "",
+"p": "jíshǐ",
+"pos": "连",
+"en": "even if; even though"
+},
+{
+"w": "到底",
+"t": "",
+"p": "dàodǐ",
+"pos": "副",
+"en": "finally; in the end; when all is said and done"
+},
+{
+"w": "及时",
+"t": "及時",
+"p": "jíshí",
+"pos": "形、副",
+"en": "timely; at the right time; promptly"
+},
+{
+"w": "理解",
+"t": "",
+"p": "lǐjiě",
+"pos": "动",
+"en": "to comprehend; to understand"
+},
+{
+"w": "重新",
+"t": "",
+"p": "chóngxīn",
+"pos": "副",
+"en": "again; once more; re-"
+},
+{
+"w": "父母",
+"t": "",
+"p": "fùmǔ",
+"pos": "名",
+"en": "father and mother; parents"
+},
+{
+"w": "食品",
+"t": "",
+"p": "shípǐn",
+"pos": "名",
+"en": "foodstuff; food; provisions"
+},
+{
+"w": "取",
+"t": "",
+"p": "qǔ",
+"pos": "动",
+"en": "to take; to get; to choose"
+},
+{
+"w": "重视",
+"t": "重視",
+"p": "zhòngshì",
+"pos": "动",
+"en": "to attach importance to sth; to value"
+},
+{
+"w": "艺术",
+"t": "藝術",
+"p": "yìshù",
+"pos": "名",
+"en": "art"
+},
+{
+"w": "停",
+"t": "",
+"p": "tíng",
+"pos": "动",
+"en": "to stop; to halt; to park (a car)"
+},
+{
+"w": "此外",
+"t": "",
+"p": "cǐwài",
+"pos": "连",
+"en": "besides; in addition; moreover"
+},
+{
+"w": "假",
+"t": "叚",
+"p": "jiǎ",
+"pos": "形",
+"en": "used in 假掰[gei1 bai1]"
+},
+{
+"w": "月份",
+"t": "",
+"p": "yuèfèn",
+"pos": "名",
+"en": "month"
+},
+{
+"w": "通",
+"t": "",
+"p": "tōng",
+"pos": "动、形、（量）",
+"en": "to go through; to know well; (suffix) expert"
+},
+{
+"w": "青年",
+"t": "",
+"p": "qīngnián",
+"pos": "名",
+"en": "youth; youthful years; young person"
+},
+{
+"w": "解释",
+"t": "解釋",
+"p": "jiěshì",
+"pos": "动",
+"en": "explanation; to explain; to interpret"
+},
+{
+"w": "陪",
+"t": "",
+"p": "péi",
+"pos": "动",
+"en": "to accompany; to keep sb company; to assist"
+},
+{
+"w": "抱",
+"t": "",
+"p": "bào",
+"pos": "动",
+"en": "to hold; to carry (in one's arms); to hug"
+},
+{
+"w": "普通",
+"t": "",
+"p": "pǔtōng",
+"pos": "形",
+"en": "common; ordinary; general"
+},
+{
+"w": "痛",
+"t": "",
+"p": "tòng",
+"pos": "形、（副）",
+"en": "ache; pain; sorrow"
+},
+{
+"w": "交流",
+"t": "",
+"p": "jiāoliú",
+"pos": "动",
+"en": "to exchange; exchange; communication"
+},
+{
+"w": "步",
+"t": "",
+"p": "bù",
+"pos": "名",
+"en": "surname Bu"
+},
+{
+"w": "加入",
+"t": "",
+"p": "jiārù",
+"pos": "动",
+"en": "to become a member; to join; to mix into"
+},
+{
+"w": "竟然",
+"t": "",
+"p": "jìngrán",
+"pos": "副",
+"en": "unexpectedly; to one's surprise; in spite of everything"
+},
+{
+"w": "职业",
+"t": "職業",
+"p": "zhíyè",
+"pos": "名",
+"en": "occupation; profession; vocation"
+},
+{
+"w": "教师",
+"t": "教師",
+"p": "jiàoshī",
+"pos": "名",
+"en": "teacher; CL:個|个[ge4]"
+},
+{
+"w": "提",
+"t": "",
+"p": "tí",
+"pos": "动",
+"en": "used in 提防[di1 fang5] and 提溜[di1 liu5]"
+},
+{
+"w": "亮",
+"t": "",
+"p": "liàng",
+"pos": "形、动",
+"en": "bright; light; to shine"
+},
+{
+"w": "费用",
+"t": "費用",
+"p": "fèiyong",
+"pos": "名",
+"en": "cost; expenditure; expense"
+},
+{
+"w": "免费",
+"t": "免費",
+"p": "miǎnfèi",
+"pos": "动",
+"en": "free (of charge)"
+},
+{
+"w": "至少",
+"t": "",
+"p": "zhìshǎo",
+"pos": "副",
+"en": "at least; (to say the) least"
+},
+{
+"w": "不管",
+"t": "",
+"p": "bùguǎn",
+"pos": "连",
+"en": "not to be concerned; regardless of; no matter"
+},
+{
+"w": "符合",
+"t": "",
+"p": "fúhé",
+"pos": "动",
+"en": "in accordance with; to agree with; to conform to"
+},
+{
+"w": "确实",
+"t": "確實",
+"p": "quèshí",
+"pos": "副",
+"en": "indeed; really; reliable"
+},
+{
+"w": "公里",
+"t": "",
+"p": "gōnglǐ",
+"pos": "量",
+"en": "kilometer"
+},
+{
+"w": "态度",
+"t": "態度",
+"p": "tàidù",
+"pos": "名",
+"en": "manner; bearing; attitude"
+},
+{
+"w": "推",
+"t": "",
+"p": "tuī",
+"pos": "动",
+"en": "to push; to cut; to refuse"
+},
+{
+"w": "数量",
+"t": "數量",
+"p": "shùliàng",
+"pos": "名",
+"en": "amount; quantity (CL:個|个[ge4]); quantitative"
+},
+{
+"w": "挂",
+"t": "掛",
+"p": "guà",
+"pos": "动",
+"en": "to hang; to suspend (from a hook etc); to hang up (the phone)"
+},
+{
+"w": "经历",
+"t": "經歷",
+"p": "jīnglì",
+"pos": "动、名",
+"en": "to experience; to go through; experience (CL:段[duan4],次[ci4])"
+},
+{
+"w": "丰富",
+"t": "豐富",
+"p": "fēngfù",
+"pos": "形",
+"en": "to enrich; rich; plentiful"
+},
+{
+"w": "落",
+"t": "",
+"p": "luò",
+"pos": "动",
+"en": "to leave out; to be missing; to leave behind or forget to bring"
+},
+{
+"w": "作者",
+"t": "",
+"p": "zuòzhě",
+"pos": "名",
+"en": "author; writer"
+},
+{
+"w": "各地",
+"t": "",
+"p": "gèdì",
+"pos": "名",
+"en": "in all parts of (a country); various regions"
+},
+{
+"w": "道路",
+"t": "",
+"p": "dàolù",
+"pos": "名",
+"en": "road; path; way"
+},
+{
+"w": "相比",
+"t": "",
+"p": "xiāngbǐ",
+"pos": "动",
+"en": "to compare"
+},
+{
+"w": "放弃",
+"t": "放棄",
+"p": "fàngqì",
+"pos": "动",
+"en": "to renounce; to abandon; to give up"
+},
+{
+"w": "感情",
+"t": "",
+"p": "gǎnqíng",
+"pos": "名",
+"en": "emotion; sentiment; affection"
+},
+{
+"w": "适合",
+"t": "適合",
+"p": "shìhé",
+"pos": "动",
+"en": "to fit; to suit"
+},
+{
+"w": "父亲",
+"t": "父親",
+"p": "fùqīn",
+"pos": "名",
+"en": "father; also pr. [fu4 qin5]; CL:個|个[ge4]"
+},
+{
+"w": "往往",
+"t": "",
+"p": "wǎngwǎng",
+"pos": "副",
+"en": "usually; in many cases; more often than not"
+},
+{
+"w": "观众",
+"t": "觀眾",
+"p": "guānzhòng",
+"pos": "名",
+"en": "spectators; audience; visitors (to an exhibition etc)"
+},
+{
+"w": "工人",
+"t": "",
+"p": "gōngrén",
+"pos": "名",
+"en": "worker; CL:個|个[ge4],名[ming2]"
+},
+{
+"w": "失去",
+"t": "",
+"p": "shīqù",
+"pos": "动",
+"en": "to lose"
+},
+{
+"w": "申请",
+"t": "申請",
+"p": "shēnqǐng",
+"pos": "动",
+"en": "to apply for sth; application form (CL:份[fen4])"
+},
+{
+"w": "球队",
+"t": "球隊",
+"p": "qiúduì",
+"pos": "名",
+"en": "sports team (basketball, soccer, football etc)"
+},
+{
+"w": "快速",
+"t": "",
+"p": "kuàisù",
+"pos": "形",
+"en": "fast; high-speed; rapid"
+},
+{
+"w": "美丽",
+"t": "美麗",
+"p": "měilì",
+"pos": "形",
+"en": "beautiful"
+},
+{
+"w": "正确",
+"t": "正確",
+"p": "zhèngquè",
+"pos": "形",
+"en": "correct; sound; right"
+},
+{
+"w": "严格",
+"t": "嚴格",
+"p": "yángé",
+"pos": "形、动",
+"en": "strict; stringent; tight"
+},
+{
+"w": "加快",
+"t": "",
+"p": "jiākuài",
+"pos": "动",
+"en": "to accelerate; to speed up; to hasten"
+},
+{
+"w": "篇",
+"t": "",
+"p": "piān",
+"pos": "名、量",
+"en": "sheet; piece of writing; bound set of bamboo slips used for record keeping (old)"
+},
+{
+"w": "视频",
+"t": "視頻",
+"p": "shìpín",
+"pos": "名",
+"en": "video"
+},
+{
+"w": "女性",
+"t": "",
+"p": "nǚxìng",
+"pos": "名",
+"en": "woman; the female sex"
+},
+{
+"w": "儿童",
+"t": "兒童",
+"p": "értóng",
+"pos": "名",
+"en": "child"
+},
+{
+"w": "通知",
+"t": "",
+"p": "tōngzhī",
+"pos": "动、名",
+"en": "to notify; to inform; notice"
+},
+{
+"w": "敢",
+"t": "",
+"p": "gǎn",
+"pos": "动",
+"en": "to dare; daring; (polite) may I venture"
+},
+{
+"w": "晚安",
+"t": "",
+"p": "wǎn'ān",
+"pos": "动",
+"en": "Good night!; Good evening!"
+},
+{
+"w": "空",
+"t": "",
+"p": "kōng",
+"pos": "形、（副）",
+"en": "empty; air; sky"
+},
+{
+"w": "举办",
+"t": "舉辦",
+"p": "jǔbàn",
+"pos": "动",
+"en": "to conduct; to hold (an event)"
+},
+{
+"w": "母亲",
+"t": "母親",
+"p": "mǔqīn",
+"pos": "名",
+"en": "mother; also pr. [mu3 qin5]; CL:個|个[ge4]"
+},
+{
+"w": "谈",
+"t": "談",
+"p": "tán",
+"pos": "动",
+"en": "surname Tan"
+},
+{
+"w": "日子",
+"t": "",
+"p": "rìzi",
+"pos": "名",
+"en": "day; a (calendar) date; days of one's life"
+},
+{
+"w": "加上",
+"t": "",
+"p": "jiāshàng",
+"pos": "连",
+"en": "plus; to put in; to add"
+},
+{
+"w": "著名",
+"t": "",
+"p": "zhùmíng",
+"pos": "形",
+"en": "famous; noted; well-known"
+},
+{
+"w": "加油",
+"t": "",
+"p": "jiāyóu",
+"pos": "动",
+"en": "to add oil; to top up with gas; to refuel"
+},
+{
+"w": "卫生",
+"t": "衛生",
+"p": "wèishēng",
+"pos": "形、名",
+"en": "hygienic; sanitary; hygiene"
+},
+{
+"w": "香",
+"t": "",
+"p": "xiāng",
+"pos": "形",
+"en": "fragrant; sweet smelling; aromatic"
+},
+{
+"w": "精彩",
+"t": "",
+"p": "jīngcǎi",
+"pos": "形",
+"en": "wonderful; marvelous; brilliant"
+},
+{
+"w": "本来",
+"t": "本來",
+"p": "běnlái",
+"pos": "形、副",
+"en": "original; originally; at first"
+},
+{
+"w": "牌",
+"t": "",
+"p": "pái",
+"pos": "名",
+"en": "signboard; plaque; plate"
+},
+{
+"w": "刀",
+"t": "",
+"p": "dāo",
+"pos": "名",
+"en": "surname Dao"
+},
+{
+"w": "火",
+"t": "",
+"p": "huǒ",
+"pos": "名、形",
+"en": "surname Huo"
+},
+{
+"w": "货",
+"t": "貨",
+"p": "huò",
+"pos": "名",
+"en": "goods; money; commodity"
+},
+{
+"w": "紧张",
+"t": "緊張",
+"p": "jǐnzhāng",
+"pos": "形",
+"en": "nervous; keyed up; intense"
+},
+{
+"w": "乱",
+"t": "亂",
+"p": "luàn",
+"pos": "形、副",
+"en": "in confusion or disorder; in a confused state of mind; disorder"
+},
+{
+"w": "今后",
+"t": "今後",
+"p": "jīnhòu",
+"pos": "名",
+"en": "hereafter; henceforth; in the future"
+},
+{
+"w": "感受",
+"t": "",
+"p": "gǎnshòu",
+"pos": "动、名",
+"en": "to sense; perception; to feel (through the senses)"
+},
+{
+"w": "破",
+"t": "",
+"p": "pò",
+"pos": "动、形",
+"en": "broken; damaged; worn out"
+},
+{
+"w": "赢",
+"t": "贏",
+"p": "yíng",
+"pos": "动",
+"en": "to beat; to win; to profit"
+},
+{
+"w": "之中",
+"t": "",
+"p": "zhīzhōng",
+"pos": "名",
+"en": "inside; among; in the midst of (doing sth)"
+},
+{
+"w": "准",
+"t": "準",
+"p": "zhǔn",
+"pos": "形、（副）",
+"en": "to allow; to grant; in accordance with"
+},
+{
+"w": "数字",
+"t": "數字",
+"p": "shùzì",
+"pos": "名",
+"en": "numeral; digit; number"
+},
+{
+"w": "不够",
+"t": "不夠",
+"p": "búgòu",
+"pos": "动、副",
+"en": "not enough; insufficient; inadequate"
+},
+{
+"w": "优秀",
+"t": "優秀",
+"p": "yōuxiù",
+"pos": "形",
+"en": "outstanding; excellent"
+},
+{
+"w": "顺利",
+"t": "順利",
+"p": "shùnlì",
+"pos": "形",
+"en": "smoothly; without a hitch"
+},
+{
+"w": "有着",
+"t": "有著",
+"p": "yǒuzhe",
+"pos": "动",
+"en": "to have; to possess"
+},
+{
+"w": "年龄",
+"t": "年齡",
+"p": "niánlíng",
+"pos": "名",
+"en": "(a person's) age; CL:把[ba3],個|个[ge4]"
+},
+{
+"w": "图片",
+"t": "圖片",
+"p": "túpiàn",
+"pos": "名",
+"en": "picture; photograph; CL:張|张[zhang1]"
+},
+{
+"w": "专门",
+"t": "專門",
+"p": "zhuānmén",
+"pos": "副、形",
+"en": "specialized; dedicated (to a particular field or purpose); specially"
+},
+{
+"w": "工资",
+"t": "工資",
+"p": "gōngzī",
+"pos": "名",
+"en": "wages; pay; CL:份[fen4]"
+},
+{
+"w": "吸引",
+"t": "",
+"p": "xīyǐn",
+"pos": "动",
+"en": "to attract; to appeal to; to fascinate"
+},
+{
+"w": "距离",
+"t": "距離",
+"p": "jùlí",
+"pos": "动、名",
+"en": "distance; CL:個|个[ge4]; to be apart from"
+},
+{
+"w": "发出",
+"t": "發出",
+"p": "fāchū",
+"pos": "动",
+"en": "to issue (an order, decree etc); to send out; to dispatch"
+},
+{
+"w": "文件",
+"t": "",
+"p": "wénjiàn",
+"pos": "名",
+"en": "document; file; CL:份[fen4]"
+},
+{
+"w": "反对",
+"t": "反對",
+"p": "fǎnduì",
+"pos": "动",
+"en": "to oppose; to be against; to object to"
+},
+{
+"w": "轻",
+"t": "輕",
+"p": "qīng",
+"pos": "形",
+"en": "light; easy; gentle"
+},
+{
+"w": "普遍",
+"t": "",
+"p": "pǔbiàn",
+"pos": "形",
+"en": "universal; general; widespread"
+},
+{
+"w": "估计",
+"t": "估計",
+"p": "gūjì",
+"pos": "动",
+"en": "to estimate; to assess; to calculate"
+},
+{
+"w": "云",
+"t": "雲",
+"p": "yún",
+"pos": "名",
+"en": "(classical) to say; cloud; CL:朵[duo3]"
+},
+{
+"w": "弄",
+"t": "衖",
+"p": "nòng",
+"pos": "动",
+"en": "lane; alley; variant of 弄[long4]"
+},
+{
+"w": "祝",
+"t": "",
+"p": "zhù",
+"pos": "动",
+"en": "surname Zhu"
+},
+{
+"w": "帅",
+"t": "帥",
+"p": "shuài",
+"pos": "形",
+"en": "surname Shuai"
+},
+{
+"w": "队员",
+"t": "隊員",
+"p": "duìyuán",
+"pos": "名",
+"en": "team member"
+},
+{
+"w": "小组",
+"t": "小組",
+"p": "xiǎozǔ",
+"pos": "名",
+"en": "group"
+},
+{
+"w": "用于",
+"t": "用於",
+"p": "yòngyú",
+"pos": "动",
+"en": "to use in; to use on; to use for"
+},
+{
+"w": "样子",
+"t": "樣子",
+"p": "yàngzi",
+"pos": "名",
+"en": "appearance; manner; pattern"
+},
+{
+"w": "皮肤",
+"t": "皮膚",
+"p": "pífū",
+"pos": "名",
+"en": "skin; CL:層|层[ceng2],塊|块[kuai4]"
+},
+{
+"w": "亚洲",
+"t": "亞洲",
+"p": "Yàzhōu",
+"pos": "名",
+"en": "Asia (abbr. for 亞細亞洲|亚细亚洲[Ya4 xi4 ya4 Zhou1])"
+},
+{
+"w": "文章",
+"t": "",
+"p": "wénzhāng",
+"pos": "名",
+"en": "article; essay; literary works"
+},
+{
+"w": "压",
+"t": "壓",
+"p": "yā",
+"pos": "动",
+"en": "to press; to push down; to keep under (control)"
+},
+{
+"w": "留下",
+"t": "",
+"p": "liúxia",
+"pos": "动",
+"en": "to leave behind; to stay behind; to remain"
+},
+{
+"w": "苦",
+"t": "",
+"p": "kǔ",
+"pos": "形",
+"en": "bitter; hardship; pain"
+},
+{
+"w": "美好",
+"t": "",
+"p": "měihǎo",
+"pos": "形",
+"en": "beautiful; fine"
+},
+{
+"w": "兄弟",
+"t": "",
+"p": "xiōngdì",
+"pos": "名",
+"en": "brothers; younger brother; CL:個|个[ge4]"
+},
+{
+"w": "感动",
+"t": "感動",
+"p": "gǎndòng",
+"pos": "形、动",
+"en": "to move (sb); to touch (sb emotionally); moving"
+},
+{
+"w": "难道",
+"t": "難道",
+"p": "nándào",
+"pos": "副",
+"en": "don't tell me ...; could it be that...?"
+},
+{
+"w": "要是",
+"t": "",
+"p": "yàoshi",
+"pos": "连",
+"en": "(coll.) if"
+},
+{
+"w": "提前",
+"t": "",
+"p": "tíqián",
+"pos": "动",
+"en": "to shift to an earlier date; to do sth ahead of time; in advance"
+},
+{
+"w": "不如",
+"t": "",
+"p": "bùrú",
+"pos": "动",
+"en": "not equal to; not as good as; inferior to"
+},
+{
+"w": "实际上",
+"t": "實際上",
+"p": "shíjìshàng",
+"pos": "副",
+"en": "in fact; in reality; as a matter of fact"
+},
+{
+"w": "适应",
+"t": "適應",
+"p": "shìyìng",
+"pos": "动",
+"en": "to adapt; to fit; to suit"
+},
+{
+"w": "教授",
+"t": "",
+"p": "jiàoshòu",
+"pos": "名",
+"en": "professor; to instruct; to lecture on"
+},
+{
+"w": "办理",
+"t": "辦理",
+"p": "bànlǐ",
+"pos": "动",
+"en": "to handle; to transact; to conduct"
+},
+{
+"w": "实在",
+"t": "實在",
+"p": "shízài",
+"pos": "形、副",
+"en": "really; actually; indeed"
+},
+{
+"w": "存",
+"t": "",
+"p": "cún",
+"pos": "动",
+"en": "to exist; to deposit; to store"
+},
+{
+"w": "整",
+"t": "",
+"p": "zhěng",
+"pos": "形",
+"en": "(bound form) whole; complete; entire"
+},
+{
+"w": "支付",
+"t": "",
+"p": "zhīfù",
+"pos": "动",
+"en": "to pay (money)"
+},
+{
+"w": "复杂",
+"t": "複雜",
+"p": "fùzá",
+"pos": "形",
+"en": "complicated; complex"
+},
+{
+"w": "环保",
+"t": "環保",
+"p": "huánbǎo",
+"pos": "名、形",
+"en": "environmental protection; environmentally friendly; abbr. for 環境保護|环境保护[huan2 jing4 bao3 hu4]"
+},
+{
+"w": "动作",
+"t": "動作",
+"p": "dòngzuò",
+"pos": "名",
+"en": "movement; motion; action (CL:個|个[ge4])"
+},
+{
+"w": "相互",
+"t": "",
+"p": "xiānghù",
+"pos": "副",
+"en": "each other; mutual"
+},
+{
+"w": "费",
+"t": "費",
+"p": "fèi",
+"pos": "名、动",
+"en": "surname Fei"
+},
+{
+"w": "梦想",
+"t": "夢想",
+"p": "mèngxiǎng",
+"pos": "动、名",
+"en": "(fig.) to dream of; dream"
+},
+{
+"w": "危险",
+"t": "危險",
+"p": "wēixiǎn",
+"pos": "形、名",
+"en": "danger; dangerous"
+},
+{
+"w": "错误",
+"t": "錯誤",
+"p": "cuòwù",
+"pos": "形、名",
+"en": "mistaken; false; wrong"
+},
+{
+"w": "理想",
+"t": "",
+"p": "lǐxiǎng",
+"pos": "名、形",
+"en": "an ideal; a dream; ideal"
+},
+{
+"w": "输",
+"t": "輸",
+"p": "shū",
+"pos": "动",
+"en": "to lose; to be beaten; (bound form) to transport"
+},
+{
+"w": "拒绝",
+"t": "拒絕",
+"p": "jùjué",
+"pos": "动",
+"en": "to refuse; to decline; to reject"
+},
+{
+"w": "受伤",
+"t": "受傷",
+"p": "shòushāng",
+"pos": "动",
+"en": "to sustain injuries; wounded (in an accident etc); harmed"
+},
+{
+"w": "背",
+"t": "",
+"p": "bēi",
+"pos": "动",
+"en": "variant of 背[bei1]; to be burdened; to carry on the back or shoulder"
+},
+{
+"w": "周围",
+"t": "周圍",
+"p": "zhōuwéi",
+"pos": "名",
+"en": "environs; surroundings; periphery"
+},
+{
+"w": "毕业",
+"t": "畢業",
+"p": "bìyè",
+"pos": "动",
+"en": "graduation; to graduate; to finish school"
+},
+{
+"w": "错过",
+"t": "錯過",
+"p": "cuòguò",
+"pos": "动",
+"en": "to miss (train, opportunity etc)"
+},
+{
+"w": "公共",
+"t": "",
+"p": "gōnggòng",
+"pos": "形",
+"en": "public; common; communal"
+},
+{
+"w": "待",
+"t": "",
+"p": "dāi",
+"pos": "动",
+"en": "to stay; to remain"
+},
+{
+"w": "列",
+"t": "",
+"p": "liè",
+"pos": "动、量",
+"en": "to arrange; to line up; file"
+},
+{
+"w": "土",
+"t": "",
+"p": "tǔ",
+"pos": "名、（形）",
+"en": "Tu (ethnic group); surname Tu"
+},
+{
+"w": "阳光",
+"t": "陽光",
+"p": "yángguāng",
+"pos": "名",
+"en": "sunshine; (of personality) upbeat; energetic"
+},
+{
+"w": "轻松",
+"t": "輕鬆",
+"p": "qīngsōng",
+"pos": "形",
+"en": "light; gentle; relaxed"
+},
+{
+"w": "缺",
+"t": "",
+"p": "quē",
+"pos": "动",
+"en": "deficiency; lack; scarce"
+},
+{
+"w": "鼓励",
+"t": "鼓勵",
+"p": "gǔlì",
+"pos": "动",
+"en": "to encourage"
+},
+{
+"w": "人数",
+"t": "人數",
+"p": "rénshù",
+"pos": "名",
+"en": "number of people"
+},
+{
+"w": "家长",
+"t": "家長",
+"p": "jiāzhǎng",
+"pos": "名",
+"en": "head of a household; family head; patriarch"
+},
+{
+"w": "提醒",
+"t": "",
+"p": "tíxǐng",
+"pos": "动",
+"en": "to remind; to call attention to; to warn of"
+},
+{
+"w": "收费",
+"t": "收費",
+"p": "shōufèi",
+"pos": "动",
+"en": "to charge a fee"
+},
+{
+"w": "大大",
+"t": "",
+"p": "dàdà",
+"pos": "副",
+"en": "greatly; enormously; (dialect) dad"
+},
+{
+"w": "警察",
+"t": "",
+"p": "jǐngchá",
+"pos": "名",
+"en": "police; police officer"
+},
+{
+"w": "降",
+"t": "",
+"p": "jiàng",
+"pos": "动",
+"en": "to drop; to fall; to come down"
+},
+{
+"w": "演出",
+"t": "",
+"p": "yǎnchū",
+"pos": "动",
+"en": "to act (in a play); to perform; to put on (a performance)"
+},
+{
+"w": "各个",
+"t": "各個",
+"p": "gègè",
+"pos": "代、副",
+"en": "every; various; separately, one by one"
+},
+{
+"w": "桥",
+"t": "橋",
+"p": "qiáo",
+"pos": "名",
+"en": "bridge; CL:座[zuo4]"
+},
+{
+"w": "困",
+"t": "睏",
+"p": "kùn",
+"pos": "形、（动）",
+"en": "to trap; to surround; hard-pressed"
+},
+{
+"w": "总结",
+"t": "總結",
+"p": "zǒngjié",
+"pos": "动、名",
+"en": "to sum up; to conclude; summary"
+},
+{
+"w": "律师",
+"t": "律師",
+"p": "lǜshī",
+"pos": "名",
+"en": "lawyer"
+},
+{
+"w": "回忆",
+"t": "回憶",
+"p": "huíyì",
+"pos": "动",
+"en": "to recall; memories; CL:個|个[ge4]"
+},
+{
+"w": "否则",
+"t": "否則",
+"p": "fǒuzé",
+"pos": "连",
+"en": "otherwise; if not; or (else)"
+},
+{
+"w": "污染",
+"t": "",
+"p": "wūrǎn",
+"pos": "动",
+"en": "to pollute; to contaminate (lit. and fig.)"
+},
+{
+"w": "顿",
+"t": "頓",
+"p": "dùn",
+"pos": "量、（动）",
+"en": "to stop; to pause; to arrange"
+},
+{
+"w": "杂志",
+"t": "雜誌",
+"p": "zázhì",
+"pos": "名",
+"en": "magazine; CL:本[ben3],份[fen4],期[qi1]"
+},
+{
+"w": "从来",
+"t": "從來",
+"p": "cónglái",
+"pos": "副",
+"en": "always; at all times; never (if used in negative sentence)"
+},
+{
+"w": "报名",
+"t": "報名",
+"p": "bàomíng",
+"pos": "动",
+"en": "to sign up; to enter one's name; to apply"
+},
+{
+"w": "失败",
+"t": "失敗",
+"p": "shībài",
+"pos": "动、形",
+"en": "to be defeated; to lose; to fail (e.g. experiments)"
+},
+{
+"w": "够",
+"t": "夠",
+"p": "gòu",
+"pos": "动、副",
+"en": "enough (sufficient); enough (too much); (coll.) (before adj.) really"
+},
+{
+"w": "一生",
+"t": "",
+"p": "yìshēng",
+"pos": "名",
+"en": "all one's life; throughout one's life"
+},
+{
+"w": "修",
+"t": "脩",
+"p": "xiū",
+"pos": "动",
+"en": "surname Xiu"
+},
+{
+"w": "汤",
+"t": "湯",
+"p": "tāng",
+"pos": "名",
+"en": "surname Tang"
+},
+{
+"w": "赶紧",
+"t": "趕緊",
+"p": "gǎnjǐn",
+"pos": "副",
+"en": "hurriedly; without delay"
+},
+{
+"w": "现金",
+"t": "現金",
+"p": "xiànjīn",
+"pos": "名",
+"en": "cash"
+},
+{
+"w": "熟悉",
+"t": "",
+"p": "shúxi",
+"pos": "动",
+"en": "to be familiar with; to know well"
+},
+{
+"w": "学院",
+"t": "學院",
+"p": "xuéyuàn",
+"pos": "名",
+"en": "college; educational institute; school"
+},
+{
+"w": "相同",
+"t": "",
+"p": "xiāngtóng",
+"pos": "形",
+"en": "identical; same"
+},
+{
+"w": "擦",
+"t": "",
+"p": "cā",
+"pos": "动",
+"en": "to rub; to scratch; to wipe"
+},
+{
+"w": "姑娘",
+"t": "",
+"p": "gūniang",
+"pos": "名",
+"en": "girl; young woman; young lady"
+},
+{
+"w": "绿色",
+"t": "綠色",
+"p": "lǜsè",
+"pos": "名、（形）",
+"en": "green"
+},
+{
+"w": "不得不",
+"t": "",
+"p": "bùdébù",
+"pos": "副",
+"en": "have no choice or option but to; cannot but; have to"
+},
+{
+"w": "允许",
+"t": "允許",
+"p": "yǔnxǔ",
+"pos": "动",
+"en": "to permit; to allow"
+},
+{
+"w": "做法",
+"t": "",
+"p": "zuòfǎ",
+"pos": "名",
+"en": "way of handling sth; method for making; work method"
+},
+{
+"w": "内心",
+"t": "內心",
+"p": "nèixīn",
+"pos": "名",
+"en": "heart; innermost being; (math.) incenter"
+},
+{
+"w": "低于",
+"t": "低於",
+"p": "dīyú",
+"pos": "动",
+"en": "to be lower than"
+},
+{
+"w": "江",
+"t": "",
+"p": "jiāng",
+"pos": "名",
+"en": "surname Jiang; (bound form) Yangtze River; (bound form) Jiangsu Province (abbr. for 江蘇|江苏[Jiang1 su1])"
+},
+{
+"w": "演",
+"t": "",
+"p": "yǎn",
+"pos": "动",
+"en": "to perform (a play etc); to stage (a show); (bound form) to develop"
+},
+{
+"w": "想法",
+"t": "",
+"p": "xiǎngfǎ",
+"pos": "名",
+"en": "way of thinking; opinion; notion"
+},
+{
+"w": "味",
+"t": "",
+"p": "wèi",
+"pos": "名",
+"en": "taste; smell; (fig.) (noun suffix) feel"
+},
+{
+"w": "既然",
+"t": "",
+"p": "jìrán",
+"pos": "连",
+"en": "since; as; this being the case"
+},
+{
+"w": "醒",
+"t": "",
+"p": "xǐng",
+"pos": "动",
+"en": "to wake up; to be awake; to become aware"
+},
+{
+"w": "读者",
+"t": "讀者",
+"p": "dúzhě",
+"pos": "名",
+"en": "reader"
+},
+{
+"w": "考生",
+"t": "",
+"p": "kǎoshēng",
+"pos": "名",
+"en": "exam candidate; student whose name has been put forward for an exam"
+},
+{
+"w": "空气",
+"t": "空氣",
+"p": "kōngqì",
+"pos": "名",
+"en": "air; atmosphere"
+},
+{
+"w": "停止",
+"t": "",
+"p": "tíngzhǐ",
+"pos": "动",
+"en": "to stop; to halt; to cease"
+},
+{
+"w": "可惜",
+"t": "",
+"p": "kěxī",
+"pos": "形",
+"en": "it is a pity; what a pity; unfortunately"
+},
+{
+"w": "讨厌",
+"t": "討厭",
+"p": "tǎoyàn",
+"pos": "形、动",
+"en": "to dislike; to loathe; disagreeable"
+},
+{
+"w": "棒",
+"t": "",
+"p": "bàng",
+"pos": "形、（名）",
+"en": "stick; club; cudgel"
+},
+{
+"w": "演员",
+"t": "演員",
+"p": "yǎnyuán",
+"pos": "名",
+"en": "actor; actress; performer"
+},
+{
+"w": "判断",
+"t": "判斷",
+"p": "pànduàn",
+"pos": "动",
+"en": "to judge; to determine; judgment"
+},
+{
+"w": "喊",
+"t": "",
+"p": "hǎn",
+"pos": "动",
+"en": "to yell; to shout; to call out for (a person)"
+},
+{
+"w": "邀请",
+"t": "邀請",
+"p": "yāoqǐng",
+"pos": "动",
+"en": "to invite; invitation; CL:個|个[ge4]"
+},
+{
+"w": "味道",
+"t": "",
+"p": "wèidào",
+"pos": "名",
+"en": "flavor; taste; (fig.) feeling (of ...)"
+},
+{
+"w": "公路",
+"t": "",
+"p": "gōnglù",
+"pos": "名",
+"en": "highway; road; CL:條|条[tiao2]"
+},
+{
+"w": "吹",
+"t": "",
+"p": "chuī",
+"pos": "动",
+"en": "to blow; to play a wind instrument; to blast"
+},
+{
+"w": "教练",
+"t": "教練",
+"p": "jiàoliàn",
+"pos": "名",
+"en": "to coach; to train; instructor"
+},
+{
+"w": "取消",
+"t": "",
+"p": "qǔxiāo",
+"pos": "动",
+"en": "to cancel; to call off; to revoke"
+},
+{
+"w": "球迷",
+"t": "",
+"p": "qiúmí",
+"pos": "名",
+"en": "fan (ball sports); CL:個|个[ge4]"
+},
+{
+"w": "仅仅",
+"t": "僅僅",
+"p": "jǐnjǐn",
+"pos": "副",
+"en": "barely; only; merely"
+},
+{
+"w": "辛苦",
+"t": "",
+"p": "xīnkǔ",
+"pos": "形、动",
+"en": "exhausting; hard; tough"
+},
+{
+"w": "究竟",
+"t": "",
+"p": "jiūjìng",
+"pos": "副、（名）",
+"en": "to go to the bottom of a matter; after all; when all is said and done"
+},
+{
+"w": "烟",
+"t": "菸",
+"p": "yān",
+"pos": "名",
+"en": "cigarette or pipe tobacco; CL:根[gen1]; smoke"
+},
+{
+"w": "西部",
+"t": "",
+"p": "xībù",
+"pos": "名",
+"en": "western part"
+},
+{
+"w": "细",
+"t": "細",
+"p": "xì",
+"pos": "形",
+"en": "thin or slender; finely particulate; thin and soft"
+},
+{
+"w": "温度",
+"t": "溫度",
+"p": "wēndù",
+"pos": "名",
+"en": "temperature; CL:個|个[ge4]"
+},
+{
+"w": "信号",
+"t": "信號",
+"p": "xìnhào",
+"pos": "名",
+"en": "signal"
+},
+{
+"w": "现有",
+"t": "現有",
+"p": "xiànyǒu",
+"pos": "动、形",
+"en": "currently existing; currently available"
+},
+{
+"w": "垃圾",
+"t": "",
+"p": "lājī",
+"pos": "名",
+"en": "trash; refuse; garbage"
+},
+{
+"w": "尊重",
+"t": "",
+"p": "zūnzhòng",
+"pos": "动、形",
+"en": "to esteem; to respect; to honor"
+},
+{
+"w": "说法",
+"t": "說法",
+"p": "shuōfǎ",
+"pos": "名",
+"en": "to expound Buddhist teachings"
+},
+{
+"w": "食物",
+"t": "",
+"p": "shíwù",
+"pos": "名",
+"en": "food"
+},
+{
+"w": "准确",
+"t": "準確",
+"p": "zhǔnquè",
+"pos": "形",
+"en": "accurate; exact; precise"
+},
+{
+"w": "流行",
+"t": "",
+"p": "liúxíng",
+"pos": "动",
+"en": "(of a contagious disease etc) to spread; to propagate; (of a style of clothing, song etc) popular"
+},
+{
+"w": "无聊",
+"t": "無聊",
+"p": "wúliáo",
+"pos": "形",
+"en": "bored; boring; senseless"
+},
+{
+"w": "减",
+"t": "減",
+"p": "jiǎn",
+"pos": "动",
+"en": "to lower; to decrease; to reduce"
+},
+{
+"w": "高于",
+"t": "高於",
+"p": "gāoyú",
+"pos": "动",
+"en": "greater than; to exceed"
+},
+{
+"w": "互联网",
+"t": "互聯網",
+"p": "hùliánwǎng",
+"pos": "名",
+"en": "Internet"
+},
+{
+"w": "大约",
+"t": "大約",
+"p": "dàyuē",
+"pos": "副",
+"en": "approximately; probably"
+},
+{
+"w": "忽然",
+"t": "",
+"p": "hūrán",
+"pos": "副",
+"en": "suddenly; all of a sudden"
+},
+{
+"w": "俩",
+"t": "倆",
+"p": "liǎ",
+"pos": "数量",
+"en": "two (colloquial equivalent of 兩個|两个); both; some"
+},
+{
+"w": "答",
+"t": "",
+"p": "dá",
+"pos": "动",
+"en": "bound form having the same meaning as the free word 答[da2], used in 答應|答应[da1 ying5], 答理[da1 li5] etc"
+},
+{
+"w": "怀疑",
+"t": "懷疑",
+"p": "huáiyí",
+"pos": "动",
+"en": "to doubt (sth); to be skeptical of; to have one's doubts"
+},
+{
+"w": "眼前",
+"t": "",
+"p": "yǎnqián",
+"pos": "名",
+"en": "before one's eyes; now; at present"
+},
+{
+"w": "躺",
+"t": "",
+"p": "tǎng",
+"pos": "动",
+"en": "to recline; to lie down"
+},
+{
+"w": "赢得",
+"t": "贏得",
+"p": "yíngdé",
+"pos": "动",
+"en": "to win; to gain"
+},
+{
+"w": "信心",
+"t": "",
+"p": "xìnxīn",
+"pos": "名",
+"en": "confidence; faith (in sb or sth); CL:個|个[ge4]"
+},
+{
+"w": "激动",
+"t": "激動",
+"p": "jīdòng",
+"pos": "形、动",
+"en": "to move emotionally; to stir up (emotions); to excite"
+},
+{
+"w": "兴奋",
+"t": "興奮",
+"p": "xīngfèn",
+"pos": "形、动",
+"en": "excited; excitement; (physiology) excitation"
+},
+{
+"w": "例如",
+"t": "",
+"p": "lìrú",
+"pos": "动",
+"en": "for example; for instance; such as"
+},
+{
+"w": "麻烦",
+"t": "麻煩",
+"p": "máfan",
+"pos": "形、动、名",
+"en": "trouble; inconvenience; inconvenient"
+},
+{
+"w": "高速",
+"t": "",
+"p": "gāosù",
+"pos": "形",
+"en": "high speed; expressway (abbr. for 高速公路[gao1 su4 gong1 lu4])"
+},
+{
+"w": "互相",
+"t": "",
+"p": "hùxiāng",
+"pos": "副",
+"en": "each other; mutually; mutual"
+},
+{
+"w": "暂时",
+"t": "暫時",
+"p": "zànshí",
+"pos": "形",
+"en": "temporary; provisional; for the time being"
+},
+{
+"w": "少年",
+"t": "",
+"p": "shàonián",
+"pos": "名",
+"en": "early youth; youngster; (literary) youth"
+},
+{
+"w": "批评",
+"t": "批評",
+"p": "pīpíng",
+"pos": "动",
+"en": "to criticize; criticism; CL:次[ci4],番[fan1]"
+},
+{
+"w": "响",
+"t": "響",
+"p": "xiǎng",
+"pos": "动、形",
+"en": "echo; sound; noise"
+},
+{
+"w": "将来",
+"t": "將來",
+"p": "jiānglái",
+"pos": "名",
+"en": "in the future; future; the future"
+},
+{
+"w": "能否",
+"t": "",
+"p": "néng fǒu",
+"pos": "",
+"en": "whether or not; can it or can't it; is it possible?"
+},
+{
+"w": "烦",
+"t": "煩",
+"p": "fán",
+"pos": "形、动",
+"en": "to feel vexed; to bother; to trouble"
+},
+{
+"w": "嗯",
+"t": "",
+"p": "ǹg",
+"pos": "叹",
+"en": "(a groaning sound)"
+},
+{
+"w": "详细",
+"t": "詳細",
+"p": "xiángxì",
+"pos": "形",
+"en": "detailed; in detail; minute"
+},
+{
+"w": "印象",
+"t": "",
+"p": "yìnxiàng",
+"pos": "名",
+"en": "impression (sth that stays in one's mind); a memory"
+},
+{
+"w": "租",
+"t": "",
+"p": "zū",
+"pos": "动",
+"en": "to hire; to rent; to charter"
+},
+{
+"w": "地球",
+"t": "",
+"p": "dìqiú",
+"pos": "名",
+"en": "the earth"
+},
+{
+"w": "大赛",
+"t": "大賽",
+"p": "dàsài",
+"pos": "名",
+"en": "grand contest"
+},
+{
+"w": "厉害",
+"t": "厲害",
+"p": "lìhai",
+"pos": "形",
+"en": "(used to describe sb or sth that makes a very strong impression, whether favorable or unfavorable) terrible; intense; severe"
+},
+{
+"w": "奖",
+"t": "獎",
+"p": "jiǎng",
+"pos": "名、（动）",
+"en": "prize; award; bonus"
+},
+{
+"w": "整理",
+"t": "",
+"p": "zhěnglǐ",
+"pos": "动",
+"en": "to arrange; to tidy up; to sort out"
+},
+{
+"w": "只好",
+"t": "",
+"p": "zhǐhǎo",
+"pos": "副",
+"en": "to have no other option but to ...; to have to; to be forced to"
+},
+{
+"w": "性格",
+"t": "",
+"p": "xìnggé",
+"pos": "名",
+"en": "nature; disposition; temperament"
+},
+{
+"w": "浪费",
+"t": "浪費",
+"p": "làngfèi",
+"pos": "动",
+"en": "to waste; to squander"
+},
+{
+"w": "文字",
+"t": "",
+"p": "wénzì",
+"pos": "名",
+"en": "character; script; writing"
+},
+{
+"w": "其次",
+"t": "",
+"p": "qícì",
+"pos": "代",
+"en": "next; secondly"
+},
+{
+"w": "答案",
+"t": "",
+"p": "dá'àn",
+"pos": "名",
+"en": "answer; solution; CL:個|个[ge4]"
+},
+{
+"w": "小说",
+"t": "小說",
+"p": "xiǎoshuō",
+"pos": "名",
+"en": "novel; fiction; CL:本[ben3],部[bu4]"
+},
+{
+"w": "盐",
+"t": "鹽",
+"p": "yán",
+"pos": "名",
+"en": "salt; CL:粒[li4]"
+},
+{
+"w": "戴",
+"t": "",
+"p": "dài",
+"pos": "动",
+"en": "surname Dai"
+},
+{
+"w": "高考",
+"t": "",
+"p": "gāokǎo",
+"pos": "名",
+"en": "college entrance exam (especially as abbr. for 普通高等學校招生全國統一考試|普通高等学校招生全国统一考试[Pu3 tong1 Gao1 deng3 Xue2 xiao4 Zhao1 sheng1 Quan2 guo2 Tong3 yi1 Kao3 shi4]); (Tw) entrance exam for senior government service posts (abbr. for 公務人員高等考試|公务人员高等考试)"
+},
+{
+"w": "多么",
+"t": "多麼",
+"p": "duōme",
+"pos": "副",
+"en": "how (wonderful etc); what (a great idea etc); however (difficult it may be etc)"
+},
+{
+"w": "浪漫",
+"t": "",
+"p": "làngmàn",
+"pos": "形",
+"en": "romantic"
+},
+{
+"w": "工厂",
+"t": "工廠",
+"p": "gōngchǎng",
+"pos": "名",
+"en": "factory; CL:家[jia1],座[zuo4]"
+},
+{
+"w": "不必",
+"t": "",
+"p": "búbì",
+"pos": "副",
+"en": "need not; does not have to; not necessarily"
+},
+{
+"w": "基本上",
+"t": "",
+"p": "jīběnshàng",
+"pos": "副",
+"en": "basically; on the whole"
+},
+{
+"w": "分为",
+"t": "分為",
+"p": "fēnwéi",
+"pos": "动",
+"en": "to divide sth into (parts); to subdivide"
+},
+{
+"w": "赚",
+"t": "賺",
+"p": "zhuàn",
+"pos": "动",
+"en": "to earn; to make a profit"
+},
+{
+"w": "厚",
+"t": "",
+"p": "hòu",
+"pos": "形",
+"en": "thick; deep or profound; kind"
+},
+{
+"w": "课程",
+"t": "課程",
+"p": "kèchéng",
+"pos": "名",
+"en": "course; academic program; CL:堂[tang2],節|节[jie2],門|门[men2]"
+},
+{
+"w": "酸",
+"t": "",
+"p": "suān",
+"pos": "形",
+"en": "sour; tart; sick at heart"
+},
+{
+"w": "仔细",
+"t": "仔細",
+"p": "zǐxì",
+"pos": "形",
+"en": "careful; attentive; cautious"
+},
+{
+"w": "付",
+"t": "",
+"p": "fù",
+"pos": "动",
+"en": "surname Fu"
+},
+{
+"w": "羡慕",
+"t": "羨慕",
+"p": "xiànmù",
+"pos": "动",
+"en": "to envy; to admire"
+},
+{
+"w": "区别",
+"t": "區別",
+"p": "qūbié",
+"pos": "动、名",
+"en": "difference; to distinguish; to discriminate"
+},
+{
+"w": "顾客",
+"t": "顧客",
+"p": "gùkè",
+"pos": "名",
+"en": "customer; client; CL:位[wei4]"
+},
+{
+"w": "起到",
+"t": "",
+"p": "qǐdào",
+"pos": "动",
+"en": "(in an expression of the form 起到[qi3 dao4] + … + 作用[zuo4 yong4]) to have (a (motivating etc) effect); to play (a (stabilizing etc) role)"
+},
+{
+"w": "年底",
+"t": "",
+"p": "niándǐ",
+"pos": "名",
+"en": "the end of the year; year-end"
+},
+{
+"w": "首都",
+"t": "",
+"p": "shǒudū",
+"pos": "名",
+"en": "capital (city); CL:個|个[ge4]"
+},
+{
+"w": "用来",
+"t": "用來",
+"p": "yònglái",
+"pos": "动",
+"en": "to be used for"
+},
+{
+"w": "尤其",
+"t": "",
+"p": "yóuqí",
+"pos": "副",
+"en": "especially; particularly"
+},
+{
+"w": "等到",
+"t": "",
+"p": "děngdào",
+"pos": "介",
+"en": "to wait until; by the time when (sth is ready etc)"
+},
+{
+"w": "合格",
+"t": "",
+"p": "hégé",
+"pos": "形",
+"en": "to meet the standard required; qualified; eligible (voter etc)"
+},
+{
+"w": "多数",
+"t": "多數",
+"p": "duōshù",
+"pos": "名",
+"en": "majority; most"
+},
+{
+"w": "举",
+"t": "舉",
+"p": "jǔ",
+"pos": "动",
+"en": "variant of 舉|举[ju3]; to lift; to hold up"
+},
+{
+"w": "前后",
+"t": "前後",
+"p": "qiánhòu",
+"pos": "名",
+"en": "around; from beginning to end; all around"
+},
+{
+"w": "看法",
+"t": "",
+"p": "kànfǎ",
+"pos": "名",
+"en": "way of looking at a thing; view; opinion"
+},
+{
+"w": "街道",
+"t": "",
+"p": "jiēdào",
+"pos": "名",
+"en": "street; CL:條|条[tiao2]; subdistrict"
+},
+{
+"w": "失望",
+"t": "",
+"p": "shīwàng",
+"pos": "动、形",
+"en": "disappointed; to lose hope; to despair"
+},
+{
+"w": "旅客",
+"t": "",
+"p": "lǚkè",
+"pos": "名",
+"en": "traveler; tourist"
+},
+{
+"w": "乘客",
+"t": "",
+"p": "chéngkè",
+"pos": "名",
+"en": "passenger"
+},
+{
+"w": "全身",
+"t": "",
+"p": "quánshēn",
+"pos": "名",
+"en": "the whole body; (typography) em"
+},
+{
+"w": "友好",
+"t": "",
+"p": "yǒuhǎo",
+"pos": "形",
+"en": "see 友好區|友好区[You3 hao3 Qu1]"
+},
+{
+"w": "到来",
+"t": "到來",
+"p": "dàolái",
+"pos": "动",
+"en": "to arrive; arrival; advent"
+},
+{
+"w": "禁止",
+"t": "",
+"p": "jìnzhǐ",
+"pos": "动",
+"en": "to prohibit; to forbid; to ban"
+},
+{
+"w": "购物",
+"t": "購物",
+"p": "gòuwù",
+"pos": "动",
+"en": "shopping"
+},
+{
+"w": "赶",
+"t": "趕",
+"p": "gǎn",
+"pos": "动",
+"en": "to overtake; to catch up with; to hurry"
+},
+{
+"w": "自信",
+"t": "",
+"p": "zìxìn",
+"pos": "动、名、形",
+"en": "to have confidence in oneself; self-confidence"
+},
+{
+"w": "气温",
+"t": "氣溫",
+"p": "qìwēn",
+"pos": "名",
+"en": "air temperature"
+},
+{
+"w": "恐怕",
+"t": "",
+"p": "kǒngpà",
+"pos": "动、副",
+"en": "fear; to dread; I'm afraid that..."
+},
+{
+"w": "会员",
+"t": "會員",
+"p": "huìyuán",
+"pos": "名",
+"en": "member"
+},
+{
+"w": "肚子",
+"t": "",
+"p": "dùzi",
+"pos": "名",
+"en": "belly; abdomen; stomach"
+},
+{
+"w": "男性",
+"t": "",
+"p": "nánxìng",
+"pos": "名",
+"en": "the male sex; a male"
+},
+{
+"w": "吸",
+"t": "",
+"p": "xī",
+"pos": "动",
+"en": "to breathe; to suck in; to absorb"
+},
+{
+"w": "乘",
+"t": "椉",
+"p": "chéng",
+"pos": "动",
+"en": "surname Cheng"
+},
+{
+"w": "风景",
+"t": "風景",
+"p": "fēngjǐng",
+"pos": "名",
+"en": "scenery; landscape"
+},
+{
+"w": "答应",
+"t": "答應",
+"p": "dāying",
+"pos": "动",
+"en": "to answer; to respond; to answer positively"
+},
+{
+"w": "阅读",
+"t": "閱讀",
+"p": "yuèdú",
+"pos": "动",
+"en": "to read; reading"
+},
+{
+"w": "故意",
+"t": "",
+"p": "gùyì",
+"pos": "副",
+"en": "deliberately; on purpose"
+},
+{
+"w": "生意",
+"t": "",
+"p": "shēngyi",
+"pos": "名",
+"en": "life force; vitality"
+},
+{
+"w": "随便",
+"t": "隨便",
+"p": "suíbiàn",
+"pos": "动、形、连",
+"en": "as one wishes; as one pleases; at random"
+},
+{
+"w": "植物",
+"t": "",
+"p": "zhíwù",
+"pos": "名",
+"en": "plant; vegetation; CL:種|种[zhong3]"
+},
+{
+"w": "毕业生",
+"t": "畢業生",
+"p": "bìyèshēng",
+"pos": "名",
+"en": "graduate"
+},
+{
+"w": "爱心",
+"t": "愛心",
+"p": "àixīn",
+"pos": "名",
+"en": "compassion; kindness; care for others"
+},
+{
+"w": "从此",
+"t": "從此",
+"p": "cóngcǐ",
+"pos": "副",
+"en": "from now on; since then; henceforth"
+},
+{
+"w": "剩",
+"t": "賸",
+"p": "shèng",
+"pos": "动",
+"en": "to remain; to be left; to have as remainder"
+},
+{
+"w": "参赛",
+"t": "參賽",
+"p": "cānsài",
+"pos": "动",
+"en": "to compete; to take part in a competition"
+},
+{
+"w": "提到",
+"t": "",
+"p": "tídào",
+"pos": "动",
+"en": "to mention; to raise (a subject); to refer to"
+},
+{
+"w": "交警",
+"t": "",
+"p": "jiāojǐng",
+"pos": "名",
+"en": "traffic police (abbr. for 交通警察[jiao1 tong1 jing3 cha2])"
+},
+{
+"w": "旅行",
+"t": "",
+"p": "lǚxíng",
+"pos": "动",
+"en": "to travel; journey; trip"
+},
+{
+"w": "后悔",
+"t": "後悔",
+"p": "hòuhuǐ",
+"pos": "动",
+"en": "to regret; to feel remorse"
+},
+{
+"w": "积累",
+"t": "積累",
+"p": "jīlěi",
+"pos": "动",
+"en": "to accumulate; accumulation; cumulative"
+},
+{
+"w": "参观",
+"t": "參觀",
+"p": "cānguān",
+"pos": "动",
+"en": "to visit (a place, e.g. museum or factory); to tour; to look around"
+},
+{
+"w": "桶",
+"t": "",
+"p": "tǒng",
+"pos": "名",
+"en": "bucket; (trash) can; barrel (of oil etc)"
+},
+{
+"w": "熟",
+"t": "",
+"p": "shú/shóu",
+"pos": "形",
+"en": "ripe; mature; thoroughly cooked"
+},
+{
+"w": "伤心",
+"t": "傷心",
+"p": "shāngxīn",
+"pos": "形",
+"en": "to grieve; to be broken-hearted; to feel deeply hurt"
+},
+{
+"w": "点头",
+"t": "點頭",
+"p": "diǎntóu",
+"pos": "动",
+"en": "to nod"
+},
+{
+"w": "再说",
+"t": "再說",
+"p": "zàishuō",
+"pos": "动、连",
+"en": "to say again; to put off a discussion until later; moreover"
+},
+{
+"w": "好处",
+"t": "好處",
+"p": "hǎochù",
+"pos": "名",
+"en": "easy to get along with"
+},
+{
+"w": "节约",
+"t": "節約",
+"p": "jiéyuē",
+"pos": "动",
+"en": "to economize; to conserve (resources); economy"
+},
+{
+"w": "减轻",
+"t": "減輕",
+"p": "jiǎnqīng",
+"pos": "动",
+"en": "to lighten; to ease; to alleviate"
+},
+{
+"w": "电视剧",
+"t": "電視劇",
+"p": "diànshìjù",
+"pos": "名",
+"en": "TV series; TV drama; CL:部[bu4]"
+},
+{
+"w": "不满",
+"t": "不滿",
+"p": "bùmǎn",
+"pos": "形",
+"en": "dissatisfied; discontented; resentful"
+},
+{
+"w": "正好",
+"t": "",
+"p": "zhènghǎo",
+"pos": "形、副",
+"en": "just (in time); just right; just enough"
+},
+{
+"w": "森林",
+"t": "",
+"p": "sēnlín",
+"pos": "名",
+"en": "forest; CL:片[pian4]"
+},
+{
+"w": "稍",
+"t": "",
+"p": "shāo",
+"pos": "副",
+"en": "somewhat; a little"
+},
+{
+"w": "庆祝",
+"t": "慶祝",
+"p": "qìngzhù",
+"pos": "动",
+"en": "to celebrate"
+},
+{
+"w": "奖金",
+"t": "獎金",
+"p": "jiǎngjīn",
+"pos": "名",
+"en": "premium; award money; bonus"
+},
+{
+"w": "脱",
+"t": "脫",
+"p": "tuō",
+"pos": "动",
+"en": "to shed; to take off; to escape"
+},
+{
+"w": "闻",
+"t": "聞",
+"p": "wén",
+"pos": "动",
+"en": "surname Wen"
+},
+{
+"w": "早晨",
+"t": "",
+"p": "zǎochen",
+"pos": "名",
+"en": "early morning; CL:個|个[ge4]; also pr. [zao3chen5]"
+},
+{
+"w": "观看",
+"t": "觀看",
+"p": "guānkàn",
+"pos": "动",
+"en": "to watch; to view"
+},
+{
+"w": "广播",
+"t": "廣播",
+"p": "guǎngbō",
+"pos": "动、名",
+"en": "broadcast; CL:個|个[ge4]; broadcasting"
+},
+{
+"w": "粗",
+"t": "麤",
+"p": "cū",
+"pos": "形",
+"en": "(of sth long) wide; thick; (of sth granular) coarse"
+},
+{
+"w": "作家",
+"t": "",
+"p": "zuòjiā",
+"pos": "名",
+"en": "author; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "弹",
+"t": "彈",
+"p": "tán",
+"pos": "动",
+"en": "crossball; bullet; shot"
+},
+{
+"w": "凉",
+"t": "涼",
+"p": "liáng",
+"pos": "形",
+"en": "the five Liang of the Sixteen Kingdoms, namely: Former Liang 前涼|前凉 (314-376), Later Liang 後涼|后凉 (386-403), Northern Liang 北涼|北凉 (398-439), Southern Liang 南涼|南凉[Nan2 Liang2] (397-414), Western Liang 西涼|西凉 (400-421)"
+},
+{
+"w": "外套",
+"t": "",
+"p": "wàitào",
+"pos": "名",
+"en": "coat; jacket; CL:件[jian4]"
+},
+{
+"w": "体重",
+"t": "體重",
+"p": "tǐzhòng",
+"pos": "名",
+"en": "body weight"
+},
+{
+"w": "熊",
+"t": "",
+"p": "xióng",
+"pos": "名",
+"en": "surname Xiong"
+},
+{
+"w": "缺少",
+"t": "",
+"p": "quēshǎo",
+"pos": "动",
+"en": "lack; shortage of; shortfall"
+},
+{
+"w": "难受",
+"t": "難受",
+"p": "nánshòu",
+"pos": "形",
+"en": "to feel unwell; to suffer pain; to be difficult to bear"
+},
+{
+"w": "不论",
+"t": "不論",
+"p": "búlùn",
+"pos": "连",
+"en": "whatever; no matter what (who, how etc); regardless of"
+},
+{
+"w": "办公",
+"t": "辦公",
+"p": "bàngōng",
+"pos": "动",
+"en": "to handle official business (usu. in an office); to do (office) work"
+},
+{
+"w": "少数",
+"t": "少數",
+"p": "shǎoshù",
+"pos": "名",
+"en": "small number; few; minority"
+},
+{
+"w": "相反",
+"t": "",
+"p": "xiāngfǎn",
+"pos": "形、连",
+"en": "opposite; contrary"
+},
+{
+"w": "播放",
+"t": "",
+"p": "bōfàng",
+"pos": "动",
+"en": "to broadcast; to transmit (by radio or TV)"
+},
+{
+"w": "订",
+"t": "訂",
+"p": "dìng",
+"pos": "动",
+"en": "to agree; to conclude; to draw up"
+},
+{
+"w": "猜",
+"t": "",
+"p": "cāi",
+"pos": "动",
+"en": "to guess"
+},
+{
+"w": "早餐",
+"t": "",
+"p": "zǎocān",
+"pos": "名",
+"en": "breakfast; CL:份[fen4],頓|顿[dun4],次[ci4]"
+},
+{
+"w": "放松",
+"t": "放鬆",
+"p": "fàngsōng",
+"pos": "动",
+"en": "to relax; to slacken; to loosen"
+},
+{
+"w": "家具",
+"t": "",
+"p": "jiājù",
+"pos": "名",
+"en": "furniture; CL:件[jian4],套[tao4]"
+},
+{
+"w": "赶快",
+"t": "趕快",
+"p": "gǎnkuài",
+"pos": "副",
+"en": "quickly; at once"
+},
+{
+"w": "聚",
+"t": "",
+"p": "jù",
+"pos": "动",
+"en": "to assemble; to gather (transitive or intransitive); (chemistry) poly-"
+},
+{
+"w": "鲜",
+"t": "鱻",
+"p": "xiān",
+"pos": "形",
+"en": "variant of 鮮|鲜[xian3]; variant of 尟|鲜[xian3]; few"
+},
+{
+"w": "海洋",
+"t": "",
+"p": "hǎiyáng",
+"pos": "名",
+"en": "ocean; CL:個|个[ge4]"
+},
+{
+"w": "东部",
+"t": "東部",
+"p": "dōngbù",
+"pos": "名",
+"en": "the east; eastern part"
+},
+{
+"w": "日期",
+"t": "",
+"p": "rìqī",
+"pos": "名",
+"en": "date; CL:個|个[ge4]"
+},
+{
+"w": "降价",
+"t": "降價",
+"p": "jiàngjià",
+"pos": "动",
+"en": "to cut the price; to drive down the price; to get cheaper"
+},
+{
+"w": "窗",
+"t": "窻",
+"p": "chuāng",
+"pos": "名",
+"en": "old variant of 窗[chuang1]; variant of 窗[chuang1]; variant of 窗[chuang1]"
+},
+{
+"w": "招聘",
+"t": "",
+"p": "zhāopìn",
+"pos": "动",
+"en": "to invite applications for a job; to recruit"
+},
+{
+"w": "辣",
+"t": "",
+"p": "là",
+"pos": "形",
+"en": "old variant of 辣[la4]; hot (spicy); pungent"
+},
+{
+"w": "查看",
+"t": "",
+"p": "chákàn",
+"pos": "动",
+"en": "to look over; to examine; to check up"
+},
+{
+"w": "翻译",
+"t": "翻譯",
+"p": "fānyì",
+"pos": "动、名",
+"en": "to translate; to interpret; translator"
+},
+{
+"w": "勇敢",
+"t": "",
+"p": "yǒnggǎn",
+"pos": "形",
+"en": "brave; courageous"
+},
+{
+"w": "扔",
+"t": "",
+"p": "rēng",
+"pos": "动",
+"en": "to throw; to throw away"
+},
+{
+"w": "排队",
+"t": "排隊",
+"p": "páiduì",
+"pos": "动",
+"en": "to line up"
+},
+{
+"w": "烦恼",
+"t": "煩惱",
+"p": "fánnǎo",
+"pos": "形",
+"en": "to be worried; to be distressed; worries"
+},
+{
+"w": "歌手",
+"t": "",
+"p": "gēshǒu",
+"pos": "名",
+"en": "singer"
+},
+{
+"w": "功夫",
+"t": "",
+"p": "gōngfu",
+"pos": "名",
+"en": "skill; art; kung fu"
+},
+{
+"w": "博士",
+"t": "",
+"p": "bóshì",
+"pos": "名",
+"en": "doctor (as an academic degree); (old) person specialized in a skill or trade; (old) court academician"
+},
+{
+"w": "获取",
+"t": "獲取",
+"p": "huòqǔ",
+"pos": "动",
+"en": "to gain; to get; to acquire"
+},
+{
+"w": "寄",
+"t": "",
+"p": "jì",
+"pos": "动",
+"en": "to entrust; to place in sb's care; (bound form) to depend on"
+},
+{
+"w": "打工",
+"t": "",
+"p": "dǎgōng",
+"pos": "动",
+"en": "to work a temporary or casual job; (of students) to have a job outside of class time, or during vacation"
+},
+{
+"w": "身份证",
+"t": "身份證",
+"p": "shēnfènzhèng",
+"pos": "名",
+"en": "identity card; ID"
+},
+{
+"w": "偶尔",
+"t": "偶爾",
+"p": "ǒu'ěr",
+"pos": "副、形",
+"en": "occasionally; once in a while; sometimes"
+},
+{
+"w": "友谊",
+"t": "友誼",
+"p": "yǒuyì",
+"pos": "名",
+"en": "see 友誼縣|友谊县[You3 yi4 Xian4]"
+},
+{
+"w": "研究生",
+"t": "",
+"p": "yánjiūshēng",
+"pos": "名",
+"en": "graduate student; postgraduate student; research student"
+},
+{
+"w": "南部",
+"t": "",
+"p": "nánbù",
+"pos": "名",
+"en": "southern part"
+},
+{
+"w": "气候",
+"t": "氣候",
+"p": "qìhòu",
+"pos": "名",
+"en": "(meteorology) climate; (fig.) climate; prevailing conditions (in human affairs)"
+},
+{
+"w": "巧克力",
+"t": "",
+"p": "qiǎokèlì",
+"pos": "名",
+"en": "(loanword) chocolate; CL:塊|块[kuai4]"
+},
+{
+"w": "有趣",
+"t": "",
+"p": "yǒuqù",
+"pos": "形",
+"en": "interesting; fascinating; amusing"
+},
+{
+"w": "餐厅",
+"t": "餐廳",
+"p": "cāntīng",
+"pos": "名",
+"en": "dining hall; dining room; restaurant"
+},
+{
+"w": "愉快",
+"t": "",
+"p": "yúkuài",
+"pos": "形",
+"en": "cheerful; happy; pleasant"
+},
+{
+"w": "缺点",
+"t": "缺點",
+"p": "quēdiǎn",
+"pos": "名",
+"en": "weak point; fault; shortcoming"
+},
+{
+"w": "厨房",
+"t": "廚房",
+"p": "chúfáng",
+"pos": "名",
+"en": "kitchen; CL:間|间[jian1]"
+},
+{
+"w": "密码",
+"t": "密碼",
+"p": "mìmǎ",
+"pos": "名",
+"en": "cipher; secret code; password"
+},
+{
+"w": "日常",
+"t": "",
+"p": "rìcháng",
+"pos": "形",
+"en": "day-to-day; daily; everyday"
+},
+{
+"w": "热闹",
+"t": "熱鬧",
+"p": "rènao",
+"pos": "形、动、名",
+"en": "bustling with noise and excitement; lively"
+},
+{
+"w": "对面",
+"t": "對面",
+"p": "duìmiàn",
+"pos": "名",
+"en": "(sitting) opposite; across (the street); directly in front"
+},
+{
+"w": "美食",
+"t": "",
+"p": "měishí",
+"pos": "名",
+"en": "culinary delicacy; fine food; gourmet food"
+},
+{
+"w": "红包",
+"t": "紅包",
+"p": "hóngbāo",
+"pos": "名",
+"en": "money wrapped in red as a gift; bonus payment; kickback"
+},
+{
+"w": "全都",
+"t": "",
+"p": "quándōu",
+"pos": "副",
+"en": "all; without exception"
+},
+{
+"w": "趟",
+"t": "",
+"p": "tàng",
+"pos": "量",
+"en": "old variant of 趟[tang1]; to wade; to trample"
+},
+{
+"w": "原谅",
+"t": "原諒",
+"p": "yuánliàng",
+"pos": "动",
+"en": "to excuse; to forgive; to pardon"
+},
+{
+"w": "琴",
+"t": "琹",
+"p": "qín",
+"pos": "名",
+"en": "guqin 古琴[gu3 qin2] (a type of zither); musical instrument in general; variant of 琴[qin2], guqin or zither"
+},
+{
+"w": "办事",
+"t": "辦事",
+"p": "bànshì",
+"pos": "动",
+"en": "to handle (affairs); to work"
+},
+{
+"w": "脾气",
+"t": "脾氣",
+"p": "píqi",
+"pos": "名",
+"en": "character; temperament; disposition"
+},
+{
+"w": "家乡",
+"t": "家鄉",
+"p": "jiāxiāng",
+"pos": "名",
+"en": "hometown; native place; CL:個|个[ge4]"
+},
+{
+"w": "大厅",
+"t": "大廳",
+"p": "dàtīng",
+"pos": "名",
+"en": "hall; concourse; public lounge"
+},
+{
+"w": "骄傲",
+"t": "驕傲",
+"p": "jiāo'ào",
+"pos": "形、名",
+"en": "pride; arrogance; conceited"
+},
+{
+"w": "停车",
+"t": "停車",
+"p": "tíngchē",
+"pos": "动",
+"en": "to pull up (stop one's vehicle); to park; (of a machine) to stop working"
+},
+{
+"w": "队长",
+"t": "隊長",
+"p": "duìzhǎng",
+"pos": "名",
+"en": "captain; team leader; CL:個|个[ge4]"
+},
+{
+"w": "北部",
+"t": "",
+"p": "běibù",
+"pos": "名",
+"en": "northern part"
+},
+{
+"w": "优点",
+"t": "優點",
+"p": "yōudiǎn",
+"pos": "名",
+"en": "merit; benefit; strong point"
+},
+{
+"w": "航班",
+"t": "",
+"p": "hángbān",
+"pos": "名",
+"en": "(scheduled) flight; (scheduled) sailing"
+},
+{
+"w": "抬",
+"t": "擡",
+"p": "tái",
+"pos": "动",
+"en": "to lift; to raise; (of two or more persons) to carry"
+},
+{
+"w": "汗",
+"t": "",
+"p": "hàn",
+"pos": "名",
+"en": "see 可汗[ke4 han2], 汗國|汗国[han2 guo2]"
+},
+{
+"w": "逛",
+"t": "",
+"p": "guàng",
+"pos": "动",
+"en": "to stroll; to visit"
+},
+{
+"w": "烤",
+"t": "",
+"p": "kǎo",
+"pos": "动",
+"en": "to roast; to grill; to broil"
+},
+{
+"w": "从中",
+"t": "從中",
+"p": "cóngzhōng",
+"pos": "副",
+"en": "from within; therefrom"
+},
+{
+"w": "景区",
+"t": "景區",
+"p": "jǐngqū",
+"pos": "名",
+"en": "scenic area"
+},
+{
+"w": "棵",
+"t": "",
+"p": "kē",
+"pos": "量",
+"en": "classifier for trees, cabbages, plants etc"
+},
+{
+"w": "中年",
+"t": "",
+"p": "zhōngnián",
+"pos": "名",
+"en": "middle age"
+},
+{
+"w": "夜晚",
+"t": "",
+"p": "yèwǎn",
+"pos": "名",
+"en": "night; CL:個|个[ge4]"
+},
+{
+"w": "冷静",
+"t": "冷靜",
+"p": "lěngjìng",
+"pos": "形",
+"en": "calm; cool-headed; dispassionate"
+},
+{
+"w": "鼻子",
+"t": "",
+"p": "bízi",
+"pos": "名",
+"en": "nose; CL:個|个[ge4],隻|只[zhi1]"
+},
+{
+"w": "聚会",
+"t": "聚會",
+"p": "jùhuì",
+"pos": "动、名",
+"en": "party; gathering; to meet"
+},
+{
+"w": "师傅",
+"t": "師傅",
+"p": "shīfu",
+"pos": "名",
+"en": "master; qualified worker; respectful form of address for older men"
+},
+{
+"w": "收拾",
+"t": "",
+"p": "shōushi",
+"pos": "动",
+"en": "to put in order; to tidy up; to pack"
+},
+{
+"w": "耐心",
+"t": "",
+"p": "nàixīn",
+"pos": "形、名",
+"en": "to be patient; patience"
+},
+{
+"w": "外出",
+"t": "",
+"p": "wàichū",
+"pos": "动",
+"en": "to go out; to go away (on a trip etc)"
+},
+{
+"w": "高温",
+"t": "高溫",
+"p": "gāowēn",
+"pos": "名",
+"en": "high temperature"
+},
+{
+"w": "眼镜",
+"t": "眼鏡",
+"p": "yǎnjìng",
+"pos": "名",
+"en": "spectacles; eyeglasses; CL:副[fu4]"
+},
+{
+"w": "平常",
+"t": "",
+"p": "píngcháng",
+"pos": "形、名",
+"en": "ordinary; common; usually"
+},
+{
+"w": "塑料",
+"t": "",
+"p": "sùliào",
+"pos": "名",
+"en": "plastic; plastics (general term for synthetic polymer materials)"
+},
+{
+"w": "厕所",
+"t": "廁所",
+"p": "cèsuǒ",
+"pos": "名",
+"en": "toilet; lavatory; CL:間|间[jian1],處|处[chu4]"
+},
+{
+"w": "出租",
+"t": "",
+"p": "chūzū",
+"pos": "动",
+"en": "to rent"
+},
+{
+"w": "发送",
+"t": "發送",
+"p": "fāsòng",
+"pos": "动",
+"en": "to transmit; to dispatch; to issue (an official document or credential)"
+},
+{
+"w": "暂停",
+"t": "暫停",
+"p": "zàntíng",
+"pos": "动",
+"en": "to suspend; time-out (e.g. in sports); stoppage"
+},
+{
+"w": "本科",
+"t": "",
+"p": "běnkē",
+"pos": "名",
+"en": "undergraduate course; undergraduate (attributive)"
+},
+{
+"w": "健身",
+"t": "",
+"p": "jiànshēn",
+"pos": "动",
+"en": "to exercise; to keep fit; to work out"
+},
+{
+"w": "乘坐",
+"t": "",
+"p": "chéngzuò",
+"pos": "动",
+"en": "to take (a ship, plane etc); to ride (in a train or other vehicle)"
+},
+{
+"w": "院长",
+"t": "院長",
+"p": "yuànzhǎng",
+"pos": "名",
+"en": "the head of an institution whose name ends in 院[yuan4]; chair of a board; university president"
+},
+{
+"w": "远离",
+"t": "遠離",
+"p": "yuǎnlí",
+"pos": "动",
+"en": "to be far from; to keep away from"
+},
+{
+"w": "加班",
+"t": "",
+"p": "jiābān",
+"pos": "动",
+"en": "to work overtime"
+},
+{
+"w": "祝贺",
+"t": "祝賀",
+"p": "zhùhè",
+"pos": "动",
+"en": "to congratulate; congratulations; CL:個|个[ge4]"
+},
+{
+"w": "演唱",
+"t": "",
+"p": "yǎnchàng",
+"pos": "动",
+"en": "to sing (for an audience); vocal performance"
+},
+{
+"w": "获奖",
+"t": "獲獎",
+"p": "huòjiǎng",
+"pos": "动",
+"en": "to win an award"
+},
+{
+"w": "受不了",
+"t": "",
+"p": "shòubuliǎo",
+"pos": "动",
+"en": "unbearable; unable to endure; can't stand"
+},
+{
+"w": "低价",
+"t": "低價",
+"p": "dījià",
+"pos": "名",
+"en": "low price"
+},
+{
+"w": "帽子",
+"t": "",
+"p": "màozi",
+"pos": "名",
+"en": "hat; cap; (fig.) label"
+},
+{
+"w": "例子",
+"t": "",
+"p": "lìzi",
+"pos": "名",
+"en": "case; (for) instance; example"
+},
+{
+"w": "道歉",
+"t": "",
+"p": "dàoqiàn",
+"pos": "动",
+"en": "to apologize"
+},
+{
+"w": "老年",
+"t": "",
+"p": "lǎonián",
+"pos": "名",
+"en": "elderly; old age; autumn of one's years"
+},
+{
+"w": "课堂",
+"t": "課堂",
+"p": "kètáng",
+"pos": "名",
+"en": "classroom (CL:間|间[jian1]); class session"
+},
+{
+"w": "敲",
+"t": "",
+"p": "qiāo",
+"pos": "动",
+"en": "to hit; to strike; to tap"
+},
+{
+"w": "面试",
+"t": "面試",
+"p": "miànshì",
+"pos": "动",
+"en": "to be interviewed (as a candidate); interview"
+},
+{
+"w": "商量",
+"t": "",
+"p": "shāngliang",
+"pos": "动",
+"en": "to consult; to talk over; to discuss"
+},
+{
+"w": "寒冷",
+"t": "",
+"p": "hánlěng",
+"pos": "形",
+"en": "cold (climate); frigid; very cold"
+},
+{
+"w": "得意",
+"t": "",
+"p": "déyì",
+"pos": "形",
+"en": "proud of oneself; pleased with oneself; complacent"
+},
+{
+"w": "护士",
+"t": "護士",
+"p": "hùshi",
+"pos": "名",
+"en": "nurse"
+},
+{
+"w": "头痛",
+"t": "頭痛",
+"p": "tóutòng",
+"pos": "形",
+"en": "to have a headache"
+},
+{
+"w": "以内",
+"t": "以內",
+"p": "yǐnèi",
+"pos": "名",
+"en": "within; less than"
+},
+{
+"w": "巧",
+"t": "",
+"p": "qiǎo",
+"pos": "形",
+"en": "opportunely; coincidentally; as it happens"
+},
+{
+"w": "笨",
+"t": "",
+"p": "bèn",
+"pos": "形",
+"en": "stupid; foolish; silly"
+},
+{
+"w": "毛衣",
+"t": "",
+"p": "máoyī",
+"pos": "名",
+"en": "(wool) sweater; CL:件[jian4]"
+},
+{
+"w": "出行",
+"t": "",
+"p": "chūxíng",
+"pos": "动",
+"en": "to go out somewhere (relatively short trip); to set off on a journey (longer trip)"
+},
+{
+"w": "钥匙",
+"t": "鑰匙",
+"p": "yàoshi",
+"pos": "名",
+"en": "key; CL:把[ba3]"
+},
+{
+"w": "男士",
+"t": "",
+"p": "nánshì",
+"pos": "名",
+"en": "man; gentleman"
+},
+{
+"w": "老虎",
+"t": "",
+"p": "lǎohǔ",
+"pos": "名",
+"en": "tiger; CL:隻|只[zhi1]"
+},
+{
+"w": "幽默",
+"t": "",
+"p": "yōumò",
+"pos": "形",
+"en": "(loanword) humor; humorous"
+},
+{
+"w": "性别",
+"t": "性別",
+"p": "xìngbié",
+"pos": "名",
+"en": "gender; sex"
+},
+{
+"w": "少量",
+"t": "",
+"p": "shǎoliàng",
+"pos": "形",
+"en": "a smidgen; a little bit; a few"
+},
+{
+"w": "景点",
+"t": "景點",
+"p": "jǐngdiǎn",
+"pos": "名",
+"en": "tourist attraction; scenic spot"
+},
+{
+"w": "友情",
+"t": "",
+"p": "yǒuqíng",
+"pos": "名",
+"en": "friendly feelings; friendship"
+},
+{
+"w": "抬头",
+"t": "抬頭",
+"p": "táitóu",
+"pos": "动",
+"en": "to raise one's head; to look up; (fig.) to begin to emerge"
+},
+{
+"w": "体检",
+"t": "體檢",
+"p": "tǐjiǎn",
+"pos": "动",
+"en": "abbr. for 體格檢查|体格检查[ti3 ge2 jian3 cha2]"
+},
+{
+"w": "食堂",
+"t": "",
+"p": "shítáng",
+"pos": "名",
+"en": "dining hall; cafeteria; CL:個|个[ge4],間|间[jian1]"
+},
+{
+"w": "晚餐",
+"t": "",
+"p": "wǎncān",
+"pos": "名",
+"en": "evening meal; dinner; CL:份[fen4],頓|顿[dun4],次[ci4]"
+},
+{
+"w": "亲戚",
+"t": "親戚",
+"p": "qīnqi",
+"pos": "名",
+"en": "a relative (i.e. family relation); CL:門|门[men2],個|个[ge4],位[wei4]"
+},
+{
+"w": "日记",
+"t": "日記",
+"p": "rìjì",
+"pos": "名",
+"en": "diary; CL:則|则[ze2],本[ben3],篇[pian1]"
+},
+{
+"w": "硕士",
+"t": "碩士",
+"p": "shuòshì",
+"pos": "名",
+"en": "master's degree; person who has a master's degree; learned person"
+},
+{
+"w": "稍微",
+"t": "",
+"p": "shāowēi",
+"pos": "副",
+"en": "a little bit"
+},
+{
+"w": "顺便",
+"t": "順便",
+"p": "shùnbiàn",
+"pos": "副",
+"en": "conveniently; in passing; without much extra effort"
+},
+{
+"w": "葡萄",
+"t": "",
+"p": "pútao",
+"pos": "名",
+"en": "grape"
+},
+{
+"w": "难忘",
+"t": "難忘",
+"p": "nánwàng",
+"pos": "动",
+"en": "unforgettable"
+},
+{
+"w": "懒",
+"t": "懶",
+"p": "lǎn",
+"pos": "形",
+"en": "variant of 懶|懒[lan3]; lazy"
+},
+{
+"w": "迟",
+"t": "遲",
+"p": "chí",
+"pos": "形",
+"en": "surname Chi"
+},
+{
+"w": "咳嗽",
+"t": "",
+"p": "késou",
+"pos": "动",
+"en": "to cough; CL:陣|阵[zhen4]"
+},
+{
+"w": "笑话",
+"t": "笑話",
+"p": "xiàohua",
+"pos": "名、动",
+"en": "joke; jest (CL:個|个[ge4]); to laugh at"
+},
+{
+"w": "师生",
+"t": "師生",
+"p": "shīshēng",
+"pos": "名",
+"en": "teachers and students"
+},
+{
+"w": "便于",
+"t": "便於",
+"p": "biànyú",
+"pos": "动",
+"en": "easy to; convenient for"
+},
+{
+"w": "座位",
+"t": "",
+"p": "zuòwèi",
+"pos": "名",
+"en": "seat; CL:個|个[ge4]"
+},
+{
+"w": "童年",
+"t": "",
+"p": "tóngnián",
+"pos": "名",
+"en": "childhood"
+},
+{
+"w": "不便",
+"t": "",
+"p": "búbiàn",
+"pos": "形、动",
+"en": "inconvenient; inappropriate; unsuitable"
+},
+{
+"w": "窗户",
+"t": "窗戶",
+"p": "chuānghu",
+"pos": "名",
+"en": "window; CL:個|个[ge4],扇[shan4]"
+},
+{
+"w": "客厅",
+"t": "客廳",
+"p": "kètīng",
+"pos": "名",
+"en": "living room; sitting room; CL:間|间[jian1]"
+},
+{
+"w": "牌子",
+"t": "",
+"p": "páizi",
+"pos": "名",
+"en": "sign; trademark; brand"
+},
+{
+"w": "力气",
+"t": "力氣",
+"p": "lìqi",
+"pos": "名",
+"en": "physical strength"
+},
+{
+"w": "快递",
+"t": "快遞",
+"p": "kuàidì",
+"pos": "名",
+"en": "express delivery"
+},
+{
+"w": "星星",
+"t": "",
+"p": "xīngxing",
+"pos": "名",
+"en": "(coll.) a star; the stars in the sky"
+},
+{
+"w": "学费",
+"t": "學費",
+"p": "xuéfèi",
+"pos": "名",
+"en": "tuition fee; tuition; CL:個|个[ge4]"
+},
+{
+"w": "开玩笑",
+"t": "開玩笑",
+"p": "kāi wánxiào",
+"pos": "",
+"en": "to play a joke; to make fun of; to joke"
+},
+{
+"w": "老是",
+"t": "",
+"p": "lǎoshì",
+"pos": "副",
+"en": "always"
+},
+{
+"w": "老家",
+"t": "",
+"p": "lǎojiā",
+"pos": "名",
+"en": "native place; place of origin; home state or region"
+},
+{
+"w": "前方",
+"t": "",
+"p": "qiánfāng",
+"pos": "名",
+"en": "ahead; the front"
+},
+{
+"w": "主意",
+"t": "",
+"p": "zhǔyi",
+"pos": "名",
+"en": "plan; idea; decision"
+},
+{
+"w": "茶叶",
+"t": "茶葉",
+"p": "cháyè",
+"pos": "名",
+"en": "tea; tea leaves; CL:盒[he2],罐[guan4],包[bao1],片[pian4]"
+},
+{
+"w": "作文",
+"t": "",
+"p": "zuòwén",
+"pos": "动、名",
+"en": "to write an essay; composition (student essay); CL:篇[pian1]"
+},
+{
+"w": "上门",
+"t": "上門",
+"p": "shàngmén",
+"pos": "动",
+"en": "to drop in; to visit; to lock a door"
+},
+{
+"w": "报考",
+"t": "報考",
+"p": "bàokǎo",
+"pos": "动",
+"en": "to enter oneself for an examination"
+},
+{
+"w": "分数",
+"t": "分數",
+"p": "fēnshù",
+"pos": "名",
+"en": "(exam) grade; mark; score"
+},
+{
+"w": "午餐",
+"t": "",
+"p": "wǔcān",
+"pos": "名",
+"en": "lunch; luncheon; CL:份[fen4],頓|顿[dun4],次[ci4]"
+},
+{
+"w": "咸",
+"t": "鹹",
+"p": "xián",
+"pos": "形",
+"en": "surname Xian"
+},
+{
+"w": "证件",
+"t": "證件",
+"p": "zhèngjiàn",
+"pos": "名",
+"en": "certificate; papers; credentials"
+},
+{
+"w": "来不及",
+"t": "來不及",
+"p": "láibují",
+"pos": "动",
+"en": "there's not enough time (to do sth); it's too late (to do sth)"
+},
+{
+"w": "钢琴",
+"t": "鋼琴",
+"p": "gāngqín",
+"pos": "名",
+"en": "piano; CL:架[jia4],臺|台[tai2]"
+},
+{
+"w": "鲜花",
+"t": "鮮花",
+"p": "xiānhuā",
+"pos": "名",
+"en": "flower; fresh flowers; CL:朵[duo3]"
+},
+{
+"w": "感人",
+"t": "",
+"p": "gǎnrén",
+"pos": "形",
+"en": "touching; moving"
+},
+{
+"w": "顺序",
+"t": "順序",
+"p": "shùnxù",
+"pos": "名",
+"en": "sequence; order"
+},
+{
+"w": "约会",
+"t": "約會",
+"p": "yuēhuì",
+"pos": "动、名",
+"en": "appointment; engagement; date"
+},
+{
+"w": "做梦",
+"t": "做夢",
+"p": "zuòmèng",
+"pos": "动",
+"en": "to dream; to have a dream; fig. illusion"
+},
+{
+"w": "赶上",
+"t": "趕上",
+"p": "gǎnshàng",
+"pos": "动",
+"en": "to keep up with; to catch up with; to overtake"
+},
+{
+"w": "推迟",
+"t": "推遲",
+"p": "tuīchí",
+"pos": "动",
+"en": "to postpone; to put off; to defer"
+},
+{
+"w": "乒乓球",
+"t": "",
+"p": "pīngpāngqiú",
+"pos": "名",
+"en": "table tennis; ping-pong; table tennis ball"
+},
+{
+"w": "降温",
+"t": "降溫",
+"p": "jiàngwēn",
+"pos": "动",
+"en": "to become cooler; to lower the temperature; cooling"
+},
+{
+"w": "小伙子",
+"t": "",
+"p": "xiǎohuǒzi",
+"pos": "名",
+"en": "young man; young guy; lad"
+},
+{
+"w": "吃惊",
+"t": "吃驚",
+"p": "chījīng",
+"pos": "动",
+"en": "to be startled; to be shocked; to be amazed"
+},
+{
+"w": "酸奶",
+"t": "",
+"p": "suānnǎi",
+"pos": "名",
+"en": "yogurt"
+},
+{
+"w": "镜子",
+"t": "鏡子",
+"p": "jìngzi",
+"pos": "名",
+"en": "mirror; CL:面[mian4],個|个[ge4]"
+},
+{
+"w": "高价",
+"t": "高價",
+"p": "gāojià",
+"pos": "名",
+"en": "high price"
+},
+{
+"w": "好笑",
+"t": "",
+"p": "hǎoxiào",
+"pos": "形",
+"en": "laughable; funny; ridiculous"
+},
+{
+"w": "养成",
+"t": "養成",
+"p": "yǎngchéng",
+"pos": "动",
+"en": "to cultivate; to raise; to form (a habit)"
+},
+{
+"w": "填写",
+"t": "填寫",
+"p": "tiánxiě",
+"pos": "动",
+"en": "to fill in a form; to write data in a box (on a questionnaire or web form)"
+},
+{
+"w": "入学",
+"t": "入學",
+"p": "rùxué",
+"pos": "动",
+"en": "to enter a school or college; to go to school for the first time as a child"
+},
+{
+"w": "误会",
+"t": "誤會",
+"p": "wùhuì",
+"pos": "动、名",
+"en": "to misunderstand; to mistake; misunderstanding"
+},
+{
+"w": "将要",
+"t": "將要",
+"p": "jiāngyào",
+"pos": "副",
+"en": "will; shall; to be going to"
+},
+{
+"w": "孙子",
+"t": "孫子",
+"p": "sūnzi",
+"pos": "名",
+"en": "Sun Tzu, also known as Sun Wu 孫武|孙武[Sun1 Wu3] (c. 500 BC, dates of birth and death uncertain), general, strategist and philosopher of the Spring and Autumn Period (700-475 BC), believed to be the author of the “Art of War” 孫子兵法|孙子兵法[Sun1 zi3 Bing1 fa3], one of the Seven Military Classics of ancient China 武經七書|武经七书[Wu3 jing1 Qi1 shu1]"
+},
+{
+"w": "活泼",
+"t": "活潑",
+"p": "huópō",
+"pos": "形",
+"en": "lively; vivacious; brisk"
+},
+{
+"w": "歌声",
+"t": "歌聲",
+"p": "gēshēng",
+"pos": "名",
+"en": "singing voice; fig. original voice of a poet"
+},
+{
+"w": "按时",
+"t": "按時",
+"p": "ànshí",
+"pos": "副",
+"en": "on time; before deadline; on schedule"
+},
+{
+"w": "少见",
+"t": "少見",
+"p": "shǎojiàn",
+"pos": "形",
+"en": "rare; seldom seen; (formal) it's a rare pleasure to see you"
+},
+{
+"w": "度假",
+"t": "",
+"p": "dùjià",
+"pos": "动",
+"en": "to go on holidays; to spend one's vacation"
+},
+{
+"w": "胳膊",
+"t": "",
+"p": "gēbo",
+"pos": "名",
+"en": "arm; CL:隻|只[zhi1],條|条[tiao2],雙|双[shuang1]"
+},
+{
+"w": "修理",
+"t": "",
+"p": "xiūlǐ",
+"pos": "动",
+"en": "to repair; to fix; to prune"
+},
+{
+"w": "出差",
+"t": "",
+"p": "chūchāi",
+"pos": "动",
+"en": "to go on an official or business trip"
+},
+{
+"w": "咳",
+"t": "",
+"p": "ké",
+"pos": "动",
+"en": "sound of sighing; (interjection expressing surprise, sorrow, regret, disappointment etc) oh; damn"
+},
+{
+"w": "细心",
+"t": "細心",
+"p": "xìxīn",
+"pos": "形",
+"en": "meticulous; careful; attentive"
+},
+{
+"w": "入口",
+"t": "",
+"p": "rùkǒu",
+"pos": "名",
+"en": "entrance; to import"
+},
+{
+"w": "郊区",
+"t": "郊區",
+"p": "jiāoqū",
+"pos": "名",
+"en": "Jiao District or Jiaoqu, a district of Tongling City 銅陵市|铜陵市[Tong2 ling2 Shi4], Anhui; Jiao District or Jiaoqu, a district of Jiamusi City 佳木斯市[Jia1 mu4 si1 Shi4], Heilongjiang; Jiao District or Jiaoqu, a district of Yangquan City 陽泉市|阳泉市[Yang2 quan2 Shi4], Shanxi"
+},
+{
+"w": "院子",
+"t": "",
+"p": "yuànzi",
+"pos": "名",
+"en": "courtyard; garden; yard"
+},
+{
+"w": "说明书",
+"t": "說明書",
+"p": "shuōmíngshū",
+"pos": "名",
+"en": "(technical) manual; (book of) directions; synopsis (of a play or film)"
+},
+{
+"w": "大自然",
+"t": "",
+"p": "dàzìrán",
+"pos": "名",
+"en": "nature (the natural world)"
+},
+{
+"w": "目的地",
+"t": "",
+"p": "mùdìdì",
+"pos": "名",
+"en": "destination (location)"
+},
+{
+"w": "收听",
+"t": "收聽",
+"p": "shōutīng",
+"pos": "动",
+"en": "to listen to (a radio broadcast)"
+},
+{
+"w": "打印",
+"t": "",
+"p": "dǎyìn",
+"pos": "动",
+"en": "to affix a seal; to stamp; to print out (with a printer)"
+},
+{
+"w": "表扬",
+"t": "表揚",
+"p": "biǎoyáng",
+"pos": "动",
+"en": "to praise; to commend"
+},
+{
+"w": "葡萄酒",
+"t": "",
+"p": "pútaojiǔ",
+"pos": "名",
+"en": "(grape) wine"
+},
+{
+"w": "停车场",
+"t": "停車場",
+"p": "tíngchēchǎng",
+"pos": "名",
+"en": "parking lot; car park"
+},
+{
+"w": "价钱",
+"t": "價錢",
+"p": "jiàqián",
+"pos": "名",
+"en": "price"
+},
+{
+"w": "普通话",
+"t": "普通話",
+"p": "pǔtōnghuà",
+"pos": "名",
+"en": "Mandarin (common language); Putonghua (common speech of the Chinese language); ordinary speech"
+},
+{
+"w": "签证",
+"t": "簽證",
+"p": "qiānzhèng",
+"pos": "动、名",
+"en": "visa; to issue a visa"
+},
+{
+"w": "假日",
+"t": "",
+"p": "jiàrì",
+"pos": "名",
+"en": "a holiday; a day off"
+},
+{
+"w": "父子",
+"t": "",
+"p": "fùzǐ",
+"pos": "名",
+"en": "father and son"
+},
+{
+"w": "寒假",
+"t": "",
+"p": "hánjià",
+"pos": "名",
+"en": "winter vacation"
+},
+{
+"w": "月饼",
+"t": "月餅",
+"p": "yuèbing",
+"pos": "名",
+"en": "mooncake (esp. for the Mid-Autumn Festival)"
+},
+{
+"w": "诚实",
+"t": "誠實",
+"p": "chéngshí",
+"pos": "形",
+"en": "honest"
+},
+{
+"w": "打败",
+"t": "打敗",
+"p": "dǎbài",
+"pos": "动",
+"en": "to defeat; to overpower; to beat"
+},
+{
+"w": "打扰",
+"t": "打擾",
+"p": "dǎrǎo",
+"pos": "动",
+"en": "to disturb; to bother; to trouble"
+},
+{
+"w": "准时",
+"t": "準時",
+"p": "zhǔnshí",
+"pos": "形",
+"en": "on time; punctual; on schedule"
+},
+{
+"w": "体温",
+"t": "體溫",
+"p": "tǐwēn",
+"pos": "名",
+"en": "(body) temperature"
+},
+{
+"w": "话剧",
+"t": "話劇",
+"p": "huàjù",
+"pos": "名",
+"en": "stage play; modern drama; CL:臺|台[tai2],部[bu4]"
+},
+{
+"w": "散步",
+"t": "",
+"p": "sànbù",
+"pos": "动",
+"en": "to take a walk; to go for a walk"
+},
+{
+"w": "小吃",
+"t": "",
+"p": "xiǎochī",
+"pos": "名",
+"en": "street food; snack"
+},
+{
+"w": "低温",
+"t": "低溫",
+"p": "dīwēn",
+"pos": "名",
+"en": "low temperature"
+},
+{
+"w": "毛巾",
+"t": "",
+"p": "máojīn",
+"pos": "名",
+"en": "towel; CL:條|条[tiao2]"
+},
+{
+"w": "客气",
+"t": "客氣",
+"p": "kèqi",
+"pos": "形、动",
+"en": "polite; courteous; formal"
+},
+{
+"w": "暑假",
+"t": "",
+"p": "shǔjià",
+"pos": "名",
+"en": "summer vacation; CL:個|个[ge4]"
+},
+{
+"w": "零食",
+"t": "",
+"p": "língshí",
+"pos": "名",
+"en": "snack; nibbles"
+},
+{
+"w": "白酒",
+"t": "",
+"p": "báijiǔ",
+"pos": "名",
+"en": "baijiu, a spirit usually distilled from sorghum; (Tw) white wine (abbr. for 白葡萄酒[bai2 pu2 tao5 jiu3])"
+},
+{
+"w": "馒头",
+"t": "饅頭",
+"p": "mántou",
+"pos": "名",
+"en": "steamed bun"
+},
+{
+"w": "不光",
+"t": "",
+"p": "bùguāng",
+"pos": "副、连",
+"en": "not the only one; not only"
+},
+{
+"w": "来得及",
+"t": "來得及",
+"p": "láidejí",
+"pos": "动",
+"en": "to have enough time; can do it in time; can still make it"
+},
+{
+"w": "大夫",
+"t": "",
+"p": "dàifu",
+"pos": "名",
+"en": "senior official (in imperial China)"
+},
+{
+"w": "导游",
+"t": "導遊",
+"p": "dǎoyóu",
+"pos": "动、名",
+"en": "tour guide; guidebook; to conduct a tour"
+},
+{
+"w": "袜子",
+"t": "襪子",
+"p": "wàzi",
+"pos": "名",
+"en": "socks; stockings; CL:隻|只[zhi1],對|对[dui4],雙|双[shuang1]"
+},
+{
+"w": "底下",
+"t": "",
+"p": "dǐxia",
+"pos": "名",
+"en": "the location below sth; afterwards"
+},
+{
+"w": "京剧",
+"t": "京劇",
+"p": "jīngjù",
+"pos": "名",
+"en": "Beijing opera; CL:場|场[chang3],齣|出[chu1]"
+},
+{
+"w": "西红柿",
+"t": "西紅柿",
+"p": "xīhóngshì",
+"pos": "名",
+"en": "tomato"
+},
+{
+"w": "抱歉",
+"t": "",
+"p": "bàoqiàn",
+"pos": "形",
+"en": "to be sorry; to feel apologetic; sorry!"
+},
+{
+"w": "听力",
+"t": "聽力",
+"p": "tīnglì",
+"pos": "名",
+"en": "hearing; listening ability"
+},
+{
+"w": "加油站",
+"t": "",
+"p": "jiāyóuzhàn",
+"pos": "名",
+"en": "gas station"
+},
+{
+"w": "旅馆",
+"t": "旅館",
+"p": "lǚguǎn",
+"pos": "名",
+"en": "hotel; CL:家[jia1]"
+},
+{
+"w": "皮鞋",
+"t": "",
+"p": "píxié",
+"pos": "名",
+"en": "leather shoes"
+},
+{
+"w": "害羞",
+"t": "",
+"p": "hàixiū",
+"pos": "形",
+"en": "shy; embarrassed; bashful"
+},
+{
+"w": "暖和",
+"t": "",
+"p": "nuǎnhuo",
+"pos": "形、动",
+"en": "warm; nice and warm"
+},
+{
+"w": "礼貌",
+"t": "禮貌",
+"p": "lǐmào",
+"pos": "名、形",
+"en": "courtesy; politeness; manners"
+},
+{
+"w": "剧院",
+"t": "劇院",
+"p": "jùyuàn",
+"pos": "名",
+"en": "theater; CL:家[jia1],座[zuo4]"
+},
+{
+"w": "牙膏",
+"t": "",
+"p": "yágāo",
+"pos": "名",
+"en": "toothpaste; CL:管[guan3]"
+},
+{
+"w": "叶子",
+"t": "葉子",
+"p": "yèzi",
+"pos": "名",
+"en": "leaf (CL:片[pian4]); (slang) marijuana"
+},
+{
+"w": "景色",
+"t": "",
+"p": "jǐngsè",
+"pos": "名",
+"en": "scenery; landscape; view"
+},
+{
+"w": "美景",
+"t": "",
+"p": "měijǐng",
+"pos": "名",
+"en": "beautiful scenery"
+},
+{
+"w": "听众",
+"t": "聽眾",
+"p": "tīngzhòng",
+"pos": "名",
+"en": "audience; listeners"
+},
+{
+"w": "饼干",
+"t": "餅乾",
+"p": "bǐnggān",
+"pos": "名",
+"en": "biscuit; cracker; cookie"
+},
+{
+"w": "摄氏度",
+"t": "攝氏度",
+"p": "shèshìdù",
+"pos": "量",
+"en": "°C (degrees Celsius)"
+},
+{
+"w": "降落",
+"t": "",
+"p": "jiàngluò",
+"pos": "动",
+"en": "to descend; to land"
+},
+{
+"w": "打招呼",
+"t": "",
+"p": "dǎ zhāohu",
+"pos": "",
+"en": "to greet sb by word or action; to give prior notice"
+},
+{
+"w": "自学",
+"t": "自學",
+"p": "zìxué",
+"pos": "动",
+"en": "self-study; to study on one's own"
+},
+{
+"w": "盒子",
+"t": "",
+"p": "hézi",
+"pos": "名",
+"en": "box; case; hezi – a savory turnover-like pie in northern Chinese and Mongolian cuisines"
+},
+{
+"w": "试题",
+"t": "試題",
+"p": "shìtí",
+"pos": "名",
+"en": "exam question; test topic"
+},
+{
+"w": "背包",
+"t": "",
+"p": "bēibāo",
+"pos": "名",
+"en": "knapsack; rucksack; infantry pack"
+},
+{
+"w": "树林",
+"t": "樹林",
+"p": "shùlín",
+"pos": "名",
+"en": "Shulin city in New Taipei City 新北市[Xin1 bei3 shi4], Taiwan"
+},
+{
+"w": "查找",
+"t": "",
+"p": "cházhǎo",
+"pos": "动",
+"en": "to search for; to look up"
+},
+{
+"w": "奖学金",
+"t": "獎學金",
+"p": "jiǎngxuéjīn",
+"pos": "名",
+"en": "scholarship; CL:筆|笔[bi3]"
+},
+{
+"w": "自习",
+"t": "自習",
+"p": "zìxí",
+"pos": "动",
+"en": "to study outside of class time (reviewing one's lessons); to study in one's free time; individual study"
+},
+{
+"w": "使馆",
+"t": "使館",
+"p": "shǐguǎn",
+"pos": "名",
+"en": "consulate; diplomatic mission"
+},
+{
+"w": "点名",
+"t": "點名",
+"p": "diǎnmíng",
+"pos": "动",
+"en": "roll call; to mention sb by name; (to call or praise or criticize sb) by name"
+},
+{
+"w": "堵车",
+"t": "堵車",
+"p": "dǔchē",
+"pos": "动",
+"en": "traffic jam; (of traffic) to get congested"
+},
+{
+"w": "多样",
+"t": "多樣",
+"p": "duōyàng",
+"pos": "形",
+"en": "diverse; diversity; manifold"
+},
+{
+"w": "词语",
+"t": "詞語",
+"p": "cíyǔ",
+"pos": "名",
+"en": "word (general term including monosyllables through to short phrases); term (e.g. technical term); expression"
+},
+{
+"w": "节假日",
+"t": "節假日",
+"p": "jiéjiàrì",
+"pos": "名",
+"en": "public holiday"
+},
+{
+"w": "厨师",
+"t": "廚師",
+"p": "chúshī",
+"pos": "名",
+"en": "cook; chef"
+},
+{
+"w": "果汁",
+"t": "",
+"p": "guǒzhī",
+"pos": "名",
+"en": "fruit juice"
+},
+{
+"w": "一点儿",
+"t": "一點兒",
+"p": "yìdiǎnr",
+"pos": "形、副",
+"en": "erhua variant of 一點|一点[yi1 dian3]"
+},
+{
+"w": "大巴",
+"t": "",
+"p": "dàbā",
+"pos": "名",
+"en": "(coll.) large bus; coach; (abbr. for 大型巴士)"
+},
+{
+"w": "时间表",
+"t": "時間表",
+"p": "shíjiānbiǎo",
+"pos": "名",
+"en": "schedule; timetable"
+},
+{
+"w": "应聘",
+"t": "應聘",
+"p": "yìngpìn",
+"pos": "动",
+"en": "to accept a job offer; to apply for an advertised position"
+},
+{
+"w": "排球",
+"t": "",
+"p": "páiqiú",
+"pos": "名",
+"en": "volleyball; CL:個|个[ge4]"
+},
+{
+"w": "功课",
+"t": "功課",
+"p": "gōngkè",
+"pos": "名",
+"en": "homework; assignment; task"
+},
+{
+"w": "口语",
+"t": "口語",
+"p": "kǒuyǔ",
+"pos": "名",
+"en": "colloquial speech; spoken language; vernacular language"
+},
+{
+"w": "语法",
+"t": "語法",
+"p": "yǔfǎ",
+"pos": "名",
+"en": "grammar"
+},
+{
+"w": "游玩",
+"t": "遊玩",
+"p": "yóuwán",
+"pos": "动",
+"en": "to amuse oneself; to have fun; to go sightseeing"
+},
+{
+"w": "房东",
+"t": "房東",
+"p": "fángdōng",
+"pos": "名",
+"en": "landlord"
+},
+{
+"w": "母子",
+"t": "",
+"p": "mǔzǐ",
+"pos": "名",
+"en": "mother and child; parent and subsidiary (companies); principal and interest"
+},
+{
+"w": "表格",
+"t": "",
+"p": "biǎogé",
+"pos": "名",
+"en": "form; table; CL:張|张[zhang1],份[fen4]"
+},
+{
+"w": "操场",
+"t": "操場",
+"p": "cāochǎng",
+"pos": "名",
+"en": "playground; sports field; drill ground"
+},
+{
+"w": "快餐",
+"t": "",
+"p": "kuàicān",
+"pos": "名",
+"en": "fast food; snack; quick meal"
+},
+{
+"w": "车速",
+"t": "車速",
+"p": "chēsù",
+"pos": "名",
+"en": "vehicle speed"
+},
+{
+"w": "零下",
+"t": "",
+"p": "líng xià",
+"pos": "",
+"en": "below zero (esp. temperature)"
+},
+{
+"w": "着火",
+"t": "著火",
+"p": "zháohuǒ",
+"pos": "动",
+"en": "to catch fire"
+},
+{
+"w": "举例",
+"t": "舉例",
+"p": "jǔlì",
+"pos": "动",
+"en": "to give an example"
+},
+{
+"w": "车位",
+"t": "車位",
+"p": "chēwèi",
+"pos": "名",
+"en": "parking spot; unloading point; garage place"
+},
+{
+"w": "母女",
+"t": "",
+"p": "mǔnǚ",
+"pos": "名",
+"en": "mother and daughter; mother-daughter"
+},
+{
+"w": "千克",
+"t": "",
+"p": "qiānkè",
+"pos": "量",
+"en": "kilogram"
+},
+{
+"w": "袋子",
+"t": "",
+"p": "dàizi",
+"pos": "名",
+"en": "bag"
+},
+{
+"w": "聚餐",
+"t": "",
+"p": "jùcān",
+"pos": "动",
+"en": "communal meal; formal dinner of club or group"
+},
+{
+"w": "国籍",
+"t": "國籍",
+"p": "guójí",
+"pos": "名",
+"en": "nationality"
+},
+{
+"w": "转机",
+"t": "轉機",
+"p": "zhuǎnjī",
+"pos": "动",
+"en": "(to take) a turn for the better; to change planes"
+},
+{
+"w": "登机",
+"t": "登機",
+"p": "dēngjī",
+"pos": "动",
+"en": "to board a plane"
+},
+{
+"w": "纸巾",
+"t": "紙巾",
+"p": "zhǐjīn",
+"pos": "名",
+"en": "paper towel; napkin; facial tissue"
+},
+{
+"w": "安检",
+"t": "安檢",
+"p": "ānjiǎn",
+"pos": "动",
+"en": "security check (abbr. for 安全檢查|安全检查[an1 quan2 jian3 cha2]); to do a security check"
+},
+{
+"w": "房租",
+"t": "",
+"p": "fángzū",
+"pos": "名",
+"en": "rent for a room or house"
+},
+{
+"w": "打印机",
+"t": "打印機",
+"p": "dǎyìnjī",
+"pos": "名",
+"en": "printer"
+},
+{
+"w": "笔试",
+"t": "筆試",
+"p": "bǐshì",
+"pos": "动",
+"en": "written examination; paper test (for an applicant)"
+},
+{
+"w": "孙女",
+"t": "孫女",
+"p": "sūnnǚ",
+"pos": "名",
+"en": "son's daughter; granddaughter"
+},
+{
+"w": "打针",
+"t": "打針",
+"p": "dǎzhēn",
+"pos": "动",
+"en": "to give or get an injection"
+},
+{
+"w": "中餐",
+"t": "",
+"p": "zhōngcān",
+"pos": "名",
+"en": "lunch; Chinese meal; Chinese food"
+},
+{
+"w": "流利",
+"t": "",
+"p": "liúlì",
+"pos": "形",
+"en": "fluent"
+},
+{
+"w": "理发",
+"t": "理髮",
+"p": "lǐfà",
+"pos": "动",
+"en": "to get a haircut; to have one's hair done; to cut (sb's) hair"
+},
+{
+"w": "十字路口",
+"t": "",
+"p": "shízì lùkǒu",
+"pos": "",
+"en": "crossroads; intersection"
+},
+{
+"w": "换乘",
+"t": "換乘",
+"p": "huànchéng",
+"pos": "动",
+"en": "to change train (plane, bus etc); transfer between modes of transport"
+},
+{
+"w": "父女",
+"t": "",
+"p": "fùnǚ",
+"pos": "名",
+"en": "father and daughter"
+},
+{
+"w": "健身房",
+"t": "",
+"p": "jiànshēnfáng",
+"pos": "名",
+"en": "gym; fitness club"
+},
+{
+"w": "售票员",
+"t": "售票員",
+"p": "shòupiàoyuán",
+"pos": "名",
+"en": "ticket seller"
+},
+{
+"w": "回信",
+"t": "",
+"p": "huíxìn",
+"pos": "动、名",
+"en": "to reply; to write back; letter written in reply"
+},
+{
+"w": "复印",
+"t": "複印",
+"p": "fùyìn",
+"pos": "动",
+"en": "to photocopy; to duplicate a document"
+},
+{
+"w": "零钱",
+"t": "零錢",
+"p": "língqián",
+"pos": "名",
+"en": "change (of money); small change; pocket money"
+},
+{
+"w": "期中",
+"t": "",
+"p": "qīzhōng",
+"pos": "名",
+"en": "interim; midterm"
+},
+{
+"w": "结账",
+"t": "結賬",
+"p": "jiézhàng",
+"pos": "动",
+"en": "to settle accounts; to pay the bill"
+},
+{
+"w": "叫作",
+"t": "",
+"p": "jiàozuò",
+"pos": "动",
+"en": "to call; to be called"
+},
+{
+"w": "汽水",
+"t": "",
+"p": "qìshuǐ",
+"pos": "名",
+"en": "soda pop; carbonated soft drink"
+},
+{
+"w": "粗心",
+"t": "",
+"p": "cūxīn",
+"pos": "形",
+"en": "careless; thoughtless"
+},
+{
+"w": "零花钱",
+"t": "零花錢",
+"p": "línghuāqián",
+"pos": "名",
+"en": "pocket money; allowance"
+},
+{
+"w": "干杯",
+"t": "乾杯",
+"p": "gānbēi",
+"pos": "动",
+"en": "to drink a toast; Cheers! (proposing a toast); Here's to you!"
+},
+{
+"w": "坏处",
+"t": "壞處",
+"p": "huàichù",
+"pos": "名",
+"en": "harm; troubles; CL:個|个[ge4]"
+},
+{
+"w": "预习",
+"t": "預習",
+"p": "yùxí",
+"pos": "动",
+"en": "to prepare a lesson"
+},
+{
+"w": "差点儿",
+"t": "差點兒",
+"p": "chàdiǎnr",
+"pos": "形、副",
+"en": "erhua variant of 差點|差点[cha4 dian3]"
+},
+{
+"w": "干活儿",
+"t": "幹活兒",
+"p": "gànhuór",
+"pos": "动",
+"en": "erhua variant of 幹活|干活[gan4 huo2]"
+},
+{
+"w": "点",
+"t": "點",
+"p": "diǎn",
+"pos": "动、（名、量）",
+"en": "to touch briefly; to tap; to mark with a dot"
+},
+{
+"w": "打折",
+"t": "",
+"p": "dǎzhé",
+"pos": "动",
+"en": "to give a discount"
+},
+{
+"w": "电动车",
+"t": "電動車",
+"p": "diàndòngchē",
+"pos": "名",
+"en": "electric vehicle (commonly refers to e-bikes, scooters or electric cars)"
+},
+{
+"w": "动车",
+"t": "動車",
+"p": "dòngchē",
+"pos": "名",
+"en": "(PRC) (D- or C-class) high-speed train; power car; multiple-unit train (abbr. for 動車組|动车组[dong4 che1 zu3])"
+},
+{
+"w": "短信",
+"t": "",
+"p": "duǎnxìn",
+"pos": "名",
+"en": "text message; SMS"
+},
+{
+"w": "各位",
+"t": "",
+"p": "gèwèi",
+"pos": "代",
+"en": "everybody; all (guests, colleagues etc); all of you"
+},
+{
+"w": "接着",
+"t": "接著",
+"p": "jiēzhe",
+"pos": "动、副",
+"en": "to catch and hold on; to continue; to go on to do sth"
+},
+{
+"w": "路过",
+"t": "路過",
+"p": "lùguò",
+"pos": "动",
+"en": "to pass by or through"
+},
+{
+"w": "千万",
+"t": "千萬",
+"p": "qiānwàn",
+"pos": "副",
+"en": "ten million; countless; many"
+},
+{
+"w": "期末",
+"t": "",
+"p": "qīmò",
+"pos": "名",
+"en": "the end of a term or semester (in school)"
+},
+{
+"w": "入住",
+"t": "",
+"p": "rùzhù",
+"pos": "动",
+"en": "to check in (at a hotel etc); to move into (a house)"
+},
+{
+"w": "扫码",
+"t": "掃碼",
+"p": "sǎomǎ",
+"pos": "动",
+"en": "to scan a QR code or barcode"
+},
+{
+"w": "市区",
+"t": "市區",
+"p": "shìqū",
+"pos": "名",
+"en": "urban district; downtown; city center"
+},
+{
+"w": "随着",
+"t": "隨著",
+"p": "suízhe",
+"pos": "介",
+"en": "along with; in the wake of; following"
+},
+{
+"w": "网购",
+"t": "網購",
+"p": "wǎnggòu",
+"pos": "动",
+"en": "Internet shopping; to purchase online"
+},
+{
+"w": "网页",
+"t": "網頁",
+"p": "wǎngyè",
+"pos": "名",
+"en": "web page"
+},
+{
+"w": "网友",
+"t": "網友",
+"p": "wǎngyǒu",
+"pos": "名",
+"en": "online friend; netizen; Internet user"
+},
+{
+"w": "网址",
+"t": "網址",
+"p": "wǎngzhǐ",
+"pos": "名",
+"en": "website; web address; URL"
+},
+{
+"w": "线上",
+"t": "線上",
+"p": "xiàshàng",
+"pos": "名",
+"en": "online"
+},
+{
+"w": "线下",
+"t": "線下",
+"p": "xiànxià",
+"pos": "名",
+"en": "offline; below the line"
+}
+]

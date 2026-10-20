@@ -1,0 +1,942 @@
+{
+  "destination": "Queenstown",
+  "region": "New Zealand",
+  "start_date": "2026-08-24",
+  "days": 3,
+  "nights": 2,
+  "utc_offset_hours": 12,
+  "timezone": "Pacific/Auckland",
+  "base": {
+    "name": "19 St Samantha Lane, Goldfield Heights, Queenstown 9300",
+    "lat": -45.0254,
+    "lon": 168.68708
+  },
+  "transport": "car",
+  "pace": "moderate",
+  "interests": [
+    "scenic",
+    "snow",
+    "relax",
+    "wine",
+    "culture",
+    "food",
+    "adrenaline"
+  ],
+  "party": {
+    "adults": 7,
+    "note": "Seven of us travelling together, two rental cars."
+  },
+  "budget": "mid",
+  "outputs": [
+    "xlsx",
+    "pdf"
+  ],
+  "day_windows": {
+    "2026-08-24": [
+      "10:10",
+      null
+    ],
+    "2026-08-26": [
+      "08:15",
+      "15:45"
+    ]
+  },
+  "fixed": [
+    {
+      "date": "2026-08-24",
+      "start": "10:10",
+      "end": "11:20",
+      "name": "Land 10:10, shuttle to Yes Rentals, collect both cars",
+      "lat": -45.0193,
+      "lon": 168.74344,
+      "indoor": true,
+      "note": "JQ295 lands 10:10. Domestic arrivals: follow the BLUE path to the Transfer Area, ZONE C, for the Yes Rentals shuttle - the depot is off-airport at 43 Brookes Road, Frankton, so allow for the shuttle both ways with seven people and bags. Two Toyota Aquas, bookings #141064 (Pawarid) and #141063 (Pracha). Add Pheeraphat as a driver at the desk - the second driver is free. Mobile-order Fergburger while you are waiting.",
+      "price": "Rental car - not counted in the per-person activity total",
+      "link_to": "#ticket-yes-rentals-shuttle-zone-c",
+      "link_label": "Shuttle map (Zone C)",
+      "soft": false
+    },
+    {
+      "date": "2026-08-24",
+      "start": "11:50",
+      "end": "12:35",
+      "name": "Lunch - Fergburger (optional)",
+      "lat": -45.03174,
+      "lon": 168.65946,
+      "indoor": true,
+      "url": "https://fergburger.com/",
+      "desc": "Mobile-order while the cars are being sorted so you collect rather than queue. Big Al is the double, Southern Swine the pulled pork. Fergbaker next door does pies, pastries and sandwiches for anyone who does not want a burger.",
+      "price": "NZ$18-25 a burger",
+      "price_nzd": [
+        18,
+        25
+      ],
+      "note": "Optional - skip it if the morning runs long.",
+      "soft": true
+    },
+    {
+      "date": "2026-08-24",
+      "start": "12:55",
+      "end": "14:40",
+      "name": "Skyline Gondola + Luge",
+      "lat": -45.0275278,
+      "lon": 168.6524646,
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "Gondola only NZ$69 - with 3 luge rides NZ$99 - unlimited luge NZ$140 (2026)",
+      "url": "https://queenstown.skyline.co.nz/pricing-and-packages/",
+      "desc": "Gondola up Bob's Peak then the luge track. Five minutes from Fergburger. Tight against a 15:00 check-in but it fits - and it closes in high wind or heavy snow, so check the day's status before driving up.",
+      "note": "Not booked - buy at the top or online on the day. If the Fergburger queue runs long or the wind is up, this is the easiest thing to drop.",
+      "price_nzd": [
+        69,
+        140
+      ],
+      "soft": true
+    },
+    {
+      "date": "2026-08-24",
+      "start": "15:00",
+      "end": "15:30",
+      "name": "Check in - 19 St Samantha Lane",
+      "lat": -45.0254,
+      "lon": 168.68708,
+      "indoor": true,
+      "note": "Check-in opens 15:00. Bags live in the car until then.",
+      "soft": false
+    },
+    {
+      "date": "2026-08-24",
+      "start": "18:30",
+      "end": "20:00",
+      "track": "everyone",
+      "name": "Dinner",
+      "indoor": true,
+      "weather_sensitive": false,
+      "link_to": "#eat",
+      "link_label": "Food & drink list",
+      "soft": true,
+      "bare": true
+    },
+    {
+      "start": "08:35",
+      "end": "09:35",
+      "name": "Arrowtown - main street and coffee",
+      "lat": -44.9406,
+      "lon": 168.8351,
+      "maps_query": "Arrowtown, New Zealand",
+      "indoor": false,
+      "weather_sensitive": false,
+      "price": "coffee NZ$6-8",
+      "price_nzd": [
+        6,
+        15
+      ],
+      "url": "https://www.arrowtown.com/",
+      "desc": "Twenty minutes out. Walk the restored 1860s gold-rush main street, then Wolf Coffee Roasters for the flat white before the climb.",
+      "note": "Wolf Coffee Roasters is the pick here - it is on your own list. Coronet Peak is 20 minutes up the hill from here if you want the snow without the lift pass.",
+      "date": "2026-08-25",
+      "track": "alt-tue",
+      "soft": true
+    },
+    {
+      "start": "08:35",
+      "end": "09:35",
+      "name": "Arrowtown - main street and coffee",
+      "lat": -44.9406,
+      "lon": 168.8351,
+      "maps_query": "Arrowtown, New Zealand",
+      "indoor": false,
+      "weather_sensitive": false,
+      "price": "coffee NZ$6-8",
+      "price_nzd": [
+        6,
+        15
+      ],
+      "url": "https://www.arrowtown.com/",
+      "desc": "Twenty minutes out. Walk the restored 1860s gold-rush main street, then Wolf Coffee Roasters for the flat white before the climb.",
+      "note": "Wolf Coffee Roasters is the pick here - it is on your own list.",
+      "date": "2026-08-25",
+      "track": "non-skiers",
+      "soft": true
+    },
+    {
+      "start": "09:56",
+      "end": "10:16",
+      "name": "Crown Range Summit Lookout",
+      "lat": -44.99251,
+      "lon": 168.93852,
+      "maps_query": "Crown Range Summit Lookout",
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "url": "https://www.journeys.nzta.govt.nz/",
+      "desc": "The big viewpoint of the drive, 1,076 m up on the highest sealed road in New Zealand. Twenty minutes out of the car for the view back down the Wakatipu basin.",
+      "note": "Snow and ice are normal here in late August - check NZTA live road conditions before you set off.",
+      "date": "2026-08-25",
+      "track": "alt-tue",
+      "soft": true
+    },
+    {
+      "start": "09:56",
+      "end": "10:16",
+      "name": "Crown Range Summit Lookout",
+      "lat": -44.99251,
+      "lon": 168.93852,
+      "maps_query": "Crown Range Summit Lookout",
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "url": "https://www.journeys.nzta.govt.nz/",
+      "desc": "The big viewpoint of the drive, 1,076 m up on the highest sealed road in New Zealand. Twenty minutes out of the car for the view back down the Wakatipu basin.",
+      "note": "Snow and ice are normal here in late August - check NZTA live road conditions before you set off.",
+      "date": "2026-08-25",
+      "track": "non-skiers",
+      "soft": true
+    },
+    {
+      "start": "11:15",
+      "end": "12:35",
+      "name": "Wanaka - lunch by the lake",
+      "lat": -44.69424,
+      "lon": 169.13738,
+      "maps_query": "Scroggin Coffee and Eatery, Wanaka",
+      "indoor": true,
+      "weather_sensitive": false,
+      "price": "NZ$25-45 pp",
+      "price_nzd": [
+        25,
+        45
+      ],
+      "url": "https://scroggin.co.nz/",
+      "desc": "Down off the range to the Wanaka lakefront. Scroggin is the one from your own research - the tiramisu danish - and it is a minute from the water.",
+      "note": "The far end of the loop. Take the hour here; everything after this is shorter.",
+      "date": "2026-08-25",
+      "track": "alt-tue",
+      "soft": true
+    },
+    {
+      "start": "11:15",
+      "end": "12:35",
+      "name": "Wanaka - lunch by the lake",
+      "lat": -44.69424,
+      "lon": 169.13738,
+      "maps_query": "Scroggin Coffee and Eatery, Wanaka",
+      "indoor": true,
+      "weather_sensitive": false,
+      "price": "NZ$25-45 pp",
+      "price_nzd": [
+        25,
+        45
+      ],
+      "url": "https://scroggin.co.nz/",
+      "desc": "Down off the range to the Wanaka lakefront. Scroggin is the one from your own research - the tiramisu danish - and it is a minute from the water.",
+      "note": "The far end of the loop. Take the hour here; everything after this is shorter.",
+      "date": "2026-08-25",
+      "track": "non-skiers",
+      "soft": true
+    },
+    {
+      "date": "2026-08-25",
+      "start": "12:30",
+      "end": "16:00",
+      "track": "skiers",
+      "name": "Coronet Peak - afternoon pass (12:30-16:00)",
+      "geocode_as": "Coronet Peak, Queenstown, New Zealand",
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "Afternoon pass ~NZ$95-135 + rental NZ$65 + outerwear NZ$45",
+      "price_nzd": [
+        205,
+        245
+      ],
+      "url": "https://shop.coronetpeak.co.nz/shop/product/60/afternoon",
+      "note": "Be at the base by 12:00 for gear. Ski hours on the 25th are dry (0.1 mm) - the 10 mm falls overnight. Freezing level sits above the summit, so it will be soft rather than icy.",
+      "soft": false
+    },
+    {
+      "start": "13:05",
+      "end": "13:20",
+      "name": "The Neck - twin-lake viewpoint",
+      "lat": -44.43652,
+      "lon": 169.19175,
+      "maps_query": "The Neck, Lake Hawea, New Zealand",
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "url": "https://www.lakewanaka.co.nz/",
+      "desc": "The isthmus where Lake Hawea and Lake Wanaka sit side by side, one on each side of the road. A fifteen-minute stop for the photograph and back in the car.",
+      "note": "Thirty minutes north of Wanaka, and you come back through Wanaka afterwards - this is the one to drop if the day is running late.",
+      "date": "2026-08-25",
+      "track": "alt-tue",
+      "soft": true
+    },
+    {
+      "start": "13:05",
+      "end": "13:20",
+      "name": "The Neck - twin-lake viewpoint",
+      "lat": -44.43652,
+      "lon": 169.19175,
+      "maps_query": "The Neck, Lake Hawea, New Zealand",
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "url": "https://www.lakewanaka.co.nz/",
+      "desc": "The isthmus where Lake Hawea and Lake Wanaka sit side by side, one on each side of the road. A fifteen-minute stop for the photograph and back in the car.",
+      "note": "Thirty minutes north of Wanaka, and you come back through Wanaka afterwards - this is the one to drop if the day is running late.",
+      "date": "2026-08-25",
+      "track": "non-skiers",
+      "soft": true
+    },
+    {
+      "start": "14:31",
+      "end": "15:10",
+      "name": "Cromwell Old Town - heritage precinct",
+      "lat": -45.04913,
+      "lon": 169.2066,
+      "maps_query": "Cromwell Heritage Precinct",
+      "indoor": false,
+      "weather_sensitive": false,
+      "price": "NZ$10-25 pp",
+      "price_nzd": [
+        10,
+        25
+      ],
+      "url": "https://www.cromwellheritageprecinct.co.nz/businesses/",
+      "desc": "Restored stone and timber buildings on the edge of Lake Dunstan, the last piece of the old town saved before the valley was flooded. Grain & Seed Cafe (09:00-16:00, seven days) is in the precinct, and the Jones Family Fruit Stall is on the way in.",
+      "note": "Late August is out of stone-fruit season - the roadside stalls have apples, preserves and their famous ice cream rather than apricots.",
+      "date": "2026-08-25",
+      "track": "alt-tue",
+      "soft": true
+    },
+    {
+      "start": "14:31",
+      "end": "15:10",
+      "name": "Cromwell Old Town - heritage precinct",
+      "lat": -45.04913,
+      "lon": 169.2066,
+      "maps_query": "Cromwell Heritage Precinct",
+      "indoor": false,
+      "weather_sensitive": false,
+      "price": "NZ$10-25 pp",
+      "price_nzd": [
+        10,
+        25
+      ],
+      "url": "https://www.cromwellheritageprecinct.co.nz/businesses/",
+      "desc": "Restored stone and timber buildings on the edge of Lake Dunstan, the last piece of the old town saved before the valley was flooded. Grain & Seed Cafe (09:00-16:00, seven days) is in the precinct, and the Jones Family Fruit Stall is on the way in.",
+      "note": "Late August is out of stone-fruit season - the roadside stalls have apples, preserves and their famous ice cream rather than apricots.",
+      "date": "2026-08-25",
+      "track": "non-skiers",
+      "soft": true
+    },
+    {
+      "date": "2026-08-25",
+      "start": "18:00",
+      "end": "20:00",
+      "track": "duo-evening",
+      "name": "Dinner at Rata",
+      "lat": -45.0325,
+      "lon": 168.6613,
+      "maps_query": "Rata Queenstown",
+      "indoor": true,
+      "weather_sensitive": false,
+      "price": "NZ$120-180 pp (est)",
+      "price_nzd": [
+        120,
+        180
+      ],
+      "url": "https://www.ratarestaurant.com/menu",
+      "note": "Comfortable after a 16:00 finish: off the mountain by 16:30, back at the house by 17:00, in town for 18:00. Book ahead - Rata fills.",
+      "soft": false
+    },
+    {
+      "date": "2026-08-26",
+      "start": "09:00",
+      "end": "09:45",
+      "track": "five-wed",
+      "name": "Check out - bags in the car",
+      "lat": -45.0254,
+      "lon": 168.68708,
+      "indoor": true,
+      "weather_sensitive": false,
+      "note": "Check-out is 10:00. Load everything for the whole day - you are not coming back to the house. No rush before that.",
+      "soft": true
+    },
+    {
+      "date": "2026-08-26",
+      "start": "10:20",
+      "end": "10:45",
+      "track": "five-wed",
+      "name": "Bennetts Bluff Lookout",
+      "lat": -45.02792,
+      "lon": 168.44093,
+      "maps_query": "Bennetts Bluff Lookout",
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "free",
+      "price_nzd": [
+        0,
+        0
+      ],
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/glenorchy-area/things-to-do/bennetts-bluff-view-point-walk/",
+      "desc": "Halfway along the Glenorchy road. A 630 m sealed track, about 15 minutes return, up to the view over Lake Wakatipu and the Humboldt Mountains.",
+      "note": "Signposted from the road, small carpark. Heavy rain is forecast - if the cloud is down on the lake there is no view to walk up to, and the road is prone to slips when it rains this hard. Check QLDC road status before you commit to the drive.",
+      "soft": true
+    },
+    {
+      "date": "2026-08-26",
+      "start": "10:30",
+      "end": "12:00",
+      "track": "duo-wed",
+      "name": "The Bathhouse Spa - 35 Brecon St",
+      "lat": -45.0313,
+      "lon": 168.658,
+      "maps_query": "The Bathhouse Queenstown Brecon Street",
+      "indoor": true,
+      "weather_sensitive": false,
+      "price": "90 min, ~NZ$200 for two",
+      "price_nzd": [
+        79,
+        119
+      ],
+      "url": "https://thebathhousegroup.com/queenstown/",
+      "note": "Check-out is 10:00 and this is 10:30 - bags in the car before you go, you are not coming back to the house. BOOK AHEAD, no walk-ins. 90 minutes: 38, 34 and 12 degree pools, Finnish sauna, steam room, tea lounge. Out by 12:00.",
+      "soft": false
+    },
+    {
+      "date": "2026-08-26",
+      "start": "11:15",
+      "end": "12:05",
+      "track": "five-wed",
+      "name": "Glenorchy - coffee at Mrs Woolly's and the red boatshed",
+      "lat": -44.84975,
+      "lon": 168.3852,
+      "indoor": false,
+      "weather_sensitive": true,
+      "price": "coffee and a pie",
+      "price_nzd": [
+        10,
+        25
+      ],
+      "url": "https://www.glenorchyinfocentre.co.nz/",
+      "note": "About an hour back to town from here. Somewhere warm and indoors is the point of this stop today.",
+      "soft": true
+    },
+    {
+      "date": "2026-08-26",
+      "start": "12:30",
+      "end": "13:00",
+      "track": "duo-wed",
+      "name": "Fergbaker - pastries for the flight",
+      "lat": -45.03174,
+      "lon": 168.65946,
+      "maps_query": "Fergbaker Queenstown",
+      "indoor": true,
+      "weather_sensitive": false,
+      "price": "NZ$8-15 pp",
+      "price_nzd": [
+        8,
+        15
+      ],
+      "soft": true,
+      "url": "https://fergburger.com/",
+      "desc": "Next door to Fergburger and open from early. Pies, danishes and loaves that travel - the easiest thing to carry back to Auckland.",
+      "note": "Optional, and it is five minutes from the house. Skip it if the day is running late."
+    },
+    {
+      "date": "2026-08-26",
+      "start": "13:20",
+      "end": "13:50",
+      "track": "five-wed",
+      "name": "Fergbaker - pastries for the flight",
+      "lat": -45.03174,
+      "lon": 168.65946,
+      "maps_query": "Fergbaker Queenstown",
+      "indoor": true,
+      "weather_sensitive": false,
+      "price": "NZ$8-15 pp",
+      "price_nzd": [
+        8,
+        15
+      ],
+      "soft": true,
+      "url": "https://fergburger.com/",
+      "desc": "Next door to Fergburger and open from early. Pies, danishes and loaves that travel - the easiest thing to carry back to Auckland.",
+      "note": "Optional, and it is five minutes from the house. Skip it if the day is running late."
+    },
+    {
+      "date": "2026-08-26",
+      "start": "15:45",
+      "end": "17:30",
+      "name": "Return the rental car, then fly out (17:30 departure)",
+      "lat": -45.0193,
+      "lon": 168.74344,
+      "indoor": true,
+      "terminal": true,
+      "note": "Both cars are booked back at 17:00, but the flight is 17:30 - do NOT use that slot. Return by 15:45, allowing for the shuttle back from Brookes Road. Snow is forecast this morning; leave margin.",
+      "soft": false
+    }
+  ],
+  "notes": "Mon 24 - Wed 26 Aug 2026, party of 7. JQ295 lands 10:10 Mon. TUE: skiers (Pawarid, Wannisa, Pheeraphat) take the Coronet afternoon pass 12:30-16:00; the rest go to Arrowtown + Ayrburn with Pracha driving; Pawarid + Ji Yeon have the Bathhouse Spa at 17:15 then dinner. Onsen and Kingpin dropped - most of the group has done Onsen. WED: Glenorchy road trip for all seven, back for the 17:30 flight (car returned 15:45). Ji Yeon skiing is still undecided.",
+  "day_preferences": {},
+  "groups": {
+    "everyone": {
+      "label": "All seven of us",
+      "size": 7
+    },
+    "skiers": {
+      "label": "Pawarid, Wannisa, Pheeraphat",
+      "size": 3
+    },
+    "non-skiers": {
+      "label": "Budsaba, Sorada, Ji Yeon, Pracha",
+      "size": 4
+    },
+    "duo": {
+      "label": "Pawarid + Ji Yeon",
+      "size": 2
+    },
+    "duo-evening": {
+      "label": "Pawarid + Ji Yeon",
+      "size": 2
+    },
+    "everyone-wed": {
+      "label": "All seven of us",
+      "size": 7
+    },
+    "duo-wed": {
+      "label": "Pawarid + Ji Yeon",
+      "size": 2
+    },
+    "five-wed": {
+      "label": "Budsaba, Wannisa, Pheeraphat, Sorada, Pracha",
+      "size": 5
+    },
+    "alt-tue": {
+      "label": "Pawarid, Wannisa, Pheeraphat",
+      "size": 3
+    }
+  },
+  "tracks": {
+    "2026-08-24": [
+      {
+        "group": "everyone",
+        "primary": true,
+        "note": "Arrival day - everyone together.",
+        "lineages": [
+          "you",
+          "partner",
+          "others"
+        ],
+        "members": [
+          "pawarid",
+          "wannisa",
+          "pheeraphat",
+          "jiyeon",
+          "budsaba",
+          "sorada",
+          "pracha"
+        ],
+        "choices": {
+          "title": "Late afternoon - pick one",
+          "note": "Sunset is 18:07 and Monday is the driest evening of the three. Dinner is at 18:00 either way.",
+          "items": [
+            {
+              "name": "Bob's Cove",
+              "why": "15 km west on the Glenorchy road, a 45-60 min loop track to a clear-water cove and an old lime kiln. Twenty minutes each way, so it needs an early start off check-in.",
+              "cost": "free",
+              "links": [
+                [
+                  "Queenstown sightseeing",
+                  "https://www.queenstownnz.co.nz/things-to-do/sightseeing/"
+                ]
+              ]
+            },
+            {
+              "name": "Sunset in town",
+              "why": "Queenstown Gardens and the lakefront, five minutes from the house. No drive, no rush, and everyone has just flown in.",
+              "cost": "free",
+              "links": []
+            }
+          ],
+          "at": "15:45"
+        },
+        "title": "Arrival, the gondola and the lake",
+        "no_fill": true
+      }
+    ],
+    "2026-08-25": [
+      {
+        "group": "skiers",
+        "primary": true,
+        "prefer": "local-snow",
+        "lineages": [
+          "you"
+        ],
+        "members": [
+          "pawarid",
+          "wannisa",
+          "pheeraphat"
+        ],
+        "window": [
+          "08:30",
+          "17:00"
+        ],
+        "note": "One of two ways to spend Tuesday - the other is on the next page, and it is a genuine choice, not just a wet-weather fallback. Afternoon pass 12:30-16:00 (NZ$135 + NZ$65 ski or board rental + NZ$45 jacket and trousers), morning free. Coronet Peak closes in high wind or heavy snow, so check the mountain report at breakfast - if it is shut, take the loop instead.",
+        "title": "Ski afternoon at Coronet Peak"
+      },
+      {
+        "group": "alt-tue",
+        "alternative": true,
+        "lineages": [
+          "you"
+        ],
+        "members": [
+          "pawarid",
+          "wannisa",
+          "pheeraphat"
+        ],
+        "window": [
+          "08:15",
+          "16:30"
+        ],
+        "no_fill": true,
+        "title": "Or instead - Wanaka and the Crown Range loop",
+        "note": "The other way to spend Tuesday. Same day, not an extra one - you do this or the mountain, not both. About 4 hours of driving with a real stop every 30 to 45 minutes, back around 16:10. If what you wanted was the snow rather than the skiing, Coronet Peak is 20 minutes off this route at Arrowtown: the Peak Gondola Pass is NZ$39 return, and there is a snowplay and toboggan area and Heidi's Hut for lunch by the fire."
+      },
+      {
+        "group": "non-skiers",
+        "lineages": [
+          "partner"
+        ],
+        "members": [
+          "pracha",
+          "budsaba",
+          "sorada",
+          "jiyeon"
+        ],
+        "window": [
+          "08:15",
+          "16:30"
+        ],
+        "note": "A full day out - about 4 hours of driving, but no leg runs long and there is a real stop every 30 to 45 minutes. Times below are a guide, not a schedule: the only thing the day has to hit is Rata at 18:00. Leaving around 08:15 puts you back in Queenstown about 16:10, with room to spare. Check the Crown Range pass before you go - highest sealed road in the country, and it can want chains in late August.",
+        "title": "Wanaka and the Crown Range loop",
+        "no_fill": true
+      },
+      {
+        "group": "duo-evening",
+        "lineages": [
+          "you",
+          "partner"
+        ],
+        "members": [
+          "pawarid",
+          "jiyeon"
+        ],
+        "window": [
+          "17:30",
+          "20:30"
+        ],
+        "note": "Dinner at Rata, 18:00. Enough time after a 16:00 finish on the mountain.",
+        "title": "Dinner at Rata"
+      }
+    ],
+    "2026-08-26": [
+      {
+        "group": "duo-wed",
+        "primary": true,
+        "prefer": "relax",
+        "lineages": [
+          "you",
+          "partner"
+        ],
+        "members": [
+          "pawarid",
+          "jiyeon"
+        ],
+        "window": [
+          "09:30",
+          "15:45"
+        ],
+        "note": "Bathhouse at 10:30 for 90 minutes. Nothing scheduled after that - lunch from the food list, and Fergbaker if you want pastries for the flight. Car back at 15:45.",
+        "title": "Bathhouse morning, then home",
+        "no_fill": true
+      },
+      {
+        "group": "five-wed",
+        "lineages": [
+          "others"
+        ],
+        "members": [
+          "pracha",
+          "budsaba",
+          "wannisa",
+          "pheeraphat",
+          "sorada"
+        ],
+        "ignore_weather": true,
+        "window": [
+          "09:00",
+          "15:45"
+        ],
+        "note": "No need to be up early - check-out is 10:00 and the only hard deadline is the car back at 15:45. Load the car, head out when everyone is ready, and the Glenorchy round trip takes about three and a half hours at a relaxed pace. That still leaves a couple of hours in town afterwards.",
+        "title": "Glenorchy Road morning",
+        "no_fill": true
+      }
+    ]
+  },
+  "people": [
+    {
+      "key": "pawarid",
+      "name": "Pawarid Tupmongkol",
+      "short": "Pawarid",
+      "seat": "25A",
+      "is_you": true,
+      "roles": [
+        "organiser",
+        "driver",
+        "skier"
+      ],
+      "drives": "primary",
+      "skis": true,
+      "note": "Driver of car 1. Partner of Ji Yeon."
+    },
+    {
+      "key": "jiyeon",
+      "name": "Ji Yeon Ha",
+      "short": "Ji Yeon",
+      "seat": "25B",
+      "roles": [
+        "partner"
+      ],
+      "drives": "no",
+      "skis": "undecided",
+      "partner_of": "pawarid",
+      "note": "Pawarid's partner. Bathhouse on the Wednesday morning.",
+      "hide_roles_on_cover": true
+    },
+    {
+      "key": "pracha",
+      "name": "Pracha Tupmongkol",
+      "short": "Pracha",
+      "seat": "25C",
+      "roles": [
+        "organiser",
+        "backup driver"
+      ],
+      "drives": "secondary",
+      "skis": false,
+      "note": "Secondary driver for BOTH cars - must be on the rental agreement at the desk. Not skiing."
+    },
+    {
+      "key": "budsaba",
+      "name": "Budsaba Mongkoldee",
+      "short": "Budsaba",
+      "seat": "25D",
+      "roles": [],
+      "drives": "no",
+      "skis": false
+    },
+    {
+      "key": "wannisa",
+      "name": "Wannisa Singkhot",
+      "short": "Wannisa",
+      "seat": "25E",
+      "roles": [
+        "skier"
+      ],
+      "drives": "no",
+      "skis": true
+    },
+    {
+      "key": "pheeraphat",
+      "name": "Pheeraphat Luathi",
+      "short": "Pheeraphat",
+      "seat": "25F",
+      "roles": [
+        "driver",
+        "skier"
+      ],
+      "drives": "primary",
+      "skis": true,
+      "note": "Driver of car 2."
+    },
+    {
+      "key": "sorada",
+      "name": "Sorada Glinjugorn",
+      "short": "Sorada",
+      "seat": "26A",
+      "roles": [],
+      "drives": "no",
+      "skis": false
+    }
+  ],
+  "transport_note": "Two cars. Pawarid drives one, Pheeraphat the other; Pracha is named as secondary driver on both. Put all three on the rental agreement at the desk - adding a driver afterwards is a phone call and a fee.",
+  "dining_only_mine": false,
+  "ideas": [
+    {
+      "name": "Nine holes, or a bucket at the range",
+      "why": "Half a day rather than a full one, and Jack's Point is the spectacular option at NZ$275 for 18. Queenstown Golf Club on the Kelvin Heights peninsula is the easy nine; Arrowtown Golf Club is the cheap and cheerful one.",
+      "cost": "9 holes ~NZ$40-70; Jack's Point 18 holes NZ$275",
+      "links": [
+        [
+          "Queenstown Golf Club",
+          "https://www.queenstowngolf.co.nz/"
+        ],
+        [
+          "Arrowtown Golf Club",
+          "https://arrowtowngolf.co.nz/"
+        ],
+        [
+          "Jack's Point",
+          "https://www.jackspoint.com/golf"
+        ],
+        [
+          "All Queenstown golf",
+          "https://www.queenstownnz.co.nz/things-to-do/golf/"
+        ]
+      ]
+    },
+    {
+      "name": "The Devil's Staircase drive",
+      "why": "SH6 south along the lake toward Kingston - the road is cut into the cliff above Lake Wakatipu and the pull-offs are the point. About 40 min each way to Kingston. Check road conditions first in winter; it is exposed and it ices.",
+      "cost": "free, fuel only",
+      "links": [
+        [
+          "Queenstown sightseeing",
+          "https://www.queenstownnz.co.nz/things-to-do/sightseeing/"
+        ],
+        [
+          "Live road conditions (NZTA)",
+          "https://www.journeys.nzta.govt.nz/"
+        ]
+      ]
+    },
+    {
+      "name": "Queenstown - Arrowtown - Wanaka loop over the Crown Range",
+      "why": "The big one: the Crown Range is the highest sealed road in New Zealand, and the loop takes 4-6 hours with stops. In late August it can require chains and it closes in snow - check before committing, and have the Kawarau Gorge as the flat-road alternative back.",
+      "cost": "free, fuel only",
+      "links": [
+        [
+          "Arrowtown",
+          "https://www.arrowtown.com/"
+        ],
+        [
+          "Lake Wanaka",
+          "https://www.lakewanaka.co.nz/"
+        ],
+        [
+          "Live road conditions (NZTA)",
+          "https://www.journeys.nzta.govt.nz/"
+        ]
+      ]
+    },
+    {
+      "name": "Gibbston wine valley - cheese and wine",
+      "why": "Twenty-five minutes out, all indoors, and the underground wine cave is the best wet-weather hour in the region. Pairs with the Kawarau bungy bridge next door if anyone wants to watch rather than jump.",
+      "cost": "cave tour & tasting ~NZ$25-55 pp",
+      "links": [
+        [
+          "Gibbston Valley",
+          "https://www.gibbstonvalley.com/"
+        ],
+        [
+          "Ayrburn",
+          "https://www.ayrburn.com/"
+        ]
+      ]
+    }
+  ],
+  "dining_full_areas": [
+    "Queenstown",
+    "Frankton"
+  ],
+  "pdf_hide_cost": true,
+  "packing_exclude_sections": [
+    "Basics",
+    "Documents and admin"
+  ],
+  "packing_exclude": [
+    "international driving permit",
+    "agree your driver",
+    "daypack",
+    "flip-flops",
+    "carry bottles home",
+    "something to read",
+    "second pair of shoes",
+    "umbrella",
+    "dry bag",
+    "over-trousers"
+  ],
+  "ticket_rules": [
+    {
+      "match": "car-",
+      "audience": "drivers"
+    },
+    {
+      "match": "accommodation-booking",
+      "audience": "organisers"
+    },
+    {
+      "match": "shuttle",
+      "audience": "everyone"
+    }
+  ],
+  "ticket_notes": [
+    {
+      "match": "shuttle",
+      "title": "Yes Rentals - what to actually do",
+      "blocks": [
+        {
+          "heading": "On landing",
+          "lines": [
+            "Get your bags first, then call +64 3 420 2878 and say you are ready.",
+            "Shuttle takes 10-15 min. Exit DOOR D to the Shuttle Transfer Area, outside the Air New Zealand check-in.",
+            "Look for the WHITE Yes Rentals van and signal the driver."
+          ]
+        },
+        {
+          "heading": "Have in hand - physical originals, photos are refused",
+          "lines": [
+            "Full driver's licence in English. Learner and restricted are not accepted.",
+            "Passport - required because the licences are not New Zealand issued.",
+            "The credit card the booking was made on, in the hirer's name.",
+            "Bond: NZ$0. Zero Risk is on both bookings, so there is no $250 hold."
+          ]
+        },
+        {
+          "heading": "The times that cost money",
+          "lines": [
+            "Reception 08:00-18:00. Last FREE shuttle, either direction, is 17:30.",
+            "Outside that it is NZ$45 per transfer and non-refundable.",
+            "Your flight is 17:30 Wednesday, so the car must be back well before - the plan has you dropping at 15:45."
+          ]
+        },
+        {
+          "heading": "Dropping off - 43 Brookes Road, Frankton",
+          "lines": [
+            "Refuel to the level you collected it at or it is NZ$25. Nearest pump: Pak'nSave Fuel, 302 Hawthorne Drive, Frankton.",
+            "Leave it tidy. Hand the keys over - about a 2-minute check.",
+            "Ask for the shuttle back to the airport; it runs both ways."
+          ]
+        }
+      ]
+    }
+  ]
+}

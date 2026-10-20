@@ -1,0 +1,2109 @@
+[
+{
+"w": "的",
+"t": "",
+"p": "de",
+"pos": "助",
+"en": "of; ~'s (possessive particle); (used after an attribute when it modifies a noun)"
+},
+{
+"w": "了",
+"t": "瞭",
+"p": "le",
+"pos": "助",
+"en": "(completed action marker); (modal particle indicating change of state, situation now); (modal particle intensifying preceding clause)"
+},
+{
+"w": "在",
+"t": "",
+"p": "zài",
+"pos": "动、介、副",
+"en": "to exist; to be alive; (of sb or sth) to be (located) at"
+},
+{
+"w": "是",
+"t": "昰",
+"p": "shì",
+"pos": "动",
+"en": "to be (followed by substantives only); correct; right"
+},
+{
+"w": "我",
+"t": "",
+"p": "wǒ",
+"pos": "代",
+"en": "I; me; my"
+},
+{
+"w": "和",
+"t": "龢",
+"p": "hé",
+"pos": "介、连",
+"en": "old variant of 和[he2]; (joining two nouns) and; together with"
+},
+{
+"w": "有",
+"t": "",
+"p": "yǒu",
+"pos": "动",
+"en": "to have; there is; (bound form) having"
+},
+{
+"w": "你",
+"t": "妳",
+"p": "nǐ",
+"pos": "代",
+"en": "you (informal, as opposed to courteous 您[nin2]); you (Note: In Taiwan, 妳 is used to address females, but in mainland China, it is not commonly used. Instead, 你 is used to address both males and females.)"
+},
+{
+"w": "个",
+"t": "箇",
+"p": "gè",
+"pos": "量",
+"en": "used in 自個兒|自个儿[zi4 ge3 r5]"
+},
+{
+"w": "也",
+"t": "",
+"p": "yě",
+"pos": "副",
+"en": "surname Ye"
+},
+{
+"w": "这",
+"t": "這",
+"p": "zhè",
+"pos": "代",
+"en": "(pronoun) this; these; (bound form) this"
+},
+{
+"w": "不",
+"t": "",
+"p": "bù",
+"pos": "副",
+"en": "no; not so; (bound form) not"
+},
+{
+"w": "他",
+"t": "",
+"p": "tā",
+"pos": "代",
+"en": "(third-person singular) (since the early 20th century, usu. male) he; him; his"
+},
+{
+"w": "上",
+"t": "",
+"p": "shàng",
+"pos": "名、动",
+"en": "used in 上聲|上声[shang3 sheng1]"
+},
+{
+"w": "人",
+"t": "",
+"p": "rén",
+"pos": "名",
+"en": "person; people; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "年",
+"t": "秊",
+"p": "nián",
+"pos": "名、量",
+"en": "surname Nian"
+},
+{
+"w": "对",
+"t": "對",
+"p": "duì",
+"pos": "形、介、（动、量）",
+"en": "right; correct; towards"
+},
+{
+"w": "说",
+"t": "説",
+"p": "shuō",
+"pos": "动",
+"en": "to persuade"
+},
+{
+"w": "都",
+"t": "",
+"p": "dōu",
+"pos": "副",
+"en": "surname Du"
+},
+{
+"w": "要",
+"t": "",
+"p": "yào",
+"pos": "动",
+"en": "(bound form) to demand; to coerce"
+},
+{
+"w": "到",
+"t": "",
+"p": "dào",
+"pos": "动",
+"en": "to reach; to arrive; to leave for"
+},
+{
+"w": "日",
+"t": "",
+"p": "rì",
+"pos": "量、（名）",
+"en": "abbr. for 日本[Ri4 ben3], Japan"
+},
+{
+"w": "我们",
+"t": "我們",
+"p": "wǒmen",
+"pos": "代",
+"en": "we; us; ourselves"
+},
+{
+"w": "好",
+"t": "",
+"p": "hǎo",
+"pos": "形、（副）、（动）",
+"en": "good; appropriate; proper"
+},
+{
+"w": "月",
+"t": "",
+"p": "yuè",
+"pos": "名",
+"en": "moon; month; monthly"
+},
+{
+"w": "会",
+"t": "會",
+"p": "huì",
+"pos": "动",
+"en": "can; to have the skill; to know how to"
+},
+{
+"w": "大",
+"t": "",
+"p": "dà",
+"pos": "形",
+"en": "big; large; great"
+},
+{
+"w": "来",
+"t": "來",
+"p": "lái",
+"pos": "动",
+"en": "to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回來|回来[hui2 lai5])"
+},
+{
+"w": "还",
+"t": "還",
+"p": "hái",
+"pos": "副",
+"en": "surname Huan"
+},
+{
+"w": "后",
+"t": "後",
+"p": "hòu",
+"pos": "名",
+"en": "surname Hou"
+},
+{
+"w": "两",
+"t": "兩",
+"p": "liǎng",
+"pos": "数",
+"en": "two; both; some"
+},
+{
+"w": "没有",
+"t": "沒有",
+"p": "méiyǒu",
+"pos": "动、副",
+"en": "haven't; hasn't; doesn't exist"
+},
+{
+"w": "去",
+"t": "",
+"p": "qù",
+"pos": "动",
+"en": "to go; to go to (a place); (of a time etc) last"
+},
+{
+"w": "很",
+"t": "",
+"p": "hěn",
+"pos": "副",
+"en": "very; quite; (also, often used before an adjective without intensifying its meaning, i.e. as a meaningless syntactic element)"
+},
+{
+"w": "给",
+"t": "給",
+"p": "gěi",
+"pos": "动、（介）",
+"en": "to; for; for the benefit of"
+},
+{
+"w": "中国",
+"t": "中國",
+"p": "Zhōngguó",
+"pos": "名",
+"en": "China"
+},
+{
+"w": "元",
+"t": "",
+"p": "yuán",
+"pos": "量",
+"en": "surname Yuan; Yuan dynasty (1279–1368)"
+},
+{
+"w": "看",
+"t": "",
+"p": "kàn",
+"pos": "动",
+"en": "to look after; to take care of; to watch"
+},
+{
+"w": "下",
+"t": "",
+"p": "xià",
+"pos": "名、动、量",
+"en": "down; downwards; below"
+},
+{
+"w": "她",
+"t": "",
+"p": "tā",
+"pos": "代",
+"en": "she"
+},
+{
+"w": "可以",
+"t": "",
+"p": "kěyǐ",
+"pos": "动、形",
+"en": "can; may; possible"
+},
+{
+"w": "这个",
+"t": "這個",
+"p": "zhège",
+"pos": "代",
+"en": "(pronoun) this; (adjective) this"
+},
+{
+"w": "能",
+"t": "",
+"p": "néng",
+"pos": "动",
+"en": "surname Neng"
+},
+{
+"w": "他们",
+"t": "他們",
+"p": "tāmen",
+"pos": "代",
+"en": "they; them"
+},
+{
+"w": "做",
+"t": "",
+"p": "zuò",
+"pos": "动",
+"en": "to make; to produce; to write"
+},
+{
+"w": "想",
+"t": "",
+"p": "xiǎng",
+"pos": "动",
+"en": "to think (about); to think of; to devise"
+},
+{
+"w": "那",
+"t": "",
+"p": "nà",
+"pos": "代、（连）",
+"en": "surname Na"
+},
+{
+"w": "新",
+"t": "",
+"p": "xīn",
+"pos": "形",
+"en": "abbr. for Xinjiang 新疆[Xin1 jiang1]; abbr. for Singapore 新加坡[Xin1 jia1 po1]; surname Xin"
+},
+{
+"w": "小",
+"t": "",
+"p": "xiǎo",
+"pos": "形、前缀",
+"en": "small; tiny; few"
+},
+{
+"w": "天",
+"t": "",
+"p": "tiān",
+"pos": "名、量",
+"en": "day; sky; heaven"
+},
+{
+"w": "工作",
+"t": "",
+"p": "gōngzuò",
+"pos": "动、名",
+"en": "to work; (of a machine) to operate; job"
+},
+{
+"w": "里",
+"t": "",
+"p": "lǐ",
+"pos": "名",
+"en": "variant of 裡|里[li3]; lining; interior"
+},
+{
+"w": "前",
+"t": "",
+"p": "qián",
+"pos": "名",
+"en": "front; forward; ahead"
+},
+{
+"w": "公司",
+"t": "",
+"p": "gōngsī",
+"pos": "名",
+"en": "company; firm; corporation"
+},
+{
+"w": "问题",
+"t": "問題",
+"p": "wèntí",
+"pos": "名",
+"en": "question; problem; issue"
+},
+{
+"w": "家",
+"t": "",
+"p": "jiā",
+"pos": "名、量、（后缀）",
+"en": "used in 傢伙|家伙[jia1 huo5] and 傢俱|家俱[jia1 ju4]; home; family"
+},
+{
+"w": "吧",
+"t": "",
+"p": "ba",
+"pos": "助",
+"en": "bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a pipe etc); (onom.) bang"
+},
+{
+"w": "什么",
+"t": "什麼",
+"p": "shénme",
+"pos": "代",
+"en": "what?; something; anything"
+},
+{
+"w": "没",
+"t": "沒",
+"p": "méi",
+"pos": "动、副",
+"en": "(negative prefix for verbs) have not; not"
+},
+{
+"w": "现在",
+"t": "現在",
+"p": "xiànzài",
+"pos": "名",
+"en": "now; at present; currently"
+},
+{
+"w": "真",
+"t": "",
+"p": "zhēn",
+"pos": "副、（形）",
+"en": "really; truly; indeed"
+},
+{
+"w": "本",
+"t": "",
+"p": "běn",
+"pos": "量",
+"en": "(bound form) root; stem; (bound form) origin"
+},
+{
+"w": "太",
+"t": "",
+"p": "tài",
+"pos": "副",
+"en": "highest; greatest; too (much)"
+},
+{
+"w": "再",
+"t": "",
+"p": "zài",
+"pos": "副",
+"en": "again; once more; re-"
+},
+{
+"w": "时间",
+"t": "時間",
+"p": "shíjiān",
+"pos": "名",
+"en": "(concept of) time; (duration of) time; (point in) time"
+},
+{
+"w": "爱",
+"t": "愛",
+"p": "ài",
+"pos": "动",
+"en": "to love; to be fond of; to like"
+},
+{
+"w": "吃",
+"t": "喫",
+"p": "chī",
+"pos": "动",
+"en": "to eat; to consume; to eat at (a cafeteria etc)"
+},
+{
+"w": "时候",
+"t": "時候",
+"p": "shíhou",
+"pos": "名",
+"en": "time; length of time; moment"
+},
+{
+"w": "呢",
+"t": "",
+"p": "ne",
+"pos": "助",
+"en": "particle indicating that a previously asked question is to be applied to the preceding word ('What about ...?', 'And ...?'); particle for inquiring about location ('Where is ...?'); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board ('ok?', 'are you with me?')"
+},
+{
+"w": "只",
+"t": "隻",
+"p": "zhī",
+"pos": "量",
+"en": "variant of 隻|只[zhi1]; grain that has begun to ripen; classifier for birds and certain animals, one of a pair, some utensils, vessels etc"
+},
+{
+"w": "今天",
+"t": "",
+"p": "jīntiān",
+"pos": "名",
+"en": "today; the present time; now"
+},
+{
+"w": "它",
+"t": "牠",
+"p": "tā",
+"pos": "代",
+"en": "it; it (pronoun for an animal)"
+},
+{
+"w": "分",
+"t": "",
+"p": "fēn",
+"pos": "量、（动、名）",
+"en": "to divide; to separate; to distribute"
+},
+{
+"w": "一些",
+"t": "",
+"p": "yìxiē",
+"pos": "数量",
+"en": "some; a few; a little"
+},
+{
+"w": "这些",
+"t": "這些",
+"p": "zhèxiē",
+"pos": "代",
+"en": "these"
+},
+{
+"w": "大家",
+"t": "",
+"p": "dàjiā",
+"pos": "代",
+"en": "everyone; influential family; great expert"
+},
+{
+"w": "吗",
+"t": "嗎",
+"p": "ma",
+"pos": "助",
+"en": "(coll.) what?"
+},
+{
+"w": "几",
+"t": "幾",
+"p": "jǐ",
+"pos": "代、数",
+"en": "small table; almost"
+},
+{
+"w": "事",
+"t": "",
+"p": "shì",
+"pos": "名",
+"en": "matter; thing; item"
+},
+{
+"w": "今年",
+"t": "",
+"p": "jīnnián",
+"pos": "名",
+"en": "this year"
+},
+{
+"w": "喜欢",
+"t": "喜歡",
+"p": "xǐhuan",
+"pos": "动",
+"en": "to like; to be fond of"
+},
+{
+"w": "知道",
+"t": "",
+"p": "zhīdào",
+"pos": "动",
+"en": "to know; to become aware of; also pr. [zhi1dao5]"
+},
+{
+"w": "车",
+"t": "車",
+"p": "chē",
+"pos": "名",
+"en": "surname Che"
+},
+{
+"w": "怎么",
+"t": "怎麽",
+"p": "zěnme",
+"pos": "代",
+"en": "how?; what?; why?"
+},
+{
+"w": "外",
+"t": "",
+"p": "wài",
+"pos": "名",
+"en": "outside; in addition; foreign"
+},
+{
+"w": "谁",
+"t": "誰",
+"p": "shéi/shuí",
+"pos": "代",
+"en": "who; also pr. [shui2]"
+},
+{
+"w": "你们",
+"t": "你們",
+"p": "nǐmen",
+"pos": "代",
+"en": "you (plural)"
+},
+{
+"w": "见",
+"t": "見",
+"p": "jiàn",
+"pos": "动",
+"en": "to see; to meet; to appear (to be sth)"
+},
+{
+"w": "找",
+"t": "",
+"p": "zhǎo",
+"pos": "动",
+"en": "to try to find; to look for; to call on sb"
+},
+{
+"w": "岁",
+"t": "歲",
+"p": "suì",
+"pos": "量",
+"en": "variant of 歲|岁[sui4], year; years old; classifier for years (of age)"
+},
+{
+"w": "水",
+"t": "",
+"p": "shuǐ",
+"pos": "名",
+"en": "surname Shui"
+},
+{
+"w": "非常",
+"t": "",
+"p": "fēicháng",
+"pos": "副",
+"en": "very; really; unusual"
+},
+{
+"w": "买",
+"t": "買",
+"p": "mǎi",
+"pos": "动",
+"en": "to buy; to purchase"
+},
+{
+"w": "开",
+"t": "開",
+"p": "kāi",
+"pos": "动",
+"en": "to open (transitive or intransitive); (of ships, vehicles, troops etc) to start; to turn on"
+},
+{
+"w": "觉得",
+"t": "覺得",
+"p": "juéde",
+"pos": "动",
+"en": "to think that ...; to feel that ...; to feel (uncomfortable etc)"
+},
+{
+"w": "不要",
+"t": "",
+"p": "búyào",
+"pos": "副",
+"en": "don't!; must not"
+},
+{
+"w": "号",
+"t": "號",
+"p": "hào",
+"pos": "名、量",
+"en": "roar; cry; CL:個|个[ge4]"
+},
+{
+"w": "叫",
+"t": "呌",
+"p": "jiào",
+"pos": "动、（介）",
+"en": "to shout; to call; to order"
+},
+{
+"w": "学生",
+"t": "學生",
+"p": "xuéshēng",
+"pos": "名",
+"en": "student; schoolchild"
+},
+{
+"w": "钱",
+"t": "錢",
+"p": "qián",
+"pos": "名",
+"en": "surname Qian"
+},
+{
+"w": "请",
+"t": "請",
+"p": "qǐng",
+"pos": "动",
+"en": "to ask; to invite; please (do sth)"
+},
+{
+"w": "问",
+"t": "問",
+"p": "wèn",
+"pos": "动",
+"en": "to ask; to inquire"
+},
+{
+"w": "孩子",
+"t": "",
+"p": "háizi",
+"pos": "名",
+"en": "child"
+},
+{
+"w": "听",
+"t": "聽",
+"p": "tīng",
+"pos": "动",
+"en": "smile (archaic)"
+},
+{
+"w": "回",
+"t": "逥",
+"p": "huí",
+"pos": "动、（量）",
+"en": "to circle; to go back; to turn around"
+},
+{
+"w": "女",
+"t": "",
+"p": "nǚ",
+"pos": "形",
+"en": "female; woman; daughter"
+},
+{
+"w": "一下",
+"t": "",
+"p": "yíxià",
+"pos": "数量、（副）",
+"en": "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try); all at once"
+},
+{
+"w": "东西",
+"t": "東西",
+"p": "dōngxi",
+"pos": "名",
+"en": "east and west"
+},
+{
+"w": "正在",
+"t": "",
+"p": "zhèngzài",
+"pos": "副",
+"en": "to be in the process of (doing sth); to be currently ...-ing"
+},
+{
+"w": "这里",
+"t": "這裡",
+"p": "zhèlǐ",
+"pos": "代",
+"en": "variant of 這裡|这里[zhe4 li3]; here"
+},
+{
+"w": "住",
+"t": "",
+"p": "zhù",
+"pos": "动",
+"en": "to live; to dwell; to stay"
+},
+{
+"w": "学习",
+"t": "學習",
+"p": "xuéxí",
+"pos": "动",
+"en": "to learn; to study"
+},
+{
+"w": "件",
+"t": "",
+"p": "jiàn",
+"pos": "量",
+"en": "item; component; classifier for events, things, clothes etc"
+},
+{
+"w": "朋友",
+"t": "",
+"p": "péngyou",
+"pos": "名",
+"en": "friend; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "去年",
+"t": "",
+"p": "qùnián",
+"pos": "名",
+"en": "last year"
+},
+{
+"w": "那个",
+"t": "那個",
+"p": "nàge",
+"pos": "代",
+"en": "that one; that thing; that (as opposed to this)"
+},
+{
+"w": "有些",
+"t": "",
+"p": "yǒuxiē",
+"pos": "代、（副）",
+"en": "some; somewhat"
+},
+{
+"w": "昨天",
+"t": "",
+"p": "zuótiān",
+"pos": "名",
+"en": "yesterday"
+},
+{
+"w": "学校",
+"t": "學校",
+"p": "xuéxiào",
+"pos": "名",
+"en": "school; CL:所[suo3]"
+},
+{
+"w": "写",
+"t": "寫",
+"p": "xiě",
+"pos": "动",
+"en": "to write"
+},
+{
+"w": "少",
+"t": "",
+"p": "shǎo",
+"pos": "形、动",
+"en": "few; less; to lack"
+},
+{
+"w": "国",
+"t": "國",
+"p": "guó",
+"pos": "名",
+"en": "surname Guo"
+},
+{
+"w": "小时",
+"t": "小時",
+"p": "xiǎoshí",
+"pos": "名",
+"en": "hour; CL:個|个[ge4]"
+},
+{
+"w": "您",
+"t": "",
+"p": "nín",
+"pos": "代",
+"en": "you (courteous, as opposed to informal 你[ni3])"
+},
+{
+"w": "那些",
+"t": "",
+"p": "nàxiē",
+"pos": "代",
+"en": "those"
+},
+{
+"w": "电话",
+"t": "電話",
+"p": "diànhuà",
+"pos": "名",
+"en": "telephone; CL:部[bu4]; phone call"
+},
+{
+"w": "睡",
+"t": "",
+"p": "shuì",
+"pos": "动",
+"en": "to sleep; to lie down"
+},
+{
+"w": "学",
+"t": "學",
+"p": "xué",
+"pos": "动",
+"en": "to learn; to study; to imitate"
+},
+{
+"w": "口",
+"t": "",
+"p": "kǒu",
+"pos": "名、量",
+"en": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls"
+},
+{
+"w": "下午",
+"t": "",
+"p": "xiàwǔ",
+"pos": "名",
+"en": "afternoon; CL:個|个[ge4]; p.m."
+},
+{
+"w": "玩",
+"t": "翫",
+"p": "wán",
+"pos": "动",
+"en": "to play; to have fun; to trifle with"
+},
+{
+"w": "明天",
+"t": "",
+"p": "míngtiān",
+"pos": "名",
+"en": "tomorrow"
+},
+{
+"w": "穿",
+"t": "",
+"p": "chuān",
+"pos": "动",
+"en": "to wear; to put on; to dress"
+},
+{
+"w": "喝",
+"t": "",
+"p": "hē",
+"pos": "动",
+"en": "to drink; variant of 嗬[he1]"
+},
+{
+"w": "块",
+"t": "塊",
+"p": "kuài",
+"pos": "量",
+"en": "lump; chunk; piece"
+},
+{
+"w": "早",
+"t": "",
+"p": "zǎo",
+"pos": "形",
+"en": "early; morning; Good morning!"
+},
+{
+"w": "男",
+"t": "",
+"p": "nán",
+"pos": "形",
+"en": "(bound form) male; baron, the lowest of the five ranks of nobility 五等爵位[wu3 deng3 jue2 wei4]"
+},
+{
+"w": "医院",
+"t": "醫院",
+"p": "yīyuàn",
+"pos": "名",
+"en": "hospital; CL:所[suo3],家[jia1],座[zuo4]"
+},
+{
+"w": "分钟",
+"t": "分鐘",
+"p": "fēnzhōng",
+"pos": "量",
+"en": "minute"
+},
+{
+"w": "坐",
+"t": "",
+"p": "zuò",
+"pos": "动",
+"en": "surname Zuo"
+},
+{
+"w": "电影",
+"t": "電影",
+"p": "diànyǐng",
+"pos": "名",
+"en": "movie; film; CL:部[bu4],片[pian4],場|场[chang3]"
+},
+{
+"w": "晚上",
+"t": "",
+"p": "wǎnshang",
+"pos": "名",
+"en": "evening; night; CL:個|个[ge4]"
+},
+{
+"w": "书",
+"t": "書",
+"p": "shū",
+"pos": "名",
+"en": "abbr. for 書經|书经[Shu1 jing1]"
+},
+{
+"w": "认识",
+"t": "認識",
+"p": "rènshi",
+"pos": "动",
+"en": "to know; to recognize; to be familiar with"
+},
+{
+"w": "晚",
+"t": "",
+"p": "wǎn",
+"pos": "形",
+"en": "evening; night; late"
+},
+{
+"w": "字",
+"t": "",
+"p": "zì",
+"pos": "名",
+"en": "letter; symbol; character"
+},
+{
+"w": "边",
+"t": "邊",
+"p": "biān",
+"pos": "名、后缀",
+"en": "side; edge; margin"
+},
+{
+"w": "多少",
+"t": "",
+"p": "duōshao",
+"pos": "代",
+"en": "number; amount; somewhat"
+},
+{
+"w": "店",
+"t": "",
+"p": "diàn",
+"pos": "名",
+"en": "inn; old-style hotel (CL:家[jia1]); (bound form) shop"
+},
+{
+"w": "卖",
+"t": "賣",
+"p": "mài",
+"pos": "动",
+"en": "to sell; to betray; to spare no effort"
+},
+{
+"w": "有的",
+"t": "",
+"p": "yǒude",
+"pos": "代",
+"en": "(there are) some (who are...); some (exist)"
+},
+{
+"w": "老师",
+"t": "老師",
+"p": "lǎoshī",
+"pos": "名",
+"en": "teacher; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "们",
+"t": "們",
+"p": "men",
+"pos": "后缀",
+"en": "plural marker for pronouns, and nouns referring to individuals"
+},
+{
+"w": "冷",
+"t": "",
+"p": "lěng",
+"pos": "形",
+"en": "surname Leng"
+},
+{
+"w": "病",
+"t": "",
+"p": "bìng",
+"pos": "名、动",
+"en": "illness; CL:場|场[chang2]; disease"
+},
+{
+"w": "上午",
+"t": "",
+"p": "shàngwǔ",
+"pos": "名",
+"en": "morning; CL:個|个[ge4]"
+},
+{
+"w": "半",
+"t": "",
+"p": "bàn",
+"pos": "数、（副）",
+"en": "half; semi-; incomplete"
+},
+{
+"w": "歌",
+"t": "謌",
+"p": "gē",
+"pos": "名",
+"en": "song (CL:首[shou3],支[zhi1]); (bound form) to sing; variant of 歌[ge1]"
+},
+{
+"w": "热",
+"t": "熱",
+"p": "rè",
+"pos": "形",
+"en": "to warm up; to heat up; hot (of weather)"
+},
+{
+"w": "妈妈",
+"t": "媽媽",
+"p": "māma",
+"pos": "名",
+"en": "mama; mommy; mother"
+},
+{
+"w": "电视",
+"t": "電視",
+"p": "diànshì",
+"pos": "名",
+"en": "television; TV; CL:臺|台[tai2],部[bu4]"
+},
+{
+"w": "大学",
+"t": "大學",
+"p": "dàxué",
+"pos": "名",
+"en": "the Great Learning, one of the Four Books 四書|四书[Si4 shu1] in Confucianism"
+},
+{
+"w": "哪",
+"t": "",
+"p": "nǎ",
+"pos": "代",
+"en": "how; which"
+},
+{
+"w": "电脑",
+"t": "電腦",
+"p": "diànnǎo",
+"pos": "名",
+"en": "computer; CL:臺|台[tai2]"
+},
+{
+"w": "狗",
+"t": "",
+"p": "gǒu",
+"pos": "名",
+"en": "dog; CL:隻|只[zhi1],條|条[tiao2]"
+},
+{
+"w": "谢谢",
+"t": "謝謝",
+"p": "xièxie",
+"pos": "动",
+"en": "to thank; thanks; thank you"
+},
+{
+"w": "儿子",
+"t": "兒子",
+"p": "érzi",
+"pos": "名",
+"en": "son"
+},
+{
+"w": "些",
+"t": "",
+"p": "xiē",
+"pos": "量",
+"en": "classifier indicating a small amount or small number greater than 1: some, a few, several"
+},
+{
+"w": "先生",
+"t": "",
+"p": "xiānsheng",
+"pos": "名",
+"en": "teacher; gentleman; sir"
+},
+{
+"w": "唱",
+"t": "",
+"p": "chàng",
+"pos": "动",
+"en": "to sing; to call loudly; to chant"
+},
+{
+"w": "睡觉",
+"t": "睡覺",
+"p": "shuìjiào",
+"pos": "动",
+"en": "to go to bed; to sleep"
+},
+{
+"w": "它们",
+"t": "它們",
+"p": "tāmen",
+"pos": "代",
+"en": "they; them"
+},
+{
+"w": "哪里",
+"t": "哪裡",
+"p": "nǎlǐ",
+"pos": "代",
+"en": "where?; somewhere; anywhere"
+},
+{
+"w": "同学",
+"t": "同學",
+"p": "tóngxué",
+"pos": "名",
+"en": "to study at the same school; fellow student; classmate"
+},
+{
+"w": "她们",
+"t": "她們",
+"p": "tāmen",
+"pos": "代",
+"en": "they; them (females)"
+},
+{
+"w": "忙",
+"t": "",
+"p": "máng",
+"pos": "形、动",
+"en": "busy; hurriedly; to hurry"
+},
+{
+"w": "那里",
+"t": "那裡",
+"p": "nàlǐ",
+"pos": "代",
+"en": "there; that place; there"
+},
+{
+"w": "天气",
+"t": "天氣",
+"p": "tiānqì",
+"pos": "名",
+"en": "weather"
+},
+{
+"w": "读",
+"t": "讀",
+"p": "dú",
+"pos": "动",
+"en": "comma; phrase marked by pause"
+},
+{
+"w": "女儿",
+"t": "女兒",
+"p": "nǚ'ér",
+"pos": "名",
+"en": "daughter"
+},
+{
+"w": "说话",
+"t": "說話",
+"p": "shuōhuà",
+"pos": "动",
+"en": "to speak; to say; to talk"
+},
+{
+"w": "名字",
+"t": "",
+"p": "míngzi",
+"pos": "名",
+"en": "name (of a person or thing); CL:個|个[ge4]"
+},
+{
+"w": "医生",
+"t": "醫生",
+"p": "yīshēng",
+"pos": "名",
+"en": "doctor; CL:個|个[ge4],位[wei4],名[ming2]"
+},
+{
+"w": "猫",
+"t": "貓",
+"p": "māo",
+"pos": "名",
+"en": "cat (CL:隻|只[zhi1]); (dialect) to hide oneself; (loanword) (coll.) modem"
+},
+{
+"w": "看见",
+"t": "看見",
+"p": "kànjiàn",
+"pos": "动",
+"en": "to see; to catch sight of"
+},
+{
+"w": "第",
+"t": "",
+"p": "dì",
+"pos": "前缀",
+"en": "(prefix indicating ordinal number, as in 第六[di4 liu4] 'sixth'); (literary) grades in which successful candidates in the imperial examinations were placed; (old) residence of a high official"
+},
+{
+"w": "雪",
+"t": "",
+"p": "xuě",
+"pos": "名",
+"en": "surname Xue"
+},
+{
+"w": "菜",
+"t": "",
+"p": "cài",
+"pos": "名",
+"en": "vegetable; greens (CL:棵[ke1]); dish (of food) (CL:樣|样[yang4],道[dao4],盤|盘[pan2])"
+},
+{
+"w": "飞机",
+"t": "飛機",
+"p": "fēijī",
+"pos": "名",
+"en": "airplane; CL:架[jia4]"
+},
+{
+"w": "漂亮",
+"t": "",
+"p": "piàoliang",
+"pos": "形",
+"en": "pretty; beautiful"
+},
+{
+"w": "早上",
+"t": "",
+"p": "zǎoshang",
+"pos": "名",
+"en": "early morning; CL:個|个[ge4]"
+},
+{
+"w": "饭",
+"t": "飯",
+"p": "fàn",
+"pos": "名",
+"en": "cooked rice; CL:碗[wan3]; meal"
+},
+{
+"w": "明年",
+"t": "",
+"p": "míngnián",
+"pos": "名",
+"en": "next year"
+},
+{
+"w": "高兴",
+"t": "高興",
+"p": "gāoxìng",
+"pos": "形",
+"en": "happy; glad; willing (to do sth)"
+},
+{
+"w": "爸爸",
+"t": "",
+"p": "bàba",
+"pos": "名",
+"en": "(coll.) father; dad; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "休息",
+"t": "",
+"p": "xiūxi",
+"pos": "动",
+"en": "rest; to rest"
+},
+{
+"w": "上班",
+"t": "",
+"p": "shàngbān",
+"pos": "动",
+"en": "to go to work; to be on duty; to start work"
+},
+{
+"w": "课",
+"t": "課",
+"p": "kè",
+"pos": "名",
+"en": "subject; course; CL:門|门[men2]"
+},
+{
+"w": "好看",
+"t": "",
+"p": "hǎokàn",
+"pos": "形",
+"en": "good-looking; nice-looking; (of a movie, book, TV show etc) good"
+},
+{
+"w": "茶",
+"t": "",
+"p": "chá",
+"pos": "名",
+"en": "tea; tea plant; CL:杯[bei1],壺|壶[hu2]"
+},
+{
+"w": "中午",
+"t": "",
+"p": "zhōngwǔ",
+"pos": "名",
+"en": "noon; midday; CL:個|个[ge4]"
+},
+{
+"w": "雨",
+"t": "",
+"p": "yǔ",
+"pos": "名",
+"en": "rain; CL:陣|阵[zhen4],場|场[chang2]"
+},
+{
+"w": "姐姐",
+"t": "",
+"p": "jiějie",
+"pos": "名",
+"en": "older sister; CL:個|个[ge4]"
+},
+{
+"w": "贵",
+"t": "貴",
+"p": "guì",
+"pos": "形",
+"en": "abbr. for Guizhou Province 貴州|贵州[Gui4 zhou1]"
+},
+{
+"w": "一半",
+"t": "",
+"p": "yíbàn",
+"pos": "数",
+"en": "half"
+},
+{
+"w": "家人",
+"t": "",
+"p": "jiārén",
+"pos": "名",
+"en": "family member; (old) servant"
+},
+{
+"w": "打电话",
+"t": "打電話",
+"p": "dǎ diànhuà",
+"pos": "",
+"en": "to make a telephone call"
+},
+{
+"w": "苹果",
+"t": "蘋果",
+"p": "píngguǒ",
+"pos": "名",
+"en": "Apple (American tech company)"
+},
+{
+"w": "大学生",
+"t": "大學生",
+"p": "dàxuéshēng",
+"pos": "名",
+"en": "university student; college student"
+},
+{
+"w": "房间",
+"t": "房間",
+"p": "fángjiān",
+"pos": "名",
+"en": "room; CL:間|间[jian1],個|个[ge4]"
+},
+{
+"w": "喂",
+"t": "餵",
+"p": "wèi",
+"pos": "叹",
+"en": "hello (when answering the phone)"
+},
+{
+"w": "小学",
+"t": "小學",
+"p": "xiǎoxué",
+"pos": "名",
+"en": "elementary school; primary school"
+},
+{
+"w": "哪个",
+"t": "哪個",
+"p": "nǎge",
+"pos": "代",
+"en": "which; who"
+},
+{
+"w": "起床",
+"t": "",
+"p": "qǐchuáng",
+"pos": "动",
+"en": "to get out of bed; to get up"
+},
+{
+"w": "哥哥",
+"t": "",
+"p": "gēge",
+"pos": "名",
+"en": "older brother; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "衣服",
+"t": "",
+"p": "yīfu",
+"pos": "名",
+"en": "clothes; CL:件[jian4],套[tao4]"
+},
+{
+"w": "怎么样",
+"t": "怎麼樣",
+"p": "zěnmeyàng",
+"pos": "代",
+"en": "how?; how about?; how was it?"
+},
+{
+"w": "好吃",
+"t": "",
+"p": "hǎochī",
+"pos": "形",
+"en": "tasty; delicious"
+},
+{
+"w": "便宜",
+"t": "",
+"p": "piányi",
+"pos": "形",
+"en": "convenient"
+},
+{
+"w": "对不起",
+"t": "對不起",
+"p": "duìbuqǐ",
+"pos": "动",
+"en": "I'm sorry; excuse me; I beg your pardon"
+},
+{
+"w": "水果",
+"t": "",
+"p": "shuǐguǒ",
+"pos": "名",
+"en": "fruit; CL:個|个[ge4]"
+},
+{
+"w": "星期",
+"t": "",
+"p": "xīngqī",
+"pos": "名",
+"en": "week; CL:個|个[ge4]; day of the week"
+},
+{
+"w": "读书",
+"t": "讀書",
+"p": "dúshū",
+"pos": "动",
+"en": "to read a book; to study; to attend school"
+},
+{
+"w": "妹妹",
+"t": "",
+"p": "mèimei",
+"pos": "名",
+"en": "younger sister; young woman; CL:個|个[ge4]"
+},
+{
+"w": "中学",
+"t": "中學",
+"p": "zhōngxué",
+"pos": "名",
+"en": "middle school"
+},
+{
+"w": "上课",
+"t": "上課",
+"p": "shàngkè",
+"pos": "动",
+"en": "to go to class; to attend class; to go to teach a class"
+},
+{
+"w": "牛奶",
+"t": "",
+"p": "niúnǎi",
+"pos": "名",
+"en": "cow's milk; CL:瓶[ping2],杯[bei1]"
+},
+{
+"w": "没事",
+"t": "沒事",
+"p": "méishì",
+"pos": "动",
+"en": "it's not important; it's nothing; never mind"
+},
+{
+"w": "你好",
+"t": "",
+"p": "nǐ hǎo",
+"pos": "",
+"en": "hello; hi"
+},
+{
+"w": "中文",
+"t": "",
+"p": "Zhōngwén",
+"pos": "名",
+"en": "Chinese language"
+},
+{
+"w": "哪些",
+"t": "",
+"p": "nǎxiē",
+"pos": "代",
+"en": "which ones?; who?; what?"
+},
+{
+"w": "出租车",
+"t": "出租車",
+"p": "chūzūchē",
+"pos": "名",
+"en": "taxi; (Tw) rental car"
+},
+{
+"w": "下班",
+"t": "",
+"p": "xiàbān",
+"pos": "动",
+"en": "to finish work; to get off work; next service (train, bus etc)"
+},
+{
+"w": "白天",
+"t": "",
+"p": "báitiān",
+"pos": "名",
+"en": "daytime; during the day; day"
+},
+{
+"w": "火车",
+"t": "火車",
+"p": "huǒchē",
+"pos": "名",
+"en": "train; CL:列[lie4],節|节[jie2],班[ban1],趟[tang4]"
+},
+{
+"w": "开车",
+"t": "開車",
+"p": "kāichē",
+"pos": "动",
+"en": "to drive a car (or train etc); (slang) to post sexual content online; to make a sexual joke"
+},
+{
+"w": "上学",
+"t": "上學",
+"p": "shàngxué",
+"pos": "动",
+"en": "to go to school; to attend school"
+},
+{
+"w": "鸡蛋",
+"t": "雞蛋",
+"p": "jīdàn",
+"pos": "名",
+"en": "(chicken) egg; hen's egg; CL:個|个[ge4],打[da2]"
+},
+{
+"w": "弟弟",
+"t": "",
+"p": "dìdi",
+"pos": "名",
+"en": "younger brother; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "女士",
+"t": "",
+"p": "nǚshì",
+"pos": "名",
+"en": "lady; madam; CL:個|个[ge4],位[wei4]"
+},
+{
+"w": "好听",
+"t": "好聽",
+"p": "hǎotīng",
+"pos": "形",
+"en": "pleasant to hear"
+},
+{
+"w": "那边",
+"t": "那邊",
+"p": "nàbiān",
+"pos": "代",
+"en": "over there; yonder"
+},
+{
+"w": "再见",
+"t": "再見",
+"p": "zàijiàn",
+"pos": "动",
+"en": "goodbye; see you again later"
+},
+{
+"w": "饭店",
+"t": "飯店",
+"p": "fàndiàn",
+"pos": "名",
+"en": "restaurant; hotel; CL:家[jia1],個|个[ge4]"
+},
+{
+"w": "小朋友",
+"t": "",
+"p": "xiǎopéngyǒu",
+"pos": "名",
+"en": "child; kid (used to refer to a child, or by an adult to address a child, or, in Taiwan, to refer to sb's own child); CL:個|个[ge4]"
+},
+{
+"w": "下雨",
+"t": "",
+"p": "xià yǔ",
+"pos": "",
+"en": "to rain"
+},
+{
+"w": "哪儿",
+"t": "哪兒",
+"p": "nǎr",
+"pos": "代",
+"en": "where?; wherever; anywhere"
+},
+{
+"w": "这边",
+"t": "這邊",
+"p": "zhèbiān",
+"pos": "代",
+"en": "this side; here"
+},
+{
+"w": "这儿",
+"t": "這兒",
+"p": "zhèr",
+"pos": "代",
+"en": "here"
+},
+{
+"w": "女朋友",
+"t": "",
+"p": "nǚpéngyou",
+"pos": "名",
+"en": "girlfriend"
+},
+{
+"w": "商店",
+"t": "",
+"p": "shāngdiàn",
+"pos": "名",
+"en": "store; shop; CL:家[jia1],個|个[ge4]"
+},
+{
+"w": "请问",
+"t": "請問",
+"p": "qǐngwèn",
+"pos": "动",
+"en": "Excuse me, may I ask...?"
+},
+{
+"w": "听见",
+"t": "聽見",
+"p": "tīngjiàn",
+"pos": "动",
+"en": "to hear"
+},
+{
+"w": "男朋友",
+"t": "",
+"p": "nánpéngyou",
+"pos": "名",
+"en": "boyfriend"
+},
+{
+"w": "汉语",
+"t": "漢語",
+"p": "Hànyǔ",
+"pos": "名",
+"en": "Chinese language"
+},
+{
+"w": "桌子",
+"t": "",
+"p": "zhuōzi",
+"pos": "名",
+"en": "table; desk; CL:張|张[zhang1],套[tao4]"
+},
+{
+"w": "晚饭",
+"t": "晚飯",
+"p": "wǎnfàn",
+"pos": "名",
+"en": "evening meal; dinner; supper"
+},
+{
+"w": "生病",
+"t": "",
+"p": "shēngbìng",
+"pos": "动",
+"en": "to fall ill"
+},
+{
+"w": "面包",
+"t": "麵包",
+"p": "miànbāo",
+"pos": "名",
+"en": "bread; CL:片[pian4],塊|块[kuai4]"
+},
+{
+"w": "看病",
+"t": "",
+"p": "kànbìng",
+"pos": "动",
+"en": "to visit a doctor; to see a patient"
+},
+{
+"w": "没关系",
+"t": "沒關係",
+"p": "méi guānxi",
+"pos": "",
+"en": "it doesn't matter"
+},
+{
+"w": "那儿",
+"t": "那兒",
+"p": "nàr",
+"pos": "代",
+"en": "there"
+},
+{
+"w": "椅子",
+"t": "",
+"p": "yǐzi",
+"pos": "名",
+"en": "chair; CL:把[ba3],張|张[zhang1]"
+},
+{
+"w": "做饭",
+"t": "做飯",
+"p": "zuò fàn",
+"pos": "",
+"en": "to prepare a meal; to cook"
+},
+{
+"w": "饺子",
+"t": "餃子",
+"p": "jiǎozi",
+"pos": "名",
+"en": "dumpling; pot-sticker; CL:個|个[ge4],隻|只[zhi1]"
+},
+{
+"w": "小学生",
+"t": "小學生",
+"p": "xiǎoxuéshēng",
+"pos": "名",
+"en": "primary school student; schoolchild; CL:個|个[ge4],名[ming2]"
+},
+{
+"w": "书店",
+"t": "書店",
+"p": "shūdiàn",
+"pos": "名",
+"en": "bookstore; CL:家[jia1]"
+},
+{
+"w": "中学生",
+"t": "中學生",
+"p": "zhōngxuéshēng",
+"pos": "名",
+"en": "middle-school student; high school student"
+},
+{
+"w": "午饭",
+"t": "午飯",
+"p": "wǔfàn",
+"pos": "名",
+"en": "lunch; CL:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+},
+{
+"w": "杯子",
+"t": "",
+"p": "bēizi",
+"pos": "名",
+"en": "cup; glass; CL:個|个[ge4],隻|只[zhi1]"
+},
+{
+"w": "下课",
+"t": "下課",
+"p": "xiàkè",
+"pos": "动",
+"en": "to finish class; to get out of class; (fig.) (esp. of a sports coach) to be dismissed"
+},
+{
+"w": "电影院",
+"t": "電影院",
+"p": "diànyǐngyuàn",
+"pos": "名",
+"en": "cinema; movie theater; CL:家[jia1],座[zuo4]"
+},
+{
+"w": "包子",
+"t": "",
+"p": "bāozi",
+"pos": "名",
+"en": "baozi; bao (steamed stuffed bun); CL:個|个[ge4]"
+},
+{
+"w": "早饭",
+"t": "早飯",
+"p": "zǎofàn",
+"pos": "名",
+"en": "breakfast; CL:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+},
+{
+"w": "汉字",
+"t": "漢字",
+"p": "Hànzì",
+"pos": "名",
+"en": "Chinese character(s)"
+},
+{
+"w": "星期天",
+"t": "",
+"p": "xīngqītiān",
+"pos": "名",
+"en": "Sunday"
+},
+{
+"w": "有点儿",
+"t": "有點兒",
+"p": "yǒudiǎnr",
+"pos": "副",
+"en": "slightly; a little; somewhat"
+},
+{
+"w": "米饭",
+"t": "米飯",
+"p": "mǐfàn",
+"pos": "名",
+"en": "(cooked) rice"
+},
+{
+"w": "一点儿",
+"t": "一點兒",
+"p": "yìdiǎnr",
+"pos": "副",
+"en": "erhua variant of 一點|一点[yi1 dian3]"
+},
+{
+"w": "星期日",
+"t": "",
+"p": "xīngqīrì",
+"pos": "名",
+"en": "Sunday"
+},
+{
+"w": "外边",
+"t": "外邊",
+"p": "wàibian",
+"pos": "名",
+"en": "outside; outer surface; abroad"
+},
+{
+"w": "不客气",
+"t": "不客氣",
+"p": "bú kèqi",
+"pos": "",
+"en": "you're welcome; don't mention it; impolite"
+},
+{
+"w": "好玩儿",
+"t": "好玩兒",
+"p": "hǎowánr",
+"pos": "形",
+"en": "erhua variant of 好玩[hao3 wan2]"
+},
+{
+"w": "八",
+"t": "",
+"p": "bā",
+"pos": "数",
+"en": "eight"
+},
+{
+"w": "百",
+"t": "",
+"p": "bǎi",
+"pos": "数",
+"en": "surname Bai"
+},
+{
+"w": "超市",
+"t": "",
+"p": "chāoshì",
+"pos": "名",
+"en": "supermarket (abbr. for 超級市場|超级市场[chao1 ji2 shi4 chang3]); CL:家[jia1]"
+},
+{
+"w": "点",
+"t": "點",
+"p": "diǎn",
+"pos": "量、（名）",
+"en": "to touch briefly; to tap; to mark with a dot"
+},
+{
+"w": "多",
+"t": "",
+"p": "duō",
+"pos": "形、代、（动、数、",
+"en": "many; much; more"
+},
+{
+"w": "二",
+"t": "",
+"p": "èr",
+"pos": "数",
+"en": "two; 2; (Beijing dialect) stupid"
+},
+{
+"w": "九",
+"t": "",
+"p": "jiǔ",
+"pos": "数",
+"en": "nine; 9"
+},
+{
+"w": "零",
+"t": "",
+"p": "líng",
+"pos": "数",
+"en": "zero; nought; zero sign"
+},
+{
+"w": "六",
+"t": "",
+"p": "liù",
+"pos": "数",
+"en": "six; 6"
+},
+{
+"w": "面条儿",
+"t": "麵條兒",
+"p": "miàntiáor",
+"pos": "名",
+"en": "erhua variant of 麵條|面条[mian4 tiao2]"
+},
+{
+"w": "七",
+"t": "",
+"p": "qī",
+"pos": "数",
+"en": "seven; 7"
+},
+{
+"w": "千",
+"t": "韆",
+"p": "qiān",
+"pos": "数",
+"en": "thousand; used in 鞦韆|秋千[qiu1 qian1]"
+},
+{
+"w": "三",
+"t": "",
+"p": "sān",
+"pos": "数",
+"en": "surname San"
+},
+{
+"w": "十",
+"t": "",
+"p": "shí",
+"pos": "数",
+"en": "ten; 10"
+},
+{
+"w": "手机",
+"t": "手機",
+"p": "shǒujī",
+"pos": "名",
+"en": "cell phone; mobile phone; CL:部[bu4]"
+},
+{
+"w": "四",
+"t": "",
+"p": "sì",
+"pos": "数",
+"en": "four; 4"
+},
+{
+"w": "五",
+"t": "",
+"p": "wǔ",
+"pos": "数",
+"en": "five; 5"
+},
+{
+"w": "一",
+"t": "",
+"p": "yī",
+"pos": "数",
+"en": "one; single; a (article)"
+}
+]

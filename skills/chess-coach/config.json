@@ -1,0 +1,13 @@
+{
+  "username": "guidebruh",
+  "vault_chess_dir": "/opt/agentic/obsidian/vault/Agentic Output/chess",
+  "stockfish": "/usr/games/stockfish",
+  "analysis_time_per_move": 0.2,
+  "blunder_cp": 200,
+  "mistake_cp": 100,
+  "already_lost_cp": -600,
+  "fresh_puzzles_per_day": 3,
+  "revenge_drills_per_day": 2,
+  "primary_time_class": "rapid",
+  "goal_gates": [600, 900, 1200, 1500]
+}

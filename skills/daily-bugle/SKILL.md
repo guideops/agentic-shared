@@ -9,6 +9,18 @@ metadata:
 
 Produce a concise global briefing in English.
 
+## Segment mode (`/daily-bugle --segment`)
+
+Segment mode is how the scheduled morning run works: five segments (World, United Kingdom, Australia, Thailand, New Zealand) each add one section to a single daily note, `Agentic Output/News/<YYYY>/<MM Month>/<date> - Global Brief.md` (e.g. `News/2026/10 October/2026-10-16 - Global Brief.md`). The run script owns that file; you only produce your section. The script passes `--date YYYY-MM-DD` (New Zealand date); use it as the note date.
+
+1. **Do not write, create or edit any vault file.** Print the section markdown to stdout and nothing else: no preamble, no "here is", no closing remarks, no code fences.
+2. The section starts with exactly `## World` on the first line, then a blank line, then `> **Top line:** <one sentence, the single most important thing in this section>`. The Telegram summary is built from that line, so keep it under 200 characters.
+3. Use `###` for subsections (never `#` or `##` inside the section).
+4. **Continuity:** read the `## World` section of the last 3 `Agentic Output/News/**/* - Global Brief.md` notes (sorted by date; look in the previous month folder too) and apply the Continuity rules to those. If fewer than 3 merged notes exist, also read the most recent `* - Daily Bugle.md` notes.
+5. **Today so far:** if the date's Global Brief note already exists, read it first. Do not repeat a story another section already covers; give the new angle in one clause and write "(see World)" or the section name.
+6. Source Health goes in a final `### Source Health` subsection as one line.
+7. Subsections, in order: `### Top Headlines`, `### Emerging / Gaining Attention`, `### Tone / Sentiment`, `### On This Day in History`, `### Source Health`. No Afternoon Update, Reference Links or Sources sections; cite inline as usual. The Sunday `### Week in Review` still applies.
+
 ## Scope
 - Focus on *global* news only.
 - Do not use this skill for region- or city-specific briefs.
