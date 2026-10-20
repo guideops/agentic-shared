@@ -28,7 +28,7 @@ The user plans in the Planner page; you plan from the vault. The page has no AI 
 3. **Respect the shape of a day.** No overlaps with existing timed items unless asked, nothing outside working hours unless asked, at most 3 `top` per day (`planner.js check` warns past 3).
 4. **Read before you write, write the whole file once.** `node scripts/planner.js get`, change it in memory, add 1 to `rev`, pipe the whole file to `node scripts/planner.js put`. Never hand-edit a slice. If the page saved in between, `put` refuses (rev is not disk + 1): read again and redo the change.
 5. **No long dash character anywhere.** Use " - " or a comma. `planner.js check` refuses it.
-6. **The app is theirs to change.** When they ask (a different start hour, a new view, a field), change the defaults above or the files in `public/`, keep `node check.mjs` passing, and tell them to refresh.
+6. **The app is theirs to change.** When they ask (a different start hour, a new view, a field), change the defaults above or the files in `/root/agentic-workspace/server/planner/public/` (colours are the token block at the top of `app.css`), keep `node scripts/planner.js check` passing, and tell them to refresh (a server-side change needs a workspace restart).
 
 ## Workflow A: open the app
 
