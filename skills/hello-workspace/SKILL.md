@@ -1,5 +1,6 @@
 ---
 name: hello-workspace
+model: haiku
 description: Test skill proving the shared skills folder is wired into Claude Code, Codex, and Hermes.
 ---
 # hello-workspace

@@ -1,5 +1,6 @@
 ---
 name: hindsight-memory
+model: haiku
 description: 'Manual verbs for the shared Hindsight memory: /remember <fact> stores a durable fact; /recall <query> searches it. Works in Claude Code, Codex, and Hermes.'
 ---
 

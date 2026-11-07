@@ -104,3 +104,28 @@ region: <kebab-name>
 - Global brief requests go to `daily-bugle`, not here.
 - Vault writes only under `Agentic Output/digests/regional/`.
 - Pack edits (`packs.md`) only via fallback mode or explicit user request.
+
+<!-- BEGIN brief-v2 -->
+## Output format: brief-v2 (overrides any earlier format guidance in this skill)
+
+Write the note in the brief-v2 shape the Agentic Workspace `/brief` reader
+renders as cards (full spec: `deploy/briefs/NEWS-FORMAT.md` in the
+agentic-workspace repo).
+
+- Frontmatter: keep the existing keys and add `format: brief-v2` and `agent: <you>`, where `<you>` is `claude`, `codex` or `hermes`, whichever agent is writing.
+- Right under every `## <Section>` heading, add the line `<!-- agent: <you> -->`.
+- Open each section with `> [!tldr] <one sentence, ≤30 words, one ==highlight== on the takeaway>`.
+- Inside each `### <Group>`, write every story as:
+
+  ```
+  #### <plain headline, ≤14 words, no bold; in Top Headlines, Emerging and AI news stories wrap the outcome (2–6 words) in ==…==>
+  - tldr: <≤25 words, no highlight>
+  - key: <≤20 words, the one number/name/date in **bold**>   (1–3 of these)
+  - why: <≤20 words, why it matters to a small-business owner; omit if nothing real>
+  - src: [Source](url) · [Source](url)
+  ```
+- Use at most 5 Top Headlines and 4 Emerging stories per section. Keep Source Health / Gaps as short bullets.
+- Tone / Sentiment: put `<!-- mood: good|bad|mixed -->` on the line under the heading, then 1–2 sentences that open with a bold mood line of 2–10 words, e.g. `**A heavier day than most**, led by …`.
+- Highlights mark the outcome only, meaning what happened or was decided. Use exactly one `==…==` per Top Headlines, Emerging and AI news story, in the headline, and never a whole sentence. Other groups get no highlight.
+- Write one file per date, as now. Never rewrite or delete a previous date's note.
+<!-- END brief-v2 -->

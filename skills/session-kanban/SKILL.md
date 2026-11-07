@@ -1,6 +1,7 @@
 ---
 name: session-kanban
-description: Register substantive work on the Hermes kanban board (mirrored to the AURA wall): create a card at work start, comment milestones, complete with a summary.
+model: haiku
+description: "Register substantive work on the Hermes kanban board (mirrored to the AURA wall): create a card at work start, comment milestones, complete with a summary."
 ---
 
 # Session Kanban
